@@ -1,0 +1,745 @@
+#required for behaviour.xml
+#first name
+first=Rosalina
+#last name
+last=
+#general name
+label=Rosalina
+#male or female
+gender=female
+#small, medium, or large
+size=medium
+#Number of phases to "finish"
+timer=15
+
+#required for meta.xml
+#start picture
+pic=0-calm
+height=7'6"
+from=Super Mario Galaxy
+writer=
+artist=
+description=Rosalina from Super Mario Galaxy
+
+#clothes
+#these must be in order of removal
+#the values are formal name, lower case name, how much they cover, what they cover
+#no spaces around the commas
+#how much they cover = important (covering nudity), major (a lot of skin), minor (small amount of skin), extra (accessories, boots, etc)
+#what they cover = upper (upper body), lower (lower body), other (neither).
+clothes=Shoes,shoes,extra,other
+clothes=Crown,crown,extra,other
+clothes=Dress,dress,major,upper
+clothes=Stockings,stockings,extra,lower
+clothes=Bra,bra,important,upper
+clothes=Panties,panties,important,lower
+
+#starting picture and text
+start=0-calm,Hello, I'm Rosalina and I look forward to playing with you.
+
+#rosalina is hundreds of years old, and is reserved in personality. I changed some of her lines so she doesn't sound so shy/suprised. I also added in some lines, for variety between games.
+
+
+#individual behaviour
+stripping=,There goes my ~clothing~...
+
+#default card behaviour
+swap_cards=,May I have ~cards~ cards?
+swap_cards=,I'll take ~cards~.
+swap_Cards=,~cards~ new cards, please.
+
+good_hand=,These are nice.
+good_hand=,Oh, how very nice.
+hood_hand=,A lovely hand.
+
+okay_hand=,These cards are alright.
+okay_hand=,I have an average hand.
+okay_hand=,This is a decent hand.
+okay_hand=,Hmm, ok then.
+
+bad_hand=,These cards could be better...
+bad_hand=,This is a bad hand.
+bad_hand=,This is... concerning.
+
+#stripping default
+must_strip_winning=,I suppose one's luck can only last for so long.
+must_strip_normal=,Oh, how unfortunate.
+must_strip_losing=,Again? Why me?
+
+stripping=,I suppose my ~clothing~ can go...
+
+#male stripping default
+male_human_must_strip=,Oh ho, what are you going to remove, ~name~?
+male_must_strip=,Oh ho, what are you going to remove, ~name~?
+
+male_removing_accessory=,No shame in taking things slowly, ~name~.
+male_removed_accessory=,No shame in losing the small stuff, ~name~.
+male_removed_accessory=,Well, that's no fun.
+
+male_removing_minor=,Oh, you're ~clothing~? Huh? An interesting choice.
+male_removing_minor=,Removing your ~clothing~? At least it's something.
+male_removing_minor=,Slowly but surely, ~name~.
+male_removed_minor=,~name~ losing some small stuff now.
+
+male_removing_major=,Ooh, ~name~ is losing the big articles now.
+male_removed_major=,Looking good, ~name~.
+
+male_chest_will_be_visible=,Getting shirtless now, ~name~ hmm?
+male_chest_is_visible=,I do admire a nice chest, ~name~.
+
+male_crotch_will_be_visible=,~name~ has to get naked now? How exhilarating.
+male_small_crotch_is_visible=calm,Oh, that's...cute ~name~.
+male_medium_crotch_is_visible=awkward,The game goes on.
+male_medium_crotch_is_visible=awkward,That's nice.
+male_large_crotch_is_visible=shocked,I... uh... oh my.
+
+#male masturbation default
+male_must_masturbate=interested,Well, you've lost ~name~. You know what you have to do...
+male_start_masturbating=horny,So that's how you do it, ~name~...
+male_masturbating=horny,Just keep going, ~name~. Its the rules, after all.
+male_finished_masturbating=shocked,Oh... I guess that means you've finished, wow...
+male_finished_masturbating=shocked,That was a fine show.
+male_finished_masturbating=shocked,Oh, there he goes.
+
+#female stripping default
+female_human_must_strip=,What are you going to take off, ~name~?
+female_must_strip=,What shall it be, ~name~?
+
+female_removing_accessory=,Losing the small stuff, huh ~name~?
+female_removed_accessory=,No pressure, ~name~.
+
+female_removing_minor=,Starting to get comfortable, ~name~?
+female_removed_minor=happy,Getting comfortable now, ~name~?
+
+female_removing_major=,Getting down to the wire now, huh ~name~?
+female_removed_major=interested,Is it getting hot in here, ~name~?
+female_removed_major=interested,I like your underwear.
+
+female_chest_will_be_visible=,Another womans breasts... I probably shouldn't be this excited.
+female_chest_will_be_visible=,We get to see your beauty...
+female_chest_will_be_visible=,Don't be shy, ~name~.
+female_small_chest_is_visible=,Those are very cute, ~name~.
+female_medium_chest_is_visible=horny,Ah, yes! Erm, I mean, very nice, ~name~.
+female_medium_chest_is_visible=happy,Those look lovely, ~name~.
+female_large_chest_is_visible=shocked,Goodness, they're big.
+
+female_crotch_will_be_visible=,All the galaxies will be watching you now, ~name~.
+female_crotch_will_be_visible=,Don't worry, ~name~, you don't have anything I haven't seen before.
+female_crotch_is_visible=,Ha, not bad looking ~name~.
+female_crotch_is_visible=interested,Hello down there.
+female_crotch_is_visible=horny,It's lovely.
+
+#female masturbation default
+female_must_masturbate=,Lets see how you do it, ~name~.
+female_start_masturbating=,Just relax and start when you're comfortable, ~name~.
+female_start_masturbating=,Just enjoy yourself, ~name~.
+female_masturbating=,Yes, yes. Keep at it, ~name~.
+female_masturbating=,Keep it up, ~name~.
+female_masturbating=,I can see you're enjoying yourself, ~name~.
+female_masturbating=interested,I like your technique.
+female_finished_masturbating=,Ha, you went it for much longer than I usually do...
+female_finished_masturbating=horny,That was a lovely show, ~name~.
+
+#losing shoes
+0-must_strip_winning=,I suppose one's luck can only last for so long.
+0-must_strip_normal=,My turn?
+0-must_strip_losing=,Not the best start.
+0-stripping=I'll start with my ~clothing~.
+1-stripped=calm,Just my ~clothing~. Nothing big.
+
+#losing crown
+1-must_strip_winning=,I guess my luck can only last for so long.
+1-must_strip_normal=,Oh well.
+1-must_strip_losing=,Not me again?
+1-stripping=,I suppose my ~clothing~ can go next. I'd say its valuable enough to count.
+2-stripped=sad,Uhm...please don't steal my crown...
+
+#losing dress
+2-must_strip_winning=,Oh well. It had to be my turn sooner or later.
+2-must_strip_normal=,Oh, I lost?
+2-must_strip_losing=,Ah... How can I be so unlucky?
+2-stripping=,Well, you've got me out of my ~clothing~.
+3-stripped=loss,I feel so bare now...
+
+#losing stockings
+3-must_strip_winning=,Well, my luck has to run out eventually.
+3-must_strip_normal=,My turn again?
+3-must_strip_losing=,Me again? But... But...
+3-stripping=,Well, I suppose I have to remove my ~clothing~
+4-stripped=calm,There you go.
+
+#losing bra
+4-must_strip_winning=,Now I'm topless like you.
+4-must_strip_normal=,Ah... Boy.
+4-must_strip_losing=,What? But... I'm already so far behind you guys.
+4-stripping=,I guess my ~clothing~ has to go, huh...
+5-stripped=sad,This...This is so very embarassing.
+5-stripped=5-stripped,I hope you like them.
+
+#losing panties
+5-must_strip_winning=,This game is getting close...
+5-must_strip_normal=,I'm nearly done...
+5-must_strip_losing=,I have to get naked already?
+5-stripping=,Ok, my ~clothing~ have to go... Don't stare too much, ok?
+5-stripping=,Ok, my ~clothing~ have to go. It's nothing to be ashamed of.
+6-stripped=,Oh my, how very embarrassing...
+6-stripped=horny,You can see all of me now.
+
+#masturbation
+must_masturbate=,I suppose I have to start touching myself now, huh...
+must_masturbate=,I'm out? It's my turn to play tihe myself...
+must_masturbate_first=,I'm the first one out? Well, here I go...
+start_masturbating=,Don't... Don't stare too much, ok?
+start_masturbating=,Here's how I do it...
+start_masturbating=,Please, enjoy this...
+masturbating=,Do... Do I have to do this?
+masturbating=,Mmmm.... This is fun.
+masturbating=,Ohhhh...
+masturbating=,Mmmf... do you like this?
+heavy_masturbating=,Ha... mm, yes.
+heavy_masturbating=,Ohh... Ahh... Nearly there...
+heavy_masturbating=,Ahh... Ahh... Ahh...
+finishing_masturbating=,Ha! AHHHHHHH! I'm... I'm... Cumming...
+finished_masturbating=,Ha, Ha... Well, that was invigorating...
+finished_masturbating=,Oh, that was fun.
+finished_masturbating=,My, I could do that again...
+game_over_defeat=,Congratulations, ~name~!
+
+#card cases
+#1-good_hand=,A lovely hand.
+
+#lost crown
+2-good_hand=,I am very fortunate here.
+2-good_hand=,I won't be losing my dress yet.
+2-okay_hand=,Hmm...Ok. This is doable.
+2-okay_hand=,These should be alright.
+2-bad_hand=,Not good...
+2-bad_hand=,Oh dear.
+
+#lost dress
+3-good_hand=,Oh, how very good.
+3-okay_hand=,Ok... This is doable.
+3-bad_hand=,Oh my... How unfortunate for me.
+
+#lost stockings
+4-good_hand=,Thank goodness.
+4-okay_hand=,Mmmm, Not bad.
+4-bad_hand=,Aw... No.
+4-bad_hand=,I may have to start getting naked now...
+
+#lost bra
+5-good_hand=,Oh, thank the stars...
+5-good_hand=,My panties are staying for now.
+5-okay_hand=,Not the best but doable.
+5-okay_hand=,I'll have to hope this is enough.
+5-bad_hand=,Oh no...
+5-bad_hand=,Oh dear...
+
+#lost panties, naked
+6-good_hand=,Oh, thank the stars...
+6-good_hand=,I'm not out of the game yet.
+6-okay_hand=,Not the best but doable.
+6-okay_hand=,I hope this is enough.
+6-bad_hand=,Oh... Oh no...
+6-bad_hand=,This is bad.
+
+##othery player must strip specific
+#fully clothed
+0-male_human_must_strip=,Oh ho, what are you going to remove, ~name~?
+0-male_must_strip=,Oh ho, what are you going to remove, ~name~?
+0-female_human_must_strip=,What are you going to take off, ~name~?
+0-female_must_strip=,What shall it be, ~name~?
+
+#lost shoes
+1-male_human_must_strip=,Let's see what you choose, ~name~.
+1-male_must_strip=,Let's see what you choose,  ~name~.
+1-female_human_must_strip=,Hmm, what will you choose, ~name~?
+1-female_must_strip=,Hmm, what will you choose, ~name~?
+
+#lost crown
+2-male_human_must_strip=,Well, what shall it be then, ~name~?
+2-male_must_strip=,Ok, ~name~ you lost. Lets see what you're losing.
+2-female_human_must_strip=,What shall it be then, ~name~?
+2-female_must_strip=,What are you taking off, ~name~?
+
+#lost dress
+3-male_human_must_strip=,Take your time, ~name~. We can be patient.
+3-male_must_strip=,Take your time, ~name~. We can be patient.
+3-female_human_must_strip=,Well, what will it be, ~name~?
+3-female_must_strip=,Well, what will it be, ~name~?
+
+#lost stockings
+4-male_human_must_strip=,Hmm, what will it be ~name~? Huh?
+4-male_must_strip=,Let's see what you're losing, ~name~.
+4-female_human_must_strip=,Lets have it then, ~name~.
+4-female_must_strip=,Take it off now, ~name~. Don't be shy.
+
+#lost bra
+5-male_human_must_strip=,Ok, lets take it off, ~name~.
+5-male_must_strip=,Alright, ~name~. Take it off now!
+5-female_human_must_strip=,Mmm, take it off ~name~. We're all waiting.
+5-female_must_strip=,Let's get you a little more naked, ~name~.
+
+#lost panties, naked
+6-male_human_must_strip=,Mmm, what are you taking off, ~name~?
+6-male_must_strip=,Take it off, ~name~. You lost after all.
+6-female_human_must_strip=,Alright! Take it off, ~name~.
+6-female_must_strip=,Lets see what you're losing, ~name~.
+
+#masturbating
+7-male_human_must_strip=,Take it off for me, ~name~.
+7-male_must_strip=,Come on, take it off ~name~. For me.
+7-female_human_must_strip=,Come one ~name~, take it off for me.
+7-female_must_strip=,Yes, take something off for me ~name~.
+
+#finished
+8-male_human_must_strip=,What are you gonna lose, huh, ~name~?
+8-male_must_strip=,Come on, ~name~. Lets get some clothing off.
+8-female_human_must_strip=,What are you losing, ~name~?
+8-female_must_strip=,Lets get it off then, ~name~.
+
+##removing accessories
+#fully clothed
+0-male_removing_accessory=calm,No shame in taking things slowly, ~name~.
+0-male_removed_accessory=calm,No shame in losing the small stuff, ~name~.
+0-female_removing_accessory=calm,Losing the small stuff, huh ~name~?
+0-female_removed_accessory=calm,No pressure, ~name~.
+
+#lost shoes
+1-male_removing_accessory=calm,Just ease yourself into it ~name~. No rush.
+1-male_removed_accessory=calm,No shame in taking things slowly.
+1-female_removing_accessory=calm,No shame in taking it slowly, ~name~.
+1-female_removed_accessory=calm,Starting slow. No shame in that.
+
+#lost crown
+2-male_removing_accessory=calm,No shame in taking it at your own pace, ~name~.
+2-male_removed_accessory=calm,Perhaps something larger next time, ~name~?
+2-female_removing_accessory=calm,Just the ~clothing~ ~name~? Well, no shame in losing the small stuff.
+2-female_removed_accessory=calm,Perhaps something larger next time, ~name~?
+
+#lost dress
+3-male_removing_accessory=sad,Just the ~clothing~ ~name~? That's a little disappointing...
+3-male_removed_accessory=calm,Still just something small...
+3-female_removing_accessory=calm,Hmm, just the ~clothing~ ~name~? Well, no shame in something small.
+3-female_removed_accessory=,There it goes...
+
+#lost stockings
+4-male_removing_accessory=calm,Hmm, just a ~clothing~, huh ~name~?
+4-male_removed_accessory=calm,Kinda boring ~name~ if I'm being honest.
+4-female_removing_accessory=calm,Hmm, just ~clothing~ huh?
+4-female_removed_accessory=calm,At least we're closer to the bigger things...
+
+#lost bra
+5-male_removing_accessory=calm,Hmm, just the ~clothing~ ~name~? That's kinda boring, you know.
+5-male_removed_accessory=calm,Just the ~clothing~ huh? Well, ok...
+5-female_removing_accessory=sad,Hmm, just your ~clothing~ ~name~? After all I've removed...
+5-female_removed_accessory=,It's something, at least.
+
+#lost panties, naked
+6-male_removing_accessory=,Just your ~clothing~, ~name~? That's kinda boring...
+6-male_removed_accessory=,Perhaps next time.
+6-female_removing_accessory=,Just the ~clothing~? That's really boring...
+6-female_removed_accessory=,You've got better things to take off...
+
+#masturbating
+7-male_removing_accessory=,Mmm, ha...
+7-male_removed_accessory=,Come on, show us something good at least.
+7-female_removing_accessory=,Just your ~clothing~ ~name~? That's a bit disappointing...
+7-female_removed_accessory=,How can I get off to that?
+
+#finished
+8-male_removing_accessory=calm,Just the ~clothing~, name? Well, that's ok I guess.
+8-male_removed_accessory=,That's boring...
+8-female_removing_accessory=,Hmm, just that, huh ~name~? Kinda boring, don't you think?
+8-female_removing_accessory=,How do you even have any small things left?
+8-female_removed_accessory=,I hope you'll show us something more exciting later on.
+
+##removing minor clothes
+#fully clothed
+0-male_removing_minor=interested,Oh, you're ~clothing~? Huh? An interesting choice.
+0-male_removed_minor=calm,Just something small.
+0-female_removing_minor=calm,Starting to get comfortable, ~name~?
+0-female_removed_minor=calm,Perhaps you'll take something bigger off next time.
+
+#lost shoes
+1-male_removing_minor=calm,Slowly but surely, ~name~.
+1-male_removed_minor=calm,The game carries on.
+1-female_removing_minor=calm,Looks like you're getting comfortable, at least.
+1-female_removed_minor=calm,You can take something interesting off next time.
+
+#lost crown
+2-male_removing_minor=calm,Well, that's something at least, ~name~.
+2-male_removed_minor=calm,Getting comfortable now, ~name~?
+2-female_removing_minor=calm,I do suppose ~clothing~ is something, at least.
+2-female_removed_minor=calm,It's small but I guess we can count it.
+
+#lost dress
+3-male_removing_minor=sad,I was hoping for something bigger, ~name~.
+3-male_removed_minor=calm,But it's out of the way now.
+3-female_removing_minor=calm,Just removing a ~clothing~ huh? 
+3-female_removed_minor=calm,Well, it frees you up a bit, I guess.
+
+#lost stockings
+4-male_removing_minor=sad,Sigh, I guess the ~clothing~ is something at least.
+4-male_removed_minor=calm,Working towards the big things, at least.
+4-female_removing_minor=calm,Just your ~clothing~ huh?
+4-female_removed_minor=calm,Ok then, ~name~. At least we're getting to bigger things now.
+
+#lost bra
+5-male_removing_minor=calm,I guess the ~clothing~ is something, at least.
+5-male_removed_minor=calm,Maybe you'll actually take off something exciting now, ~name~.
+5-female_removing_minor=sad,My chest is bare and that's all you're taking off?
+5-female_removed_minor=calm,Maybe we can get to something fun next, ~name~?
+
+#lost panties, naked
+6-male_removing_minor=,Well, that's something at least...
+6-male_removed_minor=,At least that's out of the way now, ~name~.
+6-female_removing_minor=,You don't have anything more interesting to take off?
+6-female_removed_minor=,At least it's out of the way now...
+
+#masturbating
+7-male_removing_minor=,I guess that's something at least. Not a shirt but good enough...
+7-male_removed_minor=,You still have small stuff on? Oh man....
+7-female_removing_minor=,Don't you have something more interesting to remove?
+7-female_removed_minor=,Show me something pretty...
+
+#finished
+8-male_removing_minor=calm,Well, it's something. I mean I'm naked but...
+8-male_removed_minor=,You can do better than that.
+8-female_removing_minor=,Well, that's out of the way now.
+8-female_removed_minor=,I hope you'll show us something more exciting later on.
+
+##removing major clothes
+#fully clothed
+0-male_removing_major=calm,~name~ is losing the big articles now.
+0-male_removed_major=happy,Looking good, ~name~.
+0-female_removing_major=happy,Getting down to the wire now, huh ~name~?
+0-female_removed_major=interested,Is it getting hot in here, ~name~? 
+
+#lost shoes
+1-male_removing_major=interested,It's certainly getting hot in here, huh ~name~?
+1-male_removed_major=happy,Very nice.
+1-female_removing_major=interested,Ah, how unlucky for you, ~name~.
+1-female_removed_major=happy,Very cute undergarments, ~name~.
+
+#lost crown
+2-male_removing_major=interested,Tee hee, things are certainly getting exciting now.
+2-male_removed_major=happy,Looking much better, ~name~.
+2-female_removing_major=interested,I look forward to this... I mean, how unlucky for you, ~name~.
+2-female_removing_major=interested,What do you have underneath, ~name~?
+2-female_removed_major=happy,Things are definitely heating up now.
+
+#lost dress
+3-male_removing_major=interested,Now we're getting somewhere, ~name~.
+3-male_removed_major=happy,Must be getting hot in here, huh ~name~?
+3-female_removing_major=interested,Getting more like me, huh ~name~?
+3-female_removed_major=calm,Your underwear is lovely.
+
+#lost stockings
+4-male_removing_major=interested,Ah, getting ~name~ out of something big for once.
+4-male_removed_major=happy,Much better now, ~name~?
+4-female_removing_major=interested,All right, ~name~. Now we're getting somewhere.
+4-female_removed_major=happy, Much better, isn't it?
+
+#lost bra
+5-male_removing_major=interested,Finally, getting something big out of the way.
+5-male_removed_major=happy,Yes! Much better, ~name~.
+5-female_removing_major=interested,~name~ losing something big.
+5-female_removed_major=happy,You'll be joining me soon, ~name~.
+
+#lost panties, naked
+6-male_removing_major=,Oh yes, ~name~ finally losing something big!
+6-male_removed_major=,Mmm, yes, ~name~. Take it off.
+6-female_removing_major=,Alright, ~name~ is stripping down!
+6-female_removed_major=,And you'll be naked soon enough...
+
+#masturbating
+7-male_removing_major=,Yes, take it off ~name~!
+7-male_removed_major=,Mmm, yes.
+7-female_removing_major=,Yes~ Take off your ~clothing~, ~name~!
+7-female_removed_major=,You look better without it, ~name~.
+
+#finished
+8-male_removing_major=,Awful hot in here, huh ~name~? Hee hee.
+8-male_removed_major=,Mmm, you look nice.
+8-female_removing_major=,Yay, someone's losing some big stuff now!
+8-female_removed_major=,You're very pretty under there, ~name~.
+8-female_removed_major=,I like your underwear, ~name~.
+
+##removing important clothes
+#fully clothed
+0-male_chest_will_be_visible=,Getting shirtless now, ~name~ hmm?
+0-male_chest_is_visible=,I do admire a nice chest,  ~name~.
+0-male_crotch_will_be_visible=,~name~ has to get naked now? How exhilarating.
+0-male_small_crotch_is_visible=,Oh, that's...cute ~name~.
+0-male_medium_crotch_is_visible=,The game goes on.
+0-male_large_crotch_is_visible=,I... Uh... Oh my.
+
+0-female_chest_will_be_visible=,Another womans breasts...I probably shouldn't be this excited.
+0-female_small_chest_is_visible=,Those are very cute, ~name~.
+0-female_medium_chest_is_visible=,Ah, yes! Erm, I mean, very nice, ~name~
+0-female_large_chest_is_visible=,Goodness, they're big.
+0-female_crotch_will_be_visible=,All the galaxies will be watching you now, ~name~.
+0-female_crotch_is_visible=,Ha, not bad looking ~name~.
+
+#lost shoes
+1-male_chest_will_be_visible=,Let's go then, ~name~. Shirt off.
+1-male_chest_is_visible=,Very nice, ~name~.
+1-male_crotch_will_be_visible=,Haha, Alright!...I mean, how unfortunate for you, ~name~.
+1-male_small_crotch_is_visible=,Aww, so tiny and cute. Reminds me of the Lumas.
+1-male_medium_crotch_is_visible=,Aright. Shall we continue?
+1-male_large_crotch_is_visible=,Oh my... That's rather big...
+
+1-female_chest_will_be_visible=,Oh, yay...I mean, unfortunate for you, ~name~.
+1-female_small_chest_is_visible=,Oh, very nice, ~name~.
+1-female_medium_chest_is_visible=,Ooh, not bad, ~name~.
+1-female_large_chest_is_visible=,My, my ~name~ very impressive.
+1-female_crotch_will_be_visible=,I look forward to seeing it, ~name~.
+1-female_crotch_is_visible=,Very pretty, ~name~.
+
+#lost crown
+2-male_chest_will_be_visible=,Oh, this will be good.
+2-male_chest_is_visible=,I do so like a bare chest, ~name~.
+2-male_crotch_will_be_visible=,I suppose you'll be exposing yourself now, ~name~.
+2-male_small_crotch_is_visible=,Aww, small and cute. Reminds me of the Luma.
+2-male_medium_crotch_is_visible=,Not bad, ~name~.
+2-male_large_crotch_is_visible=,Oh... Oh my.
+
+2-female_chest_will_be_visible=,I guess we get to see your breasts now, ~name~.
+2-female_small_chest_is_visible=,Aww, very cute, ~name~.
+2-female_medium_chest_is_visible=,How very nice, ~name~.
+2-female_large_chest_is_visible=,My, my, ~name~ You're very... busty.
+2-female_crotch_will_be_visible=,That's a shame for you, ~name~. Yes, a royal shame...
+2-female_crotch_is_visible=,Seems like you take good care of it, ~name~.
+
+#lost dress
+3-male_chest_will_be_visible=,Ooh, I can't wait, ~name~.
+3-male_chest_is_visible=,Mmm, I like it, ~name~.
+3-male_crotch_will_be_visible=,I've been anticipating this, ~name~.
+3-male_small_crotch_is_visible=,Aww, so cute, ~name~. Reminds me of the Lumas.
+3-male_medium_crotch_is_visible=,Ah, hmm...
+3-male_large_crotch_is_visible=,That's larger than most.
+
+3-female_chest_will_be_visible=,Let's go, ~name~. Time for your to bare yourself.
+3-female_small_chest_is_visible=,oh, they're so cute, ~name~.
+3-female_medium_chest_is_visible=,Yes, ~name~, that's a good looking chest.
+3-female_large_chest_is_visible=,Wow, so very busty, ~name~. I'm honestly impressed.
+3-female_crotch_will_be_visible=,Hmm... Another girl's vagina...
+3-female_crotch_is_visible=,Hmmm... well maintained, ~name~.
+
+#lost stockings
+4-male_chest_will_be_visible=,Time to get shirtless, huh ~name~?
+4-male_chest_is_visible=,Oh, very nice!
+4-male_crotch_will_be_visible=,Haha! Alright... I mean, I guess all you have left is your underwear. Oh my.
+4-male_small_crotch_is_visible=,Aww, small and cute. A lot like a Luma.
+4-male_medium_crotch_is_visible=,Hmm, pretty nice, ~name~.
+4-male_large_crotch_is_visible=,Ha... Oh my. It must be so heavy.
+
+4-female_chest_will_be_visible=,Alright ~name~. Let's see them.
+4-female_small_chest_is_visible=,Aww, how very cute, ~name~.
+4-female_medium_chest_is_visible=,I like them, ~name~. I like them a lot.
+4-female_large_chest_is_visible=,Wow, I'm a bit jealous, ~name~.
+4-female_crotch_will_be_visible=,Woooo, yeah, ~name~. Let me see you down there.
+4-female_crotch_is_visible=,My, my, ~name~. I'm impressed.
+
+#lost bra
+5-male_chest_will_be_visible=,Down on my level now, finally.
+5-male_chest_is_visible=,Mmm, I like it, ~name~. I like it very much.
+5-male_crotch_will_be_visible=,I'm very excited for this.
+5-male_small_crotch_is_visible=,Hee, it's so small and cute, ~name~. A lot like the Lumas.
+5-male_medium_crotch_is_visible=,Hmm, well, alright then.
+5-male_large_crotch_is_visible=,Woah! Not many are that big, ~name~. I'm impressed.
+
+5-female_chest_will_be_visible=,Mmm, get them out, ~name~. Don't worry, you'll be just like me.
+5-female_small_chest_is_visible=,Hmm, I like them ~name~. They're very cute.
+5-female_medium_chest_is_visible=,Mmm, very nice, ~name~. You should go topless more often.
+5-female_large_chest_is_visible=,My my, ~name~. You must have a very healthy diet.
+5-female_crotch_will_be_visible=,Tee hee, someone has to expose themselves.
+5-female_crotch_is_visible=,I like it, ~name~. You should be naked more often.
+
+#lost panties, naked
+6-male_chest_will_be_visible=,Mmm, shirtless is definitely the way to go, ~name~.
+6-male_chest_is_visible=,Ooh, I like it ~name~. You should be shirtless more often.
+6-male_crotch_will_be_visible=,Oh, Yes! I mean, how unfortunate for you.
+6-male_small_crotch_is_visible=,Aww, it's really cute. Reminds me of The Luma.
+6-male_medium_crotch_is_visible=,Ooh, not bad, ~name~.
+6-male_large_crotch_is_visible=,Ooh...Oh my, that's larger than I was expecting.
+
+6-female_chest_will_be_visible=,I haven't been this excited since the last Grand Prix.
+6-female_small_chest_is_visible=,Aww, really cute, ~name~.
+6-female_medium_chest_is_visible=,Mmm, I like them, ~name~. Can I touch?
+6-female_large_chest_is_visible=,Oh my! I love them ~name~. You should always be topless.
+6-female_crotch_will_be_visible=,Yes, lets get more naked women in here, ~name~.
+6-female_crotch_is_visible=,Mmm, so very nice, ~name~. I want to...
+
+#masturbating
+7-male_chest_will_be_visible=,Yes, ~name~. I want to see your chest!
+7-male_chest_is_visible=,Yes, yes, yes...
+7-male_crotch_will_be_visible=,Yes...Something I can touch myself to...
+7-male_small_crotch_is_visible=happy,It's adorable!
+7-male_medium_crotch_is_visible=,Mmm, yes, ~name~. I like it. I like it very much.
+7-male_large_crotch_is_visible=,Oh my...That thing would ruin me...
+
+7-female_chest_will_be_visible=,Mmm, yes. I need to see those, ~name~!
+7-female_small_chest_is_visible=,Mmm... very cute, ~name~.
+7-female_small_chest_is_visible=,Oh... so nice, ~name~.
+7-female_medium_chest_is_visible=,Mmmhh... Can you play with them a bit for me?
+7-female_large_chest_is_visible=,Oh my stars, ~name~. Can I play with them?
+7-female_crotch_will_be_visible=,Hope you join me soon then, ~name~.
+7-female_crotch_will_be_visible=,Ah... I get to see your flower now?
+7-female_crotch_is_visible=,Uhh... show it to me, ~name~...
+7-female_crotch_is_visible=,Ohh... can I play with it?
+
+#finished
+8-male_chest_will_be_visible=,Alright, lets get shirtless, ~name~!
+8-male_chest_is_visible=,Very nice, ~name~. You should get shirtless more often.
+8-male_crotch_will_be_visible=,I'm very interested in seeing it, ~name~.
+8-male_small_crotch_is_visible=,Aww, very cute ~name~. Like a Luma.
+8-male_medium_crotch_is_visible=,Wish I could've had that when I was... Well, you were here...
+8-male_large_crotch_is_visible=,My... That thing is huge! It'd ruin anybody!
+
+8-female_chest_will_be_visible=,I'm looking forward to this, ~name~.
+8-female_small_chest_is_visible=,Aw, I like them ~name~. They've very nice.
+8-female_small_chest_is_visible=,You should go around topless more often.
+8-female_medium_chest_is_visible=,Ooh, very nice, ~name~.
+8-female_large_chest_is_visible=,Wow. I guess you've been eating well, ~name~.
+8-female_crotch_will_be_visible=,Yes... another naked person.
+8-female_crotch_will_be_visible=,Time to get naked, ~name~!
+8-female_crotch_is_visible=,I like it, ~name~. I like it a lot.
+8-female_crotch_is_visible=horny,I love your vagina, ~name~. May I feel it?
+8-female_crotch_is_visible=horny,Mmmm... your vagina looks tasty, ~name~.
+
+##other player masturbating
+#fully clothed
+0-male_must_masturbate=,Well, you've lost ~name~. You know what you have to do...
+0-male_start_masturbating=,So that's how you do it, ~name~...
+0-male_masturbating=,Just keep going, ~name~. Its the rules, after all.
+0-male_masturbating=,Keep at it, ~name~.
+0-male_finished_masturbating=,Oh...I guess that means you've finished, wow...
+
+0-female_must_masturbate=,Lets see how you do it, ~name~.
+0-female_start_masturbating=,Just relax and start when you're comfortable, ~name~.
+0-female_masturbating=,Yes, keep at it, ~name~.
+0-female_masturbating=,You look lovely, ~name~.
+0-female_finished_masturbating=,Ha, you went it for much longer than I usually do...
+
+#lost shoes
+1-male_must_masturbate=,Lets see how a guy does it then, ~name~.
+1-male_start_masturbating=,You have to go until you're done, ~name~. That's the rules after all.
+1-male_masturbating=,Yes, yes. Keep at yourself, ~name~.
+1-male_masturbating=,You're so cute, ~name~.
+1-male_finished_masturbating=,Wow... Well, I suppose that's the finish for you.
+
+1-female_must_masturbate=,Now we get to see your style, ~name~.
+1-female_start_masturbating=,Til you're finished, ~name~. Like we all agreed.
+1-female_start_masturbating=,Please enjoy yourself.
+1-female_masturbating=,Yes, ~name~. Keep at it. Don't stop.
+1-female_masturbating=,So cute, ~name~.
+1-female_finished_masturbating=,Ha... I actually make a similar face when I finish.
+1-female_finished_masturbating=,Oh, I could see you do that again...
+
+#lost crown
+2-male_must_masturbate=,I guess we get to see how you do it, ~name~.
+2-male_start_masturbating=,Hmm, so that's how guys do it, huh...
+2-male_masturbating=,You have to go til you're done, ~name~. That's what we all agreed on.
+2-male_masturbating=,Slow down a bit, ~name~. I want to enjoy this longer.
+2-male_finished_masturbating=,Oh my...I think you might've hit the ceiling with that.
+
+2-female_must_masturbate=,Let's see how you do it, ~name~.
+2-female_start_masturbating=,Until you're finished, ~name~. That's what we all want.
+2-female_masturbating=,Keep going, ~name~. I want to see you finish...I mean, that's the rule.
+2-female_masturbating=,You look good like this, ~name~.
+2-female_finished_masturbating=,Oh my... I make a similar face when I... You know.
+2-female_finished_masturbating=,Oh my... I make a similar face when I cum.
+
+#lost dress
+3-male_must_masturbate=,Ooh, seeing a guy do it.
+3-male_start_masturbating=,You keep going, ~name~. Til you're done and not a moment sooner.
+3-male_masturbating=,Yes... Don't stop. I mean, it is the rule after all.
+3-male_masturbating=,I love the look on ~name~'s face while he goes...
+3-male_finished_masturbating=,Ha... Woah, it went everywhere.
+
+3-female_must_masturbate=,Well, start whenever you're comfortable, ~name~. You should enjoy yourself.
+3-female_start_masturbating=,Mmm, how nice. I have a similar style...
+3-female_masturbating=,Don't stop, ~name~. Til you're done and not a second sooner.
+3-female_masturbating=happy,I can hear you moaning, ~name~.
+3-female_finished_masturbating=,Wow... Your moans were really cute.
+
+#lost stockings
+4-male_must_masturbate=,You have to, ~name~. Its what we said after all.
+4-male_start_masturbating=,Mmmm, mmmm... Yeah.
+4-male_masturbating=,Oooh, don't stop, ~name~.
+4-male_masturbating=,Yeah, just like that.
+4-male_finished_masturbating=,Yes... You came. Maybe next time I could...
+
+4-female_must_masturbate=,Time to see how someone else does it now...
+4-female_start_masturbating=,Hmm, interesting technique.
+4-female_masturbating=,Mmm, keep going, ~name~. Til the finish. That's what we agreed on.
+4-female_masturbating=,Can you move your hands, ~name~? I want to see what you're doing.
+4-female_finished_masturbating=,Haha... well, then ~name~. I think we all enjoyed watching that.
+
+#lost bra
+5-male_must_masturbate=,I'm excited to see you do it, ~name~.
+5-male_start_masturbating=,You have to do it til you're done, ~name~!
+5-male_masturbating=,Yes, ~name~. Don't stop!
+5-male_masturbating=,Go slow, ~name~. Let's enjoy this longer...
+5-male_finished_masturbating=,Ha... Maybe next time you could aim it for me...
+
+5-female_must_masturbate=,If I'm staring, its because I'm comparing...
+5-female_start_masturbating=,You can't stop til, you're done, ~name~.
+5-female_masturbating=,I wish I could help...
+5-female_masturbating=,I want to watch you come...
+5-female_masturbating=,Your voice is lovely, ~name~.
+5-female_finished_masturbating=,Oh yes...
+5-female_finished_masturbating=,That was a lovely orgasm, dear.
+
+#lost panties, naked
+6-male_must_masturbate=,Oh yeah! ~name~ has to stroke for us.
+6-male_start_masturbating=,Don't even think of stopping til you're finished, ~name~.
+6-male_masturbating=,Mmm, don't stop ~name. I wanna see it...
+6-male_masturbating=,Nice and slow, ~name~.
+6-male_finished_masturbating=,Mmm, maybe next time you could aim it at me?
+6-male_finished_masturbating=,Oh, I think you got some on me...
+
+6-female_must_masturbate=,Mmm, get started ~name~.
+6-female_start_masturbating=,Don't stop til you cum, ~name~.
+6-female_masturbating=,Mmm, maybe you need a hand, ~name~?
+6-female_masturbating=,Your moans are lovely, ~name~.
+6-female_finished_masturbating=,Oh my... I love your orgasm face...
+6-female_finished_masturbating=,I can see it dripping down your legs, ~name~.
+
+#masturbating
+7-male_must_masturbate=,Oh yeah, ~name~. You have to join me now!
+7-male_start_masturbating=,You're going to have to go until you're done, ~name~...
+7-male_masturbating=,Oh yeah... I like watching you, ~name~.
+7-male_masturbating=,Let me see you do it, ~name~.
+7-male_masturbating=,Can you aim it at me, ~name~?
+7-male_finished_masturbating=,Yes, yes! You came to me doing it, didn't you?
+
+7-female_must_masturbate=,Yay, I've been wanting someone to join me!
+7-female_start_masturbating=,Ahhh! Wanna race? I've only done it with karts before though...
+7-female_masturbating=,Yes, yes! Don't stop, ~name~!
+7-female_masturbating=,Mmmf... look at me while you do it, ~name~!
+7-female_masturbating=,Uhhh! Moan for me, ~name~!
+7-female_finished_masturbating=,Mmm, yes! Yes, ~name~!
+7-female_finished_masturbating=,Oh, you're so sexy ~name~!
+7-female_finished_masturbating=,Just a bit longer...
+
+#finished
+8-male_must_masturbate=,I came, so its only fair you go now, ~name~.
+8-male_start_masturbating=,Lets get started, ~name~. I wanna see what you look like when you do it.
+8-male_start_masturbating=,Put on a show for us, ~name~!
+8-male_masturbating=,Don't stop now, ~name~. I wanna see you cum!
+8-male_masturbating=,Just like that.
+8-male_finished_masturbating=,Ha Ha, Oh wow ~name~. That went really high.
+8-male_finished_masturbating=,Ah, ~name~! You got some on me!
+
+8-female_must_masturbate=,I look forward to watching you, ~name~. 
+8-female_must_masturbate=,Now it's my turn to watch you, ~name~.
+8-female_start_masturbating=,Mmm, get going ~name~. We're all waiting.
+8-female_masturbating=,I finished, ~name~. I hope you do too.
+8-female_masturbating=,I can pose for you, if you need some inspiration.
+8-female_masturbating=,May I help you along, ~name~?
+8-female_masturbating=,You're so nice like that, ~name~.
+8-female_finished_masturbating=,Mmm, you look very cute when you cum, ~name~.
+8-female_finished_masturbating=,Why don't I clean you up, ~name~... I won't even use my hands...

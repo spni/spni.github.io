@@ -1,0 +1,773 @@
+/************************************************************
+ This file contains all of the CSS that is shared by the
+ various game screens and elements.
+ ************************************************************/
+
+html {
+	width: 100%;
+	height: 100%;
+}
+ 
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #F5F5F5;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/************************************************************
+ * Global style classes.
+ ************************************************************/
+
+.bordered {
+	border: 2px solid black;
+	border-radius: 8px;
+	box-shadow: 0px 2px 2px rgba(20, 20, 20, 0.4) inset, 0px 2px 2px rgba(20, 20, 20, 0.6);
+}
+
+.centred {
+	margin: 0px auto;
+}
+
+/************************************************************
+ * Bootstrap overrides.
+ ************************************************************/
+ 
+* {
+	box-sizing: content-box;
+}
+
+table {
+	border-collapse: initial;
+	border-spacing: 2px;
+}
+ 
+body.modal-open {
+	margin-left: 0px;
+}
+
+/************************************************************
+ * Screen classes.
+ ************************************************************/
+ 
+.screen-container {
+	width: 100%;
+	height: 100%;
+	min-width: 800px;
+	min-height: 600px;
+	
+	background: linear-gradient(#444444, #666666, #555555);
+	background-color: #555555;
+	vertical-align: middle;
+}
+
+.screen-table {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	max-width: 1400px;
+	background: transparent;
+	
+	margin: 0px auto;
+	padding: 0px;
+	overflow: hidden;
+	table-layout: fixed;
+	vertical-align: middle;
+}
+
+/************************************************************
+ * Button classes.
+ ************************************************************/
+
+.smooth-button {
+	background: linear-gradient(#85C5F5, #65A5D5);
+	background-color: #85C5F5;
+}
+
+.smooth-button-red {
+	background: linear-gradient(#FF6666, #DF4646);
+	background-color: #FF6666;
+}
+
+.smooth-button:hover {
+	background: linear-gradient(#FFFFFF, #DDDDDD);
+	background-color: white;
+}
+
+.smooth-button:disabled {
+	background: linear-gradient(#DDDDDD, #BBBBBB);
+	background-color: white;
+}
+
+.dock-options-button {
+    height: 30px;
+    width: 20px;
+}
+
+.center-dock-button {
+	position: absolute;
+	height: 50px;
+	width: 100%;
+	
+	top: 26%;
+	left: 0px;
+	box-sizing: border-box;
+
+	font-size: 22px;
+}
+
+/************************************************************
+ * Classes for the modal.
+ ************************************************************/
+
+.modal {
+	top: 50%;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body-container {
+    margin: 0px auto;
+    display: inline-block;
+}
+
+.modal-clothing-image {
+	display: block;
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 0px 5px;
+    opacity: 0.4;
+}
+
+.modal-clothing-image:hover {
+	opacity: 0.7;
+}
+
+.modal-selected-clothing-image {
+	opacity: 1;
+}
+
+.modal-selected-clothing-image:hover {
+    opacity: 1;
+}
+
+.modal-footer {
+	text-align: center;
+}
+
+.modal-button {
+	height: 40px;
+	width: 100px;
+	
+	font-size: 22px;
+}
+
+/************************************************************
+ * All of the classes needed to make the dialogue bubbles 
+ * look the awesome way that they do.
+ ************************************************************/
+
+/* the area around the dialogue bubble */
+.dialogue-bubble-area {
+	height: 124px;
+}
+
+/* the body of the dialogue bubble */
+.dialogue-bubble {
+	position: relative;
+	height: 116px;
+	
+	margin: 2px 2px;
+	background-color: white;
+	
+	text-align: center;
+}
+
+/* the setup for the bottom triangle */
+.dialogue-bubble:before, .dialogue-bubble:after {
+	width: 0;
+	height: 0;
+	
+	content: "";
+	position: absolute;
+	
+	border-style: solid;
+	border-color: transparent;
+	border-bottom: 0;
+}
+
+/* the stroke of the bottom triangle */
+.dialogue-bubble:before {
+	border-top-color: black;
+	border-width: 16px;
+}
+
+/* the fill of the bottom triangle */
+.dialogue-bubble:after {
+	border-top-color: white;
+	border-width: 15px;
+}
+
+/* the stroke of the bottom triangle, positioned on the left */
+.dialogue-left:before {
+	bottom: -17px;
+	left: 30px;
+}
+
+/* the fill of the bottom triangle, positioned on the left */
+.dialogue-left:after {
+	bottom: -15px;
+	left: 31px;
+}
+
+/* the stroke of the bottom triangle, positioned in the centre */
+.dialogue-centre:before {
+	bottom: -17px;
+	left: 50%;
+	margin-left: -16px;
+}
+
+/* the fill of the bottom triangle, positioned in the centre */
+.dialogue-centre:after {
+	bottom: -15px;
+	left: 50%;
+	margin-left: -15px;
+}
+
+/* the stroke of the bottom triangle, positioned on the right */
+.dialogue-right:before {
+	bottom: -17px;
+	right: 30px;
+}
+
+/* the fill of the bottom triangle, positioned on the right */
+.dialogue-right:after {
+	bottom: -15px;
+	right: 31px;
+}
+
+.dialogue-area {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.dialogue {
+	display: table-cell;
+	
+	text-align: center;
+	vertical-align: middle;
+	padding: 4px;
+    
+	font-size: 18px;
+}
+
+.advance-button {
+	position: absolute;
+	height: 20px;
+	right: 5px;
+	bottom: 5px;
+    border-width: 0px;
+    opacity: 0;
+}
+
+.advance-button span {
+    margin-left: 2px;
+	margin-bottom: 2px;
+}
+
+/************************************************************
+ * Classes for the title screen.
+ ************************************************************/
+
+#title-banner {
+	width: 95%;
+	height: auto;
+	margin-top: 10px;
+	
+	font-size: 24px;
+	
+	vertical-align: middle;
+}
+
+.title-image-area {
+	width: 25%;
+	max-width: 25vw;
+	height: auto;
+	max-height: 60vh;
+}
+
+.title-image {
+    display: block;
+	
+	min-height: 40vh;
+	max-width: 100%;
+	max-height: 60vh;
+	
+	margin: 0px auto;
+}
+
+.intro-label {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+	text-align: center;
+	font-size: 18px;
+}
+
+#player-name-field {
+	width: 200px;
+	height: 60px;
+
+	font-size: 22px;
+	text-align: center;
+}
+
+.intro-gender-image {
+	display: block;
+	width: 60px;
+	height: 60px;
+	
+	margin: 0 auto;
+}
+
+#title-clothing-area {
+	width: 100%;
+}
+
+#title-clothing-div {
+	width: 100%;
+	height: 40vh;
+	overflow: auto;
+	margin-left: 8px;
+	padding-right: 20px;
+}
+
+#title-clothing-table {
+	width: 100%;
+	height: 40vh;
+    background-color: white;
+}
+
+.title-clothing-label {
+	height: 22px;
+	background-color: #DDDDDD;
+    font-size: 16px;
+    text-align: center;
+}
+
+.title-clothing-image {
+	display: block;
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 0px 2px;
+	opacity: 0.4;
+}
+
+.warning-label-area {
+    width: 100%;
+}
+
+#title-warning-label {
+    width: 100%;
+	height: 20px;
+	margin: 0px 0px;
+	margin-bottom: 2px;
+	padding: 0px 0px;
+    color: red;
+    
+    text-align: center;
+    font-size: 16px;
+}
+
+.title-advance-button-area {
+    width: 100%;
+    text-align: center;
+}
+
+#title-advance-button {
+	width: 160px;
+	height: 50px;
+
+	text-align: center;
+	font-size: 20px;
+    margin: 0 auto;
+}
+
+#title-screen-news-bar {
+    width: 100%;
+    height: 110px;
+	box-sizing: border-box;
+	
+	background: white;
+}
+
+.version-text {
+	width: 100%;
+
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	
+	text-align: center;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.news-text {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 40px;
+	font-size: 14px;
+	text-align: left;
+}
+
+/************************************************************
+ * Classes for the main select screen.
+ ************************************************************/
+
+#select-banner {
+    height: 35px;
+	margin: 2px 0px 0px 0px;
+}
+
+.select-slot-button {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.select-option-button {
+    height: 70px;
+    font-size: 18px;
+}
+
+/************************************************************
+ * Classes for the individual select screen.
+ ************************************************************/
+
+#individual-select-container {
+    width: 70%;
+    vertical-align:top;
+    overflow: hidden;
+}
+ 
+#individual-select-div {
+    width: 100%;
+	height: 60vh;
+	overflow: auto;
+	//padding-right: 16px; /*add this back when a scrollbar is needed*/
+}
+
+#individual-select-table {
+    width: 95%;             /* change this back to 100 when a scrollbar is needed */
+    border-spacing: 0px;
+}
+
+#individual-select-table th {
+    border-top: transparent;
+    border-bottom: 2px solid black;
+    background-color: white;
+}
+
+#individual-select-table td {
+    border-color: transparent;
+    border-bottom: 1px solid black;
+    
+    font-size: 16px;
+}
+
+.opponent-row { 
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.opponent-row:hover { 
+    background-color: white; 
+}
+
+.male-row {
+    background-color: lightblue;
+}
+
+.female-row {
+    background-color: pink;
+}
+
+.individual-bubble {
+    width: 80%;
+    
+    margin: 0 auto;
+}
+
+/************************************************************
+ * Classes for the individual select screen.
+ ************************************************************/
+
+#group-select-container {
+    width: 40%;
+    vertical-align:top;
+    overflow: hidden;
+}
+ 
+#group-select-div {
+    width: 100%;
+	height: 60vh;
+	overflow: auto;
+	//padding-right: 16px; /*add this back when a scrollbar is needed*/
+}
+
+#group-select-table {
+    width: 95%;             /* change this back to 100 when a scrollbar is needed */
+    border-spacing: 0px;
+}
+
+#group-select-table th {
+    border-top: transparent;
+    border-bottom: 2px solid black;
+    background-color: white;
+}
+
+#group-select-table td {
+    border-color: transparent;
+    border-bottom: 1px solid black;
+    
+    font-size: 16px;
+}
+
+.group-row { 
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: lightgreen;
+}
+
+.group-row:hover { 
+    background-color: white; 
+}
+
+.selected-row { 
+    background-color: #FFFF99; 
+}
+
+.group-image-area {
+	width: auto;
+	height: auto;
+	max-height: 60vh;
+    
+    margin: 0px auto;
+}
+
+.group-image {
+	display: block;
+	
+	min-height: 40vh;
+	max-width: 100%;
+	max-height: 60vh;
+	
+	margin: 0px auto;
+}
+
+.group-area {
+    width: 100%;
+    table-layout: fixed;
+}
+
+#group-name-label {
+    width: auto;
+	height: 20px;
+	
+    padding: 5px;
+    padding-top: 0px;
+	padding-bottom: 2px;
+	
+	text-align: center;
+	font-size: 16px;
+	background: white;
+}
+
+.group-opponent-name-label {
+    width: auto;
+	height: 20px;
+	
+    padding: 5px;
+    padding-top: 0px;
+	padding-bottom: 2px;
+	
+	text-align: center;
+	font-size: 16px;
+	background: white;
+}
+
+/************************************************************
+ * Classes for the main game screen.
+ ************************************************************/
+
+#game-banner {
+	height: 35px;
+	margin: 2px 0px 0px 0px;
+}
+
+#game-main-area {
+	max-height: 100%;
+}
+
+.opponent-image-area {
+	width: auto;
+	max-width: 25vw;
+	height: auto;
+	max-height: 60vh;
+    
+    margin: 0px auto;
+}
+
+.opponent-image {
+	display: block;
+	
+	min-height: 40vh;
+	max-width: 100%;
+	max-height: 80vh;
+	
+	margin: 0px auto;
+}
+
+.opponent-area {
+	width: auto;
+	
+	margin: 0px auto;
+	padding: 0px;
+	
+	background: radial-gradient(#454545, #454545, #454545);
+	background-color: #454545;
+}
+
+.opponent-name-label {
+	width: 200px;
+	height: 20px;
+	
+	padding-bottom: 2px;
+	
+	text-align: center;
+	font-size: 16px;
+	background: white;
+}
+
+.opponent-card-area {
+	width: auto;
+	height: 50px;
+	
+	box-sizing: border-box;
+	margin: 0px auto;
+}
+
+.small-card-image {
+	width: 35px;
+	height: 45px;
+}
+
+.game-table-area {
+	position: relative;
+	width: 100%;
+	height: 110px;
+	box-sizing: border-box;
+	
+	background: radial-gradient(#007000, #006000, #005000);
+	background-color: #006000;
+}
+
+.game-table-subarea {
+	width: 100%;
+	height: 110px;
+	box-sizing: border-box;
+	
+	background: transparent;
+}
+
+.game-player-subarea {
+	width: 100%;
+	height: 110px;
+	box-sizing: border-box;
+	
+	background: transparent;
+}
+
+.dock-options-area {
+    width: 8%;
+    text-align: center;
+}
+
+.player-clothing-area {
+	width: 36%;
+}
+
+.player-clothing-area table {
+	margin: 0px auto;
+
+}
+
+.player-name-label {
+	height: 20px;	
+	padding-bottom: 2px;
+	
+	text-align: center;
+
+	font-size: 16px;
+	background: white;
+}
+
+.player-clothing-label {
+	height: 16px;
+	
+	padding-bottom: 2px;
+	
+	text-align: center;
+	font-size: 14px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+	background: white;
+}
+
+.small-clothing-image {
+	width: 40px;
+	height: 40px;
+	
+	margin: 2px 1px;
+}
+
+#dock-card-area {
+	width: 44%;
+}
+
+#dock-card-area table {
+	margin: 0px auto;
+}
+
+.centred-deck-area {
+	position: absolute;
+	width: 69px;
+	left: 0;
+	right: 0;
+	top: 5px;
+	margin: 0 auto;
+}
+
+.hidden-large-card {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+}
+
+.shown-card {
+	opacity: 1;
+}
+
+.large-card-image {
+	width: 65px;
+	height: 90px;
+	border: 2px solid black;
+}
