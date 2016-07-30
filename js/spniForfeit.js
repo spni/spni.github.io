@@ -19,6 +19,10 @@ var oneFinished = false;
  
 /* orgasm timer */
 var ORGASM_DELAY = 4000;
+
+/* The first and last rounds a character starts heavy masturbation, counted in phases before they finish */
+var HEAVY_FIRST_ROUND = 6
+var HEAVY_LAST_ROUND = 2
  
 /* forfeit timers */
 var timers = [0, 0, 0, 0];
@@ -38,12 +42,25 @@ function setForfeitTimer (player) {
 	// THE STAGE IS HARD SET RIGHT NOW
 	players[player].stage += 1;
 }
- 
+
+/************************************************************
+ * Sleep for the specified amount of time in milliseconds.
+ * Blocks the thread.
+ ************************************************************/
+function blockingSleep(time){
+	var now = new Date().getTime();
+    while(new Date().getTime() < now + time){ /* wait */ }
+}
+
 /************************************************************
  * The forfeit timers of all players tick down, if they have 
  * been set.
  ************************************************************/
 function tickForfeitTimers (context) {
+    var masturbatingPlayers = [];
+	var showMasturbatingThreshold = 0.2; //probability of doing a "this character is masturbating" event
+	var masturbationDelay = 400; //wait for 400ms so that the player can see what the characters are saying
+	
     for (var i = 0; i < players.length; i++) {
         if (players[i].out && timers[i] > 0) {
             timers[i]--;
@@ -120,7 +137,7 @@ function tickForfeitTimers (context) {
 				} else {
 					/* random chance they go into heavy masturbation */
 					// CHANGE THIS TO ACTIVATE ONLY IN THE LAST 4 TURNS
-					var randomChance = getRandomNumber(0, players[i].timer);
+					var randomChance = getRandomNumber(HEAVY_LAST_ROUND, HEAVY_FIRST_ROUND);
 					
 					if (randomChance > timers[i]-1) {
 						/* this player is now heavily masturbating */
@@ -128,10 +145,22 @@ function tickForfeitTimers (context) {
 						updateBehaviour(i, PLAYER_HEAVY_MASTURBATING, [NAME], [players[i].first]);
 						updateGameVisual(i);
 					}
+					
+					masturbatingPlayers.push(i);
 				}
 			}
         }
     }
+	
+	//show an NPC player masturbating, if there is one available and the chance is met
+	if (masturbatingPlayers.length > 0 && Math.random() < showMasturbatingThreshold){
+		var playerToShow = masturbatingPlayers[getRandomNumber(0, masturbatingPlayers.length)];//index of player chosen to show masturbating//players[]
+		for (var i = 0; i < players.length; i++){
+			updateBehaviour(i, (i == playerToShow) ? players[i].forfeit[0] : (players[playerToShow].gender == MALE ? MALE_MASTURBATING : FEMALE_MASTURBATING), [NAME], [players[playerToShow].label]);
+		}
+		updateAllGameVisuals();
+		blockingSleep(masturbationDelay); // wait so that you can see what they say
+	}
 	
 	return context;
 }
