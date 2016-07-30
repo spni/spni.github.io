@@ -114,29 +114,22 @@ function loadGameScreen () {
  * Updates all of the main visuals on the main game screen.
  ************************************************************/
 function updateGameVisual (player) {
-    /* update all opponents */
-    if (players[player] && players[player].state) {
+   /* update all opponents */
+    if (players[player] && players[player].state) {		
+		var chosenState = players[player].state[getRandomNumber(0, players[player].state.length)];
+		
         /* update dialogue */
-        $gameDialogues[player-1].html(players[player].state[players[player].current].dialogue);
-        
-        /* determine if the advance dialogue button should be shown */
-        if (players[player].state.length > players[player].current+1) {
-            $gameAdvanceButtons[player-1].css({opacity : 1});
-            $gameAdvanceButtons[player-1].attr("disabled", false);
-        } else {
-            $gameAdvanceButtons[player-1].css({opacity : 0});
-            $gameAdvanceButtons[player-1].attr("disabled", true);
-        }
+        $gameDialogues[player-1].html(chosenState.dialogue);
         
         /* direct the dialogue bubble */
         $gameBubbles[player-1].show();
         if (players[player].state[players[player].current].direction) {
             $gameBubbles[player-1].removeClass();
-            $gameBubbles[player-1].addClass("bordered dialogue-bubble dialogue-"+players[player].state[players[player].current].direction);
+            $gameBubbles[player-1].addClass("bordered dialogue-bubble dialogue-"+chosenState.direction);
         } 
         
         /* update image */
-        $gameImages[player-1].attr('src', players[player].folder + players[player].state[players[player].current].image);
+        $gameImages[player-1].attr('src', players[player].folder + chosenState.image);
         
         /* update label */
         $gameLabels[player].html(players[player].label);
