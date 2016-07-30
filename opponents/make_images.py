@@ -32,6 +32,25 @@ def delete_file(filename):
 		os.remove(filename)
 	except WindowsError:
 		pass
+
+#check if the string starts with a kisekae version string (a number, followed by at least two *'s)
+def starts_with_version_string(s):
+	#check for numbers
+	i = 0
+	found_digit = False
+	while i < len(s):
+		if s[i].isdigit():
+			found_digit = True #found at least one digit
+		elif not found_digit:
+			return False #not a digit, and we haven't found a digit yet, so it's not a version string
+		else:
+			break #this isn't a digit, but we found one previously, so proceed to the next stage of the check
+		i += 1
+	#we need at least 2 characters left in the string for there to be two *'s left
+	if len(s) - i < 2:
+		return False
+	#check for the two *'s
+	return s[i] == '*' and s[i+1] == '*'
 		
 #use the image data to create the images using kkl, and move them to the specified directory
 def create_images(image_list, output_directory):
@@ -66,7 +85,7 @@ def create_images(image_list, output_directory):
 		
 		
 		#ensure that the correct version string is used
-		if not image_data.startswith(single_version):
+		if not starts_with_version_string(single_version):
 			#assume that no version data is available
 			image_data = single_version + image_data
 		
@@ -102,7 +121,7 @@ def read_image_data(filename):
 			line = line.strip()
 			if len(line) <= 0 or line[0] == '#':
 				continue
-				
+			
 			image_filename, image_data = line.split("=", 1)
 			image_filename = image_filename.strip()
 			image_data = image_data.strip()
