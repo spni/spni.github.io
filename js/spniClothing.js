@@ -225,30 +225,30 @@ function playerMustStrip (player) {
 		/* the player has clothes and will strip */
 		if (player == HUMAN_PLAYER) {
 			if (players[HUMAN_PLAYER].gender == MALE) {
-				updateAllBehaviours(player, MALE_HUMAN_MUST_STRIP, [NAME], [players[player].first]);
+				updateAllBehaviours(player, MALE_HUMAN_MUST_STRIP, [NAME], [players[player].label]);
 			} else {
-				updateAllBehaviours(player, FEMALE_HUMAN_MUST_STRIP, [NAME], [players[player].first]);
+				updateAllBehaviours(player, FEMALE_HUMAN_MUST_STRIP, [NAME], [players[player].label]);
 			}
 		} else {
 			if (players[player].gender == MALE) {
-				updateAllBehaviours(player, MALE_MUST_STRIP, [NAME], [players[player].first]);
+				updateAllBehaviours(player, MALE_MUST_STRIP, [NAME], [players[player].label]);
 			} else {
-				updateAllBehaviours(player, FEMALE_MUST_STRIP, [NAME], [players[player].first]);
+				updateAllBehaviours(player, FEMALE_MUST_STRIP, [NAME], [players[player].label]);
 			}
 			var trigger = determineStrippingSituation(player);
-			updateBehaviour(player, trigger, [NAME], [players[player].first]);
+			updateBehaviour(player, trigger, [NAME], [players[player].label]);
 		}
 	} else {
 		/* the player has no clothes and will have to accept a forfeit */
 		if (players[player].gender == MALE) {
-			updateAllBehaviours(player, MALE_MUST_MASTURBATE, [NAME], [players[player].first]);
+			updateAllBehaviours(player, MALE_MUST_MASTURBATE, [NAME], [players[player].label]);
 		} else if (players[player].gender == FEMALE) {
-			updateAllBehaviours(player, FEMALE_MUST_MASTURBATE, [NAME], [players[player].first]);
+			updateAllBehaviours(player, FEMALE_MUST_MASTURBATE, [NAME], [players[player].label]);
 		}
 
 		if (player != HUMAN_PLAYER) {
 			var trigger = determineForfeitSituation(player);
-			updateBehaviour(player, trigger, [NAME], [players[player].first]);
+			updateBehaviour(player, trigger, [NAME], [players[player].label]);
 		}
 	}
 	
@@ -274,9 +274,9 @@ function prepareToStripPlayer (player) {
 		/* the player has clothes left and will strip */
         if (player == HUMAN_PLAYER) {
             if (players[HUMAN_PLAYER].gender == MALE) {
-                updateAllBehaviours(player, MALE_HUMAN_MUST_STRIP, [NAME], [players[player].first]);
+                updateAllBehaviours(player, MALE_HUMAN_MUST_STRIP, [NAME], [players[player].label]);
             } else {
-                updateAllBehaviours(player, FEMALE_HUMAN_MUST_STRIP, [NAME], [players[player].first]);
+                updateAllBehaviours(player, FEMALE_HUMAN_MUST_STRIP, [NAME], [players[player].label]);
             }
         } else {
             var toBeRemovedClothing = players[player].clothing[startingClothes - 1];
@@ -284,7 +284,7 @@ function prepareToStripPlayer (player) {
             
             /* set up the replaceable tags and content */
             var replace = [NAME, PROPER_CLOTHING, LOWERCASE_CLOTHING];
-            var content = [players[player].first, toBeRemovedClothing.proper, toBeRemovedClothing.lower];
+            var content = [players[player].label, toBeRemovedClothing.proper, toBeRemovedClothing.lower];
         
             updateAllBehaviours(player, dialogueTrigger, replace, content);
             updateBehaviour(player, PLAYER_STRIPPING, replace, content);
@@ -292,13 +292,13 @@ function prepareToStripPlayer (player) {
 	} else {
 		/* the player has no clothes and will have to accept a forfeit */
 		if (players[player].gender == MALE) {
-			updateAllBehaviours(player, MALE_MUST_MASTURBATE, [NAME], [players[player].first]);
+			updateAllBehaviours(player, MALE_MUST_MASTURBATE, [NAME], [players[player].label]);
 		} else if (players[player].gender == FEMALE) {
-			updateAllBehaviours(player, FEMALE_MUST_MASTURBATE, [NAME], [players[player].first]);
+			updateAllBehaviours(player, FEMALE_MUST_MASTURBATE, [NAME], [players[player].label]);
 		}
 
 		if (player != HUMAN_PLAYER) {
-			updateBehaviour(player, PLAYER_MUST_MASTURBATE, [NAME], [players[player].first]);
+			updateBehaviour(player, PLAYER_MUST_MASTURBATE, [NAME], [players[player].label]);
 		}
 	}
 }
@@ -396,7 +396,7 @@ function closeStrippingModal () {
             
         /* set up the replaceable tags and content */
         var replace = [NAME, PROPER_CLOTHING, LOWERCASE_CLOTHING];
-        var content = [players[HUMAN_PLAYER].first, removedClothing.proper, removedClothing.lower];
+        var content = [players[HUMAN_PLAYER].label, removedClothing.proper, removedClothing.lower];
         
         /* update behaviour */
         updateAllBehaviours(HUMAN_PLAYER, dialogueTrigger, replace, content);
@@ -436,7 +436,7 @@ function stripAIPlayer (player) {
 	
 	/* set up the replaceable tags and content */
 	var replace = [NAME, PROPER_CLOTHING, LOWERCASE_CLOTHING];
-	var content = [players[player].first, removedClothing.proper, removedClothing.lower];
+	var content = [players[player].label, removedClothing.proper, removedClothing.lower];
 	
 	/* update behaviour */
 	updateAllBehaviours(player, dialogueTrigger, replace, content);
@@ -501,19 +501,19 @@ function stripPlayer (player) {
 		/* update behaviour */
 		if (player == HUMAN_PLAYER) {
 			if (players[HUMAN_PLAYER].gender == MALE) {
-				updateAllBehaviours(HUMAN_PLAYER, MALE_START_MASTURBATING, [NAME], [players[HUMAN_PLAYER].first]);
+				updateAllBehaviours(HUMAN_PLAYER, MALE_START_MASTURBATING, [NAME], [players[HUMAN_PLAYER].label]);
 			} else if (players[HUMAN_PLAYER].gender == FEMALE) {
-				updateAllBehaviours(HUMAN_PLAYER, FEMALE_START_MASTURBATING, [NAME], [players[HUMAN_PLAYER].first]);
+				updateAllBehaviours(HUMAN_PLAYER, FEMALE_START_MASTURBATING, [NAME], [players[HUMAN_PLAYER].label]);
 			}
 			$gameClothingLabel.html("<b>You're Masturbating...</b>");
 			setForfeitTimer(player);
 		} else {
 			if (players[player].gender == MALE) {
-				updateAllBehaviours(player, MALE_START_MASTURBATING, [NAME], [players[player].first]);
+				updateAllBehaviours(player, MALE_START_MASTURBATING, [NAME], [players[player].label]);
 			} else if (players[player].gender == FEMALE) {
-				updateAllBehaviours(player, FEMALE_START_MASTURBATING, [NAME], [players[player].first]);
+				updateAllBehaviours(player, FEMALE_START_MASTURBATING, [NAME], [players[player].label]);
 			}
-			updateBehaviour(player, PLAYER_START_MASTURBATING, [NAME], [players[player].first]);
+			updateBehaviour(player, PLAYER_START_MASTURBATING, [NAME], [players[player].label]);
 			setForfeitTimer(player);
 		}
 		
