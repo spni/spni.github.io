@@ -155,8 +155,8 @@ def add_subelement(base_element, name, tag_value):
 def add_values(base_element, player_dictionary, default_dictionary, stage):
 	for key in default_dictionary.keys():
 		contents = get_cases(player_dictionary, default_dictionary, key, stage)
+		case = add_subelement(base_element, "case", key)
 		for img, text in contents:
-			case = add_subelement(base_element, "case", key)
 			ET.SubElement(case, "state", img=img).text = text
 
 #manually prettify xml code (because the standard method doesn't seem to work on windows)

@@ -186,10 +186,11 @@ function parseDialogue (caseObject, replace, content) {
  ************************************************************/
 function updateBehaviour (player, tag, replace, content) {
 	/* determine if the AI is dialogue locked */
-	if (players[player].forfeit[1] == CANNOT_SPEAK) {
+	//Allow characters to speak. If we change forfeit ideas, we'll likely need to change this as well.
+	//if (players[player].forfeit[1] == CANNOT_SPEAK) {
 		/* their is restricted to this only */
-		tag = players[player].forfeit[0];
-	}
+		//tag = players[player].forfeit[0];
+	//}
 	
     /* get the AI stage */
     var stageNum = players[player].stage;
@@ -204,7 +205,7 @@ function updateBehaviour (player, tag, replace, content) {
     
     /* quick check to see if the stage exists */
     if (!stage) {
-        console.log("Error: couldn't find stage "+stage+" for player "+player);
+        console.log("Error: couldn't find stage for player "+player+" on stage number "+stageNum+" for tag "+tag);
         return;
     }
     
