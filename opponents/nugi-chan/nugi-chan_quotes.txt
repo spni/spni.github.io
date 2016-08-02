@@ -1,0 +1,191 @@
+#required for behaviour.xml
+first=Hamada
+last=Gin
+label=Nugi-chan
+gender=female
+size=large
+#Number of phases to "finish"
+timer=25
+
+#required for meta.xml
+#start picture
+pic=0-calm
+height=5'1"
+from=Mascot of sutorippu.com
+writer=Sutorippu
+artist=RenLimone
+description=
+
+#clothes
+#these must be in order of removal
+#the values are formal name, lower case name, how much they cover, what they cover
+#no spaces around the commas
+#how much they cover = important (covering nudity), major (a lot of skin), minor (small amount of skin), extra (accessories, boots, etc)
+#what they cover = upper (upper body), lower (lower body), other (neither).
+#there must be 2-8 entries, and at least one "important" piece of clothing on each of the upper and lower locations.
+#these are some examples from Rosalina:
+clothes=Shoes,shoes,extra,other
+clothes=Gloves,gloves,minor,other
+clothes=Stockings,stockings,major,lower
+clothes=Top,top,major,upper
+clothes=Skirt,skirt,major,bottom
+clothes=Bra,bra,important,upper
+clothes=Panties,panties,important,lower
+
+#starting picture and text
+start=0-happy,Strip poker? Yay! I'll take a break from cleaning anytime for that! <3 
+
+##individual behaviour
+#entries without a number are used when there are no stage-specific entries
+
+#default card behaviour
+#you can include multiple entries to give the character multiple lines and/or appearances in that situation.
+#This is what a character says while they're exchanging cards.
+swap_cards=calm,I'll take ~cards~ cards, dealer-sama!
+
+#The character thinks they have a good hand
+good_hand=happy,Oooh, this is a good hand.
+good_hand=happy,I feel safe with this hand.
+
+#The character thinks they have a bad hand
+okay_hand=calm,I... I don't know about this hand, dealer-sama!
+
+#The character thinks they have a bad hand
+bad_hand=sad,Aww, this hand is awful.
+
+#stripping default
+#This is the character says once they've lost a hand, but before they strip
+must_strip_winning=loss,They say this when they're winning - they have more clothing items left than other players.
+must_strip_normal=loss,What the character says when they're in the middle of the group in terms of clothes left.
+must_strip_losing=loss,The character has lost a round, and also has the fewest clothes left.
+stripping=strip,What the character says as they take their clothes off. The picture and text should be unique to what they're taking off.
+stripped=sad,What the character says just after they take their clothes off.
+
+#masturbation
+#these situations relate to when the character is masturbating
+#these only come up in the relevant stages, so you don't need to include the stage numbers here
+#just remember which stage is which when you make the images
+
+must_masturbate_first=loss,F-fine... it's not the most embarrassing thing I've had to do when I lose...
+must_masturbate=loss,F-fine... it's not the most embarrassing thing I've had to do when I lose...
+start_masturbating=starting,I'm only getting wet because I have to, not because I like you guys or anything...
+masturbating=horny,Mmmh... I-I'm feeling warm already... 
+heavy_masturbating=awkward,Haahh, ahhh... s-stop staring! 
+finishing_masturbating=finishing,Th-this is so humiliating.. a-and hot... Oh g- mph, ahh, ahh, I-I'm c-... ngh... I'm gonna- n-ngAAAAAAHHHHHH!!
+finished_masturbating=finished,Hah... ahh... m-my legs are numb... I came so hard...
+#I don't think this line is actually used by the game.
+game_over_defeat=calm,I think this is what the character says after they've lost.
+
+#situations where another male character is stripping
+male_human_must_strip=interested,Teeheehee! Strip, ~name~-sama! <3
+male_must_strip=interested,Teeheehee! Strip, ~name~-sama! <3
+
+male_removing_accessory=sad,You have to run out of tiny things to take off eventually.
+male_removed_accessory=calm,That's better, ~name~-sama. Keep losing and show me the rest. <3
+
+male_removing_minor=sad,You have to run out of tiny things to take off eventually.
+male_removed_minor=happy,That's better, ~name~-sama. Keep losing and show me the rest. <3
+
+male_removing_major=interested,Oh my, finally you have to take off something interesting!
+male_removed_major=interested,horny,Your underwear is nice, ~name~-sama, but you don't need it either.
+
+male_chest_will_be_visible=interested,Hahaha! Now, no covering up, ~name~-sama; I want to see my rewards. <3
+male_chest_is_visible=interested,I see a blush, ~name~-sama~ I thought guys didn't mind being shirtless.
+
+#male crotches have different sizes, allowing your character to have different responses
+male_crotch_will_be_visible=horny,Hahaha! Now, no covering up, ~name~-sama; I want to see my rewards. <3
+male_small_crotch_is_visible=calm,Tha-- ahahahahaha! Is that as big as it gets?!
+male_medium_crotch_is_visible=horny,All naked for me, ~name~-sama.~ This is how I prefer men anyway... naked, hard and blushing! 
+male_large_crotch_is_visible=shocked,W... well, I've seen bigger, but clearly you're more excited than I am!
+
+#male masturbation default
+male_must_masturbate=horny,Well, you're the one that got all hard seeing me dressed like this. Jerk off, loser-sama!
+male_start_masturbating=awkward, ... Fine, you can stare at me while you do...
+male_masturbating=horny,I didn't say you could slow down, loser-sama!
+male_finished_masturbating=happy,Hahahaha! Look how much it shot out! Clean yourself off and sit with that thing on display while I enjoy my prize. <3
+
+#female stripping default
+#these are mostly the same as the female stripping cases, but the female's size refers to their chest rather than their crotch.
+female_human_must_strip=interested,Teeheehee! Strip, ~name~-sama! <3
+female_must_strip=interested,Teeheehee! Strip, ~name~-sama! <3
+
+female_removing_accessory=sad,You have to run out of tiny things to take off eventually.
+female_removed_accessory=calm,That's better, ~name~-sama. Keep losing and show me the rest. <3
+
+female_removing_minor=sad,You have to run out of tiny things to take off eventually.
+female_removed_minor=happy,That's better, ~name~-sama. Keep losing and show me the rest. <3
+
+female_removing_major=interested,Oh my, finally you have to take off something interesting!
+female_removed_major=horny,Your underwear is nice, ~name~-sama, but you don't need it either.
+
+female_chest_will_be_visible=horny,Hahaha! Now, no covering up, ~name~-sama; I want to see my rewards. <3
+female_small_chest_is_visible=interested,Aww, what cute little tits~ Now I wonder, are you cold, or turned on by stripping in front of others? <3
+female_medium_chest_is_visible=horny,All nice and topless for me... now I wonder, are you cold, or turned on by stripping in front of others? <3
+female_large_chest_is_visible=shocked,Mine are still bigger! Now I wonder, are you cold, or turned on by stripping in front of others? <3
+
+female_crotch_will_be_visible=horny,Hahaha! Now, no covering up, ~name~-sama; I want to see my rewards. <3
+female_crotch_is_visible=horny,You're all naked, ~name~-sama~ I said no covering up... uh oh, I guess the answer to my question was "turned on". <3
+
+#female masturbation default
+female_must_masturbate=horny,You know what the punishment for losing is, ~name~-sama. Rub it for me, loser-sama!
+female_start_masturbating=awkward, ... Fine, you can stare at me while you do...
+female_masturbating=horny,No holding back, loser-sama! I can hear you panting.
+female_finished_masturbating=happy,Good girl, loser-sama. You get to sit there naked and sticky with your legs spread, while I enjoy my winnings. <3
+
+
+#These responses are stage specific.
+#Refer to the above entries to see what sort of situations these refer to, and what the default images are.
+#Each situation has been repeated enough for the maximum eight items of clothing.
+#If your character has fewer items, delete the extra entries.
+#if you don't include a stage-specific entry for a situation, the script will use the default response as defined above.
+
+
+#character is stripping situations
+#losing shoes
+0-must_strip_winning=loss,What? I... I lost?
+0-must_strip_normal=loss,What? I... I lost?
+0-must_strip_losing=loss,What? I... I lost?
+0-stripping=strip,My ribbons stay on unless the Webmaster says, so I guess I'll take off my shoes.
+1-stripped=stripped,Hrrmm.
+
+#losing gloves
+1-must_strip_winning=loss,What?! Not again...
+1-must_strip_normal=loss,What?! Not again...
+1-must_strip_losing=loss,What?! Not again...
+1-stripping=strip,Ugh... fine, I'll take off my gloves.
+2-stripped=stripped,Hope you're happy.
+
+#losing stockings
+2-must_strip_winning=loss,Really? Aww...
+2-must_strip_normal=loss,Really? Aww...
+2-must_strip_losing=loss,Really? Aww...
+2-stripping=strip,Mph. Okay, I'll take off my stockings. 
+3-stripped=stripped,Nobody touch them, they're expensive and I don't want them torn.
+
+#losing top
+3-must_strip_winning=loss,N-nooo! I wasn't supposed to lose again.
+3-must_strip_normal=loss,N-nooo! I wasn't supposed to lose again.
+3-must_strip_losing=loss,N-nooo! I wasn't supposed to lose again.
+3-stripping=strip,I... I'm not giving up! I'll take off my top...
+4-stripped=stripped,At least I brought a nice bra.
+
+#losing skirt
+4-must_strip_winning=loss,You... you stupid cards! Stop making me lose!
+4-must_strip_normal=loss,You... you stupid cards! Stop making me lose!
+4-must_strip_losing=loss,You... you stupid cards! Stop making me lose!
+4-stripping=strip,I... f-fine! I'll take off my skirt...
+5-stripped=stripped,I can see you staring at me.
+
+#losing bra
+5-must_strip_winning=loss,Noooo! I'm already down to my underwear!
+5-must_strip_normal=loss,Noooo! I'm already down to my underwear!
+5-must_strip_losing=loss,Noooo! I'm already down to my underwear!
+5-stripping=strip,I guess I... I'll take off my bra...
+6-stripped=stripped,Hahaha! You're not seeing them yet! ... What? It's against the rules? Fine, I'll take them off.
+
+#losing panties
+6-must_strip_winning=loss,T-this isn't possible! I play better than this! Stupid AI programming!
+6-must_strip_normal=loss,T-this isn't possible! I play better than this! Stupid AI programming!
+6-must_strip_losing=loss,T-this isn't possible! I play better than this! Stupid AI programming!
+6-stripping=strip,W-well... I did lose, and rules are rules... 
+7-stripped=stripped,So you better appreciate this.
