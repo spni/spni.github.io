@@ -30,7 +30,7 @@ description=Rosalina from Super Mario Galaxy
 clothes=Shoes,shoes,extra,other
 clothes=Crown,crown,extra,other
 clothes=Dress,dress,major,upper
-clothes=Stockings,stockings,extra,lower
+clothes=Stockings,stockings,minor,lower
 clothes=Bra,bra,important,upper
 clothes=Panties,panties,important,lower
 
@@ -73,13 +73,13 @@ male_human_must_strip=,Oh ho, what are you going to remove, ~name~?
 male_must_strip=,Oh ho, what are you going to remove, ~name~?
 
 male_removing_accessory=,No shame in taking things slowly, ~name~.
-male_removed_accessory=,No shame in losing the small stuff, ~name~.
+male_removed_accessory=,No shame in losing the small things, ~name~.
 male_removed_accessory=,Well, that's no fun.
 
 male_removing_minor=,Oh, you're ~clothing~? Huh? An interesting choice.
 male_removing_minor=,Removing your ~clothing~? At least it's something.
 male_removing_minor=,Slowly but surely, ~name~.
-male_removed_minor=,~name~ losing some small stuff now.
+male_removed_minor=,~name~ losing something small now.
 
 male_removing_major=,Ooh, ~name~ is losing the big articles now.
 male_removed_major=,Looking good, ~name~.
@@ -105,7 +105,7 @@ male_finished_masturbating=shocked,Oh, there he goes.
 female_human_must_strip=,What are you going to take off, ~name~?
 female_must_strip=,What shall it be, ~name~?
 
-female_removing_accessory=,Losing the small stuff, huh ~name~?
+female_removing_accessory=,Losing something small, huh ~name~?
 female_removed_accessory=,No pressure, ~name~.
 
 female_removing_minor=,Starting to get comfortable, ~name~?
@@ -152,7 +152,7 @@ female_finished_masturbating=horny,That was a lovely show, ~name~.
 1-must_strip_normal=,Oh well.
 1-must_strip_losing=,Not me again?
 1-stripping=,I suppose my ~clothing~ can go next. I'd say its valuable enough to count.
-2-stripped=sad,Uhm...please don't steal my crown...
+2-stripped=sad,Uhm... please don't steal my crown...
 
 #losing dress
 2-must_strip_winning=,Oh well. It had to be my turn sooner or later.
@@ -173,7 +173,7 @@ female_finished_masturbating=horny,That was a lovely show, ~name~.
 4-must_strip_normal=,Ah... Boy.
 4-must_strip_losing=,What? But... I'm already so far behind you guys.
 4-stripping=,I guess my ~clothing~ has to go, huh...
-5-stripped=sad,This...This is so very embarassing.
+5-stripped=sad,This... This is so very embarassing.
 5-stripped=5-stripped,I hope you like them.
 
 #losing panties
@@ -187,12 +187,10 @@ female_finished_masturbating=horny,That was a lovely show, ~name~.
 
 #masturbation
 must_masturbate=,I suppose I have to start touching myself now, huh...
-must_masturbate=,I'm out? It's my turn to play tihe myself...
+must_masturbate=,I'm out? It's my turn to play with myself...
 must_masturbate_first=,I'm the first one out? Well, here I go...
-start_masturbating=,Don't... Don't stare too much, ok?
 start_masturbating=,Here's how I do it...
 start_masturbating=,Please, enjoy this...
-masturbating=,Do... Do I have to do this?
 masturbating=,Mmmm.... This is fun.
 masturbating=,Ohhhh...
 masturbating=,Mmmf... do you like this?
@@ -243,7 +241,7 @@ game_over_defeat=,Congratulations, ~name~!
 6-bad_hand=,Oh... Oh no...
 6-bad_hand=,This is bad.
 
-##othery player must strip specific
+##other player must strip specific
 #fully clothed
 0-male_human_must_strip=,Oh ho, what are you going to remove, ~name~?
 0-male_must_strip=,Oh ho, what are you going to remove, ~name~?
@@ -301,8 +299,8 @@ game_over_defeat=,Congratulations, ~name~!
 ##removing accessories
 #fully clothed
 0-male_removing_accessory=calm,No shame in taking things slowly, ~name~.
-0-male_removed_accessory=calm,No shame in losing the small stuff, ~name~.
-0-female_removing_accessory=calm,Losing the small stuff, huh ~name~?
+0-male_removed_accessory=calm,No shame in losing your small things, ~name~.
+0-female_removing_accessory=calm,Just that, ~name~?
 0-female_removed_accessory=calm,No pressure, ~name~.
 
 #lost shoes
@@ -314,7 +312,7 @@ game_over_defeat=,Congratulations, ~name~!
 #lost crown
 2-male_removing_accessory=calm,No shame in taking it at your own pace, ~name~.
 2-male_removed_accessory=calm,Perhaps something larger next time, ~name~?
-2-female_removing_accessory=calm,Just the ~clothing~ ~name~? Well, no shame in losing the small stuff.
+2-female_removing_accessory=calm,Just the ~clothing~ ~name~? Well, no shame in losing small things.
 2-female_removed_accessory=calm,Perhaps something larger next time, ~name~?
 
 #lost dress
@@ -399,7 +397,7 @@ game_over_defeat=,Congratulations, ~name~!
 
 #masturbating
 7-male_removing_minor=,I guess that's something at least. Not a shirt but good enough...
-7-male_removed_minor=,You still have small stuff on? Oh man....
+7-male_removed_minor=,You still have small things on? Oh man....
 7-female_removing_minor=,Don't you have something more interesting to remove?
 7-female_removed_minor=,Show me something pretty...
 
@@ -439,7 +437,7 @@ game_over_defeat=,Congratulations, ~name~!
 4-male_removing_major=interested,Ah, getting ~name~ out of something big for once.
 4-male_removed_major=happy,Much better now, ~name~?
 4-female_removing_major=interested,All right, ~name~. Now we're getting somewhere.
-4-female_removed_major=happy, Much better, isn't it?
+4-female_removed_major=happy,Much better, isn't it?
 
 #lost bra
 5-male_removing_major=interested,Finally, getting something big out of the way.
@@ -462,7 +460,7 @@ game_over_defeat=,Congratulations, ~name~!
 #finished
 8-male_removing_major=,Awful hot in here, huh ~name~? Hee hee.
 8-male_removed_major=,Mmm, you look nice.
-8-female_removing_major=,Yay, someone's losing some big stuff now!
+8-female_removing_major=,Yay, someone's losing some big clothing now!
 8-female_removed_major=,You're very pretty under there, ~name~.
 8-female_removed_major=,I like your underwear, ~name~.
 
@@ -475,7 +473,7 @@ game_over_defeat=,Congratulations, ~name~!
 0-male_medium_crotch_is_visible=,The game goes on.
 0-male_large_crotch_is_visible=,I... Uh... Oh my.
 
-0-female_chest_will_be_visible=,Another womans breasts...I probably shouldn't be this excited.
+0-female_chest_will_be_visible=,Another womans breasts... I probably shouldn't be this excited.
 0-female_small_chest_is_visible=,Those are very cute, ~name~.
 0-female_medium_chest_is_visible=,Ah, yes! Erm, I mean, very nice, ~name~
 0-female_large_chest_is_visible=,Goodness, they're big.
@@ -521,7 +519,7 @@ game_over_defeat=,Congratulations, ~name~!
 3-male_large_crotch_is_visible=,That's larger than most.
 
 3-female_chest_will_be_visible=,Let's go, ~name~. Time for your to bare yourself.
-3-female_small_chest_is_visible=,oh, they're so cute, ~name~.
+3-female_small_chest_is_visible=,Oh, they're so cute, ~name~.
 3-female_medium_chest_is_visible=,Yes, ~name~, that's a good looking chest.
 3-female_large_chest_is_visible=,Wow, so very busty, ~name~. I'm honestly impressed.
 3-female_crotch_will_be_visible=,Hmm... Another girl's vagina...
@@ -575,10 +573,10 @@ game_over_defeat=,Congratulations, ~name~!
 #masturbating
 7-male_chest_will_be_visible=,Yes, ~name~. I want to see your chest!
 7-male_chest_is_visible=,Yes, yes, yes...
-7-male_crotch_will_be_visible=,Yes...Something I can touch myself to...
+7-male_crotch_will_be_visible=,Yes... Something I can touch myself to...
 7-male_small_crotch_is_visible=happy,It's adorable!
 7-male_medium_crotch_is_visible=,Mmm, yes, ~name~. I like it. I like it very much.
-7-male_large_crotch_is_visible=,Oh my...That thing would ruin me...
+7-male_large_crotch_is_visible=,Oh my... That thing would ruin me...
 
 7-female_chest_will_be_visible=,Mmm, yes. I need to see those, ~name~!
 7-female_small_chest_is_visible=,Mmm... very cute, ~name~.
@@ -742,4 +740,4 @@ game_over_defeat=,Congratulations, ~name~!
 8-female_masturbating=,May I help you along, ~name~?
 8-female_masturbating=,You're so nice like that, ~name~.
 8-female_finished_masturbating=,Mmm, you look very cute when you cum, ~name~.
-8-female_finished_masturbating=,Why don't I clean you up, ~name~... I won't even use my hands...
+8-female_finished_masturbating=,Why don't I clean you up, ~name~... I don't have to use my hands...
