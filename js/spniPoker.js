@@ -544,7 +544,7 @@ function determineHand (player) {
 			} else if (cardRanks[i] > 1) {
 				/* can't have a straight */
 				break;
-			} else if (sequence > 0) {
+			} else if (sequence > 0 && i != 1) {
 				/* can't have a straight */
 				break;
 			}
