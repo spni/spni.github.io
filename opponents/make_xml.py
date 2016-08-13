@@ -330,10 +330,14 @@ def make_meta_xml(data, filename):
 	values = ["first","last","label","pic","gender","height","from","writer","artist","description"]
 	
 	for value in values:
+		content = ""
+		if value in data:
+			content = data[value]
 		if value == "pic":
-			ET.SubElement(o, value).text = data[value] + ".png"
-		else:
-			ET.SubElement(o, value).text = data[value]
+			if content == "":
+				content = "0-calm"
+			content += ".png"
+		ET.SubElement(o, value).text = content
 		
 	#ET.ElementTree(o).write(filename, xml_declaration=True)
 	
@@ -350,7 +354,11 @@ def make_xml(player_filename, out_filename, meta_filename=None):
 #make the xml files using the given arguments
 #python make_xml <character data file> <behaviour.xml output file> <meta.xml output file>
 if __name__ == "__main__":
+	behaviour_name = "behaviour.xml"
+	meta_name = "meta.xml"
+	if len(sys.argv) > 2:
+		behaviour_name = sys.argv[2]
 	if len(sys.argv) > 3:
-		make_xml(sys.argv[1], sys.argv[2], sys.argv[3])
-	else:
-		make_xml(sys.argv[1], sys.argv[2])
+		meta_name = sys.argv[3]
+		
+	make_xml(sys.argv[1], behaviour_name, meta_name)
