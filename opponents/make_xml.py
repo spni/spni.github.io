@@ -1,4 +1,6 @@
 import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 import xml.etree.ElementTree as ET
 import xml.dom.minidom as minidom
 
@@ -269,7 +271,14 @@ def read_player_file(filename):
 		
 		if len(line) <= 0 or line[0]=='#': #use # as a comment character, and skip empty lines
 			continue
+			
 		key, text = line.split("=", 1)
+		
+		stripped = text.strip()
+		
+		if stripped == "" or stripped == ",":
+			#if there's no entry, skip it.
+			continue
 		
 		#if the key contains a -, it belongs to a specific stage
 		if '-' in key:
