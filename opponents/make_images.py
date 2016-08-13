@@ -133,6 +133,10 @@ def read_image_data(filename):
 def make_images(image_data_file, output_directory):
 	image_data_list = read_image_data(image_data_file)
 	create_images(image_data_list, output_directory)
-	
+
+#python make_images.xml <character_image_file.txt> <output_directory>
 if __name__ == "__main__":
-	make_images(sys.argv[1], sys.argv[2])
+	output_directory = "."
+	if len(sys.argv) > 2:
+		output_directory = sys.argv[2]
+	make_images(sys.argv[1], output_directory)
