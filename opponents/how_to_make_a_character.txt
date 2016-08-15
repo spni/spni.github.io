@@ -106,6 +106,7 @@ for example:
 will take a description of Rosalina, and save it to a file named 0-calm.png
 Don't include the .png extension in the descriptions, the script will add it.
 
+Some information about stages and actions: Certain pairs of actions occur one after the other, but in different stages. Most notably, the "strip" event occurs in the stage when they're still wearing the clothing in question, while "stripped" events occur in the next stage. For example, when a character removes their first piece of clothing, the events will be "0-strip" followed by "1-stripped". Likewise, The masturbation events are split across multiple stages. The "starting" event takes place in the character-is-naked stage, the masturbating, heavy masturbating, and finishing events occur in the masturbation stage, while the "finished" event occurs in the finished stage. This information will help you assign your images to the correct stages.
 
 In order to make the images, first start kkl.exe in the 1.1e_bundle\Autocutter\FlashProcessor directory inside the automatic kisekae 2 download. Make sure you don't have any menus open (especially the import and export menus), otherwise they'll show up in the images.
 
