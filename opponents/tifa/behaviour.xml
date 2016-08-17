@@ -1,0 +1,1392 @@
+<opponent>
+
+    <first>Tifa</first>
+    <last>Lockhart</last>
+    <label>Tifa</label>
+    <gender>female</gender>
+    <size>large</size>
+    <timer>18</timer>
+
+    <start>
+        <state img="0-calm.png">Hi, I'm Tifa! Let's make this a night to remember.</state>
+    </start>
+
+    <wardrobe>
+        <clothing lowercase="panties" position="lower" proper-name="Panties" type="important" />
+        <clothing lowercase="top" position="upper" proper-name="Top" type="important" />
+        <clothing lowercase="skirt" position="lower" proper-name="Skirt" type="major" />
+        <clothing lowercase="belt" position="other" proper-name="Belt" type="extra" />
+        <clothing lowercase="gloves" position="other" proper-name="Gloves" type="minor" />
+        <clothing lowercase="shoes" position="other" proper-name="Shoes" type="extra" />
+    </wardrobe>
+
+    <behaviour>
+        <stage id="0">
+            <case tag="female_must_strip">
+                <state img="0-interested.png">You lost, ~name~. Time to take it off.</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="0-interested.png">Tonight hasn't been good for you...</state>
+            </case>
+            <case tag="stripped">
+                <state img="0-sad.png">This is so embarrassing.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="0-loss.png">I have to take if off already?</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="0-happy.png">Yes, I love those!</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="0-horny.png">Mmm... you know what happens if you keep losing, right? I'm thinking about it already...</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="0-sad.png">Oh no...</state>
+                <state img="0-sad.png">These are bad.</state>
+                <state img="0-sad.png">How could I get these cards?</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="0-shocked.png">But there was no way you could keep that surprise to yourself.</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="0-loss.png">Me first?</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="0-happy.png">Don't be shy, ~name~.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="0-happy.png">This is a good hand.</state>
+                <state img="0-happy.png">Oh, these are nice.</state>
+                <state img="0-happy.png">Awesome!</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="0-calm.png">So does everyone.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="0-calm.png">But I know you've got something good under there waiting for us.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="0-interested.png">Oh, it hasn't been a good night for you, has it ~name~?</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="0-calm.png">I suppose I had to take something off eventually.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="0-calm.png">So does everyone.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="0-horny.png">Just think about that choices that lead you to this moment. And about getting yourself off, that's pretty fun, too.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="0-interested.png">You lost, ~name~. Time to take it off.</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="0-horny.png">Your little kitten is something to be proud of.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="0-horny.png">But it's been sooo good for us.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="0-interested.png">Finally, let's see what you have under there.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="0-calm.png">But I know you've got something good under there waiting for us.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="0-interested.png">Yeah, that's more like it!</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="0-shocked.png">My, I know how those feel...</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="0-calm.png">May I have ~cards~ cards?</state>
+                <state img="0-calm.png">I'll take ~cards~.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="0-happy.png">But we're not complaining.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="0-calm.png">Starting with the small things?</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="0-interested.png">So, what are you taking off, ~name~?</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="0-interested.png">Oh, it hasn't been a good night for you, has it dear?</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="0-interested.png">So, what are you taking off, ~name~?</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="0-happy.png">Oh, but your little friend seems happy enough.</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="0-calm.png">Everyone starts with their small pieces.</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="0-calm.png">These cards are alright.</state>
+                <state img="0-calm.png">I have an average hand.</state>
+                <state img="0-calm.png">These are OK, I guess.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="0-interested.png">Oh dear, you've had a bad night, haven't you?</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="0-horny.png">But it's been sooo good for us...</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="0-interested.png">You should see how good you look like that, ~name~.</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="0-horny.png">Oh, I wish I had a pair like those...</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="0-calm.png">Everyone starts with their small pieces.</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="0-happy.png">I WON!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="0-interested.png">Oh, this will be good.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="0-calm.png">Starting with the small things?</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="0-shocked.png">What? Done already? You should have to do it again, you'll get bored waiting, otherwise.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="0-interested.png">Oh dear, you lost again...</state>
+                <state img="0-interested.png">What a shame, you have to show yourself already...</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="0-horny.png">Just think about that choices that lead you to this moment. And about getting yourself off, that's pretty fun, too.</state>
+            </case>
+            <case tag="stripping">
+                <state img="0-strip.png">I'm starting with my ~clothing~.</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="0-shocked.png">What? Done already? You should have to do it again, you're supposed to keep us entertained.</state>
+            </case>
+        </stage>
+
+        <stage id="1">
+            <case tag="female_must_strip">
+                <state img="1-interested.png">So, what'll it be, ~name~?</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="1-interested.png">Come on, take it off...</state>
+            </case>
+            <case tag="stripped">
+                <state img="1-stripped.png">Sorry to disappoint you.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="1-loss.png">Aw, I lost again?</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="1-happy.png">Oh, but it's been good for us...</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="1-horny.png">A good time, it seems.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="1-sad.png">Oh no...</state>
+                <state img="1-sad.png">These are bad.</state>
+                <state img="1-sad.png">How could I get these cards?</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="1-shocked.png">Are you sure that's not enhanced?</state>
+                <state img="1-shocked.png">Did you socket some materia in there?</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="1-loss.png">What? Already?</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="1-interested.png">It's time for you to show us...</state>
+            </case>
+            <case tag="good_hand">
+                <state img="1-happy.png">This is a good hand.</state>
+                <state img="1-happy.png">Oh, these are nice.</state>
+                <state img="1-happy.png">Awesome!</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="1-calm.png">Every game starts this way.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="1-calm.png">It's what most people would do in your situation.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="1-interested.png">You lost again?</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="1-calm.png">Well, you guys are still more naked than I am.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="1-calm.png">Every game starts this way.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="1-horny.png">Just stroke slowly and gently, where we can see it.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="1-interested.png">So, what'll it be, ~name~?</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="1-horny.png">Mmm... I could play with that.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="1-horny.png">Such a shame. For you, I mean.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="1-interested.png">Already taking off your ~clothing~?</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="1-calm.png">It's what most people would do in your situation.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="1-happy.png">That's so nice of you.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="1-shocked.png">Wow. If you need some help with those, just let me know.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="1-calm.png">May I have ~cards~ cards?</state>
+                <state img="1-calm.png">I'll take ~cards~.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="1-happy.png">Yeah, that's more like it.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="1-calm.png">Only taking off your ~clothing~?</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="1-interested.png">So, what'll it be, ~name~?</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="1-interested.png">You lost again?</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="1-interested.png">So, what'll it be, ~name~?</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="1-happy.png">He looks like he makes you happy.</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="1-calm.png">Only losing your ~clothing~?</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="1-calm.png">These cards are alright.</state>
+                <state img="1-calm.png">I have an average hand.</state>
+                <state img="1-calm.png">These are OK, I guess.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="1-interested.png">So what have you got downstairs?</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="1-horny.png">Such a shame. For you, I mean.</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="1-happy.png">That's so nice of you.</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="1-horny.png">But we can still have some fun...</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="1-calm.png">Only losing your ~clothing~?</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="1-happy.png">I WON!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="1-interested.png">Already taking off your ~clothing~?</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="1-calm.png">Only taking off your ~clothing~?</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="1-shocked.png">Aw, you finished so soon? Now what am I going to watch?</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="1-interested.png">It hasn't been your night, has it?</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="1-horny.png">Just back and forth, where we can see it.</state>
+            </case>
+            <case tag="stripping">
+                <state img="1-strip.png">Now it's time to take my ~clothing~ off.</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="1-shocked.png">Ah! You're done? Feel like doing it again, for fun?</state>
+            </case>
+        </stage>
+
+        <stage id="2">
+            <case tag="female_must_strip">
+                <state img="2-interested.png">Hah! You have to take something off for us, ~name~.</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="2-interested.png">Come on, ~name~, show us some beef!</state>
+            </case>
+            <case tag="stripped">
+                <state img="2-stripped.png">Still nothing special.</state>
+                <state img="2-stripped.png">Don't touch the materia in there.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="2-loss.png">Argh! My turn again?</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="2-happy.png">Doesn't that feel better?</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="2-horny.png">He looks like a mouthful.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="2-sad.png">Oh no...</state>
+                <state img="2-sad.png">These are bad.</state>
+                <state img="2-sad.png">How could I get these cards?</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="2-shocked.png">Is.. uh... that thing naturally that big?</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="2-loss.png">Oh, come on! How can I be losing again?</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="2-interested.png">You've got something to show us, ~name~.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="2-happy.png">This is a good hand.</state>
+                <state img="2-happy.png">Oh, these are nice.</state>
+                <state img="2-happy.png">Awesome!</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="2-calm.png">Come on, lets keep playing so ~name~ can take something good off.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="2-calm.png">They can't protect you forever.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="2-interested.png">What's this? You're out of clothes to give? You know what that means...</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="2-loss.png">I'm still winning, but I'm getting close to having to show something important.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="2-calm.png">Come on, lets keep playing so ~name~ can take something good off.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="2-horny.png">Enjoying yourself?</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="2-interested.png">Hah! You have to take something off for us, ~name~.</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="2-horny.png">And it's a very lovely something, indeed. I can't wait to see you put it to use.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="2-horny.png">You can still show us your best side.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="2-interested.png">Hey, we got ~name~ out of their ~clothing~!</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="2-calm.png">They can't protect you forever.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="2-happy.png">You should do that more often.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="2-shocked.png">Hey, those might be even bigger than mine.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="2-calm.png">May I have ~cards~ cards?</state>
+                <state img="2-calm.png">I'll take ~cards~.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="2-happy.png">Looking good, there.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="2-calm.png">Removing your ~clothing~?</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="2-interested.png">Hah! You have to take something off for us, ~name~.</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="2-interested.png">What's this? You're out of clothes to give? You know what that means...</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="2-interested.png">Hah! You have to take something off for us, ~name~.</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="2-happy.png">That's a tasty snack you've got there.</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="2-calm.png">Still just your small things?</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="2-calm.png">These cards are alright.</state>
+                <state img="2-calm.png">I have an average hand.</state>
+                <state img="2-calm.png">These are OK, I guess.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="2-interested.png">Your end is nigh, ~name~. Take it off.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="2-horny.png">You can still show us your best side.</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="2-happy.png">You should do that more often.</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="2-horny.png">Hold your girls out proudly.</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="2-calm.png">Still just your small things?</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="2-happy.png">I WON!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="2-interested.png">Hey, we got ~name~ out of their ~clothing~!</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="2-calm.png">Removing your ~clothing~?</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="2-horny.png">Already done? If you want to go again, don't let me stop you.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="2-interested.png">Yes, take it off.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="2-horny.png">Enjoying yourself?</state>
+            </case>
+            <case tag="stripping">
+                <state img="2-strip.png">I'm taking off my ~clothing~.</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="2-horny.png">Already done? If you want to go again, don't let me stop you.</state>
+            </case>
+        </stage>
+
+        <stage id="3">
+            <case tag="female_must_strip">
+                <state img="3-interested.png">Guess who's turn it is?</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="3-interested.png">Yes, take it off for us, baby.</state>
+            </case>
+            <case tag="stripped">
+                <state img="3-stripped.png">I don't have much left.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="3-loss.png">Now I'm really losing.</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="3-happy.png">Yeah, jiggle them around like that!</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="3-horny.png">Ooh, he's ready to play...</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="3-sad.png">Oh no...</state>
+                <state img="3-sad.png">These are bad.</state>
+                <state img="3-sad.png">How could I get these cards?</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="3-shocked.png">Well... Hello to you too, fella.</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="3-loss.png">How can I still be losing?</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="3-horny.png">Let's see your secret place...</state>
+            </case>
+            <case tag="good_hand">
+                <state img="3-happy.png">This is a good hand.</state>
+                <state img="3-happy.png">Oh, these are nice.</state>
+                <state img="3-happy.png">Awesome!</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="3-calm.png">You can do better than that.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="3-sad.png">I'm sure you have something better than that.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="3-interested.png">So you don't have any more clothes to take off...</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="3-loss.png">I guess I'm not the first to show some skin.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="3-calm.png">You can do better than that.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="3-horny.png">Having fun there?</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="3-interested.png">Guess who's turn it is?</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="3-shocked.png">Oh, it's everything I could have imagined...</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="3-horny.png">Time to put on a show.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="3-interested.png">Yeah, time for some good stuff to come off!</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="3-sad.png">I'm sure you have something better than that.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="3-happy.png">You look great like that, ~name~.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="3-shocked.png">Oh, they bounce every time you move!</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="3-calm.png">May I have ~cards~ cards?</state>
+                <state img="3-calm.png">I'll take ~cards~.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="3-happy.png">Yeah, pose for us!</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="3-calm.png">What's that ~name~? You're taking off your ~clothing~?</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="3-interested.png">Guess who's turn it is?</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="3-interested.png">So you don't have any more clothes to take off...</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="3-interested.png">Guess who's turn it is?</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="3-happy.png">And how are you today, down there?</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="3-sad.png">Aw, that's disappointing.</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="3-calm.png">These cards are alright.</state>
+                <state img="3-calm.png">I have an average hand.</state>
+                <state img="3-calm.png">These are OK, I guess.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="3-interested.png">Going to introduce us to your little friend?</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="3-horny.png">Time to put on a show.</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="3-happy.png">You look great like that, ~name~.</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="3-horny.png">Ooh, I bet they're a handful...</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="3-sad.png">Aw, that's disappointing.</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="3-happy.png">I WON!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="3-interested.png">Yeah, time for some good stuff to come off!</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="3-calm.png">What's that ~name~? You're taking off your ~clothing~?</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="3-shocked.png">Oh, you've made a mess. But that's how you know you've been having fun.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="3-interested.png">Yes, put on a show for us!</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="3-horny.png">Having fun there?</state>
+            </case>
+            <case tag="stripping">
+                <state img="3-strip.png">I have to take off my ~clothing~.</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="3-shocked.png">Wow... I hope you're going to clean all of that up.</state>
+            </case>
+        </stage>
+
+        <stage id="4">
+            <case tag="female_must_strip">
+                <state img="4-interested.png">Mmm, it's your turn, ~name~.</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="4-interested.png">Yeah, let's see it.</state>
+            </case>
+            <case tag="stripped">
+                <state img="4-stripped.png">Any more and I'll have to show some skin.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="4-loss.png">No! I lost?</state>
+                <state img="4-loss.png">I'm not the one who's supposed to be getting naked...</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="4-happy.png">Not that those are anything to be ashamed of.</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="4-horny.png">A proper meat stick.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="4-sad.png">These aren't any good. Hey, don't look at my chest like that.</state>
+                <state img="4-sad.png">I'm already half naked, you could give me some better cards.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="4-shocked.png">Wow... that's certainly a package.</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="4-loss.png">What? I lost? But you're all still clothed...</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="4-horny.png">Hey, guess what we get to see?</state>
+            </case>
+            <case tag="good_hand">
+                <state img="4-happy.png">Hah! The girls are staying put for now.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="4-sad.png">That's no fun.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="4-sad.png">I wish I still had something that small to take off.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="4-interested.png">Time to show us how you work it, ~name~.</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="4-loss.png">Come on, I've almost won.</state>
+                <state img="4-loss.png">At least I'm not the first to bare something.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="4-sad.png">That's no fun.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="4-horny.png">Do this a lot?</state>
+                <state img="4-horny.png">Thinking about what I'll take off next?</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="4-interested.png">Mmm, it's your turn, ~name~.</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="4-happy.png">Your little kitty is precious.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="4-horny.png">I hope your comfortable. I know I am.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="4-interested.png">Hey, you're taking something good off...</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="4-sad.png">I wish I still had something that small to take off.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="4-horny.png">Mmm... I could stare at you for a while.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="4-shocked.png">Well, I guess the crowd will have someone else to stare at tonight.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="4-calm.png">May I have ~cards~ cards?</state>
+                <state img="4-calm.png">I'll take ~cards~.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="4-happy.png">Show it to the world.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="4-sad.png">Just your ~clothing~?</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="4-interested.png">Mmm, it's your turn, ~name~.</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="4-interested.png">Time to show us how it's done, ~name~.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="4-interested.png">Mmm, it's your turn, ~name~.</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="4-happy.png">A fun little toy.</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="4-sad.png">Is that it?</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="4-calm.png">I guess these might work.</state>
+                <state img="4-calm.png">I have to hope these are good enough... but my luck hasn't been the best tonight.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="4-interested.png">So what are you packing in there?</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="4-horny.png">I hope your comfortable. I know I am.</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="4-horny.png">Mmm... I could stare at you for a while.</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="4-horny.png">Those girls are worth staring at.</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="4-sad.png">Is that it?</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="4-happy.png">I WON!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="4-interested.png">Hey, you're taking something good off...</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="4-sad.png">Just your ~clothing~?</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="4-horny.png">Oh! Feeling better now that you got it all out?</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="4-interested.png">Better you than me, I guess.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="4-horny.png">Do this a lot?</state>
+                <state img="4-horny.png">Thinking about what I'll take off next?</state>
+            </case>
+            <case tag="stripping">
+                <state img="4-strip.png">So I... I have to take off my ~clothing~. I know you've been staring at them all night.</state>
+                <state img="4-strip.png">Well, you've been waiting all night for this. I've seen you staring at them.</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="4-horny.png">Oh! Feeling better now that you got it all out?</state>
+            </case>
+        </stage>
+
+        <stage id="5">
+            <case tag="female_must_strip">
+                <state img="5-interested.png">Oh yes, take it off for us!</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="5-interested.png">Now it's your turn to show your chest.</state>
+            </case>
+            <case tag="stripped">
+                <state img="5-stripped.png">And I don't expect that to change.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="5-loss.png">I can't be losing now!</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="5-happy.png">You must be so comfortable with those.</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="5-horny.png">Well, he's all ready to go.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="5-sad.png">These cards don't help.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="5-shocked.png">Oh wow... That thing could fit all the way between my boobs.</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="5-loss.png">No! How can I have lost again?</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="5-horny.png">Oh, let's see your prize...</state>
+            </case>
+            <case tag="good_hand">
+                <state img="5-happy.png">Hah! I'm not stripping down yet.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="5-sad.png">Hmph.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="5-sad.png">If I'm showing my boobs to the world, you could at least have the decency to give us something to look at.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="5-awkward.png">Well you picked a good round to lose.</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="5-loss.png">Well, I'm not out yet...</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="5-sad.png">Hmph.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="5-horny.png">Need something to look at?</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="5-interested.png">Oh yes, take it off for us!</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="5-shocked.png">Yes, that's a tasty morsel.</state>
+                <state img="5-happy.png">Don't worry, I'll likely be joining you soon.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="5-interested.png">At least I'm not the only one putting on a show.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="5-interested.png">Oh, taking off your ~clothing~?</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="5-sad.png">If I'm showing my boobs to the world, you could at least have the decency to give us something to look at.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="5-horny.png">Feels free with it off, doesn't it?</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="5-happy.png">Wow, you must be glad to get that off. Most clothes can be constricting for girls as big as us.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="5-calm.png">May I have ~cards~ cards?</state>
+                <state img="5-calm.png">I'll take ~cards~.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="5-happy.png">OK, let's all take a moment to appreciate that.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="5-sad.png">I'm standing like this and you've still got something so small to take off?</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="5-interested.png">Oh yes, take it off for us!</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="5-awkward.png">Well you picked a good round to lose.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="5-interested.png">Oh yes, take it off for us!</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="5-happy.png">A happy little friend...</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="5-sad.png">Is that all you're taking off?</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="5-calm.png">I... I hope these cards are enough.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="5-interested.png">Well, what have you got for us tonight?</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="5-interested.png">At least I'm not the only one putting on a show.</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="5-horny.png">Feels free with it off, doesn't it?</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="5-horny.png">Wow, ~name~, I bet everyone would want to get their hands on those globes.</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="5-sad.png">Is that all you're taking off?</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="5-happy.png">I WON!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="5-interested.png">Oh, taking off your ~clothing~?</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="5-sad.png">I'm standing like this and you've still got something so small to take off?</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="5-shocked.png">Do you always make such a mess? Or only when you have friends around?</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="5-happy.png">Haha! Yes, finally, another girl like me.</state>
+                <state img="5-happy.png">Come on, it's titty time.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="5-horny.png">Need something to look at?</state>
+            </case>
+            <case tag="stripping">
+                <state img="5-strip.png">I can't believe I'm doing this.</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="5-shocked.png">Do you always make such a mess? Or only when you have friends around?</state>
+            </case>
+        </stage>
+
+        <stage id="6">
+            <case tag="female_must_strip">
+                <state img="6-interested.png">Come on, get down to my level!</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="6-interested.png">Show us some skin!</state>
+            </case>
+            <case tag="stripped">
+                <state img="6-stripped.png">I thought I'd get to watch someone else tonight...</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="6-loss.png">No! How can it be my turn to...</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="6-happy.png">Ah! They're fun-sized. Can I have some fun with them?</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="6-horny.png">Well, that's a fine piece of meat.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="6-sad.png">Not these. How can I make it with these cards?</state>
+                <state img="6-sad.png">This hand? I'll have to...</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="6-shocked.png">Wow... Does... does that thing chafe?</state>
+                <state img="6-happy.png">Standing to attention? I can't blame you, after looking at a body like mine.</state>
+                <state img="6-shocked.png">Wow... That's quite a trouser serpent you're packing there.</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="6-loss.png">What! Again? How can it be my turn again?</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="6-interested.png">Don't worry, it's not so bad.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="6-happy.png">Well, these should save me for now.</state>
+                <state img="6-happy.png">Yeah! I'm staying here at least a little bit longer.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="6-sad.png">That's not fair.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="6-sad.png">How come you have something so small left to take off.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="6-awkward.png">Better you than me, I guess...</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="6-loss.png">Arrgh! Well, I'm certainly not the least dressed here.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="6-sad.png">That's not fair.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="6-horny.png">Oh, I can tell you're enjoying the sights.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="6-interested.png">Come on, get down to my level!</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="6-happy.png">Oh, you look a bit wet down there. Been checking me out, have you?</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="6-interested.png">At least you have some inspiration at hand.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="6-interested.png">It's about time you took off something big.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="6-sad.png">How come you have something so small left to take off.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="6-horny.png">That's something to appreciate.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="6-happy.png">Oh, I'd like to take a nap on those pillows.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="6-calm.png">May I have ~cards~ cards?</state>
+                <state img="6-calm.png">I'll take ~cards~.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="6-happy.png">Yeah, just a bit more.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="6-sad.png">You've still got your ~clothing~ left to take off?</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="6-interested.png">Come on, get down to my level!</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="6-awkward.png">Better you than me, I guess...</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="6-interested.png">Come on, get down to my level!</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="6-happy.png">Aw, that's a toy I could play with...</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="6-sad.png">Come on.</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="6-calm.png">I'm just have to hope that these cards are enough.</state>
+                <state img="6-calm.png">Please be enough...</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="6-interested.png">So... what did you bring to show and tell?</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="6-interested.png">At least you have some inspiration handy.</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="6-horny.png">That's something to appreciate.</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="6-horny.png">Oooh, I'd like to squeeze those.</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="6-sad.png">Come on.</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="6-happy.png">I WON!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="6-interested.png">It's about time you took off something big.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="6-sad.png">You've still got your ~clothing~ left to take off?</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="6-shocked.png">So... uh... we know you enjoyed yourself tonight.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="6-horny.png">Come on, tits out dear.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="6-horny.png">Oh, I can tell you're enjoying the sights.</state>
+            </case>
+            <case tag="stripping">
+                <state img="6-strip.png">Please don't stare...</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="6-shocked.png">So... uh... we know you enjoyed yourself tonight.</state>
+            </case>
+            <case tag="start_masturbating">
+                <state img="6-starting.png">Here I go...</state>
+            </case>
+            <case tag="must_masturbate">
+                <state img="6-loss.png">Wait, I'm out? I have do do it in front of... all of you?</state>
+            </case>
+            <case tag="must_masturbate_first">
+                <state img="6-loss.png">I... I have to do what?</state>
+            </case>
+        </stage>
+
+        <stage id="7">
+            <case tag="female_must_strip">
+                <state img="7-interested.png">Oh... Take it... Take it off...</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="7-interested.png">Give me something to work with.</state>
+            </case>
+            <case tag="stripped">
+                <state img="7-sad.png">This is so embarrassing.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="7-loss.png">No! How can it be my turn to...</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="7-horny.png">Can you hold them out for me, honey?</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="7-horny.png">Can I get a feel for him?</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="7-sad.png">Oh no...</state>
+                <state img="7-sad.png">These are bad.</state>
+                <state img="7-sad.png">How could I get these cards?</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="7-shocked.png">Wow... Wanna see if it'll fit through my... hah... my tits?</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="7-loss.png">What! Again? How can it be my turn again?</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="7-happy.png">Yes! Give me something to appreciate!</state>
+            </case>
+            <case tag="good_hand">
+                <state img="7-happy.png">This is a good hand.</state>
+                <state img="7-happy.png">Oh, these are nice.</state>
+                <state img="7-happy.png">Awesome!</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="7-sad.png">I can't get off on that...</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="7-sad.png">Not... hah... fair...</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="7-interested.png">Getting started for little ol' me? I must still have some luck left.</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="7-loss.png">Arrgh! Well, I'm certainly not the least dressed here.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="7-sad.png">I can't get off on that...</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="7-horny.png">I wanna I fist you. Uh, I mean assist you.</state>
+                <state img="7-horny.png">Ahh... I love the way way your boobs move as you work it...</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="7-interested.png">Oh... Take it... Take it off...</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="7-horny.png">Ah! Let me see it! Can you hold it open a bit?</state>
+                <state img="7-horny.png">Oh! Can you turn around, so we can see your butt as well?</state>
+                <state img="7-horny.png">Can I... Can I taste it?</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="7-horny.png">Just relax and think of someone pretty.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="7-interested.png">Oh... yeah... Take it off.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="7-sad.png">Not... hah... fair...</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="7-horny.png">Yeah... that's nice...</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="7-horny.png">Oh, I want to bury my face in those.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="7-calm.png">May I have ~cards~ cards?</state>
+                <state img="7-calm.png">I'll take ~cards~.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="7-happy.png">Yeah, that's alright.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="7-sad.png">What? You're only taking off your ~clothing~?</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="7-interested.png">Oh... Take it... Take it off...</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="7-interested.png">Uhhh, say, would it be okay with the rules if we got each other off?</state>
+                <state img="7-interested.png">Oh, you picked a good time to start.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="7-interested.png">Oh... Take it... Take it off...</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="7-happy.png">My, just hold it out where I can see it...</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="7-sad.png">Ohh... Just that?</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="7-calm.png">These cards are alright.</state>
+                <state img="7-calm.png">I have an average hand.</state>
+                <state img="7-calm.png">These are OK, I guess.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="7-happy.png">Oh yes, whip it out!</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="7-horny.png">Can I... ah... warm it up for you?</state>
+                <state img="7-horny.png">Need some help getting started?</state>
+                <state img="7-horny.png">Come on, show us how you get it up.</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="7-horny.png">Yeah... that's nice...</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="7-horny.png">Or can I use those for a hands-on demonstration?</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="7-sad.png">Ohh... Just that?</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="7-happy.png">I WON!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="7-interested.png">Oh... yeah... Take it off.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="7-sad.png">What? You're only taking off your ~clothing~?</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="7-happy.png">I'll always remember our time together.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="7-interested.png">Yeah... I could use a visual aid...</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="7-horny.png">Just think of all the places you could put that thing...</state>
+            </case>
+            <case tag="stripping">
+                <state img="7-strip.png">Please don't stare...</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="7-happy.png">Aw, done already? Now who am I going to watch?</state>
+            </case>
+            <case tag="masturbating">
+                <state img="7-calm.png">Ahh... This is so... Ah! Embarrassing...</state>
+                <state img="7-calm.png">Ohh... They're all watching me...</state>
+            </case>
+            <case tag="finishing_masturbating">
+                <state img="7-finishing.png">Ohh... Ahh... I'm CummMMIIINNNGG...</state>
+            </case>
+            <case tag="heavy_masturbating">
+                <state img="7-heavy.png">Hah! Mmmm...</state>
+            </case>
+        </stage>
+
+        <stage id="8">
+            <case tag="female_must_strip">
+                <state img="8-interested.png">Don't be shy, ~name~.</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="8-calm.png">Just take the shirt off.</state>
+            </case>
+            <case tag="stripped">
+                <state img="8-sad.png">This is so embarrassing.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="8-loss.png">No! How can it be my turn to...</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="8-horny.png">You should let those girls out for some fun, from time to time.</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="8-horny.png">I hope you'll get to show it off soon.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="8-sad.png">Oh no...</state>
+                <state img="8-sad.png">These are bad.</state>
+                <state img="8-sad.png">How could I get these cards?</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="8-shocked.png">You must be glad to have a chance to wave that big boy around in front of other people.</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="8-loss.png">What! Again? How can it be my turn again?</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="8-interested.png">Now you get to expose yourself. It's fun.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="8-happy.png">This is a good hand.</state>
+                <state img="8-happy.png">Oh, these are nice.</state>
+                <state img="8-happy.png">Awesome!</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="8-calm.png">If you've still got something as small as your ~clothing~ left.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="8-calm.png">How long have you been holding on to that?</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="8-interested.png">Finally! Better late than never.</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="8-loss.png">Arrgh! Well, I'm certainly not the least dressed here.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="8-calm.png">If you've still got something as small as your ~clothing~ left.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="8-horny.png">Good to know I'm not the only one who can put on a show.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="8-interested.png">Don't be shy, ~name~.</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="8-horny.png">Can I find out what you taste like?</state>
+                <state img="8-horny.png">Can you feel everyone watching you?</state>
+                <state img="8-horny.png">I can see you're already feeling excited...</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="8-horny.png">Come on, your turn for show and tell.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="8-interested.png">Better late than never, ~name~.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="8-calm.png">How long have you been holding on to that?</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="8-calm.png">It's only fair that you take your clothes off, as well.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="8-calm.png">Can I get a feel of those? I want to know if they're heavier than mine.</state>
+                <state img="8-calm.png">Come here, I want to see how our boobs compare.</state>
+                <state img="8-calm.png">Feels good, letting them all hang out.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="8-calm.png">May I have ~cards~ cards?</state>
+                <state img="8-calm.png">I'll take ~cards~.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="8-calm.png">We're long past the point where that's something big.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="8-calm.png">You've been having a good night, ~name~...</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="8-interested.png">Don't be shy, ~name~.</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="8-interested.png">Finally! Better late than never.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="8-interested.png">Don't be shy, ~name~.</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="8-happy.png">Take pride in your bits!</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="8-calm.png">You've still got your ~clothing~ left to take off?</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="8-calm.png">These cards are alright.</state>
+                <state img="8-calm.png">I have an average hand.</state>
+                <state img="8-calm.png">These are OK, I guess.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="8-interested.png">Well, it's about time.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="8-horny.png">Come on, your turn for show and tell.</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="8-calm.png">It's only fair that you take your clothes off, as well.</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="8-horny.png">Look at them, they deserve to be played with.</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="8-calm.png">You've still got your ~clothing~ left to take off?</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="8-happy.png">I WON!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="8-interested.png">Better late than never, ~name~.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="8-calm.png">You've been having a good night, ~name~...</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="8-happy.png">Haha! Doesn't it feel good, getting off like this?</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="8-interested.png">Better late than never.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="8-horny.png">Good to know I'm not the only one who can put on a show.</state>
+            </case>
+            <case tag="stripping">
+                <state img="8-strip.png">Please don't stare...</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="8-happy.png">Haha! Doesn't it feel good, getting off like this?</state>
+            </case>
+            <case tag="finished_masturbating">
+                <state img="8-finished.png">Oh... Wow... You all saw that...</state>
+            </case>
+            <case tag="game_over_defeat">
+                <state img="8-calm.png">Well, congratulations, ~name~.</state>
+            </case>
+        </stage>
+
+    </behaviour>
+
+</opponent>
