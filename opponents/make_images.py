@@ -69,6 +69,8 @@ def create_images(image_list, output_directory):
 	#this scene description removes the foreground crowd, removes the censorship icon, and sets appropriate zoom & screen position settings
 	scene_str = separator+"ua1.0.31.32_ub_uc8.0.30_ud7.3"
 	
+	crop_pixels = (0, 0, 600, 1400)
+	
 	#setup the scene before drawing the requested pictures
 	#this sets the character position, zoom level, distables interactivity, sets the zoom level and screen position, and removes censor icon
 	setup_scene = "33***bc185.500.0.0.1_ga0*0*0*0*0*0*0*0*0#/]ua1.0.0.0_ub_uc7.0.30_ud7.0"
@@ -83,9 +85,26 @@ def create_images(image_list, output_directory):
 		data_filename = kkl_basename + ".txt"
 		image_kkl_filename = kkl_basename +"..png"
 		
+		#user can set their own crop values, for easier centering of images
+		#should have a format of:
+		#crop_pixels=0, 0, 600, 1400
+		#or
+		#crop_pixels=0,0
+		#to have the other sizes set to automatically produce a 600x1400 pixel image
+		#note that these values can go off the side of the screen
+		if image_filename == "crop_pixels":
+			parts = image_data.split(",")
+			new_pixels = [int(part.strip()) for part in parts]
+			if len(parts) < 3:
+				new_pixels.append(new_pixels[0]+600)
+			if len(parts) < 4:
+				new_pixels.append(new_pixels[1]+1400)
+			crop_pixels = tuple(new_pixels)
+			#print "new crop pixels:",crop_pixels
+			continue
 		
 		#ensure that the correct version string is used
-		if not starts_with_version_string(single_version):
+		if not starts_with_version_string(image_data):
 			#assume that no version data is available
 			image_data = single_version + image_data
 		
@@ -107,7 +126,7 @@ def create_images(image_list, output_directory):
 		image = open_image_file(image_kkl_filename)
 		
 		#crop the image, and save it to the specified output directory
-		cropped_image = image.crop( (0, 0, 600, 1400) ) #crop to the size used by the game
+		cropped_image = image.crop( crop_pixels ) #crop to the size used by the game
 		cropped_image.save(output_directory + "\\" + image_filename + ".png") #save to output directory
 		image.close()
 		cropped_image.close()
@@ -116,13 +135,17 @@ def create_images(image_list, output_directory):
 def read_image_data(filename):
 	image_data_list = list()
 	with open(filename, "r") as f:
-		for line in f:
+		for line_number, line in enumerate(f):
 		
 			line = line.strip()
 			if len(line) <= 0 or line[0] == '#':
 				continue
 			
-			image_filename, image_data = line.split("=", 1)
+			try:
+				image_filename, image_data = line.split("=", 1)
+			except ValueError:
+				print "Error - unable to split line number %d: \"%s\"" % (line_number, line)
+				continue
 			image_filename = image_filename.strip()
 			image_data = image_data.strip()
 			
