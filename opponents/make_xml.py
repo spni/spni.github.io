@@ -266,13 +266,33 @@ def read_player_file(filename):
 	stage = -1
 	
 	f = open(filename, 'r')
-	for line in f:
+	for line_number, line in enumerate(f):
 		line = line.strip()
 		
 		if len(line) <= 0 or line[0]=='#': #use # as a comment character, and skip empty lines
 			continue
-			
-		key, text = line.split("=", 1)
+		
+		#check for characters that can't be used
+		skip_line = False
+		for c in line:
+			try:
+				c.decode('utf-8')
+			except UnicodeDecodeError:
+				print "Unable to decode character %s in line %d: \"%s\"" % (c, line_number, line)
+				skip_line = True
+				break
+		if skip_line:
+			continue
+		
+		#split the lines, then check for malformed entries
+		try:
+			key, text = line.split("=", 1)
+		except ValueError:
+			#this helps to find lines that are misformed 
+			print "Unable to split line %d: \"%s\"" % (line_number, line)
+			continue
+		
+		key = key.strip().lower()
 		
 		stripped = text.strip()
 		
