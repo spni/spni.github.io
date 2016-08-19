@@ -1,0 +1,1249 @@
+#required for behaviour.xml
+first=Chara
+last=The Human
+label=Chara
+gender=female
+size=large
+#Number of phases to "finish"
+timer=15
+ 
+#required for meta.xml
+#start picture
+pic=0-calm
+height=5'11"
+from=Undertale
+writer=Drankey Krang
+artist=Drankey Krang
+description=Demon Murderer All Grown Up
+ 
+#clothes
+#these must be in order of removal
+#the values are formal name, lower case name, how much they cover, what they cover
+#no spaces around the commas
+#how much they cover = important (covering nudity), major (a lot of skin), minor (small amount of skin), extra (accessories, boots, etc)
+#what they cover = upper (upper body), lower (lower body), other (neither).
+#there must be 2-8 entries, and at least one "important" piece of clothing on each of the upper and lower locations.
+clothes=Locket,locket,extra,other
+clothes=Shoes,shoes,extra,other
+clothes=Socks,socks,minor,lower
+clothes=Shorts,shorts,major,lower
+clothes=Shirt,shirt,major,upper
+clothes=Bra,bra,important,upper
+clothes=Panties,panties,important,lower
+ 
+#starting picture and text
+start=0-calm,I'm Chara, all grown up! Will you accept my challenge?
+#individual behaviour
+#entries without a number are used when there are no stage-specific entries
+ 
+#default card behaviour
+#you can include multiple entries to give the character multiple lines and/or appearances in that situation.
+#This is what a character says while they're exchanging cards.
+swap_cards=calm,I'll take ~cards~ cards.
+swap_cards=calm,Act: Take ~cards~ cards.
+swap_cards=soulless,Give me ~cards~ cards or I will steal them from you.
+swap_cards=soulless,If you value your pulse, give me ~cards~ cards.
+swap_cards=creepy,I'd kill for ~cards~ cards.
+swap_Cards=calm,I'll take either a chocolate bar or ~cards~ cards.
+ 
+ 
+ 
+#The character thinks they have a good hand
+good_hand=happy,This good hand fills me with Determination!
+good_hand=happy,Determination!
+good_hand=happy,I will kill you all... metaphorically, with this hand.
+good_hand=happy,This hand is nice and sweet, like you!
+good_hand=happy,I am indestructible this round.
+good_hand=happy,This hand is sweet like chocolate!
+good_hand=happy,This hand is satisfying like murder!
+good_hand=papyrus,Nyeh heh heh!
+good_hand=happy,YEE HAW!
+ 
+#The character thinks they have an okay hand
+okay_hand=calm,This will do.
+okay_hand=calm,Let's play this hand until the end.
+okay_hand=calm,Forgettable, but useable.
+okay_hand=calm,I am okay with these.
+okay_hand=calm,These cards are just good enough to let the dealer live.
+okay_hand=sad,Fine, sheesh.
+ 
+ 
+#The character thinks they have a bad hand
+bad_hand=sad,I guess I'm going to have a bad time.
+bad_hand=angry,I hate these cards more than I hate humanity.
+bad_hand=stabby,I have a dealer to disembowel.
+bad_hand=sad,Why? Why can I not go back to my last SAVE point?!
+bad_hand=angry,These cards are more tsundere than a cactus.
+bad_hand=angry,I wish these cards could bleed.
+bad_hand=soulless,I am going to stab these cards.
+bad_hand=sad,I guess I deserve these cards.
+bad_hand=papyrus,These cards are worse than Papyrus' spaghetti!
+ 
+ 
+#stripping default
+#This is the character says once they've lost a hand, but before they strip
+must_strip_winning=loss,Looks I cannot escape the consequences.
+must_strip_normal=loss,Darnit.
+must_strip_losing=loss,You will all regret these events.
+stripping=strip,I will unequip my ~clothing~ if I must.
+stripped=soulless,Keep staring, you will be dead soon.
+ 
+#masturbation
+#these situations relate to when the character is masturbating
+#these only come up in the relevant stages, so you don't need to include the stage numbers here
+#just remember which stage is which when you make the images
+must_masturbate_first=loss,This cannot be happening! How can I go first!?
+must_masturbate_first=loss,FOREBODEN!
+must_masturbate=loss,alright, I must own up to the consequences.
+must_masturbate=loss,You all better enjoy this. I'll kill you all for this.
+start_masturbating=starting,Okay, time to get comfortable.
+start_masturbating=starting,Ohhh, this is so foreboden.
+start_masturbating=starting,Heh. If Asriel could see me now... 
+start_masturbating=starting,You sickos pay close attention.
+masturbating=masturbate_a,Oooooooh, you... you'll all pay... f-for this.
+masturbating=masturbate_a,T-take a good... look. I'l... k-kill you...
+masturbating=masturbate_a,Ahhh... oh... yes... 
+masturbating=masturbate_b,Mmmmmmmm... I'll k-kill all of you.
+masturbating=masturbate_b,Ahh... it's better with an audience.
+masturbating=masturbate_b,Ugghhh... hmmmm... 
+masturbating=masturbate_c,Yo-you'll all be d-dead... 
+masturbating=masturbate_c,Ooh, oh, oh, oh, mmmm!
+masturbating=masturbate_c,Oh yeah... That's the spot.
+masturbating=masturbate_c,I'm-I'm f-filled with determination... 
+heavy_masturbating=heavy_a,This feels good, b-but not as g-good as your entrails on my knife!
+heavy_masturbating=heavy_a,Mmmmm... I'm going crazy... 
+heavy_masturbating=heavy_a,Look at me... LOOK AT ME... 
+heavy_masturbating=heavy_b,FRICK YES!
+heavy_masturbating=heavy_b,OH YEESSSS!
+heavy_masturbating=heavy_b,OOOOOOH... I'm getting close... 
+heavy_masturbating=heavy_c,Oh, I'm gunna cum! Then I'll kill you all!
+heavy_masturbating=heavy_c,I'll... kill... you... all... 
+heavy_masturbating=heavy_c,I'm... cumming... so... close... ooooh... 
+heavy_masturbating=heavy_c,L-let's completely... finish this... NOW!
+finishing_masturbating=finishing,DETERMINATION!!!
+finishing_masturbating=finishing,OH! THERE IT IS! I'M CUMMING NOW!
+finishing_masturbating=finishing,OH GOD! I'M SQUIRTING!
+finished_masturbating=finished,Yeah... that was worth it... 
+finished_masturbating=finished,That felt better than slitting a throat.
+finished_masturbating=finished,I'll kill you all for that. Later. I'm tired.
+finished_masturbating=finished,I didn't expect that to be so good.
+finished_masturbating=finished,HP... Fully... R-Restored.
+finished_masturbating=finished,That felt like I was killing 10 monsters at once!
+finished_masturbating=finished,I-I-I think I might have an audience fetish.
+finished_masturbating=finished,That... felt good with you watching. Maybe I won't murder you after all.
+finished_masturbating=finished,Ahhh. I hope you liked watching that. It's the last thing you'll ever see.
+finished_masturbating=finished,Mmmmm. I'll kill you all for this later.
+ 
+#I don't think this line is actually used by the game.
+game_over_defeat=calm,Nice determination, ~name~!
+ 
+#situations where another male character is stripping
+male_human_must_strip=interested,Time for you to face the consequences!
+male_must_strip=interested,Time for you to face the consequences!
+ 
+male_removing_accessory=calm,Why did I expect differently?
+male_removed_accessory=soulless,That was merely a taste of the humiliation you'll suffer!
+ 
+male_removing_minor=soulless,You can only delay your punishment for so long.
+male_removed_minor=calm,You cannot hide your glorious body forever.
+ 
+male_removing_major=interested,Yes! Show me my reward!
+male_removed_major=impressed,Your body will soon be mine to gaze upon!
+ 
+male_chest_will_be_visible=impressed,This is getting interesting.
+male_chest_is_visible=impressed,For somebody who plays rule 34 internet porn games, not bad!
+male_chest_is_visible=interested,I was expecting worse.
+male_chest_is_visible=interested,This only gets worse for you, and better for me!
+male_chest_is_visible=horny,I want to play those pecs like flesh bongos!
+ 
+ 
+ 
+#male crotches have different sizes, allowing your character to have different responses
+male_crotch_will_be_visible=horny,Time to finally see what a penis looks like!
+male_crotch_will_be_visible=interested,What's in your pants?
+male_crotch_will_be_visible=horny,I've waited so long! It's showtime!
+male_crotch_will_be_visible=happy,I've never seen one before. Yours better be worth it! Or else!
+male_small_crotch_is_visible=pity,Ha! It's so small!
+male_small_crotch_is_visible=horny,Looks like it could fit in my mouth easily. Hypothetically.
+male_small_crotch_is_visible=pity,I'm not judging your size. Not out loud anyway.
+male_small_crotch_is_visible=pity,That's it? I was expecting more.
+male_small_crotch_is_visible=pity,How do you even get off with that?
+male_small_crotch_is_visible=pity,Your embarrassing baby dick fills me with determination.
+male_small_crotch_is_visible=happy,I bet I wouldn't even feel that inside me! Not that you'll ever know!
+male_small_crotch_is_visible=pity,The girl who sees that at the end of a date is gonna have a bad time. Ha!
+male_small_crotch_is_visible=happy,And I thought I used to be androgynous! You could pass for a girl with that dick easily!
+male_small_crotch_is_visible=creepy,Now you will be judged.
+male_medium_crotch_is_visible=horny,Oooh, not bad at all!
+male_medium_crotch_is_visible=horny,I kinda want to touch it.
+male_medium_crotch_is_visible=horny,Oh, that's so hot.
+male_medium_crotch_is_visible=horny,Oooh. You're one hot hotbaby!
+male_medium_crotch_is_visible=horny,I kinda want to give it a kiss.
+male_medium_crotch_is_visible=horny,Looks like you're pretty hard.
+male_medium_crotch_is_visible=horny,Getting hard because of me? Say "no" and I'll stab you!
+male_large_crotch_is_visible=horny,Whoa!
+male_large_crotch_is_visible=horny,WOW! I didn't expect it to be so huge!
+male_large_crotch_is_visible=horny,I wonder how something so huge would even fit in me?
+male_large_crotch_is_visible=horny,Looks big, but I bet with enough determination I could take it all... 
+male_large_crotch_is_visible=horny,Now that's impressive!
+male_large_crotch_is_visible=happy,Are you a monster? Because that looks like a third leg!
+male_large_crotch_is_visible=horny,FLIRT FLIRT FLIRT FLIRT FLIRT FLIRT!
+male_large_crotch_is_visible=horny,Wow, I almost came just looking at it!
+male_large_crotch_is_visible=horny,It's beautiful!
+ 
+#male masturbation default
+male_must_masturbate=interested,Ha! Accept your humiliation!
+male_start_masturbating=horny,I want to see how a guy does it.
+male_start_masturbating=horny,Don't mind me watching.
+male_masturbating=horny,You're cute when you're touching yourself, ~name~.
+male_finished_masturbating=happy,Wow! What a huge load!
+ 
+#female stripping default
+#these are mostly the same as the male stripping cases, but the female's size refers to their chest rather than their crotch.
+female_human_must_strip=interested, Time for you to face the consequences!
+female_must_strip=interested,What is your decision, ~name~?
+ 
+female_removing_accessory=sad,Is that all you have to do?
+female_removed_accessory=calm,Fine, but you can only delay your humiliation for so long.
+ 
+female_removing_minor=calm,You feel fine now, but you will face your consequences.
+female_removed_minor=soulless,It's only a matter of time, ~name~.
+ 
+female_removing_major=interested,Finally! Something worthwhile to see removed!
+female_removed_major=interested,Your body is pretty hot. But we are not finished humiliating you yet!
+ 
+female_chest_will_be_visible=interested,Yes! Time for my reward!
+female_small_chest_is_visible=pity,I used to be that size before puberty hit!
+female_small_chest_is_visible=pity,Ohh! They're adorable!
+female_small_chest_is_visible=pity,Do those even count as tits?
+female_small_chest_is_visible=happy,And I thought I used to be androgynous! With tits like that, you could pass for a man!
+female_small_chest_is_visible=calm,Forgettable! 
+female_medium_chest_is_visible=impressed,Wow, never seen them that size.
+female_medium_chest_is_visible=horny,I like how perky your nips are.
+female_medium_chest_is_visible=horny,Are you finding it cold? You look cold.
+female_medium_chest_is_visible=horny,Those look nice. I'd love tits like those.
+female_large_chest_is_visible=horny,Those giant tits, they fill me with determination.
+female_large_chest_is_visible=happy,Wow, puberty hit you hard too, huh?
+female_large_chest_is_visible=impressed,Those tatas are almost as huge as mine!
+female_large_chest_is_visible=impressed,Wow! How'd they even fit in your clothing?!
+female_large_chest_is_visible=horny,I'm actually turned on by those.
+ 
+ 
+female_crotch_will_be_visible=happy,Time to see, what's in your pants!
+female_crotch_will_be_visible=happy,Does ~name~ have puss-puss? 
+female_crotch_is_visible=impressed,How cute!
+female_crotch_is_visible=horny,I sorta wanna taste it!
+female_crotch_is_visible=horny,Are you wet?
+ 
+ 
+#female masturbation default
+female_must_masturbate=interested,Time to accept your consequences, ~name~!
+female_must_masturbate=interested,Accept your humiliation, ~name~!
+female_must_masturbate=interested,I'll be watching ~name~! 
+female_start_masturbating=horny,Rub your little clit for me.
+female_masturbating=impressed,Don't stop until you've gone all the way!
+female_masturbating=soulless,Rub it harder!
+female_masturbating=soulless,Give it some more determination!
+female_finished_masturbating=impressed,Nice job, ~name~!
+female_finished_masturbating=impressed,Nice squirting, ~name~!
+female_finished_masturbating=impressed,How long has it been since you've done that, ~name~?   
+ 
+#These responses are stage specific.
+#Refer to the above entries to see what sort of situations these refer to, and what the default images are.
+#Each situation has been repeated enough for the maximum eight items of clothing.
+#If your character has fewer items, delete the extra entries.
+#if you don't include a stage-specific entry for a situation, the script will use the default response as defined above.
+ 
+ 
+#character is stripping situations
+#losing locket
+0-must_strip_winning=loss,I was so much better than all of you!
+0-must_strip_normal=loss,Frick! Guess I have to... 
+0-must_strip_losing=loss,This stinks! But I'll win in the end! You'll see!
+0-stripping=strip,I'll take off my heart locket.
+1-stripped=stripped,That was given to me when I was a child so don't touch it! 
+#losing shoes
+2-must_strip_winning=happy,Ha! I'm so far in the lead this doesn't even matter!
+2-must_strip_normal=calm,This is not going as planned.
+2-must_strip_losing=loss,I do not like where this is heading.
+2-stripping=strip,I'll remove my ballet shoes. Even if they make great weapons!
+3-stripped=stripped,Down to my socks. So scandalous!
+ 
+#losing socks
+3-must_strip_winning=sad,I guess this isn't a perfect run after all.
+3-must_strip_normal=loss,I cannot believe I am losing as much as you pathetic lot.
+3-must_strip_losing=loss,H-how am I this far behind?!
+3-stripping=strip,Removing my scandalous socks. The only skin you'll see from me!
+4-stripped=stripped,Even if I lose all, I will take this game to the end!
+ 
+#losing shorts
+4-must_strip_winning=loss,We came so far... 
+4-must_strip_normal=loss,I didn't expect to do this poorly!
+4-must_strip_losing=loss,No... You're all conspiring against me! I'll kill you all!
+4-stripping=strip,My shorts I've had since I was a kid, I have outgrown them a lot... 
+5-stripped=stripped,Nobody will remove my human soul-shaped panties!
+ 
+#losing shirt
+5-must_strip_winning=sad,No! I wasn't supposed to get naked with you fools!
+5-must_strip_normal=loss,This is not how I planned it at all!
+5-must_strip_losing=loss,All this loss, it's making me feel... stabby.
+5-stripping=strip,You want me in my underwear, huh? Fine!
+6-stripped=stripped,Staring? You want me to carve your eyes out of your skull?
+ 
+#losing bra
+6-must_strip_winning=loss,NO! RESET, RESET, RESET! 
+6-must_strip_normal=loss, I guess I deserve this.
+6-must_strip_losing=loss, WHY?! WHY IS MY SAVE SLOT NOT WORKING?!
+6-stripping=strip,I guess I have nothing to be ashamed of... 
+7-stripped=stripped,... I have grown up quite a bit, and so have my tatas! 
+
+#losing panties
+7-must_strip_winning=loss,NO! I THOUGHT I WAS IN CONTROL! 
+7-must_strip_normal=loss,FOREBODEN!!!
+7-must_strip_losing=loss,FOREBODEN!!!
+7-stripping=strip,I can't believe this.
+8-stripped=stripped,No matter! Even nude, I WILL NOT LOSE!
+ 
+#card cases
+#fully clothed
+#0-good_hand=,
+#0-okay_hand=,
+#0-bad_hand=,
+ 
+#lost locket
+#1-good_hand=,
+#1-okay_hand=,
+#1-bad_hand=,
+ 
+#lost shoes
+#2-good_hand=,
+#2-okay_hand=,
+#2-bad_hand=,
+ 
+#lost socks
+#3-good_hand=,
+#3-okay_hand=,
+#3-bad_hand=,
+ 
+#lost shorts
+4-good_hand=happy,These are the cards I need!
+4-good_hand=happy,Okay, no need to worry this round.
+4-okay_hand=calm,This will have to be enough to ensure victory.
+4-okay_hand=stabby,This hand better pull me through, or I will stab somebody.
+4-bad_hand=stabby,I'd kill for better cards.
+4-bad_hand=sad,Looks like somebody might finally see my tatas... 
+4-bad_hand=sad,I'm gonna have a bad time, aren't I?
+ 
+#lost shirt
+5-good_hand=happy,You perverted scum will see no more of me!
+5-good_hand=soulless,These cards will ensure your destruction for this humiliation!
+5-okay_hand=calm,I think I'll be fine.
+5-okay_hand=calm,There's still a chance. I can win this!
+5-bad_hand=sad,I'm boned, aren't I?
+5-bad_hand=stabby,KILL ALL DEALERS!
+ 
+#lost bra
+6-good_hand=happy,My underwear will never back down!
+6-good_hand=angry,You'll all feel the pain this round!
+6-okay_hand=sad,Not really feeling up to it right now. Sorry.
+6-okay_hand=sad,With hands like this, its really hard to give it my all.
+6-bad_hand=creepy,You all will lie face-down in a pool of your entrails.
+6-bad_hand=sad,RESET! RESET! RESET!
+6-bad_hand=sad,The wind is howling... 
+ 
+#lost all clothing
+#using negative numbers counts back from the final stage
+#-3 is while nude, -2 is masturbating, -1 is finished
+#this lets you use the same numbers with different amounts of clothing
+-3-good_hand=happy,With these cards, I will win even in my current state!
+-3-good_hand=happy,Determination.
+-3-okay_hand=creepy,This isn't good enough! DEALER!
+-3-okay_hand=calm,This is fine, let's go!
+-3-bad_hand=sad,I think I feel my sins crawling on my back.
+-3-bad_hand=pity,You cannot seriously put me through this!
+ 
+##other player must strip specific
+#fully clothed
+0-male_human_must_strip=creepy,Your fate is sealed, ~name~! 
+0-male_human_must_strip=creepy,Time to face your consequences, ~name~.
+0-male_human_must_strip=creepy,You lose, ~name~! And I am closer to victory!
+0-male_human_must_strip=creepy,You were never in control, ~name~.
+0-male_must_strip=interested,That's the stuff!
+0-female_human_must_strip=interested,Your fate is sealed, ~name~!
+0-female_human_must_strip=soulless,Time to face your consequences, ~name~.
+0-female_must_strip=interested,You lose, ~name~! And I am closer to victory!
+0-female_must_strip=soulless,Show me more of your body, ~name~! I demand it! 
+0-female_must_strip=soulless, You were never in control, ~name~.
+ 
+#lost locket
+1-male_human_must_strip=creepy,Your fate is sealed, ~name~! 
+1-male_human_must_strip=soulless,Time to face your consequences, ~name~.
+1-male_human_must_strip=creepy,You lose, ~name~! And I am closer to victory!
+1-male_human_must_strip=creepy,You were never in control, ~name~.
+1-male_must_strip=interested,That's the stuff!
+1-female_human_must_strip=interested,Your fate is sealed, ~name~!
+1-female_human_must_strip=soulless,Time to face your consequences, ~name~.
+1-female_must_strip=interested,You lose, ~name~! And I am closer to victory!
+1-female_must_strip=soulless,Show me more of your body, ~name~! I demand it! 
+1-female_must_strip=soulless, You were never in control, ~name~.
+ 
+ 
+#lost shoes
+2-male_human_must_strip=creepy,Your fate is sealed, ~name~! 
+2-male_human_must_strip=soulless,Time to face your consequences, ~name~.
+2-male_human_must_strip=soulless,You lose, ~name~! And I am closer to victory!
+2-male_human_must_strip=creepy,You were never in control, ~name~.
+2-male_must_strip=interested,That's the stuff!
+2-female_human_must_strip=interested,Your fate is sealed, ~name~!
+2-female_human_must_strip=creepy,Time to face your consequences, ~name~.
+2-female_must_strip=interested,You lose, ~name~! And I am closer to victory!
+2-female_must_strip=soulless,Show me more of your body, ~name~! I demand it! 
+2-female_must_strip=soulless,You were never in control, ~name~.
+ 
+ 
+#lost socks
+3-male_human_must_strip=creepy,Your fate is sealed, ~name~! 
+3-male_human_must_strip=soulless,Time to face your consequences, ~name~.
+3-male_human_must_strip=creepy,You lose, ~name~! And I am closer to victory!
+3-male_human_must_strip=soulless,You were never in control, ~name~.
+3-male_must_strip=interested,That's the stuff!
+3-female_human_must_strip=interested,Your fate is sealed, ~name~!
+3-female_human_must_strip=soulless,Time to face your consequences, ~name~.
+3-female_must_strip=interested,You lose, ~name~! And I am closer to victory!
+3-female_must_strip=creepy,Show me more of your body, ~name~! I demand it! 
+3-female_must_strip=soulless,You were never in control, ~name~.
+ 
+#lost shorts
+4-male_human_must_strip=interested,Now it's your turn to pay the price, ~name~.
+4-male_human_must_strip=soulless,Thank you for your co-operation, ~name~.
+4-male_must_strip=soulless,Take it off, ~name~. I demand it.
+4-male_must_strip=soulless,Your turn now, ~name~.
+4-female_human_must_strip=creepy, Time to suffer, ~name~.
+4-female_human_must_strip=creepy,Time for ~name~ to show us something.
+4-female_must_strip=soulless,Give us a show, ~name~!
+4-female_must_strip=interested,Oh ~name~, time for your big performance!
+ 
+#lost shirt
+5-male_human_must_strip=interested,This is your retribution, ~name~.
+5-male_human_must_strip=creepy,Do you feel your sins crawling on your back, ~name~?
+5-male_human_must_strip=creepy,~name~? Your turn to suffer.
+5-male_must_strip=interested,Show my something good to cheer me up, ~name~. 
+5-male_must_strip=interested,Time for your performance, ~name~.
+5-female_human_must_strip=interested,You're getting what you deserve, ~name~!
+5-female_human_must_strip=soulless,Time to show us what you've been hiding, ~name~.
+5-female_must_strip=interested,I was hoping it'd be ~name~ this time.
+5-female_must_strip=interested,You deserve this, ~name~.
+ 
+#lost bra
+6-male_human_must_strip=soulless,You've seen me shirtless, ~name~, so your retribution is here!
+6-male_human_must_strip=creepy,I will not spare you from this, ~name~!
+6-male_must_strip=soulless,Payback time, ~name~!
+6-male_must_strip=interested,Take the attention off of me, ~name~!
+6-female_human_must_strip=interested,Enjoying your payback, ~name~?
+6-female_human_must_strip=creepy,Thank you for your co-operation, ~name~!
+6-female_must_strip=interested,Go on, ~name~. NOW. 
+6-female_must_strip=happy,~name~ loses! My victory is assured!
+ 
+#lost all clothing items
+-3-male_human_must_strip=creepy, ~name~, Since you've been staring at me, it's time to pay the price.
+-3-male_human_must_strip=happy,Your turn, ~name~. Now I won't kill you.
+-3-male_must_strip=angry,Now strip, ~name~! I demand it!
+-3-male_must_strip=creepy,STRIP! AND KNELL BEFORE ME!
+-3-male_must_strip=happy,Not me this time! Thanks, ~name~!
+-3-female_human_must_strip=creepy,~name~, it's time for your judgement.
+-3-female_human_must_strip=happy,~name~'s turn, I'm safe for another round.
+-3-female_must_strip=soulless,I demand you, ~name~, distract them all!
+-3-female_must_strip=happy,Strip! AND KNELL BEFORE ME!
+ 
+#masturbating
+-2-male_human_must_strip=masturbate_b,Do it slowly, I want to watch you.
+-2-male_human_must_strip=masturbate_c,I may have fantasized about this before.
+-2-male_must_strip=masturbate_b,Show me more of your body, ~name~. I need it. 
+-2-male_must_strip=masturbate_b,~name~ stripping right now is s-simply... perfect.
+-2-female_human_must_strip=masturbate_b,Strip some more, ~name~. I want to see.
+-2-female_human_must_strip=masturbate_c,I'm more turned on by the thought of ~name~ stripping than I thought!
+-2-female_must_strip=masturbate_b,Take something off ~name~. Make this easier for me.
+-2-female_must_strip=masturbate_b,Give me something good to see, ~name~. Or I'll cut you.
+ 
+#finished
+-1-male_human_must_strip=horny,Hey ~name~, don't be so shy.
+-1-male_human_must_strip=interested,Join me in the nude, ~name~.
+-1-male_must_strip=horny,You've seen all of me, ~name~, so it's only fair.
+-1-male_must_strip=interested,Mmmmmm, ~name~ is going to strip... 
+-1-female_human_must_strip=horny,Give me a good show, ~name~.
+-1-female_human_must_strip=horny,Your turn, ~name~.
+-1-female_must_strip=soulless,One step closer to failure, ~name~.
+-1-female_must_strip=interested,You're out of time, ~name~. Like me.
+ 
+##another character is removing accessories
+#fully clothed
+0-male_removing_accessory=calm,A sure sign of things to come!
+0-male_removing_accessory=calm,The rest of your clothes will follow soon enough!
+0-male_removing_accessory=calm,Small, but I don't mind.
+0-male_removed_accessory=calm,I'm not angry. You'll be nude soon enough.
+0-male_removed_accessory=creepy,The clock is ticking, ~name~. Think you can survive? 
+0-female_removing_accessory=calm,A sure sign of things to come!.
+0-female_removed_accessory=calm, I'm not angry. You'll be nude soon enough.
+0-female_removing_accessory=creepy,The clock is ticking, ~name~. Think you can survive?
+ 
+#lost locket
+1-male_removing_accessory=calm,Who can last longer, I wonder?
+1-male_removed_accessory=soulless,Treasure these accessories, ~name~, they won't last forever.
+1-male_removed_accessory=soulless,You'll run out of accessories soon enough.
+1-female_removing_accessory=calm,Who can last longer, I wonder?
+1-female_removed_accessory=soulless,Treasure these accessories, ~name~, they won't last forever.
+1-female_removed_accessory=calm,You'll run out of accessories soon enough.
+ 
+#lost shoes
+2-male_removing_accessory=calm,You might be able to see my scandalous socks, but I'll catch up to you in no time.
+2-male_removed_accessory=interested,Feeling confident, ~name~? Your hubris will be punished soon enough.
+2-female_removing_accessory=calm,You might be able to see my scandalous socks, but I'll catch up to you in no time.
+2-female_removed_accessory=interested,Feeling confident, ~name~? Your hubris will be punished soon enough.
+ 
+#lost socks
+3-male_removing_accessory=interested,Feeling confident, ~name~? Your hubris will be punished soon enough.
+3-male_removed_accessory=calm,Think you're in the lead? Think again.
+3-female_removing_accessory=interested,Feeling confident, ~name~? Your hubris will be punished soon enough.
+3-female_removed_accessory=soulless,Think you're in the lead? Think again.
+ 
+#lost shorts
+4-male_removing_accessory=stabby,I know I'm out of small things, but don't think for a second you're better than me at this. 
+4-male_removed_accessory=calm,I don't even care how small that was! You'll lose!
+4-female_removing_accessory=stabby, I know I'm out of small things, but don't think for a second you're better than me at this.
+4-female_removed_accessory=calm, I don't even care how small that was! You'll lose!
+ 
+#lost shirt
+5-male_removing_accessory=pity,Wow. You're really just getting started, huh?
+5-male_removed_accessory=angry,You still had that! How am I so far behind?! 
+5-female_removing_accessory=pity, Wow. You're really just getting started, huh?
+5-female_removed_accessory=angry,You still had that! How am I so far behind?!
+ 
+#lost bra
+6-male_removing_accessory=angry,You're laughing at me. I can feel it.
+6-male_removed_accessory=stabby,Stop delaying your inevitable failure!
+6-female_removing_accessory=angry,You're laughing at me. I can feel it.
+6-female_removed_accessory=stabby,Stop delaying your inevitable failure!
+ 
+#nude
+-3-male_removing_accessory=stripped,I may be fully naked, and you just started, but don't think I'm down yet!
+-3-male_removed_accessory=soulless,My comeback is coming! Just wait and see... 
+-3-female_removing_accessory=stripped,I may be fully naked, and you just started, but don't think I'm down yet!
+-3-female_removed_accessory=soulless,My comeback is coming! Just wait and see... 
+ 
+#masturbating
+-2-male_removing_accessory=masturbate_a,Don't tease me like that... 
+-2-male_removed_accessory=masturbate_c,Oh... I... thought it'd be m-more.
+-2-female_removing_accessory=masturbate_a,L-laugh it up... 
+-2-female_removed_accessory=masturbate_c,Y-you'll be here s-soon... 
+ 
+#finished
+-1-male_removing_accessory=stabby,OH COME ON!
+-1-male_removed_accessory= stabby,I've already come, and you're just starting?!
+-1-female_removing_accessory=stabby,OH COME ON!
+-1-female_removed_accessory=stabby,I've already come, and you're just starting?!
+ 
+##another character is removing minor clothing items
+#fully clothed
+0-male_removing_minor=calm,Hmmm. That's fair.
+0-male_removed_minor=interested,One step closer to failure, ~name~. 
+0-female_removing_minor=calm, Hmmm. That's fair.
+0-female_removed_minor=interested,One step closer to failure, ~name~.
+ 
+#lost locket
+1-male_removing_minor=creepy,This game is picking up now!
+1-male_removed_minor=interested,Only a matter of time, now.
+1-male_removed_minor=soulless,Are you feeling the pressure?
+1-female_removing_minor=creepy,This game is picking up now!
+1-female_removed_minor=interested,Only a matter of time, now.
+1-female_removed_minor=soulless,Are you feeling the pressure?
+ 
+ 
+#lost shoes
+2-male_removing_minor=interested,That might have been small but this is just the beginning!
+2-male_removed_minor=soulless,This is only temporarily even. Your defeat is nigh.
+2-female_removing_minor=interested,That might have been small but this is just the beginning!
+2-female_removed_minor=soulless,This is only temporarily even. Your defeat is nigh.
+ 
+#lost socks
+3-male_removing_minor=interested,That's the last that your ~clothing~ will get in the way of my victory!
+3-male_removed_minor=soulless,Enjoy your decency, because it won't last much longer!
+3-female_removing_minor=interested,That's the last that your ~clothing~ will get in the way of my victory!
+3-female_removed_minor=soulless,Enjoy your decency, because it won't last much longer!
+ 
+#lost shorts
+4-male_removing_minor=calm,Your defeat is getting closer! Ever closer!
+4-male_removed_minor=soulless,You may still have clothes like that, but your luck is running out fast!
+4-female_removing_minor=calm,Your defeat is getting closer! Ever closer!
+4-female_removed_minor=soulless,You may still have clothes like that, but your luck is running out fast!
+ 
+#lost shirt
+5-male_removing_minor=angry,I might be behind, but you're going down soon enough!
+5-male_removed_minor=pity,I kinda wish I still had something like that.
+5-female_removing_minor=angry, I might be behind, but you're going down soon enough!
+5-female_removed_minor=pity, I kinda wish I still had something like that.
+ 
+#lost bra
+6-male_removing_minor=stabby,Oh jeez, still working on the small stuff?
+6-male_removed_minor=pity,Maybe I might not be in control here... 
+6-female_removing_minor=stabby,Oh jeez, still working on the small stuff?
+6-female_removed_minor=pity,Maybe I might not be in control here... 
+ 
+#naked
+-3-male_removing_minor=stripped,Mark my words, ~name~! YOU WILL BE DEFEATED DESPITE MY NAKEDNESS!
+-3-male_removed_minor=angry,Well this is just blatantly unfair.
+-3-female_removing_minor=stripped,Mark my words, ~name~! YOU WILL BE DEFEATED DESPITE MY NAKEDNESS!
+-3-female_removed_minor=angry,Well this is just blatantly unfair.
+ 
+#masturbating
+-2-male_removing_minor=masturbate_a,Could y-you maybe do it sexier?
+-2-male_removed_minor=masturbate_c,Take something else off... please... 
+-2-female_removing_minor=masturbate_a,Could y-you maybe do it sexier?
+-2-female_removed_minor=masturbate_c,Take something else off... please... 
+ 
+ 
+#finished
+-1-male_removing_minor=angry,It's incomprehensible to me that you still had that all along!
+-1-male_removed_minor=creepy,Don't think twice, ~name~, I'm sure you'll lose soon enough and join me!
+-1-female_removing_minor=angry,It's incomprehensible to me that you still had that all along!
+-1-female_removed_minor=creepy,Don't think twice, ~name~, I'm sure you'll lose soon enough and join me!
+ 
+##another character is removing major clothes
+#fully clothed
+0-male_removing_major=papyrus,How does your impeding defeat taste? Nyeh heh heh!
+0-male_removed_major=soulless,So far my flawless run is going just fine!
+0-female_removing_major=papyrus,How does your impending defeat taste? Nyeh heh heh!
+0-male_removed_major=soulless,So far my flawless run is going just fine!
+ 
+#lost locket
+1-male_removing_major=interested,You're showing a lot of skin there! How's it feel?
+1-male_removed_major=soulless,I've barely lost anything! Just as planned!
+1-male_removing_major=interested, You're showing a lot of skin there! How's it feel?
+1-male_removed_major=soulless,I've barely lost anything! Just as planned!
+ 
+#lost shoes
+2-male_removing_major=interested,Feeling self-conscious yet?
+2-male_removed_major=soulless,See how dressed I am compared to you?
+2-female_removing_major=interested,Feeling self-conscious yet?
+2-female_removed_major=soulless,See how dressed I am compared to you?
+ 
+#lost socks
+3-male_removing_major=interested,Your turn to strip! I'm still ahead of you!
+3-male_removed_major=soulless,You're losing! Strip for me!
+3-female_removing_major=interested,Your turn to strip! I'm still ahead of you!
+3-female_removed_major=soulless,You're losing! Strip for me!
+ 
+#lost shorts
+4-male_removing_major=interested,Nice! I'll still beat you though.
+4-male_removed_major=soulless,Looks like were both losing important stuff! I'll still win!
+4-female_removing_major=interested,Nice! I'll still beat you though.
+4-female_removed_major=soulless,Looks like were both losing important stuff! I'll still win!
+ 
+#lost shirt
+5-male_removing_major=interested,Looks like I'll be making that comeback soon!
+5-male_removed_major=stabby,My indecency will soon be overshadowed by your failure. 
+5-female_removing_major=interested, Looks like I'll be making that comeback soon!
+5-female_removed_major=stabby,My indecency will soon be overshadowed by your failure.
+ 
+#lost bra
+6-male_removing_major=pity,Looks like things aren't going as planned for either of us!
+6-male_removed_major=stabby,That's what you deserve for looking as my giant tatas, ~name~.
+6-female_removing_major=pity,Looks like things aren't going as planned for either of us!
+6-female_removed_major=stabby,That's what you deserve for looking as my giant tatas, ~name~.
+ 
+#nude
+-3-male_removing_major=happy,Excellent! I have another chance!
+-3-male_removed_major=angry,Enjoy the view, because this doesn't end well for you!
+-3-female_removing_major=happy,Excellent! I have another chance!
+-3-female_removed_major=angry,Enjoy the view, because this doesn't end well for you!
+ 
+#masturbating
+-2-male_removing_major=masturbate_a,Oh yeah! More like that!
+-2-male_removed_major=masturbate_b,Thanks, it was feeling strange without a visual aid.
+-2-male_removed_major=masturbate_c,Don't mind me, just spanking it while thinking about you.
+-2-female_removing_major=masturbate_a,Oh yeah! More like that!
+-2-female_removed_major=masturbate_b,Thanks, it was feeling strange without a visual aid.
+-2-female_removed_major=masturbate_c,I guess, if you're all I have to look at... 
+ 
+#finished
+-1-male_removing_major=impressed,I'm so close to seeing everything!
+-1-male_removed_major=impressed,I wish I could've seen this earlier.
+-1-male_removed_major=soulless,Soon you will feel defeat like I have!
+-1-female_removing_major=impressed,I'm so close to seeing everything!
+-1-female_removed_major=soulless,Soon you will feel defeat like I have!
+ 
+##another character is removing important clothes
+#fully clothed
+0-male_chest_will_be_visible=soulless,GAZE AT MY LACK OF NUDITY AND DESPAIR!
+0-male_chest_will_be_visible=creepy,HA! GAZE AT MY HUGE TITS AND CRY THAT YOU'LL NEVER SEE THEM!
+0-male_chest_will_be_visible=interested,This is getting interesting.
+0-male_chest_is_visible=happy,For somebody who plays rule 34 internet porn games, not bad!
+0-male_chest_is_visible=interested,I was expecting worse.
+0-male_chest_is_visible=interested,This only gets worse for you, and better for me!
+0-male_chest_is_visible=horny,I want to play those pecs like flesh bongos!
+0-male_crotch_will_be_visible=horny,Time to finally see what a penis looks like!
+0-male_crotch_will_be_visible=horny,What's in your pants?
+0-male_crotch_will_be_visible=horny,I've waited so long! It's showtime!
+0-male_crotch_will_be_visible=creepy,I've never seen one before. Yours better be worth it! Or else!
+0-male_small_crotch_is_visible=pity,Ha! It's so small!
+0-male_small_crotch_is_visible=temmie,tinee peen... such a cUte!
+0-male_small_crotch_is_visible=pity,I'm not judging your size. Not out loud anyway.
+0-male_small_crotch_is_visible=pity,That's it? I was expecting more.
+0-male_small_crotch_is_visible=pity,How do you even get off with that?
+0-male_small_crotch_is_visible=calm,Your embarrassing baby dick fills me with determination.
+0-male_small_crotch_is_visible=pity,The girl who sees that at the end of a date is gonna have a bad time. Ha!
+0-male_small_crotch_is_visible=calm,Howdy! It's Dicky the Dick!
+0-male_small_crotch_is_visible=happy,And I thought I used to be androgynous! You could pass for a girl with that dick easily!
+0-male_small_crotch_is_visible=crepy,Now you will be judged.
+0-male_medium_crotch_is_visible=horny,Oooh, not bad at all!
+0-male_medium_crotch_is_visible=horny,Oh, that's so hot.
+0-male_medium_crotch_is_visible=horny,Oooh. You're one hot hotbaby!
+0-male_medium_crotch_is_visible=horny,Looks like you're pretty hard.
+0-male_large_crotch_is_visible=horny,Whoa!
+0-male_large_crotch_is_visible=horny,WOW! I didn't expect it to be so huge!
+0-male_large_crotch_is_visible=horny,Now that's impressive!
+0-male_large_crotch_is_visible=horny,Are you a monster? Because that looks like a third leg!
+ 
+0-female_chest_will_be_visible=interested,Yes! Time for my reward!
+0-female_small_chest_is_visible=pity,I used to be that size before puberty!
+0-female_small_chest_is_visible=pity,Ohh! They're adorable!
+0-female_small_chest_is_visible=calm,Do those even count as tits?
+0-female_small_chest_is_visible=happy,And I thought I was androgynous! With tits like that, you could pass for a man!
+0-female_small_chest_is_visible=soulless,Forgettable! 
+0-female_medium_chest_is_visible=horny,Wow, never seen them that size.
+0-female_medium_chest_is_visible=horny,I like how perky your nips are.
+0-female_medium_chest_is_visible=horny,Are you finding it cold? You look cold.
+0-female_medium_chest_is_visible=horny,Those look nice. I'd love tits like those.
+0-female_large_chest_is_visible=horny,Those giant tits, they fill me with determination.
+0-female_large_chest_is_visible=horny,Wow! How'd they even fit in your clothing?!
+0-female_large_chest_is_visible=horny,I'm actually turned on by those.
+ 
+ 
+0-female_crotch_will_be_visible=happy,Time to see, what's in your pants!
+0-female_crotch_will_be_visible=happy,Does ~name~ have puss-puss? 
+0-female_crotch_is_visible=happy,How cute!
+0-female_crotch_is_visible=happy,Howdy! It's Pussy! Pussy the Puss!
+0-female_crotch_is_visible=horny,Are you wet?
+ 
+#lost locket
+1-male_chest_will_be_visible=interested,This is getting interesting.
+1-male_chest_is_visible=interested,For somebody who plays rule 34 internet porn games, not bad!
+1-male_chest_is_visible=interested,I was expecting worse.
+1-male_chest_is_visible=interested,This only gets worse for you, and better for me!
+1-male_chest_is_visible=interested,I want to play those pecs like flesh bongos!
+1-male_crotch_will_be_visible=horny,Time to finally see what a penis looks like!
+1-male_crotch_will_be_visible=horny,What's in your pants?
+1-male_crotch_will_be_visible=horny,I've waited so long! It's showtime!
+1-male_crotch_will_be_visible=creepy,I've never seen one before. Yours better be worth it! Or else!
+1-male_small_crotch_is_visible=pity,Ha! It's so small!
+1-male_small_crotch_is_visible=pity,I'm not judging your size. Not out loud anyway.
+1-male_small_crotch_is_visible=pity,That's it? I was expecting more.
+1-male_small_crotch_is_visible=pity,How do you even get off with that?
+1-male_small_crotch_is_visible=calm,Your embarrassing baby dick fills me with determination.
+1-male_small_crotch_is_visible=pity,The girl who sees that at the end of a date is gonna have a bad time. Ha!
+1-male_small_crotch_is_visible=happy,And I thought I was androgynous! You could pass for a girl with that dick easily!
+1-male_small_crotch_is_visible=temmie,tinee peen... such a cUte!
+1-male_small_crotch_is_visible=creepy,Now you will be judged.
+1-male_medium_crotch_is_visible=horny,Oooh, not bad at all!
+1-male_medium_crotch_is_visible=horny,Oh, that's so hot.
+1-male_medium_crotch_is_visible=horny,Oooh. You're one hot hotbaby!
+1-male_medium_crotch_is_visible=horny,Looks like you're pretty hard.
+1-male_large_crotch_is_visible=horny,Whoa!
+1-male_large_crotch_is_visible=horny,WOW! I didn't expect it to be so huge!
+1-male_large_crotch_is_visible=horny,Now that's impressive!
+1-male_large_crotch_is_visible=horny,Are you a monster? Because that looks like a third leg!
+ 
+1-female_chest_will_be_visible=interested,Yes! Time for my reward!
+1-female_small_chest_is_visible=pity,I used to be that size before puberty!
+1-female_small_chest_is_visible=pity,Ohh! They're adorable!
+1-female_small_chest_is_visible=pity,Do those even count as tits?
+1-female_small_chest_is_visible=happy,And I thought I was androgynous! With tits like that, you could pass for a man!
+1-female_small_chest_is_visible=soulless,Forgettable! 
+1-female_medium_chest_is_visible=horny,Wow, never seen them that size.
+1-female_medium_chest_is_visible=horny,I like how perky your nips are.
+1-female_medium_chest_is_visible=horny,Are you finding it cold? You look cold.
+1-female_medium_chest_is_visible=horny,Those look nice. I'd love tits like those.
+1-female_large_chest_is_visible=horny,Those giant tits, they fill me with determination.
+1-female_large_chest_is_visible=happy,Looks like puberty hit us both hard!
+1-female_large_chest_is_visible=horny,Wow! How'd they even fit in your clothing?!
+1-female_large_chest_is_visible=horny,I'm actually turned on by those.
+ 
+1-female_crotch_will_be_visible=happy,Time to see, what's in your pants!
+1-female_crotch_will_be_visible=happy,Does ~name~ have puss-puss? 
+1-female_crotch_is_visible=horny,How cute!
+1-female_crotch_is_visible=happy,Howdy! It's Pussy! Pussy the Puss!
+1-female_crotch_is_visible=horny,Are you wet?
+ 
+#lost shoes
+2-male_chest_will_be_visible=interested,This is getting interesting.
+2-male_chest_is_visible=interested,For somebody who plays rule 34 internet porn games, not bad!
+2-male_chest_is_visible=interested,I was expecting worse.
+2-male_chest_is_visible=interested,This only gets worse for you, and better for me!
+2-male_chest_is_visible=interested,I want to play those pecs like flesh bongos!
+2-male_crotch_will_be_visible=horny,Time to finally see what a penis looks like!
+2-male_crotch_will_be_visible=horny,What's in your pants?
+2-male_crotch_will_be_visible=horny,I've waited so long! It's showtime!
+2-male_crotch_will_be_visible=soulless,I've never seen one before. Yours better be worth it! Or else!
+2-male_small_crotch_is_visible=pity,Ha! It's so small!
+2-male_small_crotch_is_visible=temmie,tinee peen... such a cUte!
+2-male_small_crotch_is_visible=pity,I'm not judging your size. Not out loud anyway.
+2-male_small_crotch_is_visible=pity,That's it? I was expecting more.
+2-male_small_crotch_is_visible=pity,How do you even get off with that?
+2-male_small_crotch_is_visible=happy,Your embarrassing baby dick fills me with determination.
+2-male_small_crotch_is_visible=pity,The girl who sees that at the end of a date is gonna have a bad time. Ha!
+2-male_small_crotch_is_visible=happy,And I thought I was androgynous! You could pass for a girl with that dick easily!
+2-male_small_crotch_is_visible=creepy,Now you will be judged.
+2-male_medium_crotch_is_visible=horny,Oooh, not bad at all!
+2-male_medium_crotch_is_visible=horny,Oh, that's so hot.
+2-male_medium_crotch_is_visible=horny,Oooh. You're one hot hotbaby!
+2-male_medium_crotch_is_visible=horny,Looks like you're pretty hard.
+2-male_large_crotch_is_visible=horny,Whoa!
+2-male_large_crotch_is_visible=horny,WOW! I didn't expect it to be so huge!
+2-male_large_crotch_is_visible=horny,Now that's impressive!
+2-male_large_crotch_is_visible=horny,Are you a monster? Because that looks like a third leg!
+ 
+2-female_chest_will_be_visible=interested,Yes! Time for my reward!
+2-female_small_chest_is_visible=pity,I used to be that size before puberty!
+2-female_small_chest_is_visible=pity,Ohh! They're adorable!
+2-female_small_chest_is_visible=pity,Do those even count as tits?
+2-female_small_chest_is_visible=happy,And I thought I was androgynous! With tits like that, you could pass for a man!
+2-female_small_chest_is_visible=soulless,Forgettable! 
+2-female_medium_chest_is_visible=horny,Wow, never seen them that size.
+2-female_medium_chest_is_visible=horny,I like how perky your nips are.
+2-female_medium_chest_is_visible=horny,Are you finding it cold? You look cold.
+2-female_medium_chest_is_visible=horny,Those look nice. I'd love tits like those.
+2-female_large_chest_is_visible=happy,Those giant tits, they fill me with determination.
+2-female_large_chest_is_visible=happy,Looks like puberty hit us both pretty hard!
+2-female_large_chest_is_visible=horny,Wow! How'd they even fit in your clothing?!
+2-female_large_chest_is_visible=horny,I'm actually turned on by those.
+ 
+ 
+2-female_crotch_will_be_visible=happy,Time to see, what's in your pants!
+2-female_crotch_will_be_visible=happy,Does ~name~ have puss-puss? 
+2-female_crotch_is_visible=happy,Howdy! It's Pussy! Pussy the Puss!
+2-female_crotch_is_visible=happy,How cute!
+2-female_crotch_is_visible=horny,Are you wet?
+ 
+#lost socks
+3-male_chest_will_be_visible=interested,This is getting interesting.
+3-male_chest_is_visible=interested,For somebody who plays rule 34 internet porn games, not bad!
+3-male_chest_is_visible=interested,I was expecting worse.
+3-male_chest_is_visible=interested,This only gets worse for you, and better for me!
+3-male_chest_is_visible=interested,I want to play those pecs like flesh bongos!
+3-male_crotch_will_be_visible=horny,Time to finally see what a penis looks like!
+3-male_crotch_will_be_visible=horny,What's in your pants?
+3-male_crotch_will_be_visible=horny,I've waited so long! It's showtime!
+3-male_crotch_will_be_visible=happy,I've never seen one before. Yours better be worth it! Or else!
+3-male_small_crotch_is_visible=pity,Ha! It's so small!
+3-male_small_crotch_is_visible=temmie,tinee peen... such a cUte!
+3-male_small_crotch_is_visible=pity,I'm not judging your size. Not out loud anyway.
+3-male_small_crotch_is_visible=pity,That's it? I was expecting more.
+3-male_small_crotch_is_visible=pity,How do you even get off with that?
+3-male_small_crotch_is_visible=happy,Your embarrassing baby dick fills me with determination.
+3-male_small_crotch_is_visible=pity,The girl who sees that at the end of a date is gonna have a bad time. Ha!
+3-male_small_crotch_is_visible=happy,And I thought I was androgynous! You could pass for a girl with that dick easily!
+3-male_small_crotch_is_visible=creepy,Now you will be judged.
+3-male_medium_crotch_is_visible=horny,Oooh, not bad at all!
+3-male_medium_crotch_is_visible=horny,Oh, that's so hot.
+3-male_medium_crotch_is_visible=horny,Oooh. You're one hot hotbaby!
+3-male_medium_crotch_is_visible=horny,Looks like you're pretty hard.
+3-male_medium_crotch_is_visible=horny,Getting hard because of me? Say "no" and I'll stab you!
+3-male_large_crotch_is_visible=horny,Whoa!
+3-male_large_crotch_is_visible=horny,WOW! I didn't expect it to be so huge!
+3-male_large_crotch_is_visible=horny,Now that's impressive!
+3-male_large_crotch_is_visible=horny,Are you a monster? Because that looks like a third leg!
+3-male_large_crotch_is_visible=horny,FLIRT FLIRT FLIRT FLIRT FLIRT FLIRT!
+3-male_large_crotch_is_visible=horny,It's beautiful!
+ 
+3-female_chest_will_be_visible=interested,Yes! Time for my reward!
+3-female_small_chest_is_visible=pity,I used to be that size before puberty!
+3-female_small_chest_is_visible=pity,Ohh! They're adorable!
+3-female_small_chest_is_visible=pity,Do those even count as tits?
+3-female_small_chest_is_visible=pity,And I thought I was androgynous! With tits like that, you could pass for a man!
+3-female_small_chest_is_visible=soulless,Forgettable! 
+3-female_medium_chest_is_visible=horny,Wow, never seen them that size.
+3-female_medium_chest_is_visible=horny,I like how perky your nips are.
+3-female_medium_chest_is_visible=horny,Are you finding it cold? You look cold.
+3-female_medium_chest_is_visible=horny,Those look nice. I'd love tits like those.
+3-female_large_chest_is_visible=happy,Those giant tits, they fill me with determination.
+3-female_large_chest_is_visible=happy,Looks like puberty hit us both pretty hard!
+3-female_large_chest_is_visible=horny,Wow! How'd they even fit in your clothing?!
+3-female_large_chest_is_visible=horny,I'm actually turned on by those.
+ 
+ 
+3-female_crotch_will_be_visible=happy,Time to see, what's in your pants!
+3-female_crotch_will_be_visible=happy,Does ~name~ have puss-puss? 
+3-female_crotch_is_visible=happy,Howdy! It's Pussy! Pussy the Puss!
+3-female_crotch_is_visible=happy,How cute!
+3-female_crotch_is_visible=horny,Are you wet?
+ 
+#lost shorts
+4-male_chest_will_be_visible=interested,Time for you to show your stuff ~name~.
+4-male_chest_is_visible=happy,This is really cheering me up right now.
+4-male_chest_is_visible=soulless,That's nice. Warms my heart, wherever it is.
+4-male_chest_is_visible=happy,Hope you can distract everybody else from my indecency!
+ 
+ 
+4-male_crotch_will_be_visible=interested,Whip out your dick, ~name~. I wanna see what yours looks like!
+4-male_small_crotch_is_visible=horny,I bet I could fit that in my mouth. Hypothetically, I mean.
+4-male_small_crotch_is_visible=horny,Wow, even when it's small, it's hot.
+4-male_small_crotch_is_visible=horny,I kinda want to know what it's like to suck it... 
+4-male_medium_crotch_is_visible=horny,Wow, bigger than I hoped!
+4-male_medium_crotch_is_visible=horny,Now this is what makes it all worth it.
+4-male_medium_crotch_is_visible=horny,Cool dick!
+4-male_medium_crotch_is_visible=horny,I'm not drooling, am I?
+4-male_medium_crotch_is_visible=horny,With us both undressing, it makes me think... 
+4-male_large_crotch_is_visible=horny,This treasure was worth any embarrassment!
+4-male_large_crotch_is_visible=horny,I bet I could... with enough determination... 
+4-male_large_crotch_is_visible=horny,That's so foreboden, I love it!
+4-male_large_crotch_is_visible=horny, I'm picturing myself... would that even fit, I wonder?
+4-male_large_crotch_is_visible=horny, FLIRT FLIRT FLIRT FLIRT FLIRT!
+ 
+4-female_chest_will_be_visible=interested,I can't wait to see!
+4-female_small_chest_is_visible=temmie,Adorable! They remind me of Temmies!
+4-female_small_chest_is_visible=temmie,Such a... .cUte!
+4-female_small_chest_is_visible=pity,Cute and small, just like me!
+4-female_medium_chest_is_visible=horny,Ooh! That was worth the embarrassment!
+4-female_medium_chest_is_visible=horny,Why not just go topless all the time?
+4-female_large_chest_is_visible=horny,You shouldn't hide such nice poffs!
+4-female_large_chest_is_visible=horny,Whoa! Those are massive! And really hot!
+4-female_crotch_will_be_visible=interested,Does ~name~ have puss-puss?
+4-female_crotch_is_visible=happy,Howdy! It's Pussy! Pussy the Puss!
+4-female_crotch_is_visible=happy,What a cute little slit! I kinda want to play with it!
+4-female_crotch_is_visible=happy,That might even be prettier than mine.
+ 
+#lost shirt
+5-male_chest_will_be_visible=interested,Time for you to show your stuff ~name~.
+5-male_chest_is_visible=happy,This is really cheering me up right now.
+5-male_chest_is_visible=soulless,That's nice. Warms my heart, wherever it is.
+5-male_chest_is_visible=happy,Hope you can distract everybody else from my indecency!
+ 
+ 
+5-male_crotch_will_be_visible=interested,Whip out your dick, ~name~. I wanna see what yours looks like!
+5-male_small_crotch_is_visible=horny,I bet I could fit that in my mouth. Hypothetically, I mean.
+5-male_small_crotch_is_visible=horny,Wow, even when it's small, it's hot.
+5-male_small_crotch_is_visible=horny,I kinda want to know what it's like to suck it... 
+5-male_medium_crotch_is_visible=horny,Wow, bigger than I hoped!
+5-male_medium_crotch_is_visible=horny,Now this is what makes it all worth it.
+5-male_medium_crotch_is_visible=horny,Cool dick!
+5-male_medium_crotch_is_visible=horny,I'm not drooling, am I?
+5-male_medium_crotch_is_visible=horny,With us both undressing, it makes me think... 
+5-male_large_crotch_is_visible=horny,This treasure was worth any embarrassment!
+5-male_large_crotch_is_visible=horny,I bet I could... with enough determination... 
+5-male_large_crotch_is_visible=horny,That's so foreboden, I love it!
+5-male_large_crotch_is_visible=horny,I'm picturing myself... would that even fit, I wonder?
+5-male_large_crotch_is_visible=horny,FLIRT FLIRT FLIRT FLIRT FLIRT!
+ 
+5-female_chest_will_be_visible=impressed,I can't wait to see!
+5-female_chest_will_be_visible=impressed,At least I didn't have to go first!
+5-female_small_chest_is_visible=temmie,Adorable! They remind me of Temmies!
+5-female_small_chest_is_visible=temmie,Such a... cUte!
+5-female_small_chest_is_visible=interested,Cute and small, just like me!
+5-female_medium_chest_is_visible=horny,Ooh! That was worth the embarrassment!
+5-female_medium_chest_is_visible=horny,Why not just go topless all the time?
+5-female_large_chest_is_visible=happy,You shouldn't hide such nice poffs!
+5-female_large_chest_is_visible=happy,Whoa! Those are massive! And really hot!
+5-female_crotch_will_be_visible=interested,Does ~name~ have puss-puss?
+5-female_crotch_is_visible=happy,Howdy! It's Pussy! Pussy the Puss!
+5-female_crotch_is_visible=horny,What a cute little slit! I kinda want to play with it!
+5-female_crotch_is_visible=horny,That might even be prettier than mine.
+ 
+ 
+#lost bra
+6-male_chest_will_be_visible=happy,Hey! Guess I'm not the only one down on their luck!
+6-male_chest_is_visible=happy,Nice! Glad me suffering wasn't for nothing.
+6-male_crotch_will_be_visible=interested,You see me, now you pay the price!
+6-male_small_crotch_is_visible=horny,Wow, even when it's small, it's hot.
+6-male_small_crotch_is_visible=horny,I kinda want to know what it's like to suck it... 
+6-male_medium_crotch_is_visible=horny,Wow, bigger than I hoped!
+6-male_medium_crotch_is_visible=horny,Now this is what makes it all worth it.
+6-male_medium_crotch_is_visible=horny,Cool dick!
+6-male_medium_crotch_is_visible=horny,I'm not drooling, am I?
+6-male_medium_crotch_is_visible=horny,With us both undressing, it makes me think... 
+6-male_large_crotch_is_visible=horny,This treasure was worth any embarrassment!
+6-male_large_crotch_is_visible=horny,I bet I could... with enough determination... 
+6-male_large_crotch_is_visible=horny,That's so foreboden, I love it!
+6-male_large_crotch_is_visible=horny, I'm picturing myself... would that even fit, I wonder?
+ 
+6-female_chest_will_be_visible=interested,You've seen my tatas, ~name~, so now I get to see yours!
+6-female_small_chest_is_visible=temmie,Adorable! They remind me of Temmies!
+6-female_medium_chest_is_visible=happy,That makes me feel a lot better about losing this much.
+6-female_medium_chest_is_visible=happy,Looking good!
+6-female_large_chest_is_visible=happy,Whoa jeeez! Greater breasts!
+6-female_large_chest_is_visible=happy,We can be huge tata buddies!
+6-female_crotch_will_be_visible=interested,Let's see it, ~name~! Don't be shy!
+6-female_crotch_is_visible=horny,Wow. Cute little pussy. I kinda want to play with it!
+ 
+#nude
+-3-male_chest_will_be_visible=calm, Well, at least I'm not the only won who has to show chest.
+-3-male_chest_is_visible=horny,I wanna play those pecs like flesh bongos!
+-3-male_crotch_will_be_visible=interested,Let's see what my prize is... 
+-3-male_small_crotch_is_visible=horny,Even if it's small, that's still really hot!
+-3-male_small_crotch_is_visible=horny,I kinda want to know what it's like to suck on it... 
+-3-male_small_crotch_is_visible=happy,I like it! Small and cute like Asriel!
+-3-male_medium_crotch_is_visible=horny,Cool dick!
+-3-male_medium_crotch_is_visible=horny,With us both undressing, it makes me think... 
+-3-male_large_crotch_is_visible=horny,This treasure was worth any embarrassment!
+-3-male_large_crotch_is_visible=horny,I bet I could... with enough determination... 
+-3-male_large_crotch_is_visible=horny,That's so foreboden, I love it!
+-3-male_large_crotch_is_visible=horny, I'm picturing myself... would that even fit, I wonder?
+-3-male_large_crotch_is_visible=horny, FLIRT FLIRT FLIRT FLIRT FLIRT FLIRT!
+ 
+-3-female_chest_will_be_visible=interested,You've seen my titties, ~name~, so now I get to see yours!
+-3-female_small_chest_is_visible=temmie,Adorable! They remind me of Temmies!
+-3-female_medium_chest_is_visible=happy,That makes me feel a lot better about losing this much.
+-3-female_medium_chest_is_visible=happy,Looking good!
+-3-female_large_chest_is_visible=happy,Whoa jeeez! Greater breasts!
+-3-female_large_chest_is_visible=happy,We can be huge tata buddies!
+-3-female_crotch_will_be_visible=interested,Let's see it, ~name~! Don't be shy!
+-3-female_crotch_is_visible=horny,Wow. Cute little pussy. I kinda want to play with it!
+ 
+ 
+#masturbating
+-2-male_chest_will_be_visible=masturbate_b,Take it off ~name~... I need it... 
+-2-male_chest_is_visible=masturbate_c,Ohhh... I think I can work with that... 
+-2-male_crotch_will_be_visible=masturbate_b,Show me your cock, ~name~!
+-2-male_crotch_will_be_visible=masturbate_b,Give me something nice to look at, ~name~! 
+-2-male_small_crotch_is_visible=masturbate_a,G-good enough... I can picture sucking it... 
+-2-male_small_crotch_is_visible=masturbate_c,Am I making you hard, doing this?
+-2-male_medium_crotch_is_visible=masturbate_b,It's... wonderful!
+-2-male_medium_crotch_is_visible=masturbate_a,Did I make you hard?
+-2-male_medium_crotch_is_visible=masturbate_c,I've never seen one of those before! OOH!
+-2-male_large_crotch_is_visible=masturbate_b,If only... I could... have that... 
+-2-male_large_crotch_is_visible=masturbate_c,P-picturing that... inside me... 
+-2-male_large_crotch_is_visible=masturbate_b,Could y-you stroke it for me a little?
+ 
+-2-female_chest_will_be_visible=masturbate_b,Come on ~name~, join me! Now!
+-2-female_small_chest_is_visible=masturbate_b,Those are really nice... 
+-2-female_medium_chest_is_visible=masturbate_c,Bounce around for me... 
+-2-female_large_chest_is_visible=masturbate_b,Ohhh... those are actually helping... 
+-2-female_crotch_will_be_visible=masturbate_b,I'll see another puss-puss!
+-2-female_crotch_is_visible=masturbate_b,It's nice to look at it from this perspective... 
+ 
+ 
+#finished
+-1-male_chest_will_be_visible=happy,Come on! Lose and join me!
+-1-male_chest_is_visible=horny,I wanna play that chest like a flesh bongo set!
+-1-male_crotch_will_be_visible=horny,Finally get to see ~name~'s thingy!
+-1-male_crotch_will_be_visible=impressed,I was worried I wasn't going to get to see your dick!
+-1-male_small_crotch_is_visible=horny,Small, but I could picture sucking it.
+-1-male_small_crotch_is_visible=horny,I bet that'd fit nicely in my mouth!
+-1-male_small_crotch_is_visible=horny,I love it! I wanna stroke it.
+-1-male_medium_crotch_is_visible=horny,I wish I could have seen that a little earlier.
+-1-male_medium_crotch_is_visible=horny,Did watching me lose make you super hard?
+-1-male_large_crotch_is_visible=horny,I'd love to know what that feels like inside!
+-1-male_large_crotch_is_visible=papyrus,That's a bone that puts Papyrus to shame!
+-1-male_large_crotch_is_visible=horny,I wish I could have seen that when I was spanking it!
+ 
+-1-female_chest_will_be_visible=happy,Let's see the tits!
+-1-female_small_chest_is_visible=happy,Those cute little tits fill me with determination.
+-1-female_small_chest_is_visible=temmie,Those little tits! SUCH A CUTE!
+-1-female_medium_chest_is_visible=horny,I want to know what those feel like.
+-1-female_large_chest_is_visible=horny,Can I hold them? Not for long!
+-1-female_large_chest_is_visible=horny,That giant rack fills me with determination.
+-1-female_crotch_will_be_visible=horny,Let's see that pussy before it gets wet!
+-1-female_crotch_is_visible=creepy,Let's get that little snatch wet, shall we?
+ 
+ 
+##other player is masturbating
+#fully clothed
+0-male_must_masturbate=soulless,HA! You have been destroyed by me, ~name~.
+0-male_must_masturbate=soulless,I have won, and you have lost! MY PERFECT RUN IS COMPLETE!
+0-male_start_masturbating=creepy,Yes! Embrace your failure! Feel the shame!
+0-male_start_masturbating=stabby,If you so much as THINK about me while you do that, I will gut you like a pig.
+0-male_masturbating=creepy,How does your failure feel?
+0-male_finished_masturbating=impressed,Wow, shot out like a stream of friendliness pellets!
+0-male_finished_masturbating=stabby,Gross! Control your splooge if you don't want to get stabbed!
+0-male_finished_masturbating=creepy,Finished, you pathetic worm?
+0-male_must_masturbate=interested,Ha! Accept your humiliation!
+0-male_start_masturbating=impressed,I want to see how a guy does it.
+0-male_start_masturbating=impressed,Don't mind me watching.
+
+0-female_must_masturbate=interested,HA! You have been defeated by me, ~name~.
+0-female_start_masturbating=soulless,How does your failure feel?
+0-female_masturbating=soulless,Yes! Embrace your failure! Feel the shame!
+0-female_finished_masturbating=soulless,You have completely fallen while I have not lost once! My victory is sweet like chocolate!
+0-female_must_masturbate=interested,Time to accept your consequences, ~name~!
+0-female_must_masturbate=interested,Accept your humiliation, ~name~!
+0-female_must_masturbate=interested,I'll be watching ~name~! 
+0-female_masturbating=soulless,Don't stop until you've gone all the way!
+
+#lost locket
+1-male_must_masturbate=soulless,You've lost, while I have barely been touched! HA!
+1-male_start_masturbating=stabby,If you so much as THINK about me while you do that, I will gut you like a pig.
+1-male_masturbating=soulless,How does your failure feel?
+1-male_start_masturbating=soulless,YES! EMBRACE YOUR FAILURE!
+1-male_masturbating=soulless,How does it feel to have lost so hard?!
+1-male_finished_masturbating=impressed,Wow, shot out like a stream of friendliness pellets!
+1-male_finished_masturbating=stabby,Gross! Control your splooge if you don't want to get stabbed!
+1-male_finished_masturbating=creepy,Finished, you pathetic worm?
+1-male_finished_masturbating=stabby,Wosh u sperm.
+1-male_must_masturbate=soulless,Ha! Accept your humiliation!
+1-male_start_masturbating=soulless,I want to see how a guy does it.
+1-male_start_masturbating=soulless,Don't mind me watching.
+ 
+1-female_must_masturbate=soulless,HA! You have been defeated by me, ~name~.
+1-female_start_masturbating=soulless,How does your failure feel?
+1-female_masturbating=creepy,Yes! Embrace your failure! Feel the shame!
+1-female_finished_masturbating=creepy,HA! Sit there in your juices in total defeat!
+1-female_finished_masturbating=stabby,Wosh u vag.
+ 
+ 
+#lost shoes
+2-male_must_masturbate=soulless,You've lost, while I have barely been touched! HA!
+2-male_start_masturbating=stabby,If you so much as THINK about me while you do that, I will gut you like a pig.
+2-male_start_masturbating=soulless,YES! EMBRACE YOUR FAILURE!
+2-male_masturbating=creepy,How does your failure feel?
+2-male_start_masturbating=soulless,Say you lost! SAY IT!
+2-male_masturbating=soulless,How does it feel to have lost so hard?!
+2-male_finished_masturbating=impressed,Wow, shot out like a stream of friendliness pellets!
+2-male_finished_masturbating=stabby,Gross! Control your splooge if you don't want to get stabbed!
+2-male_finished_masturbating=creepy,Finished, you pathetic worm?
+2-male_finished_masturbating=stabby,Wosh u sperm.
+2-male_must_masturbate=soulless,Ha! Accept your humiliation!
+2-male_start_masturbating=soulless,I want to see how a guy does it.
+2-male_start_masturbating=soulless,Don't mind me watching.
+ 
+2-female_must_masturbate=soulless,HA! You have been defeated by me, ~name~.
+2-female_start_masturbating=soulless,How does your failure feel?
+2-female_masturbating=creepy,Yes! Embrace your failure! Feel the shame!
+2-female_finished_masturbating=creepy,HA! Sit there in your juices in total defeat!
+2-female_finished_masturbating=stabby,Wosh u vag.
+ 
+ 
+#lost socks
+3-male_must_masturbate=soulless,You've lost, while I have barely been touched! HA!
+3-male_start_masturbating=stabby,If you so much as THINK about me while you do that, I will gut you like a pig.
+3-male_start_masturbating=creepy,YES! EMBRACE YOUR FAILURE!
+3-male_masturbating=creepy,How does your failure feel?
+3-male_start_masturbating=soulless,Say you lost! SAY IT!
+3-male_masturbating=soulless,How does it feel to have lost so hard?!
+3-male_finished_masturbating=impressed,Wow, shot out like a stream of friendliness pellets!
+3-male_finished_masturbating=stabby,Gross! Control your splooge if you don't want to get stabbed!
+3-male_finished_masturbating=creepy,Finished, you pathetic worm?
+3-male_finished_masturbating=stabby,Wosh u sperm.
+3-male_must_masturbate=soulless,Ha! Accept your humiliation!
+3-male_start_masturbating=soulless,I want to see how a guy does it.
+3-male_start_masturbating=soulless,Don't mind me watching.
+ 
+ 
+3-female_must_masturbate=soulless,HA! You have been defeated by me, ~name~.
+3-female_start_masturbating=soulless,How does your failure feel?
+3-female_masturbating=creepy,Yes! Embrace your failure! Feel the shame!
+3-female_finished_masturbating=creepy,HA! Sit there in your juices in total defeat!
+ 
+#lost shorts
+4-male_must_masturbate=soulless,You may have seen my panties, but I have triumphed over you!
+4-male_start_masturbating=horny,Touch yourself! Feel the shame!
+4-male_start_masturbating=horny,You can look at my hot legs if it helps you.
+4-male_masturbating=horny,Keep touching yourself! It's fun to watch!
+4-male_masturbating=horny,This is fun to watch! You've fought well!
+4-male_finished_masturbating=happy,Impressive shot! I had to dodge that!
+4-male_finished_masturbating=calm,Smells like semen.
+4-male_finished_masturbating=creepy,Feel good? I feel good watching you.
+ 
+4-female_must_masturbate=soulless,You may have seen my panties, but I have triumphed over you!
+4-female_start_masturbating=horny,Oooh! I might have to try that technique!
+4-female_masturbating=horny,Don't stop! This is very educational!
+4-female_finished_masturbating=creepy,Feel good? I feel good watching you.
+4-female_masturbating=horny,Rub it harder!
+4-female_start_masturbating=horny,Rub your little clit for me.
+4-female_masturbating=horny,Give it some more determination!
+4-female_finished_masturbating=horny,Nice job, ~name~!
+4-female_finished_masturbating=horny,Nice squirting, ~name~!
+4-female_finished_masturbating=horny,How long has it been since you've done that, ~name~? 
+ 
+#lost shirt
+5-male_must_masturbate=interested,You fought well, ~name~, you lasted until I was down to my underwear!
+5-male_masturbating=horny,Keep touching yourself! It's fun to watch!
+5-male_masturbating=horny,This is fun to watch! You've fought well!
+5-male_finished_masturbating=happy,Impressive shot! I had to dodge that!
+5-male_finished_masturbating=calm,Smells like semen.
+5-male_finished_masturbating=creepy,Feel good? I feel good watching you.
+ 
+5-female_must_masturbate=soulless,You may have seen my underwear, but I have triumphed over you!
+5-female_start_masturbating=horny,Oooh! I might have to try that technique!
+5-female_masturbating=horny,Don't stop! This is very educational!
+5-female_finished_masturbating=creepy,Feel good? I feel good watching you.
+5-female_masturbating=horny,Rub it harder!
+5-female_start_masturbating=horny,Rub your little clit for me.
+5-female_masturbating=horny,Give it some more determination!
+5-female_finished_masturbating=horny,Nice job, ~name~!
+5-female_finished_masturbating=horny,Nice squirting, ~name~!
+5-female_finished_masturbating=horny,How long has it been since you've done that, ~name~? 
+ 
+#lost bra
+6-male_must_masturbate=happy,It was close, ~name~ but I have finally defeated you!
+6-male_start_masturbating=horny,You can look at my titties if that helps you at all. I grant you permission.
+6-male_masturbating=horny,Is my chest helping you get off?
+6-male_finished_masturbating=happy,Whoa! Shot out like a Gaster Blaster!
+6-male_finished_masturbating=calm,Smells like semen.
+6-male_finished_masturbating=horny,Maybe I'll help a bit next time. 
+ 
+ 
+6-female_must_masturbate=pity,It was close, ~name~ but I have finally defeated you!
+6-female_start_masturbating=horny,Ooh, you look so adorable doing that!
+6-female_masturbating=creepy,Your breath is getting heavy. Reminds me of when I stab somebody in the lungs.
+6-female_finished_masturbating=horny, WHOA! That squirted like crazy!
+6-female_finished_masturbating=horny, NICE SQUIRT!
+6-female_start_masturbating=horny,Rub your little clit for me.
+6-female_masturbating=horny,Rub it harder!
+6-female_masturbating=horny,Give it some more determination!
+6-female_finished_masturbating=horny,Nice job, ~name~!
+6-female_finished_masturbating=horny,Nice squirting, ~name~!
+6-female_finished_masturbating=horny,How long has it been since you've done that, ~name~? 
+ 
+ 
+#nude
+-3-male_must_masturbate=pity,Close game, ~name~, but I have finally won!
+-3-male_start_masturbating=horny,Wow, you started so fast. Does my body turn you on that much?
+-3-male_masturbating=horny,Are you looking at me? I grant you permission to look at me.
+-3-male_masturbating=horny,Are you imaging me riding that dick?
+-3-male_masturbating=horny,Thinking about me blowing you, maybe?
+-3-male_finished_masturbating=horny,Some cum got on me! I could have dodged but I chose not to.
+ 
+-3-female_must_masturbate=pity,Close game, but it's over! You've lost and I won!
+-3-female_start_masturbating=horny,Work that clit, ~name~! I demand it!
+-3-female_start_masturbating=horny,Ooh, you look so adorable doing that!
+-3-female_masturbating=horny,Having fun? It's fun watching you!
+-3-female_start_masturbating=horny,Rub your little clit for me.
+-3-female_finished_masturbating=impressed,NICE SQUIRT!
+-3-female_finished_masturbating=horny,Whoa... I'm feeling tingly down there.
+-3-female_masturbating=horny,Rub it harder!
+-3-female_masturbating=horny,Give it some more determination!
+-3-female_finished_masturbating=horny,Nice job, ~name~!
+-3-female_finished_masturbating=horny,Nice squirting, ~name~!
+-3-female_finished_masturbating=horny,How long has it been since you've done that, ~name~?
+ 
+#masturbating
+-2-male_must_masturbate=masturbate_a,J-join me... ~name~... together we'll kill them all after! 
+-2-male_start_masturbating=masturbate_b,Masturbating together... ooh that's hot... 
+-2-male_start_masturbating=masturbate_c,Aim your cock in my direction, ~name~... 
+-2-male_start_masturbating=masturbate_c,Flirt with me, ~name~... 
+-2-male_start_masturbating=masturbate_c,Tell me I'm a bad girl, ~name~... 
+-2-male_masturbating=masturbate_c,I want to cum with you, ~name~!
+-2-male_masturbating=masturbate_b,Look at me! I'm looking at you!
+-2-male_finished_masturbating=masturbate_a, OOOH! I'm close too! I'm going to be there soon!
+ 
+-2-female_must_masturbate=masturbate_a,J-join me... ~name~... together we'll kill them all after! 
+ 
+-2-female_start_masturbating=masturbate_a,I w-wish we could touch each others... 
+-2-female_masturbating=masturbate_c,We're d-doing this together... Mmmmmmm... 
+-2-female_start_masturbating=masturbate_b,Rub your little clit for me.
+-2-female_masturbating=heavy_b,Scream for me, ~name~... 
+-2-female_finished_masturbating=masturbate_c,Oooooooh, I'm so close... Almost there!
+ 
+#finished
+-1-male_must_masturbate=interested,Now we both have lost, ~name~! Time to claim your prize!
+-1-male_start_masturbating=calm,Aim your dick at me, I want to taste some of it.
+-1-male_start_masturbating=calm,Try and get some on my tatas!
+-1-male_masturbating=horny,Work it ~name~! Until you're finished!
+-1-male_finished_masturbating=horny,GOT SOME ON ME! I could've dodged but I chose not to!
+-1-male_finished_masturbating=horny,Maybe I can do this again later. Forget the cards... 
+-1-male_finished_masturbating=horny,You wanna, maybe, go on a date later?
+ 
+ 
+-1-female_must_masturbate=interested,Looks like ~name~ has lost now, too!
+-1-female_start_masturbating=happy,Remember how I was doing it? Try that method!
+-1-female_masturbating=calm,Keep going until you've completed your task!
+-1-female_finished_masturbating=impressed,WHAT A SQUIRT! LIKE A WATERFALL!
+ 
+
