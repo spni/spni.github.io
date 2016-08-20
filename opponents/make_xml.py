@@ -1,4 +1,6 @@
 import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 import xml.etree.ElementTree as ET
 import xml.dom.minidom as minidom
 
@@ -264,12 +266,39 @@ def read_player_file(filename):
 	stage = -1
 	
 	f = open(filename, 'r')
-	for line in f:
+	for line_number, line in enumerate(f):
 		line = line.strip()
 		
 		if len(line) <= 0 or line[0]=='#': #use # as a comment character, and skip empty lines
 			continue
-		key, text = line.split("=", 1)
+		
+		#check for characters that can't be used
+		skip_line = False
+		for c in line:
+			try:
+				c.decode('utf-8')
+			except UnicodeDecodeError:
+				print "Unable to decode character %s in line %d: \"%s\"" % (c, line_number, line)
+				skip_line = True
+				break
+		if skip_line:
+			continue
+		
+		#split the lines, then check for malformed entries
+		try:
+			key, text = line.split("=", 1)
+		except ValueError:
+			#this helps to find lines that are misformed 
+			print "Unable to split line %d: \"%s\"" % (line_number, line)
+			continue
+		
+		key = key.strip().lower()
+		
+		stripped = text.strip()
+		
+		if stripped == "" or stripped == ",":
+			#if there's no entry, skip it.
+			continue
 		
 		#if the key contains a -, it belongs to a specific stage
 		if '-' in key:
@@ -321,10 +350,14 @@ def make_meta_xml(data, filename):
 	values = ["first","last","label","pic","gender","height","from","writer","artist","description"]
 	
 	for value in values:
+		content = ""
+		if value in data:
+			content = data[value]
 		if value == "pic":
-			ET.SubElement(o, value).text = data[value] + ".png"
-		else:
-			ET.SubElement(o, value).text = data[value]
+			if content == "":
+				content = "0-calm"
+			content += ".png"
+		ET.SubElement(o, value).text = content
 		
 	#ET.ElementTree(o).write(filename, xml_declaration=True)
 	
@@ -341,7 +374,11 @@ def make_xml(player_filename, out_filename, meta_filename=None):
 #make the xml files using the given arguments
 #python make_xml <character data file> <behaviour.xml output file> <meta.xml output file>
 if __name__ == "__main__":
+	behaviour_name = "behaviour.xml"
+	meta_name = "meta.xml"
+	if len(sys.argv) > 2:
+		behaviour_name = sys.argv[2]
 	if len(sys.argv) > 3:
-		make_xml(sys.argv[1], sys.argv[2], sys.argv[3])
-	else:
-		make_xml(sys.argv[1], sys.argv[2])
+		meta_name = sys.argv[3]
+		
+	make_xml(sys.argv[1], behaviour_name, meta_name)

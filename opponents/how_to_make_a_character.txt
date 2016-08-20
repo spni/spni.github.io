@@ -29,7 +29,7 @@ The behaviour.xml file contains information on the character's name, clothes, an
 
 
 Making the XML Files:
-In order to make creating a character's XML files easier, I've made a python script that automates most of writing the XML text, make_xml.py. It uses a database of responses written by the author - behaviour_template.txt is a template of responses for the author to fill in, and can be used as an example.
+In order to make creating a character's XML files easier, I've made a python script that automates most of writing the XML text, make_xml.py. You can get python from https://www.python.org/. When installing it, choose to add python to you computer's PATH. The script uses a database of responses written by the author - behaviour_template.txt is a template of responses for the author to fill in, and can be used as an example.
 
 The first values are descriptions of the character, such as their name and gender, and are self-explanatory. The next set of values are the character's clothing. These entries tell the game what the character is taking off at each stage, how much skin it covers, and what part of the body the clothing covers. The number of entries here determines the total number of stages for that character. Remember that the characters should have 2-8 pieces of clothing, at least one "important" piece of clothing on each their upper and lower bodies.
 
@@ -74,9 +74,14 @@ The <character text> text is simply what the character says in that situation.
 
 You can have multiple entries for the same stage and situation. They will all be added to the behaviour.xml, so the character can have multiple responses to the same situation. You'll want to add multiple cases for the more common situations in particular.
 
-Once you've prepared the character response file, you use the script by calling:
-python make_xml.py <character response file> <behaviour.xml filename> <meta.xml filename>
-from a command line, in the same directory as the python script. <character response file> is the filename of the file you've made, and <behaviour.xml filename> and <meta.xml filename> are the names where the behaviour.xml and meta.xml are written to.
+Once you've prepared the character response file, you use the script by doing the following:
+1) Open a command line in the directory of your character. You can open a command line by clicking on the start menu, and search for/run cmd.exe (depending on your operating system). Copy the directory of your character, then in the command line type:
+cd
+(for "change directory"), then right-click on the command line and paste in the directory you copied, and press enter.
+
+2) type in:
+python ..\make_xml.py <character response file> <behaviour.xml filename> <meta.xml filename>
+from a command line. <character response file> is the filename of the file you've made, and <behaviour.xml filename> and <meta.xml filename> are the names where the behaviour.xml and meta.xml are written to. If you don't specify a behaviour filename and a meta filename, then the script will use the defaults, which is the names used by SPNatI.
 
 Before writing a character, play the game a few times to see how it flows. In particular, play with Elizabeth and Wii Fit Trainer, as they have unique dialogue and it varies from one stage to the next. (Asuna, Lilith, and Laura all have generic dialogue, and Zoey has only partially unique dialogue.) You'll want to come up with a personality for your character think of how they would respond to the game's situations. Preferably it would match the source material for your character. And, of course, you should ensure that your character's statements match what their images show.
 
@@ -87,8 +92,9 @@ You can save a model (select the model you want to save, click on the pencil and
 
 I've made a script that automates making .png images from k kisekae 2 save data. This script takes a list of filenames and k kisekae 2 descriptions, and saves the descriptions to images that are properly centered & zoomed in.
 
-In addition to python to run the script, you'll also need the Pillow library for python (https://pypi.python.org/pypi/Pillow/3.2.0, get either https://pypi.python.org/packages/b4/68/7c982aa0c113ea52dbe638f68e6aa837cc707ef18761ac76c9436bdffc30/Pillow-3.2.0.win-amd64-py2.7.exe#md5=4d880cc917bfa06813704185391c98bf for 64-bit python or https://pypi.python.org/packages/bd/5d/ffb842a0d37798deaa87ebaa5c59aa0d392b28666c64e363b7fd962996eb/Pillow-3.2.0.win32-py2.7.exe#md5=66fb74a5e4950bb9ef0e58ca4503ff3b for 32-bit python)
+In addition to python to run the script, you'll also need the Pillow library for python (https://pypi.python.org/pypi/Pillow/3.2.0, get the same version (32 bit or 64 bit) as your python installation, either https://pypi.python.org/packages/b4/68/7c982aa0c113ea52dbe638f68e6aa837cc707ef18761ac76c9436bdffc30/Pillow-3.2.0.win-amd64-py2.7.exe#md5=4d880cc917bfa06813704185391c98bf for 64-bit python or https://pypi.python.org/packages/bd/5d/ffb842a0d37798deaa87ebaa5c59aa0d392b28666c64e363b7fd962996eb/Pillow-3.2.0.win32-py2.7.exe#md5=66fb74a5e4950bb9ef0e58ca4503ff3b for 32-bit python)
 and you'll need a special version of k kisekae 2: https://www.henthighschool.com/hhsplus/automatic-kisekae-2-generator/
+You'll need to create an account to see the more recent files, which include patches that provide support for versions of kisekae greater than 33.
 (Most of that program's automation features aren't relevant for SPNatI, but it still lets you automatically created images from descriptions.)
 
 Make a file that has a list of:
@@ -100,13 +106,18 @@ for example:
 will take a description of Rosalina, and save it to a file named 0-calm.png
 Don't include the .png extension in the descriptions, the script will add it.
 
+Some information about stages and actions: Certain pairs of actions occur one after the other, but in different stages. Most notably, the "strip" event occurs in the stage when they're still wearing the clothing in question, while "stripped" events occur in the next stage. For example, when a character removes their first piece of clothing, the events will be "0-strip" followed by "1-stripped". Likewise, The masturbation events are split across multiple stages. The "starting" event takes place in the character-is-naked stage, the masturbating, heavy masturbating, and finishing events occur in the masturbation stage, while the "finished" event occurs in the finished stage. This information will help you assign your images to the correct stages.
 
 In order to make the images, first start kkl.exe in the 1.1e_bundle\Autocutter\FlashProcessor directory inside the automatic kisekae 2 download. Make sure you don't have any menus open (especially the import and export menus), otherwise they'll show up in the images.
 
-then run the script:
-python make_images.py <image description file> <output folder>
-where <image description file> is your list of filenames and descriptions, and <output folder> is the folder where all the images will be saved to.
-Note that this can take a while, 2-5 seconds per image.
+The usage of the script is as follows:
+1)Open a windows console in the directory of your character, as with the xml script above.
+
+2) Type in:
+python ..\make_images.py <image description file> <output folder>
+where <image description file> is your list of filenames and descriptions, and <output folder> is the folder where all the images will be saved to. If you leave the output folder empty, the script will use the current folder as the output location. You can also enter "." (without the quotes) to use the current directory as the output directory.
+
+Note that this can take a while, 2-5 seconds per image. If the program hangs, or doesn't seem to be processing images, it's possible that you have an error in your image descriptions. Also try going to the folder "%appdata%\kkl\Local Store" (copy and paste that into your file explorer, without the quotes), and delete any text files there. The conversion program will stop if it encounters a file that it can't convert into an image, even if the other image descriptions are fine.
 
 (As an implementation notice, note that this saves descriptions to the kkl folder in your appdata (%appdata%\kkl\Local Store). The description files are saved their, and the images are copied from that folder. So if you've got any files there from using the automated kisekae 2 program, this script will overwrite them.)
 
@@ -120,8 +131,6 @@ Some tips and things that might not be apparent from using kisekae:
 Also, look at the images and description save files in the "saves" directory in the SPNatI folder for some examples of character models, emotions, and poses.
 
 A final reminder that you don't have to use the default set of emotions (or image filenames). If you look in each character's opponents folder, you can see that each character has different emotion types. You can have as many different types of images or responses as you want, as many as one image per response if you want to make them all.
-
-
 
 Adding a character to the game:
 Now that you have you images and xml files, you just need to add them to the game.
