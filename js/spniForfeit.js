@@ -63,7 +63,7 @@ function tickForfeitTimers (context) {
 	
     for (var i = 0; i < players.length; i++) {
         if (players[i].out && timers[i] > 0) {
-            timers[i]--;
+        	timers[i]--;
             
 			if (i == HUMAN_PLAYER) {
 				/* human player */
@@ -79,7 +79,8 @@ function tickForfeitTimers (context) {
 					
 					/* set the button state */
 					$mainButton.html("Continue");
-					$mainButton.attr('disabled', true);
+					$mainButton.attr('disabled', false);
+					actualMainButtonState = false;
 					
 					/* finish */
 					finishMasturbation(i);
@@ -110,7 +111,8 @@ function tickForfeitTimers (context) {
 					
 					/* set the button state */
 					$mainButton.html("Continue");
-					$mainButton.attr('disabled', true);
+					$mainButton.attr('disabled', false);
+					actualMainButtonState = false;
 					
 					/* hide everyone else's dialogue bubble */
 					for (var j = 1; j < players.length; j++) {
@@ -190,5 +192,6 @@ function finishMasturbation (player) {
 	
 	/* allow progression */
 	$mainButton.attr('disabled', false);
+	actualMainButtonState = false;
 	oneFinished = false;
 }

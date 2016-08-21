@@ -60,8 +60,10 @@ $restartModal = $("#restart-modal");
 
 /* pseudo constants */
 var GAME_DELAY = 600;
+var FORFEIT_DELAY = 7500;
 var GAME_OVER_DELAY = 1000;
 var CARD_SUGGEST = false;
+var AUTO_FORFEIT = false;
  
 /* colours */
 var currentColour = "#63AAE7"; 	/* indicates current turn */
@@ -73,6 +75,7 @@ var currentTurn = 0;
 var recentLoser = 0;
 var savedContext = "";
 var gameOver = false;
+var actualMainButtonState = false;
                       
 /**********************************************************************
  *****                    Start Up Functions                      *****
@@ -104,6 +107,7 @@ function loadGameScreen () {
     /* enable and set up the main button */
     $mainButton.html("Deal");
     $mainButton.attr("disabled", false);
+    actualMainButtonState = false;
 }
                       
 /**********************************************************************
@@ -275,10 +279,17 @@ function advanceTurn () {
         /* human player's turn */
         if (players[HUMAN_PLAYER].out) {
             $mainButton.html("Reveal");
+            if (AUTO_FORFEIT) {
+                $mainButton.attr('disabled', true);
+                //actualMainButtonState = true;
+                setTimeout(advanceGame,FORFEIT_DELAY);
+                return;
+            }
         } else {
             $mainButton.html("Exchange");
         }
         $mainButton.attr('disabled', false);
+        actualMainButtonState = false;
 	} else {
         /* AI player's turn */
 		makeAIDecision();
@@ -429,6 +440,9 @@ function completeRevealPhase () {
         
         /* reset the round */
         mainButton.html("Deal");
+        if (players[HUMAN_PLAYER].out && AUTO_FORFEIT) {
+            setTimeout(advanceGame,FORFEIT_DELAY);
+        }
         return;
     }
     
@@ -451,6 +465,9 @@ function completeRevealPhase () {
 	} else {
 		$mainButton.html("Strip");
 	}
+    if (players[HUMAN_PLAYER].out && AUTO_FORFEIT) {
+        setTimeout(advanceGame,FORFEIT_DELAY);
+    }
 }
 
 /************************************************************
@@ -464,6 +481,9 @@ function completeContinuePhase () {
     updateAllGameVisuals();
 	
 	$mainButton.html("Strip");
+    if (players[HUMAN_PLAYER].out && AUTO_FORFEIT) {
+        setTimeout(advanceGame,FORFEIT_DELAY);
+    }
 }
 
 /************************************************************
@@ -500,8 +520,12 @@ function endRound () {
 		handleGameOver();
 	} else {
 		$mainButton.html("Deal");
+        if (players[HUMAN_PLAYER].out && AUTO_FORFEIT) {
+            setTimeout(advanceGame,FORFEIT_DELAY);
+        }
 	}
 	$mainButton.attr('disabled', false);
+    actualMainButtonState = false;
 }
 
 /************************************************************
@@ -522,6 +546,7 @@ function handleGameOver() {
 		/* true end */
 		$mainButton.html("Restart?");
 		$mainButton.attr('disabled', false);
+        actualMainButtonState = false;
 	} else {
 		/* someone is still forfeiting */
 		var context = "Wait";
@@ -588,6 +613,7 @@ function advanceGame () {
     
     /* disable the button to prevent double clicking */
     $mainButton.attr('disabled', true);
+    actualMainButtonState = true;
     
     /* lower the timers of everyone who is forfeiting */
     context = tickForfeitTimers(context);
@@ -602,31 +628,42 @@ function advanceGame () {
         $mainButton.html("Reveal");
         completeExchangePhase();
         $mainButton.attr('disabled', false);
+        actualMainButtonState = false;
     } else if (context == "Reveal") {
         /* revealing cards */
         completeRevealPhase();
         $mainButton.attr('disabled', false);
+        actualMainButtonState = false;
     } else if (context == "Continue") {
 		/* waiting for the loser to strip */
-		completeContinuePhase();
+        completeContinuePhase();
 		$mainButton.attr('disabled', false);
+        actualMainButtonState = false;
 	} else if (context == "Strip") {
         /* stripping the loser */
         completeStripPhase();
         $mainButton.attr('disabled', false);
+        actualMainButtonState = false;
     } else if (context == "Wait") {
 		/* waiting for someone to finish */
 		if (!gameOver) {
 			$mainButton.html("Deal");
 			$mainButton.attr('disabled', false);
+            actualMainButtonState = false;
 		} else {
-			handleGameOver();
+			handleGameOver(); //No delay here
+            return;
 		}
 	} else if (context == "Restart?") {
-		showRestartModal();
+		showRestartModal(); //No delay here
 		$mainButton.attr('disabled', false);
+        actualMainButtonState = false;
 	} else {
         console.log("Invalid main button state: "+context);
+    }
+    if (players[HUMAN_PLAYER].out && AUTO_FORFEIT && !(timers[HUMAN_PLAYER] == 0 && context == null)) {
+        $mainButton.attr('disabled', true);
+        //actualMainButtonState = true;
     }
 }
 
