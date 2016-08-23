@@ -15,21 +15,7 @@ def get_value(dictionary, key, stage, default=""):
 
 #default images and text for most cases
 def get_cases_dictionary():
-	d = {}
-	#quality of hand
-	d["swap_cards"] = [("calm", "I'll exchange ~cards~ cards.")]
-	d["good_hand"] = [("happy", "I've got a good hand.")]
-	d["okay_hand"] = [("calm", "I've got an okay hand.")]
-	d["bad_hand"] = [("sad", "I've got a bad hand.")]
-	
-	#stripping
-	d["stripped"] = [("sad", "I miss my ~clothing~ already...")]
-	d["must_strip_winning"] = [("loss", "Well, I guess it had to be my turn eventually...")]
-	d["must_strip_normal"] = [("loss", "I guess I lost, huh?")]
-	d["must_strip_losing"] = [("loss", "I lost again? But... I have less clothes than everyone else!")]
-	d["stripping"] = [("strip", "I guess I'll just take off my ~clothing~...")]
-	
-	#male pre-strip scenes
+	d = {}#male pre-strip scenes
 	d["male_human_must_strip"] = [("interested", "What are you going to take off, ~name~?")]
 	d["male_must_strip"] = [("interested", "What are you going to take off, ~name~?")]
 	d["male_removing_accessory"] = [("sad", "You're only taking off your ~clothing~, ~name~? That doesn't seem fair.")]
@@ -82,6 +68,29 @@ def get_cases_dictionary():
 	
 	return d
 
+#get the cases for when the character is still in the game (all clothed stages, and nude)
+def get_playing_cases_dictionary():
+	d = {}
+	#quality of hand
+	d["swap_cards"] = [("calm", "I'll exchange ~cards~ cards.")]
+	d["good_hand"] = [("happy", "I've got a good hand.")]
+	d["okay_hand"] = [("calm", "I've got an okay hand.")]
+	d["bad_hand"] = [("sad", "I've got a bad hand.")]
+	
+	return d
+
+#cases where the player can strip (all stages until nude)
+def get_stripping_cases_dictionary():
+	d = {}
+	
+	#stripping
+	d["stripped"] = [("sad", "I miss my ~clothing~ already...")]
+	d["must_strip_winning"] = [("loss", "Well, I guess it had to be my turn eventually...")]
+	d["must_strip_normal"] = [("loss", "I guess I lost, huh?")]
+	d["must_strip_losing"] = [("loss", "I lost again? But... I have less clothes than everyone else!")]
+	d["stripping"] = [("strip", "I guess I'll just take off my ~clothing~...")]
+	return d
+	
 #default images and text for being nude
 def get_nude_cases_dictionary():
 	d = {}
@@ -155,11 +164,14 @@ def add_subelement(base_element, name, tag_value):
 
 #add several values to the XML tree
 def add_values(base_element, player_dictionary, default_dictionary, stage):
-	for key in default_dictionary.keys():
-		contents = get_cases(player_dictionary, default_dictionary, key, stage)
-		case = add_subelement(base_element, "case", key)
-		for img, text in contents:
-			ET.SubElement(case, "state", img=img).text = text
+	if type(default_dictionary) != list:
+		default_dictionary = [default_dictionary]
+	for d in default_dictionary:
+		for key in d.keys():
+			contents = get_cases(player_dictionary, d, key, stage)
+			case = add_subelement(base_element, "case", key)
+			for img, text in contents:
+				ET.SubElement(case, "state", img=img).text = text
 
 #manually prettify xml code (because the standard method doesn't seem to work on windows)
 def manual_prettify_xml(elem, level=0, isLast=False):
@@ -185,6 +197,8 @@ def manual_prettify_xml(elem, level=0, isLast=False):
 #write the xml file to the specified filename
 def write_xml(data, filename):
 	main_dict = get_cases_dictionary()
+	plyr_dict = get_playing_cases_dictionary()
+	strp_dict = get_stripping_cases_dictionary()
 	nude_dict = get_nude_cases_dictionary()
 	mstb_dict = get_masturbating_cases_dictionary()
 	fnsh_dict = get_finished_Cases_dictionary()
@@ -217,25 +231,22 @@ def write_xml(data, filename):
 	bh = ET.SubElement(o, "behaviour")
 	for stage in range(0, clothes_count):
 		s = ET.SubElement(bh, "stage", id=str(stage))
-		add_values(s, data, main_dict, stage)
+		add_values(s, data, [main_dict, plyr_dict, strp_dict], stage)
 	
 	#nude stage
 	stage += 1
 	s = ET.SubElement(bh, "stage", id=str(stage))
-	add_values(s, data, main_dict, stage)
-	add_values(s, data, nude_dict, stage)
+	add_values(s, data, [main_dict, plyr_dict, nude_dict], stage)
 	
 	#masturbating stage
 	stage += 1
 	s = ET.SubElement(bh, "stage", id=str(stage))
-	add_values(s, data, main_dict, stage)
-	add_values(s, data, mstb_dict, stage)
+	add_values(s, data, [main_dict, mstb_dict], stage)
 			
 	#finished stage
 	stage += 1
 	s = ET.SubElement(bh, "stage", id=str(stage))
-	add_values(s, data, main_dict, stage)
-	add_values(s, data, fnsh_dict, stage)
+	add_values(s, data, [main_dict, fnsh_dict], stage)
 	
 	#done
 	
@@ -255,11 +266,12 @@ def write_xml(data, filename):
 #read in a character's data
 def read_player_file(filename):
 	main_dict = get_cases_dictionary()
+	plyr_dict = get_playing_cases_dictionary()
+	strp_dict = get_stripping_cases_dictionary()
 	nude_dict = get_nude_cases_dictionary()
 	mstb_dict = get_masturbating_cases_dictionary()
 	fnsh_dict = get_finished_Cases_dictionary()
 	
-	case_names = main_dict.keys() + nude_dict.keys() + mstb_dict.keys() + fnsh_dict.keys()
 	
 	d = {}
 	
@@ -374,6 +386,9 @@ def make_xml(player_filename, out_filename, meta_filename=None):
 #make the xml files using the given arguments
 #python make_xml <character data file> <behaviour.xml output file> <meta.xml output file>
 if __name__ == "__main__":
+	if len(sys.argv) <= 1:
+		print "Please give the name of the dialogue file to process into XML files"
+		exit()
 	behaviour_name = "behaviour.xml"
 	meta_name = "meta.xml"
 	if len(sys.argv) > 2:
