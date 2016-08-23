@@ -7,10 +7,13 @@
  **********************************************************************/
 
 $optionsModal = $("#options-modal");
-$tableStyleOptions = [$("#options-table-style-1"), $("#options-table-style-2")];
+$tableStyleOptions = [$("#options-table-style-1"), $("#options-table-style-2"), $("#options-table-style-3")];
+$autoFadeOptions = [$("#options-auto-fade-1"), $("#options-auto-fade-2")];
 $cardSuggestOptions = [$("#options-card-suggest-1"), $("#options-card-suggest-2")];
 $AITurnTimeOptions = [$("#options-ai-turn-time-1"), $("#options-ai-turn-time-2"), $("#options-ai-turn-time-3"), $("#options-ai-turn-time-4"), $("#options-ai-turn-time-5")];
 $dealSpeedOptions = [$("#options-deal-speed-1"), $("#options-deal-speed-2"), $("#options-deal-speed-3"), $("#options-deal-speed-4")];
+$autoForfeitOptions = [$("#options-auto-forfeit-1"), $("#options-auto-forfeit-2")];
+$autoForfeitTimeOptions = [$("#options-auto-forfeit-time-1"), $("#options-auto-forfeit-time-2"), $("#options-auto-forfeit-time-3")];
 
  
 /**********************************************************************
@@ -67,6 +70,15 @@ function setTableStyle (choice) {
 				$player.removeClass();
 				$player.addClass('bordered player-table-area player-table-area-glass');
 				break;
+        case 3: $tables.removeClass();
+				$tables.addClass('bordered game-table game-table-none');
+				$surfaces.removeClass();
+				$surfaces.addClass('bordered game-table-surface game-table-surface-none');
+				$areas.removeClass();
+				$areas.addClass('bordered opponent-area opponent-area-none');
+				$player.removeClass();
+				$player.addClass('bordered player-table-area player-table-area-none');
+				break;
 		default: $tables.removeClass();
 				 $tables.addClass('bordered game-table');
 				 $surfaces.removeClass();
@@ -76,6 +88,21 @@ function setTableStyle (choice) {
 	}
 	setActiveOption($tableStyleOptions, choice);
 }
+
+
+/************************************************************
+ * The player changed fade option.
+ ************************************************************/
+function setAutoFade (choice) {
+	/* implement the option change */
+	switch (choice) {
+		case 1: AUTO_FADE = true; break;
+		case 2: AUTO_FADE = false; break;
+		default: AUTO_FADE = true;
+	}
+	setActiveOption($autoFadeOptions, choice);
+}
+
 
 /************************************************************
  * The player changed card suggestion.
@@ -130,3 +157,38 @@ function setDealSpeed (choice) {
 	}
 	setActiveOption($dealSpeedOptions, choice);
 }
+
+function setAutoForfeit (choice) {
+	switch (choice) {
+		case 1: AUTO_FORFEIT = true;
+				break;
+		case 2: AUTO_FORFEIT = false;
+				break;
+		default: AUTO_FORFEIT = false;
+				 break;
+	}
+	setActiveOption($autoForfeitOptions, choice);
+}
+
+function setAutoForfeitTime (choice) {
+	switch (choice) {
+		case 1: FORFEIT_DELAY = 4000;
+				break;
+		case 2: FORFEIT_DELAY = 7500;
+				break;
+		case 3: FORFEIT_DELAY = 10000;
+				break;
+		default: FORFEIT_DELAY = 7500;
+				 break;
+	}
+	setActiveOption($autoForfeitTimeOptions, choice);
+}
+
+$("#options-modal").on("hidden.bs.modal", function () {
+	if (players[HUMAN_PLAYER].out && AUTO_FORFEIT) {
+		setTimeout(advanceGame, FORFEIT_DELAY);
+		$mainButton.attr('disabled', true);
+	} else {
+		$mainButton.attr('disabled', actualMainButtonState);
+	}
+});

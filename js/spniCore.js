@@ -180,6 +180,8 @@ function restartGame () {
 	/* trigger screen refreshes */
 	updateSelectionVisuals();
 	updateAllGameVisuals();
+    
+    forceTableVisibility(true);
 	
 	/* there is only one call to this right now */
 	$gameScreen.hide();
@@ -203,6 +205,16 @@ function showCreditModal () {
  ************************************************************/
 function toggleTableVisibility () {
 	if (tableOpacity > 0) {
+		$gameTable.fadeOut();
+		tableOpacity = 0;
+	} else {
+		$gameTable.fadeIn();
+		tableOpacity = 1;
+	}
+}
+
+function forceTableVisibility(state) {
+    if (!state) {
 		$gameTable.fadeOut();
 		tableOpacity = 0;
 	} else {
