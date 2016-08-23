@@ -11,8 +11,14 @@ html {
 body {
 	width: 100%;
 	height: 100%;
+    max-width: 1000px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background-color: #111111;
+	font-size: 14px;
+    color: #050505;
+	background-color: #050505;
+    background-image: url("../img/background.png");
+	background-size: 1000px 100%;
+    background-repeat: repeat-x;
 }
 
 /************************************************************
@@ -42,8 +48,6 @@ body.modal-open {
 .bordered {
 	border: 2px solid black;
 	border-radius: 8px;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4) inset, 
-				0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .shaded {
@@ -72,9 +76,6 @@ body.modal-open {
 	height: 100%;
 	min-width: 900px;
 	min-height: 600px;
-	background-image: url("../img/background.png");
-	background-size: 100% 100%;
-	background-color: #555555;
 	vertical-align: middle;
 	border-spacing: 0px;
 }
@@ -844,10 +845,17 @@ body.modal-open {
 	margin: 5px;
 	padding: 5px;
 	background-color: #663300;
+    border: 2px solid black;
+	border-radius: 8px;
 }
 
 .game-table-glass {
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.game-table-none {
+	background: rgba(255, 255, 255, 0.0);
+    border: 0px solid black;
 }
 
 .game-table-surface {
@@ -856,10 +864,17 @@ body.modal-open {
 	background: radial-gradient(#007000, #006000, #005000);
 	background-color: #006000;
 	box-sizing: border-box;
+    border: 2px solid black;
+	border-radius: 8px;
 }
 
 .game-table-surface-glass {
 	background: rgba(255, 255, 255, 0.1);
+}
+
+.game-table-surface-none {
+	background: rgba(255, 255, 255, 0.0);
+    border: 0px solid black;
 }
 
 .game-table-area {
@@ -874,12 +889,20 @@ body.modal-open {
 	padding: 2px;
 	background: radial-gradient(#454545, #454545, #454545);
 	background-color: #454545;
+    border: 2px solid black;
+	border-radius: 8px;
 }
 
 .opponent-area-glass {
 	background: transparent;
 	border: none;
 	box-shadow: none;
+}
+
+.opponent-area-none {
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: none;
+    border: 2px solid black;
 }
 
 .opponent-name-label {
@@ -916,12 +939,19 @@ body.modal-open {
 	margin-top: 5px;
 	box-sizing: border-box;
 	background: radial-gradient(#454545, #454545, #454545);
+    border: 2px solid black;
 }
 
 .player-table-area-glass {
 	background: transparent;
 	border: none;
 	box-shadow: none;
+}
+
+.player-table-area-none {
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: none;
+    border: 2px solid black;
 }
  
 .dock-options-area {
@@ -996,6 +1026,11 @@ body.modal-open {
 
 .shown-card {
 	opacity: 1;
+}
+
+#main-game-button {
+    position: absolute;
+    top: 80%;
 }
 
 /************************************************************

@@ -36,7 +36,7 @@
 					<!-- Start of Version Label -->
 					<tr><td>
 						<div class="bordered version-label">
-							Version beta9.1-1
+							Version 10.5.0
 						</div>
 					</td></tr>
 					<!-- End of Version Label -->
@@ -1194,7 +1194,7 @@
 						<div class="input-group">
 							<div class="bordered input-group-addon">Page</div>
 							<input id="group-page-indicator" type="text" class="bordered form-control form-control-center" value="" />
-							<div id="group-max-page-indicator" class="bordered input-group-addon">of 1</div>
+							<div id="group-max-page-indicator" class="bordered input-group-addon">of 2</div>
 						</div>
 					</td></tr>
 					
@@ -1325,6 +1325,20 @@
 									<ul class="pagination">
 										<li id="options-table-style-1" class="active"><a href="#" onclick="setTableStyle(1)">Standard</a></li>
 										<li id="options-table-style-2"><a href="#" onclick="setTableStyle(2)">Glass</a></li>
+                                        <li id="options-table-style-3"><a href="#" onclick="setTableStyle(3)">None</a></li>
+									</ul>
+								</nav>
+							</td>
+						</tr>
+                        
+                        <!-- Auto Fade -->
+						<tr>
+							<td style="width:25%"><h4 class="modal-title modal-left">Auto Table Fade</h4></td>
+							<td>
+								<nav>
+									<ul class="pagination">
+										<li id="options-auto-fade-1" class="active"><a href="#" onclick="setAutoFade(1)">True</a></li>
+										<li id="options-auto-fade-2"><a href="#" onclick="setAutoFade(2)">False</a></li>
 									</ul>
 								</nav>
 							</td>
@@ -1426,52 +1440,68 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<h3 class="modal-title text-center">Credits</h3>
-				<h5 class="modal-title text-center">If you are on this list and you want your name to link to something, let me know!</h5>
+				<h5 class="modal-title text-center">If you are on this list and you want your name to link to something, let me know! Also, if aren't on this list and should be, let me know ASAP!</h5>
 			</div>
 			<div class="modal-body">
 				<table class="modal-body-container" style="margin: 0 auto;">
 				<tr><td style="width:100%">
 					<table class="credit-table">
 						<tr>
-							<td colspan="42"><h4 class="bordered credit-modal-label">Programming</h4></td>
+                            <td><b>josephkantel</b></td>
+                            <td>Main Programmer</td>
 						</tr>
-						<tr>
-							<td>josephkantel</td>
-                            <td>Zombiqaz</td>
-						</tr>
-					</table>
-				</td></tr><tr><td>
-					<table class="credit-table" style="margin-top: 12px;">
-						<tr>
-							<td colspan="42"><h4 class="bordered credit-modal-label">Dialogue</h4></td>
-						</tr>
-						<tr>
-							<td>undeadclown</td>
-							<td>krisslanza</td>
-							<td>TeratonArm</td>
-                            <td>Zombiqaz</td>
-						</tr>
-					</table>
-				</td></tr><tr><td>
-					<table class="credit-table" style="margin-top: 12px;">
-						<tr>
-							<td colspan="42"><h4 class="bordered credit-modal-label">Artwork</h4></td>
-						</tr>
-						<tr>
-							<td>josephkantel</td>
-							<td>DBZRulez</td>
-                            <td>Zombiqaz</td>
-						</tr>
-					</table>
-				</td></tr><tr><td>
-					<table class="credit-table" style="margin-top: 12px;">
-						<tr>
-							<td colspan="42"><h4 class="bordered credit-modal-label">Special Thanks</h4></td>
-						</tr>
-						<tr>
-							<td>Hot-Legs</td>
-                            <td>Zombiqaz</td>
-						</tr>
+                        <tr>
+                            <td><b>undeadclown</b></td>
+                            <td>Dialogue Writer & Original Source</td>
+                        </tr>
+                        <tr>
+                            <td><b>krisslanza</b></td>
+                            <td>Dialogue Writer</td>
+                        </tr>
+                        <tr>
+                            <td><b>TeratonArm</b></td>
+                            <td>Dialogue Writer</td>
+                        </tr>
+                        <tr>
+                            <td><b>Hot-Legs</b></td>
+                            <td>Supporter</td>
+                        </tr>
+                        <tr>
+                            <td><b>Zombiqaz</b></td>
+                            <td>Programmer, Dialogue Writer, & Artist</td>
+                        </tr>
+                        <tr>
+                            <td><b>SPNATI</b></td>
+                            <td>Supporter</td>
+                        </tr>
+                        <tr>
+                            <td><b>DBZRulez</b></td>
+                            <td>Artist</td>
+                        </tr>
+                        <tr>
+                            <td><b>GlassOfCereal</b></td>
+                            <td>Artist</td>
+                        </tr>
+                        <tr>
+                            <td><b>JayJaysie</b></td>
+                            <td>Dialogue Writer & Artist</td>
+                        </tr>
+                        <tr>
+                            <td><b>throwaway3141598</b></td>
+                            <td>Dialogue Writer & Artist</td>
+                        </tr>
+                        <tr>
+                            <td><b>Sutorippu</b></td>
+                            <td>Nugi-chan Provider & Dialogue Writer</td>
+                        </tr>
+                        <tr>
+                            <td><b>DrankeyKrang</b></td>
+                            <td>Artist & Dialogue Writer</td>
+                        </tr>
+                        <tr>
+                            <td><b>spnatinoobprogrammer</b></td>
+                            <td>Programmer</td>
+                        </tr>
 					</table>
 				</td></tr>
 				</table>
@@ -1582,7 +1612,10 @@
 			<table class="game-table-area">
 			<tr>
 			<td>
-				<table class="bordered opponent-area">
+				<table id='game-opponent-area-1' class="bordered opponent-area">
+                    <tr><td>
+						<div id="game-name-label-1" class="bordered opponent-name-label">Opponent 1</div>
+					</td></tr>
 					<tr><td>
 						<table class="opponent-card-area">
 						<tr>
@@ -1594,13 +1627,13 @@
 						</tr>
 						</table>
 					</td></tr>
-					<tr><td>
-						<div id="game-name-label-1" class="bordered opponent-name-label">Opponent 1</div>
-					</td></tr>
 				</table>
 			</td>
 			<td>
-				<table class="bordered opponent-area">
+				<table id='game-opponent-area-2' class="bordered opponent-area">
+                    <tr><td>
+						<div id="game-name-label-2" class="bordered opponent-name-label">Opponent 2</div>
+					</td></tr>
 					<tr><td>
 						<table class="opponent-card-area">
 						<tr>
@@ -1612,13 +1645,13 @@
 						</tr>
 						</table>
 					</td></tr>
-					<tr><td>
-						<div id="game-name-label-2" class="bordered opponent-name-label">Opponent 2</div>
-					</td></tr>
 				</table>
 			</td>
 			<td>
-				<table class="bordered opponent-area">
+				<table id='game-opponent-area-3' class="bordered opponent-area">
+                    <tr><td>
+						<div id="game-name-label-3" class="bordered opponent-name-label">Opponent 3</div>
+					</td></tr>
 					<tr><td>
 						<table class="opponent-card-area">
 						<tr>
@@ -1630,13 +1663,13 @@
 						</tr>
 						</table>
 					</td></tr>
-					<tr><td>
-						<div id="game-name-label-3" class="bordered opponent-name-label">Opponent 3</div>
-					</td></tr>
 				</table>
 			</td>
 			<td>
-				<table class="bordered opponent-area">
+				<table id='game-opponent-area-4' class="bordered opponent-area">
+                    <tr><td>
+						<div id="game-name-label-4" class="bordered opponent-name-label">Opponent 4</div>
+					</td></tr>
 					<tr><td>
 						<table class="opponent-card-area">
 						<tr>
@@ -1647,9 +1680,6 @@
 							<td><img id="player-4-card-5" class="bordered small-card-image" src="img/blankcard.jpg"></td>
 						</tr>
 						</table>
-					</td></tr>
-					<tr><td>
-						<div id="game-name-label-4" class="bordered opponent-name-label">Opponent 4</div>
 					</td></tr>
 				</table>
 			</td>
@@ -1713,7 +1743,7 @@
 									<img class="bordered large-card-image" src="img/unknown.jpg">
 									<img id="hidden-large-card" class="bordered large-card-image hidden-large-card" src="img/unknown.jpg">
 								</div>
-								<button id="main-game-button" class="bordered smooth-button center-dock-button" onclick="advanceGame()">Deal</button>	
+									
 							</td>
 						</tr>
 						</table>
@@ -1724,7 +1754,7 @@
 				<td style="width:40%">
 					<table class="clear player-area">
 					<tr><td>
-						<table class="player-card-area">
+						<table id='player-game-card-area' class="player-card-area">
 						<tr>
 							<td><input type="image" id="player-0-card-1" class="bordered large-card-image" src="img/blankcard.jpg" onclick="selectCard(0)"/></td>
 							<td><input type="image" id="player-0-card-2" class="bordered large-card-image" src="img/blankcard.jpg" onclick="selectCard(1)"/></td>
@@ -1743,6 +1773,8 @@
 		</td></tr>
 		</table>
 		</div>
+        
+        <button id="main-game-button" class="bordered smooth-button center-dock-button" onclick="advanceGame()">Deal</button>
 
 	</div>
 	</div>
