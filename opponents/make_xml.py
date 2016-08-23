@@ -272,6 +272,7 @@ def read_player_file(filename):
 	mstb_dict = get_masturbating_cases_dictionary()
 	fnsh_dict = get_finished_Cases_dictionary()
 	
+	case_names = main_dict.keys() + plyr_dict.keys() + strp_dict.keys() + nude_dict.keys() + mstb_dict.keys() + fnsh_dict.keys()
 	
 	d = {}
 	
