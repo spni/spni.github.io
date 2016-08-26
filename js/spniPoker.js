@@ -99,6 +99,7 @@ function setupPoker () {
  ************************************************************/
 function composeDeck () {
 	inDeck = [];
+    outDeck = [];
 	var suit = "";
 	
 	for (var i = 0; i < 4; i++) {
@@ -228,7 +229,7 @@ function collectPlayerHand (player) {
 function shuffleDeck () {
 	/* shuffle the cards from the outDeck into the inDeck */
 	for (var i = 0; i < outDeck.length; i++) {
-		inDeck.push(outDeck[i]);
+        inDeck.push(outDeck[i]);
 	}
 	
 	/* empty the outDeck */

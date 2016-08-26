@@ -464,6 +464,8 @@ function selectOpponentSlot (slot) {
  ************************************************************/
 function clickedSelectGroupButton () {
 	selectedSlot = 1;
+    
+    $groupMaxPageIndicator.html("of "+loadedGroups.length);
 	
 	/* switch screens */
 	screenTransition($selectScreen, $groupSelectScreen);
@@ -475,14 +477,19 @@ function clickedSelectGroupButton () {
 function clickedRandomGroupButton () {
 	selectedSlot = 1;
 	
+    for (var i = 1; i < players.length; i++) {
+        players[i] = null;
+    }
+    
 	/* get a random number for the group listings */
 	var randomGroupNumber = getRandomNumber(0, loadedGroups.length);
-	
+    console.log(loadedGroups[randomGroupNumber].opponents[0]);
+    
 	/* load the corresponding group */
-	loadBehaviour(loadedGroups[randomGroupNumber].opp1, updateRandomSelection);
-	loadBehaviour(loadedGroups[randomGroupNumber].opp2, updateRandomSelection);
-	loadBehaviour(loadedGroups[randomGroupNumber].opp3, updateRandomSelection);
-	loadBehaviour(loadedGroups[randomGroupNumber].opp4, updateRandomSelection);
+	loadBehaviour(loadedGroups[randomGroupNumber].opponents[0].folder, updateRandomSelection);
+	loadBehaviour(loadedGroups[randomGroupNumber].opponents[1].folder, updateRandomSelection);
+	loadBehaviour(loadedGroups[randomGroupNumber].opponents[2].folder, updateRandomSelection);
+	loadBehaviour(loadedGroups[randomGroupNumber].opponents[3].folder, updateRandomSelection);
 }
 
 /************************************************************
@@ -492,6 +499,10 @@ function clickedRandomFillButton () {
 	/* compose a copy of the loaded opponents list */
 	var loadedOpponentsCopy = [];
 	
+    for (var i = 1; i < players.length; i++) {
+        players[i] = null;
+    }
+    
 	/* only add non-selected opponents from the list */
 	for (var i = 0; i < loadedOpponents.length; i++) {
 		/* check to see if this opponent is selected */
