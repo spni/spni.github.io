@@ -173,6 +173,7 @@ function tickForfeitTimers (context) {
 function finishMasturbation (player) {
 	// HARD SET STAGE
 	players[player].stage += 1;
+    players[player].forfeit = [PLAYER_FINISHED_MASTURBATING, CAN_SPEAK];
 
 	/* update other player dialogue */
 	if (players[player].gender == MALE) {
