@@ -94,6 +94,7 @@ def get_stripping_cases_dictionary():
 #default images and text for being nude
 def get_nude_cases_dictionary():
 	d = {}
+	d["stripped"] = [("sad", "I miss my ~clothing~ already...")] #there's still a stripped case when they're nude
 	d["must_masturbate"] = [("loss", "I guess I lost...")]
 	d["must_masturbate_first"] = [("loss", "Y-You want me to do what?!")]
 	d["start_masturbating"] = [("starting", "I guess I have to do 'that' now, huh?")]
@@ -309,10 +310,6 @@ def read_player_file(filename):
 		
 		stripped = text.strip()
 		
-		if stripped == "" or stripped == ",":
-			#if there's no entry, skip it.
-			continue
-		
 		#if the key contains a -, it belongs to a specific stage
 		if '-' in key:
 			stg, part_key = key.rsplit('-', 1)
@@ -330,14 +327,19 @@ def read_player_file(filename):
 		
 		#cases, these can be repeated
 		if part_key in case_names:
+		
+			if stripped == "" or stripped == ",":
+				#if there's no entry, skip it.
+				continue
+				
 			if ',' not in text:
 				img, desc = "", text
 			else:
 				img,desc = text.split(",", 1) #split into (image, text) pairs
 			if key in d:
-				d[key].append( (img,desc) )
+				d[key].append( (img,desc) ) #add it to existing list of responses
 			else:
-				d[key] = [ (img, desc) ]
+				d[key] = [ (img, desc) ] #make a new list of responses
 				
 		#clothes is a list
 		elif key == "clothes":
@@ -347,7 +349,7 @@ def read_player_file(filename):
 			else:
 				d["clothes"] = [text]
 				
-		#other values are single lines
+		#other values are single lines. These need to be in the data, even if the value is empty
 		else:
 			d[key] = text
 	
