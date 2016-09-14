@@ -59,8 +59,8 @@ $cardCells = [[$("#player-0-card-1"), $("#player-0-card-2"), $("#player-0-card-3
  **********************************************************************/
 
 /* pseudo constants */
-var ANIM_DELAY = 500;
-var ANIM_TIME = 1000;
+var ANIM_DELAY = 0;
+var ANIM_TIME = 0;
 var CARDS_PER_HAND = 5;
  
 /* image constants */
@@ -321,13 +321,13 @@ function animateDealtCard (player, card) {
 	$clonedCard.attr('id', 'dealt-card-'+player+'-'+card);
 	
 	if (player == HUMAN_PLAYER) {
-		topOffset = 5;
-		leftOffset = 26;
+		topOffset = 0;
+		leftOffset = -180;
 		width = 65;
 		height = 90;
 	} else {
-		topOffset = 5;
-		leftOffset = 22;
+		topOffset = 0;
+		leftOffset = 0;
 		width = 35;
 		height = 45;
 	}

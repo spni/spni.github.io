@@ -140,7 +140,7 @@ function setDealSpeed (choice) {
 	/* implement the option change */
 	switch (choice) {
 		case 1: ANIM_DELAY = 0;
-				ANIM_TIME = 0; 
+				ANIM_TIME = 0;
 				break;
 		case 2: ANIM_DELAY = 200;
 				ANIM_TIME = 500; 
