@@ -90,14 +90,23 @@ body.modal-open {
 	left: 0;
 	right: 0;
     margin: 0.5%;
+    overflow: hidden;
 }
 
 /**************************************************
  * Positions
  **************************************************/
 
+.farLeft {
+    left: -12.5%;
+}
+
 .left {
     left: 0%;
+}
+
+.almostLeft {
+    left: 12.5%;
 }
 
 .halfLeft {
@@ -108,8 +117,16 @@ body.modal-open {
     right: 25%;
 }
 
+.almostRight {
+    right: 12.5%;
+}
+
 .right {
     right: 0%;
+}
+
+.farRight {
+    right: -12.5%;
 }
 
 /************************************************************
@@ -403,14 +420,14 @@ body.modal-open {
 
 .opponent-image-area {
 	position: absolute;
-    width: 25%;
+    width: 50%;
     height: 100%;
 }
 
 .opponent-image {
 	position: absolute;
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
 	margin: auto;
 	top: 0;
 	left: 0;
@@ -630,18 +647,6 @@ body.modal-open {
     padding-left: 2%;
     padding-right: 3%;
     font-size: 200%;
-    background: linear-gradient(#BB3333, #9F1616);
-    background-color: #BB3333;
-}
-
-#title-start-button :hover {
-    background: linear-gradient(#DD3333, #BF1616);
-    background-color: #DD5555;
-}
-
-#title-start-button :active {
-    background: linear-gradient(#BB3333, #9F1616);
-    background-color: #BB3333;
 }
 
 .title-entrance-image {
@@ -741,8 +746,6 @@ body.modal-open {
     font-size: 180%;
     padding-bottom: 0.1%;
     text-align: center;
-    background: linear-gradient(#BB3333, #9F1616);
-	background-color: #BB3333;
 }
 
 #main-select-button:disabled {
@@ -776,38 +779,27 @@ body.modal-open {
 
 #select-main-back-button {
     left: 0.5%;
-    background: linear-gradient(#BB3333, #9F1616);
-	background-color: #BB3333;
 }
 
 #select-group-button {
     left: 14%;
-    background: linear-gradient(#33AA33, #168F16);
-	background-color: #33AA33;
 }
 
 #select-random-group-button {
     left: 27.5%;
-    background: linear-gradient(#0088CC, #0066AA);
-	background-color: #9900CC;
 }
 
 #select-random-female-button {
     right: 27.5%;
-    background: linear-gradient(#0088CC, #0066AA);
-	background-color: #9900CC;
 }
 
 #select-random-male-button {
     right: 14%;
-    background: linear-gradient(#0088CC, #0066AA);
-	background-color: #9900CC;
 }
 
 #select-random-button {
     right: 0.5%;
-    background: linear-gradient(#0088CC, #0066AA);
-	background-color: #9900CC;
+    right: 0.5%;
 }
 
 /************************************************************
@@ -852,7 +844,7 @@ body.modal-open {
     left: 0;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
-    font-size: 80%;
+    font-size: 70%;
     background: linear-gradient(#CCCCCC, #AAAAAA);
     background-color: #CCCCCC;
 }
@@ -864,7 +856,7 @@ body.modal-open {
     right: 0;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
-    font-size: 90%;
+    font-size: 80%;
     background: #F5F5F5;
 }
 
