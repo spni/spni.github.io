@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>
 	<!-- Stylesheets -->
+	<title>Strip Poker Night at the Inventory</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/spni.css">
@@ -21,9 +22,9 @@
 			<tr>
 				<td colspan="4" style="padding:0px 2px;">
 					<div class="title-banner-container">
-					<div class="bordered title-banner-area">
-						<img class="bordered title-banner" src="img/title.png">
-					</div>
+						<div class="bordered title-banner-area">
+							<img class="bordered title-banner" src="img/title.png">
+						</div>
 					</div>
 				</td>
 			</tr>
@@ -160,6 +161,7 @@
 							<div>
 								<button class="bordered smooth-button smooth-button-red title-entrance-button" onclick="validateTitleScreen()">
 									<img class="title-entrance-image" src="img/enter.png"/>
+									<!-- doEpilogue -->
 								</button>
 							</div>
 						</td></tr>
@@ -1700,8 +1702,9 @@
 				<td style="width:10%">
 					<table class="clear player-area dock-options-area">
 					<tr><td>
-						<button class="bordered smooth-button dock-options-button" style="margin-bottom:10px" onclick="showRestartModal()">
+						<button class="bordered smooth-button dock-options-button" style="margin-bottom:10px" onclick="doEpilogueModal()">
 							<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+							<!-- showRestartModal -->
 						</button>
 					</td></tr><tr><td>
 						<button class="bordered smooth-button dock-options-button" onclick="showOptionsModal()">
@@ -1785,7 +1788,64 @@
 </table>
 <!-- End of Main Game Screen -->
 
-	
+<!-- Start of Epilogue Screen -->
+<div id="epilogue-screen" class="epilogue-area" role="dialog" hidden>
+	<button type="button" id="epilogue-prev-button" class="bordered smooth-button" onclick="progressEpilogue(-1)">
+		Previous
+	</button>
+	<button type="button" id="epilogue-next-button" class="bordered smooth-button" onclick="progressEpilogue( 1)">
+		Next
+	</button>
+	<button type="button" id="epilogue-restart-button" class="bordered smooth-button" onclick="restartGame()">
+		Restart?
+	</button>
+</div>
+<!-- End of Epilogue Screen -->
+
+<!-- Start of Epilogue Choice Modal -->
+<div id="epilogue-modal" class="modal table-modal fade" role="dialog">
+	<div class="modal-table-container">
+	<div class="modal-cell-container">
+	<div class="bordered modal-dialog">
+	<div class="bordered modal-dialog-surface">
+		<!-- Start of Modal Content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title text-center">The game is now over...</h3>
+				<h5 id="epilogue-header-text" class="modal-title text-center"></h5>
+			</div>
+			<div class="modal-body">
+				<div class="modal-body-container" style="width:100%">
+					<table id="epilogue-choice" style="width:100%">
+						<!-- Table Style -->
+						<tr>
+							<td style="width:25%"><h4 class="modal-title modal-left"></h4></td>
+							<td>
+								<nav>
+									<ul id="epilogue_list" class="pagination">
+									</ul>
+								</nav>
+							</td>
+						</tr>
+
+					</table>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button id="epilogue-modal-accept-button" class="bordered smooth-button modal-button" onclick="doEpilogue()">Choose</button>
+			</div>
+			<div class="modal-footer">
+				<button id="epilogue-modal-restart-button" class="bordered smooth-button modal-button" onclick="restartGame()" data-dismiss="modal">Restart?</button>
+			</div>
+		</div>
+		<!-- End of Modal Content -->
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+<!-- End of Options Modal -->
+
 <!-- JavaScript -->
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -1801,6 +1861,7 @@
 <script src="js/spniBehaviour.js"></script>
 <script src="js/spniAI.js"></script>
 <script src="js/spniOption.js"></script>
+<script src="js/spniEpilogue.js"></script>
 
 </body>
 </html>

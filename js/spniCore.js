@@ -30,6 +30,7 @@ $selectScreen = $('#main-select-screen');
 $individualSelectScreen = $('#individual-select-screen');
 $groupSelectScreen = $('#group-select-screen');
 $gameScreen = $('#game-screen');
+$epilogueScreen = $('#epilogue-screen');
 
 /* credit modal */
 $creditModal = $('#credit-modal');
@@ -185,6 +186,7 @@ function restartGame () {
 	
 	/* there is only one call to this right now */
 	$gameScreen.hide();
+	$epilogueScreen.hide();
 	holdTitleClothing();
 	$titleScreen.show();
 }
