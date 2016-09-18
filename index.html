@@ -1796,7 +1796,7 @@
 	<button type="button" id="epilogue-next-button" class="bordered smooth-button" onclick="progressEpilogue( 1)">
 		Next
 	</button>
-	<button type="button" id="epilogue-restart-button" class="bordered smooth-button" onclick="restartGame()">
+	<button type="button" id="epilogue-restart-button" class="bordered smooth-button centred" onclick="showRestartModal()">
 		Restart?
 	</button>
 </div>
@@ -1835,7 +1835,7 @@
 				<button id="epilogue-modal-accept-button" class="bordered smooth-button modal-button" onclick="doEpilogue()">Choose</button>
 			</div>
 			<div class="modal-footer">
-				<button id="epilogue-modal-restart-button" class="bordered smooth-button modal-button" onclick="restartGame()" data-dismiss="modal">Restart?</button>
+				<button id="epilogue-modal-restart-button" class="bordered smooth-button modal-button" onclick="showRestartModal()" data-dismiss="modal">Restart?</button>
 			</div>
 		</div>
 		<!-- End of Modal Content -->

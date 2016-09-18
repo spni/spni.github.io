@@ -206,9 +206,10 @@ function doEpilogueModal(){
 			break;
 		}
 	}
-	//if (winner < 0) return; //no Daisy, so no images to show
 	
 	var playerWon = (winner == HUMAN_PLAYER); //whether or not the human player won
+	console.log("The winner is "+winner+", playerWon = "+playerWon);
+	$epilogueAcceptButton.css("visibility", playerWon ? "visible" : "hidden"); //currently, there are only endings where the player wins, so only show the accept button if the player won
 	
 	var headerStr = '';
 	if (playerWon){
@@ -218,6 +219,7 @@ function doEpilogueModal(){
 		}
 	} else {
 		headerStr = lossStr;
+		clearEpilogueList(); //all the epilogues are for when the player wins, so don't allow them to choose one if they lost
 	}
 	
 	$epilogueHeader.html(headerStr); //set the header string

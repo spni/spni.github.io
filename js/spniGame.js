@@ -570,11 +570,27 @@ function handleGameOver() {
 	/* determine true end */
 	if (left == 0) {
 		/* true end */
+		
+		/* Do game over dialogue here
+		//identify winner
+		var winner = -1;
+		for (var i = 0; i < players.length; i++){
+			if (!players[i].out){
+				winner = i;
+				break;
+		}
+		for (var i = 0; i < players.length; i++){
+			var tag = (i == winner) ? GAME_OVER_VICTORY : GAME_OVER_LOSS;
+			updateBehaviour(i, tag, [NAME], [players[winner].label]);
+		}
+		*/
+		
         updateAllGameVisuals();
         
-		$mainButton.html("Restart?");
+		$mainButton.html("Ending?");
 		$mainButton.attr('disabled', false);
         actualMainButtonState = false;
+		doEpilogueModal(); //start the endings //put this behind a setTimeout() once we do the game over dialogue
 	} else {
 		/* someone is still forfeiting */
 		var context = "Wait";
