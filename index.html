@@ -1,6 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" />
+    <title>Strip Poker Night at the Inventory</title>
+  
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
@@ -139,12 +142,12 @@
           <span id="select-dialogue-2" class="dialogue"></span>
         </div>
       </div>
-      <div id="select-bubble-3" class="bordered halfRight dialogue-bubble-area">
+      <div id="select-bubble-3" class="bordered center dialogue-bubble-area">
         <div class="dialogue-bubble dialogue-centre">
           <span id="select-dialogue-3" class="dialogue"></span>
         </div>
       </div>
-      <div id="select-bubble-4" class="bordered right dialogue-bubble-area">
+      <div id="select-bubble-4" class="bordered farHalfLeft dialogue-bubble-area">
         <div class="dialogue-bubble dialogue-centre">
           <span id="select-dialogue-4" class="dialogue"></span>
         </div>
@@ -183,11 +186,11 @@
         <div id="select-name-label-2" class="bordered opponent-name-label">Opponent 2</div>
         <button id="select-slot-button-2" class="bordered smooth-button smooth-button-green select-slot-button" onclick="selectOpponentSlot(2)">Select Opponent</button>
       </div>
-      <div class="bordered halfRight opponent-area">
+      <div class="bordered center opponent-area">
         <div id="select-name-label-3" class="bordered opponent-name-label">Opponent 3</div>
         <button id="select-slot-button-3" class="bordered smooth-button smooth-button-green select-slot-button" onclick="selectOpponentSlot(3)">Select Opponent</button>
       </div>
-      <div class="bordered right opponent-area">
+      <div class="bordered farHalfLeft opponent-area">
         <div id="select-name-label-4" class="bordered opponent-name-label">Opponent 4</div>
         <button id="select-slot-button-4" class="bordered smooth-button smooth-button-green select-slot-button" onclick="selectOpponentSlot(4)">Select Opponent</button>
       </div>
@@ -245,14 +248,10 @@
           <div id="individual-name-label-1" class="bordered stats-content"></div>
         </div>
         <div class="input-group stats-section">
-          <div class="bordered stats-label">Prefers</div>
-          <div id="individual-prefers-label-1" class="bordered stats-content"></div>
-        </div>
-        <div class="input-group stats-section">
           <div class="bordered stats-label">Sex</div>
           <div id="individual-sex-label-1" class="bordered stats-content"></div>
         </div>
-        <div class="input-group stats-section">
+        <div class="input-group stats-section-large">
           <div class="bordered stats-label">Source</div>
           <div id="individual-source-label-1" class="bordered stats-content"></div>
         </div>
@@ -279,14 +278,10 @@
           <div id="individual-name-label-2" class="bordered stats-content"></div>
         </div>
         <div class="input-group stats-section">
-          <div class="bordered stats-label">Prefers</div>
-          <div id="individual-prefers-label-2" class="bordered stats-content"></div>
-        </div>
-        <div class="input-group stats-section">
           <div class="bordered stats-label">Sex</div>
           <div id="individual-sex-label-2" class="bordered stats-content"></div>
         </div>
-        <div class="input-group stats-section">
+        <div class="input-group stats-section-large">
           <div class="bordered stats-label">Source</div>
           <div id="individual-source-label-2" class="bordered stats-content"></div>
         </div>
@@ -307,25 +302,21 @@
       </div>
       
       
-      <div id="individual-stats-page-3-1" class="bordered halfRight dialogue-bubble-area">
+      <div id="individual-stats-page-3-1" class="bordered center dialogue-bubble-area">
         <div class="stats-section">
           <div class="bordered stats-label">Name</div>
           <div id="individual-name-label-3" class="bordered stats-content"></div>
         </div>
         <div class="input-group stats-section">
-          <div class="bordered stats-label">Prefers</div>
-          <div id="individual-prefers-label-3" class="bordered stats-content"></div>
-        </div>
-        <div class="input-group stats-section">
           <div class="bordered stats-label">Sex</div>
           <div id="individual-sex-label-3" class="bordered stats-content"></div>
         </div>
-        <div class="input-group stats-section">
+        <div class="input-group stats-section-large">
           <div class="bordered stats-label">Source</div>
           <div id="individual-source-label-3" class="bordered stats-content"></div>
         </div>
       </div>
-      <div id="individual-stats-page-3-2" class="bordered halfRight dialogue-bubble-area" style="display:none;">
+      <div id="individual-stats-page-3-2" class="bordered center dialogue-bubble-area" style="display:none;">
         <div class="stats-section">
           <div class="bordered stats-label">Writer</div>
           <div id="individual-writer-label-3" class="bordered stats-content"></div>
@@ -335,31 +326,27 @@
           <div id="individual-artist-label-3" class="bordered stats-content"></div>
         </div>
       </div>
-      <div id="individual-stats-page-3-3" class="bordered halfRight dialogue-bubble-area" style="display:none;">
+      <div id="individual-stats-page-3-3" class="bordered center dialogue-bubble-area" style="display:none;">
         <div id="individual-description-label-3">
         </div>
       </div>
       
       
-      <div id="individual-stats-page-4-1" class="bordered right dialogue-bubble-area">
+      <div id="individual-stats-page-4-1" class="bordered farHalfLeft dialogue-bubble-area">
         <div class="stats-section">
           <div class="bordered stats-label">Name</div>
           <div id="individual-name-label-4" class="bordered stats-content"></div>
         </div>
         <div class="input-group stats-section">
-          <div class="bordered stats-label">Prefers</div>
-          <div id="individual-prefers-label-4" class="bordered stats-content"></div>
-        </div>
-        <div class="input-group stats-section">
           <div class="bordered stats-label">Sex</div>
           <div id="individual-sex-label-4" class="bordered stats-content"></div>
         </div>
-        <div class="input-group stats-section">
+        <div class="input-group stats-section-large">
           <div class="bordered stats-label">Source</div>
           <div id="individual-source-label-4" class="bordered stats-content"></div>
         </div>
       </div>
-      <div id="individual-stats-page-4-2" class="bordered right dialogue-bubble-area" style="display:none;">
+      <div id="individual-stats-page-4-2" class="bordered farHalfLeft dialogue-bubble-area" style="display:none;">
         <div class="stats-section">
           <div class="bordered stats-label">Writer</div>
           <div id="individual-writer-label-4" class="bordered stats-content"></div>
@@ -369,7 +356,7 @@
           <div id="individual-artist-label-4" class="bordered stats-content"></div>
         </div>
       </div>
-      <div id="individual-stats-page-4-3" class="bordered right dialogue-bubble-area" style="display:none;">
+      <div id="individual-stats-page-4-3" class="bordered farHalfLeft dialogue-bubble-area" style="display:none;">
         <div id="individual-description-label-4">
         </div>
       </div>
@@ -481,14 +468,10 @@
           <div id="group-name-label-1" class="bordered stats-content"></div>
         </div>
         <div class="input-group stats-section">
-          <div class="bordered stats-label">Prefers</div>
-          <div id="group-prefers-label-1" class="bordered stats-content"></div>
-        </div>
-        <div class="input-group stats-section">
           <div class="bordered stats-label">Sex</div>
           <div id="group-sex-label-1" class="bordered stats-content"></div>
         </div>
-        <div class="input-group stats-section">
+        <div class="input-group stats-section-large">
           <div class="bordered stats-label">Source</div>
           <div id="group-source-label-1" class="bordered stats-content"></div>
         </div>
@@ -515,14 +498,10 @@
           <div id="group-name-label-2" class="bordered stats-content"></div>
         </div>
         <div class="input-group stats-section">
-          <div class="bordered stats-label">Prefers</div>
-          <div id="group-prefers-label-2" class="bordered stats-content"></div>
-        </div>
-        <div class="input-group stats-section">
           <div class="bordered stats-label">Sex</div>
           <div id="group-sex-label-2" class="bordered stats-content"></div>
         </div>
-        <div class="input-group stats-section">
+        <div class="input-group stats-section-large">
           <div class="bordered stats-label">Source</div>
           <div id="group-source-label-2" class="bordered stats-content"></div>
         </div>
@@ -543,25 +522,21 @@
       </div>
       
       
-      <div id="group-stats-page-3-1" class="bordered halfRight dialogue-bubble-area">
+      <div id="group-stats-page-3-1" class="bordered center dialogue-bubble-area">
         <div class="stats-section">
           <div class="bordered stats-label">Name</div>
           <div id="group-name-label-3" class="bordered stats-content"></div>
         </div>
         <div class="input-group stats-section">
-          <div class="bordered stats-label">Prefers</div>
-          <div id="group-prefers-label-3" class="bordered stats-content"></div>
-        </div>
-        <div class="input-group stats-section">
           <div class="bordered stats-label">Sex</div>
           <div id="group-sex-label-3" class="bordered stats-content"></div>
         </div>
-        <div class="input-group stats-section">
+        <div class="input-group stats-section-large">
           <div class="bordered stats-label">Source</div>
           <div id="group-source-label-3" class="bordered stats-content"></div>
         </div>
       </div>
-      <div id="group-stats-page-3-2" class="bordered halfRight dialogue-bubble-area" style="display:none;">
+      <div id="group-stats-page-3-2" class="bordered center dialogue-bubble-area" style="display:none;">
         <div class="stats-section">
           <div class="bordered stats-label">Writer</div>
           <div id="group-writer-label-3" class="bordered stats-content"></div>
@@ -571,31 +546,27 @@
           <div id="group-artist-label-3" class="bordered stats-content"></div>
         </div>
       </div>
-      <div id="group-stats-page-3-3" class="bordered halfRight dialogue-bubble-area" style="display:none;">
+      <div id="group-stats-page-3-3" class="bordered center dialogue-bubble-area" style="display:none;">
         <div id="group-description-label-3">
         </div>
       </div>
       
       
-      <div id="group-stats-page-4-1" class="bordered right dialogue-bubble-area">
+      <div id="group-stats-page-4-1" class="bordered farHalfLeft dialogue-bubble-area">
         <div class="stats-section">
           <div class="bordered stats-label">Name</div>
           <div id="group-name-label-4" class="bordered stats-content"></div>
         </div>
         <div class="input-group stats-section">
-          <div class="bordered stats-label">Prefers</div>
-          <div id="group-prefers-label-4" class="bordered stats-content"></div>
-        </div>
-        <div class="input-group stats-section">
           <div class="bordered stats-label">Sex</div>
           <div id="group-sex-label-4" class="bordered stats-content"></div>
         </div>
-        <div class="input-group stats-section">
+        <div class="input-group stats-section-large">
           <div class="bordered stats-label">Source</div>
           <div id="group-source-label-4" class="bordered stats-content"></div>
         </div>
       </div>
-      <div id="group-stats-page-4-2" class="bordered right dialogue-bubble-area" style="display:none;">
+      <div id="group-stats-page-4-2" class="bordered farHalfLeft dialogue-bubble-area" style="display:none;">
         <div class="stats-section">
           <div class="bordered stats-label">Writer</div>
           <div id="group-writer-label-4" class="bordered stats-content"></div>
@@ -605,7 +576,7 @@
           <div id="group-artist-label-4" class="bordered stats-content"></div>
         </div>
       </div>
-      <div id="group-stats-page-4-3" class="bordered right dialogue-bubble-area" style="display:none;">
+      <div id="group-stats-page-4-3" class="bordered farHalfLeft dialogue-bubble-area" style="display:none;">
         <div id="group-description-label-4">
         </div>
       </div>
@@ -698,10 +669,10 @@
 
 
 <!-- Start of Restart Modal -->
-<div id="restart-modal" class="modal table-modal fade" role="dialog">
+<div id="restart-modal" class="modal table-modal fade">
 	<div class="modal-table-container">
 	<div class="modal-cell-container">
-	<div class="bordered modal-dialog">
+	<div class="bordered modal-dialog average-modal-dialog">
 	<div class="bordered modal-dialog-surface">
 		<!-- Start of Modal Content -->
 		<div class="modal-content">
@@ -728,7 +699,7 @@
 <div id="stripping-modal" class="modal table-modal fade" role="dialog">
 	<div class="modal-table-container">
 	<div class="modal-cell-container">
-	<div class="bordered modal-dialog">
+	<div class="bordered modal-dialog average-modal-dialog">
 	<div class="bordered modal-dialog-surface">
 		<!-- Start of Modal Content -->
 		<div class="modal-content">
@@ -736,9 +707,9 @@
 				<h4 class="modal-title text-center">Select an article of clothing to remove</h4>
 			</div>
 			<div class="modal-body">
-				<div id="stripping-clothing-area" class="modal-body-container">
-					
-				</div>
+              <div id="stripping-clothing-area" class="modal-body-stretch-container">
+
+              </div>
 			</div>
 			<div class="modal-footer">
 				<button id="stripping-modal-button" class="bordered smooth-button modal-button" data-dismiss="modal" onclick="closeStrippingModal()">Strip</button>
@@ -757,13 +728,13 @@
 <div id="options-modal" class="modal table-modal fade" role="dialog">
 	<div class="modal-table-container">
 	<div class="modal-cell-container">
-	<div class="bordered modal-dialog">
+	<div class="bordered modal-dialog wide-modal-dialog">
 	<div class="bordered modal-dialog-surface">
 		<!-- Start of Modal Content -->
 		<div class="modal-content">
 			<div class="modal-header">
-				<h3 class="modal-title text-center">Options</h3>
-				<h5 class="modal-title text-center"><b>Please Note:</b> These settings don't save if you refresh the page.</h5>
+                <h3 class="modal-title text-center"><b>Options</b></h3>
+				<h5 class="modal-subtitle text-center"><b>Please Note:</b> These settings don't save if you refresh the page.</h5>
 			</div>
 			<div class="modal-body">
 				<div class="modal-body-container" style="width:100%">
@@ -871,16 +842,16 @@
 <div id="credit-modal" class="modal table-modal fade" role="dialog">
 	<div class="modal-table-container">
 	<div class="modal-cell-container">
-	<div class="bordered modal-dialog">
+	<div class="bordered modal-dialog wide-modal-dialog">
 	<div class="bordered modal-dialog-surface">
 		<!-- Start of Modal Content -->
 		<div class="modal-content">
 			<div class="modal-header">
-				<h3 class="modal-title text-center">Credits</h3>
-				<h5 class="modal-title text-center">If you are on this list and you want your name to link to something, let me know! Also, if aren't on this list and should be, let me know ASAP!</h5>
+              <h3 class="modal-title text-center"><b>Credits</b></h3>
+				<h5 class="modal-subtitle text-center">If you have a problem with this list, for whatever reason, contact a mod on the subreddit to get the issue resolved.</h5>
 			</div>
 			<div class="modal-body">
-				<table class="modal-body-container" style="margin: 0 auto;">
+				<table class="modal-body-stretch-container" style="margin: 0 auto;">
 				<tr><td style="width:100%">
 					<table class="credit-table">
 						<tr>
@@ -972,12 +943,12 @@
           <span id="game-dialogue-2" class="dialogue"></span>
         </div>
       </div>
-      <div class="bordered halfRight dialogue-bubble-area">
+      <div class="bordered center dialogue-bubble-area">
         <div id="game-bubble-3" class="dialogue-bubble dialogue-centre">
           <span id="game-dialogue-3" class="dialogue"></span>
         </div>
       </div>
-      <div class="bordered right dialogue-bubble-area">
+      <div class="bordered farHalfLeft dialogue-bubble-area">
         <div id="game-bubble-4" class="dialogue-bubble dialogue-centre">
           <span id="game-dialogue-4" class="dialogue"></span>
         </div>

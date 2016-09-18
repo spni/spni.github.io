@@ -122,11 +122,11 @@ function setCardSuggest (choice) {
 function setAITurnTime (choice) {
 	/* implement the option change */
 	switch (choice) {
-		case 1: GAME_DELAY = 200; break;
-		case 2: GAME_DELAY = 400; break;
-		case 3: GAME_DELAY = 700; break;
-		case 4: GAME_DELAY = 1000; break;
-		case 5: GAME_DELAY = 1500; break;
+		case 1: GAME_DELAY = 0; break;
+		case 2: GAME_DELAY = 300; break;
+		case 3: GAME_DELAY = 600; break;
+		case 4: GAME_DELAY = 800; break;
+		case 5: GAME_DELAY = 1200; break;
 		default: GAME_DELAY = 600;
 	}
 	setActiveOption($AITurnTimeOptions, choice);
