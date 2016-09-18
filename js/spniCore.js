@@ -185,6 +185,7 @@ function restartGame () {
     forceTableVisibility(true);
 	
 	/* there is only one call to this right now */
+	$epilogueSelectionModal.hide();
 	$gameScreen.hide();
 	$epilogueScreen.hide();
 	holdTitleClothing();
