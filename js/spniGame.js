@@ -37,6 +37,7 @@ $gameOpponentAreas = [$("#game-opponent-area-1"),
                       $("#game-opponent-area-2"),
                       $("#game-opponent-area-3"),
                       $("#game-opponent-area-4")];
+$gamePlayerClothingArea = $("#player-game-clothing-area");
 $gamePlayerCardArea = $("#player-game-card-area");
 
 /* dock UI elements */
@@ -183,7 +184,7 @@ function displayHumanPlayerClothing () {
     
     /* display the remaining clothing items */
     clothingImages.reverse();
-	$gameClothingLabel.html("<b>Your Clothing</b>");
+	$gameClothingLabel.html("Your Clothing");
 	for (var i = 0; i < 8; i++) {
 		if (clothingImages[i]) {
 			$gameClothingCells[i].attr('src', clothingImages[i]);
@@ -322,6 +323,7 @@ function startDealPhase () {
             
             if (HUMAN_PLAYER == i) {
                 $gamePlayerCardArea.hide();
+                $gamePlayerClothingArea.hide();
             } 
             else {
                 $gameOpponentAreas[i-1].hide();
