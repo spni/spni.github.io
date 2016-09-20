@@ -1292,8 +1292,8 @@ body.modal-open {
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 24px;
+	/*font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 24px;*/
     color: #050505;
 	text-align: center;
 	background-color: #050505;
@@ -1305,7 +1305,7 @@ body.modal-open {
 
 /* hacky solution with the top:px; getting the boxes lined up properly, but it seems to work */
 
-#epilogue-next-button{
+#epilogue-next-button {
 	float: left;
 	clear: left;
 	position: relative;
@@ -1313,7 +1313,7 @@ body.modal-open {
 	left:10px;
 }
 
-#epilogue-prev-button{
+#epilogue-prev-button {
 	float: left;
 	clear: left;
 	position: relative;
@@ -1321,7 +1321,7 @@ body.modal-open {
 	left:10px;
 }
 
-#epilogue-restart-button{
+#epilogue-restart-button {
 	float: left;
 	clear: left;
 	position: relative;
@@ -1329,18 +1329,55 @@ body.modal-open {
 	left:10px;
 }
 
-#epilogue-modal-accept-button{
+#epilogue-modal-accept-button {
 	position: absolute;
 	bottom: 5%;
 	left: 5%;
 }
 
-#epilogue-modal-restart-button{
+#epilogue-modal-restart-button {
 	position: absolute;
 	bottom: 5%;
 	right: 5%;
 }
- 
+
+.dialogue-bubble-area.modal-dialogue{
+	width: 100%;
+    background: #FAFAFA;
+}
+
+.table-modal .modal-button.epilogue-modal-button{
+	height: auto;
+}
+
+#epilogue_list {
+	list-style: none;
+	text-align: centred;
+	
+}
+
+.epilogue-entry {
+	padding: 2px 5px;
+}
+
+.epilogue-entry button {
+	color: black;
+	background: #BBBBBB;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 2px 5px;
+	text-decoration: none;
+}
+
+.epilogue-entry.active button {
+	background-color: #439AD7;
+	border-color: white;
+}
+
+.epilogue-entry button:hover {
+	background: #DDDDDD;
+}
+
 /************************************************************
  * Global override classes.
  ************************************************************/
