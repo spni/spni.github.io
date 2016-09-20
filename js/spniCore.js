@@ -37,7 +37,7 @@ $creditModal = $('#credit-modal');
 
 /* game table */
 var tableOpacity = 1;
-$gameTable = $('.game-table');
+$gameTable = $('#game-table');
 
 /* screen state */
 $previousScreen = null;
@@ -109,6 +109,7 @@ function initialSetup () {
 	
 	/* show the title screen */
 	$titleScreen.show();
+    autoResizeFont();
 }
 
 /************************************************************
@@ -235,4 +236,37 @@ function forceTableVisibility(state) {
  ************************************************************/
 function getRandomNumber (min, max) {
 	return Math.floor(Math.random() * (max - min) + min);
+}
+
+
+/**********************************************************************
+ * Returns the width of the visible screen in pixels.
+ **/
+function getScreenWidth () 
+{
+	/* fetch all game screens */
+	var screens = document.getElementsByClassName('screen');
+	
+	/* figure out which screen is visible */
+	for (var i = 0; i < screens.length; i++) 
+    {
+		if (screens[i].offsetWidth > 0) 
+        {
+			/* this screen is currently visible */
+			return screens[i].offsetWidth;
+		}
+	}
+}
+
+/**********************************************************************
+ * Automatically adjusts the size of all font based on screen width.
+ **/
+function autoResizeFont () 
+{
+	/* resize font */
+	var screenWidth = getScreenWidth();
+	document.body.style.fontSize = (14*(screenWidth/1000))+'px';
+	
+	/* set up future resizing */
+	window.onresize = autoResizeFont;
 }

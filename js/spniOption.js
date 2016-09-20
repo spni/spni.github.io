@@ -12,8 +12,7 @@ $autoFadeOptions = [$("#options-auto-fade-1"), $("#options-auto-fade-2")];
 $cardSuggestOptions = [$("#options-card-suggest-1"), $("#options-card-suggest-2")];
 $AITurnTimeOptions = [$("#options-ai-turn-time-1"), $("#options-ai-turn-time-2"), $("#options-ai-turn-time-3"), $("#options-ai-turn-time-4"), $("#options-ai-turn-time-5")];
 $dealSpeedOptions = [$("#options-deal-speed-1"), $("#options-deal-speed-2"), $("#options-deal-speed-3"), $("#options-deal-speed-4")];
-$autoForfeitOptions = [$("#options-auto-forfeit-1"), $("#options-auto-forfeit-2")];
-$autoForfeitTimeOptions = [$("#options-auto-forfeit-time-1"), $("#options-auto-forfeit-time-2"), $("#options-auto-forfeit-time-3")];
+$autoForfeitOptions = [$("#options-auto-forfeit-1"), $("#options-auto-forfeit-2"), $("#options-auto-forfeit-3"), $("#options-auto-forfeit-4")];
 
  
 /**********************************************************************
@@ -123,11 +122,11 @@ function setCardSuggest (choice) {
 function setAITurnTime (choice) {
 	/* implement the option change */
 	switch (choice) {
-		case 1: GAME_DELAY = 200; break;
-		case 2: GAME_DELAY = 400; break;
-		case 3: GAME_DELAY = 700; break;
-		case 4: GAME_DELAY = 1000; break;
-		case 5: GAME_DELAY = 1500; break;
+		case 1: GAME_DELAY = 0; break;
+		case 2: GAME_DELAY = 300; break;
+		case 3: GAME_DELAY = 600; break;
+		case 4: GAME_DELAY = 800; break;
+		case 5: GAME_DELAY = 1200; break;
 		default: GAME_DELAY = 600;
 	}
 	setActiveOption($AITurnTimeOptions, choice);
@@ -140,7 +139,7 @@ function setDealSpeed (choice) {
 	/* implement the option change */
 	switch (choice) {
 		case 1: ANIM_DELAY = 0;
-				ANIM_TIME = 0; 
+				ANIM_TIME = 0;
 				break;
 		case 2: ANIM_DELAY = 200;
 				ANIM_TIME = 500; 
@@ -160,18 +159,14 @@ function setDealSpeed (choice) {
 
 function setAutoForfeit (choice) {
 	switch (choice) {
-		case 1: AUTO_FORFEIT = true;
+		case 4: AUTO_FORFEIT = false;
 				break;
-		case 2: AUTO_FORFEIT = false;
-				break;
-		default: AUTO_FORFEIT = false;
+		default: AUTO_FORFEIT = true;
 				 break;
 	}
 	setActiveOption($autoForfeitOptions, choice);
-}
-
-function setAutoForfeitTime (choice) {
-	switch (choice) {
+  
+    switch (choice) {
 		case 1: FORFEIT_DELAY = 4000;
 				break;
 		case 2: FORFEIT_DELAY = 7500;
@@ -181,7 +176,6 @@ function setAutoForfeitTime (choice) {
 		default: FORFEIT_DELAY = 7500;
 				 break;
 	}
-	setActiveOption($autoForfeitTimeOptions, choice);
 }
 
 $("#options-modal").on("hidden.bs.modal", function () {

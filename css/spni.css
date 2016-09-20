@@ -26,7 +26,7 @@ body {
  ************************************************************/
  
 * {
-	box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 table {
@@ -46,8 +46,8 @@ body.modal-open {
  ************************************************************/
 
 .bordered {
-	border: 2px solid black;
-	border-radius: 8px;
+	border: 2px solid #111111;
+	border-radius: 5px;
 }
 
 .shaded {
@@ -72,39 +72,70 @@ body.modal-open {
  
 .screen-container {
 	position: absolute;
-	width: 100%;
-	height: 100%;
-	min-width: 900px;
-	min-height: 600px;
-	vertical-align: middle;
-	border-spacing: 0px;
-}
-
-.screen-area {
-	display: table;
-	position: relative;
-	width: auto;
-	height: 100%;
-	min-width: 900px;
-	min-height: 600px;
-	max-width: 1400px;
-	max-height: 100%;
-	margin: 0px auto;
-	background: transparent;
-	vertical-align: middle;
-	border-collapse: collapse;
+	width: 100vw;
+	height: 75vw;
+	max-width: 133.33vh;
+	max-height: 100vh;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    overflow: hidden;
 }
 
 .screen {
-	display: table-cell;
-	width: 100%;
-	height: auto;
-	max-height: 100%;
-	background: transparent;
-	margin: 0px auto;
-	padding: 0px;
-	table-layout: fixed;
-	vertical-align: middle;
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: 0.5%;
+    overflow: hidden;
+}
+
+/**************************************************
+ * Positions
+ **************************************************/
+
+.farLeft {
+    left: -12.5%;
+}
+
+.left {
+    left: 0%;
+}
+
+.almostLeft {
+    left: 12.5%;
+}
+
+.halfLeft {
+    left: 25%;
+}
+
+.center {
+    left: 50%;
+}
+
+.farHalfLeft {
+    left: 75%;
+}
+
+.halfRight {
+    right: 25%;
+}
+
+.almostRight {
+    right: 12.5%;
+}
+
+.right {
+    right: 0%;
+}
+
+.farRight {
+    right: -12.5%;
 }
 
 /************************************************************
@@ -112,19 +143,19 @@ body.modal-open {
  ************************************************************/
 
 .smooth-button {
-	background: linear-gradient(#63AAE7, #439AD7);
-	background-color: #63AAE7;
+	background: linear-gradient(#0088CC, #0066AA);
+	background-color: #0088CC;
 	color: black;
 }
 
 .smooth-button-red {
-	background: linear-gradient(#DD4444, #BF2626);
-	background-color: #FF6666;
+	background: linear-gradient(#BB3333, #9F1616);
+	background-color: #BB3333;
 }
 
-.smooth-button-purple {
-	background: linear-gradient(#AA44DD, #8F26AF);
-	background-color: #FF6666;
+.smooth-button-green {
+	background: linear-gradient(#33AA33, #168F16);
+    background-color: #33AA33;
 }
 
 .smooth-button:hover {
@@ -157,31 +188,41 @@ body.modal-open {
 
 .hide-table-button {
 	position: absolute;
-	width: 30px;
-	height: 5vh;
-	right: 10px;
-	bottom: 6%;
-	background: linear-gradient(#FFFFFF, #DDDDDD);
-	background-color: #EEEEEE;
-	opacity: 0.5;
+    width: 4%;
+    height: 5%;
+    left: 48%;
+    bottom: 22%;
+    background-color: rgba(155, 155, 155, 0.5);
 }
 
 .hide-table-button:hover {
-	background: linear-gradient(#FFFFFF, #DDDDDD);
-	background-color: #EEEEEE;
-	opacity: 1;
+	background-color: rgba(155, 155, 155, 0.9);
+}
+
+.hide-table-button:active {
+    background-color: rgba(155, 155, 155, 0.75);
 }
 
 .select-slot-button {
     width: 100%;
-    height: 40px;
-    font-size: 18px;
-    box-sizing: border-box;
+    height: 61%;
+    margin-top: 1.2%;
+    font-size: 130%;
+}
+
+.full-select-slot-button {
+    width: 100%;
+    height: 100%;
+    font-size: 130%;
 }
 
 /************************************************************
  * Classes for modals styled like the game table.
  ************************************************************/
+
+.modal {
+    padding-left: 17px;
+}
 
 .modal-table-container {
 	width: 100%;
@@ -206,12 +247,29 @@ body.modal-open {
 	color: black;
 }
 
+.thin-modal-dialog {
+    width: 35%;
+}
+
+.average-modal-dialog {
+    width: 50%;
+}
+
+.wide-modal-dialog {
+    width: 65%;
+}
+
+.very-wide-modal-dialog {
+    width: 80%;
+}
+
 .table-modal .modal-dialog-surface {
 	width: 100%;
-	padding: 5px;
+	padding: 0.5%;
 	background: radient-gradient(#888888, #666666);
 	background-color: #777777;
 	box-sizing: border-box;
+    font-size: 100%;
 }
 
 .table-modal .modal-content {
@@ -222,10 +280,17 @@ body.modal-open {
 
 .table-modal .modal-header {
 	border: none;
+    font-size: 110%;
 }
 
 .table-modal .modal-title {
 	color: black;
+    font-size: 120%;
+}
+
+.table-modal .modal-subtitle {
+	color: black;
+    font-size: 100%;
 }
 
 .table-modal .modal-left {
@@ -233,20 +298,38 @@ body.modal-open {
 }
 
 .table-modal .modal-body {
+    position: relative;
     text-align: center;
 }
 
 .table-modal .modal-body-container {
+    width: 100%;
     margin: 0px auto;
     display: inline-block;
 }
 
+.table-modal .modal-body-stretch-container {
+    margin: 0px auto;
+    display: inline-block;
+}
+
+.table-modal .modal-body-full-container {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    display: inline-block;
+}
+
+.table-modal .clothing-modal-container {
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin: 0 0.5%;
+}
+
 .table-modal .modal-clothing-image {
-	display: block;
-	float: left;
-	width: 80px;
-	height: 80px;
-	margin: 0px 5px;
+	width: 100%;
+    height: 100%;
     opacity: 0.4;
 	background-color: white;
 }
@@ -270,10 +353,10 @@ body.modal-open {
 }
 
 .table-modal .modal-button {
-	height: 40px;
-	width: 100px;
-	
-	font-size: 22px;
+	height: 75%;
+	width: 25%;
+	padding: 2%;
+	font-size: 120%;
 }
 
 .pagination li a {
@@ -300,7 +383,7 @@ body.modal-open {
 
 .credit-table {
 	width: 100%;
-	font-size: 16px;
+	font-size: 100%;
 }
 
 .credit-table td {
@@ -317,25 +400,36 @@ body.modal-open {
  * look the awesome way that they do.
  ************************************************************/
 
+.dialogue-bubble-row {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 0;
+}
+
 /* the area around the dialogue bubble */
 .dialogue-bubble-area {
-	height: 128px;
-	width: 24vw;
-	padding: 0px;
+	position: absolute;
+    display: table;
+    width: 24.5%;
+    top: 10%;
+    height: 90%;
+    margin: 0 0.25%;
+    padding: 1%;
+    text-align: center;
+    font-size: 120%;
+    background: #F5F5F5;
 }
 
 /* the body of the dialogue bubble */
 .dialogue-bubble {
-	position: relative;
-	height: 120px;
-	
-	margin: 2px 2px;
-	background-color: white;
-	
-	text-align: center;
+	display: table-cell;
+    width: 90%;
+    height: 90%;
+    margin: 1%;
+    vertical-align: middle;
 }
 
-/* the setup for the bottom triangle */
 .dialogue-bubble:before, .dialogue-bubble:after {
 	width: 0;
 	height: 0;
@@ -352,163 +446,171 @@ body.modal-open {
 .dialogue-bubble:before {
 	border-top-color: black;
 	border-width: 16px;
-}
-
-/* the fill of the bottom triangle */
-.dialogue-bubble:after {
-	border-top-color: white;
-	border-width: 15px;
-}
-
-/* the stroke of the bottom triangle, positioned on the left */
-.dialogue-left:before {
-	bottom: -16px;
-	left: 30px;
-}
-
-/* the fill of the bottom triangle, positioned on the left */
-.dialogue-left:after {
-	bottom: -14px;
-	left: 31px;
-}
-
-/* the stroke of the bottom triangle, positioned in the centre */
-.dialogue-centre:before {
-	bottom: -16px;
-	left: 50%;
-	margin-left: -16px;
-}
-
-/* the fill of the bottom triangle, positioned in the centre */
-.dialogue-centre:after {
-	bottom: -14px;
+    
+    bottom: -15px;
 	left: 50%;
 	margin-left: -15px;
 }
 
-/* the stroke of the bottom triangle, positioned on the right */
-.dialogue-right:before {
-	bottom: -16px;
-	right: 30px;
-}
-
-/* the fill of the bottom triangle, positioned on the right */
-.dialogue-right:after {
-	bottom: -14px;
-	right: 31px;
-}
-
-.dialogue-area {
-	display: table;
-	width: 100%;
-	height: 100%;
-}
-
-.dialogue {
-	display: table-cell;
-	
-	text-align: center;
-	vertical-align: middle;
-	padding: 4px;
+/* the fill of the bottom triangle */
+.dialogue-bubble:after {
+	border-top-color: #F6F6F6;
+	border-width: 15px;
     
-	font-size: 16px;
-}
-
-.advance-button {
-	position: absolute;
-	height: 20px;
-	right: 5px;
-	bottom: 5px;
-    opacity: 0;
-}
-
-.advance-button span {
-    margin-left: 2px;
-	margin-bottom: 2px;
+    bottom: -13px;
+	left: 50%;
+	margin-left: -14px;
 }
  
 /************************************************************
  * Classes for opponent images.
  ************************************************************/
 
+.image-row {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+}
+
 .opponent-image-area {
-	width: auto;
-	height: auto;
-	max-width: 25vw;
-	max-height: 80vh;
-    margin: 0px auto;
+	position: absolute;
+    width: 50%;
+    height: 100%;
 }
 
 .opponent-image {
-	display: block;
-	min-width: 225px;
-	min-height: 525px;
-	max-width: 100%;
-	max-height: 80vh;
-	margin: 0px auto;
+	position: absolute;
+	width: auto;
+	height: 100%;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 /************************************************************
  * Classes for the title screen.
  ************************************************************/
 
+.banner-flair {
+    text-align: center;
+    font-size: 110%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#title-version-label {
+    position: absolute;
+    width: 12.5%;
+    height: 3.5%;
+    top: 17.25%;
+    left: 6.5%;
+    padding-top: 0.15%;
+    background: linear-gradient(#CCCCCC, #AAAAAA);
+    background-color: #CCCCCC;
+}
+
+#title-credits-button {
+    position: absolute;
+    width: 12.5%;
+    height: 3.5%;
+    top: 17.25%;
+    right: 6.5%;
+    padding-top: 0.15%;
+}
+
 .title-banner-container {
-	display: table-cell;
-	height: 128px;
-	margin: 0 auto;
-	vertical-align: middle;
+	position: absolute;
+    top: 4%;
 }
  
 .title-banner-area {
-	height: auto;
-	padding: 5px;
-	padding-right: 10px;
-	margin: 0 auto;
-	box-sizing: border-box;
-	background: linear-gradient(#333333, #222222);
-	background-color: #333333;
+    width: 100%;
+    height: 100%;
+	padding: 0.5%;
+    background: linear-gradient(#333333, #222222);
+    background-color: #333333;
 }
 
 .title-banner {
-	width: 100%;
-	height: auto;
-	max-height: 120px;
-	background: linear-gradient(#888888, #777777, #666666);
-	background-color: #777777;
+    width: 100%;
+    height: 100%;
+	padding: 0.1%;
+    background: linear-gradient(#888888, #666666);
+	background-color: #888888;
 }
 
 .main-title-container {
-	padding: 5px;
-}
-
-.main-title-table {
-	width: 100%;
-	height: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-	table-layout: fixed;
+	position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    bottom: 0;
 }
  
 .title-label {
 	padding: 0px;
-	margin-top: 5px;
+    margin-top: 5px;
 	margin-bottom: 0px;
 	text-align: center;
-	font-size: 20px;
-	color: #F5F5F5;
+	font-size: 160%;
+	color: #DD3333;
 	text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
-		1px 1px 0 #000; 
+		1px 1px 0 #000;
+}
+
+.title-content-button {
+    background: #F0F0F0;
+}
+
+.title-content-button :hover {
+    background: #FFFFFF;
+}
+
+.title-content-button :active {
+    background: #F0F0F0;
+}
+
+#title-name-block {
+   position: absolute;
+    width: 80%;
+    height: 16%;
+    top: 0;
+    margin-left: 10%;
 }
  
 #player-name-field {
-	width: 200px;
-	height: 58px;
-	font-size: 22px;
-	text-align: center;
-	margin: 5px 5px;
+	position: absolute;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    font-size: 200%;
+    background: rgba(240, 240, 240, 1);
+}
+
+#title-gender-block {
+    position: absolute;
+    width: 30%;
+    top: 16.5%;
+    margin-left: 10%;
+}
+
+#male-gender-button {
+    position: relative;
+    width: 45%;
+    top: 0;
+    right: 0;
+}
+
+#female-gender-button {
+    position: relative;
+    width: 45%;
+    top: 0;
+    right: 0;
 }
 
 .title-gender-image {
@@ -519,10 +621,39 @@ body.modal-open {
 	background-color: white;
 }
 
+.title-size-block {
+    position: absolute;
+    width: 45%;
+    top: 16.5%;
+    right: 0;
+    margin-right: 7.25%;
+}
+
+.title-small-button {
+    position: relative;
+    width: 30%;
+}
+
+.title-medium-button {
+    position: relative;
+    width: 30%;
+}
+
+.title-large-button {
+    position: relative;
+    width: 30%;
+}
+
+#title-wardrobe-block {
+    position: absolute;
+    width: 80%;
+    top: 30%;
+    margin-left: 10%;
+}
+
 .title-clothing-container {
-	margin: 0px auto;
-	margin-bottom: 10px;
-	table-layout: fixed;
+    margin-top: 1%;
+	margin-left: 6.5%;
 }
 
 .title-clothing-heading {
@@ -533,15 +664,6 @@ body.modal-open {
 	font-size: 16px;
 	background: linear-gradient(lightgrey, #888888);
 	background-color: lightgrey;
-}
-
-.title-clothing-image {
-	display: block;
-	width: 75px;
-	height: 75px;
-	margin: 3px 3px;
-	opacity: 0.4;
-	background: white;
 }
 
 #title-warning-label {
@@ -557,19 +679,35 @@ body.modal-open {
 		1px 1px 0 #000; 
 }
 
-.title-entrance-button {
-	display: block;
-	width: 160px;
-	height: 75px;
-	margin: 0 auto;
-	padding: 10px 10px 5px 10px;
+.title-clothing-button {
+    position: relative;
+    width: 17.5%;
+}
+
+#title-start-edge {
+    position: absolute;
+    width: 36%;
+    height: 15%;
+    bottom: 6%;
+    left: 32%;
+    font-size: 200%;
+    padding: 0.5%;
+    background: linear-gradient(#222222, #111111);
+}
+
+#title-start-button {
+	position: absolute;
+    width: 97%;
+    height: 95%;
+    padding-left: 2%;
+    padding-right: 3%;
+    font-size: 200%;
 }
 
 .title-entrance-image {
-	display: block;
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
+	margin-left: 4%;
+    margin-top: 4%;
+    width: 90%;
 }
 
 .version-label {
@@ -613,264 +751,317 @@ body.modal-open {
     height: 100%;
 }
 
+#left-title-candy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+}
+
+#right-title-candy {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+}
+
+.title-candy {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 /************************************************************
  * Classes for the main select screen.
  ************************************************************/
 
-.select-dock-button {
-	width: 70px;
-	height: 70px;
-	font-size: 18px;
-	margin: 5px;
+#main-select-area {
+    position: absolute;
+    width: 70%;
+    height: 12%;
+    left: 15%;
+    bottom: 3%;
+    background-color: #282828;
+}
+
+.main-select-button {
+	position: absolute;
+    width: 13%;
+    height: 94%;
+    font-size: 140%;
+    bottom: 3%;
+}
+
+#main-select-button {
+    position: absolute;
+    height: 120%;
+    width: 16%;
+    right: 42%;
+    bottom: -10%;
+    font-size: 180%;
+    padding-bottom: 0.1%;
+    text-align: center;
+}
+
+#main-select-button:disabled {
+    background: linear-gradient(#AAAAAA, #888888);
+    background-color: #AAAAAA;
+}
+
+#select-advance-top {
+    position: absolute;
+    width: 18%;
+    height: 16%;
+    top: -16%;
+    left: 41%;
+    border-bottom: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #282828;
+}
+
+#select-advance-bottom {
+    position: absolute;
+    width: 18%;
+    height: 16%;
+    bottom: -16%;
+    left: 41%;
+    border-top: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: #282828;
+}
+
+#select-main-back-button {
+    left: 0.5%;
+}
+
+#select-group-button {
+    left: 14%;
+}
+
+#select-random-group-button {
+    left: 27.5%;
+}
+
+#select-random-female-button {
+    right: 27.5%;
+}
+
+#select-random-male-button {
+    right: 14%;
+}
+
+#select-random-button {
+    right: 0.5%;
+    right: 0.5%;
 }
 
 /************************************************************
  * Classes for the individual and group select screens.
  ************************************************************/
 
-.opponent-stats-area {
-	height: 128px;
+.long-select-advance-top {
+    position: absolute;
+    width: 36%;
+    height: 16%;
+    top: -16%;
+    left: 32%;
+    border-bottom: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #282828;
 }
 
-.opponent-stats {
-	position: relative;
-	width: auto;
-	height: 120px;
-	margin: 2px;
-	padding: 5px;
-	background-color: #F5F5F5;
-	box-sizing: border-box;
+.long-select-advance-bottom {
+    position: absolute;
+    width: 36%;
+    height: 16%;
+    bottom: -16%;
+    left: 32%;
+    border-top: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: #282828;
 }
 
-.opponent-stats-table {
-	width: 100%;
+.dialogue-bubble-area .stats-section {
+    position: relative;
+    width: 100%;
+    height: 23.5%;
+    margin-bottom: 1%;
 }
 
-.opponent-stats-table .form-group {
-	width: 100%;
-	padding-right: 8px;
-	box-sizing: border-box;
-	overflow: hidden;
+.dialogue-bubble-area .stats-section-large {
+    position: relative;
+    width: 100%;
+    height: 47%;
+    margin-bottom: 1%;
 }
 
-.opponent-stats-table .input-group {
-	width: 100%;
-	margin-bottom: 3px;
+.dialogue-bubble-area .stats-label {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    font-size: 70%;
+    background: linear-gradient(#CCCCCC, #AAAAAA);
+    background-color: #CCCCCC;
 }
 
-.opponent-stats-table .half-input-group-left {
-	width: 51%;
-	float: left;
+.dialogue-bubble-area .stats-content {
+    position: absolute;
+    width: 75.75%;
+    height: 100%;
+    right: 0;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    font-size: 80%;
+    background: #F5F5F5;
 }
 
-.opponent-stats-table .half-input-group-right {
-	width: 43%;
-	float: right;
+#group-select-area {
+    position: absolute;
+    left: 37.5%;
 }
 
-.opponent-stats-table .input-group-addon {
-	width: 40px;
-	height: 20px;
-	padding: 0px 4px;
-	color: black;
-	font-size: 12px;
-	background: linear-gradient(lightgrey, #888888);
-	background-color: lightgrey;
+#group-hide-button {
+    position: absolute;
+    width: 4%;
+    height: 5%;
+    left: 48%;
+    bottom: 15%;
+    background-color: rgba(155, 155, 155, 0.5);
 }
 
-.opponent-stats-table .form-control {
-	height: 20px;
-	padding: 0px;
-	padding-left: 4px;
-	color: black;
+#group-hide-button:hover {
+	background-color: rgba(155, 155, 155, 0.9);
 }
 
-.opponent-stats-table .form-control:disabled {
-	background-color: white;
-	cursor: default;
-	color: black;
-}
-
-.opponent-stats-table .form-control-area {
-	height: 74px;
-	resize: none;
-	text-align: center;
-	overflow: hidden;
-}
-
-.select-advance-button-left {
-	position: absolute;
-	height: 20px;
-	left: 5px;
-	bottom: 6px;
-	z-index: 10;
-}
-
-.select-advance-button-left span {
-    margin: 0 auto;
-	margin-bottom: 2px;
-}
-
-.select-advance-button-right {
-	position: absolute;
-	height: 20px;
-	right: 5px;
-	bottom: 6px;
-	z-index: 10;
-}
-
-.select-advance-button-right span {
-    margin-left: 2px;
-	margin-bottom: 2px;
-}
-
-.group-name-label {
-	width: 500px;
-	height: 20px;
-	padding-bottom: 3px;
-	margin: 2px auto;
-	text-align: center;
-	font-size: 16px;
-	background: white;
-}
-
-.select-group-button {
-	width: 504px;
-    height: 40px;
-    font-size: 18px;
-    box-sizing: border-box;
+#group-hide-button:active {
+    background-color: rgba(155, 155, 155, 0.75);
 }
 
 /************************************************************
- * Classes for the filter area on the selection screen.
+ * Classes for the selection area on the selection screen.
  ************************************************************/
 
-.filter-area {
-	width: auto;
-	padding: 5px;
-	box-sizing: border-box;
+.select-page-display {
+    display: table;
+    position: absolute;
+    width: 30%;
+    height: 45%;
+    bottom: 55%;
+    left: 35%;
+    text-align: center;
+    font-size: 130%;
 }
 
-.filter-area .input-group {
-	margin: 0 auto;
-	margin-bottom: 0px;
+.select-page-display .page-label {
+    display: table-cell;
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    left: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-top: 2%;
+    background: linear-gradient(#888888, #666666);
+	background-color: #888888;
 }
 
-.filter-area .input-group-addon {
-	width: 52px;
-	height: 20px;
-	padding: 0px 4px;
-	color: black;
-	font-size: 18px;
-	background: linear-gradient(lightgrey, #888888);
-	background-color: lightgrey;
+.select-page-display .page-indicator {
+    display: table-cell;
+    position: absolute;
+    width: 32%;
+    height: 100%;
+    left: 34%;
+    text-align: center;
+    border-radius: 0px;
+    font-size: 120%;
 }
 
-.filter-area .form-control {
-	width: 40px;
-	height: 40px;
-	padding: 0px;
-	padding-left: 8px;
-	color: black;
-	font-size: 18px;
+.select-page-display .of-label {
+    display: table-cell;
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    right: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-top: 2%;
+    background: linear-gradient(#888888, #666666);
+	background-color: #888888;
 }
 
-.filter-area .form-control-center {
-	padding-left: 0px;
-	text-align: center;
-	margin: 0 auto;
+.select-page-selection {
+    display: table;
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    bottom: 3%;
+    left: 35%;
+    text-align: center;
+    font-size: 130%;
 }
 
-.filter-area .label-left {
-	float: left;
-	margin-left: 5px;
-	color: white;
-	font-size: 18px;
+.select-page-selection .first-page-button {
+    display: table-cell;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
-.filter-area .label-right {
-	float: right;
-	margin-right: 5px;
-	color: white;
-	font-size: 18px;
+.select-page-selection .left-page-button {
+    display: table-cell;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 19%;
+    bottom: 0;
+    border-radius: 0px;
 }
 
-.filter-area .pagination li a {
-	border: 2px solid;
-	border-right: 1px;
+.select-page-selection .go-page-button {
+    display: table-cell;
+    position: absolute;
+    width: 24%;
+    height: 100%;
+    left: 38%;
+    bottom: 0;
+    border-radius: 0px;
 }
 
-.filter-area .pagination > li:first-child > a, .pagination > li:first-child > span {
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
+.select-page-selection .right-page-button {
+    display: table-cell;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    right: 19%;
+    bottom: 0;
+    border-radius: 0px;
 }
 
-.filter-area .pagination > li:last-child > a, .pagination > li:last-child > span {
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-.filter-area .page-button {
-	display: block;
-	width: 48px;
-	height: 44px;
-	font-size: 16px;
-	box-sizing: border-box;
-	margin: 0 auto;
-	cursor: pointer;
-	text-align: center;
-	border-radius: 0px;
-}
-
-.filter-area .page-button span {
-	margin-top: 5px;
-}
-
-.filter-area .page-button:active span {
-	margin-left: 2px;
-}
-
-.filter-area .page-button:active div {
-	margin-left: 2px;
+.select-page-selection .last-page-button {
+    display: table-cell;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 /************************************************************
  * Classes for the table on the main game screen.
  ************************************************************/
-
-.game-table {
-	position: absolute;
-	height: auto;
-	left: 5px;
-	right: 5px;
-	bottom: 10%;
-	box-sizing: border-box;
-	margin: 0px;
-	padding: 5px;
-	background-color: #663300;
-}
-
-.game-table-solid {
-	height: auto;
-	left: 5px;
-	right: 5px;
-	bottom: 10%;
-	box-sizing: border-box;
-	margin: 5px;
-	padding: 5px;
-	background-color: #663300;
-    border: 2px solid black;
-	border-radius: 8px;
-}
-
-.game-table-glass {
-	background: rgba(255, 255, 255, 0.1);
-}
-
-.game-table-none {
-	background: rgba(255, 255, 255, 0.0);
-    border: 0px solid black;
-}
 
 .game-table-surface {
 	width: 100%;
@@ -898,48 +1089,50 @@ body.modal-open {
 }
 
 .opponent-area {
-	width: 90%;
-	margin: 0px auto;
-	padding: 2px;
-	background: radial-gradient(#454545, #454545, #454545);
-	background-color: #454545;
-    border: 2px solid black;
-	border-radius: 8px;
+	position: absolute;
+    width: 22%;
+    height: 11.5%;
+    bottom: 19%;
+    margin: 0 1.5%;
+    padding: 0.2% 0.25%;
+    background-color: rgba(40, 40, 40, 0.75);
 }
 
-.opponent-area-glass {
-	background: transparent;
-	border: none;
-	box-shadow: none;
-}
-
-.opponent-area-none {
-	background: rgba(255, 255, 255, 0.1);
-	box-shadow: none;
-    border: 2px solid black;
+.small-opponent-area {
+	position: absolute;
+    width: 22%;
+    height: 7.5%;
+    bottom: 20.5%;
+    margin: 0 1.5%;
+    padding: 0.2% 0.25%;
+    background-color: rgba(40, 40, 40, 0.75);
 }
 
 .opponent-name-label {
-	width: 200px;
-	height: 20px;
-	padding-bottom: 3px;
-	margin: 2px auto;
-	text-align: center;
-	font-size: 16px;
-	background: white;
+	height: 33%;
+    text-align: center;
+    background-color: #F5F5F5;
 }
 
 .opponent-card-area {
-	width: auto;
-	height: 50px;
-	box-sizing: border-box;
-	border-spacing: 2px;
-	margin: 0px auto;
+	width: 100%;
+    height: 62%;
+}
+
+.opponent-card-area :first-child {
+   margin-left: 0;
+}
+
+.opponent-card-area :last-child {
+   margin-right: 0;
 }
 
 .small-card-image {
-	width: 35px;
-	height: 45px;
+	float: left;
+    height: 100%;
+    width: 19.15%;
+    margin: 1.25% 0.5%;
+    background-color: #F5F5F5;
 }
 
 /************************************************************
@@ -955,28 +1148,31 @@ body.modal-open {
 	background: radial-gradient(#454545, #454545, #454545);
     border: 2px solid black;
 }
-
-.player-table-area-glass {
-	background: transparent;
-	border: none;
-	box-shadow: none;
-}
-
-.player-table-area-none {
-	background: rgba(255, 255, 255, 0.1);
-	box-shadow: none;
-    border: 2px solid black;
-}
  
-.dock-options-area {
-	width: 0%;
+#game-home-button {
+    position: absolute;
+    left: 1.5%;
+    bottom: 8%;
+}
+
+#game-settings-button {
+    position: absolute;
+    left: 1.5%;
+    bottom: 2%;
 }
  
 .dock-options-button {
-	display: block;
-	width: 30px;
-	height: 35px;
-	margin-left: 11%;
+	width: 4%;
+    height: 5%;
+    background-color: rgba(192, 51, 51, 0.5);
+}
+
+.dock-options-button:hover {
+    background-color: rgba(192, 51, 51, 0.9);
+}
+
+.dock-options-button:active {
+    background-color: rgba(192, 51, 51, 0.75);
 }
 
 .dock-options-button span {
@@ -985,9 +1181,20 @@ body.modal-open {
 }
 
 .small-clothing-image {
-	width: 40px;
-	height: 40px;
+	width: 28%;
+    height: 47%;
+    margin-bottom: 3.5%;
 	background-color: white;
+}
+
+.clothing-float-right {
+    float: right;
+    margin-left: 3.5%;
+}
+
+.clothing-float-left {
+    float: left;
+    margin-right: 3.5%;
 }
 
 .player-area {
@@ -997,45 +1204,71 @@ body.modal-open {
 	box-sizing: border-box;
 }
 
+#player-game-clothing-area {
+    position: absolute;
+    width: 33%;
+    height: 15%;
+    left: 8.5%;
+    bottom: 2%;
+    background-color: rgba(40, 40, 40, 0.75);
+}
+
+.player-clothing-container {
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    padding: 1.25%;
+}
+
 .player-card-area {
-	width: auto;
-	height: 50px;
-	box-sizing: border-box;
-	border-spacing: 4px;
-	margin: 0px auto;
+	position: absolute;
+    width: 40%;
+    height: 15%;
+    right: 1.5%;
+    bottom: 2%;
+    padding: 0.3%;
+    background-color: rgba(40, 40, 40, 0.75);
 }
 
 .player-name-label {
-	width: 100%;
-	height: 26px;
-	text-align: center;
-	font-size: 16px;
-	background: white;
-	box-sizing: border-box;
+	position: absolute;
+    width: 65.5%;
+    height: 24%;
+    left: 17.25%; 
+    bottom: 3%;
+    text-align: center;
+    background-color: #F5F5F5;
 }
 
-.player-clothing-label {
-	width: 100%;
-	text-align: center;
-	font-size: 12px;
-	background: white;
-	box-sizing: border-box;
+#game-clothing-label {
+	position: absolute;
+    width: 65.5%;
+    height: 22%;
+    left: 17.25%; 
+    bottom: 28%;
+    font-size: 90%;
+    text-align: center;
+    background-color: #F5F5F5;
 }
 
 .large-card-image {
-	width: 65px;
-	height: 90px;
+	float: right;
+    height: 100%;
+    width: 19%;
+    margin: 0 0.5%;
+    background-color: #F5F5F5;
 }
 
-.centred-deck-area {
-	position: relative;
+.dock-card {
+    position: absolute;
+    width: 8%;
+    height: 14%;
+    left: 45.5%;
+    bottom: 2%;
 }
 
 .hidden-large-card {
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
+    opacity: 0;
 }
 
 .shown-card {
@@ -1044,7 +1277,11 @@ body.modal-open {
 
 #main-game-button {
     position: absolute;
-    top: 80%;
+    width: 12%;
+    height: 8%;
+    left: 44%;
+    bottom: 5%;
+    font-size: 140%;
 }
 
 /************************************************************
