@@ -81,6 +81,7 @@ body.modal-open {
 	left: 0;
 	right: 0;
     margin: auto;
+    overflow: hidden;
 }
 
 .screen {
@@ -312,9 +313,23 @@ body.modal-open {
     display: inline-block;
 }
 
+.table-modal .modal-body-full-container {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    display: inline-block;
+}
+
+.table-modal .clothing-modal-container {
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin: 0 0.5%;
+}
+
 .table-modal .modal-clothing-image {
-	width: 20%;
-	margin: 0 0.5%;
+	width: 100%;
+    height: 100%;
     opacity: 0.4;
 	background-color: white;
 }

@@ -330,8 +330,8 @@ function showStrippingModal () {
         if (players[HUMAN_PLAYER].clothing[i]) {
 		    if (players[HUMAN_PLAYER].clothing[i].layer == highestLayer) {
 				var clothingCard = 
-					"<input type='image' id='"+i+"' class='bordered modal-clothing-image' src="+
-					players[HUMAN_PLAYER].clothing[i].image+" onclick='selectClothingToStrip("+i+")'/>";
+					"<div class='clothing-modal-container'><input type='image' id='"+i+"' class='bordered modal-clothing-image' src="+
+					players[HUMAN_PLAYER].clothing[i].image+" onclick='selectClothingToStrip("+i+")'/></div>";
 				
 				$stripClothing.append(clothingCard);
 			}
