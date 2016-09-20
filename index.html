@@ -975,7 +975,7 @@
     <button class='bordered hide-table-button' onclick="toggleTableVisibility()">
       <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
     </button>
-    <button id="game-home-button" class="bordered smooth-button smooth-button-red dock-options-button" onclick="showRestartModal()">
+    <button id="game-home-button" class="bordered smooth-button smooth-button-red dock-options-button" onclick="doEpilogueModal()"><!-- showRestartModal -->
       <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
     </button>
     <button id="game-settings-button" class="bordered smooth-button smooth-button-red dock-options-button" onclick="showOptionsModal()">
@@ -1070,13 +1070,13 @@
 
 <!-- Start of Epilogue Screen -->
 <div id="epilogue-screen" class="epilogue-area" role="dialog" hidden>
-	<button type="button" id="epilogue-prev-button" class="bordered smooth-button" onclick="progressEpilogue(-1)">
-		Previous
-	</button>
 	<button type="button" id="epilogue-next-button" class="bordered smooth-button" onclick="progressEpilogue( 1)">
 		Next
 	</button>
-	<button type="button" id="epilogue-restart-button" class="bordered smooth-button centred" onclick="showRestartModal()">
+	<button type="button" id="epilogue-prev-button" class="bordered smooth-button" onclick="progressEpilogue(-1)">
+		Previous
+	</button>
+	<button type="button" id="epilogue-restart-button" class="bordered smooth-button" onclick="showRestartModal()">
 		Restart?
 	</button>
 </div>
@@ -1096,26 +1096,17 @@
 			</div>
 			<div class="modal-body">
 				<div class="modal-body-container" style="width:100%">
-					<table id="epilogue-choice" style="width:100%">
-						<!-- Table Style -->
-						<tr>
-							<td style="width:25%"><h4 class="modal-title modal-left"></h4></td>
-							<td>
-								<nav>
-									<ul id="epilogue_list" class="pagination">
-									</ul>
-								</nav>
-							</td>
-						</tr>
-
-					</table>
+					
+					<ul id="epilogue_list" class="">
+					</ul>
+					
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button id="epilogue-modal-accept-button" class="bordered smooth-button modal-button" onclick="doEpilogue()">Choose</button>
+				<button id="epilogue-modal-accept-button" class="bordered smooth-button modal-button epilogue-modal-button" onclick="doEpilogue()">Choose</button>
 			</div>
 			<div class="modal-footer">
-				<button id="epilogue-modal-restart-button" class="bordered smooth-button modal-button" onclick="showRestartModal()" data-dismiss="modal">Restart?</button>
+				<button id="epilogue-modal-restart-button" class="bordered smooth-button modal-button epilogue-modal-button" onclick="showRestartModal()" data-dismiss="modal">Restart?</button>
 			</div>
 		</div>
 		<!-- End of Modal Content -->

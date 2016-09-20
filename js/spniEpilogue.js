@@ -93,9 +93,9 @@ function drawEpilogueBox(num){
 	
 	//add the contents of the text box
 	newEpilogueDiv.after().html(
-					'<div id="epilogue-bubble-'+num+'" class="bordered dialogue-bubble dialogue-centre">' +
+					'<div id="epilogue-bubble-'+num+'" class="bordered dialogue-bubble-area modal-dialogue">' +
 						'<div class="dialogue-area">' +
-							'<span id="epilogue-dialogue-'+num+'" class="dialogue">'+content+'</span>'+
+							'<span id="epilogue-dialogue-'+num+'" class="dialogue-bubble">'+content+'</span>'+
 						'</div>' +
 					'</div>');
 	
@@ -146,10 +146,19 @@ function clearEpilogueBoxes(){
 
 function addEpilogueEntry(epilogue){
 	var num = epilogues.length; //index number of the new epilogue
-	var epilogueTitle = players[epilogue.player].label+": "+epilogue.title;
+	var player = players[epilogue.player]
+	
+	var nameStr = player.first+" "+player.last;
+	if (player.first.length <= 0 || player.last.length <= 0){
+		nameStr = player.first+player.last; //only use a space if they have both first and last names
+	}
+	
+	var epilogueTitle = nameStr+": "+epilogue.title;
 	var idName = 'epilogue-option-'+num;
 	var clickAction = "selectEpilogue("+num+")";
-	var htmlStr = '<li id="'+idName+'"><a href="#" onclick="'+clickAction+'">'+epilogueTitle+'</a></li>';
+	
+	var htmlStr = '<li id="'+idName+'" class="epilogue-entry"><button onclick="'+clickAction+'">'+epilogueTitle+'</button></li>';
+	
 	$epilogueList.append(htmlStr);
 	epilogueSelections.push($('#'+idName));
 }
@@ -208,13 +217,13 @@ function doEpilogueModal(){
 	}
 	
 	var playerWon = (winner == HUMAN_PLAYER); //whether or not the human player won
-	console.log("The winner is "+winner+", playerWon = "+playerWon);
-	$epilogueAcceptButton.css("visibility", playerWon ? "visible" : "hidden"); //currently, there are only endings where the player wins, so only show the accept button if the player won
+	var haveEpilogues = epilogues.length >= 1; //whether or not there are any epilogues available
+	$epilogueAcceptButton.css("visibility", haveEpilogues ? "visible" : "hidden"); //currently, there are only endings where the player wins, so only show the accept button if the player won
 	
 	var headerStr = '';
 	if (playerWon){
 		headerStr = winStr;
-		if (epilogues.length <= 0){
+		if (!haveEpilogues){
 			headerStr = winStrNone;
 		}
 	} else {
