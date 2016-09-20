@@ -208,7 +208,6 @@ function doEpilogueModal(){
 	}
 	
 	var playerWon = (winner == HUMAN_PLAYER); //whether or not the human player won
-	console.log("The winner is "+winner+", playerWon = "+playerWon);
 	$epilogueAcceptButton.css("visibility", playerWon ? "visible" : "hidden"); //currently, there are only endings where the player wins, so only show the accept button if the player won
 	
 	var headerStr = '';

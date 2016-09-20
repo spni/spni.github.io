@@ -1060,27 +1060,36 @@ body.modal-open {
     color: #050505;
 	text-align: center;
 	background-color: #050505;
-    background-image: url("../opponents/daisy/epilogue-1.png");
+    background-image: url("../img/background.png");
 	background-size: contain;
     background-repeat: no-repeat;
 	background-position: center;
 }
 
-#epilogue-prev-button{
-	position: absolute;
-	top: 5%;
-	left: 5%;
-}
+/* hacky solution with the top:px; getting the boxes lined up properly, but it seems to work */
 
 #epilogue-next-button{
-	position: absolute;
-	top: 5%;
-	right: 5%;
+	float: left;
+	clear: left;
+	position: relative;
+	top: 10px;
+	left:10px;
+}
+
+#epilogue-prev-button{
+	float: left;
+	clear: left;
+	position: relative;
+	top: 15px;
+	left:10px;
 }
 
 #epilogue-restart-button{
-	position: absolute;
-	top: 5%;
+	float: left;
+	clear: left;
+	position: relative;
+	top: 20px;
+	left:10px;
 }
 
 #epilogue-modal-accept-button{
