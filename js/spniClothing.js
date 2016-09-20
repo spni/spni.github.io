@@ -330,8 +330,8 @@ function showStrippingModal () {
         if (players[HUMAN_PLAYER].clothing[i]) {
 		    if (players[HUMAN_PLAYER].clothing[i].layer == highestLayer) {
 				var clothingCard = 
-					"<input type='image' id='"+i+"' class='bordered modal-clothing-image' src="+
-					players[HUMAN_PLAYER].clothing[i].image+" onclick='selectClothingToStrip("+i+")'/>";
+					"<div class='clothing-modal-container'><input type='image' id='"+i+"' class='bordered modal-clothing-image' src="+
+					players[HUMAN_PLAYER].clothing[i].image+" onclick='selectClothingToStrip("+i+")'/></div>";
 				
 				$stripClothing.append(clothingCard);
 			}
@@ -389,9 +389,9 @@ function closeStrippingModal () {
         
         /* update label */
         if (clothes > 0) {
-            $gameClothingLabel.html("<b>Your Remaining Clothing</b>");
+            $gameClothingLabel.html("Your Remaining Clothing");
         } else {
-            $gameClothingLabel.html("<b>You're Naked</b>");
+            $gameClothingLabel.html("You're Naked");
         }
             
         /* set up the replaceable tags and content */
@@ -505,7 +505,7 @@ function stripPlayer (player) {
 			} else if (players[HUMAN_PLAYER].gender == FEMALE) {
 				updateAllBehaviours(HUMAN_PLAYER, FEMALE_START_MASTURBATING, [NAME], [players[HUMAN_PLAYER].label]);
 			}
-			$gameClothingLabel.html("<b>You're Masturbating...</b>");
+			$gameClothingLabel.html("You're Masturbating...");
 			setForfeitTimer(player);
 		} else {
 			if (players[player].gender == MALE) {
