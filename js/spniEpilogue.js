@@ -30,6 +30,24 @@ var chosenEpilogue = null;
 var openEpilogueTextBoxes = []; //currently open text boxes on the Epilogue screen
 
 /************************************************************
+ * Return the numerical part of a string s. E.g. "20%" -> 20
+ ************************************************************/
+
+function getNumericalPart(s){
+	return parseFloat(s); //apparently I don't actually need to remove the % (or anything else) from the string before I do the conversion
+}
+
+/************************************************************
+ * Return the approriate left: setting so that a text box of the specified width is centred
+ * Assumes a % width
+ ************************************************************/
+function getCenteredPosition(width){
+	var w = getNumericalPart(width); //numerical value of the width
+	var left = 50 - (w/2); //centre of the text box is at the 50% position
+	return left + "%";
+}
+
+/************************************************************
  * Load the Epilogue data for a character
  ************************************************************/
 function loadEpilogueData(player){
@@ -59,10 +77,27 @@ function loadEpilogueData(player){
 			//get the information for all the text boxes
 			var textBoxes = [];
 			$(this).find("text").each(function() {
+				
+				//the text box's position and width
 				var x = $(this).find("x").html().trim();
 				var y = $(this).find("y").html().trim();
-				var text = $(this).find("content").html().trim();
-				textBoxes.push({x:x, y:y, text:text}); //add a textBox object to the list of textBoxes
+				var w = $(this).find("width").html();
+				
+				//the w component is optional. Use a default of 20%.
+				if (w) {
+					w = w.trim();
+				} else {
+					w = "20%"; //default to text boxes having a width of 20%
+				}
+				
+				//automatically centre the text box, if the writer wants that.
+				if (x.toLowerCase() == "centered") {
+					x = getCenteredPosition(w);
+				}
+				
+				var text = $(this).find("content").html().trim(); //the actual content of the text box
+				
+				textBoxes.push({x:x, y:y, width:w, text:text}); //add a textBox object to the list of textBoxes
 			});
 			
 			screens.push({image:image, start:startBox, textBoxes:textBoxes}); //add a screen object to the list of screens
@@ -89,6 +124,7 @@ function drawEpilogueBox(num){
 	//make new div element
 	var newEpilogueDiv = $(document.createElement('div')).attr('id', boxDivName);
 	
+	//allow the writer to use ~name~ to refer to the player
 	var content = boxData.text.replace([NAME], [players[HUMAN_PLAYER].label]);
 	
 	//add the contents of the text box
@@ -103,7 +139,7 @@ function drawEpilogueBox(num){
 	newEpilogueDiv.css('position', "absolute");
 	newEpilogueDiv.css('left', boxData.x);
 	newEpilogueDiv.css('top', boxData.y);
-	newEpilogueDiv.css('width', "20%");
+	newEpilogueDiv.css('width', boxData.width);
 	
 	//attach new div element to screen
 	newEpilogueDiv.appendTo("#epilogue-screen");
@@ -217,8 +253,8 @@ function doEpilogueModal(){
 	}
 	
 	var playerWon = (winner == HUMAN_PLAYER); //whether or not the human player won
-	var haveEpilogues = epilogues.length >= 1; //whether or not there are any epilogues available
-	$epilogueAcceptButton.css("visibility", haveEpilogues ? "visible" : "hidden"); //currently, there are only endings where the player wins, so only show the accept button if the player won
+	var haveEpilogues = (epilogues.length >= 1); //whether or not there are any epilogues available
+	$epilogueAcceptButton.css("visibility", haveEpilogues ? "visible" : "hidden");
 	
 	var headerStr = '';
 	if (playerWon){
