@@ -117,7 +117,7 @@ function loadBehaviour (folder, callFunction, slot) {
             var first = $(xml).find('first').text();
             var last = $(xml).find('last').text();
             var label = $(xml).find('label').text();
-            var gender = $(xml).find('gender').text();
+            var gender = $(xml).find('gender').text().trim().toLowerCase(); //convert everything to lowercase, for comparison to the strings "male" and "female"
             var size = $(xml).find('size').text();
             var timer = $(xml).find('timer').text();
             
