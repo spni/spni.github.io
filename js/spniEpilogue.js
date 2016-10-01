@@ -8,7 +8,7 @@ $epilogueResetButton = $('#epilogue-restart-button');
 /* Epilogue selection modal elements */
 $epilogueSelectionModal = $('#epilogue-modal'); //the modal box
 $epilogueHeader = $('#epilogue-header-text'); //the header text for the epilogue selection box
-$epilogueList = $('#epilogue_list'); //the list of epilogues
+$epilogueList = $('#epilogue-list'); //the list of epilogues
 $epilogueAcceptButton = $('#epilogue-modal-accept-button'); //click this button to go with the chosen ending
 
 var textBoxDivName = "#epilogueDivBox";
@@ -61,7 +61,7 @@ function loadEpilogueData(player){
 	
 	var epilogues = [];
 	
-	$(xml).find('epilogue[gender="'+playerGender+'"]').each(function() {
+	$(xml).find('epilogue[gender="'+playerGender+'"],epilogue[gender="any"]').each(function() {
 		//use parseXML() so that <image> tags come through properly
 		//not using parseXML() because internet explorer doesn't like it
 		
@@ -70,7 +70,6 @@ function loadEpilogueData(player){
 		var screens = []; //the list of screens for the epilogue
 		
 		$(this).find("screen").each(function() {
-			var startBox = $(this).find("start").html().trim();
 			var image = players[player].folder + $(this).attr("img").trim(); //get the full path for the screen's image
 			//use an attribute rather than a tag because IE doesn't like parsing XML
 			
@@ -82,12 +81,24 @@ function loadEpilogueData(player){
 				var x = $(this).find("x").html().trim();
 				var y = $(this).find("y").html().trim();
 				var w = $(this).find("width").html();
+				var a = $(this).find("arrow").html();
 				
-				//the w component is optional. Use a default of 20%.
+				//the width component is optional. Use a default of 20%.
 				if (w) {
 					w = w.trim();
-				} else {
+				} 
+				if (!w || (w.length <= 0)) {
 					w = "20%"; //default to text boxes having a width of 20%
+				}
+				
+				//dialogue bubble arrow
+				if (a) {
+					a = a.trim().toLowerCase();
+					if (a.length >= 1) {
+						a = "arrow-" + a; //class name for the different arrows. Only use if the writer specified something.
+					}
+				} else {
+					a = "";
 				}
 				
 				//automatically centre the text box, if the writer wants that.
@@ -97,10 +108,10 @@ function loadEpilogueData(player){
 				
 				var text = $(this).find("content").html().trim(); //the actual content of the text box
 				
-				textBoxes.push({x:x, y:y, width:w, text:text}); //add a textBox object to the list of textBoxes
+				textBoxes.push({x:x, y:y, width:w, arrow:a, text:text}); //add a textBox object to the list of textBoxes
 			});
 			
-			screens.push({image:image, start:startBox, textBoxes:textBoxes}); //add a screen object to the list of screens
+			screens.push({image:image, textBoxes:textBoxes}); //add a screen object to the list of screens
 		});
 		
 		if (screens.length > 0) { //if there isn't any epilogue data, don't do anything
@@ -128,10 +139,11 @@ function drawEpilogueBox(num){
 	var content = boxData.text.replace([NAME], [players[HUMAN_PLAYER].label]);
 	
 	//add the contents of the text box
+	var dialogueID = 'epilogue-dialogue-'+num;
 	newEpilogueDiv.after().html(
 					'<div id="epilogue-bubble-'+num+'" class="bordered dialogue-bubble-area modal-dialogue">' +
 						'<div class="dialogue-area">' +
-							'<span id="epilogue-dialogue-'+num+'" class="dialogue-bubble">'+content+'</span>'+
+							'<span id="'+dialogueID+'" class="dialogue-bubble">'+content+'</span>'+
 						'</div>' +
 					'</div>');
 	
@@ -140,9 +152,13 @@ function drawEpilogueBox(num){
 	newEpilogueDiv.css('left', boxData.x);
 	newEpilogueDiv.css('top', boxData.y);
 	newEpilogueDiv.css('width', boxData.width);
+	//newEpilogueDiv
+	
 	
 	//attach new div element to screen
 	newEpilogueDiv.appendTo("#epilogue-screen");
+	
+	$('#'+dialogueID).addClass(boxData.arrow);
 	
 	//keep track of the open Epilogue Text Boxes, so they can be removed later
 	openEpilogueTextBoxes.push(newEpilogueDiv);
@@ -234,15 +250,6 @@ function doEpilogueModal(){
 	chosenEpilogue = null; //reset any currently-chosen epilogue
 	$epilogueAcceptButton.prop("disabled", true); //don't let the player accept an epilogue until they've chosen one
 	
-	//load the epilogue data for each player
-	for (var i = 0; i < players.length; i++){
-		var playerIEpilogues = loadEpilogueData(i);
-		for (var j = 0; j < playerIEpilogues.length; j++){
-			addEpilogueEntry(playerIEpilogues[j]);
-			epilogues.push(playerIEpilogues[j]);
-		}
-	}
-	
 	//identify the winning player
 	var winner = -1;
 	for (var i = 0; i < players.length; i++){
@@ -252,19 +259,33 @@ function doEpilogueModal(){
 		}
 	}
 	
-	var playerWon = (winner == HUMAN_PLAYER); //whether or not the human player won
+	//whether or not the human player won
+	var playerWon = (winner == HUMAN_PLAYER);
+	
+	if (playerWon) { //all the epilogues are for when the player wins, so don't allow them to choose one if they lost
+		//load the epilogue data for each player
+		for (var i = 0; i < players.length; i++){
+			var playerIEpilogues = loadEpilogueData(i);
+			for (var j = 0; j < playerIEpilogues.length; j++){
+				addEpilogueEntry(playerIEpilogues[j]);
+				epilogues.push(playerIEpilogues[j]);
+			}
+		}
+	}
+	
+	//are there any epilogues available for the player to see?
 	var haveEpilogues = (epilogues.length >= 1); //whether or not there are any epilogues available
 	$epilogueAcceptButton.css("visibility", haveEpilogues ? "visible" : "hidden");
-	
+
+	//decide which header string to show the player. This describes the situation.
 	var headerStr = '';
 	if (playerWon){
-		headerStr = winStr;
+		headerStr = winStr; //player won, and there are epilogues available
 		if (!haveEpilogues){
-			headerStr = winStrNone;
+			headerStr = winStrNone; //player won, but none of the NPCs have epilogues
 		}
 	} else {
-		headerStr = lossStr;
-		clearEpilogueList(); //all the epilogues are for when the player wins, so don't allow them to choose one if they lost
+		headerStr = lossStr; //player lost
 	}
 	
 	$epilogueHeader.html(headerStr); //set the header string
@@ -280,7 +301,7 @@ function doEpilogue(){
 	clearEpilogueBoxes();
 	
 	epilogueScreen = 0; //reset epilogue position in case a previous epilogue played before this one
-	epilogueText = chosenEpilogue.startTextBox;
+	epilogueText = 0;
 	
 	progressEpilogue(0); //initialise buttons and text boxes
 	screenTransition($titleScreen, $epilogueScreen); //currently transitioning from title screen, because this is for testing
@@ -320,7 +341,7 @@ function progressEpilogue(direction){
 		}
 	}
 	
-	drawEpilogueBoxesTo(epilogueTextCount);
+	drawEpilogueBoxesTo(epilogueTextCount); //actually draw the text boxes
 	
 	var screen = screens[epilogueScreen]; //the current screen, after the next/prev button is pressed
 	
@@ -337,6 +358,6 @@ function progressEpilogue(direction){
 	
 	//set the background image
 	var imageString = "url("+ screen.image + ")";
-	console.log("setting image string to: "+imageString);
+	//console.log("setting image string to: "+imageString);
 	$epilogueScreen.css('background-image', imageString);
 }

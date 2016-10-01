@@ -68,6 +68,7 @@ $restartModal = $("#restart-modal");
 var GAME_DELAY = 600;
 var FORFEIT_DELAY = 7500;
 var GAME_OVER_DELAY = 1000;
+var SHOW_ENDING_DELAY = 5000; //5 seconds
 var CARD_SUGGEST = false;
 var AUTO_FORFEIT = false;
 var AUTO_FADE = true;
@@ -573,26 +574,25 @@ function handleGameOver() {
 	if (left == 0) {
 		/* true end */
 		
-		/* Do game over dialogue here
 		//identify winner
 		var winner = -1;
 		for (var i = 0; i < players.length; i++){
 			if (!players[i].out){
 				winner = i;
 				break;
+			}
 		}
 		for (var i = 0; i < players.length; i++){
-			var tag = (i == winner) ? GAME_OVER_VICTORY : GAME_OVER_LOSS;
+			var tag = (i == winner) ? GAME_OVER_VICTORY : GAME_OVER_DEFEAT;
 			updateBehaviour(i, tag, [NAME], [players[winner].label]);
 		}
-		*/
 		
         updateAllGameVisuals();
         
 		$mainButton.html("Ending?");
 		$mainButton.attr('disabled', false);
         actualMainButtonState = false;
-		doEpilogueModal(); //start the endings //put this behind a setTimeout() once we do the game over dialogue
+		window.setTimeout(doEpilogueModal, SHOW_ENDING_DELAY); //start the endings
 	} else {
 		/* someone is still forfeiting */
 		var context = "Wait";
