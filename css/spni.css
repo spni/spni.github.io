@@ -430,7 +430,7 @@ body.modal-open {
     vertical-align: middle;
 }
 
-.dialogue-bubble:before, .dialogue-bubble:after {
+.arrow-down:before, .arrow-down:after, .arrow-left:before, .arrow-left:after, .arrow-right:before, .arrow-right:after, .arrow-up:before, .arrow-up:after {
 	width: 0;
 	height: 0;
 	
@@ -439,11 +439,26 @@ body.modal-open {
 	
 	border-style: solid;
 	border-color: transparent;
+}
+
+.arrow-down:before, .arrow-down:after {
 	border-bottom: 0;
 }
 
+.arrow-left:before, .arrow-left:after {
+	border-left: 0;
+}
+
+.arrow-right:before, .arrow-right:after {
+	border-right: 0;
+}
+
+.arrow-up:before, .arrow-up:after {
+	border-top: 0;
+}
+
 /* the stroke of the bottom triangle */
-.dialogue-bubble:before {
+.arrow-down:before {
 	border-top-color: black;
 	border-width: 16px;
     
@@ -453,11 +468,73 @@ body.modal-open {
 }
 
 /* the fill of the bottom triangle */
-.dialogue-bubble:after {
-	border-top-color: #F6F6F6;
+.arrow-down:after {
+	border-top-color: #F5F5F5;
 	border-width: 15px;
     
-    bottom: -13px;
+    bottom: -12px;
+	left: 50%;
+	margin-left: -14px;
+}
+
+/* the stroke of the bottom triangle */
+.arrow-left:before {
+	border-right-color: black;
+	border-width: 16px;
+    
+    left: -15px;
+	top: 50%;
+	margin-top: -15px;
+}
+
+/* the fill of the bottom triangle */
+.arrow-left:after {
+	border-right-color: #F5F5F5;
+	border-width: 15px;
+    
+    left: -13px;
+	top: 50%;
+	margin-top: -14px;
+}
+
+/* the stroke of the bottom triangle */
+.arrow-right:before {
+	border-left-color: black;
+	border-width: 16px;
+    
+    left: 100%;
+	top: 50%;
+	margin-top: -15px;
+	margin-left: -2px;
+}
+
+/* the fill of the bottom triangle */
+.arrow-right:after {
+	border-left-color: #F5F5F5;
+	border-width: 15px;
+    
+    left: 100%;
+	top: 50%;
+	margin-top: -14px;
+	margin-left: -3px;
+}
+
+/* the stroke of the bottom triangle */
+.arrow-up:before {
+	border-bottom-color: black;
+	border-width: 16px;
+    
+    top: -15px;
+	left: 50%;
+	margin-left: -15px;
+}
+
+/* the fill of the bottom triangle */
+.arrow-up:after {
+	border-bottom-color: #F5F5F5;
+	border-width: 15px;
+    
+    top: -12px;
 	left: 50%;
 	margin-left: -14px;
 }
@@ -1282,6 +1359,100 @@ body.modal-open {
     left: 44%;
     bottom: 5%;
     font-size: 140%;
+}
+
+/************************************************************
+ * Classes for the Epilogue screens.
+ ************************************************************/
+
+.epilogue-area {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	/*font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 24px;*/
+    color: #050505;
+	text-align: center;
+	background-color: #050505;
+    background-image: url("../img/background.png");
+	background-size: contain;
+    background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* hacky solution with the top:px; getting the boxes lined up properly, but it seems to work */
+
+#epilogue-next-button {
+	float: left;
+	clear: left;
+	position: relative;
+	top: 10px;
+	left:10px;
+}
+
+#epilogue-prev-button {
+	float: left;
+	clear: left;
+	position: relative;
+	top: 15px;
+	left:10px;
+}
+
+#epilogue-restart-button {
+	float: left;
+	clear: left;
+	position: relative;
+	top: 20px;
+	left:10px;
+}
+
+#epilogue-modal-accept-button {
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+}
+
+#epilogue-modal-restart-button {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+}
+
+.dialogue-bubble-area.modal-dialogue{
+	width: 100%;
+    background: #F5F5F5;
+}
+
+.table-modal .modal-button.epilogue-modal-button{
+	height: auto;
+}
+
+#epilogue-list {
+	list-style: none;
+	text-align: centred;
+	
+}
+
+.epilogue-entry {
+	padding: 2px 5px;
+}
+
+.epilogue-entry button {
+	color: black;
+	background: #BBBBBB;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 2px 5px;
+	text-decoration: none;
+}
+
+.epilogue-entry.active button {
+	background-color: #439AD7;
+	border-color: white;
+}
+
+.epilogue-entry button:hover {
+	background: #DDDDDD;
 }
 
 /************************************************************

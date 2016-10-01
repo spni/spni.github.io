@@ -74,6 +74,10 @@ The <character text> text is simply what the character says in that situation.
 
 You can have multiple entries for the same stage and situation. They will all be added to the behaviour.xml, so the character can have multiple responses to the same situation. You'll want to add multiple cases for the more common situations in particular.
 
+The ending sequences are a bit more complicated. They consist of a number of endings, where each ending has at least one screen, and each screen has at least one text box. The start of each ending is marked by the "ending" keyword, which also gives the title for the ending. Each screen starts with the "screen" keyword, which gives the filename of the image for that screen. Each text box starts with a "text" entry, which gives the contents of that text box.
+
+Each ending has a "ending_gender" tag, which specifies which player gender can see that ending. The options are "male" or "female" to have the ending available to those genders, or "any" to allow players of any gender to view that ending. The text boxes have the properties "x" and "y" to specify their positions. These are measures to the left-hand-side and top of the text box, respectively. They are specified as a % of the window size. The x position can also be "centered", which will centre the text box. You can optionally provide a "width" for a text box, which specifies the width of the text box as a percentage of the window size. Finally, you can add an arrow direction, to give an dialogue arrow to a text box. The possible options are "right", "left", "up", and "down". The arrow entry can also be left out, in order to not have a dialogue arrow. See Daisy's behaviour files for an example on how to write an ending entry.
+
 Once you've prepared the character response file, you use the script by doing the following:
 1) Open a command line in the directory of your character. You can open a command line by clicking on the start menu, and search for/run cmd.exe (depending on your operating system). Copy the directory of your character, then in the command line type:
 cd

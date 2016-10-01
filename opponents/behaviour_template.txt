@@ -80,7 +80,8 @@ heavy_masturbating=heavy,What the character says while they're masturbating, and
 finishing_masturbating=finishing,What the masturbating character says as they "finish".
 finished_masturbating=finished,What the character says just after they've finished masturbating.
 #I don't think this line is actually used by the game.
-game_over_defeat=calm,I think this is what the character says after they've lost.
+game_over_defeat=calm,What the character says when someone else has won the game. This can only occur when a player is in the "finished" stage.
+game_over_victory=calm,What the character says when they win the game. Can happen in any stage.
 
 #situations where another male character is stripping
 male_human_must_strip=interested,What they say to a male player who has lost a round
@@ -202,6 +203,19 @@ female_finished_masturbating=shocked,What the character says when a female chara
 7-must_strip_losing=,
 7-stripping=,
 8-stripped=,
+
+#victory lines. one for each stage.
+0-game_over_victory=,
+1-game_over_victory=,
+2-game_over_victory=,
+3-game_over_victory=,
+4-game_over_victory=,
+5-game_over_victory=,
+6-game_over_victory=,
+7-game_over_victory=,
+-3-game_over_victory=,
+-2-game_over_victory=,
+-1-game_over_victory=,
 
 #card cases
 #fully clothed
@@ -814,3 +828,45 @@ female_finished_masturbating=shocked,What the character says when a female chara
 -1-female_start_masturbating=,
 -1-female_masturbating=,
 -1-female_finished_masturbating=,
+
+
+#ending data
+#this is optional. Delete it if you don't have an ending thought up yet.
+#you can also have multiple endings.
+#each one starts with the "ending" entry
+#the tabs aren't necessary, but make it easier to read.
+ending=This is the title of the character's ending, and the start of a new ending
+	ending_gender="male", "female", or "any". This is the gender of player that can see the ending
+
+	#each ending has a number of screens. each screen has an image, and one or more text boxes
+	#the entry "screen" marks the start of a new screen
+	screen=filename (including extension) of the background image for a screen. Also the start of a new screen
+
+		#the text boxes in a screen
+		#the entry "text" starts a new text box
+		text=The text in the text box.
+		x=The x-position of the text box. Specifically, the position of the text box's left side. This can be a percentage, or the word "centered"
+		y=The y-position of the top of the text box. Must be a percentage.
+		width=The width of a text box. This is optional. Must be a percentage.
+		arrow="up", "down", "left", or "right". Gives the text box a dialogue arrow in the specified direction. Can be left out, if you don't want the text box to be an arrow.
+
+	#this screen is an example
+	#the filename is the image you want to use
+	screen=example-filename.png
+
+		text=This is text that will be seen by the player. It has a width of 34% and an arrow pointing down.
+		x=10%
+		y=20%
+		width=34%
+		arrow=right
+
+		text=This is a centered text box. It has the default width and an arrow pointing right.
+		x=centered
+		y=50%
+		arrow=right
+
+		text=This third text box has minimum amount of values specified. It uses the default width, and has no arrow.
+		x=75%
+		y=50%
+
+#if you want additional endings, start the new one with the "ending" line

@@ -96,6 +96,9 @@ var FEMALE_START_MASTURBATING = "female_start_masturbating";
 var FEMALE_MASTURBATING = "female_masturbating";
 var FEMALE_HEAVY_MASTURBATING = "female_heavy_masturbating";
 var FEMALE_FINISHED_MASTURBATING = "female_finished_masturbating";
+
+var GAME_OVER_VICTORY = "game_over_victory";
+var GAME_OVER_DEFEAT = "game_over_defeat";
  
 /**********************************************************************
  *****                 Behaviour Parsing Functions                *****

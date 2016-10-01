@@ -3,7 +3,6 @@
 <head>
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" />
     <title>Strip Poker Night at the Inventory</title>
-  
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
@@ -133,25 +132,26 @@
 <div id="main-select-screen" class="screen-container" hidden>
   <div class="screen">
 		
+
     <!-- Opponent Dialogues -->
     <div class="dialogue-bubble-row">
       <div id="select-bubble-1" class="bordered left dialogue-bubble-area">
-        <div class="dialogue-bubble dialogue-centre">
+        <div class="dialogue-bubble dialogue-centre arrow-down">
           <span id="select-dialogue-1" class="dialogue"></span>
         </div>
       </div>
       <div id="select-bubble-2" class="bordered halfLeft dialogue-bubble-area">
-        <div class="dialogue-bubble dialogue-centre">
+        <div class="dialogue-bubble dialogue-centre arrow-down">
           <span id="select-dialogue-2" class="dialogue"></span>
         </div>
       </div>
       <div id="select-bubble-3" class="bordered center dialogue-bubble-area">
-        <div class="dialogue-bubble dialogue-centre">
+        <div class="dialogue-bubble dialogue-centre arrow-down">
           <span id="select-dialogue-3" class="dialogue"></span>
         </div>
       </div>
       <div id="select-bubble-4" class="bordered farHalfLeft dialogue-bubble-area">
-        <div class="dialogue-bubble dialogue-centre">
+        <div class="dialogue-bubble dialogue-centre arrow-down">
           <span id="select-dialogue-4" class="dialogue"></span>
         </div>
       </div>
@@ -933,26 +933,26 @@
 <!-- Game Screen -->
 <div id="game-screen" class="screen-container" hidden>
   <div class="screen">
-		
+	
     <!-- Dialogue Bubbles -->
     <div class="dialogue-bubble-row">
       <div class="bordered left dialogue-bubble-area">
-        <div id="game-bubble-1" class="dialogue-bubble dialogue-centre">
+        <div id="game-bubble-1" class="dialogue-bubble dialogue-centre arrow-down">
           <span id="game-dialogue-1" class="dialogue"></span>
         </div>
       </div>
       <div class="bordered halfLeft dialogue-bubble-area">
-        <div id="game-bubble-2" class="dialogue-bubble dialogue-centre">
+        <div id="game-bubble-2" class="dialogue-bubble dialogue-centre arrow-down">
           <span id="game-dialogue-2" class="dialogue"></span>
         </div>
       </div>
       <div class="bordered center dialogue-bubble-area">
-        <div id="game-bubble-3" class="dialogue-bubble dialogue-centre">
+        <div id="game-bubble-3" class="dialogue-bubble dialogue-centre arrow-down">
           <span id="game-dialogue-3" class="dialogue"></span>
         </div>
       </div>
       <div class="bordered farHalfLeft dialogue-bubble-area">
-        <div id="game-bubble-4" class="dialogue-bubble dialogue-centre">
+        <div id="game-bubble-4" class="dialogue-bubble dialogue-centre arrow-down">
           <span id="game-dialogue-4" class="dialogue"></span>
         </div>
       </div>
@@ -978,7 +978,7 @@
     <button class='bordered hide-table-button' onclick="toggleTableVisibility()">
       <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
     </button>
-    <button id="game-home-button" class="bordered smooth-button smooth-button-red dock-options-button" onclick="showRestartModal()">
+    <button id="game-home-button" class="bordered smooth-button smooth-button-red dock-options-button" onclick="showRestartModal()"><!-- doEpilogueModal -->
       <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
     </button>
     <button id="game-settings-button" class="bordered smooth-button smooth-button-red dock-options-button" onclick="showOptionsModal()">
@@ -1067,12 +1067,59 @@
       <img id="hidden-large-card" class="bordered large-card-image dock-card hidden-large-card" src="img/unknown.jpg">
     </div>
     <button id="main-game-button" class="bordered smooth-button smooth-button-red" onclick="advanceGame()">Deal</button>
-    
 
   </div>
 </div>
 
-	
+<!-- Start of Epilogue Screen -->
+<div id="epilogue-screen" class="epilogue-area" role="dialog" hidden>
+	<button type="button" id="epilogue-next-button" class="bordered smooth-button" onclick="progressEpilogue( 1)">
+		Next
+	</button>
+	<button type="button" id="epilogue-prev-button" class="bordered smooth-button" onclick="progressEpilogue(-1)">
+		Previous
+	</button>
+	<button type="button" id="epilogue-restart-button" class="bordered smooth-button" onclick="showRestartModal()">
+		Restart?
+	</button>
+</div>
+<!-- End of Epilogue Screen -->
+
+<!-- Start of Epilogue Choice Modal -->
+<div id="epilogue-modal" class="modal table-modal fade" role="dialog">
+	<div class="modal-table-container">
+	<div class="modal-cell-container">
+	<div class="bordered modal-dialog">
+	<div class="bordered modal-dialog-surface">
+		<!-- Start of Modal Content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title text-center">The game is now over...</h3>
+				<h5 id="epilogue-header-text" class="modal-title text-center"></h5>
+			</div>
+			<div class="modal-body">
+				<div class="modal-body-container" style="width:100%">
+					
+					<ul id="epilogue-list">
+					</ul>
+					
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button id="epilogue-modal-accept-button" class="bordered smooth-button modal-button epilogue-modal-button" onclick="doEpilogue()">Choose</button>
+			</div>
+			<div class="modal-footer">
+				<button id="epilogue-modal-restart-button" class="bordered smooth-button modal-button epilogue-modal-button" onclick="showRestartModal()" data-dismiss="modal">Restart?</button>
+			</div>
+		</div>
+		<!-- End of Modal Content -->
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+<!-- End of Options Modal -->
+
 <!-- JavaScript -->
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -1088,6 +1135,7 @@
 <script src="js/spniBehaviour.js"></script>
 <script src="js/spniAI.js"></script>
 <script src="js/spniOption.js"></script>
+<script src="js/spniEpilogue.js"></script>
 
 </body>
 </html>
