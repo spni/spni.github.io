@@ -178,6 +178,8 @@ function restartGame () {
 	/* enable table opacity */
 	tableOpacity = 1;
 	$gameTable.css({opacity:1});
+    $gamePlayerClothingArea.show();
+    $gamePlayerCardArea.show();
 	
 	/* trigger screen refreshes */
 	updateSelectionVisuals();

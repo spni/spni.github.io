@@ -59,8 +59,8 @@ $cardCells = [[$("#player-0-card-1"), $("#player-0-card-2"), $("#player-0-card-3
  **********************************************************************/
 
 /* pseudo constants */
-var ANIM_DELAY = 0;
-var ANIM_TIME = 0;
+var ANIM_DELAY = 350;
+var ANIM_TIME = 1000;
 var CARDS_PER_HAND = 5;
  
 /* image constants */
@@ -311,32 +311,22 @@ function delayDealtCard (player, card) {
  * Animates a small card into a player's hand.
  ************************************************************/
 function animateDealtCard (player, card) {
-	var topOffset = 0;
-	var leftOffset = 0;
-	var width = 0;
-	var height = 0;
-	
 	$clonedCard = $hiddenLargeCard.clone().prependTo($gameHiddenArea);
 	$clonedCard.addClass("shown-card");
 	$clonedCard.attr('id', 'dealt-card-'+player+'-'+card);
 	
 	if (player == HUMAN_PLAYER) {
-		topOffset = 0;
-		leftOffset = -180;
-		width = 65;
-		height = 90;
+      $clonedCard.addClass("large-dealt-card");
 	} else {
-		topOffset = 0;
-		leftOffset = 0;
-		width = 35;
-		height = 45;
+      $clonedCard.addClass("small-dealt-card");
 	}
 	
 	var offset = $cardCells[player][card].offset();
-	var top = offset.top - $clonedCard.offset().top;
-	var left = offset.left - $clonedCard.offset().left;
+	var top = offset.top - $gameHiddenArea.offset().top;
+	var left = offset.left - $gameHiddenArea.offset().left - 6;
+    console.log(top + " " + left);
 	
-	$clonedCard.animate({top:top, left:left, width:width, height:height}, ANIM_TIME, function() {
+	$clonedCard.animate({top:top, left:left}, ANIM_TIME, function() {
 		$('#dealt-card-'+player+'-'+card).remove();
 		$cardCells[player][card].attr('src', UNKNOWN_CARD_IMAGE);
 		dealLock++;
