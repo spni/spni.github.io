@@ -73,7 +73,9 @@ def create_images(image_list, output_directory):
 	
 	#setup the scene before drawing the requested pictures
 	#this sets the character position, zoom level, distables interactivity, sets the zoom level and screen position, and removes censor icon
-	setup_scene = "33***bc185.500.0.0.1_ga0*0*0*0*0*0*0*0*0#/]ua1.0.0.0_ub_uc7.0.30_ud7.0"
+	#setup_scene = "33***bc185.500.0.0.1_ga0*0*0*0*0*0*0*0*0#/]ua1.0.0.0_ub_uc7.0.30_ud7.0"
+	#updated setup scene string, for newer version of kisekae
+	setup_scene = "36***bc185.500.0.0.1_ga0*0*0*0*0*0*0*0*0#/]a00_b00_c00_d00_w00_x00_y00_z00_ua1.0.0.0_ub_u0_v0_uc7.0.30_ud7.0"
 	setup_filename = kkl_dir +"\\scene_setup_file.txt"
 	delete_file(kkl_dir +"\\scene_setup_file..png")
 	with open(setup_filename, "w") as f:
