@@ -1,0 +1,633 @@
+#required for behaviour.xml
+first=Hermione
+last=Granger
+label=Hermione
+gender=female
+size=medium
+timer=15
+
+#required for meta.xml
+pic=0-calm.png
+height=5'5"
+from=Harry Potter
+writer=Dilettante
+artist=Zombiqaz
+description=Star student of Hogwarts School of Witchcraft and Wizardry.
+
+#clothing
+clothes=Shoes,shoes,minor,other
+clothes=Socks,socks,minor,other
+clothes=Jumper,jumper,minor,upper
+clothes=Tie,tie,minor,other
+clothes=Skirt,skirt,major,lower
+clothes=Blouse,blouse,major,upper
+clothes=Bra,bra,important,upper
+clothes=Panties,panties,important,lower
+
+#start picture
+start=0-happy,I've memorized all the rules of the game, of course!
+
+good_hand=0-happy,Excellent.
+okay_hand=0-calm,This will do, I suppose.
+bad_hand=0-sad,Hopefully not a sign of things to come...
+
+good_hand=1-happy,Excellent.
+okay_hand=1-calm,This will do, I suppose.
+bad_hand=1-sad,Oh, rats!
+
+good_hand=2-happy,Perfect.
+okay_hand=2-calm,This will do, I suppose.
+bad_hand=2-sad,I was never good at divination.
+
+good_hand=3-happy,Perfect!
+okay_hand=3-calm,I hope this is enough.
+bad_hand=3-sad,Oh, Merlin!  These cards are horrible.
+
+good_hand=4-happy,This ought to do it!  Thank goodness.
+okay_hand=4-calm,I hope this is enough.
+bad_hand=4-sad,I was never good at divination.
+
+good_hand=5-happy,This ought to do it!  Thank goodness.
+okay_hand=5-calm,I hope this is enough.
+bad_hand=5-sad,I'm starting to regret taking this dare.
+
+good_hand=6-happy,Phew!  A good hand at last.
+okay_hand=6-calm,Hmm.
+bad_hand=6-sad,Now I'm really beginning to regret this!
+
+good_hand=7-happy,Phew!  A good hand, at last.
+okay_hand=7-calm,I hope this is enough.
+bad_hand=7-sad,Oh, I wish I'd taken that Felix Felicis!
+
+good_hand=8-happy,Thank Merlin!
+okay_hand=8-calm,Please let this be enough!  Oh, please!
+bad_hand=8-shocked,No, no, no!  Where's a time-turner when you need one?
+
+#losing shoes
+must_strip_winning=0-lost,It's sort of exciting, isn't it?  Breaking the rules?
+must_strip_normal=0-lost,Never let it be said that a Gryffindor did not pay her debts.
+must_strip_losing=0-lost,I blame the butterbeer.
+stripping=0-strip,Time for my shoes!
+stripped=1-calm,It feels good to get those off!
+
+#losing socks
+must_strip_winning=1-lost,It's sort of exciting, isn't it?  Breaking the rules?
+must_strip_normal=1-lost,Never let it be said that a Gryffindor did not pay her debts.
+must_strip_losing=1-lost,I blame the butterbeer!
+stripping=1-strip,Time for my socks!
+stripped=2-sad,There aren't any house elves around to give them to, are there?
+
+#losing jumper
+must_strip_winning=2-lost,It's sort of exciting, isn't it?  Breaking the rules?
+must_strip_normal=2-lost,Never let it be said that a Gryffindor did not pay her debts.
+must_strip_losing=2-lost,I blame the butterbeer.
+stripping=2-strip,Time for my ~clothing~.
+stripped=3-sad,It's more comfortable this way anyway.
+
+#losing tie
+must_strip_winning=3-lost,It's sort of exciting, isn't it?  Breaking the rules?
+must_strip_normal=3-lost,Never let it be said that a Gryffindor did not pay her debts.
+must_strip_losing=3-lost,I blame the butterbeer.
+stripping=3-strip,Oh.  Oh, dear.  Now I have to remove my tie.
+stripped=4-sad,Now I'm out of uniform.  You... you won't tell the professors, will you?
+
+#losing skirt
+must_strip_winning=4-lost,It's sort of exciting, isn't it?  Breaking the rules?
+must_strip_normal=4-lost,Never let it be said that a Gryffindor did not pay her debts.
+must_strip_losing=4-lost,Oh, I wish I still had that time-turner!
+stripping=4-strip,I'll... I'll remove my ~clothing~.  Just... give me a minute.
+stripped=5-sad,This is nothing a prefect can't handle!
+
+#losing shirt
+must_strip_winning=5-lost,It's sort of exciting, isn't it?  Breaking the rules?
+must_strip_normal=5-lost,Never let it be said that a Gryffindor did not pay her debts.
+must_strip_losing=5-lost,Oh, I wish I still had that time-turner!
+stripping=5-strip,I'll... I'll remove my ~clothing~.  Just... give me a minute.
+stripped=6-sad,Well spotted - I AM a girl.
+
+#losing bra
+must_strip_winning=6-lost,It's sort of exciting, isn't it?  Breaking the rules?
+must_strip_normal=6-lost,Never let it be said that a Gryffindor did not pay her debts.
+must_strip_losing=6-lost,Oh, I wish I still had that time-turner!
+stripping=6-strip,Not my ~clothing~!  I didn't let Viktor get that far!
+stripped=7-sad,Oh, Merlin!  This is so embarassing.
+
+#losing panties
+must_strip_winning=7-lost,It's sort of exciting, isn't it?  Breaking the rules?
+must_strip_normal=7-lost,Never let it be said that a Gryffindor did not pay her debts.
+must_strip_losing=7-lost,Oh, I wish I still had that time-turner!
+stripping=7-strip,Just... just don't tell Ron, okay?
+stripped=8-sad,I wonder if Madame Pomfrey can cure death from embarassment...
+
+#masturbating
+must_masturbate_first=8-lost,I'll... I'll do it.  A Gryffindor never goes back on her word.
+must_masturbate=8-stunned,I can't believe this! I memorized all the rules!
+start_masturbating=8-starting,I don't have any experience, though.  I... I might not be good at it.
+masturbating=9-calm,How long do I have to keep going for?
+heavy_masturbating=9-heavy,Mmmmmmmm... .
+finishing_masturbating=9-finishing,I'm cumming!
+finished_masturbating=10-finished,That was strangely liberating.  Can we keep going?
+
+#game over
+game_over_victory=0-happy,Exactly how I expected tonight to go.
+game_over_victory=1-happy,Exactly how I expected tonight to go.
+game_over_victory=2-happy,Exactly how I expected tonight to go.
+game_over_victory=3-happy,Exactly how I expected tonight to go.
+game_over_victory=4-happy,Exactly how I expected tonight to go.
+game_over_victory=5-happy,Fifty points to Gryffindor!
+game_over_victory=6-happy,Fifty points to Gryffindor!
+game_over_victory=7-happy,Fifty points to Gryffindor!
+game_over_victory=8-happy,Fifty points to Gryffindor!
+game_over_defeat=10-calm,At least this is better than being expelled...
+
+#other player must strip
+male_human_must_strip=0-interested,How fun!  I can't believe I didn't play this before now.
+male_must_strip=0-interested,How exciting!
+female_human_must_strip=0-interested,We all agreed to the rules, right?
+female_must_strip=0-interested,I know what I'd take off in your place...
+
+male_human_must_strip=1-interested,How fun!  I can't believe I didn't play this before now.
+male_must_strip=1-interested,How exciting!
+female_human_must_strip=1-interested,We all agreed to the rules, right?
+female_must_strip=1-interested,The tension is palpable!
+
+male_human_must_strip=2-interested,How fun!  I can't believe I didn't play this before now.
+male_must_strip=2-interested,How exciting!
+female_human_must_strip=2-interested,We all agreed to the rules, right?
+female_must_strip=2-interested,I know what I'd take off in your place...
+
+male_human_must_strip=3-interested,How fun!  I can't believe I didn't play this before now.
+male_must_strip=3-interested,How exciting!
+female_human_must_strip=3-interested,We all agreed to the rules, right?
+female_must_strip=3-interested,The tension is palpable!
+
+male_human_must_strip=4-interested,Fair's fair, ~name~!
+male_must_strip=4-interested,How exciting!
+female_human_must_strip=4-interested,Fair's fair, ~name~!
+female_must_strip=4-interested,I know what I'd take off in your place...
+
+male_human_must_strip=5-interested,Fair's fair, ~name~!
+male_must_strip=5-interested,How exciting!
+female_human_must_strip=5-interested,Fair's fair, ~name~!
+female_must_strip=5-interested,The tension is palpable!
+
+male_human_must_strip=6-interested,I know what I'd do, if I were you.
+male_must_strip=6-interested,How exciting!
+female_human_must_strip=6-interested,I know what I'd do, if I were you.
+female_must_strip=6-interested,I know what I'd take off in your place...
+
+male_human_must_strip=7-interested,I know what I'd do, if I were you.
+male_must_strip=7-interested,How exciting!
+female_human_must_strip=7-interested,I know what I'd do, if I were you.
+female_must_strip=7-interested,The tension is palpable!
+
+male_human_must_strip=8-interested,Come on and join me!
+male_must_strip=8-interested,How exciting!
+female_human_must_strip=8-interested,Come on and join me!
+female_must_strip=8-interested,I know what I'd take off in your place...
+
+male_human_must_strip=9-interested,Come on and join me!
+male_must_strip=9-interested,How exciting!
+female_human_must_strip=9-interested,Come on and join me!
+female_must_strip=9-interested,The tension is palpable!
+
+male_human_must_strip=10-interested,Come on and join me!
+male_must_strip=10-interested,How exciting!
+female_human_must_strip=10-interested,Come on and join me!
+female_must_strip=10-interested,I know what I'd take off in your place...
+
+#removing accessories
+male_removing_accessory=0-angry,That does fulfil your obligation, according to Robert's Rules of Poker.
+male_removed_accessory=0-calm,Somehow it's not as exciting as I'd read, though.
+female_removing_accessory=0-angry,Somehow it's not quite as exciting as I'd read.
+female_removed_accessory=0-calm,If it's any consolation, I think you look nicer without it.
+
+male_removing_accessory=1-angry,That does fulfil your obligation, according to Robert's Rules of Poker.
+male_removed_accessory=1-calm,At least you have less small stuff to take off now.
+female_removing_accessory=1-angry,Somehow it's not quite as exciting as I'd read.
+female_removed_accessory=1-calm,That's that!
+
+male_removing_accessory=2-angry,That does fulfil your obligation, according to Robert's Rules of Poker.
+male_removed_accessory=2-calm,At least you have less small stuff to take off now.
+female_removing_accessory=2-angry,Somehow it's not quite as exciting as I'd read.
+female_removed_accessory=2-calm,If it's any consolation, I think you look nicer without it.
+
+male_removing_accessory=3-angry,That does fulfil your obligation, according to Robert's Rules of Poker.
+male_removed_accessory=3-calm,At least you have less small stuff to take off now.
+female_removing_accessory=3-angry,Somehow it's not quite as exciting as I'd read.
+female_removed_accessory=3-calm,That's that!
+
+male_removing_accessory=4-angry,That does fulfil your obligation, according to Robert's Rules of Poker.
+male_removed_accessory=4-calm,At least you have less small stuff to take off now.
+female_removing_accessory=4-angry,Somehow it's not quite as exciting as I'd read.
+female_removed_accessory=4-calm,If it's any consolation, I think you look nicer without it.
+
+male_removing_accessory=5-angry,Oh, come on!  I can't believe you're that cheap.
+male_removed_accessory=5-calm,At least you have less small stuff to take off now.
+female_removing_accessory=5-angry,Oh, come on!  I can't believe you're that cheap.
+female_removed_accessory=5-calm,That's that!
+
+male_removing_accessory=6-angry,Oh, come on!  I can't believe you're that cheap.
+male_removed_accessory=6-calm,At least you have less small stuff to take off now.
+female_removing_accessory=6-angry,Somehow it's not quite as exciting as I'd read.
+female_removed_accessory=6-calm,If it's any consolation, I think you look nicer without it.
+
+male_removing_accessory=7-angry,Oh, come on!  I can't believe you're that cheap.
+male_removed_accessory=7-calm,At least you have less small stuff to take off now.
+female_removing_accessory=7-angry,I don't want to seem like a sore loser, but can we play with different rules next time?
+female_removed_accessory=7-calm,That's that!
+
+male_removing_accessory=8-angry,Merlin, this game is unfair.
+male_removed_accessory=8-calm,At least you have less small stuff to take off now.
+female_removing_accessory=8-angry,I don't want to seem like a sore loser, but can we play with different rules next time?
+female_removed_accessory=8-calm,If it's any consolation, I think you look nicer without it.
+
+male_removing_accessory=9-angry,Merlin, this game is unfair.
+male_removed_accessory=9-calm,At least you have less small stuff to take off now.
+female_removing_accessory=9-angry,I don't want to seem like a sore loser, but can we play with different rules next time?
+female_removed_accessory=9-calm,That's that!
+
+male_removing_accessory=10-angry,Merlin, this game is unfair.
+male_removed_accessory=10-calm,At least you have less small stuff to take off now.
+female_removing_accessory=10-angry,I don't want to seem like a sore loser, but can we play with different rules next time?
+female_removed_accessory=10-calm,If it's any consolation, I think you look nicer without it.
+
+#other player removing minor clothes
+male_removing_minor=0-calm,A good start, at least.
+male_removed_minor=0-happy,Who's turn is it to deal?
+female_removing_minor=0-calm,A solid choice!
+female_removed_minor=0-happy,Shall we get back to the game?
+
+male_removing_minor=1-calm,A good start, at least.
+male_removed_minor=1-happy,Who's turn is it to deal?
+female_removing_minor=1-calm,A solid choice!
+female_removed_minor=1-happy,Don't think you can get away so easily next time!
+
+male_removing_minor=2-calm,A good start, at least.
+male_removed_minor=2-happy,Who's turn is it to deal?
+female_removing_minor=2-calm,A solid choice!
+female_removed_minor=2-happy,Shall we get back to the game?
+
+male_removing_minor=3-calm,A good start, at least.
+male_removed_minor=3-happy,Who's turn is it to deal?
+female_removing_minor=3-calm,A solid choice!
+female_removed_minor=3-happy,Don't think you can get away so easily next time!
+
+male_removing_minor=4-calm,A good start, at least.
+male_removed_minor=4-happy,Fair's fair, ~name~!
+female_removing_minor=4-calm,A solid choice!
+female_removed_minor=4-happy,Shall we get back to the game?
+
+male_removing_minor=5-calm,A good start, at least.
+male_removed_minor=5-happy,Fair's fair, ~name~!
+female_removing_minor=5-calm,A solid choice!
+female_removed_minor=5-happy,Don't think you can get away so easily next time!
+
+male_removing_minor=6-calm,A good start, at least.
+male_removed_minor=6-happy,Fair's fair, ~name~!
+female_removing_minor=6-calm,A solid choice!
+female_removed_minor=6-happy,Shall we get back to the game?
+
+male_removing_minor=7-calm,I can't believe how far behind I am!
+male_removed_minor=7-happy,Oh... is that all?
+female_removing_minor=7-calm,I can't believe how far behind I am!
+female_removed_minor=7-happy,Don't think you can get away so easily next time!
+
+male_removing_minor=8-calm,I can't believe how far behind I am!
+male_removed_minor=8-happy,Oh... is that all?
+female_removing_minor=8-calm,I can't believe how far behind I am!
+female_removed_minor=8-happy,Shall we get back to the game?
+
+male_removing_minor=9-calm,I can't believe how far behind I am!
+male_removed_minor=9-happy,Oh... is that all?
+female_removing_minor=9-calm,I can't believe how far behind I am!
+female_removed_minor=9-happy,Don't think you can get away so easily next time!
+
+male_removing_minor=10-calm,I can't believe how far behind I am!
+male_removed_minor=10-happy,Oh... is that all?
+female_removing_minor=10-calm,I can't believe how far behind I am!
+female_removed_minor=10-happy,Shall we get back to the game?
+
+
+male_removing_major=0-interested,This is rather exciting, isn't it?
+male_removed_major=0-happy,You're out of uniform, ~name~!
+female_removing_major=0-interested,Now the game is getting hotter!
+female_removed_major=0-happy,The game is afoot!
+
+male_removing_major=1-interested,Finally getting ~name~ out of their ~clothing~!
+male_removed_major=1-interested,How exciting!  I see why people like this game.
+female_removing_major=1-interested,Now the game is getting hotter!
+female_removed_major=1-interested,This is so wrong!  Hurry up.
+
+male_removing_major=2-interested,Finally getting ~name~ out of their ~clothing~!
+male_removed_major=2-interested,You're out of uniform, ~name~!
+female_removing_major=2-interested,Now the game is getting hotter!
+female_removed_major=2-interested,The game is afoot!
+
+male_removing_major=3-interested,Finally getting ~name~ out of their ~clothing~!
+male_removed_major=3-interested,How exciting!  I see why people like this game.
+female_removing_major=3-interested,Now the game is getting hotter!
+female_removed_major=3-interested,This is so wrong!  Hurry up.
+
+male_removing_major=4-interested,Finally getting ~name~ out of their ~clothing~!
+male_removed_major=4-interested,You're out of uniform, ~name~!
+female_removing_major=4-interested,Now the game is getting hotter!
+female_removed_major=4-interested,The game is afoot!
+
+male_removing_major=5-interested,Finally getting ~name~ out of their ~clothing~!
+male_removed_major=5-interested,How exciting!  I see why people like this game.
+female_removing_major=5-interested,Now the game is getting hotter!
+female_removed_major=5-interested,This is so wrong!  Hurry up.
+
+male_removing_major=6-interested,Finally getting ~name~ out of their ~clothing~!
+male_removed_major=6-interested,You're out of uniform, ~name~!
+female_removing_major=6-interested,Thanks for taking one for the team, ~name~.
+female_removed_major=6-interested,The game is afoot!
+
+male_removing_major=7-interested,Finally getting ~name~ out of their ~clothing~!
+male_removed_major=7-interested,How exciting!  I see why people like this game.
+female_removing_major=7-interested,Thanks for taking one for the team, ~name~.
+female_removed_major=7-interested,This is so wrong!  Hurry up.
+
+male_removing_major=8-interested,Finally getting ~name~ out of their ~clothing~!
+male_removed_major=8-interested,You're out of uniform, ~name~!
+female_removing_major=8-interested,Thanks for taking one for the team, ~name~.
+female_removed_major=8-interested,The game is afoot!
+
+male_removing_major=9-interested,Finally getting ~name~ out of their ~clothing~!
+male_removed_major=9-interested,How exciting!  I see why people like this game.
+female_removing_major=9-interested,Thanks for taking one for the team, ~name~.
+female_removed_major=9-interested,This is so wrong!  Hurry up.
+
+male_removing_major=10-interested,Finally getting ~name~ out of their ~clothing~!
+male_removed_major=10-interested,You're out of uniform, ~name~!
+female_removing_major=10-interested,Thanks for taking one for the team, ~name~.
+female_removed_major=10-interested,The game is afoot!
+
+#other player removing important clothes
+male_chest_will_be_visible=0-interested,Don't worry - I'll be a lady and not stare.
+male_chest_is_visible=0-interested,That's, um, a little distracting.  Is that in the rules?
+male_crotch_will_be_visible=0-horny,There's no shame in losing, ~name~.  I am, after all, the brightest witch of my generation.
+male_small_crotch_is_visible=0-interested,Oh!  What a relief.  I mean, I wasn't sure it would fit - I mean, nevermind!
+male_medium_crotch_is_visible=0-awkward,Is... is it getting hot in here?  No?
+male_large_crotch_is_visible=0-shocked,You're even bigger than Ron!  Um, not that I would know.
+
+female_chest_will_be_visible=0-interested,I wonder who's larger... well, we'll find out!
+female_small_chest_is_visible=0-interested,Oh, how cute!  Just like Ginny.
+female_medium_chest_is_visible=0-interested,Those are beautiful, ~name~.
+female_large_chest_is_visible=0-shocked,Oh!  I feel so inferior.
+female_crotch_will_be_visible=0-interested,Let's take a look at your Chamber of Secrets... oh, I can't believe I just said that!
+female_crotch_is_visible=0-stunned,I don't know where to look!
+
+male_chest_will_be_visible=1-interested,Don't worry - I'll be a lady and not stare.
+male_chest_is_visible=1-interested,That's, um, a little distracting.  Is that in the rules?
+male_crotch_will_be_visible=1-horny,There's no shame in losing, ~name~.  I am, after all, the brightest witch of my generation.
+male_small_crotch_is_visible=1-calm,Oh!  What a relief.  I mean, I wasn't sure it would fit - I mean, nevermind!
+male_medium_crotch_is_visible=1-awkward,Is... is it getting hot in here?  No?
+male_large_crotch_is_visible=1-shocked,You're even bigger than Ron!  Um, not that I would know.
+
+female_chest_will_be_visible=1-interested,I wonder who's larger... well, we'll find out!
+female_small_chest_is_visible=1-interested,They look very... sensitive.
+female_medium_chest_is_visible=1-interested,You look just like a Veela!  I'm jealous.
+female_large_chest_is_visible=1-shocked,Oh!  I feel so inferior.
+female_crotch_will_be_visible=1-horny,Ha!  Ron will be so jealous.
+female_crotch_is_visible=1-stunned,I don't know where to look!
+
+male_chest_will_be_visible=2-interested,Don't worry - I'll be a lady and not stare.
+male_chest_is_visible=2-interested,That's, um, a little distracting.  Is that in the rules?
+male_crotch_will_be_visible=2-horny,There's no shame in losing, ~name~.  I am, after all, the brightest witch of my generation.
+male_small_crotch_is_visible=2-calm,Oh!  What a relief.  I mean, I wasn't sure it would fit - I mean, nevermind!
+male_medium_crotch_is_visible=2-awkward,Is... is it getting hot in here?  No?
+male_large_crotch_is_visible=2-shocked,You're even bigger than Ron!  Um, not that I would know.
+
+female_chest_will_be_visible=2-interested,I wonder who's larger... well, we'll find out!
+female_small_chest_is_visible=2-interested,Oh, how cute!  Just like Ginny.
+female_medium_chest_is_visible=2-interested,Those are beautiful, ~name~.
+female_large_chest_is_visible=2-shocked,Oh!  I feel so inferior.
+female_crotch_will_be_visible=2-horny,Let's take a look at your Chamber of Secrets... Oh, I can't believe I just said that!
+female_crotch_is_visible=2-stunned,I don't know where to look!
+
+male_chest_will_be_visible=3-interested,Don't worry - I'll be a lady and not stare.
+male_chest_is_visible=3-interested,That's, um, a little distracting.  Is that in the rules?
+male_crotch_will_be_visible=3-horny,There's no shame in losing, ~name~.  I am, after all, the brightest witch of my generation.
+male_small_crotch_is_visible=3-calm,Oh!  What a relief.  I mean, I wasn't sure it would fit - I mean, nevermind!
+male_medium_crotch_is_visible=3-awkward,Is... is it getting hot in here?  No?
+male_large_crotch_is_visible=3-shocked,You're even bigger than Ron!  Um, not that I would know.
+
+female_chest_will_be_visible=3-interested,I wonder who's larger... well, we'll find out!
+female_small_chest_is_visible=3-interested,They look very... sensitive.
+female_medium_chest_is_visible=3-interested,You look just like a Veela!  I'm jealous.
+female_large_chest_is_visible=3-shocked,Oh!  I feel so inferior.
+female_crotch_will_be_visible=3-horny,Ha!  Ron will be so jealous.
+female_crotch_is_visible=3-stunned,I don't know where to look!
+
+male_chest_will_be_visible=4-interested,Don't worry - I'll be a lady and not stare.  Much.
+male_chest_is_visible=4-interested,That's, um, a little distracting.  Is that in the rules?
+male_crotch_will_be_visible=4-horny,There's no shame in losing, ~name~.  I am, after all, the brightest witch of my generation.
+male_small_crotch_is_visible=4-calm,Oh!  What a relief.  I mean, I wasn't sure it would fit - I mean, nevermind!
+male_medium_crotch_is_visible=4-awkward,Is... is it getting hot in here?  No?
+male_large_crotch_is_visible=4-shocked,You're even bigger than Ron!  Um, not that I would know.
+
+female_chest_will_be_visible=4-interested,I wonder who's larger... well, we'll find out!
+female_small_chest_is_visible=4-interested,Oh, how cute!  Just like Ginny.
+female_medium_chest_is_visible=4-interested,Those are beautiful, ~name~.
+female_large_chest_is_visible=4-shocked,Oh!  I feel so inferior.
+female_crotch_will_be_visible=4-horny,Let's take a look at your Chamber of Secrets... oh, I can't believe I just said that!
+female_crotch_is_visible=4-stunned,I don't know where to look!
+
+male_chest_will_be_visible=5-interested,Don't worry - I'll be a lady and not stare.  Much.
+male_chest_is_visible=5-interested,That's, um, a little distracting.  Is that in the rules?
+male_crotch_will_be_visible=5-horny,There's no shame in losing, ~name~.  I am, after all, the brightest witch of my generation.
+male_small_crotch_is_visible=5-calm,Oh!  What a relief.  I mean, I wasn't sure it would fit - I mean, nevermind!
+male_medium_crotch_is_visible=5-awkward,Is... is it getting hot in here?  No?
+male_large_crotch_is_visible=5-shocked,You're even bigger than Ron!  Um, not that I would know.
+
+female_chest_will_be_visible=5-interested,I wonder who's larger... well, we'll find out!
+female_small_chest_is_visible=5-interested,They look very... sensitive.
+female_medium_chest_is_visible=5-interested,You look just like a Veela!  I'm jealous.
+female_large_chest_is_visible=5-shocked,Oh!  I feel so inferior.
+female_crotch_will_be_visible=5-horny,Ha!  Ron will be so jealous.
+female_crotch_is_visible=5-stunned,I don't know where to look!
+
+male_chest_will_be_visible=6-interested,Don't worry - I'll be a lady and not stare.  Much.
+male_chest_is_visible=6-interested,That's, um, a little distracting.  Is that in the rules?
+male_crotch_will_be_visible=6-horny,There's no shame in losing, ~name~.  I am, after all, the brightest witch of my generation.
+male_small_crotch_is_visible=6-calm,Oh!  What a relief.  I mean, I wasn't sure it would fit - I mean, nevermind!
+male_medium_crotch_is_visible=6-awkward,Is... is it getting hot in here?  No?
+male_large_crotch_is_visible=6-shocked,You're even bigger than Ron!  Um, not that I would know.
+
+female_chest_will_be_visible=6-interested,I wonder who's larger... well, we'll find out!
+female_small_chest_is_visible=6-interested,Oh, how cute!  Just like Ginny.
+female_medium_chest_is_visible=6-interested,Those are beautiful, ~name~.
+female_large_chest_is_visible=6-shocked,Oh!  I feel so inferior.
+female_crotch_will_be_visible=6-horny,Let's take a look at your Chamber of Secrets... oh, I can't believe I just said that!
+female_crotch_is_visible=6-stunned,I don't know where to look!
+
+male_chest_will_be_visible=7-interested,Don't worry - I'll be a lady and not stare.  Much.
+male_chest_is_visible=7-interested,That's, um, a little distracting.  Is that in the rules?
+male_crotch_will_be_visible=7-horny,There's no shame in losing, ~name~.  I am, after all, the brightest witch of my generation.
+male_small_crotch_is_visible=7-calm,Oh!  What a relief.  I mean, I wasn't sure it would fit - I mean, nevermind!
+male_medium_crotch_is_visible=7-awkward,Is... is it getting hot in here?  No?
+male_large_crotch_is_visible=7-shocked,You're even bigger than Ron!  Um, not that I would know.
+
+female_chest_will_be_visible=7-interested,I wonder who's larger... well, we'll find out!
+female_small_chest_is_visible=7-interested,They look very... sensitive.
+female_medium_chest_is_visible=7-interested,You look just like a Veela!  I'm jealous.
+female_large_chest_is_visible=7-shocked,Oh!  I feel so inferior.
+female_crotch_will_be_visible=7-horny,Ha!  Ron will be so jealous.
+female_crotch_is_visible=7-stunned,I don't know where to look!
+
+male_chest_will_be_visible=8-interested,Finally!  I've been waiting for this all night.
+male_chest_is_visible=8-interested,That's, um, a little distracting.  Is that in the rules?
+male_crotch_will_be_visible=8-horny,There's no shame in losing, ~name~.  I am, after all, the brightest witch of my generation.
+male_small_crotch_is_visible=8-calm,Oh!  What a relief.  I mean, I wasn't sure it would fit - I mean, nevermind!
+male_medium_crotch_is_visible=8-awkward,Is... is it getting hot in here?  No?
+male_large_crotch_is_visible=8-shocked,You're even bigger than Ron!  Um, not that I would know.
+
+female_chest_will_be_visible=8-interested,I'd be lying if I said I wasn't interested.
+female_small_chest_is_visible=8-interested,Oh, how cute!  Just like Ginny.
+female_medium_chest_is_visible=8-interested,Those are beautiful, ~name~.
+female_large_chest_is_visible=8-shocked,Oh!  I feel so inferior.
+female_crotch_will_be_visible=8-horny,Let's take a look at your Chamber of Secrets... oh, I can't believe I just said that!
+female_crotch_is_visible=8-stunned,I don't know where to look!
+
+male_chest_will_be_visible=9-interested,Finally!  I've been waiting for this all night.
+male_chest_is_visible=9-interested,That's, um, a little distracting.  Is that in the rules?
+male_crotch_will_be_visible=9-horny,There's no shame in losing, ~name~.  I am, after all, the brightest witch of my generation.
+male_small_crotch_is_visible=9-calm,Oh!  What a relief.  I mean, I wasn't sure it would fit - I mean, nevermind!
+male_medium_crotch_is_visible=9-awkward,Is... is it getting hot in here?  No?
+male_large_crotch_is_visible=9-shocked,You're even bigger than Ron!  Um, not that I would know.
+
+female_chest_will_be_visible=9-interested,I'd be lying if I said I wasn't interested.
+female_small_chest_is_visible=9-interested,They look very... sensitive.
+female_medium_chest_is_visible=9-interested,You look just like a Veela!  I'm jealous.
+female_large_chest_is_visible=9-shocked,Oh!  I feel so inferior.
+female_crotch_will_be_visible=9-horny,Ha!  Ron will be so jealous.
+female_crotch_is_visible=9-stunned,I don't know where to look!
+
+male_chest_will_be_visible=10-interested,Finally!  I've been waiting for this all night.
+male_chest_is_visible=10-interested,That's, um, a little distracting.  Is that in the rules?
+male_crotch_will_be_visible=10-horny,There's no shame in losing, ~name~.  I am, after all, the brightest witch of my generation.
+male_small_crotch_is_visible=10-calm,Oh!  What a relief.  I mean, I wasn't sure it would fit - I mean, nevermind!
+male_medium_crotch_is_visible=10-awkward,Is... is it getting hot in here?  No?
+male_large_crotch_is_visible=10-shocked,You're even bigger than Ron!  Um, not that I would know.
+
+female_chest_will_be_visible=10-interested,I'd be lying if I said I wasn't interested.
+female_small_chest_is_visible=10-interested,Oh, how cute!  Just like Ginny.
+female_medium_chest_is_visible=10-interested,Those are beautiful, ~name~.
+female_large_chest_is_visible=10-shocked,Oh!  I feel so inferior.
+female_crotch_will_be_visible=10-horny,Let's take a look at your Chamber of Secrets... oh, I can't believe I just said that!
+female_crotch_is_visible=10-stunned,I don't know where to look!  Yes, I do.
+
+#other player masturbating
+male_must_masturbate=0-interested,I'm not going to say I told you so, but I told you so.
+male_start_masturbating=0-interested,That's... a little different than I imagined.
+male_masturbating=0-horny,There's something fascinating about this...
+male_finished_masturbating=0-shocked,Eep!  You got some on my uniform!
+
+female_must_masturbate=0-stunned,I guess it's time, isn't it?
+female_start_masturbating=0-interested,Just-Just pretend I'm not here!
+female_masturbating=0-horny,Whew!  This is getting hot.
+female_finished_masturbating=0-horny,That was very... educational, ~name~.
+
+male_must_masturbate=1-interested,I'm not going to say I told you so, but I told you so.
+male_start_masturbating=1-horny,That's... a little different than I imagined.
+male_masturbating=1-horny,There's something fascinating about this...
+male_finished_masturbating=1-shocked,Eep!  You got some on my uniform!
+
+female_must_masturbate=1-interested,I guess it's time, isn't it?
+female_start_masturbating=1-horny,Mind if I take notes?
+female_masturbating=1-horny,Whew!  This is getting hot.
+female_finished_masturbating=1-shocked,That was very... educational, ~name~.
+
+male_must_masturbate=2-interested,I'm not going to say I told you so, but I told you so.
+male_start_masturbating=2-horny,That's... a little different than I imagined.
+male_masturbating=2-horny,There's something fascinating about this...
+male_finished_masturbating=2-shocked,Eep!  You got some on my uniform!
+
+female_must_masturbate=2-interested,I guess it's time, isn't it?
+female_start_masturbating=2-horny,Just-Just pretend I'm not here!
+female_masturbating=2-horny,Whew!  This is getting hot.
+female_finished_masturbating=2-shocked,That was very... educational, ~name~.
+
+male_must_masturbate=3-interested,I'm not going to say I told you so, but I told you so.
+male_start_masturbating=3-horny,That's... a little different than I imagined.
+male_masturbating=3-horny,There's something fascinating about this...
+male_finished_masturbating=3-shocked,Eep!  You got some on my uniform!
+
+female_must_masturbate=3-interested,I guess it's time, isn't it?
+female_start_masturbating=3-horny,Mind if I take notes?
+female_masturbating=3-horny,Whew!  This is getting hot.
+female_finished_masturbating=3-shocked,That was very... educational, ~name~.
+
+male_must_masturbate=4-interested,I'm not going to say I told you so, but I told you so.
+male_start_masturbating=4-horny,That's... a little different than I imagined.
+male_masturbating=4-horny,There's something fascinating about this...
+male_finished_masturbating=4-shocked,Eep!  You got some on my uniform!
+
+female_must_masturbate=4-interested,I guess it's time, isn't it?
+female_start_masturbating=4-horny,Just-Just pretend I'm not here!
+female_masturbating=4-horny,Whew!  This is getting hot.
+female_finished_masturbating=4-shocked,That was very... educational, ~name~.
+
+male_must_masturbate=5-interested,I'm not going to say I told you so, but I told you so.
+male_start_masturbating=5-horny,That's... a little different than I imagined.
+male_masturbating=5-horny,There's something fascinating about this...
+male_finished_masturbating=5-shocked,Eep!  You got some on my uniform!
+
+female_must_masturbate=5-interested,I guess it's time, isn't it?
+female_start_masturbating=5-horny,Mind if I take notes?
+female_masturbating=5-horny,Whew!  This is getting hot.
+female_finished_masturbating=5-shocked,That was very... educational, ~name~.
+
+male_must_masturbate=6-interested,I'm not going to say I told you so, but I told you so.
+male_start_masturbating=6-horny,That's... a little different than I imagined.
+male_masturbating=6-horny,There's something fascinating about this...
+male_finished_masturbating=6-shocked,Eep!  You got some on me!
+
+female_must_masturbate=6-interested,I guess it's time, isn't it?
+female_start_masturbating=6-horny,Just-Just pretend I'm not here!
+female_masturbating=6-horny,Whew!  This is getting hot.
+female_finished_masturbating=6-shocked,That was very... educational, ~name~.
+
+male_must_masturbate=7-interested,I'm not going to say I told you so, but I told you so.
+male_start_masturbating=7-horny,That's... a little different than I imagined.
+male_masturbating=7-horny,There's something fascinating about this...
+male_finished_masturbating=7-shocked,Would you mind if I tried some?  For science?
+
+female_must_masturbate=7-interested,I guess it's time, isn't it?
+female_start_masturbating=7-horny,Mind if I take notes?
+female_masturbating=7-horny,Whew!  This is getting hot.
+female_finished_masturbating=7-shocked,That was very... educational, ~name~.
+
+male_must_masturbate=8-interested,I'm not going to say I told you so, but I told you so.
+male_start_masturbating=8-horny,I've been aching to see this...
+male_masturbating=8-horny,Go ahead and use me in your imagination.
+male_finished_masturbating=8-shocked,Would you mind if I tried some?  For science?
+
+female_must_masturbate=8-interested,I guess it's time, isn't it?
+female_start_masturbating=8-horny,Go ahead and start - don't mind me!
+female_masturbating=8-horny,Whew!  This is getting hot.
+female_finished_masturbating=8-shocked,Done already?  I don't mind if you want to go another round.
+
+male_must_masturbate=9-interested,I'm not going to say I told you so, but I told you so.
+male_start_masturbating=9-horny,I've been aching to see this...
+male_masturbating=9-horny,Go ahead and use me in your imagination.
+male_finished_masturbating=9-shocked,Would you mind if I tried some?  For science?
+
+female_must_masturbate=9-interested,I guess it's time, isn't it?
+female_start_masturbating=9-horny,Mind if I take notes?
+female_masturbating=9-horny,Whew!  This is getting hot.
+female_finished_masturbating=9-shocked,Done already?  I don't mind if you want to go another round.
+
+male_must_masturbate=10-interested,I'm not going to say I told you so, but I told you so.
+male_start_masturbating=10-horny,I've been aching to see this...
+male_masturbating=10-horny,Go ahead and use me in your imagination.
+male_finished_masturbating=10-shocked,Would you mind if I tried some?  For science?
+
+female_must_masturbate=10-interested,I guess it's time, isn't it?
+female_start_masturbating=10-horny,Just pretend I'm not here!
+female_masturbating=10-horny,Whew!  This is getting hot.
+female_finished_masturbating=10-shocked,Done already?  I don't mind if you want to go another round.
+
+
