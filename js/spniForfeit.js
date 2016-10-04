@@ -38,6 +38,9 @@ var timers = [0, 0, 0, 0];
 function setForfeitTimer (player) {
 	// THE TIMER IS HARD SET RIGHT NOW
 	timers[player] = players[player].timer;
+    if (player == HUMAN_PLAYER) {
+      $gamePlayerCountdown.html(timers[player]);
+    }
 	
 	// THE STAGE IS HARD SET RIGHT NOW
 	players[player].stage += 1;
@@ -69,6 +72,7 @@ function tickForfeitTimers (context) {
 				/* human player */
 				if (timers[i] <= 0 && !oneFinished) {
 					/* player's timer is up */
+                    $gamePlayerCountdown.hide();
 					oneFinished = true;
 					console.log(players[i].label+" is finishing!");
 					$gameClothingLabel.html("<b>You're 'Finished'</b>");
@@ -90,7 +94,8 @@ function tickForfeitTimers (context) {
 				} else {
 					/* update the player label */
 					$gameClothingLabel.html("<b>'Finished' in "+timers[i]+" phases</b>");
-					
+				    $gamePlayerCountdown.html(timers[i]);	
+                  
 					if (players[HUMAN_PLAYER].gender == MALE) {
 						updateAllBehaviours(i, MALE_MASTURBATING, [NAME], [players[i].label]);
 					} else {
