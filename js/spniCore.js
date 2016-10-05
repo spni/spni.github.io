@@ -105,6 +105,7 @@ function initialSetup () {
 	
     /* load the all content */
     loadTitleScreen();
+    selectTitleCandy();
 	loadSelectScreen();
 	
 	/* show the title screen */
@@ -184,6 +185,7 @@ function restartGame () {
 	/* trigger screen refreshes */
 	updateSelectionVisuals();
 	updateAllGameVisuals();
+    selectTitleCandy();
     
     forceTableVisibility(true);
 	

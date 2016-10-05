@@ -16,10 +16,14 @@ $maleSizeButtons = [$("#small-junk-button"), $("#medium-junk-button"), $("#large
 $femaleSizeButtons = [$("#small-boobs-button"), $("#medium-boobs-button"), $("#large-boobs-button")];
 $clothingTable = $("#title-clothing-table");
 $warningLabel = $("#title-warning-label");
+$titleCandy = [$("#left-title-candy"), $("#right-title-candy")];
 
 /**********************************************************************
  *****                    Title Screen Variables                  *****
  **********************************************************************/
+
+var CANDY_OPTIONS = 6;
+var CANDY_VARIANTS = 4;
 
 var clothingChoices = [];
 var selectedChoices = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
@@ -322,5 +326,24 @@ function wearClothing () {
 }
 	
  
- 
+/************************************************************
+ * Randomly selects two characters for the title images.
+ ************************************************************/
+function selectTitleCandy() {
+    console.log("Selecting Candy...");
+    var rand1 = getRandomNumber(1, CANDY_OPTIONS + 1);
+    var rand2 = getRandomNumber(1, CANDY_OPTIONS + 1);
+    var rand3 = getRandomNumber(1, CANDY_VARIANTS + 1);
+    var rand4 = getRandomNumber(1, CANDY_VARIANTS + 1);
+    
+    if (rand2 == rand1) {
+        rand2 += 1;
+        if (rand2 == CANDY_OPTIONS + 1) {
+            rand2 = 1;
+        }
+    }
+    
+    $titleCandy[0].attr("src", imageSource + "candy/" + rand1 + "-" + rand3 + ".png");
+    $titleCandy[1].attr("src", imageSource + "candy/" + rand2 + "-" + rand4 + ".png");
+}
  
