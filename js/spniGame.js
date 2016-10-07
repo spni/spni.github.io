@@ -37,6 +37,7 @@ $gameOpponentAreas = [$("#game-opponent-area-1"),
                       $("#game-opponent-area-2"),
                       $("#game-opponent-area-3"),
                       $("#game-opponent-area-4")];
+$gamePlayerCountdown = $("#player-countdown");
 $gamePlayerClothingArea = $("#player-game-clothing-area");
 $gamePlayerCardArea = $("#player-game-card-area");
 

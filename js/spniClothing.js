@@ -506,6 +506,7 @@ function stripPlayer (player) {
 				updateAllBehaviours(HUMAN_PLAYER, FEMALE_START_MASTURBATING, [NAME], [players[HUMAN_PLAYER].label]);
 			}
 			$gameClothingLabel.html("You're Masturbating...");
+            $gamePlayerCountdown.show();
 			setForfeitTimer(player);
 		} else {
 			if (players[player].gender == MALE) {
