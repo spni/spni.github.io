@@ -73,6 +73,7 @@ var SHOW_ENDING_DELAY = 5000; //5 seconds
 var CARD_SUGGEST = false;
 var AUTO_FORFEIT = false;
 var AUTO_FADE = true;
+var KEYBINDINGS_ENABLED = false;
  
 /* colours */
 var currentColour = "#63AAE7"; 	/* indicates current turn */
@@ -119,6 +120,10 @@ function loadGameScreen () {
     $mainButton.html("Deal");
     $mainButton.attr("disabled", false);
     actualMainButtonState = false;
+    
+    /* late settings */
+    KEYBINDINGS_ENABLED = true;
+    document.addEventListener('keyup', game_keyUp, false);
 }
                       
 /**********************************************************************
@@ -727,4 +732,32 @@ function advanceGame () {
  ************************************************************/
 function showRestartModal () {
     $restartModal.modal('show');
+}
+
+
+/************************************************************
+ * A keybound handler.
+ ************************************************************/
+function game_keyUp(e) 
+{
+    if (KEYBINDINGS_ENABLED) {
+        if (e.keyCode == 32 && !$mainButton.prop('disabled')) { // Space
+            advanceGame();
+        }
+        else if (e.keyCode == 49 && !$cardButtons[4].prop('disabled')) { // 1
+            selectCard(4);
+        }
+        else if (e.keyCode == 50 && !$cardButtons[3].prop('disabled')) { // 2
+            selectCard(3);
+        }
+        else if (e.keyCode == 51 && !$cardButtons[2].prop('disabled')) { // 3
+            selectCard(2);
+        }
+        else if (e.keyCode == 52 && !$cardButtons[1].prop('disabled')) { // 4
+            selectCard(1);
+        }
+        else if (e.keyCode == 53 && !$cardButtons[0].prop('disabled')) { // 5
+            selectCard(0);
+        }
+    }
 }
