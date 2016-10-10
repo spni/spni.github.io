@@ -324,8 +324,7 @@ function animateDealtCard (player, card) {
 	var offset = $cardCells[player][card].offset();
 	var top = offset.top - $gameHiddenArea.offset().top;
 	var left = offset.left - $gameHiddenArea.offset().left - 6;
-    console.log(top + " " + left);
-	
+
 	$clonedCard.animate({top:top, left:left}, ANIM_TIME, function() {
 		$('#dealt-card-'+player+'-'+card).remove();
 		$cardCells[player][card].attr('src', UNKNOWN_CARD_IMAGE);

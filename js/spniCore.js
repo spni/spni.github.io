@@ -166,6 +166,7 @@ function clearState () {
  ************************************************************/
 function restartGame () {
     console.log("restarting the game");
+    KEYBINDINGS_ENABLED = false;
 	
 	/* start by creating the human player object */
     var humanPlayer = createNewPlayer("", "", "", "", players[HUMAN_PLAYER].gender, players[HUMAN_PLAYER].size, players[HUMAN_PLAYER].clothing, false, "", 20, 0, 0, [], null);

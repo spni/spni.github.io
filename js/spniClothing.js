@@ -326,14 +326,16 @@ function showStrippingModal () {
 	}
     
     /* load the current layer of clothing into the modal */
+    var currentClothingID = 0;
     for (var i = 0; i < players[HUMAN_PLAYER].clothing.length; i++) {
         if (players[HUMAN_PLAYER].clothing[i]) {
 		    if (players[HUMAN_PLAYER].clothing[i].layer == highestLayer) {
 				var clothingCard = 
-					"<div class='clothing-modal-container'><input type='image' id='"+i+"' class='bordered modal-clothing-image' src="+
-					players[HUMAN_PLAYER].clothing[i].image+" onclick='selectClothingToStrip("+i+")'/></div>";
+					"<div class='clothing-modal-container'><input type='image' id='"+currentClothingID+"' value='"+i+"' class='bordered modal-clothing-image' src="+
+					players[HUMAN_PLAYER].clothing[i].image+" onclick='selectClothingToStrip("+currentClothingID+")'/></div>";
 				
 				$stripClothing.append(clothingCard);
+                currentClothingID += 1;
 			}
         }
     }
@@ -343,6 +345,11 @@ function showStrippingModal () {
     
     /* display the stripping modal */
     $stripModal.modal('show');
+    
+    /* hijack keybindings */
+    KEYBINDINGS_ENABLED = true;
+    document.removeEventListener('keyup', game_keyUp, false);
+    document.addEventListener('keyup', clothing_keyUp, false);
 }
 
 /************************************************************
@@ -350,10 +357,10 @@ function showStrippingModal () {
  * the stripping modal.
  ************************************************************/
 function selectClothingToStrip (id) {
-    console.log(id);
+    console.log(Number($("#"+id+".modal-clothing-image").prop("value")));
     
     /* save the selected article */
-    selectedClothing = id;
+    selectedClothing = Number($("#"+id+".modal-clothing-image").prop("value"));
     
     /* designate the selected article */
     $(".modal-selected-clothing-image").removeClass("modal-selected-clothing-image");
@@ -361,6 +368,21 @@ function selectClothingToStrip (id) {
     
     /* enable the strip button */
     $stripButton.attr('disabled', false);
+}
+
+/************************************************************
+ * A keybound handler.
+ ************************************************************/
+function clothing_keyUp(e) 
+{
+    if (KEYBINDINGS_ENABLED) {
+        if (e.keyCode == 32 && !$stripButton.prop('disabled')) { // Space
+            closeStrippingModal();
+        }
+        else if (e.keyCode >= 49 && e.keyCode <= 57) { // A number key
+            selectClothingToStrip(e.keyCode - 49);
+        }
+    }
 }
  
 /************************************************************
@@ -370,6 +392,11 @@ function selectClothingToStrip (id) {
  
 function closeStrippingModal () {
     if (selectedClothing >= 0) {
+        /* return keybindings */
+        KEYBINDINGS_ENABLED = true;
+        document.removeEventListener('keyup', clothing_keyUp, false);
+        document.addEventListener('keyup', game_keyUp, false);
+        
         /* grab the removed article of clothing and determine its dialogue trigger */
         var removedClothing = players[HUMAN_PLAYER].clothing[selectedClothing];
         players[HUMAN_PLAYER].clothing[selectedClothing] = null;
@@ -403,6 +430,7 @@ function closeStrippingModal () {
         updateAllGameVisuals();
 		
 		/* allow progression */
+        $('#stripping-modal').modal('hide');
 		endRound();
     } else {
         /* how the hell did this happen? */
