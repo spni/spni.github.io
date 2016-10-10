@@ -4,6 +4,9 @@ import sys
 import time
 import PIL.Image
 
+setup_string_33 = "33***bc185.500.0.0.1_ga0*0*0*0*0*0*0*0*0#/]ua1.0.0.0_ub_uc7.0.30_ud7.0"
+setup_string_36 = "36***bc185.500.0.0.1_ga0*0*0*0*0*0*0*0*0#/]a00_b00_c00_d00_w00_x00_y00_z00_ua1.0.0.0_ub_u0_v0_uc7.0.30_ud7.0"
+
 #open image file that kkl has made, waiting until it exists and can be opened properly
 def open_image_file(filename):
 	retry_limit = 50 #try 50 times / 10 seconds
@@ -51,7 +54,22 @@ def starts_with_version_string(s):
 		return False
 	#check for the two *'s
 	return s[i] == '*' and s[i+1] == '*'
+
+#get the version string appropriate for the version of image codes used
+def get_setup_string(image_list):
+	if len(image_list) <= 0:
+		return setup_string_33 #use default string
 		
+	first_code = image_list[0][1] #get the first image value in the list [0], then the second part of the value (the image description string) [1]
+	
+	if first_code.startswith("33"):
+		return setup_string_33
+	elif first_code.startswith("36"):
+		return setup_string_36
+		
+	return setup_string_33 #default setup string
+	
+	
 #use the image data to create the images using kkl, and move them to the specified directory
 def create_images(image_list, output_directory):
 	kkl_dir = os.getenv('APPDATA') + "\\kkl\\Local Store"
@@ -73,9 +91,8 @@ def create_images(image_list, output_directory):
 	
 	#setup the scene before drawing the requested pictures
 	#this sets the character position, zoom level, distables interactivity, sets the zoom level and screen position, and removes censor icon
-	#setup_scene = "33***bc185.500.0.0.1_ga0*0*0*0*0*0*0*0*0#/]ua1.0.0.0_ub_uc7.0.30_ud7.0"
-	#updated setup scene string, for newer version of kisekae
-	setup_scene = "36***bc185.500.0.0.1_ga0*0*0*0*0*0*0*0*0#/]a00_b00_c00_d00_w00_x00_y00_z00_ua1.0.0.0_ub_u0_v0_uc7.0.30_ud7.0"
+	#get a setup string, based on the version of the image descriptions being used
+	setup_scene = get_setup_string(image_list)
 	setup_filename = kkl_dir +"\\scene_setup_file.txt"
 	delete_file(kkl_dir +"\\scene_setup_file..png")
 	with open(setup_filename, "w") as f:
