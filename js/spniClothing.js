@@ -63,17 +63,17 @@ function getClothingTrigger (player, clothing, removed) {
 	/* starting with important articles */
 	if (type == IMPORTANT_ARTICLE) {
 		if (pos == UPPER_ARTICLE) {
-			if (gender == MALE) {
+			if (gender == eGender.MALE) {
 				if (removed) {
 					return MALE_CHEST_IS_VISIBLE;
 				} else {
 					return MALE_CHEST_WILL_BE_VISIBLE;
 				}
-			} else if (gender == FEMALE) {
+			} else if (gender == eGender.FEMALE) {
 				if (removed) {
-					if (size == LARGE_SIZE) {
+					if (size == eSize.LARGE) {
 						return FEMALE_LARGE_CHEST_IS_VISIBLE;
-					} else if (size == SMALL_SIZE) {
+					} else if (size == eSize.SMALL) {
 						return FEMALE_SMALL_CHEST_IS_VISIBLE;
 					} else {
 						return FEMALE_MEDIUM_CHEST_IS_VISIBLE;
@@ -83,11 +83,11 @@ function getClothingTrigger (player, clothing, removed) {
 				}
 			}
 		} else if (pos == LOWER_ARTICLE) {
-			if (gender == MALE) {
+			if (gender == eGender.MALE) {
 				if (removed) {
-					if (size == LARGE_SIZE) {
+					if (size == eSize.LARGE) {
 						return MALE_LARGE_CROTCH_IS_VISIBLE;
-					} else if (size == SMALL_SIZE) {
+					} else if (size == eSize.SMALL) {
 						return MALE_SMALL_CROTCH_IS_VISIBLE;
 					} else {
 						return MALE_MEDIUM_CROTCH_IS_VISIBLE;
@@ -95,7 +95,7 @@ function getClothingTrigger (player, clothing, removed) {
 				} else {
 					return MALE_CROTCH_WILL_BE_VISIBLE;
 				}
-			} else if (gender == FEMALE) {
+			} else if (gender == eGender.FEMALE) {
 				if (removed) {
 					return FEMALE_CROTCH_IS_VISIBLE;
 				} else {
@@ -104,13 +104,13 @@ function getClothingTrigger (player, clothing, removed) {
 			}
 		} else {
 			/* this shouldn't happen, but if it does then just pretend it's a major article */
-			if (gender == MALE) {
+			if (gender == eGender.MALE) {
 				if (removed) {
 					return MALE_REMOVED_MAJOR;
 				} else {
 					return MALE_REMOVING_MAJOR;
 				}
-			} else if (gender == FEMALE) {
+			} else if (gender == eGender.FEMALE) {
 				if (removed) {
 					return FEMALE_REMOVED_MAJOR;
 				} else {
@@ -121,13 +121,13 @@ function getClothingTrigger (player, clothing, removed) {
 	}
 	/* next major articles */
 	else if (type == MAJOR_ARTICLE) {
-		if (gender == MALE) {
+		if (gender == eGender.MALE) {
 			if (removed) {
 				return MALE_REMOVED_MAJOR;
 			} else {
 				return MALE_REMOVING_MAJOR;
 			}
-		} else if (gender == FEMALE) {
+		} else if (gender == eGender.FEMALE) {
 			if (removed) {
 				return FEMALE_REMOVED_MAJOR;
 			} else {
@@ -137,13 +137,13 @@ function getClothingTrigger (player, clothing, removed) {
 	}
 	/* next minor articles */
 	else if (type == MINOR_ARTICLE) {
-		if (gender == MALE) {
+		if (gender == eGender.MALE) {
 			if (removed) {
 				return MALE_REMOVED_MINOR;
 			} else {
 				return MALE_REMOVING_MINOR;
 			}
-		} else if (gender == FEMALE) {
+		} else if (gender == eGender.FEMALE) {
 			if (removed) {
 				return FEMALE_REMOVED_MINOR;
 			} else {
@@ -153,13 +153,13 @@ function getClothingTrigger (player, clothing, removed) {
 	}
 	/* next accessories */
 	else if (type == EXTRA_ARTICLE) {
-		if (gender == MALE) {
+		if (gender == eGender.MALE) {
 			if (removed) {
 				return MALE_REMOVED_ACCESSORY;
 			} else {
 				return MALE_REMOVING_ACCESSORY;
 			}
-		} else if (gender == FEMALE) {
+		} else if (gender == eGender.FEMALE) {
 			if (removed) {
 				return FEMALE_REMOVED_ACCESSORY;
 			} else {
