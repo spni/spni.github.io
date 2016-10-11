@@ -14,6 +14,8 @@ $AITurnTimeOptions = [$("#options-ai-turn-time-1"), $("#options-ai-turn-time-2")
 $dealSpeedOptions = [$("#options-deal-speed-1"), $("#options-deal-speed-2"), $("#options-deal-speed-3"), $("#options-deal-speed-4")];
 $autoForfeitOptions = [$("#options-auto-forfeit-1"), $("#options-auto-forfeit-2"), $("#options-auto-forfeit-3"), $("#options-auto-forfeit-4")];
 
+$masturbationTimerBox = $("#player-masturbation-timer-box");
+$masturbationWarningLabel = $("#masturbation-warning-label");
  
 /**********************************************************************
  *****                      Option Functions                      *****
@@ -188,23 +190,6 @@ $("#options-modal").on("hidden.bs.modal", function () {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $backgroundSettings = [$("#settings-background-1"), $("#settings-background-2"), $("#settings-background-3"), $("#settings-background-4"), $("#settings-background-5"), $("#settings-background-6")];
 
 
@@ -212,6 +197,7 @@ $backgroundSettings = [$("#settings-background-1"), $("#settings-background-2"),
  * The player clicked the options button. Shows the options modal.
  ************************************************************/
 function showGameSettingsModal () {
+	loadMasturbationTimer(); //set data values
     $gameSettingsModal.modal('show');
 }
 
@@ -231,4 +217,25 @@ function setBackground (choice) {
 		default: $("body").css("background-image", "url(img/background1.png)");
 	}
 	setActiveOption($backgroundSettings, choice);
+}
+
+/************************************************************
+ * Loading the player masturbation timer.
+ ************************************************************/
+function loadMasturbationTimer () {
+	$masturbationTimerBox.val(players[HUMAN_PLAYER].timer);
+	$masturbationWarningLabel.css("visibility", "hidden");
+}
+ /************************************************************
+ * The player changed their masturbation timer.
+ ************************************************************/
+
+function changeMasturbationTimer () {
+	var newTimerValue = $masturbationTimerBox.val();
+	var newTime = Number(newTimerValue);
+	var isValidTimerValue = (newTime != "NaN") && (newTime > 0);
+	if (isValidTimerValue){
+		players[HUMAN_PLAYER].timer = newTime;
+	}
+	$masturbationWarningLabel.css("visibility", isValidTimerValue ? "hidden" : "visible");
 }
