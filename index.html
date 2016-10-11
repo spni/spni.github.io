@@ -16,8 +16,11 @@
   <div class="screen">
 		
     <!-- Banner Flair -->
+    <button id="title-settings-button" class="bordered smooth-button smooth-button-red" onclick="showGameSettingsModal()">
+      <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+    </button>
     <div id="title-version-label" class="bordered banner-flair">
-      v11.2.1
+      v11.3.0
     </div>
     <button id="title-credits-button" class="bordered smooth-button smooth-button-red banner-flair" onclick="showCreditModal()">
       Credits
@@ -726,6 +729,55 @@
 </div>
 <!-- End of Stripping Modal -->
 
+    
+<!-- Start of Game Settings Modal -->
+<div id="game-settings-modal" class="modal table-modal fade" role="dialog">
+	<div class="modal-table-container">
+	<div class="modal-cell-container">
+	<div class="bordered modal-dialog wide-modal-dialog">
+	<div class="bordered modal-dialog-surface">
+		<!-- Start of Modal Content -->
+		<div class="modal-content">
+			<div class="modal-header">
+                <h3 class="modal-title text-center"><b>Game Wide Settings</b></h3>
+				<h5 class="modal-subtitle text-center"><b>Please Note:</b> These settings don't save if you refresh the page.</h5>
+			</div>
+			<div class="modal-body">
+				<div class="modal-body-container" style="width:100%">
+					<table style="width:100%">
+                        
+						<!-- Background Selection -->
+						<tr>
+							<td style="width:25%"><h4 class="modal-title modal-left">Background</h4></td>
+							<td>
+								<nav>
+									<ul class="pagination">
+										<li id="settings-background-1" class="active"><a href="#" onclick="setBackground(1)">Default</a></li>
+                                        <li id="settings-background-2"><a href="#" onclick="setBackground(2)">Beach</a></li>
+                                        <li id="settings-background-3"><a href="#" onclick="setBackground(3)">Classroom</a></li>
+                                        <li id="settings-background-4"><a href="#" onclick="setBackground(4)">Brick</a></li>
+                                        <li id="settings-background-5"><a href="#" onclick="setBackground(5)">Night</a></li>
+                                        <li id="settings-background-6"><a href="#" onclick="setBackground(6)">Roof</a></li>
+									</ul>
+								</nav>
+							</td>
+						</tr>
+
+					</table>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button id="options-modal-button" class="bordered smooth-button modal-button" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+		<!-- End of Modal Content -->
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+<!-- End of Title Settings Modal -->
+    
 
 <!-- Start of Options Modal -->
 <div id="options-modal" class="modal table-modal fade" role="dialog">
@@ -1121,10 +1173,14 @@
 </div>
 <!-- End of Options Modal -->
 
-<!-- JavaScript -->
+<!-- Third Party JavaScript -->
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
+<!-- JavaScript Definitions -->
+<script src="js/player.js"></script>
+<script src="js/table.js"></script>
+    
 <!-- My JavaScript -->
 <script src="js/spniCore.js"></script>
 <script src="js/spniTitle.js"></script>

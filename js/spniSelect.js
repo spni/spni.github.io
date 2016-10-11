@@ -166,17 +166,17 @@ function loadListingFile () {
 			$individualListings = $(xml).find('individuals');
 			$individualListings.find('opponent').each(function () {
 				var folder = $(this).text();
-				loadOpponentMeta(opponentSource + folder);
+				loadOpponentMeta(OPP + folder);
 			});
 			
 			/* end by parsing and loading the group listings */
 			$groupListings = $(xml).find('groups');
 			$groupListings.find('group').each(function () {
 				var title = $(this).attr('title');
-				var opp1 = opponentSource + $(this).attr('opp1');
-				var opp2 = opponentSource + $(this).attr('opp2');
-				var opp3 = opponentSource + $(this).attr('opp3');
-				var opp4 = opponentSource + $(this).attr('opp4');
+				var opp1 = OPP + $(this).attr('opp1');
+				var opp2 = OPP + $(this).attr('opp2');
+				var opp3 = OPP + $(this).attr('opp3');
+				var opp4 = OPP + $(this).attr('opp4');
 				
 				var newGroup = createNewGroup(title, [opp1, opp2, opp3, opp4]);
 				loadGroupMeta(newGroup);

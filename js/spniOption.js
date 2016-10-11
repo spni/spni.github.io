@@ -186,3 +186,49 @@ $("#options-modal").on("hidden.bs.modal", function () {
 		$mainButton.attr('disabled', actualMainButtonState);
 	}
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$backgroundSettings = [$("#settings-background-1"), $("#settings-background-2"), $("#settings-background-3"), $("#settings-background-4"), $("#settings-background-5"), $("#settings-background-6")];
+
+
+/************************************************************
+ * The player clicked the options button. Shows the options modal.
+ ************************************************************/
+function showGameSettingsModal () {
+    $gameSettingsModal.modal('show');
+}
+
+
+/************************************************************
+ * The player changed the background.
+ ************************************************************/
+function setBackground (choice) {
+	/* implement the option change */
+	switch (choice) {
+		case 1: $("body").css("background-image", "url(img/background1.png)"); break;
+		case 2: $("body").css("background-image", "url(img/background2.png)"); break;
+        case 3: $("body").css("background-image", "url(img/background3.png)"); break;
+        case 4: $("body").css("background-image", "url(img/background4.png)"); break;
+        case 5: $("body").css("background-image", "url(img/background5.png)"); break;
+        case 6: $("body").css("background-image", "url(img/background6.png)"); break;
+		default: $("body").css("background-image", "url(img/background1.png)");
+	}
+	setActiveOption($backgroundSettings, choice);
+}

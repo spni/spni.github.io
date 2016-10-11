@@ -1,30 +1,56 @@
 /********************************************************************************
- This file contains the variables and functions that form the core of the game. 
- The player object, game wide constants, the screen objects, and the overarching 
- flow of the game.
+ This file contains the variables and functions that forms the core of the game. 
+ Anything that is needed game-wide is kept here.
  ********************************************************************************/
 
 /**********************************************************************
- *****                    Game Wide Variables                     *****
+ * Game Wide Constants
  **********************************************************************/
 
-/* source constants */
-var imageSource = "img/";
-var opponentSource = "opponents/";
- 
-/* player constants */
+/* General Constants */
+var DEBUG = true;
+var BASE_FONT_SIZE = 14;
+var BASE_SCREEN_WIDTH = 100;
+
+/* Game Wide Constants */
 var HUMAN_PLAYER = 0;
- 
-/* gender constants */
-var MALE = "male";
-var FEMALE = "female"; 
 
-/* size constants */
-var LARGE_SIZE = "large";
-var MEDIUM_SIZE = "medium";
-var SMALL_SIZE = "small";
+/* Directory Constants */
+var IMG = 'img/';
+var OPP = 'opponents/';
 
-/* game screens */
+/* Gender Images */
+var MALE_SYMBOL = IMG + 'male.png';
+var FEMALE_SYMBOL = IMG + 'female.png';
+
+
+
+
+/* game table */
+var tableOpacity = 1;
+$gameTable = $('#game-table');
+
+/* useful variables */
+var BLANK_PLAYER_IMAGE = "opponents/blank.png";
+
+/* player array */
+var players = [null, null, null, null, null];
+
+
+
+
+/**********************************************************************
+ * Game Wide Global Variables
+ **********************************************************************/
+
+var table = new Table();
+
+
+/**********************************************************************
+ * Screens & Modals
+ **********************************************************************/
+
+/* Screens */
 $titleScreen = $('#title-screen');
 $selectScreen = $('#main-select-screen');
 $individualSelectScreen = $('#individual-select-screen');
@@ -32,21 +58,19 @@ $groupSelectScreen = $('#group-select-screen');
 $gameScreen = $('#game-screen');
 $epilogueScreen = $('#epilogue-screen');
 
-/* credit modal */
+/* Modals */
 $creditModal = $('#credit-modal');
+$gameSettingsModal = $('#game-settings-modal');
 
-/* game table */
-var tableOpacity = 1;
-$gameTable = $('#game-table');
-
-/* screen state */
+/* Screen State */
 $previousScreen = null;
 
-/* useful variables */
-var BLANK_PLAYER_IMAGE = "opponents/blank.png";
 
-/* player array */
-var players = [null, null, null, null, null];
+/********************************************************************************
+ * Game Wide Utility Functions
+ ********************************************************************************/
+
+
  
 /**********************************************************************
  *****                Player Object Specification                 *****
@@ -96,7 +120,7 @@ function createNewPlayer (folder, first, last, label, gender, size, clothing, ou
  ************************************************************/
 function initialSetup () {
     /* start by creating the human player object */
-    var humanPlayer = createNewPlayer("", "", "", "", MALE, MEDIUM_SIZE, [], false, "", 20, 0, 0, [], null);
+    var humanPlayer = createNewPlayer("", "", "", "", eGender.MALE, eSize.MEDIUM, [], false, "", 20, 0, 0, [], null);
     players[HUMAN_PLAYER] = humanPlayer;
     
 	/* enable table opacity */

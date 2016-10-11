@@ -64,8 +64,8 @@ var ANIM_TIME = 1000;
 var CARDS_PER_HAND = 5;
  
 /* image constants */
-var BLANK_CARD_IMAGE = imageSource + "blankcard.jpg";
-var UNKNOWN_CARD_IMAGE = imageSource + "unknown.jpg";
+var BLANK_CARD_IMAGE = IMG + "blankcard.jpg";
+var UNKNOWN_CARD_IMAGE = IMG + "unknown.jpg";
  
 /* card decks */
 var inDeck = [];	/* cards left in the deck */
@@ -176,7 +176,7 @@ function dullCard (player, card) {
  ************************************************************/
 function showHand (player) {
 	for (var i = 0; i < hands[player].cards.length; i++) {
-		$cardCells[player][i].attr('src', imageSource + hands[player].cards[i] + ".jpg");
+		$cardCells[player][i].attr('src', IMG + hands[player].cards[i] + ".jpg");
 		fillCard(player, i);
 	}
 }
@@ -186,7 +186,7 @@ function showHand (player) {
  ************************************************************/
 function dullHand (player) {
 	for (var i = 0; i < hands[player].cards.length; i++) {
-		$cardCells[player][i].attr('src', imageSource + hands[player].cards[i] + ".jpg");
+		$cardCells[player][i].attr('src', IMG + hands[player].cards[i] + ".jpg");
 		dullCard(player, i);
 	}
 }
