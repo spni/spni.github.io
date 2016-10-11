@@ -14,10 +14,6 @@ var BASE_SCREEN_WIDTH = 100;
 
 /* Game Wide Constants */
 var HUMAN_PLAYER = 0;
- 
-/* gender constants */
-var MALE = "male";
-var FEMALE = "female"; 
 
 /* Directory Constants */
 var IMG = 'img/';
