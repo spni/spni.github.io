@@ -224,13 +224,13 @@ function playerMustStrip (player) {
 	if (clothes > 0) {
 		/* the player has clothes and will strip */
 		if (player == HUMAN_PLAYER) {
-			if (players[HUMAN_PLAYER].gender == MALE) {
+			if (players[HUMAN_PLAYER].gender == eGender.MALE) {
 				updateAllBehaviours(player, MALE_HUMAN_MUST_STRIP, [NAME], [players[player].label]);
 			} else {
 				updateAllBehaviours(player, FEMALE_HUMAN_MUST_STRIP, [NAME], [players[player].label]);
 			}
 		} else {
-			if (players[player].gender == MALE) {
+			if (players[player].gender == eGender.MALE) {
 				updateAllBehaviours(player, MALE_MUST_STRIP, [NAME], [players[player].label]);
 			} else {
 				updateAllBehaviours(player, FEMALE_MUST_STRIP, [NAME], [players[player].label]);
@@ -240,9 +240,9 @@ function playerMustStrip (player) {
 		}
 	} else {
 		/* the player has no clothes and will have to accept a forfeit */
-		if (players[player].gender == MALE) {
+		if (players[player].gender == eGender.MALE) {
 			updateAllBehaviours(player, MALE_MUST_MASTURBATE, [NAME], [players[player].label]);
-		} else if (players[player].gender == FEMALE) {
+		} else if (players[player].gender == eGender.FEMALE) {
 			updateAllBehaviours(player, FEMALE_MUST_MASTURBATE, [NAME], [players[player].label]);
 		}
 
@@ -273,7 +273,7 @@ function prepareToStripPlayer (player) {
 	if (clothes > 0) {
 		/* the player has clothes left and will strip */
         if (player == HUMAN_PLAYER) {
-            if (players[HUMAN_PLAYER].gender == MALE) {
+            if (players[HUMAN_PLAYER].gender == eGender.MALE) {
                 updateAllBehaviours(player, MALE_HUMAN_MUST_STRIP, [NAME], [players[player].label]);
             } else {
                 updateAllBehaviours(player, FEMALE_HUMAN_MUST_STRIP, [NAME], [players[player].label]);
@@ -291,9 +291,9 @@ function prepareToStripPlayer (player) {
         }
 	} else {
 		/* the player has no clothes and will have to accept a forfeit */
-		if (players[player].gender == MALE) {
+		if (players[player].gender == eGender.MALE) {
 			updateAllBehaviours(player, MALE_MUST_MASTURBATE, [NAME], [players[player].label]);
-		} else if (players[player].gender == FEMALE) {
+		} else if (players[player].gender == eGender.FEMALE) {
 			updateAllBehaviours(player, FEMALE_MUST_MASTURBATE, [NAME], [players[player].label]);
 		}
 
@@ -528,18 +528,18 @@ function stripPlayer (player) {
 		
 		/* update behaviour */
 		if (player == HUMAN_PLAYER) {
-			if (players[HUMAN_PLAYER].gender == MALE) {
+			if (players[HUMAN_PLAYER].gender == eGender.MALE) {
 				updateAllBehaviours(HUMAN_PLAYER, MALE_START_MASTURBATING, [NAME], [players[HUMAN_PLAYER].label]);
-			} else if (players[HUMAN_PLAYER].gender == FEMALE) {
+			} else if (players[HUMAN_PLAYER].gender == eGender.FEMALE) {
 				updateAllBehaviours(HUMAN_PLAYER, FEMALE_START_MASTURBATING, [NAME], [players[HUMAN_PLAYER].label]);
 			}
 			$gameClothingLabel.html("You're Masturbating...");
             $gamePlayerCountdown.show();
 			setForfeitTimer(player);
 		} else {
-			if (players[player].gender == MALE) {
+			if (players[player].gender == eGender.MALE) {
 				updateAllBehaviours(player, MALE_START_MASTURBATING, [NAME], [players[player].label]);
-			} else if (players[player].gender == FEMALE) {
+			} else if (players[player].gender == eGender.FEMALE) {
 				updateAllBehaviours(player, FEMALE_START_MASTURBATING, [NAME], [players[player].label]);
 			}
 			updateBehaviour(player, PLAYER_START_MASTURBATING, [NAME], [players[player].label]);
