@@ -1,8 +1,6 @@
 /********************************************************************************
  This file contains all of the variables and functions for the Player object, as
  well as definitions for opponent and group lisitings.
- 
- Written by josephkantel.
  ********************************************************************************/
 
 /**********************************************************************

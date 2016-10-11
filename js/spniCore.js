@@ -1,8 +1,6 @@
 /********************************************************************************
  This file contains the variables and functions that forms the core of the game. 
  Anything that is needed game-wide is kept here.
- 
- Written by josephkantel. Last editted October 10th, 2016.
  ********************************************************************************/
 
 /**********************************************************************
@@ -62,6 +60,7 @@ $epilogueScreen = $('#epilogue-screen');
 
 /* Modals */
 $creditModal = $('#credit-modal');
+$gameSettingsModal = $('#game-settings-modal');
 
 /* Screen State */
 $previousScreen = null;
