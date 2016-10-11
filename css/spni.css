@@ -1416,6 +1416,11 @@ body.modal-open {
     font-size: 140%;
 }
 
+/** remove the "clear" button that occurs in some MS browsers */
+#player-masturbation-timer-box::-ms-clear {
+	display: none;
+}
+
 /************************************************************
  * Classes for the Epilogue screens.
  ************************************************************/
