@@ -166,6 +166,7 @@ function loadListingFile () {
 			$individualListings = $(xml).find('individuals');
 			$individualListings.find('opponent').each(function () {
 				var folder = $(this).text();
+				console.log("Reading \""+folder+"\" from listing file");
 				loadOpponentMeta(OPP + folder);
 			});
 			
