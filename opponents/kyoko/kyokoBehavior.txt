@@ -28,7 +28,7 @@ clothes=Boots,boots,extra,lower
 clothes=Socks,socks,minor,lower
 clothes=Shirt,shirt,major,upper
 clothes=Skirt,skirt,major,lower
-clothes=Gloves,gloves,extra,other
+clothes=Gloves,gloves,minor,other
 clothes=Bra,bra,important,upper
 clothes=Panties,panties,important,lower
 
@@ -45,6 +45,7 @@ swap_cards=thinking,~cards~ for me.
 swap_cards=thinking,~cards~ cards.
 swap_cards=thinking,~cards~.
 swap_cards=thinking,Give me ~cards~.
+swap_cards=thinking,Swap ~cards~.
 
 #The character thinks they have a good hand
 good_hand=thinking,...
@@ -96,16 +97,25 @@ male_must_strip=calm,Looks like ~name~ lost the hand.
 male_must_strip=smug,~name~, it's your turn.
 
 male_removing_accessory=crossArms,...
+male_removing_accessory=crossArms,Well, ~name~?
 male_removed_accessory=smug,One step forward...
+male_removed_accessory=smug,Off it comes.
+male_removed_accessory=calm,Your ~clothing~, huh?
 
 male_removing_minor=crossArms,Hmm...
+male_removing_minor=crossArms,...
 male_removed_minor=smug,One more down...
+male_removed_minor=smug,Goodbye, ~clothing~.
+male_removed_minor=smug,One step closer to victory.
 
 male_removing_major=smug,This should be interesting.
+male_removing_major=smug,I'm curious, I must admit...
 male_removed_major=smug,This is more fun than I was anticipating.
+male_removed_major=smug,Removed your ~clothing~, huh?
+male_removed_major=thinking,Hmm...
 
 male_chest_will_be_visible=smug,Hmm...
-male_chest_is_visible=horny,O-oh. Wow.
+male_chest_is_visible=smug,Not bad.
 
 #male crotches have different sizes, allowing your character to have different responses
 male_crotch_will_be_visible=smug,Don't worry about me. I've had to examine a few before.
@@ -131,13 +141,22 @@ female_must_strip=calm,Looks like ~name~ lost the hand.
 female_must_strip=smug,~name~, it's your turn.
 
 female_removing_accessory=crossArms,...
+female_removing_accessory=crossArms,Well, ~name~?
 female_removed_accessory=smug,One step forward...
+female_removed_accessory=smug,Off it comes.
+female_removed_accessory=calm,Your ~clothing~, huh?
 
 female_removing_minor=crossArms,Hmm...
+female_removing_minor=crossArms,...
 female_removed_minor=smug,One more down...
+female_removed_minor=smug,Goodbye, ~clothing~.
+female_removed_minor=smug,One step closer to victory.
 
 female_removing_major=smug,This should be interesting.
+female_removing_major=smug,I'm curious, I must admit...
 female_removed_major=smug,This is more fun than I was anticipating.
+female_removed_major=smug,Removed your ~clothing~, huh?
+female_removed_major=thinking,Huh...
 
 female_chest_will_be_visible=crossArms,...
 female_small_chest_is_visible=smug,Feeling cold?
@@ -162,7 +181,7 @@ female_finished_masturbating=surprised,That seemed... intense.
 
 #character is stripping situations
 #losing jacket
-0-must_strip_winning=loss,That's unfortunate.
+0-must_strip_winning=loss,Only a matter of time, I suppose.
 0-must_strip_normal=loss,That's unfortunate.
 0-must_strip_losing=loss,That's unfortunate.
 0-stripping=strip,Oh well. It was getting hot in here anyway.
