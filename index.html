@@ -225,10 +225,10 @@
         </button>
 
         <!-- More Select Buttons -->
-        <button id='select-random-female-button' class='bordered main-select-button smooth-button smooth-button-blue'>
+        <button id='select-random-female-button' class='bordered main-select-button smooth-button smooth-button-blue' onclick="clickedRandomFillButton(function chooseFemale(player) {return player.gender.toLowerCase() === 'female';})">
           Random Females
         </button>
-        <button id='select-random-male-button' class='bordered main-select-button smooth-button smooth-button-blue'>
+        <button id='select-random-male-button' class='bordered main-select-button smooth-button smooth-button-blue' onclick="clickedRandomFillButton(function chooseMale(player) {return player.gender.toLowerCase() === 'male';})">
           Random Males
         </button>
         <button id='select-random-button' class='bordered main-select-button  smooth-button smooth-button-blue' onclick="clickedRandomFillButton()">
