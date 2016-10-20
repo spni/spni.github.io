@@ -1,0 +1,138 @@
+#NOTE: All image descriptions MUST be VERSION 40!
+#To convert them, import them into kisekae version 40, then export them again.
+
+#To fill in the blank lines, make the character in kisekae as you want them to appear, then export their character description (click on the pink pen and paper icon, then "export") and copy and paste the description text into the appropriate place here.
+
+##Appearance
+#This is how a character looks, and what doesn't change between different stages or image names
+appearance=
+
+
+
+##Emotions
+#These are values that change depending on both the stage and the image. These include blush/red face level, blue face level, blush sticker, and erectness for characters with penises
+#The code will add up the stage_emotion number and the image_emotion number to pick out an emotion from this list
+#So put the emotion descriptions in top-to-bottom order from "most calm" to "most embarrassed/excited/aroused/whatever"
+#You can have as many or as few entries here as you want, as long as there as at least one
+emotion=
+emotion=
+emotion=
+emotion=
+emotion=
+emotion=
+emotion=
+emotion=
+emotion=
+
+
+
+##Stages
+#These values are the parts of the image that change depending on the stage.
+#This is the clothing of the character, including hand-held objects
+#delete any extra entries that aren't used by your character
+
+#fully clothed
+stage=put the image description here
+stage_emotion=a number that specifies the emotion level for this stage
+stage_lj=should be a number that specifies the amount of "love juices" on the character for this stage
+
+#lost 1 item
+stage=
+stage_emotion=0
+stage_lj=0
+
+#lost 2 items
+stage=
+stage_emotion=0
+stage_lj=0
+
+#lost 3 items
+stage=
+stage_emotion=0
+stage_lj=0
+
+#lost 4 items
+stage=
+stage_emotion=0
+stage_lj=0
+
+#lost 5 items
+stage=
+stage_emotion=0
+stage_lj=0
+
+#lost 6 items
+stage=
+stage_emotion=0
+stage_lj=0
+
+#lost 7 items
+stage=
+stage_emotion=3
+stage_lj=0
+
+#lost 8 items
+stage=
+stage_emotion=0
+stage_lj=0
+
+#masturbating
+#you should increase the love juice value here, if you haven't already
+stage=
+stage_emotion=0
+stage_lj=0
+
+#finished
+#the love juice number used here is just an example
+#I'm not sure what the maximum is, maybe 200-250
+#and you can increase the love juice level in previous stages, depending on how you want you character to appear
+stage=
+stage_emotion=0
+stage_lj=100
+
+
+
+##Images
+#These are the different images. Most of the images in the character's behaviour file should be here. All the images that aren't here will need to be made by hand
+#These values include things like arm and leg positions, and facial expressions
+#The images and values here are just examples. Change them how you like
+
+image_name=is the filename for the output image
+image_desc=put the kisekae image description here
+image_emotion=a number that specifies which emotion value to use, in combination with the stage emotion
+
+image_name=calm
+image_desc=
+image_emotion=0
+
+image_name=happy
+image_desc=
+image_emotion=0
+
+image_name=sad
+image_desc=
+image_emotion=0
+
+image_name=loss
+image_desc=
+image_emotion=0
+
+image_name=interested
+image_desc=
+image_emotion=1
+
+image_name=horny
+image_desc=
+image_emotion=2
+
+image_name=shocked
+image_desc=
+image_emotion=2
+
+image_name=awkward
+image_desc=
+image_emotion=1
+
+image_name=embarrassed
+image_desc=
+image_emotion=2
