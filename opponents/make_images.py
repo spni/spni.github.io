@@ -7,6 +7,11 @@ import PIL.Image
 setup_string_33 = "33***bc185.500.0.0.1_ga0*0*0*0*0*0*0*0*0#/]ua1.0.0.0_ub_uc7.0.30_ud7.0"
 setup_string_36 = "36***bc185.500.0.0.1_ga0*0*0*0*0*0*0*0*0#/]a00_b00_c00_d00_w00_x00_y00_z00_ua1.0.0.0_ub_u0_v0_uc7.0.30_ud7.0"
 
+
+#create error if not exist (not on windows)
+if not getattr(__builtins__, "WindowsError", None):
+    class WindowsError(OSError): pass
+
 #open image file that kkl has made, waiting until it exists and can be opened properly
 def open_image_file(filename):
 	retry_limit = 50 #try 50 times / 10 seconds
@@ -33,7 +38,7 @@ def wait_for_file_deletion(filename):
 def delete_file(filename):
 	try:
 		os.remove(filename)
-	except WindowsError:
+	except (WindowsError, OSError):
 		pass
 
 #check if the string starts with a kisekae version string (a number, followed by at least two *'s)
@@ -72,7 +77,10 @@ def get_setup_string(image_list):
 	
 #use the image data to create the images using kkl, and move them to the specified directory
 def create_images(image_list, output_directory):
-	kkl_dir = os.getenv('APPDATA') + "\\kkl\\Local Store"
+	if sys.platform == 'darwin':
+		kkl_dir = os.path.join( os.path.expanduser("~") , "Library", "Application Support" , "kkl" , "Local Store" )
+	else :
+		kkl_dir = os.getenv('APPDATA') + "\\kkl\\Local Store"
 	
 	separator = "#/]"
 	
@@ -93,14 +101,14 @@ def create_images(image_list, output_directory):
 	#this sets the character position, zoom level, distables interactivity, sets the zoom level and screen position, and removes censor icon
 	#get a setup string, based on the version of the image descriptions being used
 	setup_scene = get_setup_string(image_list)
-	setup_filename = kkl_dir +"\\scene_setup_file.txt"
-	delete_file(kkl_dir +"\\scene_setup_file..png")
+	setup_filename = os.path.join(kkl_dir ,"scene_setup_file.txt")
+	delete_file(os.path.join(kkl_dir , "scene_setup_file..png"))
 	with open(setup_filename, "w") as f:
 		f.write(setup_scene)
 	wait_for_file_deletion(setup_filename)
 	
 	for image_filename, image_data in image_list:
-		kkl_basename = kkl_dir + "\\" + image_filename
+		kkl_basename = os.path.join(kkl_dir , image_filename)
 		data_filename = kkl_basename + ".txt"
 		image_kkl_filename = kkl_basename +"..png"
 		
@@ -146,7 +154,7 @@ def create_images(image_list, output_directory):
 		
 		#crop the image, and save it to the specified output directory
 		cropped_image = image.crop( crop_pixels ) #crop to the size used by the game
-		cropped_image.save(output_directory + "\\" + image_filename + ".png") #save to output directory
+		cropped_image.save(os.path.join(output_directory , image_filename + ".png")) #save to output directory
 		image.close()
 		cropped_image.close()
 
