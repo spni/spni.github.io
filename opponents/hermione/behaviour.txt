@@ -31,22 +31,22 @@ start=0-happy,I've memorized all the rules of the game, of course!
 #fully clothed
 0-good_hand=0-happy,Brilliant!
 0-okay_hand=0-calm,This should do.
-0-bad_hand=0-sad,I don't believe this is a winning hand.
+0-bad_hand=0-stunned,I don't believe this is a winning hand.
 
 #lost shoes
 1-good_hand=1-happy,Just what I needed!
 1-okay_hand=1-calm,It could be worse.
-1-bad_hand=1-sad,Oh, rats!
+1-bad_hand=1-stunned,Oh, rats!
 
 #lost socks
-2-good_hand=2-happy,Perfect.
+2-good_hand=2-interested,Perfect.
 2-okay_hand=2-calm,This will do, I suppose.
 2-bad_hand=2-sad,Merlin's pants! These cards are horrible.
 
 #lost jumper
-3-good_hand=3-happy,Brilliant!
-3-okay_hand=3-calm,I hope this is enough.
-3-bad_hand=3-sad,I was never good at divination. Shouldn't have discarded that last one!
+3-good_hand=3-excited,Brilliant!
+3-okay_hand=3-sad,I hope this is enough.
+3-bad_hand=3-angry,I was never good at divination. Shouldn't have discarded that last one!
 
 #lost tie
 4-good_hand=4-happy,This ought to do it! Thank goodness.
@@ -54,31 +54,31 @@ start=0-happy,I've memorized all the rules of the game, of course!
 4-bad_hand=4-sad,I'm starting to regret taking this dare.
 
 #lost skirt
-5-good_hand=5-happy,My luck is beginning to change!
-5-okay_hand=5-sad,I wonder if the library has any strategy guides I could borrow...
-5-bad_hand=5-sad,I'm beginning to think my cards may be cursed.
+5-good_hand=5-excited,My luck is beginning to change!
+5-okay_hand=5-angry,I wonder if the library has any strategy guides I could borrow...
+5-bad_hand=5-stunned,I'm beginning to think my cards may be cursed.
 
 #lost blouse
-6-good_hand=6-happy,I... think this will work.
-6-okay_hand=6-calm,For once I'm glad the others aren't interested in Muggle games.
-6-bad_hand=6-sad,It could be worse... Draco could be here.
+6-good_hand=6-happy,I... think this will work. Yes!
+6-okay_hand=6-loss,For once I'm glad the others aren't interested in Muggle games.
+6-bad_hand=6-angry,It could be worse... Draco could be here.
 
 #lost bra
 7-good_hand=7-happy,Phew! A good hand, at last.
-7-okay_hand=7-calm,I hope this is enough. I couldn't bear to lose again...
-7-bad_hand=7-sad,Oh, I wish I'd taken that Felix Felicis!
+7-okay_hand=7-sad,I hope this is enough. I couldn't bear to lose again...
+7-bad_hand=7-stunned,Oh, I wish I'd taken that Felix Felicis!
 
 #lost panties/naked
-8-good_hand=8-happy,Thank Merlin!
-8-okay_hand=8-calm,Please let this be enough! Oh, please!
-8-bad_hand=8-shocked,No, no, no! Where's a time-turner when you need one?
+8-good_hand=8-excited,Thank Merlin!
+8-okay_hand=8-loss,Please let this be enough! Oh, please!
+8-bad_hand=8-stunned,No, no, no! Where's a time-turner when you need one?
 
 
 
 
 #character must strip
 #losing shoes
-0-must_strip_winning=0-loss,I lost? Well, that's only fair, isn't it?
+0-must_strip_winning=0-calm,I lost? Well, that's only fair, isn't it?
 0-must_strip_normal=0-loss,Clearly I need to review the rules again.
 0-must_strip_losing=0-loss,It just figures I'd be first. Fine.
 0-stripping=0-strip,Time for my shoes!
@@ -93,7 +93,7 @@ start=0-happy,I've memorized all the rules of the game, of course!
 
 #losing jumper
 2-must_strip_winning=2-loss,I'm still winning overall!
-2-must_strip_normal=2-loss,Well... in for a knut, in for a galleon.
+2-must_strip_normal=2-loss,In for a knut, in for a galleon.
 2-must_strip_losing=2-loss,Yes, yes. Me again. It figures. Let's just get this over with.
 2-stripping=2-strip,Well, I suppose it's time for my ~clothing~.
 3-stripped=3-stripped,It's more comfortable this way anyway.
@@ -150,38 +150,37 @@ start=0-happy,I've memorized all the rules of the game, of course!
 #lost panties/naked
 8-must_masturbate_first=8-stunned,I can't believe this! I memorized all the rules! This isn't FAIR!
 8-must_masturbate=8-loss,I'll... I'll do it. A Gryffindor never goes back on her word.
-#8-start_masturbating=8-starting,I don't have any experience, though. I... I might not be good at it.
 8-start_masturbating=8-starting,I don't have any experience, but I... I might know a spell for this...
 
 #masturbating
-9-masturbating=9-calm,How long do I have to keep going for?
-9-masturbating=9-mast,Oh! I didn't expect this.
+9-masturbating=9-angry,How long do I have to keep going for?
+9-masturbating=9-shocked,Oh! I didn't expect this.
 9-masturbating=9-mast,That feels... um, sort of nice.
-9-heavy_masturbating=9-heavy,Mmmmmmmm... I've been missing out on so much!
+9-heavy_masturbating=9-excited,Mmmmmmmm... I've been missing out on so much!
 9-heavy_masturbating=9-heavy,Oh... I think I'm nearly...
 9-heavy_masturbating=9-heavy,Ahh... I feel different...
 9-finishing_masturbating=9-finishing,I'm... I'm cummmmmmming!
 9-finishing_masturbating=9-finishing,EXPECTO PATRONUM!
 
 #finished
-10-finished_masturbating=10-finished,That was strangely liberating.
-10-finished_masturbating=10-finished,This game has given me SO much to think about!
-10-finished_masturbating=10-finished,I... wouldn't mind playing again sometime.
-10-finished_masturbating=10-finished,I think I understand why Romilda likes this game so much.
+10-finished_masturbating=10-horny,That was strangely liberating.
+10-finished_masturbating=10-interested,This game has given me SO much to think about!
+10-finished_masturbating=10-horny,I... wouldn't mind playing again sometime.
+10-finished_masturbating=10-interested,I think I understand why Romilda likes this game so much.
 
 
 #game over
 #fully clothed
-0-game_over_victory=0-happy,I have a gift for this game!
+0-game_over_victory=0-happy,I'm going to have to play with a handicap next time!
 
 #lost shoes
-1-game_over_victory=1-happy,You should have known better than to challenge me.
+1-game_over_victory=1-horny,Maybe I should start losing on purpose. That looked like fun...
 
 #lost socks
-2-game_over_victory=2-happy,Ha! Wait until I tell Harry about this.
+2-game_over_victory=2-excited,Ha! Wait until I tell Harry about this.
 
 #lost jumper
-3-game_over_victory=3-happy,This went even better than I expected!
+3-game_over_victory=3-excited,This went even better than I expected!
 
 #lost tie
 4-game_over_victory=4-happy,Exactly how I expected tonight to go.
@@ -190,23 +189,23 @@ start=0-happy,I've memorized all the rules of the game, of course!
 5-game_over_victory=5-happy,Fifty points to Gryffindor!
 
 #lost blouse
-6-game_over_victory=6-happy,Don't be ashamed being beaten by the brightest witch of her generation.
+6-game_over_victory=6-calm,Don't be ashamed being beaten by the brightest witch of her generation.
 
 #lost bra
-7-game_over_victory=7-happy,I'll have to invite Luna and Cho over for a game...
+7-game_over_victory=7-horny,I'll have to see if Luna and Cho are up for a private game...
 
 #lost panties/naked
-8-game_over_victory=8-happy,I'll have to invite Harry and Ron to play next...
+8-game_over_victory=8-horny,I'll have to invite Harry and Ron to play this with me!
 
 
 #finished
-10-game_over_defeat=10-calm,At least this is better than being expelled... but only barely.
+10-game_over_defeat=10-stunned,At least this is better than being expelled... but only barely.
 
 
 #other player must strip
 #fully clothed
-0-male_human_must_strip=0-interested,How fun! I can't believe I didn't play this before now.
-0-male_must_strip=0-interested,How fun! I can't believe I didn't play this before now.
+0-male_human_must_strip=0-excited,How fun! I can't believe I didn't play this before now.
+0-male_must_strip=0-excited,How fun! I can't believe I didn't play this before now.
 0-female_human_must_strip=0-interested,We all agreed to the rules, ~name~.
 0-female_must_strip=0-interested,We all agreed to the rules, ~name~.
 
@@ -217,46 +216,46 @@ start=0-happy,I've memorized all the rules of the game, of course!
 1-female_must_strip=1-interested,I had a feeling you were going to lose, ~name~.
 
 #lost socks
-2-male_human_must_strip=2-interested,How exciting!
-2-male_must_strip=2-interested,How exciting!
+2-male_human_must_strip=2-excited,How exciting!
+2-male_must_strip=2-excited,How exciting!
 2-female_human_must_strip=2-interested,I know what I'd take off in your place...
 2-female_must_strip=2-interested,I know what I'd take off in your place...
 
 #lost jumper
-3-male_human_must_strip=3-interested,Fair's fair, ~name~!
-3-male_must_strip=3-interested,Fair's fair, ~name~!
+3-male_human_must_strip=3-calm,Fair's fair, ~name~!
+3-male_must_strip=3-calm,Fair's fair, ~name~!
 3-female_human_must_strip=3-interested,The tension is palpable!
 3-female_must_strip=3-interested,The tension is palpable!
 
 #lost tie
-4-male_human_must_strip=4-interested,It's not that I'm interested or anything. It's just the rules.
-4-male_must_strip=4-interested,It's not that I'm interested or anything. It's just the rules.
-4-female_human_must_strip=4-interested,I'm glad it wasn't me this turn.
-4-female_must_strip=4-interested,I'm glad it wasn't me this turn.
+4-male_human_must_strip=4-shocked,It's not that I'm interested or anything. It's just the rules.
+4-male_must_strip=4-shocked,It's not that I'm interested or anything. It's just the rules.
+4-female_human_must_strip=4-calm,I'm glad it wasn't me this turn.
+4-female_must_strip=4-calm,I'm glad it wasn't me this turn.
 
 #lost skirt
-5-male_human_must_strip=5-interested,Fair's fair, ~name~!
-5-male_must_strip=5-interested,Fair's fair, ~name~!
-5-female_human_must_strip=5-interested,Let's just get this game over with, shall we?
-5-female_must_strip=5-interested,Let's just get this game over with, shall we?
+5-male_human_must_strip=5-happy,Fair's fair, ~name~!
+5-male_must_strip=5-happy,Fair's fair, ~name~!
+5-female_human_must_strip=5-calm,Let's just get this game over with, shall we?
+5-female_must_strip=5-calm,Let's just get this game over with, shall we?
 
 #lost blouse
-6-male_human_must_strip=6-interested,Things are getting interesting, aren't they?
-6-male_must_strip=6-interested,Things are getting interesting, aren't they?
-6-female_human_must_strip=6-interested,I'm glad it wasn't me...
-6-female_must_strip=6-interested,I'm glad it wasn't me...
+6-male_human_must_strip=6-excited,Things are getting interesting, aren't they?
+6-male_must_strip=6-excited,Things are getting interesting, aren't they?
+6-female_human_must_strip=6-happy,I'm glad it wasn't me...
+6-female_must_strip=6-happy,I'm glad it wasn't me...
 
 #lost bra
-7-male_human_must_strip=7-interested,Yes, PLEASE, ~name~.
-7-male_must_strip=7-interested,Yes, PLEASE, ~name~.
-7-female_human_must_strip=7-interested,Yes, please, ~name~.
-7-female_must_strip=7-interested,Yes, please, ~name~.
+7-male_human_must_strip=7-horny,Yes, PLEASE, ~name~.
+7-male_must_strip=7-horny,Yes, PLEASE, ~name~.
+7-female_human_must_strip=7-horny,Yes, please, ~name~.
+7-female_must_strip=7-horny,Yes, please, ~name~.
 
 #lost panties/naked
-8-male_human_must_strip=8-interested,Hurry up and strip, ~name~!
-8-male_must_strip=8-interested,Hurry up and strip, ~name~!
-8-female_human_must_strip=8-interested,Come on and join me!
-8-female_must_strip=8-interested,Come on and join me!
+8-male_human_must_strip=8-excited,Hurry up and strip, ~name~!
+8-male_must_strip=8-excited,Hurry up and strip, ~name~!
+8-female_human_must_strip=8-horny,Come on and join me!
+8-female_must_strip=8-horny,Come on and join me!
 
 #masturbating
 9-male_human_must_strip=9-interested,Merlin's pants! Show me what you're hiding!
@@ -273,10 +272,10 @@ start=0-happy,I've memorized all the rules of the game, of course!
 
 #other player is removing an accessory
 #fully clothed
-0-male_removing_accessory=0-calm,That DOES fulfil your obligation, according to Robert's Rules of Poker.
+0-male_removing_accessory=0-happy,That DOES fulfil your obligation, according to Robert's Rules of Poker.
 0-male_removed_accessory=0-angry,Somehow it's not as exciting as I'd read, though.
 0-female_removing_accessory=0-angry,Somehow it's not quite as exciting as I'd thought.
-0-female_removed_accessory=0-calm,If it's any consolation, I think you look nicer this way.
+0-female_removed_accessory=0-happy,If it's any consolation, I think you look nicer this way.
 
 #lost shoes
 1-male_removing_accessory=1-angry,This game is going to take forever, isn't it?
@@ -285,22 +284,22 @@ start=0-happy,I've memorized all the rules of the game, of course!
 1-female_removed_accessory=1-happy,Another step closer to victory!
 
 #lost socks
-2-male_removing_accessory=2-calm,That's what I expected you'd remove.
-2-male_removed_accessory=2-angry,I usually LIKE being right.
-2-female_removing_accessory=2-happy,I knew it!
-2-female_removed_accessory=2-calm,After all, that's what I would have done.
+2-male_removing_accessory=2-happy,That's what I expected you'd remove.
+2-male_removed_accessory=2-angry,I usually LIKE being right, but this time I wish you'd removed something larger.
+2-female_removing_accessory=2-excited,I knew it!
+2-female_removed_accessory=2-happy,After all, that's exactly what I would have done.
 
 #lost jumper
 3-male_removing_accessory=3-calm,Your ~clothing~? That's only to be expected.
-3-male_removed_accessory=3-calm,I'm not upset! I'm just a little disappointed.
+3-male_removed_accessory=3-angry,I'm not upset! I'm just a little disappointed.
 3-female_removing_accessory=3-angry,Is that all?
 3-female_removed_accessory=3-calm,Still, the evening is young... perhaps it will get more exciting as we progress.
 
 #lost tie
-4-male_removing_accessory=4-angry,You still had your ~clothing~ left?
-4-male_removed_accessory=4-calm,Clearly I have to step up my game.
-4-female_removing_accessory=4-angry,You still had your ~clothing~ left?
-4-female_removed_accessory=4-calm,Clearly I have to step up my game.
+4-male_removing_accessory=4-stunned,You still had your ~clothing~ left?
+4-male_removed_accessory=4-angry,Clearly I have to step up my game!
+4-female_removing_accessory=4-stunned,You still had your ~clothing~ left?
+4-female_removed_accessory=4-angry,Clearly I have to step up my game!
 
 #lost skirt
 5-male_removing_accessory=5-calm,I know a spell that could remove that for you!
@@ -310,46 +309,46 @@ start=0-happy,I've memorized all the rules of the game, of course!
 
 #lost blouse
 6-male_removing_accessory=6-angry,That's got to be against the rules!
-6-male_removed_accessory=6-angry,If I do discover you're cheating, I WILL turn you into a frog.
-6-female_removing_accessory=6-angry,Oh, come on! I can't believe you're that cheap.
+6-male_removed_accessory=6-stunned,If I do discover you're cheating, I WILL turn you into a frog.
+6-female_removing_accessory=6-stunned,Oh, come on! I can't believe you're that cheap.
 6-female_removed_accessory=6-angry,I must remember to wear more layers next time...
 
 #lost bra
 7-male_removing_accessory=7-angry,Enough delaying tactics!  Just do it already.
-7-male_removed_accessory=7-angry,Here I am, exposed for all to see, and you just--oh! You're insufferable.
+7-male_removed_accessory=7-stunned,Here I am, exposed for all to see, and you just--oh! You're insufferable.
 7-female_removing_accessory=7-angry,I don't want to seem like a sore loser, but can we play with different rules next time?
-7-female_removed_accessory=7-angry,Honestly! This game is so childish.
+7-female_removed_accessory=7-stunned,Honestly! This game is so childish.
 
 #lost panties/naked
-8-male_removing_accessory=8-angry,Merlin, this game is unfair!
+8-male_removing_accessory=8-stunned,Merlin, this game is unfair!
 8-male_removed_accessory=8-sad,I... I just need to win the next few hands. Without losing any at all. Why did I agree to this again?
-8-female_removing_accessory=8-angry,You have no idea how infuriating you're being, do you?
+8-female_removing_accessory=8-stunned,You have no idea how infuriating you're being, do you?
 8-female_removed_accessory=8-calm,I can't believe I'm wishing I was standing here with as little on as you, but there you have it...
 
 #masturbating
 9-male_removing_accessory=9-angry,You're just teasing me now, aren't you?
-9-male_removed_accessory=9-horny,I'm just going to imagine you're not stopping... yesss...
-9-female_removing_accessory=9-angry,That's IT?!
+9-male_removed_accessory=9-heavy,I'm just going to imagine you're not stopping... yesss...
+9-female_removing_accessory=9-stunned,That's IT?!
 9-female_removed_accessory=9-horny,You-you can keep going, I won't mind!
 
 #finished
-10-male_removing_accessory=10-angry,You-you still had your ~clothing~? And here I've gone and-and-
-10-male_removed_accessory=10-shocked,I wish I knew a spell to make myself disappear.
-10-female_removing_accessory=10-angry,You-you still had your ~clothing~? And here I've gone and-and-
-10-female_removed_accessory=10-shocked,I wish I knew a spell to make myself disappear.
+10-male_removing_accessory=10-stunned,You-you still had your ~clothing~? And here I've gone and-and-
+10-male_removed_accessory=10-sad,I wish I knew a spell to make myself disappear.
+10-female_removing_accessory=10-stunned,You-you still had your ~clothing~? And here I've gone and-and-
+10-female_removed_accessory=10-sad,I wish I knew a spell to make myself disappear.
 
 
 #other player is removing a minor clothing item
 #fully clothed
-0-male_removing_minor=0-interested,A good start.
+0-male_removing_minor=0-happy,A good start.
 0-male_removed_minor=0-calm,Whose turn is it to deal?
-0-female_removing_minor=0-interested,A good start.
+0-female_removing_minor=0-happy,A good start.
 0-female_removed_minor=0-calm,Whose turn is it to deal?
 
 #lost shoes
-1-male_removing_minor=1-interested,A solid choice!
+1-male_removing_minor=1-happy,A solid choice!
 1-male_removed_minor=1-calm,Shall we get back to the game?
-1-female_removing_minor=1-interested,A solid choice!
+1-female_removing_minor=1-happy,A solid choice!
 1-female_removed_minor=1-calm,Shall we get back to the game?
 
 #lost socks
@@ -372,15 +371,15 @@ start=0-happy,I've memorized all the rules of the game, of course!
 
 #lost skirt
 5-male_removing_minor=5-interested,I've been waiting for this.
-5-male_removed_minor=5-calm,Don't think you can get away so easily next hand.
+5-male_removed_minor=5-angry,Don't think you can get away so easily next hand.
 5-female_removing_minor=5-interested,I've been waiting for this.
-5-female_removed_minor=5-calm,Don't think you can get away so easily next hand.
+5-female_removed_minor=5-angry,Don't think you can get away so easily next hand.
 
 #lost blouse
-6-male_removing_minor=6-calm,Get on with it.
-6-male_removed_minor=6-angry,I can't believe how badly I'm doing!
-6-female_removing_minor=6-calm,Get on with it.
-6-female_removed_minor=6-angry,I can't believe how badly I'm doing!
+6-male_removing_minor=6-angry,Get on with it.
+6-male_removed_minor=6-stunned,I can't believe how badly I'm doing!
+6-female_removing_minor=6-angry,Get on with it.
+6-female_removed_minor=6-stunned,I can't believe how badly I'm doing!
 
 #lost bra
 7-male_removing_minor=7-interested,Go on, then.
@@ -389,21 +388,21 @@ start=0-happy,I've memorized all the rules of the game, of course!
 7-female_removed_minor=7-angry,You know, some people would consider this to be poor sportsmanship.
 
 #lost panties/naked
-8-male_removing_minor=8-calm,Thank Merlin! I was beginning to think you were cheating.
+8-male_removing_minor=8-excited,Thank Merlin! I was beginning to think you were cheating.
 8-male_removed_minor=8-angry,You know, you have SUSPICIOUSLY good luck.
-8-female_removing_minor=8-calm,Thank Merlin! I was beginning to think you were cheating.
+8-female_removing_minor=8-excited,Thank Merlin! I was beginning to think you were cheating.
 8-female_removed_minor=8-angry,You know, you have SUSPICIOUSLY good luck.
 
 #masturbating
-9-male_removing_minor=9-interested,Yes, take it off!
-9-male_removed_minor=9-horny,This... isn't... fair!
-9-female_removing_minor=9-interested,Yes, take it off!
-9-female_removed_minor=9-horny,This... isn't... fair!
+9-male_removing_minor=9-excited,Yes, take it off!
+9-male_removed_minor=9-mast,This... isn't... fair!
+9-female_removing_minor=9-excited,Yes, take it off!
+9-female_removed_minor=9-mast,This... isn't... fair!
 
 #finished
-10-male_removing_minor=10-happy,It's about time!
+10-male_removing_minor=10-excited,It's about time!
 10-male_removed_minor=10-angry,I have half a mind to hex you!
-10-female_removing_minor=10-happy,It's about time!
+10-female_removing_minor=10-excited,It's about time!
 10-female_removed_minor=10-angry,I have half a mind to hex you!
 
 
@@ -421,92 +420,90 @@ start=0-happy,I've memorized all the rules of the game, of course!
 1-female_removed_major=0-happy,Maybe for most witches, but not THIS one.
 
 #lost socks
-2-male_removing_major=2-interested,I don't believe that's regulation uniform, ~name~!
+2-male_removing_major=2-shocked,I don't believe that's regulation uniform, ~name~!
 2-male_removed_major=2-interested,Five points from Ravenclaw!
-2-female_removing_major=2-interested,You're out of uniform, ~name~!
+2-female_removing_major=2-shocked,You're out of uniform, ~name~!
 2-female_removed_major=2-interested,Five points from Slytherin!
 
 #lost jumper
 3-male_removing_major=1-happy,My strategy is paying off - and how!
-3-male_removed_major=1-happy,I'll bet Ginny wishes she could have seen THIS.
+3-male_removed_major=1-excited,I'll bet Ginny wishes she could have seen THIS.
 3-female_removing_major=1-happy,My strategy is paying off - and how!
-3-female_removed_major=1-happy,I'll bet Harry wishes he could have seen THIS.
+3-female_removed_major=1-excited,I'll bet Harry wishes he could have seen THIS.
 
 #lost tie
 4-male_removing_major=2-interested,Finally, ~name~'s ~clothing~ comes off!
-4-male_removed_major=2-interested,We're finally getting somewhere!
+4-male_removed_major=2-excited,We're finally getting somewhere!
 4-female_removing_major=2-interested,Finally, ~name~'s ~clothing~ comes off!
-4-female_removed_major=2-interested,We're finally getting somewhere!
+4-female_removed_major=2-excited,We're finally getting somewhere!
 
 #lost skirt
-5-male_removing_major=5-interested,This is all rather exciting, isn't it?
-5-male_removed_major=5-interested,I can see why people like this game!
-5-female_removing_major=5-interested,This is all rather exciting, isn't it?
-5-female_removed_major=5-interested,Thanks for taking one for the team, ~name~.
+5-male_removing_major=5-excited,This is all rather exciting, isn't it?
+5-male_removed_major=5-horny,I can see why people like this game!
+5-female_removing_major=5-excited,This is all rather exciting, isn't it?
+5-female_removed_major=5-calm,Thanks for taking one for the team, ~name~.
 
 #lost blouse
-6-male_removing_major=6-interested,Finally the tables are turning, ~name~.
+6-male_removing_major=6-happy,Finally the tables are turning, ~name~.
 6-male_removed_major=6-interested,The stakes keep getting higher and higher...
-6-female_removing_major=6-interested,Finally the tables are turning, ~name~...
+6-female_removing_major=6-happy,Finally the tables are turning, ~name~...
 6-female_removed_major=6-interested,The stakes keep getting higher and higher...
 
 #lost bra
-7-male_removing_major=7-interested,Merlin's beard! I was beginning to think you were cheating, ~name~.
-7-male_removed_major=7-interested,Now I just think I'm the unluckiest witch of her generation...
-7-female_removing_major=7-interested,Merlin's beard! I was beginning to think you were cheating, ~name~.
-7-female_removed_major=7-interested,Not that this makes us equal, you know.
+7-male_removing_major=7-excited,Merlin's beard! I was beginning to think you were cheating, ~name~.
+7-male_removed_major=7-sad,Now I just think I'm the unluckiest witch of her generation...
+7-female_removing_major=7-excited,Merlin's beard! I was beginning to think you were cheating, ~name~.
+7-female_removed_major=7-stunned,Not that this makes us equal, you know.
 
 #lost panties/naked
-8-male_removing_major=8-interested,Hah! About time!
-8-male_removed_major=8-interested,If I can stand here starkers, the least you can do is join me.
-8-female_removing_major=8-interested,Hah! About time!
-8-female_removed_major=8-interested,If I can stand here starkers, the least you can do is join me.
+8-male_removing_major=8-excited,Hah! About time!
+8-male_removed_major=8-happy,If I can stand here starkers, the least you can do is join me.
+8-female_removing_major=8-excited,Hah! About time!
+8-female_removed_major=8-happy,If I can stand here starkers, the least you can do is join me.
 
 #masturbating
-9-male_removing_major=9-interested,Oh, yes, please, ~name~.
-9-male_removed_major=9-interested,Oh, don't stop there! You bastard!
-9-female_removing_major=9-interested,Let's hope this takes everyone's eyes off me...
-9-female_removed_major=9-interested,Why...why is this feeling so good? I'm not...not into girls!
+9-male_removing_major=9-horny,Oh, yes, please, ~name~.
+9-male_removed_major=9-stunned,Oh, don't stop there! You bastard!
+9-female_removing_major=9-sad,Let's hope this takes everyone's eyes off me...
+9-female_removed_major=9-shocked,Why...why is this feeling so good? I'm not...not into girls!
 
 #finished
-10-male_removing_major=10-interested,What rotten timing!
-10-male_removed_major=10-interested,You have no idea how much I wanted to see this just a minute ago.
-10-female_removing_major=10-interested,Go on! Strip!
-10-female_removed_major=10-interested,You don't have any excuse to be shy, ~name~. I mean...look at me!
+10-male_removing_major=10-stunned,What ROTTEN timing!
+10-male_removed_major=10-horny,You have NO idea how much I wanted to see this just a minute ago.
+10-female_removing_major=10-excited,Go on! Strip!
+10-female_removed_major=10-shocked,You don't have any excuse to be shy, ~name~. I mean...look at me!
 
 
 #other player is exposing themselves
 #fully clothed
-0-male_chest_will_be_visible=0-interested,Don't worry - I'll be a lady and not stare.
-0-male_chest_is_visible=0-interested,That's, um, a little distracting. Is that in the rules?
-0-male_crotch_will_be_visible=0-horny,There's no shame in losing, ~name~. I am, after all, the brightest witch of my generation.
-0-male_small_crotch_is_visible=0-interested,Oh! What a relief. I mean, I wasn't sure it would fit - I mean, nevermind!
-0-male_medium_crotch_is_visible=0-excited,Is... is it getting hot in here? No?
-0-male_large_crotch_is_visible=0-shocked,You're even bigger than Ron! Um, not that I would know.
+0-male_chest_will_be_visible=0-calm,Don't worry - I'll be a lady and not stare at you.
+0-male_chest_is_visible=0-shocked,I'm not sure WHERE to look, honestly.
+0-male_crotch_will_be_visible=0-stunned,Were you losing on purpose, ~name~?
+0-male_small_crotch_is_visible=0-stunned,I'm-I'm not looking!
+0-male_medium_crotch_is_visible=0-excited,I'm-I'm not looking!
+0-male_large_crotch_is_visible=0-shocked,Merlin's beard! You're HUGE!
 
-0-female_chest_will_be_visible=0-interested,I wonder who's larger... well, we'll find out!
-0-female_small_chest_is_visible=0-interested,Oh, how cute! Just like Ginny.
-0-female_medium_chest_is_visible=0-excited,Those are beautiful, ~name~.
-0-female_large_chest_is_visible=0-shocked,Oh! I feel so inferior.
-0-female_crotch_will_be_visible=0-interested,Let's take a look at your Chamber of Secrets... Oh, I can't believe I just said that!
-0-female_crotch_is_visible=0-stunned,I don't know where to look!
-0-female_crotch_is_visible=0-excited,You're... you're really showing us?
+0-female_chest_will_be_visible=0-interested,It will be just between us girls, ~name~.
+0-female_small_chest_is_visible=0-excited,You're adorable!
+0-female_medium_chest_is_visible=0-shocked,So, um, moving on?
+0-female_large_chest_is_visible=0-stunned,...
+0-female_crotch_will_be_visible=0-shocked,Oh! Uh, well, we all knew this was coming.
+0-female_crotch_is_visible=0-stunned,So...there's no reason to be embarassed, ~name~. Really.
 
 #lost shoes
-1-male_chest_will_be_visible=1-interested,Don't worry - I'll be a lady and not stare.
-1-male_chest_is_visible=1-interested,That's, um, a little distracting. Is that in the rules?
-1-male_crotch_will_be_visible=1-horny,There's no shame in losing, ~name~. I am, after all, the brightest witch of my generation.
-1-male_small_crotch_is_visible=1-calm,Oh! What a relief. I mean, I wasn't sure it would fit - I mean, nevermind!
-1-male_medium_crotch_is_visible=1-excited,Is... is it getting hot in here? No?
-1-male_large_crotch_is_visible=1-shocked,You're even bigger than Ron! Um, not that I would know.
+1-male_chest_will_be_visible=0-calm,Don't worry - I'll be a lady and not stare at you.
+1-male_chest_is_visible=0-shocked,I'm not sure WHERE to look, honestly.
+1-male_crotch_will_be_visible=0-stunned,Were you losing on purpose, ~name~?
+1-male_small_crotch_is_visible=0-stunned,I'm-I'm not looking!
+1-male_medium_crotch_is_visible=0-excited,I'm-I'm not looking!
+1-male_large_crotch_is_visible=0-shocked,Merlin's beard! You're HUGE!
 
-1-female_chest_will_be_visible=1-interested,I wonder who's larger... well, we'll find out!
-1-female_small_chest_is_visible=1-interested,They look very... sensitive.
-1-female_medium_chest_is_visible=1-excited,You look just like a Veela! I'm jealous.
-1-female_large_chest_is_visible=1-shocked,Oh! I feel so inferior.
-1-female_crotch_will_be_visible=1-horny,Ha! Ron will be so jealous.
-1-female_crotch_is_visible=1-stunned,I don't know where to look!
-1-female_crotch_is_visible=1-excited,You're... you're really showing us?
+1-female_chest_will_be_visible=0-interested,It will be just between us girls, ~name~.
+1-female_small_chest_is_visible=0-excited,You're adorable!
+1-female_medium_chest_is_visible=0-shocked,So, um, moving on?
+1-female_large_chest_is_visible=0-stunned,...
+1-female_crotch_will_be_visible=0-shocked,Oh! Uh, well, we all knew this was coming.
+1-female_crotch_is_visible=0-stunned,So...there's no reason to be embarassed, ~name~. Really.
 
 #lost socks
 2-male_chest_will_be_visible=2-interested,Don't worry - I'll be a lady and not stare.
