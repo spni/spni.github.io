@@ -1,0 +1,477 @@
+#This is a list of assorted kisekae variables, what they affect, and where they are used in the generate image list script
+
+#arm icon
+aa7.0.0.0.50.7.0.0.0.50
+aa0.1.2.3.4.5.6.7.8.9
+0-left arm angle - image
+1-left elbow angle - image
+2-0/1 right arm in front/behind body - image
+3-left hand shape - image
+4-left hand angle - image
+5-right arm angle - image
+6-right elbow angle - image
+7-left arm in front/behind - image
+8-right arm hand shape - image
+9-right hand angle - image
+
+ab0.55.34.0
+ab0.1.2.3
+0 - left hand item type - stage
+1 - colour 1 - stage
+2 - colour 2 - stage
+3 - colour 3 - stage
+
+ac0.1.2.3
+same as ab, but for right hand
+
+#legs icon
+ba50
+ba0
+0 - head angle - image
+
+bb5.1
+bb0.1
+0 - left leg type - image
+1 - left leg in front/behind - image
+
+bc150.500.0.0.1
+bc0.1.2.3.4
+position on screen - seems to not be used, unless using a scene (***) description
+0 - left/right position - image
+1 - far away/close to screen - image
+2 - ??? - image - assumed image
+3 - height above ground - image
+4 - 1/0 for shadow - appearance
+
+bd5
+bd0
+0 - right leg type - image
+
+be180
+be0
+0 - whole character rotation (180 is upright) - image
+
+#height icon
+ca65.0.30.60.34.34.34.0.0
+ca0.1.2.3.4.5.6.7.8
+0 - size, both height & width - appearance
+1 - torso type - appearance
+2 - torse height - appearance
+3 - height (without changing width) - appearance
+4 - chest size (including breasts) - appearance
+5 - leg thickness - appearance
+6 - arm thickness - appearance
+7 - calf width - appearance
+8 - shoulder width - appearance
+
+cb0
+0 - 1/0 if shrunk - appearance? maybe image? (put in image)
+
+#suntan icon
+da2.0.0.100
+da0.1.2.3
+0 - skin colour - appearance
+1 - shilouette / normal - appearance? maybe image?
+2 - silhouette colour - same as above
+3 - transparency - image?
+
+db
+db0.1
+0 - tan type - appearance
+1 - tan colour - appearance
+
+dd0.0.34.50.50
+dd0.1.2.3.4
+0 - blush sticker type - image + stage
+1 - chin type - appearance
+2 - chin width - appearance
+3 - chin vertical position - appearance
+4 - head size - appearance?
+
+dh2.30.50.50.0
+dh0.1.2.3.4
+0 - nipple colour - appearance
+1 - nipple size - appearance
+2 - nipple vertical position - appearance
+3 - nipple horizontal distance - appearance
+4 - nipple type - appearance
+
+di5
+di0
+0 - breast type & size - appearance
+
+#gender icon
+qa1.2.2.50.50.2.0.1.0.50.12.0
+qa0.1.2.3.4.5.5.6.8.9.10.11
+0 - penis size - appearance
+1 - penis colour 1 - appearance
+2 - penis colour 2 - appearance
+3 - different penis size slider - appearance (maybe stage and image?)
+4 - erect penis size - appearance
+5 - penis colour 3 - appearance
+6 - penis & testicle height nudge (?) - appearance
+7 - ??? - assumed appearance
+8 - 1/0 is penis erect? - stage / image
+9 - penis angle - appearance?
+10 - penis type - appearance
+11 - ??? - assumed appearance
+
+qb0.50
+qb0.1
+0 - testicle type - appearance
+1 - testicle size - appearance
+
+dc0.1.2.1.1
+dc0.1.2.3.4
+0 - love juice level - stage
+1 - vagina type - appearance
+2 - vagina colour 1 - appearance
+3 - vagina colour 2 - appearance
+4 - vagina colour 3 - appearance
+
+eh1.865A2F
+eh0.1
+0 - pubic hair type - appearance
+1 - public hair colour - appearance
+
+#hair icon 1
+ea0.865A2F.865A2F.56.0.0
+ea0.1.2.3.4.5
+0 - main hair type - appearance
+1 - hair colour 1 - appearance
+2 - hair colour 2 - appearance
+3 - hair colour 3 - appearance
+4 - flip hair style - appearance
+5 - ??? - assumed appearance
+
+ec1.43.865A2F.865A2F.56.38.57.0
+ec0.1.2.3.4.5.6.7
+0 - behind hair type - appearance
+1 - behind hair length - appearance
+2 - behind hair colour 1 - appearance
+3 - behind hair colour 2 - appearance
+4 - behind hair colour 2 - appearance
+5 - behind hair width - appearance
+6 - behind hair vertical position - appearance
+7 - the cycle/line button, not sure what it does - appearance?
+
+ed0.50.1.1.865A2F.56
+ed0.1.2.3.4.5
+0 - bangs type - appearance
+1 - bangs length - appearance
+2 - flip bangs horizontally - appearance
+3 - bangs in front/behind main hair - appearance
+4 - bang colour 1 - appearance
+5 - bang colour 2 - appearance
+
+ef0.1.50.865A2F.865A2F.56
+ef0.1.2.3.4.5
+0 - side hair type (left side) - appearance
+1 - in front/behind ears and shoulders (0-2) - appearance
+2 - side hair length - appearance
+3 - hair colour 1 - appearance
+4 - hair colour 2 - appearance
+5 - hair colour 3 - appearance
+
+eg0.2.50.865A2F.865A2F.56
+eg0.1.2.3.4.5
+same as ef, but for right side
+
+r00.865A2F.865A2F.56.0.0.50.50.0.600.600.0
+r0 to r9 - hair tails/spikes/whatever
+r00.1.2.3.4.5.6.7.8.9.10.11
+0 - hair type - appearance
+1 - hair colour 1 - appearance
+2 - hair colour 2 - appearance
+3 - hair colour 3 - appearance
+4 - both sides/only left/right - appearance
+5 - in front/behind (0-2) - appearance
+6 - width - appearance
+7 - height - appearance
+8 - angle - appearance
+9 - horizontal position - appearance
+10 - vertical position - appearance
+11 - rotate/minus symbol on controls - appearance
+
+#eye symbol
+fa0.50.50.50.50.65.56
+fa0.1.2.3.4.5.6
+0 - eye outline & eyelashes type - image
+1 - eye separation - appearance
+2 - eye vertical position - appearance
+3 - eye width - appearance
+4 - eye vertical size - appearance
+5 - eye outline rotation - image
+6 - eyebrow colour - appearance
+
+fb7
+fb0
+0 - eye ridge lines (some above and below eye) - image
+
+fh4
+fh0
+0 - under-eye lines - appearance
+
+fc0.50.55.0.50.55.50.61.61.50.50.50
+fc0.1.2.3.4.5.6.7.8.9.10.11
+0 - left eye pupil type - image?
+1 - left eye colour 1 - appearance
+2 - left eye colour 2 - appearance
+3 - right eye pupil type - image?
+4 - right eye colour 1 - appearance
+5 - right eye colour 2 - appearance
+6 - eye pupil/iris width - image
+7 - left eye colour 3 - appearance
+8 - right eye colour 3 - appearance
+9 - eye pupil/iris vertical size - image
+10 - iris/pupil separation - image
+11 - iris/pupil height inside eye - image
+
+#eyebrow icon
+fd0.0.50.865A2F.56
+fd0.1.2.3.4
+0 - eyebrow type - appearance
+1 - button next to eyebrow colour - assumed appearance
+2 - eyebrow height - image
+3 - eyebrow colour 1 - appearance
+4 - eyebrow colour 2 - appearance
+
+fe50.61
+fe0.1
+0 - mouth size - appearance
+1 - mouth vertical position - appearance
+
+ff0000000000
+moles on various parts of the face - appearance
+
+fg0.50
+fg0.1
+0 - nose type - appearance
+1 - nose height - appearance
+
+pa6.FF0000.00FF1E.2400FF.28.50.85.85.0.0
+pa0.1.2.3.4.5.6.7.8.9
+0 - ear type - appearance
+1 - ear colour 1 - appearance
+2 - ear colour 2 - appearance
+3 - ear colour 3 - appearance
+4 - ear size - appearance
+5 - ear rotation - image?
+6 - ear horizontal separation - appearance
+7 - ear vertical position - appearance
+8 - ??? - assumed appearance
+9 - ??? - assumed appearance
+
+#face markings icon
+t0
+txy - x is icon id, y is icon type
+t00.61.61.0.10.10.0.370.350.0
+t00.1.2.3.4.5.6.7.8.9
+0 - icon type
+1 - icon colour 1 - image
+2 - icon colour 2 - image
+3 - icon colour 3 - image
+4 - horizontal size - image
+5 - vertical size - image
+6 - icon rotation - image
+7 - icon horizontal position - image
+8 - icon vertical position - image
+9 - flip symbol - image
+
+#headband icon
+pb0.54.51.0
+pb0.1.2.3
+0 - animal ear (headband?) type - appearance
+1 - animal ear colour 1 - appearance
+2 - animal ear colour 2 - appearance
+3 - animal ear colour 3 - appearance
+
+pc0.43.0.0.2.50.50
+pc0.1.2.3.4.5.6
+0 - horns type - appearance
+1 - horn colour 1 - appearance
+2 - horn colour 2 - appearance
+3 - horn colour 3 - appearance
+4 - horns in front/behind - appearance
+5 - horn size - appearance
+6 - horn angle - appearance?
+
+pd0.53.8.51.1.1.50.1.60
+pd0.1.2.3.4.5.6.7.8
+0 - wing type - appearance
+1 - wing colour 1 - appearance
+2 - colour 2 - appearance
+3 - colour 3  - appearance
+4 - ??? - appearance
+5 - ??? - appearance
+6 - wing size - appearance
+7 - flip wings - appearance
+8 - wing height - appearance
+
+pe0.55.50.0.1.1.40
+pe0.1.2.3.4.5.6
+0 - tail type - appearance
+1 - tail colour 1 - appearance
+2 - colour 2 - appearance
+3 - colour 3 - appearance
+4 - ??? - appearance
+5 - tail side - image
+6 - tail size - appearance
+
+#heart icon
+ga1
+ga0
+0 - 1 is auto/inceractive, 0 is manual - appearance. should be 0/manual
+
+gb1
+gb0
+0 - tongue-out switch (unknown what it does) - appearance?
+
+gc0.0
+gc0.1
+0 - blush/arousal level - stage + image
+1 - blue face/shock level - stage + image
+
+ge0000000000
+on/off for various image stickers - image
+
+gh0
+flip image sticker sides (one switch for all of them) - image
+
+gf
+text box image sticker type - image
+
+gg2.0.50.50.50.1
+gg0.1.2.3.4.5
+0 - eye image sticker type - image
+1 - eye image colour - image
+2 - icon size - image
+3 - eye icon distance - image
+4 - eye icon height - image
+5 - ??? - assumed image
+
+gd10000000
+teardrop on/off flags - image
+
+#smiley face
+ha89.89
+ha0.1
+0 - left eye open/closed - image
+1 - right eye open/closed - image
+
+hb49.1.44.99
+hb0.1.2.3
+0 - iris position left/right - image
+1 - iris movement far/close vs left/right switch - image
+2 - iris height in eye - image
+3 - iris size - image
+
+hc0.59.39.0.59.39
+hc0.1.2.3.4.5
+0 - lefteyebrow type - appearance
+1 - left eyebrow angle - image
+2 - left eyebrow height - image
+3 - right eyebrow type - appearance
+4 - right eyebrow angle - image
+5 - right eyebrow height - image
+
+hd0.1.49.49
+hd0.1.2.3
+0 - mouth type - image
+1 - flip mouth horizontally - image
+2 - mouth width - image?
+3 - mouth vertical size - image?
+
+#jacket icon
+#everything below this is clothes/accessories, and part of the stage description
+ia0.24.43.0.0
+
+if
+
+ib0.55.55.0.0.0.0.1.5.0.0.5.0.0.2
+
+id
+
+ic0.57.57.57.0
+
+jc0.60.0.0
+
+ie
+
+ja
+
+jb
+
+jd6.48.50.50
+
+je6.48.50.50
+
+jf
+
+jg
+
+ka2.0.0.0.0
+
+kb2.0.0.0
+
+kc
+
+kd
+
+ke
+
+kf
+
+la
+
+lb
+
+oa
+
+os
+
+ob
+
+oc
+
+od
+
+oe
+
+of3.22.0.0.0
+
+lc
+
+m0
+
+n00.43.0.0.2.26.100.62.48.3.61
+
+n10.43.0.0.2.54.97.60.63.3.61
+
+s0
+
+og
+
+oh
+
+oo
+
+op
+
+oq
+
+or
+
+om
+
+on
+
+ok
+
+ol
+
+oi
+
+oj
+
+ad0.0.0.0.0.0.0.0.0.0

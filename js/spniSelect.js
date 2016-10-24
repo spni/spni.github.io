@@ -501,7 +501,7 @@ function clickedRandomGroupButton () {
 /************************************************************
  * The player clicked on the all random button.
  ************************************************************/
-function clickedRandomFillButton () {
+function clickedRandomFillButton (predicate) {
 	/* compose a copy of the loaded opponents list */
 	var loadedOpponentsCopy = [];
 	
@@ -520,7 +520,13 @@ function clickedRandomFillButton () {
 			}
 		}
 		if (position == -1) {
-			loadedOpponentsCopy.push(loadedOpponents[i]);
+			if(predicate) {
+				if(predicate(loadedOpponents[i])) {
+					loadedOpponentsCopy.push(loadedOpponents[i]);
+				}
+			} else {
+				loadedOpponentsCopy.push(loadedOpponents[i]);
+			}
 		}
 	}
 	

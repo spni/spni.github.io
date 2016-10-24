@@ -1,0 +1,146 @@
+#required for behaviour.xml
+first=Mileena
+last=
+label=Mileena
+gender=female
+size=large
+#Number of phases to "finish"
+timer=20
+
+#required for meta.xml
+#start picture
+pic=0-calm
+height=5'9"
+from=Mortal Kombat
+writer=Throwaway10671
+artist=Throwaway10671
+description=Mileena of Mortal Kombat, wearing her iconic "Flesh Pits" outfit. 
+
+#Mileena's Clothing:
+clothes=Upper Bandages,upper bandages,important,upper
+clothes=Lower Bandages,lower bandages,important,lower
+
+#starting picture and text
+start=0-calm,Let us dance!
+
+##individual behaviour
+#entries without a number are used when there are no stage-specific entries
+
+#default card behaviour
+#you can include multiple entries to give the character multiple lines and/or appearances in that situation.
+#This is what a character says while they're exchanging cards.
+swap_cards=calm,May I have ~cards~ cards?
+swap_cards=calm,I'll take ~cards~.
+swap_Cards=calm,~cards~ new cards, please.
+
+#The character thinks they have a good hand
+good_hand=happy,Splendid!
+good_hand=happy,Oh, how nice.
+hood_hand=happy,Great hand!
+
+#The character thinks they have a bad hand
+okay_hand=calm,These cards are alright.
+okay_hand=calm,I have an average hand.
+okay_hand=calm,This is a decent hand.
+
+#The character thinks they have a bad hand
+bad_hand=calm,These cards could be better...
+bad_hand=calm,This is a bad hand.
+bad_hand=calm,Some bad cards right here.
+
+#stripping default
+#character is stripping situations
+#Losing Upper Bandages/Topless
+0-must_strip_winning=loss,Oh! It's finally my turn to strip.
+0-must_strip_winning=loss,I don't know how I've been winning this long. I only wore this because I wanted to show off. 
+0-must_strip_normal=loss,I lost that hand, my turn to put on a show. 
+0-must_strip_losing=loss,Looks like I get to be the first to take it off. 
+0-stripping=strip,I'm surprised these haven't fallen off already
+1-stripped=stripped,Like my breasts? Stare all you want...
+
+#Losing Lower Bandages/Nude
+1-must_strip_winning=loss,I don't know how I've been winning this long. I only wore this because I wanted to show off. 
+1-must_strip_normal=loss,All eyes on me, it's my turn to strip. 
+1-must_strip_losing=loss,I lost again, now you really get to see it all!
+1-stripping=strip,Just going to pull these bandages off down there...
+2-stripped=stripped,Do you like what you see? It feels good to show it all off like this.
+
+#masturbation
+#these situations relate to when the character is masturbating
+#these only come up in the relevant stages, so you don't need to include the stage numbers here
+#just remember which stage is which when you make the images
+must_masturbate_first=loss,I have to masturbate first? This is embarrassing but for some reason it's turning me on.
+must_masturbate=loss,Finally! I've been extremely turned on for a while now. I'm ready for my release.
+start_masturbating=starting,Stare at me all you want. I hope you enjoy me as much as I do.
+masturbating=horny,Ohhhh... This is feeling really good!
+heavy_masturbating=heavy,Wow! I am really close to climaxing now...
+finishing_masturbating=finishing,CUMALITY!
+finished_masturbating=finished,That felt so good... It's so much better with an audience!
+
+game_over_defeat=happy,Congratulations ~name~! Did you enjoy seeing me naked?
+game_over_victory=calm,Flawless victory!
+
+male_human_must_strip=happy,A male is stripping? It's about time!
+male_must_strip=happy,Yes! A guy is stripping!
+
+male_removing_accessory=sad,Only your ~clothing~? Come on ~name~ look at how little I am wearing. This isn't fair.
+male_removed_accessory=calm,If that's all you are going to take off right now then at least flash us or something.
+
+male_removing_minor=happy,You're getting closer and closer to being naked!
+male_removed_minor=horny,It is nice to see you more exposed, ~name~.
+
+male_removing_major=happy,Slowly take off your ~clothing~ now ~name~. Give us a show!
+male_removed_major=horny,Don't mind me staring...
+male_removed_major=horny,Without your ~clothing~ on you look pretty sexy, ~name~...
+
+male_chest_will_be_visible=interested,I've been looking forward to this, ~name~. 
+male_chest_is_visible=horny,Wow! Nice chest, ~name~.
+
+#male crotches have different sizes, allowing your character to have different responses
+male_crotch_will_be_visible=happy,YES! It's finally time for ~name~ to expose his penis! I can't wait to see it.
+male_small_crotch_is_visible=calm,Uh that's pretty small... Want me to rub it and see how big it really gets?
+male_medium_crotch_is_visible=horny,Nice! Look at how hard you are, ~name~. I can tell you have been staring at me...
+male_large_crotch_is_visible=shocked,WOAH! It's huge! I'm so turned on right now...
+
+#male masturbation default
+male_must_masturbate=happy,OH! It's ~name~'s turn to start jerking off! This is going to be good...
+male_start_masturbating=horny,Yes ~name~! Just like that! Spread your legs wide so we can all see it.
+male_masturbating=horny,Keep stroking ~name~, I want to see you climax in front of us.
+male_masturbating=horny,I see you staring at me while you do that, do I excite you?
+male_masturbating=horny,It's getting bigger the longer you do that! I can't keep my eyes off it!
+male_masturbating=horny,How does it feel? We are all staring at it. 
+male_masturbating=horny,This is really turning me on...
+male_masturbating=horny,Just like that ~name~... Up and down... Keep going...
+male_finished_masturbating=shocked,WOW! That's a lot of cum!
+male_finished_masturbating=shocked,NICE! You can use my bandages to clean off if you want.
+male_finished_masturbating=shocked,OH! It went everywhere!
+male_finished_masturbating=shocked,Damn ~name~ I bet that felt really good.
+
+#female stripping default
+#these are mostly the same as the female stripping cases, but the female's size refers to their chest rather than their crotch.
+female_human_must_strip=interested,Your turn to strip, ~name~!
+female_must_strip=interested,Get ready to strip, ~name~.
+
+female_removing_accessory=sad,Only your ~clothing~? Come on ~name~ look at how little I am wearing. This isn't fair.
+female_removed_accessory=calm,If that's all you are going to take off right now then at least flash us or something.
+
+female_removing_minor=happy,You're getting closer and closer to being naked!
+female_removed_minor=horny,It is nice to see you more exposed, ~name~.
+
+female_removing_major=happy,Slowly take off your ~clothing~ now ~name~. Give us a show!
+female_removed_major=horny,Don't mind me staring...
+
+female_chest_will_be_visible=interested,I'm looking forward to this I want to see if they are as big as mine.
+female_small_chest_is_visible=calm,Those are pretty small. Are you envious of me, ~name~?
+female_medium_chest_is_visible=horny,Nice! But mine are still bigger.
+female_large_chest_is_visible=shocked,WOAH! Those might just be bigger than mine. Impressive!
+
+female_crotch_will_be_visible=happy,Time to show us your pussy, ~name~. Slide those panties off.
+female_crotch_is_visible=horny,Very pretty! Look at how wet you are, I think you are enjoying this.
+
+#female masturbation default
+female_must_masturbate=interested,It's time for ~name~ to start masturbating now! This is going to be fun.
+female_start_masturbating=horny,Yeah just like that, rub it good. 
+female_masturbating=horny,Feels good doesn't it?
+female_finished_masturbating=shocked,Wow! You squirt like a waterfall, ~name~!
+
