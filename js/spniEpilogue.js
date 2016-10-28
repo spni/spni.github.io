@@ -51,6 +51,10 @@ function getCenteredPosition(width){
  * Load the Epilogue data for a character
  ************************************************************/
 function loadEpilogueData(player){
+    if (!players[player]) {
+        return [];
+    }
+    
 	var xml = players[player].xml;
 	if (!xml) {return [];} //return an empty list if a character doesn't have an XML variable. (Most likely because they're the player.)
 	
