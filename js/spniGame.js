@@ -479,16 +479,16 @@ function completeRevealPhase () {
         
         /* hide the dialogue bubbles */
         for (var i = 1; i < players.length; i++) {
-            $gameDialogues[i].html("");
-            $gameAdvanceButtons[i].css({opacity : 0});
-            $gameBubbles[i].hide();
+            $gameDialogues[i-1].html("");
+            $gameAdvanceButtons[i-1].css({opacity : 0});
+            $gameBubbles[i-1].hide();
         }
         
         /* reset the round */
         mainButton.html("Deal");
         $mainButton.attr('disabled', false);
         if (players[HUMAN_PLAYER].out && AUTO_FORFEIT) {
-            setTimeout(advanceGame,FORFEIT_DELAY);
+            setTimeout(advanceGame, FORFEIT_DELAY);
         }
         return;
     }
