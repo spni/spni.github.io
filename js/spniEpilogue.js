@@ -253,7 +253,7 @@ function doEpilogueModal(){
 	//identify the winning player
 	var winner = -1;
 	for (var i = 0; i < players.length; i++){
-		if (!players[i].out){
+		if (players[i] && !players[i].out){
 			winner = i;
 			break;
 		}

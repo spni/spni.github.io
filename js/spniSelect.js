@@ -761,7 +761,7 @@ function updateSelectionVisuals () {
     }
     
     /* if all opponents are loaded, then enable progression */
-    if (loaded == players.length - 1) {
+    if (loaded >= 2) {
         $selectMainButton.attr('disabled', false);
     } else {
         $selectMainButton.attr('disabled', true);

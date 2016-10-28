@@ -196,12 +196,14 @@ function dullHand (player) {
  ************************************************************/
 function hideHand (player) {
 	for (var i = 0; i < hands[player].cards.length; i++) {
-		if (!players[player].out) {
-            $cardCells[player][i].attr('src', UNKNOWN_CARD_IMAGE);
-		} else {
-			$cardCells[player][i].attr('src', BLANK_CARD_IMAGE);
-		}
-		fillCard(player, i);
+        if (players[player]) {
+            if (!players[player].out) {
+                $cardCells[player][i].attr('src', UNKNOWN_CARD_IMAGE);
+            } else {
+                $cardCells[player][i].attr('src', BLANK_CARD_IMAGE);
+            }
+            fillCard(player, i);
+        }
 	}
 }
 
@@ -364,7 +366,7 @@ function determineLowestHand () {
 	console.log();
     
 	for (i = 0; i < players.length; i++) {
-		if (!players[i].out) {
+		if (players[i] && !players[i].out) {
 			if (hands[i].strength < lowestStrength) {
 				lowestStrength = hands[i].strength;
 				lowestPlayers = [i];
