@@ -620,7 +620,7 @@ function handleGameOver() {
 		$mainButton.html("Ending?");
 		$mainButton.attr('disabled', false);
         actualMainButtonState = false;
-		window.setTimeout(doEpilogueModal, SHOW_ENDING_DELAY); //start the endings
+		//window.setTimeout(doEpilogueModal, SHOW_ENDING_DELAY); //start the endings
 	} else {
 		/* someone is still forfeiting */
 		var context = "Wait";
@@ -739,7 +739,9 @@ function advanceGame () {
 		showRestartModal(); //No delay here
 		$mainButton.attr('disabled', false);
         actualMainButtonState = false;
-	} else {
+	} else if (context == "Ending?") {
+        doEpilogueModal(); //start the endings
+    } else {
         if (AUTO_FADE) forceTableVisibility(true);
         console.log("Invalid main button state: "+context);
     }
