@@ -65,7 +65,7 @@ function tickForfeitTimers (context) {
 	var masturbationDelay = 400; //wait for 400ms so that the player can see what the characters are saying
 	
     for (var i = 0; i < players.length; i++) {
-        if (players[i].out && timers[i] > 0) {
+        if (players[i] && players[i].out && timers[i] > 0) {
         	timers[i]--;
             
 			if (i == HUMAN_PLAYER) {

@@ -51,6 +51,10 @@ function getCenteredPosition(width){
  * Load the Epilogue data for a character
  ************************************************************/
 function loadEpilogueData(player){
+    if (!players[player]) {
+        return [];
+    }
+    
 	var xml = players[player].xml;
 	if (!xml) {return [];} //return an empty list if a character doesn't have an XML variable. (Most likely because they're the player.)
 	
@@ -253,7 +257,7 @@ function doEpilogueModal(){
 	//identify the winning player
 	var winner = -1;
 	for (var i = 0; i < players.length; i++){
-		if (!players[i].out){
+		if (players[i] && !players[i].out){
 			winner = i;
 			break;
 		}
