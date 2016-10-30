@@ -82,6 +82,12 @@ def get_emotion_data():
 	em["blush_mod"] = 0
 	emotions["angry"] = em
 	
+	#smug
+	em = dict()
+	em["pose"] = "aa20.72.0.42.49.20.72.0.4.49_ab_ac2.52.52.52_ba50_bb18.1_bc150.500.0.0.1_bd18_be180_ca61.0.40.61.14.8.34.0.9_cb0_da1.0.0.100_db_dd9.0.34.50.45_dh1.30.50.50.0_di4_qa_qb_dc0.1.1.1.1_ea26.A27241.A27241.56.0.0_ec10.0.A27241.A27241.56_ed28.50.1.1.A27241.56_ef_eg_eh4.A27241_r0_fa2.50.50.60.50.38.56_fb10_fc0.9.55.0.9.55.50.61.61_fd1.0.19.A27241.56_fe58.61_ff0000000000_fg0.50_t0_pa0.0.0.0.40.50.85.85.0.0_pb_pc_pd_pe_ga0_gb1_gc0.0_ge0000000000_gh_gf_gg_gd10000000_ha63.63_hb49.1.44.99_hc0.35.39.0.35.39_hd2.1.49.49"
+	em["blush_mod"] = 0
+	emotions["smug"] = em
+	
 	return emotions
 
 def get_image_data():

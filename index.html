@@ -19,9 +19,10 @@
     <button id="title-settings-button" class="bordered smooth-button smooth-button-red" onclick="showGameSettingsModal()">
       <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
     </button>
-    <div id="title-version-label" class="bordered banner-flair">
-      v11.3.2
-    </div>
+    <button id="title-version-button" class="bordered smooth-button smooth-button-red banner-flair" onclick="showVersionModal()">
+      v11.6.0
+    </button>
+      
     <button id="title-credits-button" class="bordered smooth-button smooth-button-red banner-flair" onclick="showCreditModal()">
       Credits
     </button>
@@ -996,6 +997,71 @@
 </div>
 <!-- End of Credits Modal -->
 
+    
+<!-- Start of Version Modal -->
+<div id="version-modal" class="modal table-modal fade" role="dialog">
+	<div class="modal-table-container">
+	<div class="modal-cell-container">
+	<div class="bordered modal-dialog wide-modal-dialog">
+	<div class="bordered modal-dialog-surface">
+		<!-- Start of Modal Content -->
+		<div class="modal-content">
+			<div class="modal-header">
+              <h3 class="modal-title text-center"><b>Version Details</b></h3>
+			</div>
+			<div class="modal-body">
+				<table class="modal-body-stretch-container" style="margin: 0 auto;">
+                <tr>
+                  <td style="width:10%; padding-bottom: 1.5%">
+					v11.6.0
+				  </td>
+                  <td style="width:5%"></td>
+                  <td style="width:85%; padding-bottom: 1.5%">
+                    Link has joined the game!
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width:10%; padding-bottom: 1.5%">
+					v11.5.0
+				  </td>
+                  <td style="width:5%"></td>
+                  <td style="width:85%; padding-bottom: 1.5%">
+                    Kim Possible has joined the game!
+                  </td>
+                </tr>
+				<tr>
+                  <td style="width:10%; padding-bottom: 1.5%">
+					v11.4.2
+				  </td>
+                  <td style="width:5%"></td>
+                  <td style="width:85%; padding-bottom: 1.5%">
+                    Absolute ties should no longer freeze the game.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width:10%; padding-bottom: 1.5%">
+					v11.4.0
+				  </td>
+                  <td style="width:5%"></td>
+                  <td style="width:85%; padding-bottom: 1.5%">
+                    Added this modal. 
+                    Added the ability to play against as few as 2 opponents (bugs may still exist when playing with less than 4 opponents, please report them).
+                  </td>
+                </tr>
+				</table>
+			</div>
+			<div class="modal-footer">
+				<button id="credit-modal-button" class="bordered smooth-button modal-button" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+		<!-- End of Modal Content -->
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+<!-- End of Version Modal -->
+
 
 <!-- Game Screen -->
 <div id="game-screen" class="screen-container" hidden>
@@ -1003,23 +1069,23 @@
 	
     <!-- Dialogue Bubbles -->
     <div class="dialogue-bubble-row">
-      <div class="bordered left dialogue-bubble-area">
-        <div id="game-bubble-1" class="dialogue-bubble dialogue-centre arrow-down">
+      <div id="game-bubble-1" class="bordered left dialogue-bubble-area">
+        <div class="dialogue-bubble dialogue-centre arrow-down">
           <span id="game-dialogue-1" class="dialogue"></span>
         </div>
       </div>
-      <div class="bordered halfLeft dialogue-bubble-area">
-        <div id="game-bubble-2" class="dialogue-bubble dialogue-centre arrow-down">
+      <div id="game-bubble-2" class="bordered halfLeft dialogue-bubble-area">
+        <div class="dialogue-bubble dialogue-centre arrow-down">
           <span id="game-dialogue-2" class="dialogue"></span>
         </div>
       </div>
-      <div class="bordered center dialogue-bubble-area">
-        <div id="game-bubble-3" class="dialogue-bubble dialogue-centre arrow-down">
+      <div id="game-bubble-3" class="bordered center dialogue-bubble-area">
+        <div class="dialogue-bubble dialogue-centre arrow-down">
           <span id="game-dialogue-3" class="dialogue"></span>
         </div>
       </div>
-      <div class="bordered farHalfLeft dialogue-bubble-area">
-        <div id="game-bubble-4" class="dialogue-bubble dialogue-centre arrow-down">
+      <div id="game-bubble-4" class="bordered farHalfLeft dialogue-bubble-area">
+        <div class="dialogue-bubble dialogue-centre arrow-down">
           <span id="game-dialogue-4" class="dialogue"></span>
         </div>
       </div>

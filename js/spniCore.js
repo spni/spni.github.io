@@ -60,6 +60,7 @@ $epilogueScreen = $('#epilogue-screen');
 
 /* Modals */
 $creditModal = $('#credit-modal');
+$versionModal = $('#version-modal');
 $gameSettingsModal = $('#game-settings-modal');
 
 /* Screen State */
@@ -231,6 +232,13 @@ function restartGame () {
  ************************************************************/
 function showCreditModal () {
     $creditModal.modal('show');
+}
+
+/************************************************************
+ * The player clicked the version button. Shows the version modal.
+ ************************************************************/
+function showVersionModal () {
+    $versionModal.modal('show');
 }
 
 /************************************************************

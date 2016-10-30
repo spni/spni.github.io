@@ -177,11 +177,13 @@ function determineStrippingSituation (player) {
 	/* gather the clothing amounts of each player */
 	var clothingCounts = [0, 0, 0, 0, 0];
 	for (var i = 0; i < players.length; i++) {
-		for (var j = 0; j < players[i].clothing.length; j++) {
-			if (players[i].clothing[j]) {
-				clothingCounts[i]++;
-			}
-		}
+        if (players[i]) {
+            for (var j = 0; j < players[i].clothing.length; j++) {
+                if (players[i].clothing[j]) {
+                    clothingCounts[i]++;
+                }
+            }
+        }
 	}
 	
 	/* determine if this player's clothing count is the highest or lowest */
@@ -215,7 +217,7 @@ function playerMustStrip (player) {
 	/* count the clothing the player has remaining */
     var clothes = 0;
     for (var i = 0; i < players[player].clothing.length; i++) {
-        if (players[player].clothing[i]) {
+        if (players[player] && players[player].clothing[i]) {
             clothes++;
         }
     }
@@ -263,7 +265,7 @@ function prepareToStripPlayer (player) {
     /* count the clothing the player has remaining */
     var clothes = 0;
     for (var i = 0; i < players[player].clothing.length; i++) {
-        if (players[player].clothing[i]) {
+        if (players[player] && players[player].clothing[i]) {
             clothes++;
         }
     }
@@ -482,11 +484,13 @@ function determineForfeitSituation (player) {
 	/* check to see how many players are out */
 	var out = 0;
 	for (var i = 0; i < players.length; i++) {
-		for (var j = 0; j < players[i].clothing.length; j++) {
-			if (players[i].out) {
-				out++;
-			}
-		}
+        if (players[i]) {
+            for (var j = 0; j < players[i].clothing.length; j++) {
+                if (players[i].out) {
+                    out++;
+                }
+            }
+        }
 	}
 	console.log("Check:"+out);
 	
@@ -507,7 +511,7 @@ function stripPlayer (player) {
     /* count the clothing the player has remaining */
     var clothes = 0;
     for (var i = 0; i < players[player].clothing.length; i++) {
-        if (players[player].clothing[i]) {
+        if (players[player] && players[player].clothing[i]) {
             clothes++;
         }
     }
