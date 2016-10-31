@@ -1,0 +1,800 @@
+#required for behaviour.xml
+first=Velma
+last=Dinkley
+label=Velma
+gender=female
+size=medium
+#Number of phases to "finish"
+timer=21
+
+#required for meta.xml
+#start picture
+pic=0-calm
+height=5'6"
+from=Scooby Doo
+writer=The Other Dude
+artist=The Other Dude
+description=The bespectacled resident genius of Mystery Inc. She is often the one able to decipher the clues and solve the crimes.
+#clothes
+#these must be in order of removal
+#the values are formal name, lower case name, how much they cover, what they cover
+#no spaces around the commas
+#how much they cover = important (covering nudity), major (a lot of skin), minor (small amount of skin), extra (accessories, boots, etc)
+#what they cover = upper (upper body), lower (lower body), other (neither).
+#there must be 2-8 entries, and at least one "important" piece of clothing on each of the upper and lower locations.
+#these are some examples from Rosalina:
+clothes=Shoes,shoes,extra,other
+clothes=Socks,socks,minor,lower
+clothes=Sweater,sweater,major,upper
+clothes=Skirt,skirt,major,lower
+clothes=Bra,bra,important,upper
+clothes=Glasses,glasses,extra,other
+clothes=Panties,panties,important,lower
+
+#starting picture and text
+start=0-calm,Hello, I'm Velma Dinkley, and poker is just one of the many things I am an expert at.
+
+##individual behaviour
+#entries without a number are used when there are no stage-specific entries
+
+#default card behaviour
+#you can include multiple entries to give the character multiple lines and/or appearances in that situation.
+#This is what a character says while they're exchanging cards.
+swap_cards=calm,I play the odds. I need ~cards~.
+swap_cards=calm,Let's take a chance. Can I get ~cards~?
+swap_cards=calm,Odds are I need ~cards~.
+swap_Cards=calm,~cards~ should do it this time.
+swap_Cards=calm,Maybe ~cards~ more cards will lead me to a clue.
+
+#The character thinks they have a good hand
+good_hand=happy,Let's get jinkie with it!
+good_hand=happy,The secret is to play the odds.
+good_hand=happy,Yes, that is masterful.
+good_hand=calm,The secret to winning at poker is to keep a straight face.
+
+#The character thinks they have a decent hand
+okay_hand=calm,The odds say that I'm going to be okay.
+okay_hand=calm,This hand is far from the scariest thing I have ever seen.
+okay_hand=calm,The secret to winning at poker is to keep a straight face.
+
+#The character thinks they have a bad hand
+bad_hand=sad,This hand seems pretty scary.
+bad_hand=sad,Oh brother.
+bad_hand=sad,I quit!
+bad_hand=calm,The secret to winning at poker is to keep a straight face.
+
+#stripping default
+#This is the character says once they've lost a hand, but before they strip
+must_strip_winning=lost,It's a mystery why you have lost more clothes than I have.
+must_strip_winning=lost,Well, everyone else is doing it. Fair is fair.
+must_strip_normal=lost,There's a very logical explanation for all of this.
+must_strip_normal=lost,I know you. All you care about are swimsuit models.
+must_strip_normal=lost,Yippie for you.
+must_strip_losing=lost,Kinda makes you nostalgic for the homicidal creatures, doesn't it?
+stripping=stripping,What the character says as they take their clothes off. The picture and text should be unique to what they're taking off.
+stripped=stripped,What the character says just after they take their clothes off.
+
+#masturbation
+#these situations relate to when the character is masturbating
+#these only come up in the relevant stages, so you don't need to include the stage numbers here
+#just remember which stage is which when you make the images
+must_masturbate_first=lost,This always happens when I listen to Fred and we split up. Always.
+must_masturbate=lost,Let's just say that I've done this enough that I don't need my glasses.
+start_masturbating=starting,My inner workings are certainly no mystery to me.
+masturbating=stroking,This is hotter than the time I hung out with The Three Stooges.
+masturbating=stroking,This is hotter than the time I hung out with KISS.
+masturbating=stroking,This is hotter than the time I hung out with Davy Jones.
+masturbating=stroking,This is hotter than the time I hung out with Josie and the Pussycats.
+masturbating=stroking,This is hotter than the time I hung out with Gomez and Patricia Addams.
+masturbating=stroking,This is hotter than the time I hung out with Batman and Robin.
+heavy_masturbating=heavy,This is even hotter than the time I hung out with the Harlem Globetrotters!
+finishing_masturbating=orgasm,JIIIIINNNNKIIIIEEEESSSSSSSS!!!!!
+finished_masturbating=done,Oh. There are my glasses.
+#I don't think this line is actually used by the game.
+game_over_defeat=sad,I know I didn't imagine all those kooky things that just happened.
+
+#situations where another male character is stripping
+male_human_must_strip=won,What's the problem, exactly, ~name~? 
+male_must_strip=won,What's the problem, exactly, ~name~?
+male_human_must_strip=won,You know what, ~name~? You've really put it into perspective for me.
+male_must_strip=won,You know what, ~name~? You've really put it into perspective for me.
+male_human_must_strip=won,I only trust the facts, and all the facts say that you lost, ~name~.
+male_must_strip=won,I only trust the facts, and all the facts say that you lost, ~name~.
+male_human_must_strip=won,Don't tell me you're scared, ~name~.
+male_must_strip=won,Don't tell me you're scared, ~name~.
+male_human_must_strip=won,I've got an idea. ~name~ should take off some clothes.
+male_must_strip=won,I've got an idea. ~name~ should take off some clothes.
+
+male_removing_accessory=calm,Most mysteries start off slowly, ~name~. It's okay.
+male_removed_accessory=calm,Just your ~clothing~? Well, we know that isn't the treasure the bad guy is after.
+
+male_removing_minor=calm,Jinkies! What are you going to take off next, ~name~?
+male_removed_minor=happy,Look, a clue! ~Clothing~ there on the Inventory floor! I think that used to belong to ~name~!
+
+male_removing_major=won,No time for a commerical break now, ~name~. Take something off!
+male_removed_major=happy,You could use a little sunlight, ~name~. You look like you've seen a ghost.
+male_removed_major=horny,Wow, ~name~. You look much better without your ~clothing~.
+male_removed_major=horny,You look like you're enjoying this almost as much as I'm enjoying looking at you.
+
+male_chest_will_be_visible=won,We're getting close to the end, ~name~.
+male_chest_is_visible=happy,Awww! You look cold. And cute!
+
+#male crotches have different sizes, allowing your character to have different responses
+male_crotch_will_be_visible=horny,It's time we get to the bottom of this.
+male_small_crotch_is_visible=happy,I guess haunted bones are one thing Scooby's not scared of, ~name~.
+male_medium_crotch_is_visible=horny,I guess haunted bones are one thing Scooby's not scared of, ~name~.
+male_large_crotch_is_visible=shocked,I guess haunted bones are one thing Scooby's not scared of, ~name~.
+
+#male masturbation default
+male_must_masturbate=won,Sounds like your nine lives are up, ~name~.
+male_start_masturbating=horny,Just let me know if you need a hand with that thing, ~name~..
+male_masturbating=calm,That unearthly moaning coming from ~name~? That's G-sharp I believe.
+male_finished_masturbating=shocked,Even though I'm sure there's a perfectly logical explanation, that was way scary! 
+
+#female stripping default
+#these are mostly the same as the female stripping cases, but the female's size refers to their chest rather than their crotch.
+female_human_must_strip=won,What's the problem, exactly, ~name~? 
+female_must_strip=won,What's the problem, exactly, ~name~?
+female_human_must_strip=won,You know what, ~name~? You've really put it into perspective for me.
+female_must_strip=won,You know what, ~name~? You've really put it into perspective for me.
+female_human_must_strip=won,I only trust the facts, and all the facts say that you lost, ~name~.
+female_must_strip=won,I only trust the facts, and all the facts say that you lost, ~name~.
+female_human_must_strip=won,Don't tell me you're scared, ~name~.
+female_must_strip=won,Don't tell me you're scared, ~name~.
+female_human_must_strip=won,I've got an idea. ~name~ should take off some clothes.
+female_must_strip=won,I've got an idea. ~name~ should take off some clothes.
+
+female_removing_accessory=calm,Most mysteries start off slowly, ~name~. It's okay.
+female_removed_accessory=calm,Okay, Enough with the ~clothing~. It's time to get down to business.
+
+female_removing_minor=calm,Things are beginning to really pick up, ~name~.
+female_removed_minor=happy,Look, a clue! ~Clothing~ there on the Inventory floor! I think that used to belong to ~name~!
+female_removed_minor=happy,Jinkies, ~name~! What are you planning on taking off next?
+
+female_removing_major=won,You're getting down to some serious decisions, ~name~.
+female_removed_major=happy,You could use a little sunlight, ~name~. You look like you've seen a ghost.
+female_removed_major=happy,I don't know if taking off your ~clothing~ was the best choice there, ~name~.
+
+female_chest_will_be_visible=happy,Just know that I'm getting ready to compare boobs, ~name~. Um... for science, of course.
+female_small_chest_is_visible=won,It's a mystery why you keep those covered up, ~name~.
+female_medium_chest_is_visible=won,I would't mind losing my glasses and fumbling around all over those, ~name~!
+female_large_chest_is_visible=shocked,Oh dear! Those are huge!
+
+female_crotch_will_be_visible=won,Looks like it's time we get to the bottom of this.
+female_crotch_is_visible=horny,There's no monster! It's just ~name~ totally bottomless!
+
+#female masturbation default
+female_must_masturbate=won,It's time for "A Creepy Tangle in the Bermuda Triangle," ~name~.
+female_start_masturbating=happy,Ready... GO!
+female_masturbating=calm,That unearthly moaning coming from ~name~? That's G-sharp I believe.
+female_finished_masturbating=shocked,That's one fish story no one will believe.
+
+
+#These responses are stage specific.
+#Refer to the above entries to see what sort of situations these refer to, and what the default images are.
+#Each situation has been repeated enough for the maximum eight items of clothing.
+#If your character has fewer items, delete the extra entries.
+#if you don't include a stage-specific entry for a situation, the script will use the default response as defined above.
+
+
+#character is stripping situations
+#losing first item of clothing -SHOES-
+0-must_strip_winning=lost,No big deal. I'm just going to start with my shoes.
+0-must_strip_normal=lost,No big deal. I'm just going to start with my shoes.
+0-must_strip_losing=lost,No big deal. I'm just going to start with my shoes. 
+0-stripping=stripping,Hold up. This looks like a note from "The Phantom Shadow."
+1-stripped=stripped,"The first is gone, the rest will go, unless you leave the island, and ROW! ROW! ROW!"
+
+#losing second item of clothing -SOCKS-
+1-must_strip_winning=,
+1-must_strip_normal=,
+1-must_strip_losing=,
+1-stripping=stripping,This floor looks really cold. Do I have to do this?
+2-stripped=stripped,I have dozens of pairs of those socks. You can keep them.
+
+#losing third item of clothing -SWEATER-
+2-must_strip_winning=lost,By my calculations, I'm still winning this game.
+2-must_strip_normal=lost,Sheer chance suggested it was going to be my turn soon enough.
+2-must_strip_losing=lost,The probability of me continuing to lose at this pace is low.
+2-stripping=stripping,We're here to solve a mystery. And if taking my sweater helps...
+3-stripped=stripped,...Then you can have my sweater.
+
+#losing fourth item of clothing -SKIRT-
+3-must_strip_winning=,
+3-must_strip_normal=,
+3-must_strip_losing=,
+3-stripping=stripping,You don't think I've changed clothes in the back of the Mystery Machine before?
+4-stripped=stripped,And, yet somehow this is different.
+
+#losing fifth item of clothing -BRA-
+4-must_strip_winning=lost,There's something strange about this whole thing.
+4-must_strip_normal=lost,There's something strange about this whole thing.
+4-must_strip_losing=lost,There's something strange about this whole thing.
+4-stripping=stripping,Wait! Are the eyes in that picture looking at me?
+5-stripped=stripped,Let's get on with the game. I'm either creeped out or cold.
+
+#losing sixth item of clothing -GLASSES-
+5-must_strip_winning=lost,Well I'm not ready to take my panties off yet. So you know what happens next:
+5-must_strip_normal=lost,Well I'm not ready to take my panties off yet. So you know what happens next:
+5-must_strip_losing=lost,Well I'm not ready to take my panties off yet. So you know what happens next:
+5-stripping=stripping,My glasses! Where's my glasses?!
+6-stripped=stripped,I can't see a thing without my glasses!
+
+#losing seventh item of clothing -PANTIES-
+6-must_strip_winning=lost,I can't see you looking at me anymore, so what's it matter?
+6-must_strip_normal=lost,I can't see you looking at me anymore, so what's it matter?
+6-must_strip_losing=lost,I can't see you looking at me anymore, so what's it matter?
+6-stripping=stripping,This is what you apparently wanted to see.
+7-stripped=stripped,There's something strange about this whole thing.
+
+#card cases
+#fully clothed
+0-good_hand=,
+0-okay_hand=,
+0-bad_hand=,
+
+#lost shoes
+1-good_hand=,
+1-okay_hand=,
+1-bad_hand=,
+
+#lost socks
+2-good_hand=,
+2-okay_hand=,
+2-bad_hand=,
+
+#lost sweater
+3-good_hand=,
+3-okay_hand=,
+3-bad_hand=,
+
+#lost skirt
+4-good_hand=,
+4-okay_hand=,
+4-bad_hand=,
+
+#lost bra
+5-good_hand=,
+5-okay_hand=,
+5-bad_hand=,
+
+#lost glasses
+6-good_hand=blind,I can't see a thing without my glasses. I don't know if these cards are any good or not.
+6-okay_hand=blind,I can't see a thing without my glasses. I don't know if these cards are any good or not.
+6-bad_hand=blind,I can't see a thing without my glasses. I don't know if these cards are any good or not.
+
+#lost panties (all clothing)
+#using negative numbers counts back from the final stage
+#-3 is while nude, -2 is masturbating, -1 is finished
+#this lets you use the same numbers with different amounts of clothing
+-3-good_hand=blind,I can't see a thing without my glasses. I don't know if these cards are any good or not.
+-3-okay_hand=blind,I can't see a thing without my glasses. I don't know if these cards are any good or not.
+-3-bad_hand=blind,I can't see a thing without my glasses. I don't know if these cards are any good or not.
+
+##other player must strip specific
+#fully clothed
+0-male_human_must_strip=won,This is gonna be easier than I thought, ~name~.
+0-male_must_strip=won,This is gonna be easier than I thought, ~name~.
+0-female_human_must_strip=won,This is gonna be easier than I thought, ~name~.
+0-female_must_strip=won,This is gonna be easier than I thought, ~name~.
+
+#lost shoes
+1-male_human_must_strip=,
+1-male_must_strip=,
+1-female_human_must_strip=,
+1-female_must_strip=,
+
+#lost socks
+2-male_human_must_strip=,
+2-male_must_strip=,
+2-female_human_must_strip=,
+2-female_must_strip=,
+
+#lost sweater
+3-male_human_must_strip=,
+3-male_must_strip=,
+3-female_human_must_strip=,
+3-female_must_strip=,
+
+#lost skirt
+4-male_human_must_strip=,
+4-male_must_strip=,
+4-female_human_must_strip=,
+4-female_must_strip=,
+
+#lost bra
+5-male_human_must_strip=,
+5-male_must_strip=,
+5-female_human_must_strip=,
+5-female_must_strip=,
+
+#lost glasses
+6-male_human_must_strip=blind,Go... whoever! Take off that... Clothing!
+6-male_must_strip=blind,Go... whoever! Take off that... Clothing!
+6-female_human_must_strip=blind,Go... whoever! Take off that... Clothing!
+6-female_must_strip=blind,Go... whoever! Take off that... Clothing!
+
+#lost panties (all clothing items)
+-3-male_human_must_strip=blind,Go... whoever! Take off that... Clothing!
+-3-male_must_strip=blind,Go... whoever! Take off that... Clothing!
+-3-female_human_must_strip=blind,Go... whoever! Take off that... Clothing!
+-3-female_must_strip=blind,Go... whoever! Take off that... Clothing!
+
+#masturbating
+-2-male_human_must_strip=stroking,It sounds like someone lost. Take something off!
+-2-male_must_strip=stroking,It sounds like someone lost. Take something off!
+-2-female_human_must_strip=stroking,It sounds like someone lost. Take something off!
+-2-female_must_strip=stroking,It sounds like someone lost. Take something off!
+
+#finished
+-1-male_human_must_strip=won,I've got an idea. ~name~ should take off some clothes.
+-1-male_must_strip=won,I've got an idea. ~name~ should take off some clothes.
+-1-female_human_must_strip=won,I've got an idea. ~name~ should take off some clothes.
+-1-female_must_strip=won,I've got an idea. ~name~ should take off some clothes.
+-1-male_human_must_strip=won,I only trust the facts, and all the facts say that you lost, ~name~.
+-1-male_must_strip=won,I only trust the facts, and all the facts say that you lost, ~name~.
+-1-female_human_must_strip=won,I only trust the facts, and all the facts say that you lost, ~name~.
+-1-female_must_strip=won,I only trust the facts, and all the facts say that you lost, ~name~.
+-1-male_human_must_strip=won,You're one step closer to being like me, ~name~.
+-1-male_must_strip=won,You're one step closer to being like me, ~name~.
+-1-female_human_must_strip=won,You're one step closer to being like me, ~name~.
+-1-female_must_strip=won,You're one step closer to being like me, ~name~.
+
+##another character is removing accessories
+#fully clothed
+0-male_removing_accessory=,
+0-male_removed_accessory=,
+0-female_removing_accessory=,
+0-female_removed_accessory=,
+
+#lost shoes
+1-male_removing_accessory=,
+1-male_removed_accessory=,
+1-female_removing_accessory=,
+1-female_removed_accessory=,
+
+#lost socks
+2-male_removing_accessory=,
+2-male_removed_accessory=,
+2-female_removing_accessory=,
+2-female_removed_accessory=,
+
+#lost sweater
+3-male_removing_accessory=,
+3-male_removed_accessory=,
+3-female_removing_accessory=,
+3-female_removed_accessory=,
+
+#lost skirt
+4-male_removing_accessory=won,I hope you're taking off something good, ~name~.
+4-male_removed_accessory=sad,I'm down to my undies and you're only taking off your ~clothing~?
+4-female_removing_accessory=won,I hope you're taking off something good, ~name~.
+4-female_removed_accessory=sad,I'm down to my undies and you're only taking off your ~clothing~?
+
+#lost bra
+5-male_removing_accessory=won,I figure it's time for you to take off something exciting.
+5-male_removed_accessory=sad,Not fair! My boobs are out and you're only taking off your ~clothing~.
+5-female_removing_accessory=won,I figure it's time for you to take off something exciting.
+5-female_removed_accessory=sad,Not fair! My boobs are out and you're only taking off your ~clothing~.
+
+#lost glasses
+6-male_removing_accessory=blind,Can you hurry it up? I'd like to put my glasses back on.
+6-male_removed_accessory=blind,Why do I get the feeling that you didn't take off anything important?
+6-female_removing_accessory=blind,Can you hurry it up? I'd like to put my glasses back on.
+6-female_removed_accessory=blind,Why do I get the feeling that you didn't take off anything important?
+
+#lost panties
+-3-male_removing_accessory=blind,Can you hurry it up? I'd like to put my glasses back on.
+-3-male_removed_accessory=blind,Why do I get the feeling that you didn't take off anything important?
+-3-female_removing_accessory=blind,Can you hurry it up? I'd like to put my glasses back on.
+-3-female_removed_accessory=blind,Why do I get the feeling that you didn't take off anything important?
+
+#masturbating
+-2-male_removing_accessory=stroking,I can't focus on you right now, ~name~. I'm focusing on me.
+-2-male_removed_accessory=stroking,Besides, it's not like I can even see you.
+-2-female_removing_accessory=stroking,I can't focus on you right now, ~name~. I'm focusing on me.
+-2-female_removed_accessory=stroking,Besides, it's not like I can even see you.
+
+#finished
+-1-male_removing_accessory=,
+-1-male_removed_accessory=,
+-1-female_removing_accessory=,
+-1-female_removing_accessory=,
+-1-female_removed_accessory=,
+
+##another character is removing minor clothing items
+#fully clothed
+0-male_removing_minor=,
+0-male_removed_minor=,
+0-female_removing_minor=,
+0-female_removed_minor=,
+
+#lost shoes
+1-male_removing_minor=,
+1-male_removed_minor=,
+1-female_removing_minor=,
+1-female_removed_minor=,
+
+#lost socks
+2-male_removing_minor=,
+2-male_removed_minor=,
+2-female_removing_minor=,
+2-female_removed_minor=,
+
+#lost sweater
+3-male_removing_minor=,
+3-male_removed_minor=,
+3-female_removing_minor=,
+3-female_removed_minor=,
+
+#lost skirt
+4-male_removing_minor=won,By this point, you have to be stripping something good, right ~name~?
+4-male_removed_minor=sad,I'm practically naked and you're just taking off your ~clothing~?
+4-female_removing_minor=won,By this point, you have to be stripping something good, right ~name~?
+4-female_removed_minor=sad,I'm practically naked and you're just taking off your ~clothing~?
+
+#lost bra
+5-male_removing_minor=won,I'm practically naked, time for you to join me!
+5-male_removed_minor=sad,How did you still have your ~clothing~ but my boobs are already on display?
+5-female_removing_minor=won,I'm practically naked, time for you to join me!
+5-female_removed_minor=sad,How did you still have your ~clothing~ but my boobs are already on display?
+
+#lost glasses
+6-male_removing_minor=blind,I hope you're taking off something big. I need to win this game and then find my glasses.
+6-male_removed_minor=blind,I'm glad that I can't see you only taking off insignificant clothing, ~name~.
+6-female_removing_minor=blind,I hope you're taking off something big. I need to win this game and then find my glasses.
+6-female_removed_minor=blind,I'm glad that I can't see you only taking off insignificant clothing, ~name~.
+
+#lost panties (naked)
+-3-male_removing_minor=blind,I trust by now you have to be taking off something important, right?
+-3-male_removed_minor=blind,I'm glad that I can't see you only taking off insignificant clothing, ~name~.
+-3-female_removing_minor=blind,I trust by now you have to be taking off something important, right?
+-3-female_removed_minor=blind,I'm glad that I can't see you only taking off insignificant clothing, ~name~.
+
+#masturbating
+-2-male_removing_minor=stroking,You've got a long way to catch up to me, ~name~.
+-2-male_removed_minor=stroking,What's that, ~name~? You only took off your ~clothing~!?
+-2-female_removing_minor=stroking,You've got a long way to catch up to me, ~name~.
+-2-female_removed_minor=stroking,What's that, ~name~? You only took off your ~clothing~!?
+
+#finished
+-1-male_removing_minor=,
+-1-male_removed_minor=,
+-1-female_removing_minor=,
+-1-female_removed_minor=,
+
+##another character is removing major clothes
+#fully clothed
+0-male_removing_major=,
+0-male_removed_major=,
+0-female_removing_major=,
+0-female_removed_major=,
+
+#lost shoes
+1-male_removing_major=,
+1-male_removed_major=,
+1-female_removing_major=,
+1-female_removed_major=,
+
+#lost socks
+2-male_removing_major=,
+2-male_removed_major=,
+2-female_removing_major=,
+2-female_removed_major=
+
+#lost sweater
+3-male_removing_major=,
+3-male_removed_major=,
+3-female_removing_major=,
+3-female_removed_major=,
+
+#lost skirt
+4-male_removing_major=,
+4-male_removed_major=,
+4-female_removing_major=,
+4-female_removed_major=,
+
+#lost bra
+5-male_removing_major=won,Here we go. You're catching up to me, ~name~.
+5-male_removing_major=happy,This game is a lot more fun when it's you losing, ~name~.
+5-male_removed_major=horny,You can probably tell that I'm enjoying watching you strip, name~.
+5-male_removed_major=horny,Why, yes. I am staring at you. You should have taken off your ~clothing~ a while ago!
+5-female_removing_major=won,Here we go. You're catching up to me, ~name~.
+5-female_removing_major=won,You're not as naked as I am, ~name~. Yet. Now strip.
+5-female_removed_major=happy,Isn't this exciting?
+5-female_removed_major=happy,Don't worry, ~name~. You'll get used to everyone staring at you soon enough.
+
+#lost glasses
+6-male_removing_major=blind,I wish I could see you stripping, ~name~.
+6-male_removed_major=horny,Are there any rules against me using my hands to find out what you took off?
+6-male_removed_major=horny,~Name~,I'll let you feel me for lost clothing if I can do the same to you!
+6-male_removed_major=horny,You sound cold. You must have removed your ~clothing~.
+6-female_removing_major=won,Something has to come off somebody, and I know it's not me!
+6-female_removed_major=happy,You sound cold, ~name~. You must have removed your ~clothing~.
+
+#lost panties (nude)
+-3-male_removing_major=blind,I wish I could see you stripping, ~name~.
+-3-male_removed_major=horny,Are there any rules against me using my hands to find out what you took off?
+-3-male_removed_major=horny,~Name~, I'll let you feel me for lost clothing if I can do the same to you!
+-3-male_removed_major=horny,You sound cold. You must have removed your ~clothing~.
+-3-female_removing_major=won,Something has to come off somebody, and I know it's not me!
+-3-female_removed_major=happy,You sound cold, ~name~. You must have removed your ~clothing~.
+
+#masturbating
+-2-male_removing_major=stroking,Just tell me what you're taking off. I'll picture it on my own.
+-2-male_removed_major=horny,Just imagining you taking off your ~clothing~ is making me even hotter!
+-2-female_removing_major=stroking,Just tell me what you're taking off. I'll picture it on my own.
+-2-female_removed_major=stroking,I imagine you look sexy withouth your ~clothing~.
+
+#finished
+-1-male_removing_major=,
+-1-male_removed_major=,
+-1-female_removing_major=,
+-1-female_removed_major=,
+
+##another character is removing important clothes
+#fully clothed
+0-male_chest_will_be_visible=,
+0-male_chest_is_visible=,
+0-male_crotch_will_be_visible=,
+0-male_small_crotch_is_visible=,
+0-male_medium_crotch_is_visible=,
+0-male_large_crotch_is_visible=,
+
+0-female_chest_will_be_visible=,
+0-female_small_chest_is_visible=,
+0-female_medium_chest_is_visible=,
+0-female_large_chest_is_visible=,
+0-female_crotch_will_be_visible=,
+0-female_crotch_is_visible=,
+
+#lost shoes
+1-male_chest_will_be_visible=,
+1-male_chest_is_visible=,
+1-male_crotch_will_be_visible=,
+1-male_small_crotch_is_visible=,
+1-male_medium_crotch_is_visible=,
+1-male_large_crotch_is_visible=,
+
+1-female_chest_will_be_visible=,
+1-female_small_chest_is_visible=,
+1-female_medium_chest_is_visible=,
+1-female_large_chest_is_visible=,
+1-female_crotch_will_be_visible=,
+1-female_crotch_is_visible=,
+
+#lost socks
+2-male_chest_will_be_visible=,
+2-male_chest_is_visible=,
+2-male_crotch_will_be_visible=,
+2-male_small_crotch_is_visible=,
+2-male_medium_crotch_is_visible=,
+2-male_large_crotch_is_visible=,
+
+2-female_chest_will_be_visible=,
+2-female_small_chest_is_visible=,
+2-female_medium_chest_is_visible=,
+2-female_large_chest_is_visible=,
+2-female_crotch_will_be_visible=,
+2-female_crotch_is_visible=,
+
+#lost sweater
+3-male_chest_will_be_visible=,
+3-male_chest_is_visible=,
+3-male_crotch_will_be_visible=,
+3-male_small_crotch_is_visible=,
+3-male_medium_crotch_is_visible=,
+3-male_large_crotch_is_visible=,
+
+3-female_chest_will_be_visible=,
+3-female_small_chest_is_visible=,
+3-female_medium_chest_is_visible=,
+3-female_large_chest_is_visible=,
+3-female_crotch_will_be_visible=,
+3-female_crotch_is_visible=,
+
+#lost skirt
+4-male_chest_will_be_visible=,
+4-male_chest_is_visible=,
+4-male_crotch_will_be_visible=,
+4-male_small_crotch_is_visible=,
+4-male_medium_crotch_is_visible=,
+4-male_large_crotch_is_visible=,
+
+4-female_chest_will_be_visible=,
+4-female_small_chest_is_visible=,
+4-female_medium_chest_is_visible=,
+4-female_large_chest_is_visible=,
+4-female_crotch_will_be_visible=,
+4-female_crotch_is_visible=,
+
+#lost bra
+5-male_chest_will_be_visible=,
+5-male_chest_is_visible=,
+5-male_crotch_will_be_visible=,
+5-male_small_crotch_is_visible=,
+5-male_medium_crotch_is_visible=,
+5-male_large_crotch_is_visible=,
+
+5-female_chest_will_be_visible=,
+5-female_small_chest_is_visible=,
+5-female_medium_chest_is_visible=,
+5-female_large_chest_is_visible=,
+5-female_crotch_will_be_visible=,
+5-female_crotch_is_visible=,
+
+#lost glasses
+6-male_chest_will_be_visible=blind,Tell me about your chest, ~name~. Help me imagine you stripping!
+6-male_chest_is_visible=horny,That description wasn't enough, ~name~. Let me feel for myself.
+6-male_chest_is_visible=horny,~name~, you sound so hot. I want to get my hands all over you.
+6-male_crotch_will_be_visible=blind,Describe everything that's happening to you, ~name~. 
+6-male_small_crotch_is_visible=sad,Oh. Maybe this needs to wait until I find my glasses.
+6-male_medium_crotch_is_visible=horny,Mmmmm. That sounds like something I'd like to get my hands on.
+6-male_large_crotch_is_visible=horny,I'd like to feel it for myself, ~name~. Just to make sure you aren't exaggerating.
+
+6-female_chest_will_be_visible=blind,Can someone tell me how big ~name~'s boobs are?
+6-female_small_chest_is_visible=happy,Awww, those sound adorable!
+6-female_medium_chest_is_visible=sad,Are they bigger or smaller than mine, ~name~? N-not that it matters or anything.
+6-female_large_chest_is_visible=shocked,I need to see those for myself, ~name~. 
+6-female_crotch_will_be_visible=blind,I wish I could see this.
+6-female_crotch_is_visible=happy,Sounds like we're in a race to the end, ~name~.
+
+#lost panties (nude)
+-3-male_chest_will_be_visible=blind,Tell me about your chest, ~name~. Help me imagine you stripping!
+-3-male_chest_is_visible=horny,That description wasn't enough, ~name~. Let me feel for myself.
+-3-male_chest_is_visible=horny,~name~, you sound so hot. I want to get my hands all over you.
+-3-male_crotch_will_be_visible=blind,Describe everything that's happening to you, ~name~. 
+-3-male_small_crotch_is_visible=sad,Oh. Maybe this needs to wait until I find my glasses.
+-3-male_medium_crotch_is_visible=horny,Mmmmm. That sounds like something I'd like to get my hands on.
+-3-male_large_crotch_is_visible=horny,I'd, um, like to feel it for myself, ~name~. Just to make sure you aren't exaggerating.
+
+-3-female_chest_will_be_visible=blind,Can someone tell me how big ~name~'s boobs are?
+-3-female_small_chest_is_visible=happy,Awww, those sound adorable!
+-3-female_medium_chest_is_visible=sad,Are they bigger or smaller than mine, ~name~? N-not that it matters or anything.
+-3-female_large_chest_is_visible=shocked,I need to see those for myself, ~name~. 
+-3-female_crotch_will_be_visible=blind,I wish I could see this.
+-3-female_crotch_is_visible=happy,Sounds like we're in a race to the end, ~name~.
+
+#masturbating
+-2-male_chest_will_be_visible=blind,I've always prefered erotic books to video anyhow. 
+-2-male_chest_is_visible=stroking,Describe your chest to me. Make it hot!
+-2-male_chest_is_visible=stroking,Mmmmmmmmmmmm. Tell me more!
+-2-male_crotch_will_be_visible=blind,Go on, ~name~. Take off your underwear and describe it to me!
+-2-male_small_crotch_is_visible=stroking,I was imagining something bigger, but that will work for right now
+-2-male_medium_crotch_is_visible=horny,Ooooh. That sounds perfect. I can picture a place or two for that.
+-2-male_large_crotch_is_visible=horny,That sounds too big for me! But I'm sure getting wet thinking about it!
+
+-2-female_chest_will_be_visible=blind,This is so hot! Can someone tell me what ~name~'s boobs look like?
+-2-female_small_chest_is_visible=stroking,My mouth is free, ~name~, if you need to keep those warm!
+-2-female_medium_chest_is_visible=horny,Mmmmm. Picturing those is getting me off.
+-2-female_large_chest_is_visible=shocked,I need to see, and probably touch, those for myself, ~name~. 
+-2-female_crotch_will_be_visible=blind,I wish I could see this for myself.
+-2-female_crotch_is_visible=horny,Girls aren't usually my thing, but it's turning me on just hearing it!
+
+#finished
+-1-male_chest_will_be_visible=,
+-1-male_chest_is_visible=,
+-1-male_crotch_will_be_visible=,
+-1-male_small_crotch_is_visible=,
+-1-male_medium_crotch_is_visible=,
+-1-male_large_crotch_is_visible=,
+
+-1-female_chest_will_be_visible=,
+-1-female_small_chest_is_visible=,
+-1-female_medium_chest_is_visible=,
+-1-female_large_chest_is_visible=,
+-1-female_crotch_will_be_visible=,
+-1-female_crotch_is_visible=,
+
+##other player is masturbating
+#fully clothed
+0-male_must_masturbate=,
+0-male_start_masturbating=,
+0-male_masturbating=,
+0-male_finished_masturbating=,
+
+0-female_must_masturbate=,
+0-female_start_masturbating=,
+0-female_masturbating=,
+0-female_finished_masturbating=,
+
+#lost shoes
+1-male_must_masturbate=,
+1-male_start_masturbating=,
+1-male_masturbating=,
+1-male_finished_masturbating=,
+
+1-female_must_masturbate=,
+1-female_start_masturbating=,
+1-female_masturbating=,
+1-female_finished_masturbating=,
+
+#lost socks
+2-male_must_masturbate=,
+2-male_start_masturbating=,
+2-male_masturbating=,
+2-male_finished_masturbating=,
+
+2-female_must_masturbate=,
+2-female_start_masturbating=,
+2-female_masturbating=,
+2-female_finished_masturbating=,
+
+#lost sweater
+3-male_must_masturbate=,
+3-male_start_masturbating=,
+3-male_masturbating=,
+3-male_finished_masturbating=,
+
+3-female_must_masturbate=,
+3-female_start_masturbating=,
+3-female_masturbating=,
+3-female_finished_masturbating=,
+
+#lost skirt
+4-male_must_masturbate=,
+4-male_start_masturbating=,
+4-male_masturbating=,
+4-male_finished_masturbating=,
+
+4-female_must_masturbate=,
+4-female_start_masturbating=,
+4-female_masturbating=,
+4-female_finished_masturbating=,
+
+#lost bra
+5-male_must_masturbate=,
+5-male_start_masturbating=,
+5-male_masturbating=,
+5-male_finished_masturbating=,
+
+5-female_must_masturbate=,
+5-female_start_masturbating=,
+5-female_masturbating=,
+5-female_masturbating=,
+5-female_finished_masturbating=,
+
+#lost glasses
+6-male_must_masturbate=,
+6-male_start_masturbating=,
+6-male_masturbating=,
+6-male_finished_masturbating=,
+
+6-female_must_masturbate=,
+6-female_start_masturbating=,
+6-female_masturbating=,
+6-female_masturbating=,
+6-female_finished_masturbating=,
+
+#lost panties (nude)
+-3-male_must_masturbate=,
+-3-male_start_masturbating=,
+-3-male_masturbating=,
+-3-male_finished_masturbating=,
+
+-3-female_must_masturbate=,
+-3-female_start_masturbating=,
+-3-female_masturbating=,
+-3-female_finished_masturbating=,
+
+#masturbating
+-2-male_must_masturbate=,
+-2-male_start_masturbating=,
+-2-male_masturbating=,
+-2-male_finished_masturbating=,
+
+-2-female_must_masturbate=,
+-2-female_start_masturbating=,
+-2-female_masturbating=,
+-2-female_finished_masturbating=,
+
+#finished
+-1-male_must_masturbate=,
+-1-male_start_masturbating=,
+-1-male_masturbating=,
+-1-male_finished_masturbating=,
+
+-1-female_must_masturbate=,
+-1-female_start_masturbating=,
+-1-female_masturbating=,
+-1-female_finished_masturbating=,
