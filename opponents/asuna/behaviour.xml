@@ -16,7 +16,7 @@
 	
 	<!-- Game Start Dialogue -->
 	<start> 
-		<state img="0-calm.png">Ready to play strip poker?</state>
+		<state img="0-angry.png">I won't lose to this game... no matter what!</state>
 	</start>
 	<!-- See the behaviour tag for an explanation of opponent dialogue. -->
 	
@@ -78,7 +78,7 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="0-happy.png">
-					I've got a good hand.
+					Got it!
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
@@ -96,8 +96,8 @@
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
-				<state img="0-lost.png">
-					Well, I guess it had to be my turn eventually...
+				<state img="0-happy.png">
+					Hee hee hee! I'm so dumb!
 				</state>
 			</case>
 			<case tag="must_strip_normal"> <!-- this player lost the hand and isn't winning or losing overall -->
@@ -107,7 +107,7 @@
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
 				<state img="0-lost.png">
-					I lost again? But... I have less clothes than everyone else!
+					I lost again? But... I have fewer clothes than everyone else!
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
@@ -141,7 +141,7 @@
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="0-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					That's why you shouldn't let your laundry pile up!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -243,7 +243,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="0-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of her ~clothing~!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -362,8 +362,8 @@
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
-				<state img="1-sad.png">
-					I miss my ~clothing~ already...
+				<state img="1-angry.png">
+					My only thought is winning, moving on and getting stronger.
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -412,7 +412,7 @@
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="1-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					That's why you shouldn't let your laundry pile up!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -514,7 +514,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="1-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of her ~clothing~!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -633,8 +633,8 @@
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
-				<state img="2-sad.png">
-					I miss my ~clothing~ already...
+				<state img="2-angry.png">
+					My only thought is winning, moving on and getting stronger.
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -683,7 +683,7 @@
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="2-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					That's why you shouldn't let your laundry pile up!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -785,7 +785,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="2-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of her ~clothing~!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -954,7 +954,7 @@
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					That's why you shouldn't let your laundry pile up!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -1056,7 +1056,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of her ~clothing~!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -1225,7 +1225,7 @@
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="4-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					That's why you shouldn't let your laundry pile  up!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -1327,7 +1327,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="4-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of her ~clothing~!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -1496,7 +1496,7 @@
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="5-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					That's why you shouldn't let your laundry pile up!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -1598,7 +1598,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="5-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of her ~clothing~!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -1738,7 +1738,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="6-strip.png">
-					I guess I'll just take off my ~clothing~...
+					Sometimes the things that matter most are right in front of you. Like my breasts.
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1767,7 +1767,7 @@
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="6-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					That's why you shouldn't let your laundry pile up!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -1869,7 +1869,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="6-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of her ~clothing~!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -1898,7 +1898,7 @@
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="6-interested.png">
-					You look better without your ~clothing~, ~name~.
+					So we both happen to be wearing our best underwear today... What are the odds of that?
 				</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -2009,7 +2009,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="7-strip.png">
-					I guess I'll just take off my ~clothing~...
+					For the record, this ISN'T why they call me the Flash.
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -2038,7 +2038,7 @@
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="7-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					That's why you shouldn't let your laundry pile up!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -2140,7 +2140,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="7-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of her ~clothing~.
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -2169,7 +2169,7 @@
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="7-interested.png">
-					You look better without your ~clothing~, ~name~.
+					So we both happen to be wearing our best underwear today... What are the odds of that?
 				</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -2260,7 +2260,7 @@
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
 				<state img="8-sad.png">
-					I miss my ~clothing~ already...
+					Hey! What are you staring at?
 				</state>
 			</case>
 			<case tag="must_masturbate"> <!-- this player lost the hand and has to masturbate -->
@@ -2304,7 +2304,7 @@
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="8-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of his ~clothing~!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -2323,12 +2323,12 @@
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="8-calm.png">
-					At least you have less small stuff to take off now.
+					Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="8-happy.png">
-					Maybe we can get you out of some large stuff now, ~name~.
+					Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -2406,7 +2406,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="8-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of her ~clothing~!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -2425,12 +2425,12 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="8-calm.png">
-					At least you have less small stuff to take off now.
+					Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="8-happy.png">
-					Maybe we can get you out of some large stuff now, ~name~.
+					Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -2501,8 +2501,8 @@
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="masturbating"> <!-- this player is doing something other than poker -->
-				<state img="9-calm.png">
-					How long do I have to keep going for?
+				<state img="9-sad.png">
+					These are the rules we have to play by...
 				</state>
 			</case>
 			<case tag="heavy_masturbating"> <!-- this player is really into what their doing -->
@@ -2541,7 +2541,7 @@
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="9-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of his ~clothing~!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -2643,7 +2643,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="9-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of her ~clothing~!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -2760,7 +2760,7 @@
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="10-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of his ~clothing~!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -2779,12 +2779,12 @@
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="10-calm.png">
-					At least you have less small stuff to take off now.
+					Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="10-happy.png">
-					Maybe we can get you out of some large stuff now, ~name~.
+					Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -2833,7 +2833,7 @@
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
 				<state img="10-shocked.png">
-					Wow... uh... I guess you're done then...
+					Hey, ~name~? Do you want to friend me?
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -2862,7 +2862,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="10-interested.png">
-					Finally getting ~name~ out of their ~clothing~!
+					Finally getting ~name~ out of her ~clothing~!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -2881,12 +2881,12 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="10-calm.png">
-					At least you have less small stuff to take off now.
+					Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="10-happy.png">
-					Maybe we can get you out of some large stuff now, ~name~.
+					Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -2942,8 +2942,8 @@
 			
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_defeat">
-				<state img="10-calm.png">
-					Congrats, ~name~... I can't believe I lost...
+				<state img="10-angry.png">
+					Please DO forget about this when you return to the real world!
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->
