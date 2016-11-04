@@ -140,7 +140,7 @@
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="0-interested.png">
+				<state img="0-happy.png">
 					That's why you shouldn't let your laundry pile up!
 				</state>
 			</case>
@@ -159,8 +159,8 @@
 			
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
-				<state img="0-calm.png">
-					At least you have less small stuff to take off now.
+				<state img="0-happy.png">
+					Ooh, a rare loot drop: the ~clothing~ of strength!
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -261,8 +261,8 @@
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="0-calm.png">
-					At least you have less small stuff to take off now.
+				<state img="0-happy.png">
+					Ooh, a rare loot drop: the ~clothing~ of agility!
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -411,7 +411,7 @@
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="1-interested.png">
+				<state img="1-happy.png">
 					That's why you shouldn't let your laundry pile up!
 				</state>
 			</case>
@@ -430,8 +430,8 @@
 			
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
-				<state img="1-calm.png">
-					At least you have less small stuff to take off now.
+				<state img="1-happy.png">
+					Ooh, a rare loot drop: ~clothing~ +2!
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -532,8 +532,8 @@
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="1-calm.png">
-					At least you have less small stuff to take off now.
+				<state img="1-happy.png">
+					Ooh, a rare loot drop: ~clothing~ of speed!
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -682,7 +682,7 @@
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="2-interested.png">
+				<state img="2-happy.png">
 					That's why you shouldn't let your laundry pile up!
 				</state>
 			</case>
@@ -701,8 +701,8 @@
 			
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
-				<state img="2-calm.png">
-					At least you have less small stuff to take off now.
+				<state img="2-happy.png">
+					Ooh, a rare loot drop: ~clothing~ of protection!
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -803,8 +803,8 @@
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="2-calm.png">
-					At least you have less small stuff to take off now.
+				<state img="2-happy.png">
+					Ooh, a rare loot drop: ~clothing~ of charm!
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -953,7 +953,7 @@
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="3-interested.png">
+				<state img="3-happy.png">
 					That's why you shouldn't let your laundry pile up!
 				</state>
 			</case>
@@ -1224,7 +1224,7 @@
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="4-interested.png">
+				<state img="4-happy.png">
 					That's why you shouldn't let your laundry pile  up!
 				</state>
 			</case>
@@ -1457,17 +1457,17 @@
 			</case>
 			<case tag="must_strip_normal"> <!-- this player lost the hand and isn't winning or losing overall -->
 				<state img="5-lost.png">
-					I guess I lost, huh?
+					Sigh! You're so greedy.
 				</state>
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
-				<state img="5-lost.png">
-					I lost again? But... I have less clothes than everyone else!
+				<state img="5-stunned.png">
+					Are you some kind of player killer?
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="5-strip.png">
-					I guess I'll just take off my ~clothing~...
+					The joke's on you: my ~clothing~ was about to run out of durability anyway.
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1495,8 +1495,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="5-interested.png">
-					That's why you shouldn't let your laundry pile up!
+				<state img="5-angry.png">
+					I, Asuna, vice commander of the Knights of the Blood Oath, command you to remove your ~clothing~!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -1708,8 +1708,8 @@
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="6-sad.png">
-					I've got a bad hand.
+				<state img="6-embarrassed.png">
+					Just kill me now!
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -1732,8 +1732,8 @@
 				</state>
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
-				<state img="6-lost.png">
-					I lost again? But... I have less clothes than everyone else!
+				<state img="6-angry.png">
+					There's no way I'm going to take off my wedding ring! Which only leaves... oh, no.
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
@@ -1766,8 +1766,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="6-interested.png">
-					That's why you shouldn't let your laundry pile up!
+				<state img="6-angry.png">
+				I, Asuna, vice commander of the Knights of the Blood Oath, command you to remove your ~clothing~!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -1785,8 +1785,8 @@
 			
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
-				<state img="6-calm.png">
-					At least you have less small stuff to take off now.
+				<state img="6-stunned.png">
+					Another rare loot drop: ~clothing~ of luck!  ...Wait. Luck? Isn't that cheating?
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1887,8 +1887,8 @@
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="6-calm.png">
-					At least you have less small stuff to take off now.
+				<state img="6-stunned.png">
+					Another rare loot drop: ~clothing~ of luck!  ...Wait. Luck? Isn't that cheating?
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1979,8 +1979,8 @@
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="7-sad.png">
-					I've got a bad hand.
+				<state img="7-embarrassed.png">
+					Just kill me now!
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -2037,8 +2037,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="7-interested.png">
-					That's why you shouldn't let your laundry pile up!
+				<state img="7-angry.png">
+					I, Asuna, vice commander of the Knights of the Blood Oath, command you to remove your ~clothing~!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -2250,8 +2250,8 @@
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="8-sad.png">
-					I've got a bad hand.
+				<state img="8-embarrassed.png">
+					Just kill me now!
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -2270,12 +2270,12 @@
 			</case>
 			<case tag="must_masturbate_first"> <!-- this player lost the hand and has to masturbate -->
 				<state img="8-lost.png">
-					Y-You want me to do what?!
+					I shouldn't even be here! I just logged in on my brother's account!
 				</state>
 			</case>
 			<case tag="start_masturbating"> <!-- this player has started masturbating -->
 				<state img="8-starting.png">
-					I guess I have to do 'that' now, huh?
+					When you die in Aincrad you die in real life. ...I wish we were playing by those rules right now.
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -2303,8 +2303,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="8-interested.png">
-					Finally getting ~name~ out of his ~clothing~!
+				<state img="8-angry.png">
+					I, Asuna, vice commander of the Knights of the Blood Oath, command you to remove your ~clothing~!
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
