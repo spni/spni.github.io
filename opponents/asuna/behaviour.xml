@@ -30,8 +30,8 @@
 		<clothing proper-name="Top" lowercase="top" type="major" position="upper" />
 		<clothing proper-name="Belt" lowercase="belt" type="extra" position="other" />
 		<clothing proper-name="Gloves" lowercase="gloves" type="minor" position="other" />
-		<clothing proper-name="Socks" lowercase="socks" type="minor" position="other" />
-		<clothing proper-name="Shoes" lowercase="shoes" type="minor" position="other" />
+		<clothing proper-name="Stockings" lowercase="stockings" type="minor" position="other" />
+		<clothing proper-name="Boots" lowercase="boots" type="minor" position="other" />
 	</wardrobe>
 	<!-- An article of clothing can have one of four types: important, major, minor, and extra.
 		 - Important articles of clothing expose the character's chest or crotch when removed (underwear). 
@@ -82,13 +82,23 @@
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="0-calm.png">
-					I've got an okay hand.
+				<state img="0-angry.png">
+					Let's do this.
+				</state>
+			</case>
+			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="0-angry.png">
+					It's no use!
+				</state>
+			</case>
+			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="0-embarrassed.png">
+					I'm done for!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
 				<state img="0-sad.png">
-					I've got a bad hand.
+					I can't go on...
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -107,7 +117,7 @@
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
 				<state img="0-lost.png">
-					I lost again? But... I have fewer clothes than everyone else!
+					Geez, you dummy!
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
@@ -130,8 +140,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
-				<state img="0-angry.png">
-					You're only taking off your ~clothing~, ~name~? That doesn't seem fair.
+				<state img="0-interested.png">
+					Is that ~clothing~ magic?
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -146,7 +156,7 @@
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
 				<state img="0-interested.png">
-					I guess it's time to see that chest of yours, ~name~!
+					Life isn't just doing things for yourself. Other people's happiness can make you happy. Like right now, you're making me very happy, ~name~.
 				</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
@@ -160,7 +170,7 @@
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-happy.png">
-					Ooh, a rare loot drop: the ~clothing~ of strength!
+					Ooh, a rare loot drop: ~clothing~ of strength!
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -232,8 +242,8 @@
 				</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
-				<state img="0-angry.png">
-					You're only taking off your ~clothing~, ~name~? That doesn't seem fair.
+				<state img="0-interested.png">
+					Is that ~clothing~ magic?
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -262,7 +272,7 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-happy.png">
-					Ooh, a rare loot drop: the ~clothing~ of agility!
+					Ooh, a rare loot drop: ~clothing~ of agility!
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -344,17 +354,27 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="1-happy.png">
-					I've got a good hand.
+					Got it!
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="1-calm.png">
-					I've got an okay hand.
+				<state img="1-angry.png">
+					Let's do this.
+				</state>
+			</case>
+			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="1-angry.png">
+					It's no use!
+				</state>
+			</case>
+			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="1-embarrassed.png">
+					I'm done for!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
 				<state img="1-sad.png">
-					I've got a bad hand.
+					I can't go on...
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -378,7 +398,7 @@
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
 				<state img="1-lost.png">
-					I lost again? But... I have less clothes than everyone else!
+					Geez, you dummy!
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
@@ -401,8 +421,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
-				<state img="1-angry.png">
-					You're only taking off your ~clothing~, ~name~? That doesn't seem fair.
+				<state img="1-interested.png">
+					Is that ~clothing~ magic?
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -417,7 +437,7 @@
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
 				<state img="1-interested.png">
-					I guess it's time to see that chest of yours, ~name~!
+					Life isn't just doing things for yourself. Other people's happiness can make you happy. Like right now, you're making me very happy, ~name~.
 				</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
@@ -503,8 +523,8 @@
 				</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
-				<state img="1-angry.png">
-					You're only taking off your ~clothing~, ~name~? That doesn't seem fair.
+				<state img="1-interested.png">
+					Is that ~clothing~ magic?
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -615,17 +635,27 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="2-happy.png">
-					I've got a good hand.
+					Got it!
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="2-calm.png">
-					I've got an okay hand.
+				<state img="2-angry.png">
+					Let's do this.
+				</state>
+			</case>
+			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="2-angry.png">
+					It's no use!
+				</state>
+			</case>
+			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="2-embarrassed.png">
+					I'm done for!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
 				<state img="2-sad.png">
-					I've got a bad hand.
+					I can't go on...
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -672,8 +702,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
-				<state img="2-angry.png">
-					You're only taking off your ~clothing~, ~name~? That doesn't seem fair.
+				<state img="2-interested.png">
+					Is that ~clothing~ magic?
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -774,8 +804,8 @@
 				</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
-				<state img="2-angry.png">
-					You're only taking off your ~clothing~, ~name~? That doesn't seem fair.
+				<state img="2-interested.png">
+					Is that ~clothing~ magic?
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -886,17 +916,27 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="3-happy.png">
-					I've got a good hand.
+					Got it!
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="3-calm.png">
-					I've got an okay hand.
+				<state img="3-angry.png">
+					Let's do this.
+				</state>
+			</case>
+			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="3-angry.png">
+					It's no use!
+				</state>
+			</case>
+			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="3-embarrassed.png">
+					I'm done for!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
 				<state img="3-sad.png">
-					I've got a bad hand.
+					I can't go on...
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -1157,17 +1197,27 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="4-happy.png">
-					I've got a good hand.
+					Got it!
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="4-calm.png">
-					I've got an okay hand.
+				<state img="4-angry.png">
+					Let's do this.
+				</state>
+			</case>
+			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="4-angry.png">
+					It's no use!
+				</state>
+			</case>
+			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="4-embarrassed.png">
+					I'm done for!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
 				<state img="4-sad.png">
-					I've got a bad hand.
+					I can't go on...
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -1181,7 +1231,7 @@
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
 				<state img="4-lost.png">
-					Well, I guess it had to be my turn eventually...
+					I never wanted to wear this uniform anyway...
 				</state>
 			</case>
 			<case tag="must_strip_normal"> <!-- this player lost the hand and isn't winning or losing overall -->
@@ -1196,7 +1246,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="4-strip.png">
-					I guess I'll just take off my ~clothing~...
+					Do you have any idea how much this outfit cost the Knights?
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1428,17 +1478,27 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="5-happy.png">
-					I've got a good hand.
+					Got it!
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="5-calm.png">
-					I've got an okay hand.
+				<state img="5-angry.png">
+					Let's do this.
+				</state>
+			</case>
+			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="5-angry.png">
+					It's no use!
+				</state>
+			</case>
+			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="5-embarrassed.png">
+					I'm done for!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
 				<state img="5-sad.png">
-					I've got a bad hand.
+					I can't go on...
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -1699,12 +1759,12 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="6-happy.png">
-					I've got a good hand.
+					Got it!
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="6-calm.png">
-					I've got an okay hand.
+				<state img="6-angry.png">
+					Let's do this.
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -1756,8 +1816,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
-				<state img="6-angry.png">
-					You're only taking off your ~clothing~, ~name~? That doesn't seem fair.
+				<state img="6-interested.png">
+					Is that ~clothing~ magic? Yes! It is!
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1858,8 +1918,8 @@
 				</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
-				<state img="6-angry.png">
-					You're only taking off your ~clothing~, ~name~? That doesn't seem fair.
+				<state img="6-interested.png">
+					Is that ~clothing~ magic? Yes! It is!
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1970,12 +2030,12 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="7-happy.png">
-					I've got a good hand.
+					Got it!
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="7-calm.png">
-					I've got an okay hand.
+				<state img="7-angry.png">
+					Let's do this.
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -2241,12 +2301,12 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="8-happy.png">
-					I've got a good hand.
+					Got it!
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="8-calm.png">
-					I've got an okay hand.
+				<state img="8-angry.png">
+					Let's do this.
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
