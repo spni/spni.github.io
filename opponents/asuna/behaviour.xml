@@ -87,18 +87,8 @@
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="0-angry.png">
-					It's no use!
-				</state>
-			</case>
-			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="0-embarrassed.png">
-					I'm done for!
-				</state>
-			</case>
-			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="0-sad.png">
-					I can't go on...
+				<state img="0-nervous.png">
+					Feel that? There's a bad vibe in here.
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -122,7 +112,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="0-strip.png">
-					I guess I'll just take off my ~clothing~...
+					Ugh, fine. I'll take off my Prancing Boots.
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -218,8 +208,8 @@
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
-				<state img="0-horny.png">
-					Keep going, ~name~...
+				<state img="0-angry.png">
+					Hey! What are you staring at?
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
@@ -334,7 +324,7 @@
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_victory">
 				<state img="0-happy.png">
-					I WON!
+					In the end it's not about winning or losing. It's having fun!
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->
@@ -354,7 +344,7 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="1-happy.png">
-					Got it!
+					These cards are S-class.
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
@@ -363,18 +353,8 @@
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="1-angry.png">
+				<state img="1-lost.png">
 					It's no use!
-				</state>
-			</case>
-			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="1-embarrassed.png">
-					I'm done for!
-				</state>
-			</case>
-			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="1-sad.png">
-					I can't go on...
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -382,8 +362,8 @@
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
-				<state img="1-angry.png">
-					My only thought is winning, moving on and getting stronger.
+				<state img="1-calm.png">
+					I can always go on the Laketop Fortress quest again if I want a new pair.
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -403,7 +383,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="1-strip.png">
-					I guess I'll just take off my ~clothing~...
+					I'll remove my stockings, I guess.
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -422,7 +402,7 @@
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
 				<state img="1-interested.png">
-					Is that ~clothing~ magic?
+					Ah! That's magical!
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -451,7 +431,7 @@
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="1-happy.png">
-					Ooh, a rare loot drop: ~clothing~ +2!
+					~clothing~ of protection +2!
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -499,8 +479,8 @@
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
-				<state img="1-horny.png">
-					Keep going, ~name~...
+				<state img="1-angry.png">
+					Hey! What are you staring at?...
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
@@ -524,7 +504,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="1-interested.png">
-					Is that ~clothing~ magic?
+					Ah! That's magic!
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -553,7 +533,7 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="1-happy.png">
-					Ooh, a rare loot drop: ~clothing~ of speed!
+					~clothing~ of speed +3!
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -615,7 +595,7 @@
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_victory">
 				<state img="1-happy.png">
-					I WON!
+					In the end it's not about winning or losing. It's having fun!
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->
@@ -640,31 +620,20 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="2-angry.png">
-					Let's do this.
+					Don't count me out just yet!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
 				<state img="2-angry.png">
 					It's no use!
 				</state>
-			</case>
-			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="2-embarrassed.png">
-					I'm done for!
-				</state>
-			</case>
-			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="2-sad.png">
-					I can't go on...
-				</state>
-			</case>
 			<!-- End of Hand Strength Cases -->
 			
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
 				<state img="2-angry.png">
-					My only thought is winning, moving on and getting stronger.
+					They're part of the Knights of Blood uniform - I can always get a new pair.
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -684,7 +653,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="2-strip.png">
-					I guess I'll just take off my ~clothing~...
+					My gloves are the obvious choice.
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -732,7 +701,7 @@
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="2-happy.png">
-					Ooh, a rare loot drop: ~clothing~ of protection!
+					Ooh, a rare loot drop: ~clothing~ of vigor +4!
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -780,8 +749,8 @@
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
-				<state img="2-horny.png">
-					Keep going, ~name~...
+				<state img="2-angry.png">
+					Hey! What are you staring at?...
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
@@ -834,7 +803,7 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="2-happy.png">
-					Ooh, a rare loot drop: ~clothing~ of charm!
+					Ooh, a rare loot drop: ~clothing~ of charm +2!
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -896,7 +865,7 @@
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_victory">
 				<state img="2-happy.png">
-					I WON!
+					In the end it's not about winning or losing. It's having fun!
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->
@@ -916,12 +885,12 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="3-happy.png">
-					Got it!
+					These cards are S-class.
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="3-angry.png">
-					Let's do this.
+					Don't count me out just yet!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -929,23 +898,13 @@
 					It's no use!
 				</state>
 			</case>
-			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="3-embarrassed.png">
-					I'm done for!
-				</state>
-			</case>
-			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="3-sad.png">
-					I can't go on...
-				</state>
-			</case>
 			<!-- End of Hand Strength Cases -->
 			
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
-				<state img="3-sad.png">
-					I miss my ~clothing~ already...
+				<state img="3-angry.png">
+					I don't need the bonus to attack in a safe zone, anyway. 
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -965,7 +924,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="3-strip.png">
-					I guess I'll just take off my ~clothing~...
+					...How about my belt?
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1061,8 +1020,8 @@
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
-				<state img="3-horny.png">
-					Keep going, ~name~...
+				<state img="3-angry.png">
+					Hey! What are you staring at?...
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
@@ -1177,7 +1136,7 @@
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_victory">
 				<state img="3-happy.png">
-					I WON!
+					In the end it's not about winning or losing. It's having fun!
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->
@@ -1202,7 +1161,7 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="4-angry.png">
-					Let's do this.
+					This won't stop me!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -1210,28 +1169,18 @@
 					It's no use!
 				</state>
 			</case>
-			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="4-embarrassed.png">
-					I'm done for!
-				</state>
-			</case>
-			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="4-sad.png">
-					I can't go on...
-				</state>
-			</case>
 			<!-- End of Hand Strength Cases -->
 			
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
-				<state img="4-sad.png">
-					I miss my ~clothing~ already...
+				<state img="4-angry.png">
+					It's not even magical. I've got four more in my inventory!
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
 				<state img="4-lost.png">
-					I never wanted to wear this uniform anyway...
+					I never wanted to wear this uniform anyway... the others made me.
 				</state>
 			</case>
 			<case tag="must_strip_normal"> <!-- this player lost the hand and isn't winning or losing overall -->
@@ -1246,7 +1195,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="4-strip.png">
-					Do you have any idea how much this outfit cost the Knights?
+					Do you have ANY idea how much this outfit cost?
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1342,8 +1291,8 @@
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
-				<state img="4-horny.png">
-					Keep going, ~name~...
+				<state img="4-angry.png">
+					Hey! What are you staring at?...
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
@@ -1458,7 +1407,7 @@
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_victory">
 				<state img="4-happy.png">
-					I WON!
+					In the end it's not about winning or losing. It's having fun!
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->
@@ -1478,17 +1427,12 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="5-happy.png">
-					Got it!
+					These cards are S-class.
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="5-angry.png">
-					Let's do this.
-				</state>
-			</case>
-			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="5-angry.png">
-					It's no use!
+					This won't stop me!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -1496,23 +1440,18 @@
 					I'm done for!
 				</state>
 			</case>
-			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="5-sad.png">
-					I can't go on...
-				</state>
-			</case>
 			<!-- End of Hand Strength Cases -->
 			
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
-				<state img="5-sad.png">
-					I miss my ~clothing~ already...
+				<state img="5-embarrassed.png">
+					D-don't look! Not yet anyway.
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
 				<state img="5-lost.png">
-					Well, I guess it had to be my turn eventually...
+					...Don't panic, Asuna. You won't be half-naked, you'll just be... in strap armor. Right.
 				</state>
 			</case>
 			<case tag="must_strip_normal"> <!-- this player lost the hand and isn't winning or losing overall -->
@@ -1522,12 +1461,12 @@
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
 				<state img="5-stunned.png">
-					Are you some kind of player killer?
+					Are you some kind of player killer?!
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="5-strip.png">
-					The joke's on you: my ~clothing~ was about to run out of durability anyway.
+					My hit points are getting into the yellow range...
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1623,8 +1562,8 @@
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
-				<state img="5-horny.png">
-					Keep going, ~name~...
+				<state img="5-angry.png">
+					Hey! What are you staring at?...
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
@@ -1739,7 +1678,7 @@
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_victory">
 				<state img="5-happy.png">
-					I WON!
+					In the end it's not about winning or losing. It's having fun!
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->
@@ -1764,12 +1703,12 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="6-angry.png">
-					Let's do this.
+					I'll never give up!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="6-embarrassed.png">
-					Just kill me now!
+				<state img="6-lost.png">
+					I can't go on...
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -1777,8 +1716,8 @@
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
-				<state img="6-sad.png">
-					I miss my ~clothing~ already...
+				<state img="6-angry.png">
+					The joke's on you: my skirt was about to run out of durability anyway.
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -1798,7 +1737,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="6-strip.png">
-					Sometimes the things that matter most are right in front of you. Like my breasts.
+					I'm having a flashback to when I was Sugou's prisoner.
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1846,7 +1785,7 @@
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="6-stunned.png">
-					Another rare loot drop: ~clothing~ of luck!  ...Wait. Luck? Isn't that cheating?
+					Another rare loot drop: ~clothing~ of luck!  ...Wait. Luck? ARE YOU CHEATING?
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1894,8 +1833,8 @@
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
-				<state img="6-horny.png">
-					Keep going, ~name~...
+				<state img="6-angry.png">
+					Hey! What are you staring at?...
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
@@ -1948,7 +1887,7 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="6-stunned.png">
-					Another rare loot drop: ~clothing~ of luck!  ...Wait. Luck? Isn't that cheating?
+					Another rare loot drop: ~clothing~ of luck!  ...Wait. Luck? You'd better not be cheating!
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -2010,7 +1949,7 @@
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_victory">
 				<state img="6-happy.png">
-					I WON!
+					In the end it's not about winning or losing. It's having fun!
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->
@@ -2030,12 +1969,12 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="7-happy.png">
-					Got it!
+					These cards are S-class.
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="7-angry.png">
-					Let's do this.
+					I'll never give up!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -2049,27 +1988,27 @@
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
 				<state img="7-sad.png">
-					I miss my ~clothing~ already...
+					Sometimes the things that matter most are right in front of you. Like my breasts.
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
 				<state img="7-lost.png">
-					Well, I guess it had to be my turn eventually...
+					For the record, this ISN'T why they call me the Flash.
 				</state>
 			</case>
 			<case tag="must_strip_normal"> <!-- this player lost the hand and isn't winning or losing overall -->
 				<state img="7-lost.png">
-					I guess I lost, huh?
+					For the record, this ISN'T why they call me the Flash.
 				</state>
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
 				<state img="7-lost.png">
-					I lost again? But... I have less clothes than everyone else!
+					For the record, this ISN'T why they call me the Flash.
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="7-strip.png">
-					For the record, this ISN'T why they call me the Flash.
+					I'll have you know this is an S-class item!
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -2088,7 +2027,7 @@
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
 				<state img="7-angry.png">
-					You're only taking off your ~clothing~, ~name~? That doesn't seem fair.
+					If you're counting that as clothing, that had BETTER be S-class.
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -2117,7 +2056,7 @@
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="7-calm.png">
-					At least you have less small stuff to take off now.
+					Stupid game.
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -2165,8 +2104,8 @@
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
-				<state img="7-horny.png">
-					Keep going, ~name~...
+				<state img="7-embarrassed.png">
+					D-don't look! Not yet anyway.
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
@@ -2190,7 +2129,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="7-angry.png">
-					You're only taking off your ~clothing~, ~name~? That doesn't seem fair.
+					If you're counting that as clothing, that had BETTER be S-class.
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -2219,7 +2158,7 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="7-calm.png">
-					At least you have less small stuff to take off now.
+					Stupid game.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -2281,7 +2220,7 @@
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_victory">
 				<state img="7-happy.png">
-					I WON!
+					In the end it's not about winning or losing. It's having fun!
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->
@@ -2306,12 +2245,12 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="8-angry.png">
-					Let's do this.
+					I'll never give up!
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="8-embarrassed.png">
-					Just kill me now!
+				<state img="8-shocked.png">
+					Save me, Kirito-kun!
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -2320,12 +2259,12 @@
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
 				<state img="8-sad.png">
-					Hey! What are you staring at?
+					You should see your face! I guess you've never had a girlfriend before.
 				</state>
 			</case>
 			<case tag="must_masturbate"> <!-- this player lost the hand and has to masturbate -->
 				<state img="8-lost.png">
-					I guess I lost...
+					I've seen that same look on guy's faces, and always before they propose.
 				</state>
 			</case>
 			<case tag="must_masturbate_first"> <!-- this player lost the hand and has to masturbate -->
@@ -2354,7 +2293,7 @@
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
 				<state img="8-angry.png">
-					You're only taking off your ~clothing~, ~name~? That doesn't seem fair.
+					If you're counting that as clothing, that had BETTER be S-class.
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -2382,7 +2321,7 @@
 			
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
-				<state img="8-calm.png">
+				<state img="8-angry.png">
 					Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
 				</state>
 			</case>
@@ -2431,8 +2370,8 @@
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
-				<state img="8-horny.png">
-					Keep going, ~name~...
+				<state img="8-embarrassed.png">
+					Oh, fine. Stare at me if it makes you happy.
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
@@ -2456,7 +2395,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="8-angry.png">
-					You're only taking off your ~clothing~, ~name~? That doesn't seem fair.
+					If you're counting that as clothing, that had BETTER be S-class.
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -2484,7 +2423,7 @@
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="8-calm.png">
+				<state img="8-angry.png">
 					Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
 				</state>
 			</case>
@@ -2547,7 +2486,7 @@
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_victory">
 				<state img="8-happy.png">
-					I WON!
+					In the end it's not about winning or losing. It's having fun!
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->
@@ -2668,8 +2607,8 @@
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
-				<state img="9-horny.png">
-					Keep going, ~name~...
+				<state img="9-embarrassed.png">
+					Oh, fine. Stare at me if it makes you happy.
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
@@ -2814,8 +2753,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="10-calm.png">
-					I guess your ~clothing~ is something, at least.
+				<state img="10-angry.png">
+					You... you... you dummy!
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
@@ -2877,8 +2816,8 @@
 			
 			<!-- Start of Male Player Masturbating Cases -->
 			<case tag="male_must_masturbate"> <!-- a male player has to masturbate -->
-				<state img="10-interested.png">
-					Time to show your skills, ~name~...
+				<state img="10-embarrassed.png">
+					That makes me feel a little better.
 				</state>
 			</case>
 			<case tag="male_start_masturbating"> <!-- a male player has started masturbating -->
@@ -2888,7 +2827,7 @@
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
 				<state img="10-horny.png">
-					Keep going, ~name~...
+					Hey! What are you staring at?
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
@@ -2945,8 +2884,8 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="10-happy.png">
-					Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
+				<state img="10-angry.png">
+					You... you... you dummy!
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -2979,8 +2918,8 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="10-interested.png">
-					Time to show your skills, ~name~...
+				<state img="10-embarrassed.png">
+					That makes me feel a little better.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -3003,7 +2942,7 @@
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_defeat">
 				<state img="10-angry.png">
-					Please DO forget about this when you return to the real world!
+					Please forget about this when you return to the real world!
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->
