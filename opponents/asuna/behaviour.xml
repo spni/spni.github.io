@@ -83,7 +83,7 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="0-sad.png">
-					P-lease, be nice to me...
+					P-please, be nice to me...
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -164,8 +164,8 @@
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="0-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="0-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -175,7 +175,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="0-interested.png">
-					Nice chest, ~name~.
+					There's no place to run even if you feel embarrassed!
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -198,13 +198,13 @@
 			
 			<!-- Start of Male Player Masturbating Cases -->
 			<case tag="male_must_masturbate"> <!-- a male player has to masturbate -->
-				<state img="0-interested.png">
-					These are the rules we have to play by...
+				<state img="0-angry.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="male_start_masturbating"> <!-- a male player has started masturbating -->
 				<state img="0-shocked.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
@@ -213,8 +213,8 @@
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
-				<state img="0-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="0-stunned.png">
+					Pervert!
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -266,8 +266,8 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="0-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="0-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -276,18 +276,18 @@
 				</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="0-interested.png">
-					Oh! I feel so motherly.
+				<state img="0-shocked.png">
+					Wh-what are you doing, ~name~?
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="0-horny.png">
-					You've got a long way to go before you can challenge me.
+				<state img="0-shocked.png">
+					Wh-what are you doing, ~name~?
 				</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="0-angry.png">
-					Another rival? Kirito is mine.
+				<state img="0-shocked.png">
+					Wh-what are you doing, ~name~?
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -300,23 +300,23 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="0-interested.png">
-					These are the rules we have to play by...
+				<state img="0-angry.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="0-shocked.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="0-horny.png">
-					Are there skills levels for that?
+					Are there skill levels for masturbating?
 				</state>
 			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
-				<state img="0-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="0-stunned.png">
+					How shameless...
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -344,7 +344,7 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="1-happy.png">
-					These cards are S-class.
+					These cards are S-class!
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
@@ -367,7 +367,7 @@
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
-				<state img="1-lost.png">
+				<state img="1-embarrassed.png">
 					My heart's pounding...
 				</state>
 			</case>
@@ -435,8 +435,8 @@
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="1-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="1-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -446,7 +446,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="1-interested.png">
-					Nice chest, ~name~.
+					There's no place to run even if you feel embarrassed!
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -469,13 +469,13 @@
 			
 			<!-- Start of Male Player Masturbating Cases -->
 			<case tag="male_must_masturbate"> <!-- a male player has to masturbate -->
-				<state img="1-interested.png">
-					These are the rules we have to play by...
+				<state img="1-angry.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="male_start_masturbating"> <!-- a male player has started masturbating -->
 				<state img="1-shocked.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
@@ -484,8 +484,8 @@
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
-				<state img="1-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="1-stunned.png">
+					Pervert!
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -537,8 +537,8 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="1-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="1-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -547,18 +547,18 @@
 				</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="1-interested.png">
-					Oh! I feel so motherly.
+				<state img="1-shocked.png">
+					Wh-what are you doing, ~name~?
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="1-horny.png">
-					You've got a long way to go before you can challenge me.
+				<state img="1-shocked.png">
+					Wh-what are you doing, ~name~?
 				</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="1-angry.png">
-					Another rival? Kirito is mine.
+				<state img="1-shocked.png">
+					Wh-what are you doing, ~name~?
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -571,23 +571,23 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="1-interested.png">
-					These are the rules we have to play by...
+				<state img="1-angry.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="1-shocked.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="1-horny.png">
-					Are there skills levels for that?
+					Are there skill levels for masturbating?
 				</state>
 			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
-				<state img="1-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="1-stunned.png">
+					How shameless...
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -706,8 +706,8 @@
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="2-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="2-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -717,7 +717,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="2-interested.png">
-					Nice chest, ~name~.
+					There's no place to run even if you feel embarrassed!
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -740,13 +740,13 @@
 			
 			<!-- Start of Male Player Masturbating Cases -->
 			<case tag="male_must_masturbate"> <!-- a male player has to masturbate -->
-				<state img="2-interested.png">
-					These are the rules we have to play by...
+				<state img="2-angry.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="male_start_masturbating"> <!-- a male player has started masturbating -->
 				<state img="2-shocked.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
@@ -755,8 +755,8 @@
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
-				<state img="2-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="2-stunned.png">
+					Pervert!
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -808,8 +808,8 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="2-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="2-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -842,23 +842,23 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="2-interested.png">
-					These are the rules we have to play by...
+				<state img="2-angry.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="2-shocked.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="2-horny.png">
-					Are there skills levels for that?
+					Are there skill levels for masturbating?
 				</state>
 			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
-				<state img="2-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="2-stunned.png">
+					How shameless...
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -977,8 +977,8 @@
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="3-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="3-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -988,7 +988,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="3-interested.png">
-					Nice chest, ~name~.
+					There's no place to run even if you feel embarrassed!
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -1011,13 +1011,13 @@
 			
 			<!-- Start of Male Player Masturbating Cases -->
 			<case tag="male_must_masturbate"> <!-- a male player has to masturbate -->
-				<state img="3-interested.png">
-					These are the rules we have to play by...
+				<state img="3-angry.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="male_start_masturbating"> <!-- a male player has started masturbating -->
 				<state img="3-shocked.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
@@ -1026,8 +1026,8 @@
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
-				<state img="3-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="3-stunned.png">
+					Pervert!
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -1079,8 +1079,8 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="3-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="3-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -1113,23 +1113,23 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="3-interested.png">
-					These are the rules we have to play by...
+				<state img="3-angry.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="3-shocked.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="3-horny.png">
-					Are there skills levels for that?
+					Are there skill levels for masturbating?
 				</state>
 			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
-				<state img="3-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="3-angry.png">
+					How shameless...
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -1248,8 +1248,8 @@
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="4-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="4-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -1259,7 +1259,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="4-interested.png">
-					Nice chest, ~name~.
+					There's no place to run even if you feel embarrassed!
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -1282,13 +1282,13 @@
 			
 			<!-- Start of Male Player Masturbating Cases -->
 			<case tag="male_must_masturbate"> <!-- a male player has to masturbate -->
-				<state img="4-interested.png">
-					These are the rules we have to play by...
+				<state img="4-awkward.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="male_start_masturbating"> <!-- a male player has started masturbating -->
 				<state img="4-shocked.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
@@ -1297,8 +1297,8 @@
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
-				<state img="4-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="4-stunned.png">
+					Pervert!
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -1350,8 +1350,8 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="4-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="4-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -1384,23 +1384,23 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="4-interested.png">
-					These are the rules we have to play by...
+				<state img="4-awkward.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="4-shocked.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="4-horny.png">
-					Are there skills levels for that?
+					Are there skill levels for masturbating?
 				</state>
 			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
-				<state img="4-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="4-angry.png">
+					How shameless...
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -1519,8 +1519,8 @@
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="5-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="5-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -1530,7 +1530,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="5-interested.png">
-					Nice chest, ~name~.
+					There's no place to run even if you feel embarrassed!
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -1553,13 +1553,13 @@
 			
 			<!-- Start of Male Player Masturbating Cases -->
 			<case tag="male_must_masturbate"> <!-- a male player has to masturbate -->
-				<state img="5-interested.png">
-					These are the rules we have to play by...
+				<state img="5-awkward.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="male_start_masturbating"> <!-- a male player has started masturbating -->
 				<state img="5-interested.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
@@ -1568,8 +1568,8 @@
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
-				<state img="5-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="5-stunned.png">
+					Pervert!
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -1621,8 +1621,8 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="5-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="5-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -1655,23 +1655,23 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="5-interested.png">
-					These are the rules we have to play by...
+				<state img="5-awkward.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="5-interested.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="5-horny.png">
-					Are there skills levels for that?
+					Are there skill levels for masturbating?
 				</state>
 			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
-				<state img="5-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="5-angry.png">
+					How shameless...
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -1790,8 +1790,8 @@
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="6-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="6-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -1801,7 +1801,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="6-interested.png">
-					Nice chest, ~name~.
+					There's no place to run even if you feel embarrassed!
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -1824,13 +1824,13 @@
 			
 			<!-- Start of Male Player Masturbating Cases -->
 			<case tag="male_must_masturbate"> <!-- a male player has to masturbate -->
-				<state img="6-interested.png">
-					These are the rules we have to play by...
+				<state img="6-awkward.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="male_start_masturbating"> <!-- a male player has started masturbating -->
 				<state img="6-interested.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
@@ -1839,8 +1839,8 @@
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
-				<state img="6-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="6-stunned.png">
+					Pervert!
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -1892,8 +1892,8 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="6-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="6-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -1926,23 +1926,23 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="6-interested.png">
-					These are the rules we have to play by...
+				<state img="6-awkward.png">
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="6-interested.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="6-horny.png">
-					Are there skills levels for that?
+					Are there skill levels for masturbating?
 				</state>
 			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
-				<state img="6-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="6-embarrassed.png">
+					How shameless...
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -2061,8 +2061,8 @@
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="7-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="7-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -2072,7 +2072,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="7-interested.png">
-					Nice chest, ~name~.
+					There's no place to run even if you feel embarrassed!
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -2096,12 +2096,12 @@
 			<!-- Start of Male Player Masturbating Cases -->
 			<case tag="male_must_masturbate"> <!-- a male player has to masturbate -->
 				<state img="7-interested.png">
-					These are the rules we have to play by...
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="male_start_masturbating"> <!-- a male player has started masturbating -->
 				<state img="7-horny.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
@@ -2110,8 +2110,8 @@
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
-				<state img="7-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="7-horny.png">
+					Pervert!
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -2163,8 +2163,8 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="7-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="7-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -2198,22 +2198,22 @@
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="7-interested.png">
-					These are the rules we have to play by...
+					This is one sick, twisted game...
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="7-horny.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="7-horny.png">
-					Are there skills levels for that?
+					Are there skill levels for masturbating?
 				</state>
 			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
-				<state img="7-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="7-embarrassed.png">
+					How shameless...
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -2338,7 +2338,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="8-interested.png">
-					Nice chest, ~name~.
+					There's no place to run even if you feel embarrassed!
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -2367,7 +2367,7 @@
 			</case>
 			<case tag="male_start_masturbating"> <!-- a male player has started masturbating -->
 				<state img="8-horny.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
@@ -2376,8 +2376,8 @@
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
-				<state img="8-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="8-horny.png">
+					Pervert!
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -2469,17 +2469,17 @@
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="8-horny.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="8-horny.png">
-					Are there skills levels for that?
+					Are there skill levels for masturbating?
 				</state>
 			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
-				<state img="8-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="8-embarrassed.png">
+					How shameless...
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -2570,8 +2570,8 @@
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="9-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="9-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -2581,7 +2581,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="9-interested.png">
-					Nice chest, ~name~.
+					There's no place to run even if you feel embarrassed!
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -2619,8 +2619,8 @@
 				</state>
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
-				<state img="9-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="9-horny.png">
+					Pervert!
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -2672,8 +2672,8 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="9-happy.png">
-					There's no place to run even if you feel embarrassed!
+				<state img="9-angry.png">
+					You prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -2712,17 +2712,17 @@
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="9-horny.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="9-horny.png">
-					Are there skills levels for that?
+					Are there skill levels for masturbating?
 				</state>
 			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
-				<state img="9-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="9-horny.png">
+					How shameless...
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -2800,7 +2800,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="10-interested.png">
-					Nice chest, ~name~.
+					There's no place to run even if you feel embarrassed!
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -2829,7 +2829,7 @@
 			</case>
 			<case tag="male_start_masturbating"> <!-- a male player has started masturbating -->
 				<state img="10-horny.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="male_masturbating"> <!-- a male player is masturbating -->
@@ -2839,7 +2839,7 @@
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
 				<state img="10-horny.png">
-					Hey, ~name~? Do you want to friend me?
+					Um... ~name~? Do you want to join my party?
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -2931,17 +2931,17 @@
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="10-horny.png">
-					I see you've already turned your moral code off!
+					Wh-what do you think you're doing?
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="10-horny.png">
-					Are there skills levels for that?
+					Are there skill levels for masturbating?
 				</state>
 			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
-				<state img="10-shocked.png">
-					Wow... uh... I guess you're done then...
+				<state img="10-horny.png">
+					How shameless...
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
