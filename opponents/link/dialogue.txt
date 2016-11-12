@@ -1,0 +1,801 @@
+#required for behaviour.xml
+first=Link
+last=
+label=Link
+gender=male
+size=medium
+#Number of phases to "finish"
+timer=16
+
+#required for meta.xml
+#start picture
+pic=0-calm
+height=5'9"
+articles=8
+from=Legend of Zelda
+writer=josephkantel
+artist=josephkantel
+description=One of many Links throughout the ages
+
+#Links Clothing:
+clothes=Gloves,gloves,extra,other
+clothes=Boots,boots,minor,other
+clothes=Hat,hat,minor,other
+clothes=Tunic,tunic,major,upper
+clothes=Shirt,shirt,important,upper
+clothes=Pants,pants,major,lower
+clothes=Boxers,boxers,important,lower
+
+#starting picture and text
+start=0-calm,HYAAAAAH!
+
+##individual behaviour
+#entries without a number are used when there are no stage-specific entries
+
+#default card behaviour
+#you can include multiple entries to give the character multiple lines and/or appearances in that situation.
+#This is what a character says while they're exchanging cards.
+swap_cards=calm,Yaah. (~cards~ cards)
+swap_cards=calm,Hyoo. (~cards~ cards)
+swap_cards=calm,Kyoo... (~cards~ cards)
+
+#The character thinks they have a good hand
+good_hand=happy,YAAAH!
+good_hand=happy,CHEEEYA!
+good_hand=happy,HIYAAAH!
+
+#The character thinks they have a bad hand
+okay_hand=calm,Hyo.
+okay_hand=calm,Hya.
+okay_hand=calm,Dyo.
+
+#The character thinks they have a bad hand
+bad_hand=sad,Gah...
+bad_hand=sad,Naaa...
+bad_hand=sad,Huu..
+
+#stripping default
+#This is the character says once they've lost a hand, but before they strip
+must_strip_winning=calm,Hyaah...
+must_strip_normal=stunned,Gah...
+must_strip_losing=shocked,GAH...
+stripping=strip,...
+stripped=stripped,...
+
+#masturbation
+#these situations relate to when the character is masturbating
+#these only come up in the relevant stages, so you don't need to include the stage numbers here
+#just remember which stage is which when you make the images
+must_masturbate_first=nervous,I-I'm... not sure I'm comfortable with this...
+must_masturbate=nervous,At least I'm not the first...
+start_masturbating=starting,Well... I did get myself into this...
+masturbating=calm,Just like swinging a sword...
+masturbating=nervous,I should take my time... don't want to make this a "speedrun"...
+masturbating=happy,People watch me all the time... I'm just not usually doing this...
+heavy_masturbating=heavy,...
+finishing_masturbating=finishing,HYAAAAAAAAAAH!!!
+finished_masturbating=finished,T-That... was exciting...
+#I don't think this line is actually used by the game.
+game_over_defeat=happy,C-Congratulations ~name~, I hope everyone had fun!
+game_over_victory=victory,HIYAAAA-- W-Wait... I won!?
+
+#situations where a male character is stripping
+male_human_must_strip=calm,...
+male_must_strip=awkward,...
+
+male_removing_accessory=calm,Gah...
+male_removed_accessory=calm,Cheeeya!
+male_removing_minor=awkward,Gah...
+male_removed_minor=angry,Cheeeya!
+male_removing_major=awkward,Gah...
+male_removed_major=angry,Cheeeya!
+
+male_chest_will_be_visible=angry,Gah...
+male_chest_is_visible=awkward,Hyaa...
+
+#male crotches have different sizes, allowing your character to have different responses
+male_crotch_will_be_visible=awkward,Gah...
+male_small_crotch_is_visible=calm,Uhh...
+male_medium_crotch_is_visible=awkward,Uhh...
+male_large_crotch_is_visible=shocked,Hyuhh...
+
+#male masturbation default
+male_must_masturbate=stunned,...
+male_start_masturbating=awkward,Hyuhh...
+male_masturbating=awkward,Hyuhh...
+male_finished_masturbating=shocked,...
+
+#female stripping default
+#these are mostly the same as the female stripping cases, but the female's size refers to their chest rather than their crotch.
+female_human_must_strip=interested,Hyaaah!
+female_must_strip=interested,Hyaaah!
+
+female_removing_accessory=sad,Huu.
+female_removed_accessory=calm,Yaah!
+
+female_removing_minor=calm,Huu.
+female_removed_minor=happy,Yaah!
+
+female_removing_major=interested,Yaah!
+female_removed_major=interested,HYAAAH!
+
+female_chest_will_be_visible=interested,Yaaaaah!
+female_small_chest_is_visible=interested,Deeeeyoooo!
+female_medium_chest_is_visible=horny,Deeeeyoooo!
+female_large_chest_is_visible=shocked,DEEEEEYOOOOO!
+
+female_crotch_will_be_visible=horny,YAAAAAAH!
+female_crotch_is_visible=shocked,...
+
+#female masturbation default
+female_must_masturbate=interested,...
+female_start_masturbating=horny,Cheeeya...
+female_masturbating=horny,Huu...
+female_finished_masturbating=shocked,HYAAAAH!
+
+
+
+
+#These responses are stage specific.
+#Refer to the above entries to see what sort of situations these refer to, and what the default images are.
+#Each situation has been repeated enough for the maximum eight items of clothing.
+#If your character has fewer items, delete the extra entries.
+#if you don't include a stage-specific entry for a situation, the script will use the default response as defined above.
+
+
+#character is stripping situations
+#losing first item of clothing
+0-must_strip_winning=,
+0-must_strip_normal=,
+0-must_strip_losing=,
+0-stripping=,
+1-stripped=,
+
+#losing second item of clothing
+1-must_strip_winning=,
+1-must_strip_normal=,
+1-must_strip_losing=,
+1-stripping=,
+2-stripped=,
+
+#losing third item of clothing
+2-must_strip_winning=,
+2-must_strip_normal=,
+2-must_strip_losing=,
+2-stripping=,
+3-stripped=,
+
+#losing fourth item of clothing
+3-must_strip_winning=,
+3-must_strip_normal=,
+3-must_strip_losing=,
+3-stripping=,
+4-stripped=,
+
+#losing fifth item of clothing
+4-must_strip_winning=nervous,Dammit.. this is getting serious for me now..
+4-must_strip_normal=nervous,Dammit... this is getting serious...
+4-must_strip_losing=nervous,Dammit... this is getting serious...
+4-stripping=strip,W-Wait... did I say that out loud?! No! Please don't tell Nintendo that I broke character!
+5-stripped=stripped,Uhhh.... Hyaaaah? Oh, screw it...
+
+#losing sixth item of clothing
+5-must_strip_winning=happy,You know, it's tough being this handsome and not being allowed to talk.
+5-must_strip_normal=calm,Even with this, it's nice to be able to talk out loud for once.
+5-must_strip_losing=calm,Even losing, it's nice to be able to talk out loud for once.
+5-stripping=strip,I guess that's what this place is though... somewhere for us fictional characters to let our hair down for once...
+6-stripped=stripped,And take off most of our clothes...
+
+
+#losing seventh item of clothing
+6-must_strip_winning=nervous,I guess this game is already rated M... so why not?
+6-must_strip_normal=nervous,My games don't usually contain nudity...
+6-must_strip_losing=nervous,My games don't usually contain nudity.....
+6-stripping=strip,I am a bit embarrased about this game's... effect on me.
+7-stripped=stripped,But I guess there is no point in hiding it...
+
+#victory lines. one for each stage.
+0-game_over_victory=,
+1-game_over_victory=,
+2-game_over_victory=,
+3-game_over_victory=,
+4-game_over_victory=,
+5-game_over_victory=,
+6-game_over_victory=,
+7-game_over_victory=,
+-3-game_over_victory=,
+-2-game_over_victory=,
+-1-game_over_victory=,
+
+#card cases
+#fully clothed
+0-good_hand=,
+0-okay_hand=,
+0-bad_hand=,
+
+#lost one item
+1-good_hand=,
+1-okay_hand=,
+1-bad_hand=,
+
+#lost two items
+2-good_hand=,
+2-okay_hand=,
+2-bad_hand=,
+
+#lost three items
+3-good_hand=,
+3-okay_hand=,
+3-bad_hand=,
+
+#lost 4 items
+4-good_hand=,
+4-okay_hand=,
+4-bad_hand=,
+
+#lost 5 items
+5-good_hand=excited,I won't lose this round!
+5-okay_hand=happy,I stand a fighting chance...
+5-bad_hand=sad,I'm screwed...
+
+#lost 6 items
+6-good_hand=excited,I won't lose this round!
+6-okay_hand=happy,I stand a fighting chance...
+6-bad_hand=sad,I'm screwed...
+
+#lost all clothing
+#using negative numbers counts back from the final stage
+#-3 is while nude, -2 is masturbating, -1 is finished
+#this lets you use the same numbers with different amounts of clothing
+-3-good_hand=,
+-3-okay_hand=,
+-3-bad_hand=,
+
+##other player must strip specific
+#fully clothed
+0-male_human_must_strip=,
+0-male_must_strip=,
+0-female_human_must_strip=,
+0-female_must_strip=,
+
+#lost 1 item
+1-male_human_must_strip=,
+1-male_must_strip=,
+1-female_human_must_strip=,
+1-female_must_strip=,
+
+#lost 2 items
+2-male_human_must_strip=,
+2-male_must_strip=,
+2-female_human_must_strip=,
+2-female_must_strip=,
+
+#lost 3 items
+3-male_human_must_strip=,
+3-male_must_strip=,
+3-female_human_must_strip=,
+3-female_must_strip=,
+
+#lost lost 4 items
+4-male_human_must_strip=,
+4-male_must_strip=,
+4-female_human_must_strip=,
+4-female_must_strip=,
+
+#lost lost 5 items
+5-male_human_must_strip=sad,Sorry ~name~, I guess it's your turn...
+5-male_must_strip=sad,Sorry ~name~, I guess it's your turn...
+5-female_human_must_strip=happy,Your turn, ~name~!
+5-female_must_strip=happy,Your turn, ~name~!
+
+#lost lost 6 items
+6-male_human_must_strip=sad,Sorry ~name~, I guess it's your turn...
+6-male_must_strip=sad,Sorry ~name~, I guess it's your turn...
+6-female_human_must_strip=interested,I hope you can't see how excited I am, ~name~...
+6-female_must_strip=interested,I hope you can't see how excited I am, ~name~...
+
+#lost lost all clothing items
+-3-male_human_must_strip=sad,This is just how the game goes, ~name~...
+-3-male_must_strip=sad,This is just how the game goes, ~name~...
+-3-female_human_must_strip=interested,I hope you can't see how excited I am, ~name~...
+-3-female_must_strip=interested,I hope you can't see how excited I am, ~name~...
+
+#masturbating
+-2-male_human_must_strip=sad,You'll be joining me soon, ~name~...
+-2-male_must_strip=sad,You'll be joining me soon, ~name~...
+-2-female_human_must_strip=horny,I'm glad it's you, ~name~...
+-2-female_must_strip=horny,I'm glad it's you, ~name~...
+
+#finished
+-1-male_human_must_strip=sad,This is just how the game goes, ~name~...
+-1-male_must_strip=sad,This is just how the game goes, ~name~...
+-1-female_human_must_strip=horny,Sorry... but I'm glad you lost ~name~...
+-1-female_must_strip=horny,Sorry... but I'm glad you lost ~name~...
+
+##another character is removing accessories
+#fully clothed
+0-male_removing_accessory=,
+0-male_removed_accessory=,
+0-female_removing_accessory=,
+0-female_removed_accessory=,
+
+#lost 1 item
+1-male_removing_accessory=,
+1-male_removed_accessory=,
+1-female_removing_accessory=,
+1-female_removed_accessory=,
+
+#lost 2 items
+2-male_removing_accessory=,
+2-male_removed_accessory=,
+2-female_removing_accessory=,
+2-female_removed_accessory=,
+
+#lost 3 items
+3-male_removing_accessory=,
+3-male_removed_accessory=,
+3-female_removing_accessory=,
+3-female_removed_accessory=,
+
+#lost 4 items
+4-male_removing_accessory=,
+4-male_removed_accessory=,
+4-female_removing_accessory=,
+4-female_removed_accessory=,
+
+#lost 5 items
+5-male_removing_accessory=calm,Makes sense...
+5-male_removed_accessory=calm,On with the game then...
+5-female_removing_accessory=sad,That's all your taking off?
+5-female_removed_accessory=annoyed,Fine... on with the game then...
+
+#lost 6 items
+6-male_removing_accessory=calm,Makes sense...
+6-male_removed_accessory=calm,On with the game then...
+6-female_removing_accessory=sad,That's all your taking off?
+6-female_removed_accessory=annoyed,Fine... on with the game then...
+
+#nude
+-3-male_removing_accessory=annoyed,How do you even have that left?
+-3-male_removed_accessory=annoyed,I'm naked and you're still taking off trinkets...
+-3-female_removing_accessory=sad,Please take off something a little... more important...
+-3-female_removed_accessory=annoyed,I'm naked and you're still taking off trinkets...
+
+#masturbating
+-2-male_removing_accessory=calm,Maybe not so soon...
+-2-male_removed_accessory=calm,Eventually... maybe...
+-2-female_removing_accessory=sad,Not really what I was hoping for...
+-2-female_removed_accessory=annoyed,You're no fun...
+
+#finished
+-1-male_removing_accessory=annoyed,How do you even have that left?
+-1-male_removed_accessory=annoyed,This game is rigged...
+-1-female_removing_accessory=sad,Not really what I was hoping for...
+-1-female_removed_accessory=annoyed,...
+
+##another character is removing minor clothing items
+#fully clothed
+0-male_removing_minor=,
+0-male_removed_minor=,
+0-female_removing_minor=,
+0-female_removed_minor=,
+
+#lost 1 item
+1-male_removing_minor=,
+1-male_removed_minor=,
+1-female_removing_minor=,
+1-female_removed_minor=,
+
+#lost 2 items
+2-male_removing_minor=,
+2-male_removed_minor=,
+2-female_removing_minor=,
+2-female_removed_minor=,
+
+#lost 3 items
+3-male_removing_minor=,
+3-male_removed_minor=,
+3-female_removing_minor=,
+3-female_removed_minor=,
+
+#lost 4 items
+4-male_removing_minor=,
+4-male_removed_minor=,
+4-female_removing_minor=,
+4-female_removed_minor=,
+
+#lost 5 items
+5-male_removing_minor=calm,I guess it's something...
+5-male_removed_minor=happy,On with the game then...
+5-female_removing_minor=sad,That's it, ~name~?
+5-female_removed_minor=annoyed,Fine... I guess it's something...
+
+#lost 6 items
+6-male_removing_minor=calm,I guess it's something...
+6-male_removed_minor=happy,On with the game then...
+6-female_removing_minor=sad,That's it, ~name~?
+6-female_removed_minor=annoyed,Fine... I guess it's something...
+
+#naked
+-3-male_removing_minor=calm,One step closer...
+-3-male_removed_minor=sad,And you'll be naked like me... eventually...
+-3-female_removing_minor=interested,One step closer to naked...
+-3-female_removed_minor=annoyed,Hopefully, only a few rounds left...
+
+#masturbating
+-2-male_removing_minor=sad,Or not...
+-2-male_removed_minor=calm,Eventually, maybe...
+-2-female_removing_minor=sad,I was hoping for more..
+-2-female_removed_minor=interested,But this is a good start...
+
+#finished
+-1-male_removing_minor=annoyed,This is unfair...
+-1-male_removed_minor=angry,This game is rigged...
+-1-female_removing_minor=annoyed,I was hoping for more...
+-1-female_removed_minor=interested,But at least it's something...
+
+##another character is removing major clothes
+#fully clothed
+0-male_removing_major=,
+0-male_removed_major=,
+0-female_removing_major=,
+0-female_removed_major=,
+
+#lost 1 item
+1-male_removing_major=,
+1-male_removed_major=,
+1-female_removing_major=,
+1-female_removed_major=,
+
+#lost 2 items
+2-male_removing_major=,
+2-male_removed_major=,
+2-female_removing_major=,
+2-female_removed_major=
+
+#lost 3 items
+3-male_removing_major=,
+3-male_removed_major=,
+3-female_removing_major=,
+3-female_removed_major=,
+
+#lost 4 items
+4-male_removing_major=,
+4-male_removed_major=,
+4-female_removing_major=,
+4-female_removed_major=,
+
+#lost 5 items
+5-male_removing_major=sad,Run out of small stuff, ~name~?
+5-male_removed_major=calm,Don't worry, it's not that bad...
+5-female_removing_major=interested,Run out of small stuff, ~name~?
+5-female_removed_major=interested,I hope so...
+
+#lost 6 items
+6-male_removing_major=sad,Run out of small stuff, ~name~?
+6-male_removed_major=calm,Don't worry, it's not that bad...
+6-female_removing_major=interested,Run out of small stuff, ~name~?
+6-female_removed_major=interested,I hope so...
+
+#nude
+-3-male_removing_major=sad,Are you running out of clothes, ~name~?
+-3-male_removed_major=annoyed,Don't worry, you won't be alone...
+-3-female_removing_major=interested,Are you running out of clothes, ~name~?
+-3-female_removed_major=horny,Good...
+
+#masturbating
+-2-male_removing_major=sad,Soon...
+-2-male_removed_major=annoyed,Soon......
+-2-female_removing_major=interested,Almost what I meant...
+-2-female_removed_major=horny,Close enough...
+
+#finished
+-1-male_removing_major=sad,Are you running out of clothes, ~name~?
+-1-male_removed_major=calm,It's not that bad, really...
+-1-female_removing_major=interested,I don't mean to root against you...
+-1-female_removed_major=horny,But I really hope you keep losing...
+
+##another character is removing important clothes
+#fully clothed
+0-male_chest_will_be_visible=,
+0-male_chest_is_visible=,
+0-male_crotch_will_be_visible=,
+0-male_small_crotch_is_visible=,
+0-male_medium_crotch_is_visible=,
+0-male_large_crotch_is_visible=,
+
+0-female_chest_will_be_visible=,
+0-female_small_chest_is_visible=,
+0-female_medium_chest_is_visible=,
+0-female_large_chest_is_visible=,
+0-female_crotch_will_be_visible=,
+0-female_crotch_is_visible=,
+
+#lost 1 item
+1-male_chest_will_be_visible=,
+1-male_chest_is_visible=,
+1-male_crotch_will_be_visible=,
+1-male_small_crotch_is_visible=,
+1-male_medium_crotch_is_visible=,
+1-male_large_crotch_is_visible=,
+
+1-female_chest_will_be_visible=,
+1-female_small_chest_is_visible=,
+1-female_medium_chest_is_visible=,
+1-female_large_chest_is_visible=,
+1-female_crotch_will_be_visible=,
+1-female_crotch_is_visible=,
+
+#lost 2 items
+2-male_chest_will_be_visible=,
+2-male_chest_is_visible=,
+2-male_crotch_will_be_visible=,
+2-male_small_crotch_is_visible=,
+2-male_medium_crotch_is_visible=,
+2-male_large_crotch_is_visible=,
+
+2-female_chest_will_be_visible=,
+2-female_small_chest_is_visible=,
+2-female_medium_chest_is_visible=,
+2-female_large_chest_is_visible=,
+2-female_crotch_will_be_visible=,
+2-female_crotch_is_visible=,
+
+#lost 3 items
+3-male_chest_will_be_visible=,
+3-male_chest_is_visible=,
+3-male_crotch_will_be_visible=,
+3-male_small_crotch_is_visible=,
+3-male_medium_crotch_is_visible=,
+3-male_large_crotch_is_visible=,
+
+3-female_chest_will_be_visible=,
+3-female_small_chest_is_visible=,
+3-female_medium_chest_is_visible=,
+3-female_large_chest_is_visible=,
+3-female_crotch_will_be_visible=,
+3-female_crotch_is_visible=,
+
+#lost 4 items
+4-male_chest_will_be_visible=,
+4-male_chest_is_visible=,
+4-male_crotch_will_be_visible=,
+4-male_small_crotch_is_visible=,
+4-male_medium_crotch_is_visible=,
+4-male_large_crotch_is_visible=,
+
+4-female_chest_will_be_visible=,
+4-female_small_chest_is_visible=,
+4-female_medium_chest_is_visible=,
+4-female_large_chest_is_visible=,
+4-female_crotch_will_be_visible=,
+4-female_crotch_is_visible=,
+
+#lost 5 items
+5-male_chest_will_be_visible=calm,I've done it... now it's your turn...
+5-male_chest_is_visible=awkward,Okay then... let's continue...
+5-male_crotch_will_be_visible=sad,Oh... uh... I guess you have to?
+5-male_small_crotch_is_visible=calm,Nothing to be ashmed of...
+5-male_medium_crotch_is_visible=awkward,Completely normal... just keep telling yourself that this is completely normal...
+5-male_large_crotch_is_visible=shocked,T-That thing is bigger than the master sword...
+
+5-female_chest_will_be_visible=interested,I have no problems with this...
+5-female_small_chest_is_visible=interested,For some reason I'm reminded of Sheik... I wonder what he's up to...
+5-female_medium_chest_is_visible=interested,They're very nice...
+5-female_large_chest_is_visible=stunned,They're... really big...
+5-female_crotch_will_be_visible=interested,I feel like I found the boss key...
+5-female_crotch_is_visible=horny,And now I can see the path...
+
+#lost 6 items
+6-male_chest_will_be_visible=calm,I've done it... now it's your turn...
+6-male_chest_is_visible=awkward,Okay then... let's continue...
+6-male_crotch_will_be_visible=sad,Oh... uh... I guess you have to?
+6-male_small_crotch_is_visible=calm,Nothing to be ashmed of...
+6-male_medium_crotch_is_visible=awkward,Completely normal... just keep telling yourself that this is completely normal...
+6-male_large_crotch_is_visible=shocked,T-That thing is bigger than the master sword...
+
+6-female_chest_will_be_visible=interested,I have no problems with this...
+6-female_small_chest_is_visible=interested,For some reason I'm reminded of Sheik... I wonder what he's up to...
+6-female_medium_chest_is_visible=interested,They're very nice...
+6-female_large_chest_is_visible=stunned,They're... really big...
+6-female_crotch_will_be_visible=interested,I feel like I found the boss key...
+6-female_crotch_is_visible=horny,And now I can see the path...
+
+#nude
+-3-male_chest_will_be_visible=calm,I'm naked already... don't sweat this too much...
+-3-male_chest_is_visible=awkward,Okay then... let's continue...
+-3-male_crotch_will_be_visible=sad,Uh... I don't like this...
+-3-male_small_crotch_is_visible=calm,Nothing to be ashmed of...
+-3-male_medium_crotch_is_visible=awkward,Completely normal... just keep telling yourself that this is completely normal...
+-3-male_large_crotch_is_visible=shocked,T-That thing is bigger than the master sword...
+
+-3-female_chest_will_be_visible=interested,I have no problems with this...
+-3-female_small_chest_is_visible=interested,For some reason I'm reminded of Sheik... I wonder what he's up to...
+-3-female_medium_chest_is_visible=interested,They're very nice...
+-3-female_large_chest_is_visible=stunned,...
+-3-female_crotch_will_be_visible=horny,Oh... are you talking off your...
+-3-female_crotch_is_visible=awkward,Gotta think of something of else for a moment... or I might finish the game a little early...
+
+#masturbating
+-2-male_chest_will_be_visible=annoyed,Not now... I'm in the middle of something...
+-2-male_chest_is_visible=awkward,I guess I'll just look over there then...
+-2-male_crotch_will_be_visible=annoyed,Why...?
+-2-male_small_crotch_is_visible=calm,At least it's not too distracting...
+-2-male_medium_crotch_is_visible=awkward,AHHH... why now?
+-2-male_large_crotch_is_visible=shocked,H-How do you even... manage with that?!
+
+-2-female_chest_will_be_visible=interested,Thank you.
+-2-female_small_chest_is_visible=interested,Don't worry, ~name~, I like them.
+-2-female_medium_chest_is_visible=interested,Do you mind turning towards me for a bit?
+-2-female_large_chest_is_visible=interested,Do you mind turning towards me for a bit?
+-2-female_crotch_will_be_visible=interested,Thank you...
+-2-female_crotch_is_visible=heavy,Boss key obtained... on approach to final boss...
+
+#finished
+-1-male_chest_will_be_visible=calm,I'm naked already... don't sweat this too much...
+-1-male_chest_is_visible=awkward,Okay then... continue...
+-1-male_crotch_will_be_visible=sad,Uh... I don't like this...
+-1-male_small_crotch_is_visible=calm,Nothing to be ashamed of...
+-1-male_medium_crotch_is_visible=awkward,Completely normal... I guess...
+-1-male_large_crotch_is_visible=sad,Something something... master sword... I'm too tired for this...
+
+-1-female_chest_will_be_visible=interested,Now I get to see you a bit exposed, ~name~
+-1-female_small_chest_is_visible=horny,Small boobies are best boobies...
+-1-female_medium_chest_is_visible=interested,I wish I had seen those a bit earlier...
+-1-female_large_chest_is_visible=interested,I wish I had seen those a bit earlier...
+-1-female_crotch_will_be_visible=interested,Something something... boss key...
+-1-female_crotch_is_visible=horny,Beautiful...
+
+##other player is masturbating
+#fully clothed
+0-male_must_masturbate=,
+0-male_start_masturbating=,
+0-male_masturbating=,
+0-male_finished_masturbating=,
+
+0-female_must_masturbate=,
+0-female_start_masturbating=,
+0-female_masturbating=,
+0-female_finished_masturbating=,
+
+#lost 1 item
+1-male_must_masturbate=,
+1-male_start_masturbating=,
+1-male_masturbating=,
+1-male_finished_masturbating=,
+
+1-female_must_masturbate=,
+1-female_start_masturbating=,
+1-female_masturbating=,
+1-female_finished_masturbating=,
+
+#lost 2 items
+2-male_must_masturbate=,
+2-male_start_masturbating=,
+2-male_masturbating=,
+2-male_finished_masturbating=,
+
+2-female_must_masturbate=,
+2-female_start_masturbating=,
+2-female_masturbating=,
+2-female_finished_masturbating=,
+
+#lost 3 items
+3-male_must_masturbate=,
+3-male_start_masturbating=,
+3-male_masturbating=,
+3-male_finished_masturbating=,
+
+3-female_must_masturbate=,
+3-female_start_masturbating=,
+3-female_masturbating=,
+3-female_finished_masturbating=,
+
+#lost 4 items
+4-male_must_masturbate=,
+4-male_start_masturbating=,
+4-male_masturbating=,
+4-male_finished_masturbating=,
+
+4-female_must_masturbate=,
+4-female_start_masturbating=,
+4-female_masturbating=,
+4-female_finished_masturbating=,
+
+#lost 5 items
+5-male_must_masturbate=nervous,Wait... you're not really going to...
+5-male_start_masturbating=sad,Why... am I here?
+5-male_masturbating=sad,When are you going to stop, ~name~?
+5-male_finished_masturbating=awkward,O-Okay... then...
+
+5-female_must_masturbate=nervous,Wait... you're not really going to...
+5-female_start_masturbating=horny,This is a good day...
+5-female_masturbating=horny,Keep going, ~name~...
+5-female_finished_masturbating=horny,Quite the show, ~name~...
+
+#lost 6 items
+6-male_must_masturbate=nervous,Wait... you're not really going to...
+6-male_start_masturbating=sad,Why... am I here?
+6-male_masturbating=sad,When are you going to stop, ~name~?
+6-male_finished_masturbating=awkward,O-Okay... then...
+
+6-female_must_masturbate=nervous,Wait... you're not really going to...
+6-female_start_masturbating=horny,This is a good day...
+6-female_masturbating=horny,Keep going, ~name~...
+6-female_finished_masturbating=horny,Quite the show, ~name~...
+
+#nude
+-3-male_must_masturbate=sad,Oh...
+-3-male_start_masturbating=awkward,Just don't look at me, please...
+-3-male_masturbating=awkward,When are you going to stop, ~name~?
+-3-male_finished_masturbating=awkward,O-Okay... then...
+
+-3-female_must_masturbate=interested,Wait... are you going to...?
+-3-female_start_masturbating=horny,Oh...
+-3-female_masturbating=horny,You can look at me... if it helps...
+-3-female_finished_masturbating=horny,Today has been a good day...
+
+#masturbating
+-2-male_must_masturbate=sad,Oh...
+-2-male_start_masturbating=awkward,Just don't look at me, please...
+-2-male_masturbating=awkward,Why did I look?!
+-2-male_finished_masturbating=awkward,O-Okay... then...
+
+-2-female_must_masturbate=interested,Are you joining me, ~name~?
+-2-female_start_masturbating=horny,Is it okay if I look at you looking at me looking at you?
+-2-female_masturbating=horny,Slow and steady, ~name~...
+-2-female_finished_masturbating=horny,Today has been a good day...
+
+#finished
+-1-male_must_masturbate=nervous,Wait... you're not really going to...
+-1-male_start_masturbating=sad,Oh...
+-1-male_masturbating=awkward,When are you going to stop, ~name~?
+-1-male_finished_masturbating=awkward,O-Okay... then...
+
+-1-female_must_masturbate=interested,Wait... are you going to...?
+-1-female_start_masturbating=horny,...
+-1-female_masturbating=horny,Slow and steady, ~name~...
+-1-female_finished_masturbating=horny,Today has been a good day...
+
+
+#ending data
+#this is optional. Delete it if you don't have an ending thought up yet.
+#you can also have multiple endings.
+#each one starts with the "ending" entry
+#the tabs aren't necessary, but make it easier to read.
+ending=This is the title of the character's ending, and the start of a new ending
+    ending_gender="male", "female", or "any". This is the gender of player that can see the ending
+
+    #each ending has a number of screens. each screen has an image, and one or more text boxes
+    #the entry "screen" marks the start of a new screen
+    screen=filename (including extension) of the background image for a screen. Also the start of a new screen
+
+        #the text boxes in a screen
+        #the entry "text" starts a new text box
+        text=The text in the text box.
+        x=The x-position of the text box. Specifically, the position of the text box's left side. This can be a percentage, or the word "centered"
+        y=The y-position of the top of the text box. Must be a percentage.
+        width=The width of a text box. This is optional. Must be a percentage.
+        arrow="up", "down", "left", or "right". Gives the text box a dialogue arrow in the specified direction. Can be left out, if you don't want the text box to be an arrow.
+
+    #this screen is an example
+    #the filename is the image you want to use
+    screen=example-filename.png
+
+        text=This is text that will be seen by the player. It has a width of 34% and an arrow pointing down.
+        x=10%
+        y=20%
+        width=34%
+        arrow=right
+
+        text=This is a centered text box. It has the default width and an arrow pointing right.
+        x=centered
+        y=50%
+        arrow=right
+
+        text=This third text box has minimum amount of values specified. It uses the default width, and has no arrow.
+        x=75%
+        y=50%
+
+#if you want additional endings, start the new one with the "ending" line
+

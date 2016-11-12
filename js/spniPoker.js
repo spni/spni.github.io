@@ -59,13 +59,13 @@ $cardCells = [[$("#player-0-card-1"), $("#player-0-card-2"), $("#player-0-card-3
  **********************************************************************/
 
 /* pseudo constants */
-var ANIM_DELAY = 500;
+var ANIM_DELAY = 350;
 var ANIM_TIME = 1000;
 var CARDS_PER_HAND = 5;
  
 /* image constants */
-var BLANK_CARD_IMAGE = imageSource + "blankcard.jpg";
-var UNKNOWN_CARD_IMAGE = imageSource + "unknown.jpg";
+var BLANK_CARD_IMAGE = IMG + "blankcard.jpg";
+var UNKNOWN_CARD_IMAGE = IMG + "unknown.jpg";
  
 /* card decks */
 var inDeck = [];	/* cards left in the deck */
@@ -176,7 +176,7 @@ function dullCard (player, card) {
  ************************************************************/
 function showHand (player) {
 	for (var i = 0; i < hands[player].cards.length; i++) {
-		$cardCells[player][i].attr('src', imageSource + hands[player].cards[i] + ".jpg");
+		$cardCells[player][i].attr('src', IMG + hands[player].cards[i] + ".jpg");
 		fillCard(player, i);
 	}
 }
@@ -186,7 +186,7 @@ function showHand (player) {
  ************************************************************/
 function dullHand (player) {
 	for (var i = 0; i < hands[player].cards.length; i++) {
-		$cardCells[player][i].attr('src', imageSource + hands[player].cards[i] + ".jpg");
+		$cardCells[player][i].attr('src', IMG + hands[player].cards[i] + ".jpg");
 		dullCard(player, i);
 	}
 }
@@ -196,12 +196,14 @@ function dullHand (player) {
  ************************************************************/
 function hideHand (player) {
 	for (var i = 0; i < hands[player].cards.length; i++) {
-		if (!players[player].out) {
-            $cardCells[player][i].attr('src', UNKNOWN_CARD_IMAGE);
-		} else {
-			$cardCells[player][i].attr('src', BLANK_CARD_IMAGE);
-		}
-		fillCard(player, i);
+        if (players[player]) {
+            if (!players[player].out) {
+                $cardCells[player][i].attr('src', UNKNOWN_CARD_IMAGE);
+            } else {
+                $cardCells[player][i].attr('src', BLANK_CARD_IMAGE);
+            }
+            fillCard(player, i);
+        }
 	}
 }
 
@@ -311,32 +313,21 @@ function delayDealtCard (player, card) {
  * Animates a small card into a player's hand.
  ************************************************************/
 function animateDealtCard (player, card) {
-	var topOffset = 0;
-	var leftOffset = 0;
-	var width = 0;
-	var height = 0;
-	
 	$clonedCard = $hiddenLargeCard.clone().prependTo($gameHiddenArea);
 	$clonedCard.addClass("shown-card");
 	$clonedCard.attr('id', 'dealt-card-'+player+'-'+card);
 	
 	if (player == HUMAN_PLAYER) {
-		topOffset = 5;
-		leftOffset = 26;
-		width = 65;
-		height = 90;
+      $clonedCard.addClass("large-dealt-card");
 	} else {
-		topOffset = 5;
-		leftOffset = 22;
-		width = 35;
-		height = 45;
+      $clonedCard.addClass("small-dealt-card");
 	}
 	
 	var offset = $cardCells[player][card].offset();
-	var top = offset.top - $clonedCard.offset().top;
-	var left = offset.left - $clonedCard.offset().left;
-	
-	$clonedCard.animate({top:top, left:left, width:width, height:height}, ANIM_TIME, function() {
+	var top = offset.top - $gameHiddenArea.offset().top;
+	var left = offset.left - $gameHiddenArea.offset().left - 6;
+
+	$clonedCard.animate({top:top, left:left}, ANIM_TIME, function() {
 		$('#dealt-card-'+player+'-'+card).remove();
 		$cardCells[player][card].attr('src', UNKNOWN_CARD_IMAGE);
 		dealLock++;
@@ -375,7 +366,7 @@ function determineLowestHand () {
 	console.log();
     
 	for (i = 0; i < players.length; i++) {
-		if (!players[i].out) {
+		if (players[i] && !players[i].out) {
 			if (hands[i].strength < lowestStrength) {
 				lowestStrength = hands[i].strength;
 				lowestPlayers = [i];

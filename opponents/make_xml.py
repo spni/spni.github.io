@@ -13,6 +13,17 @@ def get_value(dictionary, key, stage, default=""):
 		return dictionary[key]
 	return default
 
+#tags that relate to ending sequences
+ending_tag = "ending" #name for the ending
+ending_gender_tag = "ending_gender" #player gender the ending is shown to
+screen_tag = "screen"
+text_tag = "text"
+x_tag = "x"
+y_tag = "y"
+width_tag = "width"
+arrow_tag = "arrow"
+ending_tags = [ending_tag, ending_gender_tag, screen_tag, text_tag, x_tag, y_tag, width_tag, arrow_tag]
+	
 #default images and text for most cases
 def get_cases_dictionary():
 	d = {}#male pre-strip scenes
@@ -94,6 +105,7 @@ def get_stripping_cases_dictionary():
 #default images and text for being nude
 def get_nude_cases_dictionary():
 	d = {}
+	d["stripped"] = [("sad", "I miss my ~clothing~ already...")] #there's still a stripped case when they're nude
 	d["must_masturbate"] = [("loss", "I guess I lost...")]
 	d["must_masturbate_first"] = [("loss", "Y-You want me to do what?!")]
 	d["start_masturbating"] = [("starting", "I guess I have to do 'that' now, huh?")]
@@ -183,7 +195,7 @@ def manual_prettify_xml(elem, level=0, isLast=False):
 	else:
 		elem.tail = "\n" + (level) * indent
 		
-	if elem.tag in ["stage", "wardrobe", "timer", "start", "behaviour"]:
+	if elem.tag in ["stage", "wardrobe", "timer", "start", "behaviour", "epilogue", "screen", "text"]:
 		elem.tail = "\n" + elem.tail
 		
 	if elem.tag == "opponent":
@@ -248,7 +260,32 @@ def write_xml(data, filename):
 	s = ET.SubElement(bh, "stage", id=str(stage))
 	add_values(s, data, [main_dict, fnsh_dict], stage)
 	
+	#endings
+	if "endings" in data:
+		#for each ending
+		for ending in data["endings"]:
+			ending_xml = ET.SubElement(o, "epilogue", gender=ending["gender"])
+			ET.SubElement(ending_xml, "title").text = ending["title"]
+			
+			#for each screen in an ending
+			for screen in ending["screens"]:
+				screen_xml = ET.SubElement(ending_xml, "screen", img=screen["image"])
+				
+				#for each text box on a screen
+				for text_box in screen["text_boxes"]:
+					text_box_xml = ET.SubElement(screen_xml, "text")
+					ET.SubElement(text_box_xml, x_tag).text = text_box[x_tag]
+					ET.SubElement(text_box_xml, y_tag).text = text_box[y_tag]
+					#width and arrow are optional
+					if width_tag in text_box:
+						ET.SubElement(text_box_xml, width_tag).text = text_box[width_tag]
+					if arrow_tag in text_box:
+						ET.SubElement(text_box_xml, arrow_tag).text = text_box[arrow_tag]
+					ET.SubElement(text_box_xml, "content").text = text_box[text_tag]
+	
 	#done
+	
+	
 	
 	#this outputs compact/non-pretty xml
 	#tree = ET.ElementTree(o)
@@ -263,6 +300,118 @@ def write_xml(data, filename):
 	pretty_xml = manual_prettify_xml(o)
 	ET.ElementTree(pretty_xml).write(filename, xml_declaration=True)
 
+#add an ending to the 
+def add_ending(ending, d):
+	ending = dict(ending)
+
+	if len(ending.keys()) <= 0:
+		#this is an empty ending, so don't add anything
+		return
+	
+	#check for required values
+	if "title" not in ending:
+		print "Error - ending \"%s\" does not have a title." % (str(ending))
+		return
+		
+	if "gender" not in ending:
+		print "Error - ending \"%s\" does not have a gender specified." % (str(ending))
+		return
+		
+	if "screens" not in ending:
+		print "Error - ending \"%s\" does not have any screens." % (str(ending))
+		return
+	
+	#either get the endings data from the dictionary, or make a new endings variable and add that to the dictionary
+	endings = None
+	if "endings" in d:
+		endings = d["endings"]
+	else:
+		endings = list()
+		d["endings"] = endings
+		
+	endings.append(ending)
+	
+#handle the ending data
+def handle_ending_string(key, content, ending, d):
+	if key == ending_tag:
+		#this is a new ending, so store the previous ending (if any)
+		add_ending(ending, d)
+		#reset the ending data
+		ending.clear()
+		#and add the title of the new ending
+		ending["title"] = content
+		return
+	elif key == ending_gender_tag:
+		if len(content) <= 0: #if the gender wasn't specified, use "any"
+			content = "any"
+		ending["gender"] = content
+		return
+		
+	#get the screens variable
+	screens = None
+	if "screens" in ending:
+		screens = ending["screens"]
+	else:
+		#or make one, if it doesn't already exist
+		screens = list()
+		ending["screens"] = screens
+		
+	#get the current screen
+	screen = None
+	if len(screens) >= 1:
+		screen = screens[-1]
+	
+	#background image for a screen - makes a new screen
+	if key == screen_tag:
+		screen = dict()
+		screens.append(screen)
+		screen["image"] = content
+		screen["text_boxes"] = list()
+		return
+	
+	#make sure we have a screen ready, because the other tags are specific to a screen
+	if screen is None:
+		print "Error - using tag \"%s\" with value \"%s\", without a screen varaible - use the \"%s\" tag first to put this information on that screen." % (key, content, screen_tag)
+		return
+	
+	text_boxes = screen["text_boxes"]
+	
+	#the actual text of the text box. this makes a new text box
+	if key == text_tag:
+		text_box = dict()
+		text_box[text_tag] = content
+		text_boxes.append(text_box)
+		return
+		
+	#get the current text box for the current screen
+	text_box = None
+	if len(text_boxes) >= 1:
+		text_box = text_boxes[-1]
+	else:
+		print "Error - trying to use tag \"%s\" with value \"%s\", without making a text box. Use the \"%s\" tag first." % (key, content, text_tag)
+		return
+	
+	#x position. Can be a css value, or "centered"
+	if key == x_tag:
+		text_box[x_tag] = content
+		return
+	
+	#y position. Is a css value.
+	elif key == y_tag:
+		text_box[y_tag] = content
+		return
+	
+	#width of a text box. defaults to 20%
+	elif key == width_tag:
+		text_box[width_tag] = content
+		return
+		
+	#direction of the dialogue box arrow (if anything)
+	elif key == arrow_tag:
+		text_box[arrow_tag] = content
+		return
+		
+	
 #read in a character's data
 def read_player_file(filename):
 	main_dict = get_cases_dictionary()
@@ -275,6 +424,8 @@ def read_player_file(filename):
 	case_names = main_dict.keys() + plyr_dict.keys() + strp_dict.keys() + nude_dict.keys() + mstb_dict.keys() + fnsh_dict.keys()
 	
 	d = {}
+	
+	ending = dict()
 	
 	stage = -1
 	
@@ -309,10 +460,6 @@ def read_player_file(filename):
 		
 		stripped = text.strip()
 		
-		if stripped == "" or stripped == ",":
-			#if there's no entry, skip it.
-			continue
-		
 		#if the key contains a -, it belongs to a specific stage
 		if '-' in key:
 			stg, part_key = key.rsplit('-', 1)
@@ -330,26 +477,39 @@ def read_player_file(filename):
 		
 		#cases, these can be repeated
 		if part_key in case_names:
+		
+			if stripped == "" or stripped == ",":
+				#if there's no entry, skip it.
+				continue
+				
 			if ',' not in text:
 				img, desc = "", text
 			else:
 				img,desc = text.split(",", 1) #split into (image, text) pairs
 			if key in d:
-				d[key].append( (img,desc) )
+				d[key].append( (img,desc) ) #add it to existing list of responses
 			else:
-				d[key] = [ (img, desc) ]
+				d[key] = [ (img, desc) ] #make a new list of responses
 				
 		#clothes is a list
 		elif key == "clothes":
 			stage += 1
 			if "clothes" in d:
-				d["clothes"].append(text)
+				d["clothes"].append(stripped)
 			else:
-				d["clothes"] = [text]
-				
-		#other values are single lines
+				d["clothes"] = [stripped]
+		
+		#this tag relates to an ending squence
+		#use a different function, because it's quite complicated
+		elif key in ending_tags:
+			handle_ending_string(key, stripped, ending, d)
+		
+		#other values are single lines. These need to be in the data, even if the value is empty
 		else:
 			d[key] = text
+	
+	#add the final ending (if it exists)
+	add_ending(ending, d)
 	
 	return d
 

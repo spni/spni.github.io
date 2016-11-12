@@ -42,6 +42,7 @@ function createNewGroup (title, opponents) {
  **********************************************************************/
  
 /* main select screen */
+$selectTable = $("#select-table");
 $selectBubbles = [$("#select-bubble-1"),
                   $("#select-bubble-2"),
                   $("#select-bubble-3"),
@@ -69,6 +70,7 @@ $selectButtons = [$("#select-slot-button-1"),
 $selectMainButton = $("#main-select-button");
  
 /* individual select screen */
+$individualSelectTable = $("#individual-select-table");
 $individualNameLabels = [$("#individual-name-label-1"), $("#individual-name-label-2"), $("#individual-name-label-3"), $("#individual-name-label-4")];
 $individualPrefersLabels = [$("#individual-prefers-label-1"), $("#individual-prefers-label-2"), $("#individual-prefers-label-3"), $("#individual-prefers-label-4")];
 $individualSexLabels = [$("#individual-sex-label-1"), $("#individual-sex-label-2"), $("#individual-sex-label-3"), $("#individual-sex-label-4")];
@@ -85,6 +87,7 @@ $individualPageIndicator = $("#individual-page-indicator");
 $individualMaxPageIndicator = $("#individual-max-page-indicator");
 
 /* group select screen */
+$groupSelectTable = $("#group-select-table");
 $groupNameLabels = [$("#group-name-label-1"), $("#group-name-label-2"), $("#group-name-label-3"), $("#group-name-label-4")];
 $groupPrefersLabels = [$("#group-prefers-label-1"), $("#group-prefers-label-2"), $("#group-prefers-label-3"), $("#group-prefers-label-4")];
 $groupSexLabels = [$("#group-sex-label-1"), $("#group-sex-label-2"), $("#group-sex-label-3"), $("#group-sex-label-4")];
@@ -104,6 +107,11 @@ $groupMaxPageIndicator = $("#group-max-page-indicator");
 /**********************************************************************
  *****                  Select Screen Variables                   *****
  **********************************************************************/
+
+/* hidden variables */
+var mainSelectHidden = false;
+var singleSelectHidden = false;
+var groupSelectHidden = false;
 
 /* opponent listing file */
 var listingFile = "opponents/listing.xml";
@@ -158,17 +166,18 @@ function loadListingFile () {
 			$individualListings = $(xml).find('individuals');
 			$individualListings.find('opponent').each(function () {
 				var folder = $(this).text();
-				loadOpponentMeta(opponentSource + folder);
+				console.log("Reading \""+folder+"\" from listing file");
+				loadOpponentMeta(OPP + folder);
 			});
 			
 			/* end by parsing and loading the group listings */
 			$groupListings = $(xml).find('groups');
 			$groupListings.find('group').each(function () {
 				var title = $(this).attr('title');
-				var opp1 = opponentSource + $(this).attr('opp1');
-				var opp2 = opponentSource + $(this).attr('opp2');
-				var opp3 = opponentSource + $(this).attr('opp3');
-				var opp4 = opponentSource + $(this).attr('opp4');
+				var opp1 = OPP + $(this).attr('opp1');
+				var opp2 = OPP + $(this).attr('opp2');
+				var opp3 = OPP + $(this).attr('opp3');
+				var opp4 = OPP + $(this).attr('opp4');
 				
 				var newGroup = createNewGroup(title, [opp1, opp2, opp3, opp4]);
 				loadGroupMeta(newGroup);
@@ -235,13 +244,12 @@ function updateIndividualSelectScreen () {
 		if (i < selectableOpponents.length) {
 			shownIndividuals[index] = selectableOpponents[i];
 			
-			$individualNameLabels[index].attr('value', selectableOpponents[i].first + " " + selectableOpponents[i].last);
-			$individualPrefersLabels[index].attr('value', selectableOpponents[i].label);
-			$individualSexLabels[index].attr('value', selectableOpponents[i].gender);
-			$individualHeightLabels[index].attr('value', selectableOpponents[i].height);
-			$individualSourceLabels[index].attr('value', selectableOpponents[i].source);
-			$individualWriterLabels[index].attr('value', selectableOpponents[i].writer);
-			$individualArtistLabels[index].attr('value', selectableOpponents[i].artist);
+			$individualNameLabels[index].html(selectableOpponents[i].first + " " + selectableOpponents[i].last);
+			$individualPrefersLabels[index].html(selectableOpponents[i].label);
+			$individualSexLabels[index].html(selectableOpponents[i].gender);
+			$individualSourceLabels[index].html(selectableOpponents[i].source);
+			$individualWriterLabels[index].html(selectableOpponents[i].writer);
+			$individualArtistLabels[index].html(selectableOpponents[i].artist);
 			$individualDescriptionLabels[index].html(selectableOpponents[i].description);
 			
 			$individualImages[index].attr('src', selectableOpponents[i].folder + selectableOpponents[i].image);
@@ -255,13 +263,12 @@ function updateIndividualSelectScreen () {
 		} else {
 			shownIndividuals[index] = null;
 			
-			$individualNameLabels[index].attr('value', "");
-			$individualPrefersLabels[index].attr('value', "");
-			$individualSexLabels[index].attr('value', "");
-			$individualHeightLabels[index].attr('value', "");
-			$individualSourceLabels[index].attr('value', "");
-			$individualWriterLabels[index].attr('value', "");
-			$individualArtistLabels[index].attr('value', "");
+			$individualNameLabels[index].html("");
+			$individualPrefersLabels[index].html("");
+			$individualSexLabels[index].html("");
+			$individualSourceLabels[index].html("");
+			$individualWriterLabels[index].html("");
+			$individualArtistLabels[index].html("");
 			$individualDescriptionLabels[index].html("");
 			
 			$individualImages[index].attr('src', BLANK_PLAYER_IMAGE);
@@ -348,13 +355,12 @@ function updateGroupSelectScreen () {
 		if (opponent) {
 			shownGroup[i] = opponent;
 			
-			$groupNameLabels[i].attr('value', opponent.first + " " + opponent.last);
-			$groupPrefersLabels[i].attr('value', opponent.label);
-			$groupSexLabels[i].attr('value', opponent.gender);
-			$groupHeightLabels[i].attr('value', opponent.height);
-			$groupSourceLabels[i].attr('value', opponent.source);
-			$groupWriterLabels[i].attr('value', opponent.writer);
-			$groupArtistLabels[i].attr('value', opponent.artist);
+			$groupNameLabels[i].html(opponent.first + " " + opponent.last);
+			$groupPrefersLabels[i].html(opponent.label);
+			$groupSexLabels[i].html(opponent.gender);
+			$groupSourceLabels[i].html(opponent.source);
+			$groupWriterLabels[i].html(opponent.writer);
+			$groupArtistLabels[i].html(opponent.artist);
 			$groupDescriptionLabels[i].html(opponent.description);
 			
 			$groupImages[i].attr('src', opponent.folder + opponent.image);
@@ -369,13 +375,12 @@ function updateGroupSelectScreen () {
 		} else {
 			shownIndividuals[i] = null;
 			
-			$groupNameLabels[i].attr('value', "");
-			$groupPrefersLabels[i].attr('value', "");
-			$groupSexLabels[i].attr('value', "");
-			$groupHeightLabels[i].attr('value', "");
-			$groupSourceLabels[i].attr('value', "");
-			$groupWriterLabels[i].attr('value', "");
-			$groupArtistLabels[i].attr('value', "");
+			$groupNameLabels[i].html("");
+			$groupPrefersLabels[i].html("");
+			$groupSexLabels[i].html("");
+			$groupSourceLabels[i].html("");
+			$groupWriterLabels[i].html("");
+			$groupArtistLabels[i].html("");
 			$groupDescriptionLabels[i].html("");
 			
 			$groupImages[i].attr('src', BLANK_PLAYER_IMAGE);
@@ -407,10 +412,11 @@ function advanceSelectDialogue (slot) {
     /* direct the dialogue bubble */
     if (players[slot].state[players[slot].current].direction) {
         $selectBubbles[slot-1].removeClass();
-		$selectBubbles[slot-1].addClass("bordered dialogue-bubble dialogue-"+players[slot].state[players[slot].current].direction);
+        
+		$selectBubbles[slot-1].addClass("dialogue-bubble dialogue-"+players[slot].state[players[slot].current].direction);
 	} else {
 		$selectBubbles[slot-1].removeClass();
-		$selectBubbles[slot-1].addClass("bordered dialogue-bubble dialogue-centre");
+		$selectBubbles[slot-1].addClass("dialogue-bubble dialogue-centre");
 	}
     
     /* update image */
@@ -495,7 +501,7 @@ function clickedRandomGroupButton () {
 /************************************************************
  * The player clicked on the all random button.
  ************************************************************/
-function clickedRandomFillButton () {
+function clickedRandomFillButton (predicate) {
 	/* compose a copy of the loaded opponents list */
 	var loadedOpponentsCopy = [];
 	
@@ -514,7 +520,13 @@ function clickedRandomFillButton () {
 			}
 		}
 		if (position == -1) {
-			loadedOpponentsCopy.push(loadedOpponents[i]);
+			if(predicate) {
+				if(predicate(loadedOpponents[i])) {
+					loadedOpponentsCopy.push(loadedOpponents[i]);
+				}
+			} else {
+				loadedOpponentsCopy.push(loadedOpponents[i]);
+			}
 		}
 	}
 	
@@ -538,9 +550,17 @@ function clickedRandomFillButton () {
  * The player clicked on a change stats card button on the 
  * individual select screen.
  ************************************************************/
-function changeIndividualStats (slot, current, target) {
-    $('#individual-stats-page-'+slot+'-'+current).hide();
-	$('#individual-stats-page-'+slot+'-'+target).show();
+function changeIndividualStats (target) {
+    for (var i = 1; i < 5; i++) {
+        for (var j = 1; j < 4; j++) {
+            if (j != target) {
+                $('#individual-stats-page-'+i+'-'+j).hide();
+            }
+            else {
+                $('#individual-stats-page-'+i+'-'+j).show();
+            }
+        }
+    }
 }
 
 /************************************************************
@@ -591,9 +611,17 @@ function changeIndividualPage (skip, page) {
  * The player clicked on a change stats card button on the 
  * group select screen.
  ************************************************************/
-function changeGroupStats (slot, current, target) {
-    $('#group-stats-page-'+slot+'-'+current).hide();
-	$('#group-stats-page-'+slot+'-'+target).show();
+function changeGroupStats (target) {
+    for (var i = 1; i < 5; i++) {
+        for (var j = 1; j < 4; j++) {
+            if (j != target) {
+                $('#group-stats-page-'+i+'-'+j).hide();
+            }
+            else {
+                $('#group-stats-page-'+i+'-'+j).show();
+            }
+        }
+    }
 }
 
 /************************************************************
@@ -695,15 +723,6 @@ function updateSelectionVisuals () {
             } else {
                 $selectAdvanceButtons[i-1].css({opacity : 0});
             }
-            
-            /* direct the dialogue bubble */
-            if (players[i].state[players[i].current].direction) {
-                $selectBubbles[i-1].removeClass();
-                $selectBubbles[i-1].addClass("bordered dialogue-bubble dialogue-"+players[i].state[players[i].current].direction);
-            } else {
-                $selectBubbles[i-1].removeClass();
-                $selectBubbles[i-1].addClass("bordered dialogue-bubble dialogue-centre");
-            }
 			
 			/* show the bubble */
 			$selectBubbles[i-1].show();
@@ -716,6 +735,7 @@ function updateSelectionVisuals () {
             
             /* change the button */
             $selectButtons[i-1].html("Remove Opponent");
+            $selectButtons[i-1].removeClass("smooth-button-green");
             $selectButtons[i-1].addClass("smooth-button-red");
         } else {
             /* clear the view */
@@ -728,6 +748,7 @@ function updateSelectionVisuals () {
             /* change the button */
             $selectButtons[i-1].html("Select Opponent");
             $selectButtons[i-1].removeClass("smooth-button-red");
+            $selectButtons[i-1].addClass("smooth-button-green");
         }
     }
     
@@ -740,7 +761,7 @@ function updateSelectionVisuals () {
     }
     
     /* if all opponents are loaded, then enable progression */
-    if (loaded == players.length - 1) {
+    if (loaded >= 2) {
         $selectMainButton.attr('disabled', false);
     } else {
         $selectMainButton.attr('disabled', true);
@@ -780,4 +801,43 @@ function updateRandomSelection (playerObject) {
     }
 
 	updateSelectionVisuals();
+}
+
+/************************************************************
+ * Hides the table on the single selection screen.
+ ************************************************************/
+function hideSelectionTable() {
+    mainSelectHidden = !mainSelectHidden;
+    if (mainSelectHidden) {
+        $selectTable.hide();
+    }
+    else {
+        $selectTable.show();
+    }
+}
+
+/************************************************************
+ * Hides the table on the single selection screen.
+ ************************************************************/
+function hideSingleSelectionTable() {
+    singleSelectHidden = !singleSelectHidden;
+    if (singleSelectHidden) {
+        $individualSelectTable.hide();
+    }
+    else {
+        $individualSelectTable.show();
+    }
+}
+
+/************************************************************
+ * Hides the table on the single selection screen.
+ ************************************************************/
+function hideGroupSelectionTable() {
+    groupSelectHidden = !groupSelectHidden;
+    if (groupSelectHidden) {
+        $groupSelectTable.hide();
+    }
+    else {
+        $groupSelectTable.show();
+    }
 }

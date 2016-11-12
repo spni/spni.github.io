@@ -459,7 +459,7 @@
             <case tag="bad_hand">
                 <state img="2-disappointed.png">Yikes... there goes that round.</state>
                 <state img="2-disappointed.png">Nope, no luck this time.</state>
-                <state img="2-loss.png">This is bad...</state>
+                <state img="2-loss.png">I should have taken Spy up on his offer to teach me how to cheat at card games...</state>
             </case>
             <case tag="stripped">
                 <state img="2-calm.png">We won't be needing that anytime soon.</state>
@@ -705,7 +705,7 @@
                 <state img="4-interested.png">Time to strip, ~name~!</state>
             </case>
             <case tag="male_small_crotch_is_visible">
-                <state img="4-calm.png">Hey there little guy.</state>
+                <state img="4-calm.png">Aww, just like Scout's.</state>
             </case>
             <case tag="male_removing_accessory">
                 <state img="4-calm.png">Only your ~clothing~?</state>
@@ -863,7 +863,7 @@
                 <state img="5-horny.png">Mmmm... can I help you clean it off?</state>
             </case>
             <case tag="female_small_chest_is_visible">
-                <state img="5-calm.png">Mmmm... I like it.</state>
+                <state img="5-calm.png">Mmmm... I like them. They're... cute.</state>
             </case>
             <case tag="female_medium_chest_is_visible">
                 <state img="5-horny.png">Mmmm... You should have brought those out earlier.</state>
@@ -935,7 +935,7 @@
                 <state img="6-interested.png">OK, ~name~, we're waiting.</state>
             </case>
             <case tag="male_chest_will_be_visible">
-                <state img="6-calm.png">It's only fair, ~name~. I'm topless!</state>
+                <state img="6-calm.png">It's only fair, ~name~. I'm already topless!</state>
             </case>
             <case tag="female_removing_minor">
                 <state img="6-calm.png">No more ~clothing~.</state>
@@ -1410,7 +1410,7 @@
                 <state img="9-excited.png">That's huge!</state>
             </case>
             <case tag="female_crotch_will_be_visible">
-                <state img="9-interested.png">I've been wonder what yours looks like.</state>
+                <state img="9-interested.png">I've been wondering what yours looks like.</state>
             </case>
             <case tag="male_removed_minor">
                 <state img="9-loss.png">Maybe I just suck at poker.</state>
@@ -1512,7 +1512,7 @@
             </case>
             <case tag="finished_masturbating">
                 <state img="9-finished.png">Oooh, I needed that...</state>
-                <state img="9-finished.png">Whose up for a second round?</state>
+                <state img="9-finished.png">Who's up for a second round?</state>
                 <state img="9-finished.png">Mmmm.... It's more fun with an audience.</state>
             </case>
             <case tag="game_over_defeat">
@@ -1521,5 +1521,95 @@
         </stage>
 
     </behaviour>
+	
+	 <epilogue gender="any">
+        <title>At the Red base...</title>
+        <screen img="ending-0.png">
+            <text>
+                <x>centered</x>
+                <y>50%</y>
+                <width>12%</width>
+                <content>One week later...</content>
+            </text>
 
+        </screen>
+
+        <screen img="ending-1.png">
+            <text>
+                <x>32%</x>
+                <y>20%</y>
+                <arrow>left</arrow>
+                <content>Com'n Miss Pauling! I even brought a bucket of chicken!</content>
+            </text>
+
+            <text>
+                <x>70%</x>
+                <y>20%</y>
+                <arrow>left</arrow>
+                <content>For the last time, Scout, the answer is NO! I am NOT going on a date with you and that's final!</content>
+            </text>
+
+            <text>
+                <x>68%</x>
+                <y>35%</y>
+                <arrow>left</arrow>
+                <content>I am way too busy to deal with this right now! Go capture a point or something!</content>
+            </text>
+
+        </screen>
+
+        <screen img="ending-2.png">
+            <text>
+                <x>22%</x>
+                <y>25%</y>
+                <arrow>right</arrow>
+                <content>Okay, okay. Sheesh. I'm goin- HEY! Who's this frickin' wuss?</content>
+            </text>
+
+            <text>
+                <x>68%</x>
+                <y>20%</y>
+                <arrow>left</arrow>
+                <content>I asked them to come here and help me with with my paperwork. Dead bodies leave large paper trails, you know! Now get lost!</content>
+            </text>
+
+            <text>
+                <x>55%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>Yo, I'd watch myself if I was you, pally.</content>
+            </text>
+
+        </screen>
+
+        <screen img="ending-3.png">
+            <text>
+                <x>40%</x>
+                <y>20%</y>
+                <arrow>right</arrow>
+                <content>~name~, I'm so glad you're here! I'm swamped with boring paperwork and I need somebody to liven things up. Could you fuck me while I work on this?</content>
+            </text>
+
+        </screen>
+
+        <screen img="ending-4.png">
+            <text>
+                <x>left</x>
+                <y>15%</y>
+                <content>Later...</content>
+            </text>
+
+            <text>
+                <x>5%</x>
+                <y>40%</y>
+                <arrow>right</arrow>
+                <content>OH MY GOD! THIS IS HARDER THAN I THOUGHT! Aaah! But you're... so good! I don't even care that I can't finish my paperwork!</content>
+            </text>
+
+        </screen>
+
+    </epilogue>
+
+   
+	
 </opponent>

@@ -12,9 +12,10 @@ $autoFadeOptions = [$("#options-auto-fade-1"), $("#options-auto-fade-2")];
 $cardSuggestOptions = [$("#options-card-suggest-1"), $("#options-card-suggest-2")];
 $AITurnTimeOptions = [$("#options-ai-turn-time-1"), $("#options-ai-turn-time-2"), $("#options-ai-turn-time-3"), $("#options-ai-turn-time-4"), $("#options-ai-turn-time-5")];
 $dealSpeedOptions = [$("#options-deal-speed-1"), $("#options-deal-speed-2"), $("#options-deal-speed-3"), $("#options-deal-speed-4")];
-$autoForfeitOptions = [$("#options-auto-forfeit-1"), $("#options-auto-forfeit-2")];
-$autoForfeitTimeOptions = [$("#options-auto-forfeit-time-1"), $("#options-auto-forfeit-time-2"), $("#options-auto-forfeit-time-3")];
+$autoForfeitOptions = [$("#options-auto-forfeit-1"), $("#options-auto-forfeit-2"), $("#options-auto-forfeit-3"), $("#options-auto-forfeit-4")];
 
+$masturbationTimerBox = $("#player-masturbation-timer-box");
+$masturbationWarningLabel = $("#masturbation-warning-label");
  
 /**********************************************************************
  *****                      Option Functions                      *****
@@ -123,11 +124,11 @@ function setCardSuggest (choice) {
 function setAITurnTime (choice) {
 	/* implement the option change */
 	switch (choice) {
-		case 1: GAME_DELAY = 200; break;
-		case 2: GAME_DELAY = 400; break;
-		case 3: GAME_DELAY = 700; break;
-		case 4: GAME_DELAY = 1000; break;
-		case 5: GAME_DELAY = 1500; break;
+		case 1: GAME_DELAY = 0; break;
+		case 2: GAME_DELAY = 300; break;
+		case 3: GAME_DELAY = 600; break;
+		case 4: GAME_DELAY = 800; break;
+		case 5: GAME_DELAY = 1200; break;
 		default: GAME_DELAY = 600;
 	}
 	setActiveOption($AITurnTimeOptions, choice);
@@ -140,18 +141,18 @@ function setDealSpeed (choice) {
 	/* implement the option change */
 	switch (choice) {
 		case 1: ANIM_DELAY = 0;
-				ANIM_TIME = 0; 
+				ANIM_TIME = 0;
 				break;
-		case 2: ANIM_DELAY = 200;
+		case 2: ANIM_DELAY = 150;
 				ANIM_TIME = 500; 
 				break;
-		case 3: ANIM_DELAY = 500;
+		case 3: ANIM_DELAY = 350;
 				ANIM_TIME = 1000; 
 				break;
 		case 4: ANIM_DELAY = 800;
 				ANIM_TIME = 2000; 
 				break;
-		default: ANIM_DELAY = 500;
+		default: ANIM_DELAY = 350;
 				 ANIM_TIME = 1000; 
 				 break;
 	}
@@ -160,18 +161,14 @@ function setDealSpeed (choice) {
 
 function setAutoForfeit (choice) {
 	switch (choice) {
-		case 1: AUTO_FORFEIT = true;
+		case 4: AUTO_FORFEIT = false;
 				break;
-		case 2: AUTO_FORFEIT = false;
-				break;
-		default: AUTO_FORFEIT = false;
+		default: AUTO_FORFEIT = true;
 				 break;
 	}
 	setActiveOption($autoForfeitOptions, choice);
-}
-
-function setAutoForfeitTime (choice) {
-	switch (choice) {
+  
+    switch (choice) {
 		case 1: FORFEIT_DELAY = 4000;
 				break;
 		case 2: FORFEIT_DELAY = 7500;
@@ -181,7 +178,6 @@ function setAutoForfeitTime (choice) {
 		default: FORFEIT_DELAY = 7500;
 				 break;
 	}
-	setActiveOption($autoForfeitTimeOptions, choice);
 }
 
 $("#options-modal").on("hidden.bs.modal", function () {
@@ -192,3 +188,54 @@ $("#options-modal").on("hidden.bs.modal", function () {
 		$mainButton.attr('disabled', actualMainButtonState);
 	}
 });
+
+
+$backgroundSettings = [$("#settings-background-1"), $("#settings-background-2"), $("#settings-background-3"), $("#settings-background-4"), $("#settings-background-5"), $("#settings-background-6")];
+
+
+/************************************************************
+ * The player clicked the options button. Shows the options modal.
+ ************************************************************/
+function showGameSettingsModal () {
+	loadMasturbationTimer(); //set data values
+    $gameSettingsModal.modal('show');
+}
+
+
+/************************************************************
+ * The player changed the background.
+ ************************************************************/
+function setBackground (choice) {
+	/* implement the option change */
+	switch (choice) {
+		case 1: $("body").css("background-image", "url(img/background1.png)"); break;
+		case 2: $("body").css("background-image", "url(img/background2.png)"); break;
+        case 3: $("body").css("background-image", "url(img/background3.png)"); break;
+        case 4: $("body").css("background-image", "url(img/background4.png)"); break;
+        case 5: $("body").css("background-image", "url(img/background5.png)"); break;
+        case 6: $("body").css("background-image", "url(img/background6.png)"); break;
+		default: $("body").css("background-image", "url(img/background1.png)");
+	}
+	setActiveOption($backgroundSettings, choice);
+}
+
+/************************************************************
+ * Loading the player masturbation timer.
+ ************************************************************/
+function loadMasturbationTimer () {
+	$masturbationTimerBox.val(players[HUMAN_PLAYER].timer);
+	$masturbationWarningLabel.css("visibility", "hidden");
+}
+ /************************************************************
+ * The player changed their masturbation timer.
+ ************************************************************/
+
+function changeMasturbationTimer () {
+	var newTimerValue = $masturbationTimerBox.val();
+	var newTime = Number(newTimerValue);
+	var isValidTimerValue = (newTime != "NaN") && (newTime > 0);
+	if (isValidTimerValue){
+		players[HUMAN_PLAYER].timer = newTime;
+	}
+	$masturbationWarningLabel.css("visibility", isValidTimerValue ? "hidden" : "visible");
+}

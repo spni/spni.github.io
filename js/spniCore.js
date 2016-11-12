@@ -1,51 +1,77 @@
 /********************************************************************************
- This file contains the variables and functions that form the core of the game. 
- The player object, game wide constants, the screen objects, and the overarching 
- flow of the game.
+ This file contains the variables and functions that forms the core of the game. 
+ Anything that is needed game-wide is kept here.
  ********************************************************************************/
 
 /**********************************************************************
- *****                    Game Wide Variables                     *****
+ * Game Wide Constants
  **********************************************************************/
 
-/* source constants */
-var imageSource = "img/";
-var opponentSource = "opponents/";
- 
-/* player constants */
+/* General Constants */
+var DEBUG = true;
+var BASE_FONT_SIZE = 14;
+var BASE_SCREEN_WIDTH = 100;
+
+/* Game Wide Constants */
 var HUMAN_PLAYER = 0;
- 
-/* gender constants */
-var MALE = "male";
-var FEMALE = "female"; 
 
-/* size constants */
-var LARGE_SIZE = "large";
-var MEDIUM_SIZE = "medium";
-var SMALL_SIZE = "small";
+/* Directory Constants */
+var IMG = 'img/';
+var OPP = 'opponents/';
 
-/* game screens */
-$titleScreen = $('#title-screen');
-$selectScreen = $('#main-select-screen');
-$individualSelectScreen = $('#individual-select-screen');
-$groupSelectScreen = $('#group-select-screen');
-$gameScreen = $('#game-screen');
+/* Gender Images */
+var MALE_SYMBOL = IMG + 'male.png';
+var FEMALE_SYMBOL = IMG + 'female.png';
 
-/* credit modal */
-$creditModal = $('#credit-modal');
+
+
 
 /* game table */
 var tableOpacity = 1;
-$gameTable = $('.game-table');
-
-/* screen state */
-$previousScreen = null;
+$gameTable = $('#game-table');
 
 /* useful variables */
 var BLANK_PLAYER_IMAGE = "opponents/blank.png";
 
 /* player array */
 var players = [null, null, null, null, null];
+
+
+
+
+/**********************************************************************
+ * Game Wide Global Variables
+ **********************************************************************/
+
+var table = new Table();
+
+
+/**********************************************************************
+ * Screens & Modals
+ **********************************************************************/
+
+/* Screens */
+$titleScreen = $('#title-screen');
+$selectScreen = $('#main-select-screen');
+$individualSelectScreen = $('#individual-select-screen');
+$groupSelectScreen = $('#group-select-screen');
+$gameScreen = $('#game-screen');
+$epilogueScreen = $('#epilogue-screen');
+
+/* Modals */
+$creditModal = $('#credit-modal');
+$versionModal = $('#version-modal');
+$gameSettingsModal = $('#game-settings-modal');
+
+/* Screen State */
+$previousScreen = null;
+
+
+/********************************************************************************
+ * Game Wide Utility Functions
+ ********************************************************************************/
+
+
  
 /**********************************************************************
  *****                Player Object Specification                 *****
@@ -95,7 +121,7 @@ function createNewPlayer (folder, first, last, label, gender, size, clothing, ou
  ************************************************************/
 function initialSetup () {
     /* start by creating the human player object */
-    var humanPlayer = createNewPlayer("", "", "", "", MALE, MEDIUM_SIZE, [], false, "", 20, 0, 0, [], null);
+    var humanPlayer = createNewPlayer("", "", "", "", eGender.MALE, eSize.MEDIUM, [], false, "", 20, 0, 0, [], null);
     players[HUMAN_PLAYER] = humanPlayer;
     
 	/* enable table opacity */
@@ -104,10 +130,12 @@ function initialSetup () {
 	
     /* load the all content */
     loadTitleScreen();
+    selectTitleCandy();
 	loadSelectScreen();
 	
 	/* show the title screen */
 	$titleScreen.show();
+    autoResizeFont();
 }
 
 /************************************************************
@@ -163,6 +191,7 @@ function clearState () {
  ************************************************************/
 function restartGame () {
     console.log("restarting the game");
+    KEYBINDINGS_ENABLED = false;
 	
 	/* start by creating the human player object */
     var humanPlayer = createNewPlayer("", "", "", "", players[HUMAN_PLAYER].gender, players[HUMAN_PLAYER].size, players[HUMAN_PLAYER].clothing, false, "", 20, 0, 0, [], null);
@@ -176,15 +205,20 @@ function restartGame () {
 	/* enable table opacity */
 	tableOpacity = 1;
 	$gameTable.css({opacity:1});
+    $gamePlayerClothingArea.show();
+    $gamePlayerCardArea.show();
 	
 	/* trigger screen refreshes */
 	updateSelectionVisuals();
 	updateAllGameVisuals();
+    selectTitleCandy();
     
     forceTableVisibility(true);
 	
 	/* there is only one call to this right now */
+	$epilogueSelectionModal.hide();
 	$gameScreen.hide();
+	$epilogueScreen.hide();
 	holdTitleClothing();
 	$titleScreen.show();
 }
@@ -198,6 +232,13 @@ function restartGame () {
  ************************************************************/
 function showCreditModal () {
     $creditModal.modal('show');
+}
+
+/************************************************************
+ * The player clicked the version button. Shows the version modal.
+ ************************************************************/
+function showVersionModal () {
+    $versionModal.modal('show');
 }
 
 /************************************************************
@@ -232,4 +273,37 @@ function forceTableVisibility(state) {
  ************************************************************/
 function getRandomNumber (min, max) {
 	return Math.floor(Math.random() * (max - min) + min);
+}
+
+
+/**********************************************************************
+ * Returns the width of the visible screen in pixels.
+ **/
+function getScreenWidth () 
+{
+	/* fetch all game screens */
+	var screens = document.getElementsByClassName('screen');
+	
+	/* figure out which screen is visible */
+	for (var i = 0; i < screens.length; i++) 
+    {
+		if (screens[i].offsetWidth > 0) 
+        {
+			/* this screen is currently visible */
+			return screens[i].offsetWidth;
+		}
+	}
+}
+
+/**********************************************************************
+ * Automatically adjusts the size of all font based on screen width.
+ **/
+function autoResizeFont () 
+{
+	/* resize font */
+	var screenWidth = getScreenWidth();
+	document.body.style.fontSize = (14*(screenWidth/1000))+'px';
+	
+	/* set up future resizing */
+	window.onresize = autoResizeFont;
 }

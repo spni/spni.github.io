@@ -16,10 +16,14 @@ $maleSizeButtons = [$("#small-junk-button"), $("#medium-junk-button"), $("#large
 $femaleSizeButtons = [$("#small-boobs-button"), $("#medium-boobs-button"), $("#large-boobs-button")];
 $clothingTable = $("#title-clothing-table");
 $warningLabel = $("#title-warning-label");
+$titleCandy = [$("#left-title-candy"), $("#right-title-candy")];
 
 /**********************************************************************
  *****                    Title Screen Variables                  *****
  **********************************************************************/
+
+var CANDY_OPTIONS = 6;
+var CANDY_VARIANTS = 4;
 
 var clothingChoices = [];
 var selectedChoices = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
@@ -45,7 +49,7 @@ function loadClothing () {
 	clothingChoices = [];
 	
     /* load all hardcoded clothing, it's just easier this way */
-	if (players[HUMAN_PLAYER].gender == MALE) {
+	if (players[HUMAN_PLAYER].gender == eGender.MALE) {
 		clothingChoices.push(createNewClothing('Hat', 'hat', EXTRA_ARTICLE, OTHER_ARTICLE, "player/male/hat.png", 3, 0));
 		clothingChoices.push(createNewClothing('Jacket', 'jacket', MINOR_ARTICLE, UPPER_ARTICLE, "player/male/jacket.png", 3, 1));
 		clothingChoices.push(createNewClothing('Shirt', 'shirt', MAJOR_ARTICLE, UPPER_ARTICLE, "player/male/shirt.png", 2, 2));
@@ -63,7 +67,7 @@ function loadClothing () {
 		clothingChoices.push(createNewClothing('Shoes', 'shoes', EXTRA_ARTICLE, OTHER_ARTICLE, "player/male/shoes.png", 3, 12));
 		clothingChoices.push(createNewClothing('Boots', 'boots', EXTRA_ARTICLE, OTHER_ARTICLE, "player/male/boots.png", 3, 13));
 		clothingChoices.push(createNewClothing('Socks', 'socks', MINOR_ARTICLE, OTHER_ARTICLE, "player/male/socks.png", 2, 14));
-	} else if (players[HUMAN_PLAYER].gender == FEMALE) {
+	} else if (players[HUMAN_PLAYER].gender == eGender.FEMALE) {
 		clothingChoices.push(createNewClothing('Hat', 'hat', EXTRA_ARTICLE, OTHER_ARTICLE, "player/female/hat.png", 3, 0));
 		clothingChoices.push(createNewClothing('Jacket', 'jacket', MINOR_ARTICLE, UPPER_ARTICLE, "player/female/jacket.png", 3, 1));
 		clothingChoices.push(createNewClothing('Shirt', 'shirt', MAJOR_ARTICLE, UPPER_ARTICLE, "player/female/shirt.png", 2, 2));
@@ -89,10 +93,10 @@ function loadClothing () {
  * Updates the clothing on the title screen.
  ************************************************************/
 function updateTitleClothing () {
-	if (players[HUMAN_PLAYER].gender == MALE) {
+	if (players[HUMAN_PLAYER].gender == eGender.MALE) {
 		$('#female-clothing-container').hide();
 		$('#male-clothing-container').show();
-	} else if (players[HUMAN_PLAYER].gender == FEMALE) {
+	} else if (players[HUMAN_PLAYER].gender == eGender.FEMALE) {
 		$('#male-clothing-container').hide();
 		$('#female-clothing-container').show();
 	}
@@ -139,12 +143,12 @@ function changePlayerGender (gender) {
 	players[HUMAN_PLAYER].gender = gender;
 	
 	/* update visuals */
-	if (gender == MALE) {
+	if (gender == eGender.MALE) {
 		$genderButtons[0].css({opacity: 1});
 		$genderButtons[1].css({opacity: 0.4});
 		$playerSizeContainers[0].show();
 		$playerSizeContainers[1].hide();
-	} else if (gender == FEMALE) {
+	} else if (gender == eGender.FEMALE) {
 		$genderButtons[0].css({opacity: 0.4});
 		$genderButtons[1].css({opacity: 1});
 		$playerSizeContainers[0].hide();
@@ -161,12 +165,12 @@ function changePlayerSize (size) {
 	players[HUMAN_PLAYER].size = size;
 	
 	/* update visuals */
-	if (players[HUMAN_PLAYER].gender == MALE) {
-		if (size == SMALL_SIZE) {
+	if (players[HUMAN_PLAYER].gender == eGender.MALE) {
+		if (size == eSize.SMALL) {
 			$maleSizeButtons[0].css({opacity: 1});
 			$maleSizeButtons[1].css({opacity: 0.4});
 			$maleSizeButtons[2].css({opacity: 0.4});
-		} else if (size == LARGE_SIZE) {
+		} else if (size == eSize.LARGE) {
 			$maleSizeButtons[0].css({opacity: 0.4});
 			$maleSizeButtons[1].css({opacity: 0.4});
 			$maleSizeButtons[2].css({opacity: 1});
@@ -175,12 +179,12 @@ function changePlayerSize (size) {
 			$maleSizeButtons[1].css({opacity: 1});
 			$maleSizeButtons[2].css({opacity: 0.4});
 		}
-	} else if (players[HUMAN_PLAYER].gender == FEMALE) {
-		if (size == SMALL_SIZE) {
+	} else if (players[HUMAN_PLAYER].gender == eGender.FEMALE) {
+		if (size == eSize.SMALL) {
 			$femaleSizeButtons[0].css({opacity: 1});
 			$femaleSizeButtons[1].css({opacity: 0.4});
 			$femaleSizeButtons[2].css({opacity: 0.4});
-		} else if (size == LARGE_SIZE) {
+		} else if (size == eSize.LARGE) {
 			$femaleSizeButtons[0].css({opacity: 0.4});
 			$femaleSizeButtons[1].css({opacity: 0.4});
 			$femaleSizeButtons[2].css({opacity: 1});
@@ -322,5 +326,24 @@ function wearClothing () {
 }
 	
  
- 
+/************************************************************
+ * Randomly selects two characters for the title images.
+ ************************************************************/
+function selectTitleCandy() {
+    console.log("Selecting Candy...");
+    var rand1 = getRandomNumber(1, CANDY_OPTIONS + 1);
+    var rand2 = getRandomNumber(1, CANDY_OPTIONS + 1);
+    var rand3 = getRandomNumber(1, CANDY_VARIANTS + 1);
+    var rand4 = getRandomNumber(1, CANDY_VARIANTS + 1);
+    
+    if (rand2 == rand1) {
+        rand2 += 1;
+        if (rand2 == CANDY_OPTIONS + 1) {
+            rand2 = 1;
+        }
+    }
+    
+    $titleCandy[0].attr("src", IMG + "candy/" + rand1 + "-" + rand3 + ".png");
+    $titleCandy[1].attr("src", IMG + "candy/" + rand2 + "-" + rand4 + ".png");
+}
  

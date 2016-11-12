@@ -96,6 +96,9 @@ var FEMALE_START_MASTURBATING = "female_start_masturbating";
 var FEMALE_MASTURBATING = "female_masturbating";
 var FEMALE_HEAVY_MASTURBATING = "female_heavy_masturbating";
 var FEMALE_FINISHED_MASTURBATING = "female_finished_masturbating";
+
+var GAME_OVER_VICTORY = "game_over_victory";
+var GAME_OVER_DEFEAT = "game_over_defeat";
  
 /**********************************************************************
  *****                 Behaviour Parsing Functions                *****
@@ -117,7 +120,7 @@ function loadBehaviour (folder, callFunction, slot) {
             var first = $(xml).find('first').text();
             var last = $(xml).find('last').text();
             var label = $(xml).find('label').text();
-            var gender = $(xml).find('gender').text();
+            var gender = $(xml).find('gender').text().trim().toLowerCase(); //convert everything to lowercase, for comparison to the strings "male" and "female"
             var size = $(xml).find('size').text();
             var timer = $(xml).find('timer').text();
             
@@ -191,6 +194,10 @@ function updateBehaviour (player, tag, replace, content) {
 		/* their is restricted to this only */
 		//tag = players[player].forfeit[0];
 	//}
+    
+    if (!players[player]) {
+        return;
+    }
 	
     /* get the AI stage */
     var stageNum = players[player].stage;
@@ -232,7 +239,7 @@ function updateBehaviour (player, tag, replace, content) {
  ************************************************************/
 function updateAllBehaviours (player, tag, replace, content) {
 	for (i = 1; i < players.length; i++) {
-		if (i != player) {
+		if (players[i] && i != player) {
 			updateBehaviour(i, tag, replace, content);
 		}
 	}

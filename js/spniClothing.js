@@ -63,17 +63,17 @@ function getClothingTrigger (player, clothing, removed) {
 	/* starting with important articles */
 	if (type == IMPORTANT_ARTICLE) {
 		if (pos == UPPER_ARTICLE) {
-			if (gender == MALE) {
+			if (gender == eGender.MALE) {
 				if (removed) {
 					return MALE_CHEST_IS_VISIBLE;
 				} else {
 					return MALE_CHEST_WILL_BE_VISIBLE;
 				}
-			} else if (gender == FEMALE) {
+			} else if (gender == eGender.FEMALE) {
 				if (removed) {
-					if (size == LARGE_SIZE) {
+					if (size == eSize.LARGE) {
 						return FEMALE_LARGE_CHEST_IS_VISIBLE;
-					} else if (size == SMALL_SIZE) {
+					} else if (size == eSize.SMALL) {
 						return FEMALE_SMALL_CHEST_IS_VISIBLE;
 					} else {
 						return FEMALE_MEDIUM_CHEST_IS_VISIBLE;
@@ -83,11 +83,11 @@ function getClothingTrigger (player, clothing, removed) {
 				}
 			}
 		} else if (pos == LOWER_ARTICLE) {
-			if (gender == MALE) {
+			if (gender == eGender.MALE) {
 				if (removed) {
-					if (size == LARGE_SIZE) {
+					if (size == eSize.LARGE) {
 						return MALE_LARGE_CROTCH_IS_VISIBLE;
-					} else if (size == SMALL_SIZE) {
+					} else if (size == eSize.SMALL) {
 						return MALE_SMALL_CROTCH_IS_VISIBLE;
 					} else {
 						return MALE_MEDIUM_CROTCH_IS_VISIBLE;
@@ -95,7 +95,7 @@ function getClothingTrigger (player, clothing, removed) {
 				} else {
 					return MALE_CROTCH_WILL_BE_VISIBLE;
 				}
-			} else if (gender == FEMALE) {
+			} else if (gender == eGender.FEMALE) {
 				if (removed) {
 					return FEMALE_CROTCH_IS_VISIBLE;
 				} else {
@@ -104,13 +104,13 @@ function getClothingTrigger (player, clothing, removed) {
 			}
 		} else {
 			/* this shouldn't happen, but if it does then just pretend it's a major article */
-			if (gender == MALE) {
+			if (gender == eGender.MALE) {
 				if (removed) {
 					return MALE_REMOVED_MAJOR;
 				} else {
 					return MALE_REMOVING_MAJOR;
 				}
-			} else if (gender == FEMALE) {
+			} else if (gender == eGender.FEMALE) {
 				if (removed) {
 					return FEMALE_REMOVED_MAJOR;
 				} else {
@@ -121,13 +121,13 @@ function getClothingTrigger (player, clothing, removed) {
 	}
 	/* next major articles */
 	else if (type == MAJOR_ARTICLE) {
-		if (gender == MALE) {
+		if (gender == eGender.MALE) {
 			if (removed) {
 				return MALE_REMOVED_MAJOR;
 			} else {
 				return MALE_REMOVING_MAJOR;
 			}
-		} else if (gender == FEMALE) {
+		} else if (gender == eGender.FEMALE) {
 			if (removed) {
 				return FEMALE_REMOVED_MAJOR;
 			} else {
@@ -137,13 +137,13 @@ function getClothingTrigger (player, clothing, removed) {
 	}
 	/* next minor articles */
 	else if (type == MINOR_ARTICLE) {
-		if (gender == MALE) {
+		if (gender == eGender.MALE) {
 			if (removed) {
 				return MALE_REMOVED_MINOR;
 			} else {
 				return MALE_REMOVING_MINOR;
 			}
-		} else if (gender == FEMALE) {
+		} else if (gender == eGender.FEMALE) {
 			if (removed) {
 				return FEMALE_REMOVED_MINOR;
 			} else {
@@ -153,13 +153,13 @@ function getClothingTrigger (player, clothing, removed) {
 	}
 	/* next accessories */
 	else if (type == EXTRA_ARTICLE) {
-		if (gender == MALE) {
+		if (gender == eGender.MALE) {
 			if (removed) {
 				return MALE_REMOVED_ACCESSORY;
 			} else {
 				return MALE_REMOVING_ACCESSORY;
 			}
-		} else if (gender == FEMALE) {
+		} else if (gender == eGender.FEMALE) {
 			if (removed) {
 				return FEMALE_REMOVED_ACCESSORY;
 			} else {
@@ -177,11 +177,13 @@ function determineStrippingSituation (player) {
 	/* gather the clothing amounts of each player */
 	var clothingCounts = [0, 0, 0, 0, 0];
 	for (var i = 0; i < players.length; i++) {
-		for (var j = 0; j < players[i].clothing.length; j++) {
-			if (players[i].clothing[j]) {
-				clothingCounts[i]++;
-			}
-		}
+        if (players[i]) {
+            for (var j = 0; j < players[i].clothing.length; j++) {
+                if (players[i].clothing[j]) {
+                    clothingCounts[i]++;
+                }
+            }
+        }
 	}
 	
 	/* determine if this player's clothing count is the highest or lowest */
@@ -215,7 +217,7 @@ function playerMustStrip (player) {
 	/* count the clothing the player has remaining */
     var clothes = 0;
     for (var i = 0; i < players[player].clothing.length; i++) {
-        if (players[player].clothing[i]) {
+        if (players[player] && players[player].clothing[i]) {
             clothes++;
         }
     }
@@ -224,13 +226,13 @@ function playerMustStrip (player) {
 	if (clothes > 0) {
 		/* the player has clothes and will strip */
 		if (player == HUMAN_PLAYER) {
-			if (players[HUMAN_PLAYER].gender == MALE) {
+			if (players[HUMAN_PLAYER].gender == eGender.MALE) {
 				updateAllBehaviours(player, MALE_HUMAN_MUST_STRIP, [NAME], [players[player].label]);
 			} else {
 				updateAllBehaviours(player, FEMALE_HUMAN_MUST_STRIP, [NAME], [players[player].label]);
 			}
 		} else {
-			if (players[player].gender == MALE) {
+			if (players[player].gender == eGender.MALE) {
 				updateAllBehaviours(player, MALE_MUST_STRIP, [NAME], [players[player].label]);
 			} else {
 				updateAllBehaviours(player, FEMALE_MUST_STRIP, [NAME], [players[player].label]);
@@ -240,9 +242,9 @@ function playerMustStrip (player) {
 		}
 	} else {
 		/* the player has no clothes and will have to accept a forfeit */
-		if (players[player].gender == MALE) {
+		if (players[player].gender == eGender.MALE) {
 			updateAllBehaviours(player, MALE_MUST_MASTURBATE, [NAME], [players[player].label]);
-		} else if (players[player].gender == FEMALE) {
+		} else if (players[player].gender == eGender.FEMALE) {
 			updateAllBehaviours(player, FEMALE_MUST_MASTURBATE, [NAME], [players[player].label]);
 		}
 
@@ -263,7 +265,7 @@ function prepareToStripPlayer (player) {
     /* count the clothing the player has remaining */
     var clothes = 0;
     for (var i = 0; i < players[player].clothing.length; i++) {
-        if (players[player].clothing[i]) {
+        if (players[player] && players[player].clothing[i]) {
             clothes++;
         }
     }
@@ -273,7 +275,7 @@ function prepareToStripPlayer (player) {
 	if (clothes > 0) {
 		/* the player has clothes left and will strip */
         if (player == HUMAN_PLAYER) {
-            if (players[HUMAN_PLAYER].gender == MALE) {
+            if (players[HUMAN_PLAYER].gender == eGender.MALE) {
                 updateAllBehaviours(player, MALE_HUMAN_MUST_STRIP, [NAME], [players[player].label]);
             } else {
                 updateAllBehaviours(player, FEMALE_HUMAN_MUST_STRIP, [NAME], [players[player].label]);
@@ -291,9 +293,9 @@ function prepareToStripPlayer (player) {
         }
 	} else {
 		/* the player has no clothes and will have to accept a forfeit */
-		if (players[player].gender == MALE) {
+		if (players[player].gender == eGender.MALE) {
 			updateAllBehaviours(player, MALE_MUST_MASTURBATE, [NAME], [players[player].label]);
-		} else if (players[player].gender == FEMALE) {
+		} else if (players[player].gender == eGender.FEMALE) {
 			updateAllBehaviours(player, FEMALE_MUST_MASTURBATE, [NAME], [players[player].label]);
 		}
 
@@ -326,14 +328,16 @@ function showStrippingModal () {
 	}
     
     /* load the current layer of clothing into the modal */
+    var currentClothingID = 0;
     for (var i = 0; i < players[HUMAN_PLAYER].clothing.length; i++) {
         if (players[HUMAN_PLAYER].clothing[i]) {
 		    if (players[HUMAN_PLAYER].clothing[i].layer == highestLayer) {
 				var clothingCard = 
-					"<input type='image' id='"+i+"' class='bordered modal-clothing-image' src="+
-					players[HUMAN_PLAYER].clothing[i].image+" onclick='selectClothingToStrip("+i+")'/>";
+					"<div class='clothing-modal-container'><input type='image' id='"+currentClothingID+"' value='"+i+"' class='bordered modal-clothing-image' src="+
+					players[HUMAN_PLAYER].clothing[i].image+" onclick='selectClothingToStrip("+currentClothingID+")'/></div>";
 				
 				$stripClothing.append(clothingCard);
+                currentClothingID += 1;
 			}
         }
     }
@@ -343,6 +347,11 @@ function showStrippingModal () {
     
     /* display the stripping modal */
     $stripModal.modal('show');
+    
+    /* hijack keybindings */
+    KEYBINDINGS_ENABLED = true;
+    document.removeEventListener('keyup', game_keyUp, false);
+    document.addEventListener('keyup', clothing_keyUp, false);
 }
 
 /************************************************************
@@ -350,10 +359,10 @@ function showStrippingModal () {
  * the stripping modal.
  ************************************************************/
 function selectClothingToStrip (id) {
-    console.log(id);
+    console.log(Number($("#"+id+".modal-clothing-image").prop("value")));
     
     /* save the selected article */
-    selectedClothing = id;
+    selectedClothing = Number($("#"+id+".modal-clothing-image").prop("value"));
     
     /* designate the selected article */
     $(".modal-selected-clothing-image").removeClass("modal-selected-clothing-image");
@@ -361,6 +370,21 @@ function selectClothingToStrip (id) {
     
     /* enable the strip button */
     $stripButton.attr('disabled', false);
+}
+
+/************************************************************
+ * A keybound handler.
+ ************************************************************/
+function clothing_keyUp(e) 
+{
+    if (KEYBINDINGS_ENABLED) {
+        if (e.keyCode == 32 && !$stripButton.prop('disabled')) { // Space
+            closeStrippingModal();
+        }
+        else if (e.keyCode >= 49 && e.keyCode <= 57) { // A number key
+            selectClothingToStrip(e.keyCode - 49);
+        }
+    }
 }
  
 /************************************************************
@@ -370,6 +394,11 @@ function selectClothingToStrip (id) {
  
 function closeStrippingModal () {
     if (selectedClothing >= 0) {
+        /* return keybindings */
+        KEYBINDINGS_ENABLED = true;
+        document.removeEventListener('keyup', clothing_keyUp, false);
+        document.addEventListener('keyup', game_keyUp, false);
+        
         /* grab the removed article of clothing and determine its dialogue trigger */
         var removedClothing = players[HUMAN_PLAYER].clothing[selectedClothing];
         players[HUMAN_PLAYER].clothing[selectedClothing] = null;
@@ -389,9 +418,9 @@ function closeStrippingModal () {
         
         /* update label */
         if (clothes > 0) {
-            $gameClothingLabel.html("<b>Your Remaining Clothing</b>");
+            $gameClothingLabel.html("Your Remaining Clothing");
         } else {
-            $gameClothingLabel.html("<b>You're Naked</b>");
+            $gameClothingLabel.html("You're Naked");
         }
             
         /* set up the replaceable tags and content */
@@ -403,6 +432,7 @@ function closeStrippingModal () {
         updateAllGameVisuals();
 		
 		/* allow progression */
+        $('#stripping-modal').modal('hide');
 		endRound();
     } else {
         /* how the hell did this happen? */
@@ -454,11 +484,13 @@ function determineForfeitSituation (player) {
 	/* check to see how many players are out */
 	var out = 0;
 	for (var i = 0; i < players.length; i++) {
-		for (var j = 0; j < players[i].clothing.length; j++) {
-			if (players[i].out) {
-				out++;
-			}
-		}
+        if (players[i]) {
+            for (var j = 0; j < players[i].clothing.length; j++) {
+                if (players[i].out) {
+                    out++;
+                }
+            }
+        }
 	}
 	console.log("Check:"+out);
 	
@@ -479,7 +511,7 @@ function stripPlayer (player) {
     /* count the clothing the player has remaining */
     var clothes = 0;
     for (var i = 0; i < players[player].clothing.length; i++) {
-        if (players[player].clothing[i]) {
+        if (players[player] && players[player].clothing[i]) {
             clothes++;
         }
     }
@@ -500,17 +532,18 @@ function stripPlayer (player) {
 		
 		/* update behaviour */
 		if (player == HUMAN_PLAYER) {
-			if (players[HUMAN_PLAYER].gender == MALE) {
+			if (players[HUMAN_PLAYER].gender == eGender.MALE) {
 				updateAllBehaviours(HUMAN_PLAYER, MALE_START_MASTURBATING, [NAME], [players[HUMAN_PLAYER].label]);
-			} else if (players[HUMAN_PLAYER].gender == FEMALE) {
+			} else if (players[HUMAN_PLAYER].gender == eGender.FEMALE) {
 				updateAllBehaviours(HUMAN_PLAYER, FEMALE_START_MASTURBATING, [NAME], [players[HUMAN_PLAYER].label]);
 			}
-			$gameClothingLabel.html("<b>You're Masturbating...</b>");
+			$gameClothingLabel.html("You're Masturbating...");
+            $gamePlayerCountdown.show();
 			setForfeitTimer(player);
 		} else {
-			if (players[player].gender == MALE) {
+			if (players[player].gender == eGender.MALE) {
 				updateAllBehaviours(player, MALE_START_MASTURBATING, [NAME], [players[player].label]);
-			} else if (players[player].gender == FEMALE) {
+			} else if (players[player].gender == eGender.FEMALE) {
 				updateAllBehaviours(player, FEMALE_START_MASTURBATING, [NAME], [players[player].label]);
 			}
 			updateBehaviour(player, PLAYER_START_MASTURBATING, [NAME], [players[player].label]);

@@ -37,6 +37,8 @@ $gameOpponentAreas = [$("#game-opponent-area-1"),
                       $("#game-opponent-area-2"),
                       $("#game-opponent-area-3"),
                       $("#game-opponent-area-4")];
+$gamePlayerCountdown = $("#player-countdown");
+$gamePlayerClothingArea = $("#player-game-clothing-area");
 $gamePlayerCardArea = $("#player-game-card-area");
 
 /* dock UI elements */
@@ -67,9 +69,11 @@ $restartModal = $("#restart-modal");
 var GAME_DELAY = 600;
 var FORFEIT_DELAY = 7500;
 var GAME_OVER_DELAY = 1000;
+var SHOW_ENDING_DELAY = 5000; //5 seconds
 var CARD_SUGGEST = false;
 var AUTO_FORFEIT = false;
 var AUTO_FADE = true;
+var KEYBINDINGS_ENABLED = false;
  
 /* colours */
 var currentColour = "#63AAE7"; 	/* indicates current turn */
@@ -96,8 +100,14 @@ function loadGameScreen () {
     
     /* reset all of the player's states */
     for (var i = 1; i < players.length; i++) {
-        players[i].current = 0;
-        $gameOpponentAreas[i-1].show();
+        if (players[i] != null) {
+            players[i].current = 0;
+            $gameOpponentAreas[i-1].show();
+        }
+        else {
+            $gameOpponentAreas[i-1].hide();
+            $gameBubbles[i-1].hide();
+        }
     }
     $gamePlayerCardArea.show();
     
@@ -116,6 +126,10 @@ function loadGameScreen () {
     $mainButton.html("Deal");
     $mainButton.attr("disabled", false);
     actualMainButtonState = false;
+    
+    /* late settings */
+    KEYBINDINGS_ENABLED = true;
+    document.addEventListener('keyup', game_keyUp, false);
 }
                       
 /**********************************************************************
@@ -126,36 +140,45 @@ function loadGameScreen () {
  * Updates all of the main visuals on the main game screen.
  ************************************************************/
 function updateGameVisual (player) {
-   /* update all opponents */
-    if (players[player] && players[player].state) {		
-		var chosenState = players[player].state[getRandomNumber(0, players[player].state.length)];
-		
-        /* update dialogue */
-        $gameDialogues[player-1].html(chosenState.dialogue);
-        
-        /* direct the dialogue bubble */
-        $gameBubbles[player-1].show();
-        if (players[player].state[players[player].current].direction) {
-            $gameBubbles[player-1].removeClass();
-            $gameBubbles[player-1].addClass("bordered dialogue-bubble dialogue-"+chosenState.direction);
-        } 
-        
-        /* update image */
-        $gameImages[player-1].attr('src', players[player].folder + chosenState.image);
-        
-        /* update label */
-        $gameLabels[player].html(players[player].label);
-    } else {
-        /* hide their dialogue bubble */
+    /* update all opponents */
+    if (players[player]) {
+        if (players[player].state) {
+            var chosenState = players[player].state[getRandomNumber(0, players[player].state.length)];
+
+            /* update dialogue */
+            $gameDialogues[player-1].html(chosenState.dialogue);
+
+            /* direct the dialogue bubble */
+            $gameBubbles[player-1].show();
+            if (players[player].state[players[player].current].direction) {
+                $gameBubbles[player-1].removeClass();
+                $gameBubbles[player-1].addClass("bordered dialogue-bubble dialogue-"+chosenState.direction);
+            } 
+
+            /* update image */
+            $gameImages[player-1].attr('src', players[player].folder + chosenState.image);
+
+            /* update label */
+            $gameLabels[player].html(players[player].label);
+        } else {
+            /* hide their dialogue bubble */
+            $gameDialogues[player-1].html("");
+            $gameAdvanceButtons[player-1].css({opacity : 0});
+            $gameBubbles[player-1].hide();
+
+            /* hide their cards */
+            for (var i = 0; i < CARDS_PER_HAND; i++) {
+                $cardCells[player][i].attr('src', BLANK_CARD_IMAGE);
+                fillCard(player, i);
+		    }
+        }
+    }
+    else {
         $gameDialogues[player-1].html("");
         $gameAdvanceButtons[player-1].css({opacity : 0});
         $gameBubbles[player-1].hide();
-		
-		/* hide their cards */
-		for (var i = 0; i < CARDS_PER_HAND; i++) {
-			$cardCells[player][i].attr('src', BLANK_CARD_IMAGE);
-			fillCard(player, i);
-		}
+        
+        $gameImages[player-1].attr('src', BLANK_PLAYER_IMAGE);
     }
 }
  
@@ -183,7 +206,7 @@ function displayHumanPlayerClothing () {
     
     /* display the remaining clothing items */
     clothingImages.reverse();
-	$gameClothingLabel.html("<b>Your Clothing</b>");
+	$gameClothingLabel.html("Your Clothing");
 	for (var i = 0; i < 8; i++) {
 		if (clothingImages[i]) {
 			$gameClothingCells[i].attr('src', clothingImages[i]);
@@ -263,24 +286,26 @@ function advanceTurn () {
 		currentTurn = 0;
 	}
     
-    /* highlight the player who's turn it is */
-	for (var i = 0; i < players.length; i++) {
-		if (currentTurn == i) {
-			$gameLabels[i].css({"background-color" : currentColour});
-		} else {
-            $gameLabels[i].css({"background-color" : clearColour});
-		}
-	}
-	
-	/* check to see if they are still in the game */
-	if (players[currentTurn].out && currentTurn > 0) {
-		/* update their speech and skip their turn */
-        updateBehaviour(currentTurn, players[currentTurn].forfeit[0], [], []);
-        updateGameVisual(currentTurn);
-			
-        window.setTimeout(advanceTurn, GAME_DELAY);
-		return;
-	}
+    if (players[currentTurn]) {
+        /* highlight the player who's turn it is */
+        for (var i = 0; i < players.length; i++) {
+            if (currentTurn == i) {
+                $gameLabels[i].css({"background-color" : currentColour});
+            } else {
+                $gameLabels[i].css({"background-color" : clearColour});
+            }
+        }
+
+        /* check to see if they are still in the game */
+        if (players[currentTurn].out && currentTurn > 0) {
+            /* update their speech and skip their turn */
+            updateBehaviour(currentTurn, players[currentTurn].forfeit[0], [], []);
+            updateGameVisual(currentTurn);
+
+            window.setTimeout(advanceTurn, GAME_DELAY);
+            return;
+        }
+    }
 	
 	/* allow them to take their turn */
 	if (currentTurn == 0) {
@@ -298,7 +323,10 @@ function advanceTurn () {
         }
         $mainButton.attr('disabled', false);
         actualMainButtonState = false;
-	} else {
+	} else if (!players[currentTurn]) {
+        /* There is no player here, move on. */
+        advanceTurn();
+    } else {
         /* AI player's turn */
 		makeAIDecision();
 	}
@@ -312,19 +340,22 @@ function startDealPhase () {
     /* dealing cards */
 	dealLock = 0;
     for (var i = 0; i < players.length; i++) {
-        console.log(players[i] + " "+ i);
-		if (!players[i].out) {
-            /* deal out a new hand to this player */
-            dealHand(i);
-        } else {
-            /* collect the player's hand */
-            collectPlayerHand(i);
-            
-            if (HUMAN_PLAYER == i) {
-                $gamePlayerCardArea.hide();
-            } 
-            else {
-                $gameOpponentAreas[i-1].hide();
+        if (players[i]) {
+            console.log(players[i] + " "+ i);
+            if (!players[i].out) {
+                /* deal out a new hand to this player */
+                dealHand(i);
+            } else {
+                /* collect the player's hand */
+                collectPlayerHand(i);
+
+                if (HUMAN_PLAYER == i) {
+                    $gamePlayerCardArea.hide();
+                    $gamePlayerClothingArea.hide();
+                } 
+                else {
+                    $gameOpponentAreas[i-1].hide();
+                }
             }
         }
     }
@@ -353,7 +384,7 @@ function checkDealLock () {
 	/* count the players still in the game */
 	var inGame = 0;
 	for (var i = 0; i < players.length; i++) {
-		if (!players[i].out) {
+		if (players[i] && !players[i].out) {
 			inGame++;
 		}
 	}
@@ -431,7 +462,7 @@ function completeExchangePhase () {
 function completeRevealPhase () {
     /* reveal everyone's hand */
     for (var i = 0; i < players.length; i++) {
-        if (!players[i].out) {
+        if (players[i] && !players[i].out) {
             determineHand(i);
             showHand(i);
         }
@@ -448,16 +479,16 @@ function completeRevealPhase () {
         
         /* hide the dialogue bubbles */
         for (var i = 1; i < players.length; i++) {
-            $gameDialogues[i].html("");
-            $gameAdvanceButtons[i].css({opacity : 0});
-            $gameBubbles[i].hide();
+            $gameDialogues[i-1].html("");
+            $gameAdvanceButtons[i-1].css({opacity : 0});
+            $gameBubbles[i-1].hide();
         }
         
         /* reset the round */
         mainButton.html("Deal");
         $mainButton.attr('disabled', false);
         if (players[HUMAN_PLAYER].out && AUTO_FORFEIT) {
-            setTimeout(advanceGame,FORFEIT_DELAY);
+            setTimeout(advanceGame, FORFEIT_DELAY);
         }
         return;
     }
@@ -522,7 +553,7 @@ function endRound () {
     var inGame = 0;
     var lastPlayer = 0;
     for (var i = 0; i < players.length; i++) {
-        if (!players[i].out) {
+        if (players[i] && !players[i].out) {
             inGame++;
             lastPlayer = i;
         }
@@ -570,11 +601,26 @@ function handleGameOver() {
 	/* determine true end */
 	if (left == 0) {
 		/* true end */
+		
+		//identify winner
+		var winner = -1;
+		for (var i = 0; i < players.length; i++){
+			if (players[i] && !players[i].out){
+				winner = i;
+				break;
+			}
+		}
+		for (var i = 0; i < players.length; i++){
+			var tag = (i == winner) ? GAME_OVER_VICTORY : GAME_OVER_DEFEAT;
+			updateBehaviour(i, tag, [NAME], [players[winner].label]);
+		}
+		
         updateAllGameVisuals();
         
-		$mainButton.html("Restart?");
+		$mainButton.html("Ending?");
 		$mainButton.attr('disabled', false);
         actualMainButtonState = false;
+		//window.setTimeout(doEpilogueModal, SHOW_ENDING_DELAY); //start the endings
 	} else {
 		/* someone is still forfeiting */
 		var context = "Wait";
@@ -693,7 +739,9 @@ function advanceGame () {
 		showRestartModal(); //No delay here
 		$mainButton.attr('disabled', false);
         actualMainButtonState = false;
-	} else {
+	} else if (context == "Ending?") {
+        doEpilogueModal(); //start the endings
+    } else {
         if (AUTO_FADE) forceTableVisibility(true);
         console.log("Invalid main button state: "+context);
     }
@@ -708,4 +756,32 @@ function advanceGame () {
  ************************************************************/
 function showRestartModal () {
     $restartModal.modal('show');
+}
+
+
+/************************************************************
+ * A keybound handler.
+ ************************************************************/
+function game_keyUp(e) 
+{
+    if (KEYBINDINGS_ENABLED) {
+        if (e.keyCode == 32 && !$mainButton.prop('disabled')) { // Space
+            advanceGame();
+        }
+        else if (e.keyCode == 49 && !$cardButtons[4].prop('disabled')) { // 1
+            selectCard(4);
+        }
+        else if (e.keyCode == 50 && !$cardButtons[3].prop('disabled')) { // 2
+            selectCard(3);
+        }
+        else if (e.keyCode == 51 && !$cardButtons[2].prop('disabled')) { // 3
+            selectCard(2);
+        }
+        else if (e.keyCode == 52 && !$cardButtons[1].prop('disabled')) { // 4
+            selectCard(1);
+        }
+        else if (e.keyCode == 53 && !$cardButtons[0].prop('disabled')) { // 5
+            selectCard(0);
+        }
+    }
 }
