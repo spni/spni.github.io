@@ -117,6 +117,11 @@ def read_description_string(description_type, line):
 			#part_values = [x if (using[i] == description_type) else None for i, x in enumerate(values)]
 			l = len(values)
 			part_values = [None] * l
+			
+			#assume extra labels are part of image
+			while len(using) < l:
+				using += (im,)
+				
 			for i in range(l):
 				part_values[i] = values[i] if (using[i] == description_type) else None
 			desc[label] = part_values
