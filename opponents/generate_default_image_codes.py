@@ -188,7 +188,13 @@ def read_description_files(in_filename):
 					print "Error - trying to give a stage an love juice level before giving a stage on line %d: %s" % (linenumber, line)
 					continue
 				#stage[2] = int(value)
-				stage[0]["dc"][0] = int(value)
+				stage_desc = stage[0]
+				v = int(value)
+				if "dc" in stage_desc:
+					stage_desc["dc"][0] = v
+				else:
+					#the love juice value is the first number in the dc section, so I don't need to pad it with None's
+					stage_desc["dc"] = [v]
 			
 			#image filename
 			elif key == image_tag:
