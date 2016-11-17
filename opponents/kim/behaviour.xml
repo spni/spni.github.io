@@ -1413,43 +1413,210 @@
 
     </behaviour>
 
-    <epilogue gender="&quot;male&quot;, &quot;female&quot;, or &quot;any&quot;. This is the gender of player that can see the ending">
-        <title>This is the title of the character's ending, and the start of a new ending</title>
-        <screen img="filename (including extension) of the background image for a screen. Also the start of a new screen">
-            <text>
-                <x>The x-position of the text box. Specifically, the position of the text box's left side. This can be a percentage, or the word "centered"</x>
-                <y>The y-position of the top of the text box. Must be a percentage.</y>
-                <width>The width of a text box. This is optional. Must be a percentage.</width>
-                <arrow>"up", "down", "left", or "right". Gives the text box a dialogue arrow in the specified direction. Can be left out, if you don't want the text box to be an arrow.</arrow>
-                <content>The text in the text box.</content>
-            </text>
-
-        </screen>
-
-        <screen img="example-filename.png">
-            <text>
-                <x>10%</x>
-                <y>20%</y>
-                <width>34%</width>
-                <arrow>right</arrow>
-                <content>This is text that will be seen by the player. It has a width of 34% and an arrow pointing down.</content>
-            </text>
-
-            <text>
-                <x>centered</x>
-                <y>50%</y>
-                <arrow>right</arrow>
-                <content>This is a centered text box. It has the default width and an arrow pointing right.</content>
-            </text>
-
-            <text>
-                <x>75%</x>
-                <y>50%</y>
-                <content>This third text box has minimum amount of values specified. It uses the default width, and has no arrow.</content>
-            </text>
-
-        </screen>
-
-    </epilogue>
+		<epilogue gender="female">
+		<title>The Threesome</title>
+		<screen img="blank.png">
+			<start>0</start>
+			<text>
+				<x>70%</x>
+				<y>50%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>Thanks for coming!</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>60%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>It's Ron's birthday today, and I wanted to make it extra special for him.</content>
+			</text>
+		</screen>
+		<screen img="blank.png">
+			<start>0</start>
+			<text>
+				<x>70%</x>
+				<y>40%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>I'm not the sharing kind...</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>50%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>If we called up Yori or Tara I'd jell SO much.</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>60%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>It could ruin everything!   I--I can't risk that.     Not with him.</content>
+			</text>
+		</screen>
+		<screen img="blank.png">
+			<start>0</start>
+			<text>
+				<x>70%</x>
+				<y>30%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>But you?</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>40%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>You're PERFECT.</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>50%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>And it's not like you wouldn't be a present for ME, either...</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>65%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>I can't stop thinking about that game...</content>
+			</text>
+		</screen>
+		<screen img="blank.png">
+			<start>0</start>
+			<text>
+				<x>70%</x>
+				<y>30%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>I used to be head cheerleader... I know he has fantasies.</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>50%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>You know what? I do too.</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>60%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>C'mere and let's get started! He'll be home any minute now.</content>
+			</text>
+		</screen>
+	</epilogue>
+		<epilogue gender="male">
+		<title>The Rematch</title>
+		<screen img="blank.png">
+			<start>0</start>
+			<text>
+				<x>70%</x>
+				<y>50%</y>
+				<width>15%</width>
+				<arrow>left</arrow>
+				<content>Thanks for coming!</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>60%</y>
+				<width>15%</width>
+				<arrow>left</arrow>
+				<content>I'm glad you showed up.</content>
+			</text>
+		</screen>
+		<screen img="blank.png">
+			<start>0</start>
+			<text>
+				<x>70%</x>
+				<y>30%</y>
+				<width>25%</width>
+				<arrow>left</arrow>
+				<content>I just can't believe how easily you beat me at poker.</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>50%</y>
+				<width>15%</width>
+				<arrow>left</arrow>
+				<content>Me! Kim Possible!</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>60%</y>
+				<width>15%</width>
+				<arrow>left</arrow>
+				<content>I want a rematch.</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>70%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>And I've been practicing.</content>
+			</text>
+		</screen>
+		<screen img="blank.png">
+			<start>0</start>
+			<text>
+				<x>70%</x>
+				<y>30%</y>
+				<width>25%</width>
+				<arrow>left</arrow>
+				<content>I agreed to your terms. Perv.</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>40%</y>
+				<width>25%</width>
+				<arrow>left</arrow>
+				<content>Notice: cheerleader costume on. Pom poms, even.</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>55%</y>
+				<width>25%</width>
+				<arrow>left</arrow>
+				<content>The rest of the team agreed to play, too.</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>70%</y>
+				<width>30%</width>
+				<arrow>left</arrow>
+				<content>(Personally, I think Bonnie just wants to see me naked...)</content>
+			</text>
+		</screen>
+		<screen img="blank.png">
+			<start>0</start>
+			<text>
+				<x>70%</x>
+				<y>40%</y>
+				<width>30%</width>
+				<arrow>left</arrow>
+				<content>We've all agreed to the new rules. And my parents are away at a conference, so there's nothing to worry about.</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>60%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>Just remember it cuts both ways.</content>
+			</text>
+			<text>
+				<x>70%</x>
+				<y>70%</y>
+				<width>20%</width>
+				<arrow>left</arrow>
+				<content>If you lose... you're OURS.</content>
+			</text>
+		</screen>
+	</epilogue>
 
 </opponent>
