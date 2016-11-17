@@ -15,6 +15,7 @@
         <clothing lowercase="shorts" position="lower" proper-name="Shorts" type="important" />
         <clothing lowercase="bra" position="upper" proper-name="Bra" type="important" />
         <clothing lowercase="jacket" position="upper" proper-name="Jacket" type="major" />
+        <clothing lowercase="belt" position="other" proper-name="Belt" type="extra" />
         <clothing lowercase="gloves" position="other" proper-name="Gloves" type="extra" />
         <clothing lowercase="bandana" position="other" proper-name="Bandana" type="extra" />
         <clothing lowercase="socks" position="lower" proper-name="Socks" type="extra" />
@@ -456,16 +457,16 @@
                 <state img="2-stripped.png">Phew, good thing I showered first.</state>
             </case>
             <case tag="must_strip_normal">
-                <state img="2-loss.png">Gloves, time to say goodbye!</state>
+                <state img="2-loss.png">Ugh. Time to ditch the bandana.</state>
             </case>
             <case tag="must_strip_losing">
-                <state img="2-loss.png">First my feet, now my hands. Can this get any worse?</state>
+                <state img="2-loss.png">This was the most I wanted to take off going into this....Not good.</state>
             </case>
             <case tag="stripping">
-                <state img="2-strip.png">These gloves are designed for throwing Pokeballs. Super grippy!</state>
+                <state img="2-strip.png">The good thing about a bandana is no hat head!</state>
             </case>
             <case tag="must_strip_winning">
-                <state img="2-loss.png">Looks like the gloves are coming off! Didn't someone else already say this?</state>
+                <state img="2-loss.png">Time to let my hair out.</state>
             </case>
         </stage>
 
@@ -602,19 +603,19 @@
                 <state img="3-sad.png">This is... concerning.</state>
             </case>
             <case tag="stripped">
-                <state img="3-stripped.png">I guess they don't do me much good here, though.</state>
+                <state img="3-stripped.png">Case in point, Brendan.</state>
             </case>
             <case tag="must_strip_normal">
-                <state img="3-loss.png">Ugh. Time to ditch the bandana.</state>
+                <state img="3-loss.png">Gloves, time to say goodbye!</state>
             </case>
             <case tag="must_strip_losing">
-                <state img="3-loss.png">This was the most I wanted to take off going into this....Not good.</state>
+                <state img="3-loss.png">First my feet, now my hands. Can this get any worse?</state>
             </case>
             <case tag="stripping">
-                <state img="3-strip.png">The best part about a bandana is no hat hair!</state>
+                <state img="3-strip.png">These gloves are designed for throwing Pokeballs. Super grippy!</state>
             </case>
             <case tag="must_strip_winning">
-                <state img="3-loss.png">Time to let my hair out.</state>
+                <state img="3-loss.png">Looks like the gloves are coming off! Didn't someone else already say this?</state>
             </case>
         </stage>
 
@@ -751,19 +752,19 @@
                 <state img="4-sad.png">This is... concerning.</state>
             </case>
             <case tag="stripped">
-                <state img="4-stripped.png">Case in point, Brendan's hair.</state>
+                <state img="4-stripped.png">Let's just keep playing...</state>
             </case>
             <case tag="must_strip_normal">
-                <state img="4-loss.png">Crap, time to remove my jacket.</state>
+                <state img="4-loss.png">Bye-bye belt!</state>
             </case>
             <case tag="must_strip_losing">
-                <state img="4-loss.png">. *sigh*</state>
+                <state img="4-loss.png">Any more losses and I'll actually have to remove some clothing. *sigh*</state>
             </case>
             <case tag="stripping">
-                <state img="4-strip.png">I can see you're all staring at me. Not cool....</state>
+                <state img="4-strip.png">Oh no! How will my pants stay up now?!</state>
             </case>
             <case tag="must_strip_winning">
-                <state img="4-loss.png">Oh dear, time to take my jacket off.</state>
+                <state img="4-loss.png">Oh dear, time to say goodbye to my belt.</state>
             </case>
         </stage>
 
@@ -884,15 +885,15 @@
                 <state img="5-happy.png">Oh, how very nice.</state>
             </case>
             <case tag="okay_hand">
-                <state img="5-covering.png">These cards are alright.</state>
-                <state img="5-covering.png">I have an average hand.</state>
-                <state img="5-covering.png">This is a decent hand.</state>
-                <state img="5-covering.png">Hmm, ok then.</state>
+                <state img="5-calm.png">These cards are alright.</state>
+                <state img="5-calm.png">I have an average hand.</state>
+                <state img="5-calm.png">This is a decent hand.</state>
+                <state img="5-calm.png">Hmm, ok then.</state>
             </case>
             <case tag="swap_cards">
-                <state img="5-covering.png">May I have ~cards~ cards?</state>
-                <state img="5-covering.png">I'll take ~cards~.</state>
-                <state img="5-covering.png">~cards~ new cards, please.</state>
+                <state img="5-calm.png">May I have ~cards~ cards?</state>
+                <state img="5-calm.png">I'll take ~cards~.</state>
+                <state img="5-calm.png">~cards~ new cards, please.</state>
             </case>
             <case tag="bad_hand">
                 <state img="5-sad.png">These cards could be better...</state>
@@ -900,8 +901,8 @@
                 <state img="5-sad.png">This is... concerning.</state>
             </case>
             <case tag="stripped">
-                <state img="5-stripped.png">Down to my skivvies...I need to be careful.</state>
-                <state img="5-stripped.png">People tell me I have the figure of a Gym Leader. What do you think?</state>
+                <state img="5-stripped.png">No more accessories...</state>
+                <state img="5-stripped.png">Psyche, stretchy pants!</state>
             </case>
             <case tag="must_strip_normal">
                 <state img="5-loss.png">Oh man...I wasn't prepared for this...</state>
@@ -1034,15 +1035,15 @@
                 <state img="6-happy.png">Oh, how very nice.</state>
             </case>
             <case tag="okay_hand">
-                <state img="6-covering.png">These cards are alright.</state>
-                <state img="6-covering.png">I have an average hand.</state>
-                <state img="6-covering.png">This is a decent hand.</state>
-                <state img="6-covering.png">Hmm, ok then.</state>
+                <state img="6-calm.png">These cards are alright.</state>
+                <state img="6-calm.png">I have an average hand.</state>
+                <state img="6-calm.png">This is a decent hand.</state>
+                <state img="6-calm.png">Hmm, ok then.</state>
             </case>
             <case tag="swap_cards">
-                <state img="6-covering.png">May I have ~cards~ cards?</state>
-                <state img="6-covering.png">I'll take ~cards~.</state>
-                <state img="6-covering.png">~cards~ new cards, please.</state>
+                <state img="6-calm.png">May I have ~cards~ cards?</state>
+                <state img="6-calm.png">I'll take ~cards~.</state>
+                <state img="6-calm.png">~cards~ new cards, please.</state>
             </case>
             <case tag="bad_hand">
                 <state img="6-sad.png">Not good....</state>
@@ -1180,21 +1181,21 @@
                 <state img="7-happy.png">Phew, I'm safe this round.</state>
             </case>
             <case tag="okay_hand">
-                <state img="7-covering.png">These cards are alright.</state>
-                <state img="7-covering.png">I have an average hand.</state>
-                <state img="7-covering.png">This is a decent hand.</state>
-                <state img="7-covering.png">Hmm, ok then.</state>
+                <state img="7-calm.png">These cards are alright.</state>
+                <state img="7-calm.png">I have an average hand.</state>
+                <state img="7-calm.png">This is a decent hand.</state>
+                <state img="7-calm.png">Hmm, ok then.</state>
             </case>
             <case tag="swap_cards">
-                <state img="7-covering.png">May I have ~cards~ cards?</state>
-                <state img="7-covering.png">I'll take ~cards~.</state>
-                <state img="7-covering.png">~cards~ new cards, please.</state>
+                <state img="7-calm.png">May I have ~cards~ cards?</state>
+                <state img="7-calm.png">I'll take ~cards~.</state>
+                <state img="7-calm.png">~cards~ new cards, please.</state>
             </case>
             <case tag="bad_hand">
                 <state img="7-shocked.png">...Crap.</state>
             </case>
             <case tag="stripped">
-                <state img="6-stripped.png">There. You're welcome.</state>
+                <state img="7-stripped.png">There. You're welcome.</state>
             </case>
             <case tag="must_strip_normal">
                 <state img="7-loss.png">I can feel my heart beating out of my chest...</state>
@@ -1466,8 +1467,7 @@
                 <state img="9-horny.png">Finally, some inspiration!</state>
             </case>
             <case tag="masturbating">
-                <state img="9-masturbate_a.png">These feelings are rushing through my body like a roaring waterfall....</state>
-				<state img="9-masturbate_b.png">So sticky...I'm absolutely soaked.</state>
+                <state img="9-calm.png">These feelings are rushing through my body like a roaring waterfall....</state>
             </case>
             <case tag="finishing_masturbating">
                 <state img="9-finishing.png">NYAAAAAAAAAAAHHHH!!!</state>
