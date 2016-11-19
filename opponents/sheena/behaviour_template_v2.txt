@@ -1,0 +1,769 @@
+#If you're reading this, I ended up just editing the behaviour.xml file to make everything work.
+#This file breaks everything down nicely though and let's you see how I progressed through the code.
+
+
+
+#required for behaviour.xml
+first=Sheena
+last=Fujibayashi
+label=Sheena
+gender=female
+size=large
+#Number of phases to "finish"
+timer=20
+
+#required for meta.xml
+#start picture
+pic=0-calm
+height=5'5"
+from=Tales of Symphonia
+writer=stealthsnowpaw
+artist=stealthsnowpaw
+description=An assassin with a tough exterior from a small town, but once you break down her walls, you might be surprised at what you find.
+
+#clothes
+clothes=Gloves,gloves,extra,other
+clothes=Shoes,shoes,extra,other
+clothes=Socks,socks,extra,other
+clothes=Belt,belt,extra,other
+clothes=Shirt,shirt,major,upper
+clothes=Pants,pants,major,lower
+clothes=Bra,bra,important,upper
+clothes=Panties,panties,important,lower
+
+#starting picture and text
+start=0-calm,The casino in Altamira only has black jack. Is this a similar game?
+
+#default card behaviour
+#you can include multiple entries to give the character multiple lines and/or appearances in that situation.
+#This is what a character says while they're exchanging cards.
+swap_cards=calm,Hmmm.... I'll take ~cards~ cards.
+swap_cards=calm,I'll take ~cards~.
+swap_Cards=calm,Can I get ~cards~ new cards, please?
+
+#card cases
+#fully clothed
+0-good_hand=0-happy,You're in for a world of hurt!
+0-okay_hand=0-calm,I don't think I have anything great here...
+0-bad_hand=0-loss,I'm still new to this, but these cards don't seem very good.
+
+#lost gloves
+1-good_hand=1-happy,You're in for a world of hurt!
+1-okay_hand=1-calm,I don't think I have anything great here...
+1-bad_hand=1-loss,These cards didn't work out for me last time.
+
+#lost shoes
+2-good_hand=2-happy,You're in for a world of hurt!
+2-okay_hand=2-calm,Hmm, ok then.
+2-bad_hand=2-angry,What?! You've gotta be kidding me!
+
+#lost socks
+3-good_hand=3-happy,You're in for a world of hurt!
+3-okay_hand=3-calm,Hmm, ok then.
+3-bad_hand=3-angry,What?! You've gotta be kidding me!
+
+#lost belt
+4-good_hand=4-excited,It's about time!
+4-okay_hand=4-interested,Hmm, ok then.
+4-bad_hand=4-angry,Who shuffled this deck?!
+
+#lost shirt
+5-good_hand=5-excited,Things are looking up!
+5-okay_hand=5-sad,Not good. Not bad, either, but not good.
+5-bad_hand=5-sad,This can't be good...
+
+#lost pants
+6-good_hand=6-excited,I'm definitely not going to lose, now!
+6-okay_hand=6-sad,Not good. Not bad, either, but not good.
+6-bad_hand=6-angry,Are you doing this on purpose?! Did Zelos put you up to this?
+
+#lost bra
+7-good_hand=7-happy,I really needed this hand!
+7-okay_hand=7-loss,This isn't really what I was hoping for...
+7-bad_hand=7-sad,It looks like I have an strong affinity for falling down holes... and being dealt bad hands.
+
+#lost panties/naked
+8-good_hand=8-shocked,I'm not going down yet! Wait! That didn't come out right!
+8-okay_hand=8-loss,I really hope this is good enough. Otherwise....
+8-bad_hand=8-sad,It looks like I have an strong affinity for falling down holes... and being dealt bad hands.
+
+
+
+
+#character must strip
+
+#losing gloves
+must_strip_winning=0-loss,I messed up. Hopefully this doesn't come back to bite me.
+must_strip_normal=0-loss,Ugh, I feel like such an idiot!
+must_strip_losing=0-loss,This can't be good...
+stripping=0-strip,I guess I'll take off my gloves first.
+stripped=1-calm,It feels good to get those off!
+
+#losing shoes
+must_strip_winning=1-loss,I messed up. Hopefully this doesn't come back to bite me.
+must_strip_normal=1-loss,Ugh, I feel like such an idiot!
+must_strip_losing=1-loss,This can't be good...
+stripping=1-strip,My shoes seem like the next obvious choice.
+stripped=2-sad,I can only hope this is the most clothing I have to take off.
+
+#losing socks
+must_strip_winning=2-loss,I messed up. Hopefully this doesn't come back to bite me.
+must_strip_normal=2-loss,Ugh, I feel like such an idiot!
+must_strip_losing=2-loss,This can't be good...
+stripping=2-strip,You were expecting me to take these off, weren't you, ~name~?
+stripped=3-sad,It's more comfortable this way anyway.
+
+#losing belt
+must_strip_winning=3-loss,I messed up. Hopefully this doesn't come back to bite me.
+must_strip_normal=3-loss,Ugh, I feel like such an idiot!
+must_strip_losing=3-loss,I bet you feel good about yourself right now, don't you?
+stripping=3-strip,Well, I'm all out of little things to take off now...
+stripped=4-sad,Well, that's all of the little things I can take off.
+
+#losing shirt
+must_strip_winning=4-loss,I messed up. Hopefully this doesn't come back to bite me.
+must_strip_normal=4-angry,Ugh, I feel like such an idiot!
+must_strip_losing=4-angry,What?! You've gotta be kidding me!
+stripping=4-strip,I'll... I'll remove my ~clothing~.  Just... give me a minute.
+stripped=5-sad,I wish we were in the hot springs. I could use some relaxation...
+
+#losing pants
+must_strip_winning=5-shocked,I messed up. Hopefully this doesn't come back to bite me.
+must_strip_normal=5-shocked,Ugh, I feel like such an idiot!
+must_strip_losing=5-shocked,I'm in real trouble now...
+stripping=5-strip,I can't believe it's come to this.
+stripped=6-embarassed,Not even Zelos, the king pervert, has seen me like this.
+
+#losing bra
+must_strip_winning=6-loss,I messed up. Hopefully this doesn't come back to bite me.
+must_strip_normal=6-loss,Ugh, I feel like such an idiot!
+must_strip_losing=6-loss,Oh no... This is even worse than Lloyd peeping on me in the hot springs!
+stripping=6-strip,Not my ~clothing~!  I feel so embarassed!
+stripped=7-angry,If you keep staring, I'm gonna smack you!
+
+#losing panties
+must_strip_winning=7-loss,I messed up. Hopefully this doesn't come back to bite me.
+must_strip_normal=7-loss,Ugh, I feel like such an idiot!
+must_strip_losing=7-loss,This feeling of embarassment is even worse than facing Mizuho after the Volt incident.
+stripping=7-strip,The only good thing to come of this is that Zelos isn't here to gawk.
+stripped=8-embarassed,I should just summon Shadow to hide me... But the rules are the rules.
+
+
+
+
+#character masturbation cases
+
+#lost panties/naked
+must_masturbate_first=8-shocked,I'll...do it. I have to keep my word.
+must_masturbate=8-shocked,This is so embarassing, but at least I'm not alone.
+start_masturbating=9-loss,I've never done this with an audience before...
+
+#masturbating
+masturbating=9-embarassed,This doesn't disqualify me from being a maiden, does it?
+masturbating=9-interested,Oh... I'm starting to get wet...
+masturbating=9-horny,I think I like being watched...
+heavy_masturbating=9-excited,Ohhh... I'm getting close
+heavy_masturbating=9-horny,I'm so close... Watch me please...
+heavy_masturbating=9-horny,Ahhhh.... Mmmmm.... Almost... There...
+finishing_masturbating=9-finishing,Ahhh! I'm cumming!
+
+#finished
+finished_masturbating=10-horny,*Sigh* Did you enjoy the show? Maybe I should let Lloyd peep on me after all...
+finished_masturbating=10-excited,I can't believe I came so easily... I'll have to ask Raine if she has any artes that can make it even better!
+
+
+#game over
+#fully clothed
+0-game_over_victory=0-excited,Hah! Am I amazing or what? Regret messing with me? Well, it's too late now!
+
+#lost shoes
+1-game_over_victory=1-excited,Hah! Am I amazing or what? Regret messing with me? Well, it's too late now!
+
+#lost socks
+2-game_over_victory=2-excited,Hah! Am I amazing or what? Regret messing with me? Well, it's too late now!
+
+#lost jumper
+3-game_over_victory=3-excited,Hah! Am I amazing or what? Regret messing with me? Well, it's too late now!
+
+#lost tie
+4-game_over_victory=4-excited,Hah! Am I amazing or what? Regret messing with me? Well, it's too late now!
+
+#lost skirt
+5-game_over_victory=5-excited,Hah! Am I amazing or what? Regret messing with me? Well, it's too late now!
+
+#lost blouse
+6-game_over_victory=6-excited,Hah! Am I amazing or what? Regret messing with me? Well, it's too late now!
+
+#lost bra
+7-game_over_victory=7-excited,Hah! Am I amazing or what? Regret messing with me? Well, it's too late now!
+
+#lost panties/naked
+8-game_over_victory=8-excited,Hah! Am I amazing or what? Regret messing with me? Well, it's too late now!
+
+
+#finished
+10-game_over_defeat=10-horny,I thought I would be more upset about losing... But I just want to keep going! Want to get out of here with me?
+
+
+#other player must strip
+#fully clothed
+0-male_human_must_strip=0-interested,Those are the rules! Take it off, ~name~!
+0-male_must_strip=0-interested,Those are the rules! Take it off, ~name~!
+0-female_human_must_strip=0-interested,Those are the rules! Take it off, ~name~!
+0-female_must_strip=0-interested,Those are the rules! Take it off, ~name~!
+
+#lost gloves
+1-male_human_must_strip=1-interested,This is more fun than I thought it would be!
+1-male_must_strip=1-interested,This is more fun than I thought it would be!
+1-female_human_must_strip=1-happy,I'm glad it's you, ~name~, and not me!.
+1-female_must_strip=1-happy,I'm glad it's you, ~name~, and not me!.
+
+#lost shoes
+2-male_human_must_strip=2-interested,This is more fun than I thought it would be!
+2-male_must_strip=2-interested,This is more fun than I thought it would be!
+2-female_human_must_strip=2-interested,What are you going to take off now, ~name~?
+2-female_must_strip=2-interested,What are you going to take off now, ~name~?
+
+#lost socks
+3-male_human_must_strip=3-happy,Those are the rules! Take it off, ~name~!
+3-male_must_strip=3-happy,Those are the rules! Take it off, ~name~!
+3-female_human_must_strip=3-happy,Those are the rules! Take it off, ~name~!
+3-female_must_strip=3-happy,Those are the rules! Take it off, ~name~!
+
+#lost belt
+4-male_human_must_strip=4-excited,This is more fun than I thought it would be!
+4-male_must_strip=4-excited,This is more fun than I thought it would be!
+4-female_human_must_strip=4-excited,This is more fun than I thought it would be!
+4-female_must_strip=4-excited,This is more fun than I thought it would be!
+
+#lost shirt
+5-male_human_must_strip=5-excited,Yes! Now I'm not the only one losing!
+5-male_must_strip=5-excited,Yes! Now I'm not the only one losing!
+5-female_human_must_strip=5-excited,Yes! Now I'm not the only one losing!
+5-female_must_strip=5-excited,Yes! Now I'm not the only one losing!
+
+#lost pants
+6-male_human_must_strip=6-happy,It's about time someone else lost!
+6-male_must_strip=6-happy,It's about time someone else lost!
+6-female_human_must_strip=6-happy,It's about time someone else lost!
+6-female_must_strip=6-happy,It's about time someone else lost!
+
+#lost bra
+7-male_human_must_strip=7-horny,I never thought I'd say this, but I can't wait to watch you lose again!
+7-male_must_strip=7-horny,I never thought I'd say this, but I can't wait to watch you lose again!
+7-female_human_must_strip=7-horny,I never thought I'd say this, but I can't wait to watch you lose again!
+7-female_must_strip=7-horny,I never thought I'd say this, but I can't wait to watch you lose again!
+
+#lost panties/naked
+8-male_human_must_strip=8-horny,Take it off, ~name~!
+8-male_must_strip=8-horny,Take it off, ~name~!
+8-female_human_must_strip=8-horny,Take it off, ~name~!
+8-female_must_strip=8-horny,Take it off, ~name~!
+
+#masturbating
+9-male_human_must_strip=9-excited,Yes! Thanks for giving me something to think about, ~name~.
+9-male_must_strip=9-excited,Yes! Thanks for giving me something to think about, ~name~.
+9-female_human_must_strip=9-excited,I can't wait to see what you take off, ~name~!
+9-female_must_strip=9-excited,I can't wait to see what you take off, ~name~!
+
+#finished
+10-male_human_must_strip=10-embarassed,Here I am, all done, and now you're taking more off?
+10-male_must_strip=10-embarassed,Here I am, all done, and now you're taking more off?
+10-female_human_must_strip=10-embarassed,Here I am, all done, and now you're taking more off?
+10-female_must_strip=10-embarassed,Here I am, all done, and now you're taking more off?
+
+
+#other player is removing an accessory
+#fully clothed
+0-male_removing_accessory=0-angry,What? That's it?!
+0-male_removed_accessory=0-sad,How disappointing.
+0-female_removing_accessory=0-angry,What? That's it?!
+0-female_removed_accessory=0-sad,How disappointing.
+
+#lost gloves
+1-male_removing_accessory=1-angry,What? That's it?!
+1-male_removed_accessory=1-sad,How disappointing.
+1-female_removing_accessory=1-angry,What? That's it?!
+1-female_removed_accessory=1-sad,How disappointing.
+
+#lost shoes
+2-male_removing_accessory=2-angry,What? That's it?!.
+2-male_removed_accessory=2-sad,How disappointing.
+2-female_removing_accessory=2-angry,What? That's it?!
+2-female_removed_accessory=2-sad,How disappointing.
+
+#lost socks
+3-male_removing_accessory=3-angry,Your ~clothing~? I thought you were better than that!
+3-male_removed_accessory=3-embarassed,I guess I kinda did the same thing, though...
+3-female_removing_accessory=3-angry,Your ~clothing~? I thought you were better than that!
+3-female_removed_accessory=3-embarassed,I guess I kinda did the same thing, though...
+
+#lost belt
+4-male_removing_accessory=4-angry,Your ~clothing~? I thought you were better than that!
+4-male_removed_accessory=4-embarassed,I guess I kinda did the same thing, though...
+4-female_removing_accessory=4-angry,Your ~clothing~? I thought you were better than that!
+4-female_removed_accessory=4-embarassed,I guess I kinda did the same thing, though...
+
+#lost shirt
+5-male_removing_accessory=5-angry,Oh, that's it? I didn't realize you were scared, ~name~!
+5-male_removed_accessory=5-angry,If I catch you looking at my chest, I'm gonna smack you so hard you'll end up in Derris-Kharlan!
+5-female_removing_accessory=5-angry,Oh, that's it? I didn't realize you were scared, ~name~!
+5-female_removed_accessory=5-sad,I'm sorry, I'm not a very good loser...
+
+#lost pants
+6-male_removing_accessory=6-angry,Just because you're beating me now, doesn't mean I'm not going to win!
+6-male_removed_accessory=6-angry,Don't look at me!
+6-female_removing_accessory=6-angry,Just because you're beating me now, doesn't mean I'm not going to win!
+6-female_removed_accessory=6-embarassed,I didn't realize I was so bad at cards...
+
+#lost bra
+7-male_removing_accessory=7-angry,What?! You've gotta be kidding me!
+7-male_removed_accessory=7-loss,Can I summon Gnome to bury me before I die of embarassment?
+7-female_removing_accessory=7-angry,What?! You've gotta be kidding me!
+7-female_removed_accessory=7-loss,Can I summon Gnome to bury me before I die of embarassment?
+
+#lost panties/naked
+8-male_removing_accessory=8-embarassed,I can't believe I'm naked and you still have such a small item to take off...
+8-male_removed_accessory=8-embarassed,Go ahead and gloat, ~name~,I know you want to...
+8-female_removing_accessory=8-embarassed,I can't believe I'm naked and you still have such a small item to take off...
+8-female_removed_accessory=8-embarassed,Go ahead and gloat, ~name~ I know you want to...
+
+#masturbating
+9-male_removing_accessory=9-angry,How am I supposed to stay turned on if that's all you're taking off, ~name~?!
+9-male_removed_accessory=9-horny,I guess I'll just have to stick to thinking about Professor Raine.
+9-female_removing_accessory=9-angry,How am I supposed to stay turned on if that's all you're taking off, ~name~?!
+9-female_removed_accessory=9-horny,I guess I'll just have to stick to thinking about Professor Raine.
+
+#finished
+10-male_removing_accessory=10-embarassed,If you're still taking off your ~clothing~, then I must be really bad at this game...
+10-male_removed_accessory=10-embarassed,I guess I need to read up on this game some more...
+10-female_removing_accessory=10-embarassed,If you're still taking off your ~clothing~, then I must be really bad at this game...
+10-female_removed_accessory=10-embarassed,I guess I need to read up on this game some more...
+
+
+#other player is removing a minor clothing item
+#fully clothed
+0-male_removing_minor=0-happy,There we go!
+0-male_removed_minor=0-calm,That's better.
+0-female_removing_minor=0-happy,There we go!
+0-female_removed_minor=0-calm,That's better.
+
+#lost gloves
+1-male_removing_minor=1-happy,Good choice!
+1-male_removed_minor=1-calm,Time to deal!
+1-female_removing_minor=1-happy,Good choice!
+1-female_removed_minor=1-calm,Time to deal!
+
+#lost shoes
+2-male_removing_minor=2-interested,Are you sure you don't want to take something else off?
+2-male_removed_minor=2-calm,Oh well...
+2-female_removing_minor=2-interested,Are you sure you don't want to take something else off?
+2-female_removed_minor=2-calm,Oh well...
+
+#lost socks
+3-male_removing_minor=3-calm,Hmmm...
+3-male_removed_minor=3-happy,Time for the next hand!
+3-female_removing_minor=3-calm,Hmmm...
+3-female_removed_minor=3-happy,Time for the next hand!
+
+#lost belt
+4-male_removing_minor=4-interested,C'mon, hurry up!
+4-male_removed_minor=4-loss,Oh, I expected more...
+4-female_removing_minor=4-interested,C'mon, hurry up!
+4-female_removed_minor=4-loss,Oh, I expected more...
+
+#lost shirt
+5-male_removing_minor=5-interested,It's about time!
+5-male_removed_minor=5-angry,That's what you chose to take off, ~name~?
+5-female_removing_minor=5-interested,It's about time!
+5-female_removed_minor=5-angry,That's what you chose to take off, ~name~?
+
+#lost pants
+6-male_removing_minor=6-angry,Hurry up so I can beat you soon!
+6-male_removed_minor=6-sad,I need to start winning more hands...
+6-female_removing_minor=6-angry,Hurry up so I can beat you soon!
+6-female_removed_minor=6-sad,I need to start winning more hands...
+
+#lost bra
+7-male_removing_minor=7-interested,What'll it be this time, ~name~?
+7-male_removed_minor=7-loss,Not quite what I was thinking...
+7-female_removing_minor=7-interested,What'll it be this time, ~name~?
+7-female_removed_minor=7-loss,Not quite what I was thinking...
+
+#lost panties/naked
+8-male_removing_minor=8-excited,It's about time!
+8-male_removed_minor=8-angry,How have you not taken your ~clothing~ off already, ~name~?
+8-female_removing_minor=8-excited,It's about time!
+8-female_removed_minor=8-angry,How have you not taken your ~clothing~ off already, ~name~?
+
+#masturbating
+9-male_removing_minor=9-excited,Yes, take it off!
+9-male_removed_minor=9-sad,Well this isn't fair...
+9-female_removing_minor=9-excited,Yes, take it off!
+9-female_removed_minor=9-sad,Well this isn't fair...
+
+#finished
+10-male_removing_minor=10-interested,Finally!
+10-male_removed_minor=10-angry,Oh come on! You just watched me cum, and that's all you give us?!
+10-female_removing_minor=10-interested,Finally!
+10-female_removed_minor=10-angry,Oh come on! You just watched me cum, and that's all you give us?!
+
+
+#other player is removing a major clothing item
+#fully clothed
+0-male_removing_major=0-shocked,What? You're already taking off your ~clothing~?
+0-male_removed_major=0-excited,I must be better at this game than I thought!
+0-female_removing_major=0-shocked,What? You're already taking off your ~clothing~?
+0-female_removed_major=0-excited,I must be better at this game than I thought!
+
+#lost gloves
+1-male_removing_major=1-excited,Hah! Take that, ~name~!
+1-male_removed_major=1-happy,I must be better at this game than I thought!
+1-female_removing_major=1-excited,Hah! Take that, ~name~!
+1-female_removed_major=1-happy,I must be better at this game than I thought!
+
+#lost shoes
+2-male_removing_major=2-excited,Hah! Take that, ~name~!
+2-male_removed_major=2-happy,I must be better at this game than I thought!
+2-female_removing_major=2-excited,Hah! Take that, ~name~!
+2-female_removed_major=2-happy,I must be better at this game than I thought!
+
+#lost socks
+3-male_removing_major=3-happy,Looks like you've lost again!
+3-male_removed_major=3-excited,I bet Raine and Colette would enjoy this view.
+3-female_removing_major=3-happy,Looks like you've lost again!
+3-female_removed_major=3-excited,I'm just glad Zelos isn't here.. He would be so annoying, seeing you like that, ~name~.
+
+#lost belt
+4-male_removing_major=4-interested,You're finally taking off your ~clothing~, ~name~?
+4-male_removed_major=4-embarassed,I didn't think I'd get to see you like this tonight...
+4-female_removing_major=4-interested,You're finally taking off your ~clothing~, ~name~?
+4-female_removed_major=4-happy,I'm just glad I'm not in your position, ~name~.
+
+#lost shirt
+5-male_removing_major=5-excited,I'm starting to see why people play this game...
+5-male_removed_major=5-horny,Especially when you get to see something like that!
+5-female_removing_major=5-excited,I'm starting to see why people play this game...
+5-female_removed_major=5-horny,Especially when you get to see something like that!
+
+#lost pants
+6-male_removing_major=6-excited,It's about time you joined me, ~name~!
+6-male_removed_major=6-happy,There, isn't that better?
+6-female_removing_major=6-excited,It's about time you joined me, ~name~!
+6-female_removed_major=6-happy,There, isn't that better?
+
+#lost bra
+7-male_removing_major=7-excited,Thank Martel!
+7-male_removed_major=7-excited,Can you please lose the next few hands as well?
+7-female_removing_major=7-excited,Thank Martel!
+7-female_removed_major=7-excited,Can you please lose the next few hands as well?
+
+#lost panties/naked
+8-male_removing_major=8-excited,Finally!
+8-male_removed_major=8-happy,Just a bit more and I won't be the only one standing here naked.
+8-female_removing_major=8-excited,Finally!
+8-female_removed_major=8-happy,Just a bit more and maybe you'll be the center of attention instead of me!
+
+#masturbating
+9-male_removing_major=9-horny,Oh, ~name~, please don't stop taking your clothes off.
+9-male_removed_major=9-angry,I just said don't stop!
+9-female_removing_major=9-excited,Oh, ~name~, please don't stop taking your clothes off.
+9-female_removed_major=9-embarassed,I really thought you would take something else off.
+
+#finished
+10-male_removing_major=10-shocked,Of course you lose that hand after I'm finished!
+10-male_removed_major=10-loss,I would have waited a bit longer if I had known you'd be taking your ~clothing~ off, ~name~.
+10-female_removing_major=10-excited,Yes! Take it off, ~name~!
+10-female_removed_major=10-interested,At this point, no one can complain about taking any more clothes off!
+
+
+#other player is exposing themselves
+#fully clothed
+0-male_chest_will_be_visible=0-embarassed,I won't look if you don't want me to...
+0-male_chest_is_visible=0-embarassed,Or maybe I can just take a peek?
+0-male_crotch_will_be_visible=0-embarassed,I promise I won't look, if you don't want me to.
+0-male_small_crotch_is_visible=0-embarassed,Are you still not turned on?
+0-male_medium_crotch_is_visible=0-excited,I'm still not looking!
+0-male_large_crotch_is_visible=0-shocked,Wow... It's huge!
+
+0-female_chest_will_be_visible=0-interested,We're all friends here, right, ~name~?
+0-female_small_chest_is_visible=0-happy,Oh, so that's what Colette meant by "ironing board"?
+0-female_medium_chest_is_visible=0-happy,That's nothing to be ashamed of, ~name~.
+0-female_large_chest_is_visible=0-shocked,Is this how the other girls feel when they look at me?
+0-female_crotch_will_be_visible=0-shocked,Is this your first time playing this game, ~name~?
+0-female_crotch_is_visible=0-shocked,Don't worry, I'm sure someone will be in a similar situation soon...
+
+#lost gloves
+1-male_chest_will_be_visible=1-embarassed,I won't look if you don't want me to...
+1-male_chest_is_visible=1-embarassed,Or maybe I can just take a peek?
+1-male_crotch_will_be_visible=1-embarassed,I promise I won't look, if you don't want me to.
+1-male_small_crotch_is_visible=1-embarassed,Are you still not turned on?
+1-male_medium_crotch_is_visible=1-excited,I'm still not looking!
+1-male_large_crotch_is_visible=1-shocked,Wow... It's huge!
+
+1-female_chest_will_be_visible=1-interested,We're all friends here, right, ~name~?
+1-female_small_chest_is_visible=1-happy,Oh, so that's what Colette meant by "ironing board"?
+1-female_medium_chest_is_visible=1-happy,That's nothing to be ashamed of, ~name~.
+1-female_large_chest_is_visible=1-shocked,Is this how the other girls felt when they saw me in the hotspring?
+1-female_crotch_will_be_visible=1-shocked,Is this your first time playing this game, ~name~?
+1-female_crotch_is_visible=1-shocked,Don't worry, I'm sure someone will be in a similar situation soon...
+
+#lost shoes
+2-male_chest_will_be_visible=2-embarassed,I won't look if you don't want me to...
+2-male_chest_is_visible=2-embarassed,Or maybe I can just take a peek?
+2-male_crotch_will_be_visible=2-embarassed,I promise I won't look, if you don't want me to.
+2-male_small_crotch_is_visible=2-embarassed,Are you still not turned on?
+2-male_medium_crotch_is_visible=2-excited,I'm still not looking!
+2-male_large_crotch_is_visible=2-shocked,Wow... It's huge!
+
+2-female_chest_will_be_visible=2-interested,We're all friends here, right, ~name~?
+2-female_small_chest_is_visible=2-happy,Oh, so that's what Colette meant by "ironing board"?
+2-female_medium_chest_is_visible=2-happy,That's nothing to be ashamed of, ~name~.
+2-female_large_chest_is_visible=2-shocked,Is this how the other girls felt when they saw me in the hotspring?
+2-female_crotch_will_be_visible=2-shocked,Is this your first time playing this game, ~name~?
+2-female_crotch_is_visible=2-shocked,Don't worry, I'm sure someone will be in a similar situation soon...
+
+#lost socks
+3-male_chest_will_be_visible=3-embarassed,I won't look if you don't want me to...
+3-male_chest_is_visible=3-embarassed,Or maybe I can just take a peek?
+3-male_crotch_will_be_visible=3-embarassed,I promise I won't look, if you don't want me to.
+3-male_small_crotch_is_visible=3-embarassed,Are you still not turned on?
+3-male_medium_crotch_is_visible=3-excited,I'm still not looking!
+3-male_large_crotch_is_visible=3-shocked,Wow... It's huge!
+
+3-female_chest_will_be_visible=3-interested,We're all friends here, right, ~name~?
+3-female_small_chest_is_visible=3-happy,Oh, so that's what Colette meant by "ironing board"?
+3-female_medium_chest_is_visible=3-happy,That's nothing to be ashamed of, ~name~.
+3-female_large_chest_is_visible=3-shocked,Is this how the other girls felt when they saw me in the hotspring?
+3-female_crotch_will_be_visible=3-shocked,Is this your first time playing this game, ~name~?
+3-female_crotch_is_visible=3-shocked,Don't worry, I'm sure someone will be in a similar situation soon...
+
+#lost belt
+4-male_chest_will_be_visible=4-embarassed,I've definitely seen a guy's chest before.
+4-male_chest_is_visible=4-horny,Ah... But not one like yours, ~name~.
+4-male_crotch_will_be_visible=4-embarassed,You're not very good at this game, are you, ~name~?
+4-male_small_crotch_is_visible=4-embarassed,Are you still not turned on?
+4-male_medium_crotch_is_visible=4-embarassed,I can't believe you actually whipped it out!
+4-male_large_crotch_is_visible=4-shocked,Wow... It's huge!
+
+4-female_chest_will_be_visible=4-interested,We're all friends here, right, ~name~?
+4-female_small_chest_is_visible=4-happy,Oh, so that's what Colette meant by "ironing board"?
+4-female_medium_chest_is_visible=4-happy,That's nothing to be ashamed of, ~name~.
+4-female_large_chest_is_visible=4-shocked,Is this how the other girls felt when they saw me in the hotspring?
+4-female_crotch_will_be_visible=4-shocked,Is this your first time playing this game, ~name~?
+4-female_crotch_is_visible=4-shocked,Don't worry, I'm sure someone will be in a similar situation soon...
+
+#lost shirt
+5-male_chest_will_be_visible=5-horny,Oh, you're really going to take your shirt off?
+5-male_chest_is_visible=5-horny,Ummm...What? Huh? Who's turn is it?
+5-male_crotch_will_be_visible=5-embarassed,I won't look if you don't want me too...
+5-male_small_crotch_is_visible=5-embarassed,Hmmm... I would imagine that's a similar size to Zelos. Not that I've thought about it!
+5-male_medium_crotch_is_visible=5-embarassed,Oh... Maybe just a peek?
+5-male_large_crotch_is_visible=5-shocked,Wow...It's big!
+
+5-female_chest_will_be_visible=5-embarassed,Oh... Are you really going to take that off?
+5-female_small_chest_is_visible=5-interested,Is that what Colette meant when she said she was an ironing board?
+5-female_medium_chest_is_visible=5-embarassed,Ah! They look like the same size as Professor Raine's.
+5-female_large_chest_is_visible=5-shocked,Is this how the other girls felt when they saw me in the hotspring?
+5-female_crotch_will_be_visible=5-shocked,You're really going to do it?!
+5-female_crotch_is_visible=5-horny,It's so pretty! I never got to see anyone's at the hot spring.
+
+#lost pants
+6-male_chest_will_be_visible=6-interested,There. Now we're even, ~name~.
+6-male_chest_is_visible=6-embarassed,But I wouldn't mind seeing a little more...
+6-male_crotch_will_be_visible=6-shocked,You... You're really taking off your ~clothing~?!
+6-male_small_crotch_is_visible=6-embarassed,Hmmm... I would imagine that's a similar size to Zelos. Not that I've thought about it!
+6-male_medium_crotch_is_visible=6-embarassed,Oh... Maybe just a peek?
+6-male_large_crotch_is_visible=6-shocked,Wow...It's big!
+
+6-female_chest_will_be_visible=6-excited,Finally, someone who is doing worse than me!
+6-female_small_chest_is_visible=6-interested,In more ways than one, apparently!
+6-female_medium_chest_is_visible=6-interested,Ah! They look so perky and soft!
+6-female_large_chest_is_visible=6-shocked,Wow...They're huge!
+6-female_crotch_will_be_visible=6-interested,I can only imagine the look on that stupid Chosen's face if he were here to see this.
+6-female_crotch_is_visible=6-horny,Although, the view really is incredible...
+
+#lost bra
+7-male_chest_will_be_visible=7-happy,It's about time someone else caught up to me!
+7-male_chest_is_visible=7-interested,Now we're even!
+7-male_crotch_will_be_visible=7-excited,Thank Martel someone is doing worse than me!
+7-male_small_crotch_is_visible=7-calm,Hmmm... I bet I could fit my whole mou-- Did I just say that out loud?!
+7-male_medium_crotch_is_visible=7-horny,Oh, ~name~. I think I'm starting to get wet...
+7-male_large_crotch_is_visible=7-shocked,Oh, ~name~. I think I'm starting to get wet...
+
+7-female_chest_will_be_visible=7-happy,It's about time someone else caught up to me!
+7-female_small_chest_is_visible=7-excited,Oh! Those little nipples look so soft!
+7-female_medium_chest_is_visible=7-happy,I wouldn't mind getting my hands on those...
+7-female_large_chest_is_visible=7-shocked,Are those real?! Let me touch them to make sure...
+7-female_crotch_will_be_visible=7-horny,Mmmm... Are you getting wet, knowing we're all watching you?
+7-female_crotch_is_visible=7-horny,Because now I'm wet just looking at you.
+
+#lost panties/naked
+8-male_chest_will_be_visible=8-interested,It's about time! You've gotten the best part of this deal so far.
+8-male_chest_is_visible=8-horny,Then again, if you keep losing, we might be even.
+8-male_crotch_will_be_visible=8-horny,Your underwear wasn't leaving much to the imagination anyways. Take them off!
+8-male_small_crotch_is_visible=8-loss,Or maybe it was...
+8-male_medium_crotch_is_visible=8-horny,I see you're already hard. Were you watching me this whole time?
+8-male_large_crotch_is_visible=8-horny,I see you're already hard. Were you watching me this whole time?
+
+8-female_chest_will_be_visible=8-happy,I may be losing, but you're not that far behind!
+8-female_small_chest_is_visible=8-excited,Oh! Those little nipples look so soft!
+8-female_medium_chest_is_visible=8-happy,I wouldn't mind getting my hands on those...
+8-female_large_chest_is_visible=8-shocked,Are those real?! Let me touch them to make sure...
+8-female_crotch_will_be_visible=8-excited,Now I wish we had explored a little more at the hot springs.
+8-female_crotch_is_visible=8-excited,Because seeing you like this right now has made me realize I've been missing out...
+
+#masturbating
+9-male_chest_will_be_visible=9-happy,Mmmm... Take it off slowly... 
+9-male_chest_is_visible=9-excited,That's better. 
+9-male_crotch_will_be_visible=9-excited,Oh, this is going to push me closer to the edge...
+9-male_small_crotch_is_visible=9-interested,For it's size, I wouldn't mind putting that some place I usually reserve for toys...
+9-male_medium_crotch_is_visible=9-shocked,Oh yes! That's exactly what I needed to see right now. I'm imagining you taking me from behind.
+9-male_large_crotch_is_visible=9-shocked,There's no way that would fit... But I wouldn't mind putting it between my breasts... I've heard guys like that at least. 
+
+9-female_chest_will_be_visible=9-happy,Mmmm... Take it off slowly... 
+9-female_small_chest_is_visible=9-happy,Oh, they're so small and perfect...
+9-female_medium_chest_is_visible=9-happy,Can you squeeze them together in your hands for me?
+9-female_large_chest_is_visible=9-shocked,Can you make them bounce for me one more time?
+9-female_crotch_will_be_visible=9-happy,Mmmm... Take it off slowly... 
+9-female_crotch_is_visible=9-horny,So pretty... I'm definitely NOT thinking about sitting on your face right now...
+
+#finished
+10-male_chest_will_be_visible=10-sad,I lost way too easily...
+10-male_chest_is_visible=10-embarassed,I really need to read the rules of this game.
+10-male_crotch_will_be_visible=10-angry,Now you're going to take it out?! Not fair!
+10-male_small_crotch_is_visible=10-interested,Although, I'm all wet now. Hurry up and finish the game so we can do something else!
+10-male_medium_crotch_is_visible=10-excited,I'm not satisfied... After the game can I try to take you all the way in my mouth?
+10-male_large_crotch_is_visible=10-shocked,It's huge! Could I try and put it between my breasts after the game is over?
+
+10-female_chest_will_be_visible=10-excited,If only Zelos knew what we were doing in here.
+10-female_small_chest_is_visible=10-happy,I'll be happy to suck on those if it helps stimulate you later.
+10-female_medium_chest_is_visible=10-happy,I just want to play with those! Just a little nibble? Raine said she likes it like that.
+10-female_large_chest_is_visible=10-excited,I wish I could see them bounce when you're riding someone...
+10-female_crotch_will_be_visible=10-interested,Welcome to the club, but don't be afraid... Losing in this game is actually pretty fun.
+10-female_crotch_is_visible=10-horny,Is it bad that I want to see you lose?
+
+
+
+#other player is masturbating
+#fully clothed
+0-male_must_masturbate=0-shocked,Wait! I thought you already lost! Is this in the rules?
+0-male_start_masturbating=0-shocked,I can't believe you're actually doing it!
+0-male_masturbating=0-embarassed,I don't think I can watch...
+0-male_finished_masturbating=0-angry,You better not have been thinking about me at the end!
+
+0-female_must_masturbate=0-shocked,Wait! I thought you already lost! Is this in the rules?
+0-female_start_masturbating=0-shocked,I can't believe you're actually doing it!
+0-female_masturbating=0-embarassed,I don't think I can watch...
+0-female_finished_masturbating=0-embarassed,That was much more than I was expecting tonight...
+
+#lost gloves
+1-male_must_masturbate=1-shocked,Wait! I thought you already lost! Is this in the rules?
+1-male_start_masturbating=1-shocked,I can't believe you're actually doing it!
+1-male_masturbating=1-embarassed,I don't think I can watch...
+1-male_finished_masturbating=1-angry,You better not have been thinking about me at the end!
+
+1-female_must_masturbate=1-shocked,Wait! I thought you already lost! Is this in the rules?
+1-female_start_masturbating=1-shocked,I can't believe you're actually doing it!
+1-female_masturbating=1-embarassed,I don't think I can watch...
+1-female_finished_masturbating=1-embarassed,That was much more than I was expecting tonight...
+
+#lost shoes
+2-male_must_masturbate=2-happy,Hah! You lose again!
+2-male_start_masturbating=2-shocked,Oh, I forgot about this part! I'm not gonna watch you do that!
+2-male_masturbating=2-embarassed,Are you not done yet?
+2-male_finished_masturbating=2-angry,Why'd you point that thing at me?!
+
+2-female_must_masturbate=2-happy,Hah! You lose again!
+2-female_start_masturbating=2-shocked,Oh, I forgot about this part! I'm not gonna watch you do that!
+2-female_masturbating=2-embarassed,Just tell me when this part is over...
+2-female_finished_masturbating=2-angry,It's about time! Deal the next hand!
+
+#lost socks
+3-male_must_masturbate=3-happy,Hah! You lose again!
+3-male_start_masturbating=3-shocked,Oh, I forgot about this part! I'm not gonna watch you do that!
+3-male_masturbating=3-embarassed,Are you not done yet?
+3-male_finished_masturbating=3-angry,Why'd you point that thing at me?!
+
+3-female_must_masturbate=3-happy,Hah! You lose again!
+3-female_start_masturbating=3-shocked,Oh, I forgot about this part! I'm not gonna watch you do that!
+3-female_masturbating=3-embarassed,Just tell me when this part is over...
+3-female_finished_masturbating=3-angry,It's about time! Deal the next hand!
+
+#lost belt
+4-male_must_masturbate=4-happy,Take that! You never stood a chance!
+4-male_start_masturbating=4-shocked,Oh, I forgot about this part! I'm not gonna watch you do that!
+4-male_masturbating=4-embarassed,Although I'm curious... What are you thinking about?
+4-male_finished_masturbating=4-embarassed,It probably wasn't me you were imagining, right?
+
+4-female_must_masturbate=4-happy,Take that! You never stood a chance!
+4-female_start_masturbating=4-interested,I'm not into girls, but I'm curious...
+4-female_masturbating=4-shocked,Ah! I've never thought about trying it that way.
+4-female_finished_masturbating=4-excited,I'll have to try that home.
+
+#lost shirt
+5-male_must_masturbate=5-happy,Take that! You never stood a chance!
+5-male_start_masturbating=5-interested,You've gotten an eyeful of me. I'm going to return the favor.
+5-male_masturbating=5-horny,Wow, you're really going for it.
+5-male_finished_masturbating=5-horny,You really made a mess!
+
+5-female_must_masturbate=5-interested,I'm going to ruin Zelos's day when I tell him he's missing this.
+5-female_start_masturbating=5-interested,Raine told me about doing it like that. I'll have to try it next time.
+5-female_masturbating=5-excited,You look like you're really enjoying putting on a show, ~name~.
+5-female_finished_masturbating=5-horny,And what a show it was. Can we talk some more, later?
+
+#lost pants
+6-male_must_masturbate=6-interested,This should be interesting...
+6-male_start_masturbating=6-happy,I can't say I'm upset that it's come to this...
+6-male_masturbating=6-horny,Are you thinking about me while you do that?
+6-male_finished_masturbating=6-shocked,Ah! You got some on my chest! Will you think badly of me if I taste it?
+
+6-female_must_masturbate=6-interested,This should be interesting...
+6-female_start_masturbating=6-happy,I may or may not have been hoping it would be your turn to lose, ~name~.
+6-female_masturbating=6-embarassed,Ahhh... My panties are wet...
+6-female_finished_masturbating=6-horny,Wow, what a show! Which one of us were you thinking about, ~name~?
+
+#lost bra
+7-male_must_masturbate=7-excited,You lost, ~name~? We all know where this is going...
+7-male_start_masturbating=7-happy,I'm not going to lie, I've been waiting for this all night, ~name~.
+7-male_masturbating=7-horny,Oh Martel, this is hot. I think my panties are going to be soaked before I get to take them off. 
+7-male_finished_masturbating=7-horny,Watching you finish was incredible. Can I clean you up with my mouth when we're done here? 
+
+7-female_must_masturbate=7-happy,Yes! I can't wait to watch you, ~name~.
+7-female_start_masturbating=7-interested,I guess you don't mind having an audience, huh?
+7-female_masturbating=7-happy,Ah! You look and sound amazing right now.
+7-female_finished_masturbating=7-horny,Well, I think we're all way more turned on, now.
+
+#lost panties/naked
+8-male_must_masturbate=8-excited,It looks like you've totally lost this game, ~name~. 
+8-male_start_masturbating=8-interested,And I think we've all won in more ways than one!
+8-male_masturbating=8-horny,Aren't we all lucky for this show? If I touch myself for you, does it turn you on more?
+8-male_finished_masturbating=8-horny, Oh! You got some on my chest! Can one of you lick this off of me, please?
+
+8-female_must_masturbate=8-horny,You're all out of clothing to take off. Time for the real show.
+8-female_start_masturbating=8-horny,Oh... You look amazing, ~name~.
+8-female_masturbating=8-horny,Your moaning reminds me of Raine's in the middle of the night. I'll have to visit her room next time.
+8-female_finished_masturbating=8-shocked,You're so wet! I bet you taste sweet. Can you taste yourself and tell us?
+
+#masturbating
+9-male_must_masturbate=9-excited,Oh, yes. I've wanted to see you stroke yourself the second you brought it out.
+9-male_start_masturbating=9-happy,Look me in the eye and say my name when you cum, ~name~. Please?
+9-male_masturbating=9-beg,I want you to come over here and finish on my tongue, ~name~. I need it so badly.
+9-male_finished_masturbating=9-embarassed,Watching you cum just pushed me so close to the edge, ~name~!
+
+9-female_must_masturbate=9-happy,I actually wish Lloyd and Zelos were here to watch us. 
+9-female_start_masturbating=9-horny,Maybe one of the other girls can suck on your nipples to help you out.
+9-female_masturbating=9-horny,You're making me so wet, ~name~! Look at my little pussy when you cum. Please? It's so wet for you.
+9-female_finished_masturbating=9-finishing,Oh, I'm so close now! I wish I had a cock in my mouth or a girl to lick my pussy and finish me off!
+
+#finished
+10-male_must_masturbate=10-excited,Oh, yes. I've wanted to see you stroke yourself since the moment you brought it out for us.
+10-male_start_masturbating=10-horny,Did my moaning turn you on, ~name~?
+10-male_masturbating=10-beg,You can finish on me if you want. You choose where you want to put it, and I'll clean it up with my tongue.
+10-male_finished_masturbating=10-shocked,Oh! There's so much I don't think I can get it all. One of the other girls will have to help me clean it up.
+
+10-female_must_masturbate=10-excited,You're going to feel so good after you put on a show for us, ~name~.
+10-female_start_masturbating=10-interested,Are you sure you don't want help, ~name~?
+10-female_masturbating=10-embarassed,If you want to come and sit on my face after this, I'm game.
+10-female_finished_masturbating=10-excited,As soon as this is over, I'm licking your pussy until you cum again.
+
