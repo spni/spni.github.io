@@ -117,6 +117,11 @@ def read_description_string(description_type, line):
 			#part_values = [x if (using[i] == description_type) else None for i, x in enumerate(values)]
 			l = len(values)
 			part_values = [None] * l
+			
+			#assume extra labels are part of image
+			while len(using) < l:
+				using += (im,)
+				
 			for i in range(l):
 				part_values[i] = values[i] if (using[i] == description_type) else None
 			desc[label] = part_values
@@ -165,7 +170,7 @@ def read_description_files(in_filename):
 				
 			#marks a new stage, and gives the clothing, etc, for a stage
 			elif key == stage_tag:
-				stage = [None, 0, 0] #[dictionary of description parts, base emotion level, love juice level]dict()
+				stage = [None, 0] #[dictionary of description parts, base emotion level]dict()
 				stage[0] = read_description_string(st, value)
 				stages.append(stage)
 			
@@ -177,11 +182,19 @@ def read_description_files(in_filename):
 				stage[1] = int(value)
 				
 			#stage's love juice level
+			#normally use what's in the description, but this allows the user to provide a number
 			elif key == love_juice_tag:
 				if stage is None:
 					print "Error - trying to give a stage an love juice level before giving a stage on line %d: %s" % (linenumber, line)
 					continue
-				stage[2] = int(value)
+				#stage[2] = int(value)
+				stage_desc = stage[0]
+				v = int(value)
+				if "dc" in stage_desc:
+					stage_desc["dc"][0] = v
+				else:
+					#the love juice value is the first number in the dc section, so I don't need to pad it with None's
+					stage_desc["dc"] = [v]
 			
 			#image filename
 			elif key == image_tag:
@@ -266,7 +279,7 @@ def write_image_list(descriptions, image_list_filename):
 	appearance, emotions, stages, images = descriptions
 	with open(image_list_filename, "w") as f:
 		for stage_number, stage in enumerate(stages):
-			stage_desc, emotion, lj = stage
+			stage_desc, emotion = stage
 			
 			for image in images:
 				image_desc, emotion_mod, image_name = image
