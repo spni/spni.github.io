@@ -1,0 +1,1648 @@
+<opponent>
+
+    <first>Harley</first>
+    <last>Quinn</last>
+    <label>Harley</label>
+    <gender>female</gender>
+    <size>medium</size>
+    <timer>15</timer>
+
+    <start>
+        <state img="start.png">Wanna play with me, puddin'?</state>
+    </start>
+
+    <wardrobe>
+        <clothing lowercase="panties" position="lower" proper-name="Panties" type="important" />
+        <clothing lowercase="bra" position="upper" proper-name="Bra" type="important" />
+        <clothing lowercase="Shorts" position="lower" proper-name="Shorts" type="major" />
+        <clothing lowercase="shirt" position="upper" proper-name="Shirt" type="major" />
+        <clothing lowercase="jacket" position="upper" proper-name="Jacket" type="minor" />
+        <clothing lowercase="stockings" position="lower" proper-name="Stockings" type="extra" />
+        <clothing lowercase="sleeves" position="upper" proper-name="Sleeves" type="extra" />
+        <clothing lowercase="boots" position="other" proper-name="Boots" type="extra" />
+    </wardrobe>
+
+    <behaviour>
+        <stage id="0">
+            <case tag="female_must_strip">
+                <state img="0-interested.png">What they say to a female NPC who has lost a round</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="0-interested.png">What the character says when a male character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="0-calm.png">A female character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="0-awkward.png">What the character says after the male character's crotch is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="0-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="0-shocked.png">What the character says after the male character's crotch is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="0-horny.png">What the character says when a female character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="0-happy.png">The male character has just removed that minor item.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="0-calm.png">A male character has just removed that small item.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="0-interested.png">What the character says when a male character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="0-horny.png">What the character says while a female character is masturbating.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="0-interested.png">What they say to a female player who has lost a round</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="0-shocked.png">What the character says after the female character's crotch has become visible.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="0-horny.png">What the character says when a female character has started masturbating.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="0-interested.png">What the character says before a male loses an item with the "major" type.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="0-calm.png">A female character has just removed that small item.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="0-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="0-horny.png">What the character says when a male character has started masturbating.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="0-interested.png">What the character says once the male character's chest is visible.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="0-shocked.png">What the character says after the female character's chest is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="0-interested.png">What they say to a male NPC who has lost a round</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="0-interested.png">What the character says when a female character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="0-interested.png">What they say to a male player who has lost a round</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="0-calm.png">What the character says after the male character's crotch is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="0-sad.png">A male character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="0-shocked.png">What the character says when a male character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="0-interested.png">What the character says after the female character's chest is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="0-horny.png">What the character says after the female character's chest is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="0-sad.png">A female character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="0-calm.png">What the character says when they win the game. Can happen in any stage.</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="0-interested.png">What the character says before a female loses an item with the "major" type.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="0-calm.png">A male character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="0-shocked.png">What the character says when a female character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="0-interested.png">What the character says when a female character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="0-horny.png">What the character says while a male character is masturbating.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="0-happy.png">The female character has just removed that minor item.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="0-horny.png">What the character says when a male character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="0-happy.png">HA ! Not even the B-Man could win !</state>
+                <state img="0-happy.png">Mr J would be so proud !</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="0-calm.png">Meh, I've seen better.</state>
+                <state img="0-calm.png">Mmm, this will do.</state>
+                <state img="0-calm.png">I wouldn't mind hearing the rules again...</state>
+                <state img="0-calm.png">I guess this is allright.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="0-calm.png">Hey dealer ! Gimme ~cards~ cards.</state>
+                <state img="0-calm.png">I'll take ~cards~.</state>
+                <state img="0-calm.png">~cards~ new cards, puddin'.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="0-sad.png">Jeez, did Bats mess with these cards ?</state>
+                <state img="0-sad.png">Think, Harley, think...</state>
+                <state img="0-sad.png">What would Mr J do in my place ?</state>
+            </case>
+            <case tag="stripped">
+                <state img="0-sad.png">What the character says just after they take their clothes off.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="0-loss.png">Yay, I win ! Huh, I lost ?</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="0-loss.png">Seriously ?! Again ?!</state>
+            </case>
+            <case tag="stripping">
+                <state img="0-strip.png">What the character says as they take their clothes off. The picture and text should be unique to what they're taking off.</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="0-loss.png">Well I guess you're all already showing some skin...</state>
+            </case>
+        </stage>
+
+        <stage id="1">
+            <case tag="female_must_strip">
+                <state img="1-interested.png">What they say to a female NPC who has lost a round</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="1-interested.png">What the character says when a male character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="1-calm.png">A female character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="1-awkward.png">What the character says after the male character's crotch is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="1-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="1-shocked.png">What the character says after the male character's crotch is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="1-horny.png">What the character says when a female character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="1-happy.png">The male character has just removed that minor item.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="1-calm.png">A male character has just removed that small item.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="1-interested.png">What the character says when a male character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="1-horny.png">What the character says while a female character is masturbating.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="1-interested.png">What they say to a female player who has lost a round</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="1-shocked.png">What the character says after the female character's crotch has become visible.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="1-horny.png">What the character says when a female character has started masturbating.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="1-interested.png">What the character says before a male loses an item with the "major" type.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="1-calm.png">A female character has just removed that small item.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="1-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="1-horny.png">What the character says when a male character has started masturbating.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="1-interested.png">What the character says once the male character's chest is visible.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="1-shocked.png">What the character says after the female character's chest is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="1-interested.png">What they say to a male NPC who has lost a round</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="1-interested.png">What the character says when a female character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="1-interested.png">What they say to a male player who has lost a round</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="1-calm.png">What the character says after the male character's crotch is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="1-sad.png">A male character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="1-shocked.png">What the character says when a male character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="1-interested.png">What the character says after the female character's chest is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="1-horny.png">What the character says after the female character's chest is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="1-sad.png">A female character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="1-calm.png">What the character says when they win the game. Can happen in any stage.</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="1-interested.png">What the character says before a female loses an item with the "major" type.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="1-calm.png">A male character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="1-shocked.png">What the character says when a female character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="1-interested.png">What the character says when a female character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="1-horny.png">What the character says while a male character is masturbating.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="1-happy.png">The female character has just removed that minor item.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="1-horny.png">What the character says when a male character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="1-happy.png">HA ! Not even the B-Man could win !</state>
+                <state img="1-happy.png">Mr J would be so proud !</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="1-calm.png">Meh, I've seen better.</state>
+                <state img="1-calm.png">Mmm, this will do.</state>
+                <state img="1-calm.png">I wouldn't mind hearing the rules again...</state>
+                <state img="1-calm.png">I guess this is allright.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="1-calm.png">Hey dealer ! Gimme ~cards~ cards.</state>
+                <state img="1-calm.png">I'll take ~cards~.</state>
+                <state img="1-calm.png">~cards~ new cards, puddin'.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="1-sad.png">Jeez, did Bats mess with these cards ?</state>
+                <state img="1-sad.png">Think, Harley, think...</state>
+                <state img="1-sad.png">What would Mr J do in my place ?</state>
+            </case>
+            <case tag="stripped">
+                <state img="1-sad.png">What the character says just after they take their clothes off.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="1-loss.png">Yay, I win ! Huh, I lost ?</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="1-loss.png">Seriously ?! Again ?!</state>
+            </case>
+            <case tag="stripping">
+                <state img="1-strip.png">What the character says as they take their clothes off. The picture and text should be unique to what they're taking off.</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="1-loss.png">Well I guess you're all already showing some skin...</state>
+            </case>
+        </stage>
+
+        <stage id="2">
+            <case tag="female_must_strip">
+                <state img="2-interested.png">What they say to a female NPC who has lost a round</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="2-interested.png">What the character says when a male character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="2-calm.png">A female character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="2-awkward.png">What the character says after the male character's crotch is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="2-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="2-shocked.png">What the character says after the male character's crotch is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="2-horny.png">What the character says when a female character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="2-happy.png">The male character has just removed that minor item.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="2-calm.png">A male character has just removed that small item.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="2-interested.png">What the character says when a male character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="2-horny.png">What the character says while a female character is masturbating.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="2-interested.png">What they say to a female player who has lost a round</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="2-shocked.png">What the character says after the female character's crotch has become visible.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="2-horny.png">What the character says when a female character has started masturbating.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="2-interested.png">What the character says before a male loses an item with the "major" type.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="2-calm.png">A female character has just removed that small item.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="2-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="2-horny.png">What the character says when a male character has started masturbating.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="2-interested.png">What the character says once the male character's chest is visible.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="2-shocked.png">What the character says after the female character's chest is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="2-interested.png">What they say to a male NPC who has lost a round</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="2-interested.png">What the character says when a female character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="2-interested.png">What they say to a male player who has lost a round</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="2-calm.png">What the character says after the male character's crotch is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="2-sad.png">A male character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="2-shocked.png">What the character says when a male character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="2-interested.png">What the character says after the female character's chest is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="2-horny.png">What the character says after the female character's chest is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="2-sad.png">A female character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="2-calm.png">What the character says when they win the game. Can happen in any stage.</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="2-interested.png">What the character says before a female loses an item with the "major" type.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="2-calm.png">A male character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="2-shocked.png">What the character says when a female character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="2-interested.png">What the character says when a female character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="2-horny.png">What the character says while a male character is masturbating.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="2-happy.png">The female character has just removed that minor item.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="2-horny.png">What the character says when a male character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="2-happy.png">HA ! Not even the B-Man could win !</state>
+                <state img="2-happy.png">Mr J would be so proud !</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="2-calm.png">Meh, I've seen better.</state>
+                <state img="2-calm.png">Mmm, this will do.</state>
+                <state img="2-calm.png">I wouldn't mind hearing the rules again...</state>
+                <state img="2-calm.png">I guess this is allright.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="2-calm.png">Hey dealer ! Gimme ~cards~ cards.</state>
+                <state img="2-calm.png">I'll take ~cards~.</state>
+                <state img="2-calm.png">~cards~ new cards, puddin'.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="2-sad.png">Jeez, did Bats mess with these cards ?</state>
+                <state img="2-sad.png">Think, Harley, think...</state>
+                <state img="2-sad.png">What would Mr J do in my place ?</state>
+            </case>
+            <case tag="stripped">
+                <state img="2-sad.png">What the character says just after they take their clothes off.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="2-loss.png">Yay, I win ! Huh, I lost ?</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="2-loss.png">Seriously ?! Again ?!</state>
+            </case>
+            <case tag="stripping">
+                <state img="2-strip.png">What the character says as they take their clothes off. The picture and text should be unique to what they're taking off.</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="2-loss.png">Well I guess you're all already showing some skin...</state>
+            </case>
+        </stage>
+
+        <stage id="3">
+            <case tag="female_must_strip">
+                <state img="3-interested.png">What they say to a female NPC who has lost a round</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="3-interested.png">What the character says when a male character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="3-calm.png">A female character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="3-awkward.png">What the character says after the male character's crotch is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="3-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="3-shocked.png">What the character says after the male character's crotch is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="3-horny.png">What the character says when a female character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="3-happy.png">The male character has just removed that minor item.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="3-calm.png">A male character has just removed that small item.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="3-interested.png">What the character says when a male character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="3-horny.png">What the character says while a female character is masturbating.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="3-interested.png">What they say to a female player who has lost a round</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="3-shocked.png">What the character says after the female character's crotch has become visible.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="3-horny.png">What the character says when a female character has started masturbating.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="3-interested.png">What the character says before a male loses an item with the "major" type.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="3-calm.png">A female character has just removed that small item.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="3-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="3-horny.png">What the character says when a male character has started masturbating.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="3-interested.png">What the character says once the male character's chest is visible.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="3-shocked.png">What the character says after the female character's chest is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="3-interested.png">What they say to a male NPC who has lost a round</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="3-interested.png">What the character says when a female character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="3-interested.png">What they say to a male player who has lost a round</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="3-calm.png">What the character says after the male character's crotch is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="3-sad.png">A male character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="3-shocked.png">What the character says when a male character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="3-interested.png">What the character says after the female character's chest is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="3-horny.png">What the character says after the female character's chest is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="3-sad.png">A female character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="3-calm.png">What the character says when they win the game. Can happen in any stage.</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="3-interested.png">What the character says before a female loses an item with the "major" type.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="3-calm.png">A male character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="3-shocked.png">What the character says when a female character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="3-interested.png">What the character says when a female character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="3-horny.png">What the character says while a male character is masturbating.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="3-happy.png">The female character has just removed that minor item.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="3-horny.png">What the character says when a male character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="3-happy.png">HA ! Not even the B-Man could win !</state>
+                <state img="3-happy.png">Mr J would be so proud !</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="3-calm.png">Meh, I've seen better.</state>
+                <state img="3-calm.png">Mmm, this will do.</state>
+                <state img="3-calm.png">I wouldn't mind hearing the rules again...</state>
+                <state img="3-calm.png">I guess this is allright.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="3-calm.png">Hey dealer ! Gimme ~cards~ cards.</state>
+                <state img="3-calm.png">I'll take ~cards~.</state>
+                <state img="3-calm.png">~cards~ new cards, puddin'.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="3-sad.png">Jeez, did Bats mess with these cards ?</state>
+                <state img="3-sad.png">Think, Harley, think...</state>
+                <state img="3-sad.png">What would Mr J do in my place ?</state>
+            </case>
+            <case tag="stripped">
+                <state img="3-sad.png">What the character says just after they take their clothes off.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="3-loss.png">Yay, I win ! Huh, I lost ?</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="3-loss.png">Seriously ?! Again ?!</state>
+            </case>
+            <case tag="stripping">
+                <state img="3-strip.png">What the character says as they take their clothes off. The picture and text should be unique to what they're taking off.</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="3-loss.png">Well I guess you're all already showing some skin...</state>
+            </case>
+        </stage>
+
+        <stage id="4">
+            <case tag="female_must_strip">
+                <state img="4-interested.png">What they say to a female NPC who has lost a round</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="4-interested.png">What the character says when a male character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="4-calm.png">A female character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="4-awkward.png">What the character says after the male character's crotch is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="4-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="4-shocked.png">What the character says after the male character's crotch is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="4-horny.png">What the character says when a female character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="4-happy.png">The male character has just removed that minor item.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="4-calm.png">A male character has just removed that small item.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="4-interested.png">What the character says when a male character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="4-horny.png">What the character says while a female character is masturbating.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="4-interested.png">What they say to a female player who has lost a round</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="4-shocked.png">What the character says after the female character's crotch has become visible.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="4-horny.png">What the character says when a female character has started masturbating.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="4-interested.png">What the character says before a male loses an item with the "major" type.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="4-calm.png">A female character has just removed that small item.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="4-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="4-horny.png">What the character says when a male character has started masturbating.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="4-interested.png">What the character says once the male character's chest is visible.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="4-shocked.png">What the character says after the female character's chest is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="4-interested.png">What they say to a male NPC who has lost a round</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="4-interested.png">What the character says when a female character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="4-interested.png">What they say to a male player who has lost a round</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="4-calm.png">What the character says after the male character's crotch is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="4-sad.png">A male character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="4-shocked.png">What the character says when a male character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="4-interested.png">What the character says after the female character's chest is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="4-horny.png">What the character says after the female character's chest is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="4-sad.png">A female character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="4-calm.png">What the character says when they win the game. Can happen in any stage.</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="4-interested.png">What the character says before a female loses an item with the "major" type.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="4-calm.png">A male character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="4-shocked.png">What the character says when a female character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="4-interested.png">What the character says when a female character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="4-horny.png">What the character says while a male character is masturbating.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="4-happy.png">The female character has just removed that minor item.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="4-horny.png">What the character says when a male character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="4-happy.png">HA ! Not even the B-Man could win !</state>
+                <state img="4-happy.png">Mr J would be so proud !</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="4-calm.png">Meh, I've seen better.</state>
+                <state img="4-calm.png">Mmm, this will do.</state>
+                <state img="4-calm.png">I wouldn't mind hearing the rules again...</state>
+                <state img="4-calm.png">I guess this is allright.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="4-calm.png">Hey dealer ! Gimme ~cards~ cards.</state>
+                <state img="4-calm.png">I'll take ~cards~.</state>
+                <state img="4-calm.png">~cards~ new cards, puddin'.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="4-sad.png">Jeez, did Bats mess with these cards ?</state>
+                <state img="4-sad.png">Think, Harley, think...</state>
+                <state img="4-sad.png">What would Mr J do in my place ?</state>
+            </case>
+            <case tag="stripped">
+                <state img="4-sad.png">What the character says just after they take their clothes off.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="4-loss.png">Yay, I win ! Huh, I lost ?</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="4-loss.png">Seriously ?! Again ?!</state>
+            </case>
+            <case tag="stripping">
+                <state img="4-strip.png">What the character says as they take their clothes off. The picture and text should be unique to what they're taking off.</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="4-loss.png">Well I guess you're all already showing some skin...</state>
+            </case>
+        </stage>
+
+        <stage id="5">
+            <case tag="female_must_strip">
+                <state img="5-interested.png">What they say to a female NPC who has lost a round</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="5-interested.png">What the character says when a male character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="5-calm.png">A female character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="5-awkward.png">What the character says after the male character's crotch is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="5-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="5-shocked.png">What the character says after the male character's crotch is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="5-horny.png">What the character says when a female character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="5-happy.png">The male character has just removed that minor item.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="5-calm.png">A male character has just removed that small item.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="5-interested.png">What the character says when a male character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="5-horny.png">What the character says while a female character is masturbating.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="5-interested.png">What they say to a female player who has lost a round</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="5-shocked.png">What the character says after the female character's crotch has become visible.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="5-horny.png">What the character says when a female character has started masturbating.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="5-interested.png">What the character says before a male loses an item with the "major" type.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="5-calm.png">A female character has just removed that small item.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="5-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="5-horny.png">What the character says when a male character has started masturbating.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="5-interested.png">What the character says once the male character's chest is visible.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="5-shocked.png">What the character says after the female character's chest is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="5-interested.png">What they say to a male NPC who has lost a round</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="5-interested.png">What the character says when a female character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="5-interested.png">What they say to a male player who has lost a round</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="5-calm.png">What the character says after the male character's crotch is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="5-sad.png">A male character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="5-shocked.png">What the character says when a male character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="5-interested.png">What the character says after the female character's chest is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="5-horny.png">What the character says after the female character's chest is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="5-sad.png">A female character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="5-calm.png">What the character says when they win the game. Can happen in any stage.</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="5-interested.png">What the character says before a female loses an item with the "major" type.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="5-calm.png">A male character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="5-shocked.png">What the character says when a female character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="5-interested.png">What the character says when a female character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="5-horny.png">What the character says while a male character is masturbating.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="5-happy.png">The female character has just removed that minor item.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="5-horny.png">What the character says when a male character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="5-happy.png">HA ! Not even the B-Man could win !</state>
+                <state img="5-happy.png">Mr J would be so proud !</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="5-calm.png">Meh, I've seen better.</state>
+                <state img="5-calm.png">Mmm, this will do.</state>
+                <state img="5-calm.png">I wouldn't mind hearing the rules again...</state>
+                <state img="5-calm.png">I guess this is allright.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="5-calm.png">Hey dealer ! Gimme ~cards~ cards.</state>
+                <state img="5-calm.png">I'll take ~cards~.</state>
+                <state img="5-calm.png">~cards~ new cards, puddin'.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="5-sad.png">Jeez, did Bats mess with these cards ?</state>
+                <state img="5-sad.png">Think, Harley, think...</state>
+                <state img="5-sad.png">What would Mr J do in my place ?</state>
+            </case>
+            <case tag="stripped">
+                <state img="5-sad.png">What the character says just after they take their clothes off.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="5-loss.png">Yay, I win ! Huh, I lost ?</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="5-loss.png">Seriously ?! Again ?!</state>
+            </case>
+            <case tag="stripping">
+                <state img="5-strip.png">What the character says as they take their clothes off. The picture and text should be unique to what they're taking off.</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="5-loss.png">Well I guess you're all already showing some skin...</state>
+            </case>
+        </stage>
+
+        <stage id="6">
+            <case tag="female_must_strip">
+                <state img="6-interested.png">What they say to a female NPC who has lost a round</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="6-interested.png">What the character says when a male character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="6-calm.png">A female character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="6-awkward.png">What the character says after the male character's crotch is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="6-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="6-shocked.png">What the character says after the male character's crotch is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="6-horny.png">What the character says when a female character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="6-happy.png">The male character has just removed that minor item.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="6-calm.png">A male character has just removed that small item.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="6-interested.png">What the character says when a male character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="6-horny.png">What the character says while a female character is masturbating.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="6-interested.png">What they say to a female player who has lost a round</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="6-shocked.png">What the character says after the female character's crotch has become visible.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="6-horny.png">What the character says when a female character has started masturbating.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="6-interested.png">What the character says before a male loses an item with the "major" type.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="6-calm.png">A female character has just removed that small item.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="6-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="6-horny.png">What the character says when a male character has started masturbating.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="6-interested.png">What the character says once the male character's chest is visible.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="6-shocked.png">What the character says after the female character's chest is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="6-interested.png">What they say to a male NPC who has lost a round</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="6-interested.png">What the character says when a female character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="6-interested.png">What they say to a male player who has lost a round</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="6-calm.png">What the character says after the male character's crotch is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="6-sad.png">A male character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="6-shocked.png">What the character says when a male character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="6-interested.png">What the character says after the female character's chest is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="6-horny.png">What the character says after the female character's chest is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="6-sad.png">A female character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="6-calm.png">What the character says when they win the game. Can happen in any stage.</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="6-interested.png">What the character says before a female loses an item with the "major" type.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="6-calm.png">A male character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="6-shocked.png">What the character says when a female character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="6-interested.png">What the character says when a female character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="6-horny.png">What the character says while a male character is masturbating.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="6-happy.png">The female character has just removed that minor item.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="6-horny.png">What the character says when a male character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="6-happy.png">HA ! Not even the B-Man could win !</state>
+                <state img="6-happy.png">Mr J would be so proud !</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="6-calm.png">Meh, I've seen better.</state>
+                <state img="6-calm.png">Mmm, this will do.</state>
+                <state img="6-calm.png">I wouldn't mind hearing the rules again...</state>
+                <state img="6-calm.png">I guess this is allright.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="6-calm.png">Hey dealer ! Gimme ~cards~ cards.</state>
+                <state img="6-calm.png">I'll take ~cards~.</state>
+                <state img="6-calm.png">~cards~ new cards, puddin'.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="6-sad.png">Jeez, did Bats mess with these cards ?</state>
+                <state img="6-sad.png">Think, Harley, think...</state>
+                <state img="6-sad.png">What would Mr J do in my place ?</state>
+            </case>
+            <case tag="stripped">
+                <state img="6-sad.png">What the character says just after they take their clothes off.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="6-loss.png">Yay, I win ! Huh, I lost ?</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="6-loss.png">Seriously ?! Again ?!</state>
+            </case>
+            <case tag="stripping">
+                <state img="6-strip.png">What the character says as they take their clothes off. The picture and text should be unique to what they're taking off.</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="6-loss.png">Well I guess you're all already showing some skin...</state>
+            </case>
+        </stage>
+
+        <stage id="7">
+            <case tag="female_must_strip">
+                <state img="7-interested.png">What they say to a female NPC who has lost a round</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="7-interested.png">What the character says when a male character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="7-calm.png">A female character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="7-awkward.png">What the character says after the male character's crotch is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="7-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="7-shocked.png">What the character says after the male character's crotch is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="7-horny.png">What the character says when a female character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="7-happy.png">The male character has just removed that minor item.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="7-calm.png">A male character has just removed that small item.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="7-interested.png">What the character says when a male character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="7-horny.png">What the character says while a female character is masturbating.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="7-interested.png">What they say to a female player who has lost a round</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="7-shocked.png">What the character says after the female character's crotch has become visible.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="7-horny.png">What the character says when a female character has started masturbating.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="7-interested.png">What the character says before a male loses an item with the "major" type.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="7-calm.png">A female character has just removed that small item.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="7-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="7-horny.png">What the character says when a male character has started masturbating.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="7-interested.png">What the character says once the male character's chest is visible.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="7-shocked.png">What the character says after the female character's chest is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="7-interested.png">What they say to a male NPC who has lost a round</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="7-interested.png">What the character says when a female character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="7-interested.png">What they say to a male player who has lost a round</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="7-calm.png">What the character says after the male character's crotch is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="7-sad.png">A male character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="7-shocked.png">What the character says when a male character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="7-interested.png">What the character says after the female character's chest is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="7-horny.png">What the character says after the female character's chest is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="7-sad.png">A female character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="7-calm.png">What the character says when they win the game. Can happen in any stage.</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="7-interested.png">What the character says before a female loses an item with the "major" type.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="7-calm.png">A male character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="7-shocked.png">What the character says when a female character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="7-interested.png">What the character says when a female character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="7-horny.png">What the character says while a male character is masturbating.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="7-happy.png">The female character has just removed that minor item.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="7-horny.png">What the character says when a male character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="7-happy.png">HA ! Not even the B-Man could win !</state>
+                <state img="7-happy.png">Mr J would be so proud !</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="7-calm.png">Meh, I've seen better.</state>
+                <state img="7-calm.png">Mmm, this will do.</state>
+                <state img="7-calm.png">I wouldn't mind hearing the rules again...</state>
+                <state img="7-calm.png">I guess this is allright.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="7-calm.png">Hey dealer ! Gimme ~cards~ cards.</state>
+                <state img="7-calm.png">I'll take ~cards~.</state>
+                <state img="7-calm.png">~cards~ new cards, puddin'.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="7-sad.png">Jeez, did Bats mess with these cards ?</state>
+                <state img="7-sad.png">Think, Harley, think...</state>
+                <state img="7-sad.png">What would Mr J do in my place ?</state>
+            </case>
+            <case tag="stripped">
+                <state img="7-sad.png">What the character says just after they take their clothes off.</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="7-loss.png">Yay, I win ! Huh, I lost ?</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="7-loss.png">Seriously ?! Again ?!</state>
+            </case>
+            <case tag="stripping">
+                <state img="7-strip.png">What the character says as they take their clothes off. The picture and text should be unique to what they're taking off.</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="7-loss.png">Well I guess you're all already showing some skin...</state>
+            </case>
+        </stage>
+
+        <stage id="8">
+            <case tag="female_must_strip">
+                <state img="8-interested.png">What they say to a female NPC who has lost a round</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="8-interested.png">What the character says when a male character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="8-calm.png">A female character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="8-awkward.png">What the character says after the male character's crotch is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="8-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="8-shocked.png">What the character says after the male character's crotch is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="8-horny.png">What the character says when a female character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="8-happy.png">The male character has just removed that minor item.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="8-calm.png">A male character has just removed that small item.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="8-interested.png">What the character says when a male character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="8-horny.png">What the character says while a female character is masturbating.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="8-interested.png">What they say to a female player who has lost a round</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="8-shocked.png">What the character says after the female character's crotch has become visible.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="8-horny.png">What the character says when a female character has started masturbating.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="8-interested.png">What the character says before a male loses an item with the "major" type.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="8-calm.png">A female character has just removed that small item.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="8-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="8-horny.png">What the character says when a male character has started masturbating.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="8-interested.png">What the character says once the male character's chest is visible.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="8-shocked.png">What the character says after the female character's chest is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="8-interested.png">What they say to a male NPC who has lost a round</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="8-interested.png">What the character says when a female character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="8-interested.png">What they say to a male player who has lost a round</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="8-calm.png">What the character says after the male character's crotch is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="8-sad.png">A male character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="8-shocked.png">What the character says when a male character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="8-interested.png">What the character says after the female character's chest is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="8-horny.png">What the character says after the female character's chest is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="8-sad.png">A female character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="8-calm.png">What the character says when they win the game. Can happen in any stage.</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="8-interested.png">What the character says before a female loses an item with the "major" type.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="8-calm.png">A male character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="8-shocked.png">What the character says when a female character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="8-interested.png">What the character says when a female character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="8-horny.png">What the character says while a male character is masturbating.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="8-happy.png">The female character has just removed that minor item.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="8-horny.png">What the character says when a male character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="good_hand">
+                <state img="8-happy.png">HA ! Not even the B-Man could win !</state>
+                <state img="8-happy.png">Mr J would be so proud !</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="8-calm.png">Meh, I've seen better.</state>
+                <state img="8-calm.png">Mmm, this will do.</state>
+                <state img="8-calm.png">I wouldn't mind hearing the rules again...</state>
+                <state img="8-calm.png">I guess this is allright.</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="8-calm.png">Hey dealer ! Gimme ~cards~ cards.</state>
+                <state img="8-calm.png">I'll take ~cards~.</state>
+                <state img="8-calm.png">~cards~ new cards, puddin'.</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="8-sad.png">Jeez, did Bats mess with these cards ?</state>
+                <state img="8-sad.png">Think, Harley, think...</state>
+                <state img="8-sad.png">What would Mr J do in my place ?</state>
+            </case>
+            <case tag="start_masturbating">
+                <state img="8-starting.png">What the character says as they start masturbating.</state>
+            </case>
+            <case tag="stripped">
+                <state img="8-sad.png">What the character says just after they take their clothes off.</state>
+            </case>
+            <case tag="must_masturbate_first">
+                <state img="8-loss.png">This is the character response when they lost their last hand and have to masturbate, and they're the first character who's required to masturbate.</state>
+            </case>
+            <case tag="must_masturbate">
+                <state img="8-loss.png">This is the character response when they lost their last hand and have to masturbate, and they're not the first character who's required to masturbate.</state>
+            </case>
+        </stage>
+
+        <stage id="9">
+            <case tag="female_must_strip">
+                <state img="9-interested.png">What they say to a female NPC who has lost a round</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="9-interested.png">What the character says when a male character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="9-calm.png">A female character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="9-awkward.png">What the character says after the male character's crotch is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="9-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="9-shocked.png">What the character says after the male character's crotch is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="9-horny.png">What the character says when a female character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="9-happy.png">The male character has just removed that minor item.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="9-calm.png">A male character has just removed that small item.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="9-interested.png">What the character says when a male character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="9-horny.png">What the character says while a female character is masturbating.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="9-interested.png">What they say to a female player who has lost a round</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="9-shocked.png">What the character says after the female character's crotch has become visible.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="9-horny.png">What the character says when a female character has started masturbating.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="9-interested.png">What the character says before a male loses an item with the "major" type.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="9-calm.png">A female character has just removed that small item.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="9-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="9-horny.png">What the character says when a male character has started masturbating.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="9-interested.png">What the character says once the male character's chest is visible.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="9-shocked.png">What the character says after the female character's chest is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="9-interested.png">What they say to a male NPC who has lost a round</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="9-interested.png">What the character says when a female character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="9-interested.png">What they say to a male player who has lost a round</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="9-calm.png">What the character says after the male character's crotch is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="9-sad.png">A male character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="9-shocked.png">What the character says when a male character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="9-interested.png">What the character says after the female character's chest is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="9-horny.png">What the character says after the female character's chest is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="9-sad.png">A female character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="9-calm.png">What the character says when they win the game. Can happen in any stage.</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="9-interested.png">What the character says before a female loses an item with the "major" type.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="9-calm.png">A male character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="9-shocked.png">What the character says when a female character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="9-interested.png">What the character says when a female character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="9-horny.png">What the character says while a male character is masturbating.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="9-happy.png">The female character has just removed that minor item.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="9-horny.png">What the character says when a male character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="masturbating">
+                <state img="9-calm.png">What the character says while they're masturbating.</state>
+            </case>
+            <case tag="finishing_masturbating">
+                <state img="9-finishing.png">What the masturbating character says as they "finish".</state>
+            </case>
+            <case tag="heavy_masturbating">
+                <state img="9-heavy.png">What the character says while they're masturbating, and closer to "finishing".</state>
+            </case>
+        </stage>
+
+        <stage id="10">
+            <case tag="female_must_strip">
+                <state img="10-interested.png">What they say to a female NPC who has lost a round</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="10-interested.png">What the character says when a male character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="10-calm.png">A female character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="10-awkward.png">What the character says after the male character's crotch is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="10-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="10-shocked.png">What the character says after the male character's crotch is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="10-horny.png">What the character says when a female character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="10-happy.png">The male character has just removed that minor item.</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="10-calm.png">A male character has just removed that small item.</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="10-interested.png">What the character says when a male character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="10-horny.png">What the character says while a female character is masturbating.</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="10-interested.png">What they say to a female player who has lost a round</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="10-shocked.png">What the character says after the female character's crotch has become visible.</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="10-horny.png">What the character says when a female character has started masturbating.</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="10-interested.png">What the character says before a male loses an item with the "major" type.</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="10-calm.png">A female character has just removed that small item.</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="10-interested.png">What the character says after the major item has been taken off.</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="10-horny.png">What the character says when a male character has started masturbating.</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="10-interested.png">What the character says once the male character's chest is visible.</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="10-shocked.png">What the character says after the female character's chest is visible, and has a size value of "large".</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="10-interested.png">What they say to a male NPC who has lost a round</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="10-interested.png">What the character says when a female character has lost a hand while nude, and must masturbate.</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="10-interested.png">What they say to a male player who has lost a round</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="10-calm.png">What the character says after the male character's crotch is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="10-sad.png">A male character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="10-shocked.png">What the character says when a male character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="10-interested.png">What the character says after the female character's chest is visible, and has a size value of "small".</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="10-horny.png">What the character says after the female character's chest is visible, and has a size value of "medium".</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="10-sad.png">A female character is about to remove a small item, with the type "extra".</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="10-calm.png">What the character says when they win the game. Can happen in any stage.</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="10-interested.png">What the character says before a female loses an item with the "major" type.</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="10-calm.png">A male character is about to remove a clothing item with the type "minor".</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="10-shocked.png">What the character says when a female character "finishes" masturbating.</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="10-interested.png">What the character says when a female character is about to remove the last piece of clothing covering their chest. For NPC's, this is a clothing element on the "upper" location, with the "important" type.</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="10-horny.png">What the character says while a male character is masturbating.</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="10-happy.png">The female character has just removed that minor item.</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="10-horny.png">What the character says when a male character is about to remove the last piece of clothing covering their crotch. For NPC's, this is a clothing element on the "lower" location, with the "important" type.</state>
+            </case>
+            <case tag="finished_masturbating">
+                <state img="10-finished.png">What the character says just after they've finished masturbating.</state>
+            </case>
+            <case tag="game_over_defeat">
+                <state img="10-calm.png">What the character says when someone else has won the game. This can only occur when a player is in the "finished" stage.</state>
+            </case>
+        </stage>
+
+    </behaviour>
+
+    <epilogue gender="&quot;male&quot;, &quot;female&quot;, or &quot;any&quot;. This is the gender of player that can see the ending">
+        <title>This is the title of the character's ending, and the start of a new ending</title>
+        <screen img="filename (including extension) of the background image for a screen. Also the start of a new screen">
+            <text>
+                <x>The x-position of the text box. Specifically, the position of the text box's left side. This can be a percentage, or the word "centered"</x>
+                <y>The y-position of the top of the text box. Must be a percentage.</y>
+                <width>The width of a text box. This is optional. Must be a percentage.</width>
+                <arrow>"up", "down", "left", or "right". Gives the text box a dialogue arrow in the specified direction. Can be left out, if you don't want the text box to be an arrow.</arrow>
+                <content>The text in the text box.</content>
+            </text>
+
+        </screen>
+
+        <screen img="example-filename.png">
+            <text>
+                <x>10%</x>
+                <y>20%</y>
+                <width>34%</width>
+                <arrow>right</arrow>
+                <content>This is text that will be seen by the player. It has a width of 34% and an arrow pointing down.</content>
+            </text>
+
+            <text>
+                <x>centered</x>
+                <y>50%</y>
+                <arrow>right</arrow>
+                <content>This is a centered text box. It has the default width and an arrow pointing right.</content>
+            </text>
+
+            <text>
+                <x>75%</x>
+                <y>50%</y>
+                <content>This third text box has minimum amount of values specified. It uses the default width, and has no arrow.</content>
+            </text>
+
+        </screen>
+
+    </epilogue>
+
+</opponent>
