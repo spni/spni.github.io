@@ -28,7 +28,7 @@
 		<clothing proper-name="Necklace" lowercase="necklace" type="extra" position="other" />
 		<clothing proper-name="Cloak" lowercase="cloak" type="major" position="upper" />
 		<clothing proper-name="Diadem" lowercase="diadem" type="extra" position="other" />
-		<clothing proper-name="Shoes" lowercase="shoes" type="minor" position="lower" />
+		<clothing proper-name="Slippers" lowercase="slippers" type="minor" position="lower" />
 		<clothing proper-name="Top" lowercase="top" type="important" position="lower" />
 		<clothing proper-name="Pants" lowercase="pants" type="major" position="lower" />
 		<clothing proper-name="Panties" lowercase="panties" type="important" position="lower" />
@@ -1196,7 +1196,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="4-strip.png">
-					I'm down to my last item... good-bye, shoes! You served me well.
+					I'm down to my last item... good-bye, slippers! You served me well.
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -2649,23 +2649,23 @@
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="9-calm.png">
+				<state img="9-angry.png">
 					Too little, too late.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="9-interested.png">
-					xxx
+					Well, now we're getting somewhere!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="9-horny.png">
-					xxx
+				<state img="9-interested.png">
+					Now that's more like it!
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
 				<state img="9-horny.png">
-					xxx
+					Are you ready to bare it all? Like you have a choice.
 				</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
@@ -2684,7 +2684,7 @@
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="9-interested.png">
-					xxx
+					I want to see even more...
 				</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
