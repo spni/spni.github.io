@@ -1,0 +1,679 @@
+#required for behaviour.xml
+first=Angela
+last=Ziegler
+label=Mercy
+gender=female
+size=medium
+#Number of phases to "finish"
+timer=20
+
+#required for meta.xml
+#start picture
+pic=0-calm
+height=5'7"
+from=Overwatch
+writer=humdumthrow,quanticloop
+artist=humdumthrow
+description=A guardian angel to those who come under her care, Dr. Angela Ziegler is a peerless healer, a brilliant scientist, and a staunch advocate for peace.
+
+#Mercy's clothes
+clothes=Gloves,gloves,extra,other
+clothes=Shoes,shoes,extra,other
+clothes=Armor,armor,major,upper
+clothes=Stockings,stockings,minor,lower
+clothes=Bra,bra,important,upper
+clothes=Panties,panties,important,lower
+
+#starting picture and text
+start=0-calm,Mercy on call!
+
+##individual behaviour
+#entries without a number are used when there are no stage-specific entries
+
+#Every  response is either stage specific (number in front) or default. If you  use a specific line for every stage, defaults will be overwritten. SO  DON'T BOTHER FILLING THESE OUT IF YOU ARE GONNA MAKE A LINE FOR EVERY  STAGE!
+#Refer to the above entries to see what sort of situations these refer to, and what the default images are.
+#Each situation has been repeated enough for the maximum eight items of clothing.
+#If your character has fewer items, delete the extra entries.
+#if you don't include a stage-specific entry for a situation, the script will use the default response as defined above.
+
+
+#character is stripping situations
+
+
+#losing gloves
+0-must_strip_winning=loss,Let's start with my gloves.
+0-must_strip_normal=loss,Let's start with my gloves.
+0-must_strip_losing=loss,Let's start with my gloves.
+0-stripping=strip,It's really warm here anyways.
+1-stripped=calm,It is always important to keep your hands clean.
+
+#losing boots
+1-must_strip_winning=loss,I don't think I need my boots anymore.
+1-must_strip_normal=loss,I don't think I need my boots anymore.
+1-must_strip_losing=loss,I don't think I need my boots anymore.
+1-stripping=strip,Although you should always wear shoes when going on longer walks...
+2-stripped=calm,Walking barefeet sometimes can be a very healthy excercise.
+
+#losing armor
+2-must_strip_winning=loss,I should've picked something more casual for this...
+2-must_strip_normal=loss,I should've picked something more casual for this...
+2-must_strip_losing=loss,I should've picked something more casual for this...
+2-stripping=strip,It's harder to replace inner organs, so always wear armor into battle to reduce the cost of your medical bill.
+3-stripped=embarrassed,Looks like I won't be going into battle today.
+
+#losing stockings
+3-must_strip_winning=loss,Next, I will remove my stockings...
+3-must_strip_normal=loss,Next, I will remove my stockings...
+3-must_strip_losing=loss,Next, I will remove my stockings...
+3-stripping=strip,These stockings are very flexible for battle, while as well keeping the blood circulation in the legs high. I made them myself.
+4-stripped=calm,Of course I can do without them, as I am perfectly healthy anyways.
+
+#losing bra
+4-must_strip_winning=loss,Time to go even with you guys.
+4-must_strip_normal=loss,Well, time for you to inspect me.
+4-must_strip_losing=loss,Well, time for you to inspect me.
+4-stripping=strip,I don't wear bras since it has been shown that they are bad for your breasts, especially aesthetically.
+5-stripped=embarrassed,On a scale of 1-10, how do you like my breasts?
+
+#losing panties
+5-must_strip_winning=loss,Full body inspections normally shouldn't arouse you that much...
+5-must_strip_normal=loss,Full body inspections normally shouldn't arouse you that much...
+5-must_strip_losing=loss,Full body inspections normally shouldn't arouse you that much...
+5-stripping=strip,Always make sure your panties are made of the right materials, that benefit s the health of your vagina.
+6-stripped=embarrassed,I hope you appreciate my healthy body...
+
+
+
+
+#masturbation
+#these situations relate to when the character is masturbating
+#these only come up in the relevant stages, so you don't need to include the stage numbers here
+#just remember which stage is which when you make the images
+must_masturbate_first=loss,You saw my healing stream, now you get to see my other one.
+must_masturbate=loss,You will see: damage isn't the only thing I can boost.
+start_masturbating=starting,"Sprechstunde" bei der Frau Doktor...
+masturbating=horny,Watch closely, you don't always see an expert in human anatomy going at it.
+heavy_masturbating=heavy,This is so barbaric... hnnngg I like it.
+finishing_masturbating=finishing,HEROES NEVER DIE!
+finished_masturbating=finished,I'll send you my consultation fee.
+#I don't think this line is actually used by the game.
+game_over_defeat=calm,That was fun. You might wanna come over later for a follow-up treatment.
+game_over_victory=happy,You might not want to tell your friends about that.
+
+
+
+#card cases
+
+#default card behaviour
+#you can include multiple entries to give the character multiple lines and/or appearances in that situation.
+#This is what a character says while they're exchanging cards.
+swap_cards=calm,May I have ~cards~ cards?
+swap_cards=calm,I'll take ~cards~.
+swap_Cards=calm,~cards~ new cards, please.
+
+#The character thinks they have a good hand
+good_hand=happy,These are nice.
+good_hand=happy,Oh, how very nice.
+good_hand=happy,A lovely hand.
+
+#The character thinks they have a bad hand
+okay_hand=calm,These cards are alright.
+okay_hand=calm,I have an average hand.
+okay_hand=calm,This is a decent hand.
+okay_hand=calm,Hmm, ok then.
+
+#The character thinks they have a bad hand
+bad_hand=sad,These cards could be better...
+bad_hand=sad,This is a bad hand.
+bad_hand=sad,This is... concerning.
+
+good_hand=happy,Super!
+good_hand=happy,Mit dieser Oma kann ich nur gewinnen.
+good_hand=happy,These are already perfect.
+good_hand=happy,This is an optimal hand.
+
+okay_hand=calm,This could need some improvements...
+okay_hand=calm,In Ordnung...
+okay_hand=calm,This is neither a winning nor a losing hand.
+
+bad_hand=sad,Pech!
+bad_hand=sad,So ein Mist.
+bad_hand=sad,This hand needs a revival.
+
+
+#lost 4 items
+
+4-bad_hand=embarrassed,Pech!
+4-bad_hand=embarrassed,So ein Mist.
+4-bad_hand=embarrassed,This hand needs a revival.
+
+
+#lost 5 items
+
+5-bad_hand=embarrassed,Pech!
+5-bad_hand=embarrassed,So ein Mist.
+5-bad_hand=embarrassed,This hand needs a revival.
+
+
+#lost 6 items
+
+6-bad_hand=embarrassed,Pech!
+6-bad_hand=embarrassed,So ein Mist.
+6-bad_hand=embarrassed,This hand needs a revival.
+
+
+
+
+
+
+#situations where another character is stripping
+male_human_must_strip=interested,What they say to a male player who has lost a round
+male_must_strip=interested,What they say to a male NPC who has lost a round
+
+#these are mostly the same as the male stripping cases, but the female's size refers to their chest rather than their crotch.
+female_human_must_strip=interested,So ist das Leben ~name~.
+female_must_strip=interested,Pech ~name~, rules are rules.
+
+
+##other player must strip specific
+#fully clothed
+0-male_human_must_strip=interested,Don't expect me to support you in this game!
+0-male_human_must_strip=interested,Ah ~name~, I wonder what clothing you will remove.
+0-male_must_strip=interested,Seems like you need a guardian angel, ~name~!
+0-male_must_strip=interested,Pech ~name~, now strip!
+0-female_human_must_strip=interested,Don't expect me to support you in this game!
+0-female_human_must_strip=interested,Ah ~name~, I wonder what clothing you will remove.
+0-female_must_strip=interested,Seems like you need a guardian angel, ~name~!
+0-female_must_strip=interested,Pech ~name~, now strip!
+
+#lost 1 item
+1-male_human_must_strip=interested,Let me examine that body of yours.
+1-male_human_must_strip=interested,Oh ~name~, I know you are hiding a pleasent suprise under there.
+1-male_must_strip=interested,You can't win them all!
+1-male_must_strip=interested,Ah ~name~, I know you are hiding a pleasant suprise under there.
+1-female_human_must_strip=interested,Tja! Now let's see what you will take off.
+1-female_human_must_strip=interested,Don't fret ~name~, the less clothing the easier the "examination".
+1-female_must_strip=interested,Ah well, let's see what you have hidden from us.
+1-female_must_strip=interested,Don't fret ~name~, the less clothing the easier the "examination".
+
+#lost 2 items
+2-male_human_must_strip=happy,I lost my boots, now its time you lose something!
+2-male_human_must_strip=interested,Chin up ~name~, atleast you saved someone this round.
+2-male_must_strip=interested,Wunderbar, let's see what you have to show us.
+2-male_must_strip=interested,Don't be shy ~name~, rules are rules.
+2-female_human_must_strip=happy,I lost my boots, now its time you lose something!
+2-female_must_strip=interested,Chin up ~name~, atleast you saved someone this round.
+
+#lost 3 items
+3-male_human_must_strip=interested, Heroes never die but they can lose.
+3-male_human_must_strip=interested, I saw you "examining me", time to turn the tables.
+3-male_must_strip=interested, Heroes never die but they can lose.
+3-male_must_strip=interested, I saw you "examining me", time to turn the tables.
+3-female_human_must_strip=interested, Heroes never die but they can lose.
+3-female_must_strip=interested, Show me something good to examine.
+
+#lost lost 4 items
+4-male_human_must_strip=embarrassed,I saw you staring ~name~, you could call this karma.
+4-male_human_must_strip=happy,Vielen Dank ~name~,you really saved me there!
+4-male_must_strip=embarrassed,I saw you staring ~name~, you could call this karma.
+4-male_must_strip=interested,Oh my ~name~, what will you remove?
+4-female_human_must_strip=embarrassed, I saw you staring ~name~, you could call this karma.
+4-female_human_must_strip=happy,Vielen Dank ~name~,you really saved me there!
+4-female_must_strip=interested,Super! Let's see what you are hiding from us.
+
+#lost 5 items
+5-male_human_must_strip=embarrassed,You should look more at your cards ~name~, not at me.
+5-male_human_must_strip=embarrassed,My eyes are up here ~name~! Now let's see what you will take off.
+5-male_must_strip=embarrassed,You should look more at your cards ~name~, not at me.
+5-male_must_strip=embarrassed,I can't blame you for looking but now let us take a look!
+5-female_human_must_strip=embarrassed,My eyes are up here ~name~! Now let's see what you will take off. 
+5-female_must_strip=embarrassed,My eyes are up here ~name~! Now let's see what you will take off.
+
+
+#lost lost all clothing items
+-3-male_human_must_strip=embarrassed,Am I distracting you? Because that would be great for me.
+-3-male_human_must_strip=happy,Vielen Dank ~name~, better you then me at this point!
+-3-male_must_strip=embarrassed,Am I distracting you? Because that would be great for me.
+-3-male_must_strip=happy,Vielen Dank ~name~, better you then me at this point!
+-3-female_human_must_strip=embarrassed,Atleast you diverted the attention for a while...
+-3-female_must_strip=happy,Suddenly the staring has decreased, atleast for a bit.
+
+#masturbating
+-2-male_human_must_strip=horny,Yes ~name~...Give me a boost...
+-2-male_human_must_strip=horny,...Ah ~name~....I could use a buff...
+-2-male_must_strip=horny,Yes ~name~...Give me a boost...
+-2-female_human_must_strip=horny,..Ah..Ah...Take it off...
+-2-female_must_strip=horny,...Yes ~name~, this will aid me....
+
+#finished
+-1-male_human_must_strip=happy,Super ~name~! Show me just how healthy you are.
+-1-male_human_must_strip=interested,Wanna join me ~name~? It's good for your health.
+-1-male_must_strip=happy,Super ~nam~! Show me just how healthy you are.
+-1-male_must_strip=interested,Wanna join me ~name~? It's good for your health.
+-1-female_human_must_strip=interested,It's lonely here ~name~, why don't you follow my example.
+-1-female_human_must_strip=horny,Following my lead? It's good for your health ~name~ and it feels great, trust me...
+-1-female_must_strip=-1-female_human_must_strip=interested,It's lonely here ~name~, why don't you follow my example.
+-1-female_must_strip=-1-female_human_must_strip=horny,Following my lead? It's good for your health ~name~ and it feels great, trust me...
+
+##another character is removing accessories
+
+male_removing_accessory=sad,Oh you still had your ~clothing~...
+male_removed_accessory=calm,I guess this will have to do for now.
+female_removing_accessory=sad,Oh your ~clothing~, I guess that qualifies.
+female_removed_accessory=calm,No to worry ~name~, I would have done the same.
+
+#fully clothed
+0-male_removing_accessory=calm,Smart move ~name~, the turtle wins the race.
+0-male_removed_accessory=calm,Atleast you can't use your ~clothing~ anymore.
+0-female_removing_accessory=calm,Rome wasen't build in a day.
+0-female_removed_accessory=calm,Your ~clothing~ won't protect you next time!
+
+#lost 1 item
+1-male_removing_accessory=calm,An acceptable choice. For now.
+1-male_removed_accessory=calm,I hope you didn't value your ~clothing~ to much.
+1-female_removing_accessory=calm,I would have done the same, ~name~.
+1-female_removed_accessory=calm,I hope you didn't value your ~clothing~ to much.
+
+#lost 2 items
+2-male_removing_accessory=calm,An acceptable choice. For now.
+2-male_removing_accessory=interested,Pick up the pace ~name~, or do you need me to "boost" you?
+2-male_removed_accessory=calm,Small roads can lead to big destinations.
+2-male_removed_accessory=calm,One step closer to a full body examination!
+2-female_removing_accessory=calm,An acceptable choice. For now.
+2-female_removing_accessory=sad,Your ~clothing~ huh? Guess that will do for now...
+2-female_removed_accessory=calm,One step closer to a full body examination!
+2-female_removed_accessory=sad,It will be hard to study your assets at this pace.
+
+#lost 3 items
+3-male_removing_accessory=calm,Look at it this way ~name~, now I get to keep my stockings on.
+3-male_removing_accessory=sad,Surely you can do better, ~name~!
+3-male_removed_accessory=calm,Atleast that is out of the way now.
+3-female_removing_accessory=calm,Look at it this way ~name~, now I get to keep my stockings on.
+3-female_removed_accessory=calm,Atleast that is out of the way now.
+
+#lost 4 items
+4-male_removing_accessory=sad,Only your ~clothing~? That isn't very healthy.
+4-male_removed_accessory=interested,Let's see if you can do better next time.
+4-female_removing_accessory=calm,It's healthy to share you know.
+4-female_removing_accessory=calm,Let's see if you can do better next time.
+4-female_removed_accessory=inerested.Don't be shy let the doctor get a closer look next time...
+
+#lost 5 items
+5-male_removing_accessory=shocked, Huh? You still have your ~clothing~?
+5-male_removed_accessory=embarrassed,Wish I could ressurect my armor about now...
+5-female_removing_accessory=shocked, I'm almost nude and you still have your ~clothing~?
+5-female_removed_accessory=embarrassed,Wish I could ressurect my armor about now...
+
+
+#nude
+-3-male_removing_accessory=sad,You still have ~clothing~ while i'm fully naked?
+-3-male_removing_accessory=sad,I see you came prepared...
+-3-male_removing_accessory=embarrassed,I see you staring ~name~, now off with your ~clothing~.
+-3-male_removed_accessory=embarrassed,Maybe you could lend me your ~clothing~?
+-3-male_removed_accessory=sad,It seems I am not very good at this game...
+-3-female_removing_accessory=sad,I was ill equipped it seems.
+-3-female_removing_accessory=embarrassed,Atleast you still had your ~clothing~, ~name~.
+-3-female_removing_accessory=embarrassed,I see you staring ~name~, now off with your ~clothing~.
+-3-female_removed_accessory=sad,Take of some more clothing next time, ~name~. Doctor's orders.
+-3-female_removed_accessory=embarrassed,Maybe I should have supported you after all.
+
+#masturbating
+-2-male_removing_accessory=happy,Ah ja...Every bit helps...
+-2-male_removing_accessory=happy,Yes, keep stripping ~name~...
+-2-male_removed_accessory=horny,Come now ~name~,I'm gonna need a bit more stimulation then that...
+-2-female_removing_accessory=happy,Ah ja...Every bit helps...
+-2-female_removing_accessory=happy,Yes, keep stripping ~name~...
+-2-female_removed_accessory=horny,Come now ~name~,I'm gonna need a bit more stimulation then that...
+
+#finished
+-1-male_removing_accessory=interested,All eyes on you ~name~.
+-1-male_removing_accessory=interested,Did I distract you ~name~?
+-1-male_removing_accessory=interested,A healthy body should be shown...
+-1-male_removed_accessory=interested,Ah...Very good...
+-1-female_removing_accessory=interested,You were a great "inspiration" just then, ~name~...
+-1-female_removing_accessory=interested,Yes...You seem to be in good shape.
+-1-female_removed_accessory=interested,Ah...Very good...
+-1-female_removed_accessory=interested,A little more and you might join me ~name~...
+
+##another character is removing minor clothing items
+
+male_removing_minor=calm,So ist das Leben, ~name~.
+male_removing_minor=calm,The prognosis for your ~clothing~ isn't good i'm afraid.
+male_removed_minor=happy,One step closer to a full body "examination".
+female_removing_minor=calm,The prognosis for your ~clothing~ isn't good i'm afraid.
+female_removing_minor=calm,Your guardian angel must have flown away...
+female_removed_minor=happy,A glimpse of what is to come!
+female_removed_minor=happy,One small step for ~name~,one giant leap for us!
+
+#fully clothed
+0-male_removing_minor=interested,The prognosis for your ~clothing~ isn't good i'm afraid.
+0-male_removing_minor=interested,I would help ~name~, but rules are rules.
+0-male_removed_minor=happy,Don't be scared to show your doctor some skin ~name~.
+0-male_removed_minor=interested,Excellent, keep this up and you might get a lollipop.
+0-female_removing_minor=interested,The prognosis for your ~clothing~ isn't good i'm afraid.
+0-female_removing_minor=interested,One step at a time.
+0-female_removed_minor=calm,Atleast that is out of the way now.
+0-female_removed_minor=calm,Perhaps something bigger next time?
+#lost 1 item
+1-male_removing_minor=happy,Off with your ~clothes~!
+1-male_removing_minor=interested,The process of removal can sometimes be painful.
+1-male_removed_minor=interested,Tja, better luck next time ~name~.
+1-female_removing_minor=happy,Off with your ~clothes~!
+1-female_removed_minor=interested,Tja, better luck next time ~name~.
+
+#lost 2 items
+2-male_removing_minor=calm,Seems your luck has ran out ~name~.
+2-male_removed_minor=happy,Your ~clothing~ was obstructing my view anyway.
+2-female_removing_minor=happy,Don't keep the doctor waiting ~name~.
+2-female_removed_minor=happy,Your ~clothes~ have served their purpose.
+
+#lost 3 items
+3-male_removing_minor=happy,Gotta start somewhere.
+3-male_removed_minor=calm.On to the next round.
+3-female_removing_minor=happy,It's getting quite warm in here, so you don't need your ~clothes~ anyway.
+3-female_removed_minor=calm,Moving on...
+
+#lost 4 items
+4-male_removing_minor=embarassed,Even while stripping you still stare.
+4-male_removed_minor=calm,Atleast you still had your ~clothes~.
+4-female_removing_minor=embarassed,Taking of your ~clothes~? Wish I could still do the same...
+4-female_removed_minor=calm,Acceptable, for now.
+
+#lost 5 items
+5-male_removing_minor=interested,Are you in need of assistance, ~name~?
+5-male_removed_minor=calm,You can stare ~name~, I don't mind...
+5-female_removing_minor=interested,Seems you are better at this than me, ~name~.
+5-female_removed_minor=happy,You really saved me this round ~name~!
+
+
+
+#naked
+-3-male_removing_minor=sad,Only your ~clothing~, ~name~? That's no way to treat your doctor.
+-3-male_removed_minor=interested,Let's hope we get to see something big next time.
+-3-female_removing_minor=sad,Ach komm schon ~name~. Surely you can do better.
+-3-female_removed_minor=interested,Examining my body ~name~? I don't mind...
+
+#masturbating
+-2-male_removing_minor=horny,Hnng...Every bit helps...
+-2-male_removing_minor=horny,Yes..~name~...keep going...
+-2-male_removed_minor=interested,Perhaps aid me by showing something bigger...
+-2-female_removing_minor=horny,This should boost my performance...
+-2-female_removed_minor=interested,Just a little more ~name~...
+
+#finished
+-1-male_removing_minor=sad,Still have your ~clothing~ huh? My skills are lacking it seems.
+-1-male_removed_minor=interested,My performance seemed to have flustered you ~name~...
+-1-female_removing_minor=sad,You still had your ~clothing~? I didn't know is was doing that poorly...
+-1-female_removed_minor=interested,I look forward to examining the rest ~name~...
+
+##another character is removing major clothes
+
+male_removing_major=interested,Let's see what you are hiding under there.
+male_removed_major=interested,Fascinating, the human body never ceases to amaze me.
+
+female_removing_major=interested,Don't be shy, if you need a helping hand ill be happy to help.
+female_removed_major=interested,The human body truly is a wonder.
+
+
+#fully clothed
+0-male_removing_major=interested,You should hold nothing back from your doctor...
+0-male_removed_major=interested,You look healthier already.
+0-female_removing_major=interested, You should hold nothing back from your doctor...
+0-female_removed_major=interested,That's a healthy look for you.
+#lost 1 item
+1-male_removing_major=interested,You are not looking to well, are the nerves getting to you?
+1-male_removed_major=happy,Now that's more like it ~name~.
+1-female_removing_major=interested,Don't worry, you look good without you ~clothing~.
+1-female_removed_major=happy,This aides my examination quite well.
+
+#lost 2 items
+2-male_removing_major=interested,Your ~clothing~ was getting in the way anyway.
+2-male_removed_major=happy,Looking healthy as ever, ~name~.
+2-female_removing_major=interested,This looks promising.
+2-female_removed_major=happy,Super! You look great ~name~.
+
+#lost 3 items
+3-male_removing_major=interested,This should be promising.
+3-male_removed_major=happy,If it makes you feel better I lost my armor to.
+3-female_removing_major=interested,Don't worry, it's not that bad ~name~.
+3-female_removed_major=happy,How cute you seem to be blushing ~name~.
+
+#lost 4 items
+4-male_removing_major=interested,Seems like our luck has ran out, ~name~.
+4-male_removed_major=embarrassed,You wanted it to be me didn't you, ~name~?
+4-female_removing_major=interested,Hope you enjoy getting stared at ~name~, because i'm beginning to.
+4-female_removed_major=embarrassed,It seems to be getting hot in here or is that just me?
+
+#lost 5 items
+5-male_removing_major=interested,Seems like I might be getting some company real soon...
+5-male_removed_major=happy,You got to stare now it's my turn.
+5-female_removing_major=interested,Want to divert some of the attention,~name~?
+5-female_removed_major=embarrassed,You look way hotter I-I mean healthier like that ~name~.
+
+#nude
+-3-male_removing_major=interested,No need to rush, let's enjoy the moment.
+-3-male_removed_major=horny,Seems like there has been an enlargement down there, mind if I take a closer look?
+-3-female_removing_major=interested,Take it off slowly, no need to rush...
+-3-female_removed_major=horny,Your body betrays your "excitement"...
+
+#masturbating
+-2-male_removing_major=happy,M-Maybe soon, y-you could join me, ~name~?
+-2-male_removed_major=horny,Ah...~name~,T-that's just what the doctor ordered...
+-2-female_removing_major=happy,I appriciate the helping hand...
+-2-female_removed_major=horny,Yes...This will help me greatly...
+
+#finished
+-1-male_removing_major=interested,Better late the never.
+-1-male_removed_major=happy,Don't worry ~name~, it's not that bad at all.
+-1-female_removing_major=interested,Joining me, ~name~?
+-1-female_removed_major=happy,This is starting to make me excited again.
+
+##another character is removing important clothes
+
+
+male_chest_will_be_visible=interested,Let your doctor get a closer look...
+male_chest_is_visible=interested,Wow ~name~, you seem to be in good shape.
+#male crotches have different sizes, allowing your character to have different responses
+male_crotch_will_be_visible=horny,You seem swollen down there ~name~, might wanna show that to a doctor...
+male_small_crotch_is_visible=horny,Mind if I take a closer look?
+male_medium_crotch_is_visible=horny,Wunderbar...
+male_large_crotch_is_visible=shocked,Fascinating...It seems to be twitching, mind if I take a look?
+female_chest_will_be_visible=interested,All eyes on you ~name~.
+female_small_chest_is_visible=interested,Not to big but they have the perfect shape...
+female_medium_chest_is_visible=horny,Your nipples seem to have gotten hard, want me to cure them?
+female_large_chest_is_visible=shocked,They jiggle with your every step, perhaps hypnotism is real after all...
+female_crotch_will_be_visible=horny,Show the doctor what you got ~name~...
+female_crotch_is_visible=shocked,It is kind off hard to see from here, perhaps lend your doctor a closer look? Please...
+
+#fully clothed
+0-male_chest_will_be_visible=happy,Don't keep the doctor waiting.
+0-male_chest_is_visible=horny,You seem to be in good shape.
+0-male_crotch_will_be_visible=horny,You seem swollen down there ~name~, might wanna show that to a doctor...
+0-male_small_crotch_is_visible=horny,Not to big but oddly captivating...
+0-male_medium_crotch_is_visible=horny,I've never seen one so stiff before...
+0-male_large_crotch_is_visible=shocked,The size reminds me of my Caduceus Staff...
+
+0-female_chest_will_be_visible=happy,Don't be shy, a healthy body should be shown!
+0-female_small_chest_is_visible=horny,The perfect size to be fondled...I-I mean examined...
+0-female_medium_chest_is_visible=horny,Such stellar examples of a healthy body...
+0-female_large_chest_is_visible=horny,Large breasts aren't always the cause of back pain, but those look very heavy...
+0-female_crotch_will_be_visible=horny,Why am I getting exicted over this...
+0-female_crotch_is_visible=shocked,I know the human anatomy but I often forget its beauty... 
+
+#lost 1 item
+1-male_chest_will_be_visible=happy,I'm sure you won't dissapoint us ~name~.
+1-male_chest_is_visible=horny,Seems I was right...
+1-male_crotch_will_be_visible=horny,You seem swollen down there ~name~, might wanna show that to a doctor...
+1-male_small_crotch_is_visible=horny,Let me get a closer look...
+1-male_medium_crotch_is_visible=horny,I suddenly have an urge for popsicles...
+1-male_large_crotch_is_visible=horny,You seemed to have been blessed by good genetics...
+
+1-female_chest_will_be_visible=happy,It isn't your lucky day it seems, ~name~. Or perhaps it is my lucky day?
+1-female_small_chest_is_visible=horny,They are wonderful ~name~...
+1-female_medium_chest_is_visible=horny,Jumping jacks are good for your health. So maybe a demonstration is in order?
+1-female_large_chest_is_visible=horny,The way they bounce...Erstaunlich...
+1-female_crotch_will_be_visible=happy,Don't tease to much ~name~.
+1-female_crotch_is_visible=horny,Don't be ashamed, this is getting me "excited" to...
+
+#lost 2 items
+2-male_chest_will_be_visible=,
+2-male_chest_is_visible=,
+2-male_crotch_will_be_visible=horny,You seem swollen down there ~name~, might wanna show that to a doctor...
+2-male_small_crotch_is_visible=,
+2-male_medium_crotch_is_visible=horny,Whoa!...It looks hard. As a doctor I'd be happy to lessen the "pain".
+2-male_large_crotch_is_visible=horny,Does that payload need any protecting?
+
+2-female_chest_will_be_visible=,
+2-female_small_chest_is_visible=,
+2-female_medium_chest_is_visible=,
+2-female_large_chest_is_visible=,
+2-female_crotch_will_be_visible=,
+2-female_crotch_is_visible=,
+
+#lost 3 items
+3-male_chest_will_be_visible=,
+3-male_chest_is_visible=,
+3-male_crotch_will_be_visible=horny,You seem swollen down there ~name~, might wanna show that to a doctor...
+3-male_small_crotch_is_visible=,
+3-male_medium_crotch_is_visible=,
+3-male_large_crotch_is_visible=,
+
+3-female_chest_will_be_visible=,
+3-female_small_chest_is_visible=,
+3-female_medium_chest_is_visible=,
+3-female_large_chest_is_visible=,
+3-female_crotch_will_be_visible=,
+3-female_crotch_is_visible=,
+
+#lost 4 items
+4-male_chest_will_be_visible=,
+4-male_chest_is_visible=,
+4-male_crotch_will_be_visible=,
+4-male_small_crotch_is_visible=,
+4-male_medium_crotch_is_visible=,
+4-male_large_crotch_is_visible=,
+
+4-female_chest_will_be_visible=,
+4-female_small_chest_is_visible=,
+4-female_medium_chest_is_visible=,
+4-female_large_chest_is_visible=,
+4-female_crotch_will_be_visible=,
+4-female_crotch_is_visible=,
+
+#lost 5 items
+5-male_chest_will_be_visible=,
+5-male_chest_is_visible=,
+5-male_crotch_will_be_visible=,
+5-male_small_crotch_is_visible=horny,Need me to boost it? It's my job after all...
+5-male_medium_crotch_is_visible=
+5-male_large_crotch_is_visible=shocked,Now that is an objective I would gladly capture...
+5-female_chest_will_be_visible=,
+5-female_small_chest_is_visible=,
+5-female_medium_chest_is_visible=,
+5-female_large_chest_is_visible=,
+5-female_crotch_will_be_visible=,
+5-female_crotch_is_visible=,
+
+
+#nude
+-3-male_chest_will_be_visible=,
+-3-male_chest_is_visible=,
+-3-male_crotch_will_be_visible=horny,You seem swollen down there ~name~, was it my doing?
+-3-male_small_crotch_is_visible=horny,It's kind of small but yet it still draws me in.
+-3-male_medium_crotch_is_visible=horny,Verdammt, I should be professional but that looks like a great place to take a seat...
+-3-male_medium_crotch_is_visible=horny,Whoa...It's been a while since I saw one, I wanna take a picture...for science...
+-3-male_large_crotch_is_visible=shocked,Verdammt, I should be professional but that size makes me want to drool...
+-3-male_large_crotch_is_visible=shocked,Whoa...~name~, I've never seen such a big example before, is it because you were looking at me all nude?
+
+-3-female_chest_will_be_visible=,
+-3-female_small_chest_is_visible=,
+-3-female_medium_chest_is_visible=,
+-3-female_large_chest_is_visible=,
+-3-female_crotch_will_be_visible=,
+-3-female_crotch_is_visible=,
+
+#masturbating
+-2-male_chest_will_be_visible=,
+-2-male_chest_is_visible=,
+-2-male_crotch_will_be_visible=,
+-2-male_small_crotch_is_visible=,
+-2-male_medium_crotch_is_visible=,
+-2-male_large_crotch_is_visible=,
+
+-2-female_chest_will_be_visible=,
+-2-female_small_chest_is_visible=,
+-2-female_small_chest_is_visible=,
+-2-female_medium_chest_is_visible=,
+-2-female_large_chest_is_visible=,
+-2-female_crotch_will_be_visible=,
+-2-female_crotch_will_be_visible=,
+-2-female_crotch_is_visible=,
+-2-female_crotch_is_visible=,
+
+#finished
+-1-male_chest_will_be_visible=,
+-1-male_chest_is_visible=,
+-1-male_crotch_will_be_visible=,
+-1-male_small_crotch_is_visible=,
+-1-male_medium_crotch_is_visible=,
+-1-male_large_crotch_is_visible=,
+
+-1-female_chest_will_be_visible=,
+-1-female_small_chest_is_visible=,
+-1-female_medium_chest_is_visible=,
+-1-female_large_chest_is_visible=,
+-1-female_crotch_will_be_visible=,
+-1-female_crotch_is_visible=,
+
+##other player is masturbating
+
+
+#male masturbation default
+male_must_masturbate=interested,Don't worry, it's totally natural to satisfy your sexual desires yourself.
+male_start_masturbating=horny,With a healthy body like yours, I expect this to be quite a performance.
+male_masturbating=horny,I see you perfected this way of stimulating yourself.
+male_finished_masturbating=shocked,Wow, looks like you have been keeping it in for a while...
+
+
+
+#female masturbation default
+female_must_masturbate=interested,Don't worry, it's totally natural to satisfy your sexual desires yourself.
+female_start_masturbating=horny,With a healthy body like yours, I expect this to be quite a performance.
+female_masturbating=horny,There have been studies that prove the existence of the G-Spot, did you find it yet?
+female_finished_masturbating=shocked,Wow, that was quite... I would love to do some medical studies with you.
+
+
+
+#masturbating
+-2-male_must_masturbate=interested,Thank god, I don't have to do it alone.
+-2-male_start_masturbating=horny,Come on, no reason to be shy!
+-2-male_masturbating=heavy,Feels like I'm the one getting a boost this time.
+-2-male_masturbating=heavy,If we keep going in sync, it's almost like we are...
+-2-male_masturbating=heavy,Come closer, ~name~...
+-2-male_finished_masturbating=heavy,Niice, I'm really close too...
+-2-male_finished_masturbating=heavy,That's a healthy load, ~name~! I would love to get a sample... For science of course!
+
+-2-female_must_masturbate=interested,Thank god, I don't have to do it alone.
+-2-female_start_masturbating=horny,Come on, no reason to be shy!
+-2-female_masturbating=heavy,Feels like I'm the one getting a boost this time.
+-2-female_masturbating=heavy,Come closer, ~name~...
+-2-female_finished_masturbating=heavy,Niice, I'm really close too...
+
+#finished
+-1-male_must_masturbate=interested,Well I did it, ~name~. So it's only fair if you go to. Doctor's orders.
+-1-male_start_masturbating=horny,Judging from the erection you have, you must have really enjoyed my previous performance.
+-1-male_masturbating=horny,This makes me think I could do it a second time.
+-1-male_masturbating=horny,The more you stroke it, the bigger it gets. It sure is nice seeing it all erect...
+-1-male_masturbating=horny,I wish I brought some medical lube to give you. It would make this feel better for you.
+-1-male_finished_masturbating=Wow! That is quite a big load. You must have been dying for a release. It's not healthy to keep it all in like that.
+
+-1-female_must_masturbate=interested,Well I did it, ~name~. So it's only fair if you go to. Doctor's orders.
+-1-female_start_masturbating=horny,Just follow my example, trust me...I'm a doctor.
+-1-female_start_masturbating=horny,I see you already got wet over my performance.
+-1-female_masturbating=horny,Yes, just like that. Keep up a good rythm.
+-1-female_finished_masturbating=What a powerful orgasm! You must have been dying for a release. It's not healthy to keep it all in like that.
+
+
+
+
+
