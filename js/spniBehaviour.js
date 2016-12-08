@@ -194,6 +194,10 @@ function updateBehaviour (player, tag, replace, content) {
 		/* their is restricted to this only */
 		//tag = players[player].forfeit[0];
 	//}
+    
+    if (!players[player]) {
+        return;
+    }
 	
     /* get the AI stage */
     var stageNum = players[player].stage;
@@ -235,7 +239,7 @@ function updateBehaviour (player, tag, replace, content) {
  ************************************************************/
 function updateAllBehaviours (player, tag, replace, content) {
 	for (i = 1; i < players.length; i++) {
-		if (i != player) {
+		if (players[i] && i != player) {
 			updateBehaviour(i, tag, replace, content);
 		}
 	}
