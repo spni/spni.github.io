@@ -6,6 +6,7 @@ import PIL.Image
 
 setup_string_33 = "33***bc185.500.0.0.1_ga0*0*0*0*0*0*0*0*0#/]ua1.0.0.0_ub_uc7.0.30_ud7.0"
 setup_string_36 = "36***bc185.500.0.0.1_ga0*0*0*0*0*0*0*0*0#/]a00_b00_c00_d00_w00_x00_y00_z00_ua1.0.0.0_ub_u0_v0_uc7.0.30_ud7.0"
+setup_string_40 = "40***bc185.500.0.0.1*0*0*0*0*0*0*0*0#/]a00_b00_c00_d00_w00_x00_y00_z00_ua1.0.0.0.100_uf0.3.0.0_ue_ub_u0_v0_uc7.2.24_ud7.8"
 
 
 #create error if not exist (not on windows)
@@ -14,8 +15,10 @@ if not getattr(__builtins__, "WindowsError", None):
 
 #open image file that kkl has made, waiting until it exists and can be opened properly
 def open_image_file(filename):
-	retry_limit = 50 #try 50 times / 10 seconds
-	retry = 0
+	retry_time_limit = 10 #try for at most 10 seconds before saying there's a problem
+	retry_interval = 0.2 #re-check for the existance of the image every 200 milliseconds
+	retry_limit = retry_time_limit / retry_interval #try 50 times
+	retry = 0 #number of times we've retried
 	while True:
 		try:
 			image_file = PIL.Image.open(filename)
@@ -27,7 +30,7 @@ def open_image_file(filename):
 				#opening the image file failed, abort the process
 				raise
 				
-			time.sleep(0.2) #wait for the file to be available
+			time.sleep(retry_interval) #wait for the file to be available
 
 #wait for the text file to be deleted before trying to open the image
 def wait_for_file_deletion(filename):
@@ -71,6 +74,8 @@ def get_setup_string(image_list):
 		return setup_string_33
 	elif first_code.startswith("36"):
 		return setup_string_36
+	elif first_code.startswith("40"):
+		return setup_string_40
 		
 	return setup_string_33 #default setup string
 	
@@ -118,7 +123,7 @@ def create_images(image_list, output_directory):
 		#or
 		#crop_pixels=0,0
 		#to have the other sizes set to automatically produce a 600x1400 pixel image
-		#note that these values can go off the side of the screen
+		#note that these values can go off the side of the screen - the offscreen area will be transparent
 		if image_filename == "crop_pixels":
 			parts = image_data.split(",")
 			new_pixels = [int(part.strip()) for part in parts]
