@@ -24,14 +24,14 @@
 	<!-- Opponent Wardrobe --> 
 	<!-- Clothing should be listed in reverse order of removal (the first thing removed is the last thing in the list) -->
 	<wardrobe>
-		<clothing proper-name="Earrings" lowercase="earrings" type="extra" position="other" />
-		<clothing proper-name="Necklace" lowercase="necklace" type="extra" position="other" />
-		<clothing proper-name="Cloak" lowercase="cloak" type="major" position="upper" />
+		<clothing proper-name="Pants" lowercase="pants" type="important" position="lower" />
+		<clothing proper-name="Top" lowercase="top" type="important" position="upper" />
 		<clothing proper-name="Diadem" lowercase="diadem" type="extra" position="other" />
 		<clothing proper-name="Slippers" lowercase="slippers" type="minor" position="lower" />
-		<clothing proper-name="Top" lowercase="top" type="important" position="lower" />
-		<clothing proper-name="Pants" lowercase="pants" type="major" position="lower" />
-		<clothing proper-name="Panties" lowercase="panties" type="important" position="lower" />
+		<clothing proper-name="Necklace" lowercase="necklace" type="extra" position="other" />
+		<clothing proper-name="Cloak" lowercase="cloak" type="major" position="upper" />
+		<clothing proper-name="Necklace" lowercase="scarf" type="minor" position="other" />
+		<clothing proper-name="Earrings" lowercase="earrings" type="extra" position="other" />
 	</wardrobe>
 	<!-- An article of clothing can have one of four types: important, major, minor, and extra.
 		 - Important articles of clothing expose the character's chest or crotch when removed (underwear). 
@@ -349,7 +349,7 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="1-calm.png">
-					I wonder - would a Princess outrank a jack?
+					I wonder - would a princess outrank a jack?
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -383,7 +383,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="1-strip.png">
-					I'll give up my necklace. That counts, right?
+					I suppose I have no choice!
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -633,8 +633,8 @@
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
-				<state img="2-angry.png">
-					Be careful with it - it's a family heirloom!
+				<state img="2-shocked.png">
+					What? No, I don't think we've met before. I'm just a plain old regular girl.
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -649,7 +649,7 @@
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
 				<state img="2-loss.png">
-					I can't believe commoners play this game for fun.
+					I can't believe people play this game for fun.
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
@@ -925,7 +925,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="3-strip.png">
-					I don't need this diadem to prove my worth!
+					I'll give up my necklace. That counts, right?
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1176,7 +1176,7 @@
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
 				<state img="4-sad.png">
-					After all, I am still a princess.
+					Be careful with it - it's a family heirloom!
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -1196,7 +1196,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="4-strip.png">
-					I'm down to my last item... good-bye, slippers! You served me well.
+					Good-bye, slippers! You've served me well.
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1446,8 +1446,8 @@
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
-				<state img="5-shocked.png">
-					Well, congratulations to you for a fine game... eh? We're not done yet?!
+				<state img="5-angry.png">
+					Did you think I would back down? That I would cry? You don't know me very well, do you?
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -1467,7 +1467,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="5-strip.png">
-					Very well. If I must, I must. 
+					I'm down to my last item...
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1718,7 +1718,7 @@
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
 				<state img="6-angry.png">
-					Did you think I would back down? That I would cry? You don't know me very well, do you?
+					I am still a princess even without my diadem!
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -1728,12 +1728,12 @@
 			</case>
 			<case tag="must_strip_normal"> <!-- this player lost the hand and isn't winning or losing overall -->
 				<state img="6-loss.png">
-					Oh, if my father could see me now - no longer his precious flower!
+					Your word is my command, my lord.
 				</state>
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
 				<state img="6-loss.png">
-					Stop that! You're leering at me worse than Jafar!
+					You won't get away with this, you monster!
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
@@ -1999,12 +1999,12 @@
 			</case>
 			<case tag="must_strip_normal"> <!-- this player lost the hand and isn't winning or losing overall -->
 				<state img="7-horny.png">
-					Your word is my command, my lord.
+					Oh, if my father could see me now - no longer his precious flower!
 				</state>
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
 				<state img="7-loss.png">
-					You won't get away with this, you monster!
+					Stop that! You're leering at me worse than Jafar!
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
