@@ -1,0 +1,749 @@
+#required for behaviour.xml
+first=Asuna
+last=Yuuki
+label=Asuna
+gender=female
+size=large
+timer=15
+
+#required for meta.xml
+pic=0-calm
+height=5'5"
+from=Sword Art Online
+writer=Dilettante
+artist=josephkantel
+description=An upper-class private school student now trapped in an MMORPG against her will.
+
+#player clothing
+clothes=Boots,boots,minor,other
+clothes=Stockings,stockings,minor,other
+clothes=Gloves,gloves,minor,other
+clothes=Belt,belt,extra,other
+clothes=Top,top,major,upper
+clothes=Skirt,skirt,major,lower
+clothes=Bra,bra,important,upper
+clothes=Panties,panties,important,lower
+
+#start image
+start=0-angry,I won't lose to this game... no matter what!
+
+#card cases
+#fully clothed
+0-good_hand=0-happy,Got it!
+0-okay_hand=0-sad,P-please, be nice to me...
+0-bad_hand=0-nervous,Feel that? There's a bad vibe in here.
+
+#lost boots
+1-good_hand=1-happy,These cards are S-class!
+1-okay_hand=1-angry,Let's do this.
+1-bad_hand=1-lost,Oh, well, that figures.
+
+#lost stockings
+2-good_hand=2-happy,Got it!
+2-okay_hand=2-angry,Don't count me out just yet!
+2-bad_hand=2-angry,These cards are beyond fishy, don't you think?
+
+#lost gloves
+3-good_hand=3-happy,These cards are S-class.
+3-okay_hand=3-nervous,We may need to team up for this.
+3-bad_hand=3-sad,It's no use!
+
+#lost belt
+4-good_hand=4-happy,Okay, break time is over.
+4-okay_hand=4-nervous,Don't do anything mean, okay?
+4-bad_hand=4-nervous,I'm done for!
+
+#lost top
+5-good_hand=5-happy,Okay, break time is over.
+5-okay_hand=5-angry,I'm not sure about this hand...
+5-bad_hand=5-embarrassed,I can't go on...
+
+#lost skirt
+6-good_hand=6-happy,Okay, break time is over.
+6-okay_hand=6-angry,This won't stop me!
+6-bad_hand=6-shocked,I shouldn't even be here! I just logged in on my brother's account!
+
+#lost bra
+7-good_hand=7-happy,I'm saved!
+7-okay_hand=7-angry,I'll never give up!
+7-bad_hand=7-embarrassed,Just kill me now!
+
+#lost panties/naked
+8-good_hand=8-happy,I'm saved!
+8-okay_hand=8-angry,I'll never give up! Prepare yourself!
+8-bad_hand=8-shocked,Save me, Kirito-kun!
+
+
+
+
+#character must strip
+#fully clothed
+0-must_strip_winning=0-happy,Pft! I'm so dumb!
+0-must_strip_normal=0-embarrassed,Th-this is embarrassing!
+0-must_strip_losing=0-angry,Geez, you dummy!
+0-stripping=0-strip,Ugh, fine. I'll take off my Prancing Boots.
+1-stripped=1-calm,I can always go on the Laketop Fortress quest again if I want a new pair.
+
+#lost boots
+1-must_strip_winning=1-embarrassed,My heart's pounding...
+1-must_strip_normal=1-angry,You're going to treat me to dinner after this!
+1-must_strip_losing=1-angry,Don't stare at me so much!
+1-stripping=1-strip,I'll remove my stockings, I guess.
+2-stripped=2-angry,They're part of the Knights of Blood uniform - I can always get a new pair.
+
+#lost stockings
+2-must_strip_winning=2-embarrassed,Guess I've got no choice...
+2-must_strip_normal=2-lost,The quest reward had better be worth this...
+2-must_strip_losing=2-stunned,No quest reward is worth this humiliation!
+2-stripping=2-strip,My gloves are the obvious choice.
+3-stripped=3-angry,I don't need the bonus to attack in a safe zone, anyway.
+
+#lost gloves
+3-must_strip_winning=3-embarassed,This is like that time those acid slimes attacked me in the bathhouse.
+3-must_strip_normal=3-embarassed,It's embarrassing when you look at me like that...
+3-must_strip_losing=3-stunned,No quest reward is worth this humiliation!
+3-stripping=3-strip,...How about my belt?
+4-stripped=4-angry,It's not even magical. I've got four more in my inventory!
+
+#lost belt
+4-must_strip_winning=4-lost,I never wanted to wear this uniform anyway... the others made me.
+4-must_strip_normal=4-awkward,Sigh! You're so greedy.
+4-must_strip_losing=4-embarrassed,I don't give a damn if this is a virtual world. My feelings are real! And right now I'm feeling embarrassed.
+4-stripping=4-strip,Do you have ANY idea how much this outfit cost?
+5-stripped=5-embarrassed,D-don't look! Not yet anyway.
+
+#lost top
+5-must_strip_winning=5-nervous,...Don't panic, Asuna. You won't be half-naked, you'll just be... in the default clothing.
+5-must_strip_normal=5-awkward,Sigh! You're so greedy.
+5-must_strip_losing=5-shocked,Are you some kind of player killer?!
+5-stripping=5-strip,My hit points are getting into the yellow range...
+6-stripped=6-angry,The joke's on you: my skirt was about to run out of durability anyway.
+
+#lost skirt
+6-must_strip_winning=6-shocked,So if I don't strip naked, I can't continue on my quest?
+6-must_strip_normal=6-awkward,Sigh! You're so greedy.
+6-must_strip_losing=6-stunned,There's no way I'm going to take off my wedding ring! Which only leaves... oh, no.
+6-stripping=6-strip,I'm having a flashback to when I was Sugou's prisoner.
+7-stripped=7-sad,Sometimes the things that matter most are right in front of you. Like my breasts.
+
+#lost bra
+7-must_strip_winning=7-lost,My p-panties? But they're an S-class item! If I take them off, I'll be--  like everyone else. Okay.
+7-must_strip_normal=7-stunned,My p-panties? But they're an S-class item! If I take them off, I'll be-- Ugh. Fine.
+7-must_strip_losing=7-shocked,My p-panties? But they're an S-class item! If I take them off, I'll be-- No, no, no!
+7-stripping=7-strip,For the record, this ISN'T why they call me the Flash.
+8-stripped=8-happy,You should see your face! I guess you've never had a girlfriend before.
+
+
+#lost panties/naked
+8-must_masturbate_first=8-lost,Th-this is my first time!
+8-must_masturbate=8-lost,I've seen that same look on guy's faces... but not while naked.
+8-start_masturbating=8-starting,When you die in Aincrad you die in real life. ...I wish we were playing by those rules right now. Fine! I'll do it.
+
+#masturbating
+9-masturbating=8-starting,Before I met Kirito, I didn't do things like this. Have I... become a bad girl?
+9-masturbating=9-embarrassed,Am-Am I doing this right?
+9-masturbating=9-calm,They've really increased the sensation in the game, haven't they? It's like I'm really doing this.
+9-heavy_masturbating=9-heavy,My mother would disown me if she could see this... that just turns me on more!
+9-finishing_masturbating=9-finishing,Kirito-kun!!!
+
+#finished
+10-finished_masturbating=10-finished,I can only hope Kirito is doing better than me...
+10-finished_masturbating=10-angry,If I find out there was cheating I'll report you to the GM!
+10-finished_masturbating=10-embarrassed,At least none of my fans saw me...
+
+
+#game over
+#fully clothed
+0-game_over_victory=0-happy,In the end it's not about winning or losing. It's having fun!
+
+#lost boots
+1-game_over_victory=1-happy,In the end it's not about winning or losing. It's having fun!
+
+#lost stockings
+2-game_over_victory=2-happy,In the end it's not about winning or losing. It's having fun!
+
+#lost gloves
+3-game_over_victory=3-happy,In the end it's not about winning or losing. It's having fun!
+
+#lost belt
+4-game_over_victory=4-happy,In the end it's not about winning or losing. It's having fun!
+
+#lost top
+5-game_over_victory=5-happy,In the end it's not about winning or losing. It's having fun!
+
+#lost skirt
+6-game_over_victory=6-happy,In the end it's not about winning or losing. It's having fun!
+
+#lost bra
+7-game_over_victory=7-happy,I know this is just a game, but it feels like the time I spent here was the first time in my life that I really felt alive.
+
+#lost panties/naked
+8-game_over_victory=8-happy,I know this is just a game, but it feels like the time I spent here was the first time in my life that I really felt alive.
+
+
+#finished
+10-game_over_defeat=10-angry,Please forget about this when you return to the real world!
+
+
+#other player must strip
+#fully clothed
+0-male_human_must_strip=0-interested,Your skill level is too low for this game, ~name~.
+0-male_must_strip=0-interested,Your skill level is too low for this game, ~name~.
+0-female_human_must_strip=0-interested,Need some tips on playing, ~name~?
+0-female_must_strip=0-interested,Need some tips on playing, ~name~?
+
+#lost boots
+1-male_human_must_strip=1-interested,Your skill level is too low for this game, ~name~.
+1-male_must_strip=1-interested,Your skill level is too low for this game, ~name~.
+1-female_human_must_strip=1-interested,Need some tips on playing, ~name~?
+1-female_must_strip=1-interested,Need some tips on playing, ~name~?
+
+#lost stockings
+2-male_human_must_strip=2-interested,Your skill level is too low for this game, ~name~.
+2-male_must_strip=2-interested,Your skill level is too low for this game, ~name~.
+2-female_human_must_strip=2-interested,Need some tips on playing, ~name~?
+2-female_must_strip=2-interested,Need some tips on playing, ~name~?
+
+#lost gloves
+3-male_human_must_strip=3-interested,Yes!
+3-male_must_strip=3-interested,Yes!
+3-female_human_must_strip=3-interested,Keep your guard up or you'll end up naked, ~name~.
+3-female_must_strip=3-interested,Keep your guard up or you'll end up naked, ~name~.
+
+#lost belt
+4-male_human_must_strip=4-interested,Yes!
+4-male_must_strip=4-interested,Yes!
+4-female_human_must_strip=4-interested,Keep your guard up or you'll end up naked, ~name~.
+4-female_must_strip=4-interested,Keep your guard up or you'll end up naked, ~name~.
+
+#lost top
+5-male_human_must_strip=5-interested,Yes!
+5-male_must_strip=5-interested,Yes!
+5-female_human_must_strip=5-interested,Keep your guard up or you'll end up naked, ~name~.
+5-female_must_strip=5-interested,Keep your guard up or you'll end up naked, ~name~.
+
+#lost skirt
+6-male_human_must_strip=6-interested,Yes!
+6-male_must_strip=6-interested,Yes!
+6-female_human_must_strip=6-interested,Yes!
+6-female_must_strip=6-interested,Yes!
+
+#lost bra
+7-male_human_must_strip=7-interested,Yes!
+7-male_must_strip=7-interested,Yes!
+7-female_human_must_strip=7-interested,Yes!
+7-female_must_strip=7-interested,Yes!
+
+#lost panties/naked
+8-male_human_must_strip=8-interested,Yes!
+8-male_must_strip=8-interested,Yes!
+8-female_human_must_strip=8-interested,Yes!
+8-female_must_strip=8-interested,Yes!
+
+#masturbating
+9-male_human_must_strip=9-interested,Yes!
+9-male_must_strip=9-interested,Yes!
+9-female_human_must_strip=9-interested,Yes!
+9-female_must_strip=9-interested,Yes!
+
+#finished
+10-male_human_must_strip=10-interested,Yes!
+10-male_must_strip=10-interested,Yes!
+10-female_human_must_strip=10-interested,Yes!
+10-female_must_strip=10-interested,Yes!
+
+
+#other player is removing an accessory
+#fully clothed
+0-male_removing_accessory=0-interested,Oh! Magic ~clothing~?
+0-male_removed_accessory=0-happy,Yes!  It's a rare loot drop: the ~clothing~ of strength!
+0-female_removing_accessory=0-interested,Oh! Magic ~clothing~?
+0-female_removed_accessory=0-happy,Yes, it's a rare loot drop: the ~clothing~ of agility!
+
+#lost boots
+1-male_removing_accessory=1-interested,Ah! That's magical, isn't it?
+1-male_removed_accessory=1-happy,The ~clothing~ of protection +2... where did you find that?
+1-female_removing_accessory=1-interested,Ah! That's magical, isn't it?
+1-female_removed_accessory=1-happy,The ~clothing~ of speed +3... where did you find that?
+
+#lost stockings
+2-male_removing_accessory=2-interested,Oh! Magic ~clothing~!
+2-male_removed_accessory=2-happy,Ooh, a rare loot drop: ~clothing~ of vigor +4!
+2-female_removing_accessory=2-interested,Oh! Magic ~clothing~!
+2-female_removed_accessory=2-happy,Ooh, a rare loot drop: ~clothing~ of charm +2!
+
+#lost gloves
+3-male_removing_accessory=3-angry,Ugh... I hate min-maxers. Play the game as it's designed to be played!
+3-male_removed_accessory=3-calm,Your defences are down!
+3-female_removing_accessory=3-angry,Ugh... I hate min-maxers. Play the game as it's designed to be played!
+3-female_removed_accessory=3-calm,Your defences are down!
+
+#lost belt
+4-male_removing_accessory=4-angry,Ugh... I hate min-maxers. Play the game as it's designed to be played!
+4-male_removed_accessory=4-calm,Your defences are down!
+4-female_removing_accessory=4-angry,Ugh... I hate min-maxers. Play the game as it's designed to be played!
+4-female_removed_accessory=4-calm,Your defences are down!
+
+#lost top
+5-male_removing_accessory=5-angry,Ugh... I hate min-maxers. Play the game as it's designed to be played!
+5-male_removed_accessory=5-calm,Your defences are down!
+5-female_removing_accessory=5-angry,Ugh... I hate min-maxers. Play the game as it's designed to be played!
+5-female_removed_accessory=5-calm,Your defences are down!
+
+#lost skirt
+6-male_removing_accessory=6-interested,I see an aura around your ~clothing~...
+6-male_removed_accessory=6-stunned,Another rare loot drop: ~clothing~ of luck!  ...Wait. Luck? ARE YOU CHEATING?
+6-female_removing_accessory=6-interested,I see an aura around your ~clothing~...
+6-female_removed_accessory=6-stunned,Another rare loot drop: ~clothing~ of luck!  ...Wait. Luck? You'd better not be cheating!
+
+#lost bra
+7-male_removing_accessory=7-angry,If you're counting that as clothing, that had BETTER be S-class.
+7-male_removed_accessory=7-calm,Stupid game.
+7-female_removing_accessory=7-angry,If you're counting that as clothing, that had BETTER be S-class.
+7-female_removed_accessory=7-calm,Stupid game.
+
+#lost panties/naked
+8-male_removing_accessory=8-angry,If you're counting that as clothing, that had BETTER be S-class.
+8-male_removed_accessory=8-angry,Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
+8-female_removing_accessory=8-angry,If you're counting that as clothing, that had BETTER be S-class.
+8-female_removed_accessory=8-angry,Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
+
+#masturbating
+9-male_removing_accessory=9-angry,Ugh... I hate min-maxers. Play the game as it's designed to be played!
+9-male_removed_accessory=9-calm,Your defences are down!
+9-female_removing_accessory=9-angry,Ugh... I hate min-maxers. Play the game as it's designed to be played!
+9-female_removed_accessory=9-calm,Your defences are down!
+
+#finished
+10-male_removing_accessory=10-angry,Ugh... I hate min-maxers. Play the game as it's designed to be played!
+10-male_removed_accessory=10-calm,Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
+10-female_removing_accessory=10-angry,Ugh... I hate min-maxers. Play the game as it's designed to be played!
+10-female_removed_accessory=10-calm,Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
+
+
+#other player is removing a minor clothing item
+#fully clothed
+0-male_removing_minor=0-calm,Removing your ~clothing~? Okay.
+0-male_removed_minor=0-calm,Do you gain experience from something so small?
+0-female_removing_minor=0-calm,Removing your ~clothing~? Okay.
+0-female_removed_minor=0-angry,Do you gain experience from something so small?
+
+#lost boots
+1-male_removing_minor=1-calm,~name~, you sly fox!
+1-male_removed_minor=1-angry,You prepared for this game, didn't you?
+1-female_removing_minor=1-calm,~name~, you sly fox!
+1-female_removed_minor=1-angry,You prepared for this game, didn't you?
+
+#lost stockings
+2-male_removing_minor=2-calm,~name~, you sly fox!
+2-male_removed_minor=2-angry,You prepared for this game, didn't you?
+2-female_removing_minor=2-calm,~name~, you sly fox!
+2-female_removed_minor=2-angry,You prepared for this game, didn't you?
+
+#lost gloves
+3-male_removing_minor=3-calm,~name~, you sly fox!
+3-male_removed_minor=3-angry,You prepared for this game, didn't you?
+3-female_removing_minor=3-angry,I see you've maxed your apparel skill.
+3-female_removed_minor=3-angry,You prepared for this game, didn't you?
+
+#lost belt
+4-male_removing_minor=4-angry,I see you've maxed your apparel skill.
+4-male_removed_minor=4-angry,You prepared for this game, didn't you?
+4-female_removing_minor=4-angry,I see you've maxed your apparel skill.
+4-female_removed_minor=4-angry,You prepared for this game, didn't you?
+
+#lost top
+5-male_removing_minor=5-angry,I see you've maxed your apparel skill.
+5-male_removed_minor=5-angry,You prepared for this game, didn't you?
+5-female_removing_minor=5-angry,I see you've maxed your apparel skill.
+5-female_removed_minor=5-angry,You prepared for this game, didn't you?
+
+#lost skirt
+6-male_removing_minor=6-angry,I see you've maxed your apparel skill.
+6-male_removed_minor=6-angry,You prepared for this game, didn't you?
+6-female_removing_minor=6-angry,I see you've maxed your apparel skill.
+6-female_removed_minor=6-angry,You prepared for this game, didn't you?
+
+#lost bra
+7-male_removing_minor=7-angry,I see you've maxed your apparel skill.
+7-male_removed_minor=7-angry,You prepared for this game, didn't you?
+7-female_removing_minor=7-angry,I see you've maxed your apparel skill.
+7-female_removed_minor=7-angry,You prepared for this game, didn't you?
+
+#lost panties/naked
+8-male_removing_minor=8-angry,S-stop teasing me, ~name~!
+8-male_removed_minor=8-happy,Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
+8-female_removing_minor=8-angry,I see you've maxed your apparel skill.
+8-female_removed_minor=8-happy,Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
+
+#masturbating
+9-male_removing_minor=9-angry,S-stop teasing me, ~name~!
+9-male_removed_minor=9-angry,You prepared for this game, didn't you?
+9-female_removing_minor=9-angry,I see you've maxed your apparel skill.
+9-female_removed_minor=9-angry,You prepared for this game, didn't you?
+
+#finished
+10-male_removing_minor=10-angry,You... you... you dummy!
+10-male_removed_minor=10-happy,Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.
+10-female_removing_minor=10-angry,I see you've maxed your apparel skill.
+10-female_removed_minor=10-angry,You... you... you dummy!
+
+
+#other player is removing a major clothing item
+#fully clothed
+0-male_removing_major=0-angry,I, Asuna, vice commander of the Knights of the Blood Oath, command you to remove your ~clothing~!
+0-male_removed_major=0-happy,Being a solo player has its limits, doesn't it?
+0-female_removing_major=0-nervous,I'm sorry about this...
+0-female_removed_major=0-happy,Want to concede the match, ~name~?
+
+#lost boots
+1-male_removing_major=1-angry,I, Asuna, vice commander of the Knights of the Blood Oath, command you to remove your ~clothing~!
+1-male_removed_major=1-happy,Being a solo player has its limits, doesn't it?
+1-female_removing_major=1-nervous,I'm sorry about this...
+1-female_removed_major=1-happy,Want to concede the match, ~name~?
+
+#lost stockings
+2-male_removing_major=2-angry,I, Asuna, vice commander of the Knights of the Blood Oath, command you to remove your ~clothing~!
+2-male_removed_major=2-happy,Being a solo player has its limits, doesn't it?
+2-female_removing_major=2-nervous,I'm sorry about this...
+2-female_removed_major=2-happy,Want to concede the match, ~name~?
+
+#lost gloves
+3-male_removing_major=3-angry,I, Asuna, vice commander of the Knights of the Blood Oath, command you to remove your ~clothing~!
+3-male_removed_major=3-happy,Being a solo player has its limits, doesn't it?
+3-female_removing_major=3-nervous,I'm sorry about this...
+3-female_removed_major=3-happy,Want to concede the match, ~name~?
+
+#lost belt
+4-male_removing_major=4-happy,A critical hit!
+4-male_removed_major=4-happy,That's why you shouldn't let your laundry pile  up!
+4-female_removing_major=4-calm,A critical hit!
+4-female_removed_major=4-happy,Aren't you glad this isn't happening IRL?
+
+#lost top
+5-male_removing_major=5-happy,A critical hit!
+5-male_removed_major=5-happy,That's why you shouldn't let your laundry pile up!
+5-female_removing_major=5-happy,A critical hit!
+5-female_removed_major=5-nervous,Aren't you glad this isn't IRL?  This... this isn't IRL, right?
+
+#lost skirt
+6-male_removing_major=6-happy,A critical hit!
+6-male_removed_major=6-happy,That's why you shouldn't let your laundry pile up!
+6-female_removing_major=6-nervous,I'm sorry about this...
+6-female_removed_major=6-interested,So we both happen to be wearing our best underwear today... What are the odds of that?
+
+#lost bra
+7-male_removing_major=7-happy,A critical hit!
+7-male_removed_major=7-happy,That's why you shouldn't let your laundry pile up!
+7-female_removing_major=7-interested,Is your heart racing too, ~name~?
+7-female_removed_major=7-interested,So we both happen to be wearing our best underwear today... What are the odds of that?
+
+#lost panties/naked
+8-male_removing_major=8-happy,A critical hit!
+8-male_removed_major=8-happy,That's why you shouldn't let your laundry pile up!
+8-female_removing_major=8-happy,A critical hit!
+8-female_removed_major=8-nervous,I'm sorry about this...
+
+#masturbating
+9-male_removing_major=9-interested,A critical hit!
+9-male_removed_major=9-sad,...I feel like I'm cheating.
+9-female_removing_major=9-happy,A critical hit!
+9-female_removed_major=9-nervous,I'm sorry about this...
+
+#finished
+10-male_removing_major=10-interested,A critical hit!
+10-male_removed_major=10-horny,It's not cheating if it's a game, right?
+10-female_removing_major=10-happy,A critical hit!
+10-female_removed_major=10-angry,You know what? I'm NOT sorry about this!
+
+
+#other player is exposing themselves
+#fully clothed
+0-male_chest_will_be_visible=0-happy,Oh... are we playing on easy mode? Nobody told me.
+0-male_chest_is_visible=0-interested,There's no place to run even if you feel embarrassed!
+0-male_crotch_will_be_visible=0-awkward,So THIS is why we had to turn our moral codes off, huh?
+0-male_small_crotch_is_visible=0-shocked,I-I think I'm suffering from a stunning status effect!
+0-male_medium_crotch_is_visible=0-shocked,I-I think I'm suffering from a stunning status effect!
+0-male_large_crotch_is_visible=0-shocked,I-I think I'm suffering from a stunning status effect!
+
+0-female_chest_will_be_visible=0-interested,Ha ha! Looks like someone's blushing!
+0-female_small_chest_is_visible=0-shocked,Wh-what are you doing, ~name~? Everyone will see you!
+0-female_medium_chest_is_visible=0-shocked,Wh-what are you doing, ~name~? Everyone will see you!
+0-female_large_chest_is_visible=0-shocked,Wh-what are you doing, ~name~? Everyone will see you!
+0-female_crotch_will_be_visible=0-awkward,So THIS is why we had to turn our moral codes off, huh?
+0-female_crotch_is_visible=0-nervous,I feel bad for beating you so easily...
+
+#lost boots
+1-male_chest_will_be_visible=1-happy,Oh... are we playing on easy mode? Nobody told me.
+1-male_chest_is_visible=1-interested,There's no place to run even if you feel embarrassed!
+1-male_crotch_will_be_visible=1-awkward,So THIS is why we had to turn our moral codes off, huh?
+1-male_small_crotch_is_visible=1-shocked,I-I think I'm suffering from a stunning status effect!
+1-male_medium_crotch_is_visible=1-shocked,I-I think I'm suffering from a stunning status effect!
+1-male_large_crotch_is_visible=1-shocked,I-I think I'm suffering from a stunning status effect!
+
+1-female_chest_will_be_visible=1-interested,Ha ha! Looks like someone's blushing!
+1-female_small_chest_is_visible=1-shocked,Wh-what are you doing, ~name~? Everyone will see you!
+1-female_medium_chest_is_visible=1-shocked,Wh-what are you doing, ~name~? Everyone will see you!
+1-female_large_chest_is_visible=1-shocked,Wh-what are you doing, ~name~? Everyone will see you!
+1-female_crotch_will_be_visible=1-awkward,So THIS is why we had to turn our moral codes off, huh?
+1-female_crotch_is_visible=1-nervous,I feel bad for beating you so easily...
+
+#lost stockings
+2-male_chest_will_be_visible=2-happy,Oh... are we playing on easy mode? Nobody told me.
+2-male_chest_is_visible=2-interested,There's no place to run even if you feel embarrassed!
+2-male_crotch_will_be_visible=2-awkward,So THIS is why we had to turn our moral codes off, huh?
+2-male_small_crotch_is_visible=2-shocked,I-I think I'm suffering from a stunning status effect!
+2-male_medium_crotch_is_visible=2-shocked,I-I think I'm suffering from a stunning status effect!
+2-male_large_crotch_is_visible=2-shocked,I-I think I'm suffering from a stunning status effect!
+
+2-female_chest_will_be_visible=2-interested,Ha ha! Looks like someone's blushing!
+2-female_small_chest_is_visible=2-calm,This is why you don't make charisma a dump stat.
+2-female_medium_chest_is_visible=2-interested,You remind me of one of my friends...
+2-female_large_chest_is_visible=2-angry,I see where SOMEONE decided to spend your attribute points...
+2-female_crotch_will_be_visible=2-awkward,So THIS is why we had to turn our moral codes off, huh?
+2-female_crotch_is_visible=2-nervous,I feel bad for beating you so easily...
+
+#lost gloves
+3-male_chest_will_be_visible=3-angry,I'm not interested in you! I'm just trying to win.
+3-male_chest_is_visible=3-interested,There's no place to run even if you feel embarrassed!
+3-male_crotch_will_be_visible=3-horny,After this I'll treat you to dinner, ~name~.
+3-male_small_crotch_is_visible=3-calm,Bringing a dagger to a swordfight? You're braver than I thought.
+3-male_medium_crotch_is_visible=3-awkward,It's gotten-- You idiot! What's your problem?
+3-male_large_crotch_is_visible=3-shocked,A two-hander? Those are rare.
+
+3-female_chest_will_be_visible=3-interested,Ha ha! Looks like someone's blushing!
+3-female_small_chest_is_visible=3-calm,This is why you don't make charisma a dump stat.
+3-female_medium_chest_is_visible=3-interested,You remind me of one of my friends...
+3-female_large_chest_is_visible=3-angry,I see where SOMEONE decided to spend your attribute points...
+3-female_crotch_will_be_visible=3-horny,After this I'll treat you to dinner, ~name~.
+3-female_crotch_is_visible=3-embarrassed,It's just like going to a hot spring together!
+
+#lost belt
+4-male_chest_will_be_visible=4-angry,I'm not interested in you! I'm just trying to win.
+4-male_chest_is_visible=4-interested,There's no place to run even if you feel embarrassed!
+4-male_crotch_will_be_visible=4-horny,After this I'll treat you to dinner, ~name~.
+4-male_small_crotch_is_visible=4-calm,Bringing a dagger to a swordfight? You're braver than I thought.
+4-male_medium_crotch_is_visible=4-awkward,It's gotten-- You idiot! What's your problem?
+4-male_large_crotch_is_visible=4-shocked,A two-hander? Those are rare.
+
+4-female_chest_will_be_visible=4-nervous,This is just like bathing together. That's all. I can handle this.
+4-female_small_chest_is_visible=4-calm,This is why you don't make charisma a dump stat.
+4-female_medium_chest_is_visible=4-horny,You've got a long way to go before you can challenge me.
+4-female_large_chest_is_visible=4-angry,I see where SOMEONE decided to spend your attribute points...
+4-female_crotch_will_be_visible=4-horny,After this I'll treat you to dinner, ~name~.
+4-female_crotch_is_visible=4-embarrassed,It's just like going to a hot spring together!
+
+#lost top
+5-male_chest_will_be_visible=5-angry,I'm not interested in you! I'm just trying to win.
+5-male_chest_is_visible=5-interested,There's no place to run even if you feel embarrassed!
+5-male_crotch_will_be_visible=5-horny,After this I'll treat you to dinner, ~name~.
+5-male_small_crotch_is_visible=5-calm,Bringing a dagger to a swordfight? You're braver than I thought.
+5-male_medium_crotch_is_visible=5-awkward,It's gotten-- You idiot! What's your problem?
+5-male_large_crotch_is_visible=5-shocked,A two-hander? Those are rare.
+
+5-female_chest_will_be_visible=5-nervous,This is just like bathing together. That's all. I can handle this.
+5-female_small_chest_is_visible=5-calm,This is why you don't make charisma a dump stat.
+5-female_medium_chest_is_visible=5-horny,You've got a long way to go before you can challenge me.
+5-female_large_chest_is_visible=5-angry,I see where SOMEONE decided to spend your attribute points...
+5-female_crotch_will_be_visible=5-horny,After this I'll treat you to dinner, ~name~.
+5-female_crotch_is_visible=5-embarrassed,It's just like going to a hot spring together!
+
+#lost skirt
+6-male_chest_will_be_visible=6-interested,Life isn't just doing things for yourself. Other people's happiness can make you happy. Right now, you're making me very happy, ~name~.
+6-male_chest_is_visible=6-interested,There's no place to run even if you feel embarrassed!
+6-male_crotch_will_be_visible=6-embarrassed,How lewd!
+6-male_small_crotch_is_visible=6-calm,Bringing a dagger to a swordfight? You're braver than I thought.
+6-male_medium_crotch_is_visible=6-awkward,It's gotten-- You idiot! What's your problem?
+6-male_large_crotch_is_visible=6-shocked,A two-hander? Those are rare.
+
+6-female_chest_will_be_visible=6-nervous,This is just like bathing together. That's all. I can handle this.
+6-female_small_chest_is_visible=6-interested,Oh! I feel so motherly.
+6-female_medium_chest_is_visible=6-horny,You've got a long way to go before you can challenge me.
+6-female_large_chest_is_visible=6-angry,Another rival? Kirito is mine.
+6-female_crotch_will_be_visible=6-shocked,How lewd!
+6-female_crotch_is_visible=6-embarrassed,It's just like going to a hot spring together!
+
+#lost bra
+7-male_chest_will_be_visible=7-interested,Life isn't just doing things for yourself. Other people's happiness can make you happy. Right now, you're making me very happy, ~name~.
+7-male_chest_is_visible=7-interested,There's no place to run even if you feel embarrassed!
+7-male_crotch_will_be_visible=7-embarrassed,How lewd!
+7-male_small_crotch_is_visible=7-calm,Bringing a dagger to a swordfight? You're braver than I thought.
+7-male_medium_crotch_is_visible=7-awkward,It's gotten-- You idiot! What's your problem?
+7-male_large_crotch_is_visible=7-shocked,A two-hander? Those are rare.
+
+7-female_chest_will_be_visible=7-nervous,This is just like bathing together. That's all. I can handle this.
+7-female_small_chest_is_visible=7-interested,Oh! I feel so motherly.
+7-female_medium_chest_is_visible=7-horny,You've got a long way to go before you can challenge me.
+7-female_large_chest_is_visible=7-angry,Another rival? Kirito is mine.
+7-female_crotch_will_be_visible=7-shocked,How lewd!
+7-female_crotch_is_visible=7-embarrassed,It's just like going to a hot spring together!
+
+#lost panties/naked
+8-male_chest_will_be_visible=8-interested,Life isn't just doing things for yourself. Other people's happiness can make you happy. Right now, you're making me very happy, ~name~.
+8-male_chest_is_visible=8-interested,There's no place to run even if you feel embarrassed!
+8-male_crotch_will_be_visible=8-horny,How lewd!
+8-male_small_crotch_is_visible=8-calm,Bringing a dagger to a swordfight? You're braver than I thought.
+8-male_medium_crotch_is_visible=8-awkward,It's gotten-- You idiot! What's your problem?
+8-male_large_crotch_is_visible=8-shocked,A two-hander? Those are rare.
+
+8-female_chest_will_be_visible=8-nervous,This is just like bathing together. That's all. I can handle this.
+8-female_small_chest_is_visible=8-interested,Oh! I feel so motherly.
+8-female_medium_chest_is_visible=8-horny,You've got a long way to go before you can challenge me.
+8-female_large_chest_is_visible=8-angry,Another rival? Kirito is mine.
+8-female_crotch_will_be_visible=8-horny,How lewd!
+8-female_crotch_is_visible=8-embarrassed,It's just like going to a hot spring together!
+
+#masturbating
+9-male_chest_will_be_visible=9-interested,Life isn't just doing things for yourself. Other people's happiness can make you happy. Right now, you're making me very happy, ~name~.
+9-male_chest_is_visible=9-interested,There's no place to run even if you feel embarrassed!
+9-male_crotch_will_be_visible=9-horny,How lewd!
+9-male_small_crotch_is_visible=9-calm,Bringing a dagger to a swordfight? You're braver than I thought.
+9-male_medium_crotch_is_visible=9-awkward,It's gotten-- You idiot! What's your problem?
+9-male_large_crotch_is_visible=9-shocked,A two-hander? Those are rare.
+
+9-female_chest_will_be_visible=9-nervous,Bathing together was never like this!
+9-female_small_chest_is_visible=9-interested,Oh! I feel so motherly.
+9-female_medium_chest_is_visible=9-horny,You've got a long way to go before you can challenge me.
+9-female_large_chest_is_visible=9-angry,Another rival? Kirito is mine.
+9-female_crotch_will_be_visible=9-horny,How lewd!
+9-female_crotch_is_visible=9-horny,I wonder if Kirito would like it if I shaved mine like that...
+
+#finished
+10-male_chest_will_be_visible=10-interested,Life isn't just doing things for yourself. Other people's happiness can make you happy. Right now, you're making me very happy, ~name~.
+10-male_chest_is_visible=10-interested,There's no place to run even if you feel embarrassed!
+10-male_crotch_will_be_visible=10-horny,How lewd!
+10-male_small_crotch_is_visible=10-calm,Bringing a dagger to a swordfight? You're braver than I thought.
+10-male_medium_crotch_is_visible=10-awkward,It's gotten-- You idiot! What's your problem?
+10-male_large_crotch_is_visible=10-shocked,A two-hander? Those are rare.
+
+10-female_chest_will_be_visible=10-horny,Bathing together was never like this!
+10-female_small_chest_is_visible=10-interested,Oh! I feel so motherly.
+10-female_medium_chest_is_visible=10-horny,You've got a long way to go before you can challenge me.
+10-female_large_chest_is_visible=10-angry,Another rival? Kirito is mine.
+10-female_crotch_will_be_visible=10-horny,How lewd!
+10-female_crotch_is_visible=10-horny,I wonder if Kirito would like it if I shaved mine like that...
+
+
+#other player is masturbating
+#fully clothed
+0-male_must_masturbate=0-angry,This is one sick, twisted game...
+0-male_start_masturbating=0-shocked,Wh-what do you think you're doing?
+0-male_masturbating=0-angry,Hey! What are you staring at?
+0-male_finished_masturbating=0-stunned,Pervert!
+
+0-female_must_masturbate=0-angry,This is one sick, twisted game...
+0-female_start_masturbating=0-shocked,Wh-what do you think you're doing?
+0-female_masturbating=0-horny,Are there skill levels for masturbating?
+0-female_finished_masturbating=0-stunned,How shameless...
+
+#lost boots
+1-male_must_masturbate=1-angry,This is one sick, twisted game...
+1-male_start_masturbating=1-shocked,Wh-what do you think you're doing?
+1-male_masturbating=1-angry,Hey! What are you staring at?...
+1-male_finished_masturbating=1-stunned,Pervert!
+
+1-female_must_masturbate=1-angry,This is one sick, twisted game...
+1-female_start_masturbating=1-shocked,Wh-what do you think you're doing?
+1-female_masturbating=1-horny,Are there skill levels for masturbating?
+1-female_finished_masturbating=1-stunned,How shameless...
+
+#lost stockings
+2-male_must_masturbate=2-angry,This is one sick, twisted game...
+2-male_start_masturbating=2-shocked,Wh-what do you think you're doing?
+2-male_masturbating=2-angry,Hey! What are you staring at?...
+2-male_finished_masturbating=2-stunned,Pervert!
+
+2-female_must_masturbate=2-angry,This is one sick, twisted game...
+2-female_start_masturbating=2-shocked,Wh-what do you think you're doing?
+2-female_masturbating=2-horny,Are there skill levels for masturbating?
+2-female_finished_masturbating=2-stunned,How shameless...
+
+#lost gloves
+3-male_must_masturbate=3-angry,This is one sick, twisted game...
+3-male_start_masturbating=3-shocked,Wh-what do you think you're doing?
+3-male_masturbating=3-angry,Hey! What are you staring at?...
+3-male_finished_masturbating=3-stunned,Pervert!
+
+3-female_must_masturbate=3-angry,This is one sick, twisted game...
+3-female_start_masturbating=3-shocked,Wh-what do you think you're doing?
+3-female_masturbating=3-horny,Are there skill levels for masturbating?
+3-female_finished_masturbating=3-angry,How shameless...
+
+#lost belt
+4-male_must_masturbate=4-awkward,This is one sick, twisted game...
+4-male_start_masturbating=4-shocked,Wh-what do you think you're doing?
+4-male_masturbating=4-angry,Hey! What are you staring at?...
+4-male_finished_masturbating=4-stunned,Pervert!
+
+4-female_must_masturbate=4-awkward,This is one sick, twisted game...
+4-female_start_masturbating=4-shocked,Wh-what do you think you're doing?
+4-female_masturbating=4-horny,Are there skill levels for masturbating?
+4-female_finished_masturbating=4-angry,How shameless...
+
+#lost top
+5-male_must_masturbate=5-awkward,This is one sick, twisted game...
+5-male_start_masturbating=5-interested,Wh-what do you think you're doing?
+5-male_masturbating=5-angry,Hey! What are you staring at?...
+5-male_finished_masturbating=5-stunned,Pervert!
+
+5-female_must_masturbate=5-awkward,This is one sick, twisted game...
+5-female_start_masturbating=5-interested,Wh-what do you think you're doing?
+5-female_masturbating=5-horny,Are there skill levels for masturbating?
+5-female_finished_masturbating=5-angry,How shameless...
+
+#lost skirt
+6-male_must_masturbate=6-awkward,This is one sick, twisted game...
+6-male_start_masturbating=6-interested,Wh-what do you think you're doing?
+6-male_masturbating=6-angry,Hey! What are you staring at?...
+6-male_finished_masturbating=6-stunned,Pervert!
+
+6-female_must_masturbate=6-awkward,This is one sick, twisted game...
+6-female_start_masturbating=6-interested,Wh-what do you think you're doing?
+6-female_masturbating=6-horny,Are there skill levels for masturbating?
+6-female_finished_masturbating=6-embarrassed,How shameless...
+
+#lost bra
+7-male_must_masturbate=7-interested,This is one sick, twisted game...
+7-male_start_masturbating=7-horny,Wh-what do you think you're doing?
+7-male_masturbating=7-embarrassed,D-don't look! Not yet anyway.
+7-male_finished_masturbating=7-horny,Pervert!
+
+7-female_must_masturbate=7-interested,This is one sick, twisted game...
+7-female_start_masturbating=7-horny,Wh-what do you think you're doing?
+7-female_masturbating=7-horny,Are there skill levels for masturbating?
+7-female_finished_masturbating=7-embarrassed,How shameless...
+
+#lost panties/naked
+8-male_must_masturbate=8-interested,Time to show your skills, ~name~...
+8-male_start_masturbating=8-horny,Wh-what do you think you're doing?
+8-male_masturbating=8-embarrassed,Oh, fine. Stare at me if it makes you happy.
+8-male_finished_masturbating=8-horny,Pervert!
+
+8-female_must_masturbate=8-interested,Time to show your skills, ~name~...
+8-female_start_masturbating=8-horny,Wh-what do you think you're doing?
+8-female_masturbating=8-horny,Are there skill levels for masturbating?
+8-female_finished_masturbating=8-embarrassed,How shameless...
+
+#masturbating
+9-male_must_masturbate=9-interested,Time to show your skills, ~name~...
+9-male_start_masturbating=9-horny,I see you're a dual wielder - just like Kirito!
+9-male_masturbating=9-embarrassed,Oh, fine. Stare at me if it makes you happy.
+9-male_finished_masturbating=9-horny,Pervert!
+
+9-female_must_masturbate=9-interested,Time to show your skills, ~name~...
+9-female_start_masturbating=9-horny,Wh-what do you think you're doing?
+9-female_masturbating=9-horny,Are there skill levels for masturbating?
+9-female_finished_masturbating=9-horny,How shameless...
+
+#finished
+10-male_must_masturbate=10-embarrassed,That makes me feel a little better.
+10-male_start_masturbating=10-horny,Wh-what do you think you're doing?
+10-male_masturbating=10-embarrassed,Hey! What are you staring at?
+10-male_finished_masturbating=10-horny,Um... ~name~? Do you want to join my party?
+
+10-female_must_masturbate=10-embarrassed,That makes me feel a little better.
+10-female_start_masturbating=10-horny,Wh-what do you think you're doing?
+10-female_masturbating=10-horny,Are there skill levels for masturbating?
+10-female_finished_masturbating=10-horny,How shameless...
+
+
