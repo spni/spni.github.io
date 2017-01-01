@@ -59,6 +59,7 @@ $gameScreen = $('#game-screen');
 $epilogueScreen = $('#epilogue-screen');
 
 /* Modals */
+$searchModal = $('#search-modal');
 $creditModal = $('#credit-modal');
 $versionModal = $('#version-modal');
 $gameSettingsModal = $('#game-settings-modal');
@@ -93,7 +94,7 @@ $previousScreen = null;
  * state (array of PlayerState objects), their sequential states.
  * xml (jQuery object), the player's loaded XML file.
  ************************************************************/
-function createNewPlayer (folder, first, last, label, gender, size, clothing, out, forfeit, timer, current, stage, state, xml) {
+function createNewPlayer (folder, first, last, label, gender, size, clothing, out, forfeit, timer, tags, current, stage, state, xml) {
     var newPlayerObject = {folder:folder,
                            first:first,
                            last:last,
@@ -104,6 +105,7 @@ function createNewPlayer (folder, first, last, label, gender, size, clothing, ou
                            out:out,
                            forfeit:forfeit,
                            timer:timer,
+                           tags:tags,
                            current:current,
 						   stage:stage,
                            state:state,

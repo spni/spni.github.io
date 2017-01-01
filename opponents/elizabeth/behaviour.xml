@@ -11,6 +11,9 @@
 	<gender>female</gender>  <!-- Gender (male or female) -->
 	<size>medium</size>      <!-- Size of Naughty Bits (penis if male, boobs if female) -->
     <timer>11</timer>        <!-- Time (in game phases) to 'Finish' -->
+    <tags>
+        <tag>kind</tag>
+    </tags>
 	
 	
 	<!-- Game Start Information -->
@@ -230,6 +233,21 @@
 					Ah, so you're up, ~name~.
 				</state>
 			</case>
+            <case tag="female_must_strip" filter="brave">
+                <state img="0-interested.png">
+					This should be nothing for you, ~name~!
+				</state>
+            </case>
+            <case tag="female_must_strip" filter="kind">
+                <state img="0-interested.png">
+					It's okay, ~name~, take your time.
+				</state>
+            </case>
+            <case tag="female_must_strip" target="lara">
+                <state img="0-interested.png">
+					Lara, is this more or less exciting than tomb raiding?
+				</state>
+            </case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-sad.png">
 					Yes, I agree. A lady should try to keep modest.

@@ -20,7 +20,7 @@
       <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
     </button>
     <button id="title-version-button" class="bordered smooth-button smooth-button-red banner-flair" onclick="showVersionModal()">
-      v11.16.0
+      v11.17.0
     </button>
       
     <button id="title-credits-button" class="bordered smooth-button smooth-button-red banner-flair" onclick="showCreditModal()">
@@ -436,8 +436,8 @@
           <button class="bordered smooth-button left-page-button" onclick="changeIndividualPage(false, -1)">
             <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
           </button>
-          <button class="bordered smooth-button go-page-button" onclick="changeIndividualPage(true, 0)">
-            <div style="margin-top:2px"><b>Go</b></div>
+          <button class="bordered smooth-button go-page-button" onclick="openSearchModal()">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
           </button>
           <button class="bordered smooth-button right-page-button" onclick="changeIndividualPage(false, 1)">
             <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
@@ -675,6 +675,66 @@
 </div>
 
 
+<!-- Start of Search Modal -->
+<div id="search-modal" class="modal table-modal fade">
+	<div class="modal-table-container">
+	<div class="modal-cell-container">
+	<div class="bordered modal-dialog wide-modal-dialog">
+	<div class="bordered modal-dialog-surface">
+		<!-- Start of Modal Content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title text-center">Search Options</h4>
+			</div>
+			<div class="modal-body">
+                <table style="width:100%">
+                    <!-- Table Style -->
+                    <tr>
+                        <td style="width:25%"><h4 class="modal-title modal-left">Name Filter</h4></td>
+                        <td>
+                            <input type="text" id="search-name" class='bordered wide-textbox'/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:25%"><h4 class="modal-title modal-left">Sex Filter</h4></td>
+                        <td>
+                            <nav>
+                                <ul class="pagination">
+                                    <li id="search-gender-1" class="active"><a href="#"  onclick="changeSearchGender(1)">All</a></li>
+                                    <li id="search-gender-2"><a href="#" onclick="changeSearchGender(2)">Male</a></li>
+                                    <li id="search-gender-3"><a href="#" onclick="changeSearchGender(3)">Female</a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:25%"><h4 class="modal-title modal-left">Source Filter</h4></td>
+                        <td>
+                            <input type="text" id="search-source" class='bordered wide-textbox'/>
+                        </td>
+                    </tr>
+                    <tr hidden>
+                        <td style="width:25%"><h4 class="modal-title modal-left">Tag Filter</h4></td>
+                        <td>
+                            <input type="text" id="search-tag" class='bordered wide-textbox'/>
+                        </td>
+                    </tr>
+                </table>
+                
+				<div class="modal-body-container" style="padding-top:4%;">
+					<button class="bordered smooth-button modal-button" data-dismiss="modal" onclick="closeSearchModal()">Search</button>
+				</div>
+			</div>
+		</div>
+		<!-- End of Modal Content -->
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+<!-- End of Search Modal -->
+    
+    
 <!-- Start of Restart Modal -->
 <div id="restart-modal" class="modal table-modal fade">
 	<div class="modal-table-container">
@@ -1013,6 +1073,15 @@
 			<div class="modal-body">
 				<table class="modal-body-stretch-container" style="margin: 0 auto;">
                     <tr>
+                      <td style="width:10%; padding-bottom: 1.5%">
+                        v11.17.0
+                      </td>
+                      <td style="width:5%"></td>
+                      <td style="width:85%; padding-bottom: 1.5%">
+                        New dialogue target and filter options. As well as a simple search feature on the individual opponent selection page.
+                      </td>
+                    </tr>
+                    <tr>
                   <td style="width:10%; padding-bottom: 1.5%">
 					v11.16.0
 				  </td>
@@ -1021,7 +1090,7 @@
                     Samus has joined the game!
                   </td>
                 </tr>
-        <tr>
+                <tr>
                   <td style="width:10%; padding-bottom: 1.5%">
           v11.15.0
           </td>
@@ -1047,97 +1116,6 @@
                   <td style="width:5%"></td>
                   <td style="width:85%; padding-bottom: 1.5%">
                     Mia Fey and Fred have joined the game!
-                  </td>
-                </tr>
-				<tr>
-                  <td style="width:10%; padding-bottom: 1.5%">
-					v11.12.0
-				  </td>
-                  <td style="width:5%"></td>
-                  <td style="width:85%; padding-bottom: 1.5%">
-                    Tracer has joined the game!
-                  </td>
-                </tr>
-				<tr>
-                  <td style="width:10%; padding-bottom: 1.5%">
-					v11.11.0
-				  </td>
-                  <td style="width:5%"></td>
-                  <td style="width:85%; padding-bottom: 1.5%">
-                    Sheena has joined the game!
-                  </td>
-                </tr>
-				<tr>
-                  <td style="width:10%; padding-bottom: 1.5%">
-					v11.10.0
-				  </td>
-                  <td style="width:5%"></td>
-                  <td style="width:85%; padding-bottom: 1.5%">
-                    May have joined the game! <!-- Grammar error intentional, for the joke. -->
-                  </td>
-                </tr>
-                <tr>
-                  <td style="width:10%; padding-bottom: 1.5%">
-					v11.9.0
-				  </td>
-                  <td style="width:5%"></td>
-                  <td style="width:85%; padding-bottom: 1.5%">
-                    Piper and Daphne have joined the game!
-                  </td>
-                </tr>
-                <tr>
-                  <td style="width:10%; padding-bottom: 1.5%">
-					v11.8.0
-				  </td>
-                  <td style="width:5%"></td>
-                  <td style="width:85%; padding-bottom: 1.5%">
-                    Dawn has joined the game!
-                  </td>
-                </tr>
-                <tr>
-                  <td style="width:10%; padding-bottom: 1.5%">
-					v11.7.0
-				  </td>
-                  <td style="width:5%"></td>
-                  <td style="width:85%; padding-bottom: 1.5%">
-                    Velma has joined the game!
-                  </td>
-                </tr>
-                <tr>
-                  <td style="width:10%; padding-bottom: 1.5%">
-					v11.6.0
-				  </td>
-                  <td style="width:5%"></td>
-                  <td style="width:85%; padding-bottom: 1.5%">
-                    Link has joined the game!
-                  </td>
-                </tr>
-                <tr>
-                  <td style="width:10%; padding-bottom: 1.5%">
-					v11.5.0
-				  </td>
-                  <td style="width:5%"></td>
-                  <td style="width:85%; padding-bottom: 1.5%">
-                    Kim Possible has joined the game!
-                  </td>
-                </tr>
-				<tr>
-                  <td style="width:10%; padding-bottom: 1.5%">
-					v11.4.2
-				  </td>
-                  <td style="width:5%"></td>
-                  <td style="width:85%; padding-bottom: 1.5%">
-                    Absolute ties should no longer freeze the game.
-                  </td>
-                </tr>
-                <tr>
-                  <td style="width:10%; padding-bottom: 1.5%">
-					v11.4.0
-				  </td>
-                  <td style="width:5%"></td>
-                  <td style="width:85%; padding-bottom: 1.5%">
-                    Added this modal. 
-                    Added the ability to play against as few as 2 opponents (bugs may still exist when playing with less than 4 opponents, please report them).
                   </td>
                 </tr>
 				</table>
