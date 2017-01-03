@@ -12,6 +12,14 @@
 	<gender>female</gender>    <!-- Gender (male or female) -->
 	<size>medium</size>      <!-- Size of Naughty Bits (penis if male, boobs if female) -->
     <timer>15</timer>        <!-- Time (in game phases) to 'Finish' -->
+    <tags>
+        <tag>princess</tag>
+        <tag>innocent</tag>
+        <tag>shy</tag>
+        <tag>movie</tag>
+        <tag>cartoon</tag>
+        <tag>straight</tag>
+    </tags>	
 	
 	
 	<!-- Game Start Dialogue -->
@@ -236,6 +244,11 @@
 					Oh, that counts? I may be better prepared than I thought!
 				</state>
 			</case>
+			<case tag="female_removing_accessory" filter="princess"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+				<state img="0-shocked.png">
+					W-wait. Princess ~name~? What are YOU doing here?
+				</state>
+			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-confused.png">
 					I see! Wait, no I don't. 
@@ -263,6 +276,11 @@
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-confused.png">
 					So... this is fun, is it? Hmm.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-confused.png">
+					I-I mean, there's nothing wrong with that. Your highness. 
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -507,6 +525,11 @@
 					I suppose this makes us even.
 				</state>
 			</case>
+			<case tag="female_removing_accessory" filter="princess"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+				<state img="1-sad.png">
+					I wish I'd known you'd be here, Princess ~name~.
+				</state>
+			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-calm.png">
 					Make yourself more comfortable, ~name~.
@@ -534,6 +557,11 @@
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="1-calm.png">
 					That doesn't even seem like a penalty, but what do I know?
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="1-happy.png">
+					Because, um, I would have worn more appropriate clothing to greet a princess! Right! That's what I meant.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1913,12 +1941,22 @@
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="6-shocked.png">
-					It may be time to have a sleepover at the palace...
+					You're so well endowed! Well. Too bad you're not royalty.
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
+				<state img="6-shocked.png">
+					You're a princess AND you're well endowed? Ooh, this isn't fair!
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="6-interested.png">
 					It's like a flower...
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="confident"> <!-- a female player's crotch has become visible -->
+				<state img="6-interested.png">
+					I'd be shaking if I was stripped bare like that! ...I'm jealous of your confidence.
 				</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
@@ -2716,9 +2754,19 @@
 					Oh, do join in! I could use someone to take charge.
 				</state>
 			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="9-happy.png">
+					I can highly recommend this, your highness...
+				</state>
+			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="9-horny.png">
 					I'll just copy what you're doing, ~name~.
+				</state>
+			</case>
+			<case tag="female_start_masturbating" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="9-interested.png">
+					I feel so relieved! If Princess ~name~ is doing it, it can't be inappropriate.
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
@@ -2726,9 +2774,19 @@
 					If I had one wish... I'd wish for you to join me.
 				</state>
 			</case>
+			<case tag="female_masturbating" filter="princess"> <!-- a female player is masturbating -->
+				<state img="9-confused.png">
+					The scandal this would cause if anyone saw us... well, anyone else.
+				</state>
+			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
 				<state img="9-horny.png">
 					I've learned so much from you!
+				</state>
+			</case>
+			<case tag="female_finished_masturbating" filter="princess"> <!-- a female player has "finished" masturbating -->
+				<state img="9-horny.png">
+					How inspiring! 
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -2944,6 +3002,11 @@
 					I've always wondered how other girls do it...
 				</state>
 			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="10-interested.png">
+					Don't worry, ~name~. A princess can do ANYTHING she wants.
+				</state>
+			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="10-interested.png">
 					Don't you dare close your eyes! I didn't.
@@ -2954,9 +3017,19 @@
 					Your fingers are so skilled! I wonder how they'd feel...
 				</state>
 			</case>
+			<case tag="female_masturbating" filter="princess"> <!-- a female player is masturbating -->
+				<state img="10-horny.png">
+					I should arrange for a royal sleepover sometime. Clothing optional.
+				</state>
+			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
 				<state img="10-happy.png">
-					So now we are sisters, of a kind.
+					So now we are sisters of a kind.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating" filter="princess"> <!-- a female player has "finished" masturbating -->
+				<state img="10-happy.png">
+					At least you're in good company!
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -2964,7 +3037,7 @@
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_defeat">
 				<state img="10-horny.png">
-					A princess is always in control... but it feels so GOOD to lose control... I think I have a new fetish.
+					A princess is always in control... but it felt so GOOD to lose control... I think I have a new fetish.
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->
