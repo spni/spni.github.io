@@ -11,6 +11,11 @@
 	<gender>female</gender> <!-- what's their gender? -->
 	<size>medium</size>     <!-- Size of Naughty Bits (penis if male, boobs if female) -->
     <timer>15</timer>       <!-- how long do they... uh... take to 'finish'? -->
+    <tags>
+        <tag>video game</tag>
+        <tag>bi-curious</tag>
+        <tag>sarcastic</tag>
+    </tags>
 	
 	<!-- Game Start Information -->
 	<start>
@@ -245,8 +250,13 @@
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="0-interested.png">
+				<state img="0-angry.png">
 					Can you dial your inner slut back a little, ~name~? Some of us are trying to play hard to get.
+				</state>
+			</case>
+			<case tag="female_chest_will_be_visible" filter="princess"> <!-- a female player's chest will become visible -->
+				<state img="0-interested.png">
+					This is some kind of humiliation game for you, isn't it? Who'd'a thought?
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
@@ -271,14 +281,14 @@
 					Is that a blush? I think you're blushing, ~name~! I bet you like this.
 				</state>
 			</case>
-			<case tag="female_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="0-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
-			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="0-interested.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="0-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -286,9 +296,19 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="0-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="0-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="0-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -301,6 +321,11 @@
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="0-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="0-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -547,14 +572,29 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="1-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="1-horny.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="1-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="1-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="1-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -567,6 +607,11 @@
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="1-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="1-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -813,14 +858,29 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="2-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="2-horny.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="2-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="2-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="2-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -833,6 +893,11 @@
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="2-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="2-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -1079,14 +1144,29 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="3-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="3-horny.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="3-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="3-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="3-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -1099,6 +1179,11 @@
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="3-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="3-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -1287,7 +1372,7 @@
 					Way to cramp the 'last woman on Earth' thing I've got going for me, ~name~.
 				</state>
 				<state img="4-interested.png">
-					Don't be embarrassed, ~name~. Save that until you're cumming in front of strangers.
+					Don't be embarrassed, ~name~. Save that for later.
 				</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
@@ -1295,7 +1380,7 @@
 					Way to cramp the 'last woman on Earth' thing I've got going for me, ~name~.
 				</state>
 				<state img="4-interested.png">
-					Don't be embarrassed, ~name~. Save that until you're cumming in front of strangers.
+					Don't be embarrassed, ~name~. Save that for later.
 				</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
@@ -1345,14 +1430,29 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="4-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="4-horny.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="4-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="4-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="4-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -1365,6 +1465,11 @@
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="4-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="4-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -1553,7 +1658,7 @@
 					Way to cramp the 'last woman on Earth' thing I've got going for me, ~name~.
 				</state>
 				<state img="5-interested.png">
-					Don't be embarrassed, ~name~. Save that until you're cumming in front of strangers.
+					Don't be embarrassed, ~name~. Save that for later.
 				</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
@@ -1561,7 +1666,7 @@
 					Way to cramp the 'last woman on Earth' thing I've got going for me, ~name~.
 				</state>
 				<state img="5-interested.png">
-					Don't be embarrassed, ~name~. Save that until you're cumming in front of strangers.
+					Don't be embarrassed, ~name~. Save that for later.
 				</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
@@ -1611,14 +1716,29 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="5-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="5-horny.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="5-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="5-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="5-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -1631,6 +1751,11 @@
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="5-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="5-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -1871,14 +1996,29 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="6-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="6-horny.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="6-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="6-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="6-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -1891,6 +2031,11 @@
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="6-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="6-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -2131,14 +2276,29 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="7-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="7-horny.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="7-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="7-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="7-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -2151,6 +2311,11 @@
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="7-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="7-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -2386,14 +2551,29 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="8-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="8-horny.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="8-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="8-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="8-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -2406,6 +2586,11 @@
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="8-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="8-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -2614,14 +2799,29 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="9-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="9-horny.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="9-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="9-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="9-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -2634,6 +2834,11 @@
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="9-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="9-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -2831,14 +3036,29 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="10-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="10-horny.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="10-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="10-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="10-angry.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
@@ -2851,6 +3071,11 @@
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="10-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="10-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
