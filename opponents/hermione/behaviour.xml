@@ -33,6 +33,9 @@
             <case tag="female_must_strip">
                 <state img="0-smug.png">We all agreed to the rules, ~name~.</state>
             </case>
+            <case tag="female_must_strip" filter="innocent">
+                <state img="0-shocked.png">You DO understand how the game is played, don't you, ~name~?</state>
+            </case>
             <case tag="male_chest_will_be_visible">
                 <state img="0-smug.png">I'd read that these games were supposed to take longer than this...</state>
             </case>
@@ -71,6 +74,12 @@
             </case>
             <case tag="female_crotch_is_visible">
                 <state img="0-stunned.png">So... there's no reason to be embarassed, ~name~. R-really.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="hairy">
+                <state img="0-stunned.png">Or... at least, I did. Maybe you, um, forgot?</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="0-stunned.png">I mean... clearly you prepared to lose.</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="0-shocked.png">How can you just do that like we're not all watching you?</state>
@@ -204,6 +213,9 @@
             <case tag="female_must_strip">
                 <state img="1-smug.png">I had a feeling you were going to lose, ~name~.</state>
             </case>
+            <case tag="female_must_strip" filter="innocent">
+                <state img="1-sad.png">I saw this one coming...</state>
+            </case>
             <case tag="male_chest_will_be_visible">
                 <state img="1-smug.png">Honestly, ~name~! Are you even trying?</state>
             </case>
@@ -242,6 +254,12 @@
             </case>
             <case tag="female_crotch_is_visible">
                 <state img="1-stunned.png">So... there's no reason to be embarassed, ~name~. R-really.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="hairy">
+                <state img="1-stunned.png">Or... at least, I did. Maybe you, um, forgot?</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="1-stunned.png">I mean... clearly you prepared to lose.</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="1-shocked.png">How can you just do that like we're not all watching you?</state>
@@ -413,6 +431,12 @@
             </case>
             <case tag="female_crotch_is_visible">
                 <state img="2-stunned.png">It's not the first one I've seen, of course. But, er, the first one up close.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="2-stunned.png">It's not the first one I've seen, of course. But, er, I've never seen one without any hair.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="hairy">
+                <state img="2-stunned.png">It's not the first one I've seen, of course. But, er, the hairiest.</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="2-interested.png">Just-Just pretend I'm not here!</state>
@@ -596,6 +620,12 @@
             </case>
             <case tag="female_crotch_is_visible">
                 <state img="3-stunned.png">It's not the first one I've seen, of course. But, er, the first one up close.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="3-stunned.png">It's not the first one I've seen, of course. But, er, I've never seen one without any hair.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="hairy">
+                <state img="3-stunned.png">It's not the first one I've seen, of course. But, er, the hairiest.</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="3-interested.png">Just-Just pretend I'm not here!</state>
@@ -783,6 +813,12 @@
             <case tag="female_crotch_is_visible">
                 <state img="4-stunned.png">Oh! You really did it! I didn't think you would.</state>
             </case>
+            <case tag="female_crotch_is_visible" filter="hairy">
+                <state img="4-sad.png">How disappointing. I can't actually see anything past all the hair.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="4-shocked.png">You really CAN see everything.</state>
+            </case>
             <case tag="female_start_masturbating">
                 <state img="4-interested.png">Of course, I'm not interested in girls myself, so...</state>
             </case>
@@ -944,6 +980,12 @@
             </case>
             <case tag="female_crotch_is_visible">
                 <state img="5-horny.png">This whole evening has been remarkably educational.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="hairy">
+                <state img="5-shocked.png">How daring!</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="5-interested.png">How daring!</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="5-interested.png">Of course, I'm not interested in girls myself, so...</state>
@@ -1124,6 +1166,12 @@
             </case>
             <case tag="female_crotch_is_visible">
                 <state img="6-horny.png">...I bet if I told Ron about this he'd be SO jealous he'd be all over me...</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="hairy">
+                <state img="6-interested.png">...I bet if I told Ron about this he'd laugh...</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="6-horny.png">...I bet if I shaved mine, Ron would be all over me...</state>
             </case>
             <case tag="female_crotch_is_visible" filter="innocent">
                 <state img="6-horny.png">Merlin's pants, you're adorable! I just want to eat you up! ...Metaphorically.</state>
@@ -1308,6 +1356,12 @@
             <case tag="female_crotch_is_visible">
                 <state img="7-angry.png">It's just as perfect as the rest of you. How disappointing!</state>
             </case>
+            <case tag="female_crotch_is_visible" filter="hairy">
+                <state img="7-stunned.png">It's, um, a little wild. I suppose that's fitting.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="7-angry.png">It's so sexy, so confident... I'm burning up with jealousy!</state>
+            </case>
             <case tag="female_start_masturbating">
                 <state img="7-interested.png">It looks like you're already wet...</state>
             </case>
@@ -1490,6 +1544,12 @@
             </case>
             <case tag="female_crotch_is_visible">
                 <state img="8-excited.png">So that's what other girls look like in person...</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="hairy">
+                <state img="8-interested.png">So this is Muggle style? My books are out of date.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="8-horny.png">I was right! Wait until I tell Luna.</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="8-horny.png">Go ahead and start - don't mind me watching!</state>

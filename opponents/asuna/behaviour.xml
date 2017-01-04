@@ -238,6 +238,11 @@
 					Need some tips on playing, ~name~?
 				</state>
 			</case>
+			<case tag="female_must_strip" filter="blonde"> <!-- a female player will strip, but you don't know what they will remove -->
+				<state img="0-interested.png">
+					Having a blonde moment, ~name~? I do that all the time.
+				</state>
+			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-interested.png">
 					Oh! Magic ~clothing~?
@@ -251,6 +256,11 @@
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="0-nervous.png">
 					I'm sorry about this...
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="mean"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="0-happy.png">
+					I'd like to say I'm sorry about this, but I'm not.
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -300,6 +310,16 @@
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="0-nervous.png">
 					I feel bad for beating you so easily...
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="0-shocked.png">
+					Oh! I-I wasn't expecting it to be bare. 
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="0-shocked.png">
+					Oh! I guess you weren't planning on playing today...
 				</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
@@ -417,6 +437,11 @@
 					~name~, you sly fox!
 				</state>
 			</case>
+			<case tag="male_removing_minor" filter="innocent"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="1-calm.png">
+					A wise move.
+				</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="1-angry.png">
 					I, Asuna, vice commander of the Knights of the Blood Oath, command you to remove your ~clothing~!
@@ -444,6 +469,11 @@
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-angry.png">
 					You prepared for this game, didn't you?
+				</state>
+			</case>
+			<case tag="male_removed_minor" filter="innocent"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="1-happy.png">
+					I'm glad to see you came prepared!
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -519,9 +549,19 @@
 					~name~, you sly fox!
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="innocent"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="1-calm.png">
+					A wise move.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="1-nervous.png">
 					I'm sorry about this...
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="mean"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="1-happy.png">
+					I'd like to say I'm sorry about this, but I'm not.
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -548,6 +588,11 @@
 					You prepared for this game, didn't you?
 				</state>
 			</case>
+			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="1-happy.png">
+					I'm glad to see you came prepared!
+				</state>
+			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="1-happy.png">
 					Want to concede the match, ~name~?
@@ -571,6 +616,16 @@
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="1-nervous.png">
 					I feel bad for beating you so easily...
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="1-shocked.png">
+					Oh! I-I wasn't expecting it to be bare. 
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="1-shocked.png">
+					Oh! I guess you weren't planning on playing today...
 				</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
@@ -688,6 +743,11 @@
 					~name~, you sly fox!
 				</state>
 			</case>
+			<case tag="male_removing_minor" filter="innocent"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="2-calm.png">
+					A wise move.
+				</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="2-angry.png">
 					I, Asuna, vice commander of the Knights of the Blood Oath, command you to remove your ~clothing~!
@@ -715,6 +775,11 @@
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-angry.png">
 					You prepared for this game, didn't you?
+				</state>
+			</case>
+			<case tag="male_removed_minor" filter="innocent"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="2-happy.png">
+					I'm glad to see you came prepared!
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -790,9 +855,19 @@
 					~name~, you sly fox!
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="innocent"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="2-calm.png">
+					A wise move.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="2-nervous.png">
 					I'm sorry about this...
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="mean"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="2-happy.png">
+					I'd like to say I'm sorry about this, but I'm not.
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -819,6 +894,11 @@
 					You prepared for this game, didn't you?
 				</state>
 			</case>
+			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="2-happy.png">
+					I'm glad to see you came prepared!
+				</state>
+			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="2-happy.png">
 					Want to concede the match, ~name~?
@@ -842,6 +922,16 @@
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="2-nervous.png">
 					I feel bad for beating you so easily...
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="2-shocked.png">
+					Oh! I-I wasn't expecting it to be bare. 
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="2-shocked.png">
+					Oh! I guess you weren't planning on playing today...
 				</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
@@ -959,6 +1049,11 @@
 					~name~, you sly fox!
 				</state>
 			</case>
+			<case tag="male_removing_minor" filter="innocent"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-calm.png">
+					A wise move.
+				</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-angry.png">
 					I, Asuna, vice commander of the Knights of the Blood Oath, command you to remove your ~clothing~!
@@ -986,6 +1081,11 @@
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-angry.png">
 					You prepared for this game, didn't you?
+				</state>
+			</case>
+			<case tag="male_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-happy.png">
+					I'm glad to see you came prepared!
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -1051,6 +1151,11 @@
 					Keep your guard up or you'll end up naked, ~name~.
 				</state>
 			</case>
+			<case tag="female_must_strip" filter="shy"> <!-- a female player will strip, but you don't know what they will remove -->
+				<state img="3-interested.png">
+					Keep your guard up or you'll end up naked, ~name~. And you wouldn't want that, would you?
+				</state>
+			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="3-angry.png">
 					Ugh... I hate min-maxers. Play the game as it's designed to be played!
@@ -1061,9 +1166,19 @@
 					I see you've maxed your apparel skill.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-angry.png">
+					I see you've maxed your apparel skill. That's paying off tonight.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-nervous.png">
 					I'm sorry about this...
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="mean"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="3-happy.png">
+					I'd like to say I'm sorry about this, but I'm not.
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -1088,6 +1203,11 @@
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-angry.png">
 					You prepared for this game, didn't you?
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-happy.png">
+					I'm glad to see you came prepared!
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -1230,6 +1350,11 @@
 					I see you've maxed your apparel skill.
 				</state>
 			</case>
+			<case tag="male_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="4-angry.png">
+					I see you've maxed your apparel skill. That's paying off tonight.
+				</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="4-happy.png">
 					A critical hit!
@@ -1257,6 +1382,11 @@
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-angry.png">
 					You prepared for this game, didn't you?
+				</state>
+			</case>
+			<case tag="male_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="4-angry.png">	
+					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -1322,6 +1452,11 @@
 					Keep your guard up or you'll end up naked, ~name~.
 				</state>
 			</case>
+			<case tag="female_must_strip" filter="shy"> <!-- a female player will strip, but you don't know what they will remove -->
+				<state img="4-interested.png">
+					Keep your guard up or you'll end up naked, ~name~. And you wouldn't want that, would you?
+				</state>
+			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="4-angry.png">
 					Ugh... I hate min-maxers. Play the game as it's designed to be played!
@@ -1330,6 +1465,11 @@
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-angry.png">
 					I see you've maxed your apparel skill.
+				</state>
+			</case>
+			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="4-angry.png">
+					I see you've maxed your apparel skill. That's paying off tonight.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -1359,6 +1499,11 @@
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-angry.png">
 					You prepared for this game, didn't you?
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="4-angry.png">	
+					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -1501,6 +1646,11 @@
 					I see you've maxed your apparel skill.
 				</state>
 			</case>
+			<case tag="male_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="5-angry.png">
+					I see you've maxed your apparel skill. That's paying off tonight.
+				</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="5-happy.png">
 					A critical hit!
@@ -1528,6 +1678,11 @@
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="5-angry.png">
 					You prepared for this game, didn't you?
+				</state>
+			</case>
+			<case tag="male_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="5-angry.png">	
+					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -1593,6 +1748,11 @@
 					Keep your guard up or you'll end up naked, ~name~.
 				</state>
 			</case>
+			<case tag="female_must_strip" filter="shy"> <!-- a female player will strip, but you don't know what they will remove -->
+				<state img="5-interested.png">
+					Keep your guard up or you'll end up naked, ~name~. And you wouldn't want that, would you?
+				</state>
+			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="5-angry.png">
 					Ugh... I hate min-maxers. Play the game as it's designed to be played!
@@ -1601,6 +1761,11 @@
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="5-angry.png">
 					I see you've maxed your apparel skill.
+				</state>
+			</case>
+			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="5-angry.png">
+					I see you've maxed your apparel skill. That's paying off tonight.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -1630,6 +1795,11 @@
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="5-angry.png">
 					You prepared for this game, didn't you?
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="5-angry.png">	
+					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -1772,6 +1942,11 @@
 					I see you've maxed your apparel skill.
 				</state>
 			</case>
+			<case tag="male_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="6-angry.png">
+					I see you've maxed your apparel skill. That's paying off tonight.
+				</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="6-happy.png">
 					A critical hit!
@@ -1799,6 +1974,11 @@
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="6-angry.png">
 					You prepared for this game, didn't you?
+				</state>
+			</case>
+			<case tag="male_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="6-angry.png">	
+					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -1874,9 +2054,19 @@
 					I see you've maxed your apparel skill.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="6-angry.png">
+					I see you've maxed your apparel skill. That's paying off tonight.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="6-nervous.png">
 					I'm sorry about this...
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="mean"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="6-happy.png">
+					I'd like to say I'm sorry about this, but I'm not.
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -1901,6 +2091,11 @@
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="6-angry.png">
 					You prepared for this game, didn't you?
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="6-angry.png">	
+					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -2043,6 +2238,11 @@
 					I see you've maxed your apparel skill.
 				</state>
 			</case>
+			<case tag="male_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="7-angry.png">
+					I see you've maxed your apparel skill. That's paying off tonight.
+				</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="7-happy.png">
 					A critical hit!
@@ -2143,6 +2343,11 @@
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="7-angry.png">
 					I see you've maxed your apparel skill.
+				</state>
+			</case>
+			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="7-angry.png">
+					I see you've maxed your apparel skill. That's paying off tonight.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -2411,6 +2616,11 @@
 					I see you've maxed your apparel skill.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="8-angry.png">
+					I see you've maxed your apparel skill. That's paying off tonight.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="8-happy.png">
 					A critical hit!
@@ -2443,6 +2653,11 @@
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="8-nervous.png">
 					I'm sorry about this...
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="mean"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="8-happy.png">
+					I'd like to say I'm sorry about this, but I'm not.
 				</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -2654,6 +2869,11 @@
 					I see you've maxed your apparel skill.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="9-angry.png">
+					I see you've maxed your apparel skill. That's paying off tonight.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="9-happy.png">
 					A critical hit!
@@ -2688,6 +2908,11 @@
 					I'm sorry about this...
 				</state>
 			</case>
+			<case tag="female_removing_major" filter="mean"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="9-happy.png">
+					I'd like to say I'm sorry about this, but I'm not.
+				</state>
+			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="9-interested.png">
 					Oh! I feel so motherly.
@@ -2704,8 +2929,18 @@
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+				<state img="9-interested.png">
+					How pretty! I didn't think of keeping mine trimmed that way.
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
 				<state img="9-horny.png">
-					I wonder if Kirito would like it if I shaved mine like that...
+					I wonder if Kirito would like it if I shaved mine bare like yours...
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="9-shocked.png">
+					Oh! D-Do boys really like it untrimmed like that?
 				</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
@@ -2879,6 +3114,11 @@
 					I see you've maxed your apparel skill.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="10-angry.png">
+					I see you've maxed your apparel skill. That's paying off tonight.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="10-happy.png">
 					A critical hit!
@@ -2929,8 +3169,18 @@
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+				<state img="10-interested.png">
+					How pretty! I didn't think of keeping mine trimmed that way.
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
 				<state img="10-horny.png">
-					I wonder if Kirito would like it if I shaved mine like that...
+					I wonder if Kirito would like it if I shaved mine bare like yours...
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="10-shocked.png">
+					Oh! D-Do boys really like it untrimmed like that?
 				</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
