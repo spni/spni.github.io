@@ -248,7 +248,7 @@ function updateBehaviour (player, tag, replace, content, opp) {
             var target = states[i].attr("target");
             var filter = states[i].attr("filter");
             
-            if (typeof target !== typeof undefined && target !== false) {
+            if (opp !== null && typeof target !== typeof undefined && target !== false) {
                 target = "opponents/" + target  + "/";
                 if (target === opp.folder) {
                     console.log("Best match is target!");
@@ -256,7 +256,7 @@ function updateBehaviour (player, tag, replace, content, opp) {
                     break;
                 }
             }
-            else if (typeof filter !== typeof undefined && filter !== false) {
+            else if (opp !== null && typeof filter !== typeof undefined && filter !== false) {
                 // check against tags
                 for (var j = 0; j < opp.tags.length; j++) {
                     if (filter === opp.tags[j]) {
