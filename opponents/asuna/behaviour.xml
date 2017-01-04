@@ -250,6 +250,16 @@
 					Oh! Magic ~clothing~?
 				</state>
 			</case>
+			<case tag="female_removing_accessory" target="hermione"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+				<state img="0-calm.png">
+					So... you're some kind of magic user, right?
+				</state>
+			</case>
+			<case tag="female_removing_accessory" target="blackrose"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+				<state img="0-interested.png">
+					Tell me, ~name~ - what's The World really like? I hear it's got some serious issues.
+				</state>
+			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-calm.png">
 					Removing your ~clothing~? Okay.
@@ -287,6 +297,16 @@
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-happy.png">Yes, it's a rare loot drop: the ~clothing~ of agility!</state>
 				<state img="0-calm.png">Oh, my mistake. So why all the fuss then?</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+				<state img="0-sad.png">
+					Not that I can criticize... ALfeim Online has had its share of problems!
+				</state>
+			</case>
+			<case tag="female_removed_accessory" target="hermione"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+				<state img="0-interested.png">
+					I've never seen one wearing clothes like that. Do they give you some kind of bonus?
+				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-angry.png">
