@@ -38,6 +38,9 @@
             <case tag="female_removing_minor">
                 <state img="0-calm.png">Well, well. Looks like ~name~ is losing.</state>
             </case>
+            <case tag="female_removing_minor" filter="innocent">
+                <state img="0-calm.png">Hey, if that's the most you take off you'll be having a great night.</state>
+            </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="0-stunned.png">I SAID I wasn't ready!</state>
             </case>
@@ -324,6 +327,9 @@
             <case tag="female_must_strip">
                 <state img="2-interested.png">It's everybody's favorite time again!</state>
             </case>
+            <case tag="female_must_strip" filter="shy">
+                <state img="2-interested.png">It's everybody's favorite time again! Well... mostly everybody.</state>
+            </case>
             <case tag="male_chest_will_be_visible">
                 <state img="2-excited.png">I'm glad I came tonight!</state>
             </case>
@@ -479,6 +485,9 @@
             <case tag="female_removed_major">
                 <state img="3-happy.png">Trust me, you have NOTHING to be ashamed of.</state>
             </case>
+            <case tag="female_removed_major" filter="mean">
+                <state img="3-interested.png">I mean, I've seen worse. A LOT worse.</state>
+            </case>
             <case tag="male_large_crotch_is_visible">
                 <state img="3-shocked.png">Except, um, a little bigger than I expected.</state>
             </case>
@@ -501,7 +510,7 @@
                 <state img="3-excited.png">I love what you're wearing! WERE wearing, I mean.</state>
             </case>
             <case tag="female_crotch_is_visible">
-                <state img="3-horny.png">I've been missing out?</state>
+                <state img="3-horny.png">I've been missing out.</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="3-shocked.png">I can't believe you're really--!!</state>
@@ -571,6 +580,12 @@
             </case>
             <case tag="female_removed_minor">
                 <state img="3-interested.png">Don't think this is the end for you. Not by a long shot!</state>
+            </case>
+            <case tag="female_removed_minor" filter="shy">
+                <state img="3-interested.png">Just think - the evening is young!</state>
+            </case>
+            <case tag="female_removed_minor" filter="innocent">
+                <state img="3-interested.png">Aw, I think you're blushing!</state>
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="3-calm.png">Huh. Just like prom night.</state>
@@ -990,7 +1005,7 @@
                 <state img="6-stunned.png">Your... your ~clothing~?</state>
             </case>
             <case tag="female_finished_masturbating">
-                <state img="6-horny.png">Believe me, you'd make the team.</state>
+                <state img="6-horny.png">Believe me, you'd make the cheer squad if I was still in charge.</state>
             </case>
             <case tag="female_chest_will_be_visible">
                 <state img="6-calm.png">Not so cocky now, are you?</state>
@@ -1039,6 +1054,12 @@
             <case tag="female_must_strip">
                 <state img="7-excited.png">Don't be shy, ~name~. I mean, just look at me!</state>
             </case>
+            <case tag="female_must_strip" filter="mean">
+                <state img="7-excited.png">Time to even the odds!</state>
+            </case>
+            <case tag="female_must_strip" filter="shy">
+                <state img="7-awkward.png">Just remember: it can't be worse for you than it is for me.</state>
+            </case>
             <case tag="male_chest_will_be_visible">
                 <state img="7-happy.png">Here comes my favorite part!</state>
             </case>
@@ -1050,6 +1071,12 @@
             </case>
             <case tag="female_removed_major">
                 <state img="7-sad.png">You seem awfully calm, ~name~. I guess you're sitting pretty compared to me...</state>
+            </case>
+            <case tag="female_removed_major" filter="mean">
+                <state img="7-angry.png">You seem pretty confident, ~name~. But I've gotten out of worse situations!</state>
+            </case>
+            <case tag="female_removed_major" filter="confident">
+                <state img="7-angry.png">You seem pretty confident, ~name~. But I've gotten out of worse situations!</state>
             </case>
             <case tag="male_large_crotch_is_visible">
                 <state img="7-happy.png">Hee hee! It IS fun to let loose now and then!</state>
@@ -1117,8 +1144,14 @@
             <case tag="female_small_chest_is_visible">
                 <state img="7-excited.png">We could be twins!</state>
             </case>
+            <case tag="female_small_chest_is_visible" filter="mean">
+                <state img="7-interested.png">So... it's a competition between us now?</state>
+            </case>
             <case tag="female_medium_chest_is_visible">
                 <state img="7-happy.png">Very nice, ~name~.</state>
+            </case>
+            <case tag="female_medium_chest_is_visible" filter="mean">
+                <state img="7-angry.png">Why do the bad ones always look so good?</state>
             </case>
             <case tag="female_removing_accessory">
                 <state img="7-angry.png">Do you know what I really hate?</state>
@@ -1137,6 +1170,9 @@
             </case>
             <case tag="female_chest_will_be_visible">
                 <state img="7-interested.png">Just pretend we're in the girl's locker room together, ~name~.</state>
+            </case>
+            <case tag="female_chest_will_be_visible" filter="mean">
+                <state img="7-interested.png">I DO enjoy seeing you squirm, ~name~.</state>
             </case>
             <case tag="male_masturbating">
                 <state img="7-horny.png">Am I turning you on THAT much?</state>
