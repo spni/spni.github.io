@@ -234,6 +234,11 @@
 					Don't be shy, ~name~. 
 				</state>
 			</case>
+			<case tag="female_must_strip" filter="shy"> <!-- a female player will strip, but you don't know what they will remove -->
+				<state img="0-interested.png">
+					You DID understand the game you were playing, didn't you, ~name~?
+				</state>
+			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-sad.png">
 					So that's what you're going for? Really? Not gonna... spice it up at all?
@@ -279,6 +284,11 @@
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-sad.png">
 					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-sad.png">
+					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a HUGE scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -592,6 +602,11 @@
 					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
 				</state>
 			</case>
+			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-sad.png">
+					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a HUGE scandal.
+				</state>
+			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-happy.png">
 					Well maybe if we keep playing we'll actually see something good.
@@ -901,6 +916,11 @@
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="2-sad.png">
 					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-sad.png">
+					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a HUGE scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1217,6 +1237,11 @@
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="3-sad.png">
 					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-sad.png">
+					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a HUGE scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
