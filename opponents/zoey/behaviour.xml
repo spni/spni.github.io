@@ -169,6 +169,11 @@
 					You are a charming, beautiful man.
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" filter="link"> <!-- a male player's chest has become visible -->
+				<state img="0-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="0-awkward.png">
 					Oh, gross!
@@ -241,7 +246,7 @@
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-interested.png">
-					The shimmy as you strip makes up for it, though.
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -281,6 +286,11 @@
 					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
 				</state>
 			</case>
+			<case tag="female_removed_accessory" filter="confident"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-sad.png">
+					You had my hopes up there.
+				</state>
+			</case>
 			<case tag="female_removed_accessory" filter="exhibitionist"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-calm.png">
 					Having you play with us feels kinda like the fox is guarding the henhouse...
@@ -294,6 +304,11 @@
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-happy.png">
 					Well maybe if we keep playing we'll actually see something good.
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="0-happy.png">
+					With skills like that, this can't be your first rodeo. 
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -504,6 +519,11 @@
 					You are a charming, beautiful man.
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" filter="link"> <!-- a male player's chest has become visible -->
+				<state img="1-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="1-awkward.png">
 					Oh, gross!
@@ -568,7 +588,7 @@
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-interested.png">
-					The shimmy as you strip makes up for it, though.
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -608,14 +628,24 @@
 					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
 				</state>
 			</case>
+			<case tag="female_removed_accessory" filter="confident"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="1-sad.png">
+					You had my hopes up there.
+				</state>
+			</case>
 			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="0-sad.png">
+				<state img="1-sad.png">
 					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a HUGE scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-happy.png">
 					Well maybe if we keep playing we'll actually see something good.
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="1-happy.png">
+					With skills like that, this can't be your first rodeo. 
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -826,6 +856,11 @@
 					You are a charming, beautiful man.
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" filter="link"> <!-- a male player's chest has become visible -->
+				<state img="2-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="2-calm.png">
 					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
@@ -894,7 +929,7 @@
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-interested.png">
-					The shimmy as you strip makes up for it, though.
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -934,14 +969,24 @@
 					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
 				</state>
 			</case>
+			<case tag="female_removed_accessory" filter="confident"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="2-sad.png">
+					You had my hopes up there.
+				</state>
+			</case>
 			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="0-sad.png">
+				<state img="2-sad.png">
 					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a HUGE scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-happy.png">
 					Well maybe if we keep playing we'll actually see something good.
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="2-happy.png">
+					With skills like that, this can't be your first rodeo. 
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -1157,6 +1202,11 @@
 					Okay! I might actually get through this. I'm doing all right!
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" filter="link"> <!-- a male player's chest has become visible -->
+				<state img="3-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="3-calm.png">
 					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
@@ -1225,7 +1275,7 @@
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-interested.png">
-					The shimmy as you strip makes up for it, though.
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -1265,14 +1315,24 @@
 					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
 				</state>
 			</case>
+			<case tag="female_removed_accessory" filter="confident"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="3-sad.png">
+					You had my hopes up there.
+				</state>
+			</case>
 			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="0-sad.png">
+				<state img="3-sad.png">
 					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a HUGE scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-happy.png">
 					Well maybe if we keep playing we'll actually see something good.
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-happy.png">
+					With skills like that, this can't be your first rodeo. 
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -1483,6 +1543,11 @@
 					Okay! I might actually get through this. I'm doing all right!
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" filter="link"> <!-- a male player's chest has become visible -->
+				<state img="4-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="4-calm.png">
 					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
@@ -1555,7 +1620,7 @@
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-interested.png">
-					The shimmy as you strip makes up for it, though.
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -1793,6 +1858,11 @@
 					~name~! You... look GOOD bare-chested.
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" filter="link"> <!-- a male player's chest has become visible -->
+				<state img="5-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="5-calm.png">
 					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
@@ -1865,7 +1935,7 @@
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="5-interested.png">
-					The shimmy as you strip makes up for it, though.
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -2103,6 +2173,11 @@
 					~name~! You... look GOOD bare-chested.
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" filter="link"> <!-- a male player's chest has become visible -->
+				<state img="6-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="6-calm.png">
 					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
@@ -2169,7 +2244,7 @@
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="6-interested.png">
-					The shimmy as you strip makes up for it, though.
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -2407,6 +2482,11 @@
 					Just fair warning, ~name~, I'm totally objectifying you right now.
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" filter="link"> <!-- a male player's chest has become visible -->
+				<state img="7-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="7-calm.png">
 					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
@@ -2473,7 +2553,7 @@
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="7-interested.png">
-					The shimmy as you strip makes up for it, though.
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -2706,6 +2786,11 @@
 					Just fair warning, ~name~, I'm totally objectifying you right now.
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" filter="link"> <!-- a male player's chest has become visible -->
+				<state img="8-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="8-calm.png">
 					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
@@ -2772,7 +2857,7 @@
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="8-interested.png">
-					The shimmy as you strip makes up for it, though.
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -2978,6 +3063,11 @@
 					Just fair warning, ~name~, I'm totally objectifying you right now.
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" filter="link"> <!-- a male player's chest has become visible -->
+				<state img="9-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="9-calm.png">
 					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
@@ -3044,7 +3134,7 @@
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="9-interested.png">
-					The shimmy as you strip makes up for it, though.
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -3237,6 +3327,11 @@
 					Just fair warning, ~name~, I'm totally objectifying you right now.
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" filter="link"> <!-- a male player's chest has become visible -->
+				<state img="10-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="10-calm.png">
 					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
@@ -3303,7 +3398,7 @@
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="10-interested.png">
-					The shimmy as you strip makes up for it, though.
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
