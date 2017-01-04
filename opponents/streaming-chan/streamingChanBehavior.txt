@@ -1,0 +1,802 @@
+#required for behaviour.xml
+first=Streaming-chan
+last=
+label=Streaming-chan
+gender=female
+size=small
+#Number of phases to "finish"
+timer=25
+
+#required for meta.xml
+#start picture
+pic=0-neutral
+height=5'4"
+from=VA-11 HALL-A: Cyberpunk Bartending Action
+writer=DonOuttaDan
+artist=DonOuttaDan
+description=Nicole Chen - more often known as "Streaming-chan" - runs a 24/7 live video feed of her life. Go Premium or go home!
+0
+#clothes
+#these must be in order of removal
+#the values are formal name, lower case name, how much they cover, what they cover
+#no spaces around the commas
+#how much they cover = important (covering nudity), major (a lot of skin), minor (small amount of skin), extra (accessories, boots, etc)
+#what they cover = upper (upper body), lower (lower body), other (neither).
+#there must be 2-8 entries, and at least one "important" piece of clothing on each of the upper and lower locations.
+clothes=Gloves,gloves,extra,other
+clothes=Shoes,shoes,extra,other
+clothes=Socks,socks,minor,other
+clothes=Jacket,jacket,minor,upper
+clothes=Shorts,shorts,major,lower
+clothes=Top,top,important,upper
+clothes=Panties,panties,important,lower
+
+#starting picture and text
+start=0-excited,Tonight's escapades are for Premium eyes only! Go Premium or go home!
+
+##individual behaviour
+#entries without a number are used when there are no stage-specific entries
+
+#default card behaviour
+#you can include multiple entries to give the character multiple lines and/or appearances in that situation.
+#This is what a character says while they're exchanging cards.
+swap_cards=excited,Pass me ~cards~ cards!
+swap_cards=serious,Gimme ~cards~.
+swap_cards=neutral,The chat voted to swap out... ~cards~ cards.
+swap_cards=kawaii,Let's switch ~cards~!
+swap_cards=neutral,~cards~ cards for me.
+
+#The character thinks they have a good hand
+good_hand=neutral,These sure are some cards!
+good_hand=excited,Looks like the gods chose Streaming-chan!
+good_hand=kawaii,This game's getting more fun by the minute!
+good_hand=flusteredKawaii,Ooh, these cards are getting me wet! I can feel some action coming on!
+
+#The character thinks they have a bad hand
+okay_hand=neutral,These sure are some cards!
+okay_hand=excited,Let's see where this goes!
+okay_hand=neutral,Don't forget to stay Premium for more sexy action!
+okay_hand=flustered,I'm starting to feel warm...
+
+#The character thinks they have a bad hand
+bad_hand=neutral,These sure are some cards!
+bad_hand=serious,Hmmph...
+bad_hand=peeved,Nrrgh. This doesn't seem fair.
+bad_hand=flustered,I might have to do something soon...
+
+#stripping default
+#This is the character says once they've lost a hand, but before they strip
+must_strip_winning=loss,I think an error has occurred. MustStripWinning.
+must_strip_normal=loss,I think an error has occurred. MustStripNormal.
+must_strip_losing=loss,I think an error has occurred. MustStripLosing.
+stripping=strip,I think an error has occured. Stripping.
+stripped=neutral,I think an error has occurred. Stripped.
+
+#masturbation
+#these situations relate to when the character is masturbating
+#these only come up in the relevant stages, so you don't need to include the stage numbers here
+#just remember which stage is which when you make the images
+must_masturbate_first=loss,Looks like I get first dibs!... And the chat voted for... the Golden Rod!
+must_masturbate=loss,Oh well!... Looks like the chat voted for... the Golden Rod!
+start_masturbating=starting,Let's do this!
+masturbating=masturbate_a,Nnngh... ooh... This feels v-very nice...
+masturbating=masturbate_intense,O-ooh yeah... M-make sure to stay... stay Premium...
+heavy_masturbating=heavy_a,Oooooh yes... Oooh...
+heavy_masturbating=heavy_intense,Aaah-ha-ha, fffuck yes!
+heavy_masturbating=heavy_surprised,Mmmmn-ooh, this is so gooood...
+finishing_masturbating=finishing,Ah-aaah-... Ahhhhhh! Ah! Ah!... oooh...
+finished_masturbating=neutral,I feel so goooood...
+finished_masturbating=peeved,The chat better be enjoying this...
+finished_masturbating=flusteredKawaii,Ohh man, I'm still wet...
+game_over_defeat=excited,Good show, ~name~! The viewers have been through the roof!
+game_over_victory=kawaii,Good show, everyone! The viewership's been through the roof!
+
+#situations where another male character is stripping
+male_human_must_strip=neutral,~name~ lost the round!
+male_human_must_strip=excited,So sorry, ~name~!
+male_human_must_strip=neutral,It's time for some action!
+male_human_must_strip=excited,I think the viewers are ready for some action!
+male_must_strip=neutral,It's your turn, ~name~.
+male_must_strip=excited,Everyone's watching, ~name~!
+male_must_strip=neutral,~name~ lost the round!
+male_must_strip=excited,Time to see some clothes hit the floor!
+
+male_removing_accessory=neutral,Alright, let's go let's go!
+male_removing_accessory=neutral,Well, ~name~?
+male_removing_accessory=peeved,Can you at least put on a show while taking it off?
+male_removed_accessory=peeved,It's peak viewing hours, let's hurry this up!
+male_removed_accessory=kawaii,One down, some more to go!
+male_removed_accessory=excited,Off comes the ~clothing~!
+
+male_removing_minor=excited,Take! It! Off! Take! It! Off!
+male_removing_minor=neutral,Let's see some skin, ~name~.
+male_removed_minor=neutral,Let's keep this game moving! It's peak viewing hours!
+male_removed_minor=kawaii,Down goes the ~clothing~!
+male_removed_minor=neutral,Cool, cool. Let's keep going!
+
+male_removing_major=excited,Time to see some skin, ~name~!
+male_removing_major=neutral,Alright, take it off, ~name~.
+male_removing_major=neutral,~name~'s ~clothing~'s coming off...
+male_removed_major=kawaii,Nice! Nice! We're seeing some action!
+male_removed_major=excited,Seeing some skin! Let's get a close-up!
+male_removed_major=kawaii,Viewers are starting to rise!
+
+male_chest_will_be_visible=neutral,Let's get a close-up of that hard chest, ~name~!
+male_chest_is_visible=flusteredKawaii,Ooh, I wouldn't mind getting up close and personal with that...
+
+#male crotches have different sizes, allowing your character to have different responses
+male_crotch_will_be_visible=excited,Alright, let's see the Lil' ~name~!
+male_small_crotch_is_visible=kawaii,Oh my god, it's so tiny! I bet the guys in chat feel better about their dicks already!
+male_medium_crotch_is_visible=flustered,Ooh, you're already so hard...
+male_large_crotch_is_visible=flustered,Ohhh, the things I'd do to that... The views I'd get doing them...
+
+#male masturbation default
+male_must_masturbate=kawaii,Time to start jackin' it, ~name~!
+male_start_masturbating=flustered,Ohhhh yeah...
+male_masturbating=flusteredKawaii,Pump it! Harder! Faster! Stronger!
+male_finished_masturbating=excited,Haha! Look at it go!
+
+#female stripping default
+#these are mostly the same as the female stripping cases, but the female's size refers to their chest rather than their crotch.
+
+female_human_must_strip=neutral,~name~ lost the round!
+female_human_must_strip=excited,So sorry, ~name~!
+female_human_must_strip=neutral,It's time for some action!
+female_human_must_strip=excited,I think the viewers are ready for some action!
+female_must_strip=neutral,It's your turn, ~name~.
+female_must_strip=excited,Everyone's watching, ~name~!
+female_must_strip=neutral,~name~ lost the round!
+female_must_strip=excited,Time to see some clothes hit the floor!
+
+female_removing_accessory=neutral,Alright, let's go let's go!
+female_removing_accessory=neutral,Well, ~name~?
+female_removing_accessory=peeved,Can you put on a show while doing it? For the viewers?
+female_removed_accessory=peeved,It's peak viewing hours, let's hurry this up!
+female_removed_accessory=kawaii,One down, some more to go!
+female_removed_accessory=excited,Off comes the ~clothing~!
+
+female_removing_minor=excited,Take! It! Off! Take! It! Off!
+female_removing_minor=neutral,Let's see some skin, ~name~.
+female_removed_minor=neutral,Let's keep this game moving! It's peak viewing hours!
+female_removed_minor=kawaii,Down goes the ~clothing~!
+female_removed_minor=neutral,Cool, cool. Let's keep going!
+
+female_removing_major=excited,Time to see some skin, ~name~!
+female_removing_major=neutral,Alright, take it off, ~name~.
+female_removing_major=neutral,~name~'s ~clothing~'s coming off...
+female_removed_major=kawaii,Nice! Nice! We're seeing some action!
+female_removed_major=excited,Seeing some skin! Let's get a close-up!
+female_removed_major=kawaii,Viewers are starting to rise!
+
+female_chest_will_be_visible=excited,Let's see those tits fall out and those viewing numbers rise!
+female_small_chest_is_visible=kawaii,Just as flat as I thought, but so cute!
+female_medium_chest_is_visible=flustered,Ohhh yeah. I wanna get a close-up of those... Can you play with them a bit?
+female_large_chest_is_visible=flusteredKawaii,Holy shit, look at those knockers... I just wanna... play with them right... right now...
+
+female_crotch_will_be_visible=kawaii,It's time for the pussy cat to come out and play!
+female_crotch_is_visible=flustered,That looks... perfect.
+
+#female masturbation default
+female_must_masturbate=kawaii,Time to start jillin', ~name~!
+female_start_masturbating=flusteredKawaii,Let me... let me get a close-up of that...
+female_masturbating=flustered,Having fun over there, ~name~?
+female_finished_masturbating=flusteredKawaii,That cry... those spasms... This is gold stream footage right here...
+
+#These responses are stage specific.
+#Refer to the above entries to see what sort of situations these refer to, and what the default images are.
+#Each situation has been repeated enough for the maximum eight items of clothing.
+#If your character has fewer items, delete the extra entries.
+#if you don't include a stage-specific entry for a situation, the script will use the default response as defined above.
+
+
+#character is stripping situations
+#losing gloves
+0-must_strip_winning=loss,About time I start taking stuff off.
+0-must_strip_normal=loss,Alright, I'm up!
+0-must_strip_losing=loss,Alright, I'm up!
+0-stripping=strip,I'll just take these gloves off...
+1-stripped=stripped,Any bare hand fetishists in the chat today?
+
+#losing boots
+1-must_strip_winning=loss,Alriiight, about time I lost.
+1-must_strip_normal=loss,Looks like it's my time again.
+1-must_strip_losing=loss,Looks like it's my time again.
+1-stripping=strip,Off come the boots!
+2-stripped=stripped,High quality socks. They were sent by a fan!... I had to clean it of some weird stains first.
+
+#losing socks
+2-must_strip_winning=loss,Whaaaaat? I looooost?
+2-must_strip_normal=loss,No waaaay! I lost the rooouuund?
+2-must_strip_losing=loss,Whoa, I loooost? Agaaaaain?
+2-stripping=strip,Heh. It's all good. It's time to bare these feet.
+3-stripped=stripped,Any foot fetishists in chat better take a good look, because this is the longest I'm lingering on these babies.
+
+#losing jacket
+3-must_strip_winning=loss,Heeeey, I lost.
+3-must_strip_normal=loss,Heeeey, I lost.
+3-must_strip_losing=loss,Heeeey, I lost.
+3-stripping=strip,Off comes the jacket!
+4-stripped=stripped,Lemme put my hair back a bit... So you can take a goooood look at this.
+
+#losing shorts
+4-must_strip_winning=loss,Alright, I'll just take thi-
+4-must_strip_normal=loss,Alright, I'll just take thi-
+4-must_strip_losing=loss,Alright, I'll just take thi-
+4-stripping=strip,Wait, I almost forgot. It's no-bra November! Looks like the shorts are coming off first.
+5-stripped=stripped,Wow, so many Premium viewers! Smile for the camera, everyone!
+
+#losing top
+5-must_strip_winning=loss,Heeey, looks like it's titty time!
+5-must_strip_normal=loss,Heeey, looks like it's titty time!
+5-must_strip_losing=loss,Heeey, looks like it's titty time!
+5-stripping=strip,I'll just do this nice and slow...
+6-stripped=stripped,Here you go! Your friendly neighborhood stream-y titties!
+
+#losing panties
+6-must_strip_winning=loss,Oh no, the humanity! I have to get naked like you guys?
+6-must_strip_normal=loss,Oh no, the humanity! I have to get naked?
+6-must_strip_losing=loss,Oh noooo, I have to get naked? Already?
+6-stripping=strip,Hehe! As if I wasn't already used to it.
+7-stripped=stripped,Alright, chat! Vote on what I should use if I lose: "The Hulk", or the "Golden Rod"? Leave your votes now!
+
+#victory lines. one for each stage.
+0-game_over_victory=serious,Huh. That was quicker than I thought. Got lots of viewers, at least...
+1-game_over_victory=neutral,That was pretty easy... I got some good viewing numbers, though!
+2-game_over_victory=neutral,That was pretty easy... I got some good viewing numbers, though!
+3-game_over_victory=neutral,That was pretty easy... I got some good viewing numbers, though!
+4-game_over_victory=kawaii,Good show, everyone! The viewership's been through the roof!
+5-game_over_victory=kawaii,Good show, everyone! The viewership's been through the roof!
+6-game_over_victory=kawaii,Good show, everyone! The viewership's been through the roof!
+-3-game_over_victory=peeved,Well shit, looks like I didn't get to use the toys I brought... I'll save them for later.
+-2-game_over_victory=kawaii,Good show, everyone! The viewership's been through the roof!
+-1-game_over_victory=kawaii,Good show, everyone! The viewership's been through the roof!
+
+#card cases
+#fully clothed
+0-good_hand=,
+0-okay_hand=,
+0-bad_hand=,
+
+#lost gloves
+1-good_hand=,
+1-okay_hand=,
+1-bad_hand=,
+
+#lost boots
+2-good_hand=,
+2-okay_hand=,
+2-bad_hand=,
+
+#lost socks
+3-good_hand=,
+3-okay_hand=,
+3-bad_hand=,
+
+#lost jacket
+4-good_hand=,
+4-okay_hand=,
+4-bad_hand=,
+
+#lost shorts
+5-good_hand=,
+5-okay_hand=,
+5-bad_hand=,
+
+#lost top
+6-good_hand=,
+6-okay_hand=,
+6-bad_hand=,
+
+#lost all clothing
+#using negative numbers counts back from the final stage
+#-3 is while nude, -2 is masturbating, -1 is finished
+#this lets you use the same numbers with different amounts of clothing
+-3-good_hand=,
+-3-okay_hand=,
+-3-bad_hand=,
+
+##other player must strip specific
+#fully clothed
+0-male_human_must_strip=,
+0-male_must_strip=,
+0-female_human_must_strip=,
+0-female_must_strip=,
+
+#lost gloves
+1-male_human_must_strip=,
+1-male_must_strip=,
+1-female_human_must_strip=,
+1-female_must_strip=,
+
+#lost boots
+2-male_human_must_strip=,
+2-male_must_strip=,
+2-female_human_must_strip=,
+2-female_must_strip=,
+
+#lost socks
+3-male_human_must_strip=,
+3-male_must_strip=,
+3-female_human_must_strip=,
+3-female_must_strip=,
+
+#lost jacket
+4-male_human_must_strip=,
+4-male_must_strip=,
+4-female_human_must_strip=,
+4-female_must_strip=,
+
+#lost shorts
+5-male_human_must_strip=,
+5-male_must_strip=,
+5-female_human_must_strip=,
+5-female_must_strip=,
+
+#lost top
+6-male_human_must_strip=,
+6-male_must_strip=,
+6-female_human_must_strip=,
+6-female_must_strip=,
+
+#lost all clothing items
+-3-male_human_must_strip=,
+-3-male_must_strip=,
+-3-female_human_must_strip=,
+-3-female_must_strip=,
+
+#masturbating
+-2-male_human_must_strip=masturbate_a,Oooh...
+-2-male_must_strip=masturbate_a,Oooh...
+-2-female_human_must_strip=masturbate_a,Oooh...
+-2-female_must_strip=masturbate_a,Oooh...
+
+#finished
+-1-male_human_must_strip=,
+-1-male_must_strip=,
+-1-female_human_must_strip=,
+-1-female_must_strip=,
+
+##another character is removing accessories
+#fully clothed
+0-male_removing_accessory=,
+0-male_removed_accessory=,
+0-female_removing_accessory=,
+0-female_removed_accessory=,
+
+#lost gloves
+1-male_removing_accessory=,
+1-male_removed_accessory=,
+1-female_removing_accessory=,
+1-female_removed_accessory=,
+
+#lost boots
+2-male_removing_accessory=,
+2-male_removed_accessory=,
+2-female_removing_accessory=,
+2-female_removed_accessory=,
+
+#lost socks
+3-male_removing_accessory=,
+3-male_removed_accessory=,
+3-female_removing_accessory=,
+3-female_removed_accessory=,
+
+#lost jacket
+4-male_removing_accessory=,
+4-male_removed_accessory=,
+4-female_removing_accessory=,
+4-female_removed_accessory=,
+
+#lost shorts
+5-male_removing_accessory=,
+5-male_removed_accessory=,
+5-female_removing_accessory=,
+5-female_removed_accessory=,
+
+#lost top
+6-male_removing_accessory=,
+6-male_removed_accessory=,
+6-female_removing_accessory=,
+6-female_removed_accessory=,
+
+#nude
+-3-male_removing_accessory=,
+-3-male_removed_accessory=,
+-3-female_removing_accessory=,
+-3-female_removed_accessory=,
+
+#masturbating
+-2-male_removing_accessory=masturbate_intense,Come ooooon...
+-2-male_removed_accessory=masturbate_a,Mmm...
+-2-female_removing_accessory=masturbate_intense,Come ooooon...
+-2-female_removed_accessory=masturbate_a,Mmm...
+
+#finished
+-1-male_removing_accessory=,
+-1-male_removed_accessory=,
+-1-female_removing_accessory=,
+-1-female_removed_accessory=,
+
+##another character is removing minor clothing items
+#fully clothed
+0-male_removing_minor=,
+0-male_removed_minor=,
+0-female_removing_minor=,
+0-female_removed_minor=,
+
+#lost gloves
+1-male_removing_minor=,
+1-male_removed_minor=,
+1-female_removing_minor=,
+1-female_removed_minor=,
+
+#lost boots
+2-male_removing_minor=,
+2-male_removed_minor=,
+2-female_removing_minor=,
+2-female_removed_minor=,
+
+#lost socks
+3-male_removing_minor=,
+3-male_removed_minor=,
+3-female_removing_minor=,
+3-female_removed_minor=,
+
+#lost jacket
+4-male_removing_minor=,
+4-male_removed_minor=,
+4-female_removing_minor=,
+4-female_removed_minor=,
+
+#lost shorts
+5-male_removing_minor=,
+5-male_removed_minor=,
+5-female_removing_minor=,
+5-female_removed_minor=,
+
+#lost top
+6-male_removing_minor=,
+6-male_removed_minor=,
+6-female_removing_minor=,
+6-female_removed_minor=,
+
+#naked
+-3-male_removing_minor=,
+-3-male_removed_minor=,
+-3-female_removing_minor=,
+-3-female_removed_minor=,
+
+#masturbating
+-2-male_removing_minor=masturbate_intense,Come ooooon...
+-2-male_removed_minor=masturbate_a,Mmm...
+-2-female_removing_minor=masturbate_intense,Come ooooon...
+-2-female_removed_minor=masturbate_a,Mmm...
+
+#finished
+-1-male_removing_minor=,
+-1-male_removed_minor=,
+-1-female_removing_minor=,
+-1-female_removed_minor=,
+
+##another character is removing major clothes
+#fully clothed
+0-male_removing_major=,
+0-male_removed_major=,
+0-female_removing_major=,
+0-female_removed_major=,
+
+#lost gloves
+1-male_removing_major=,
+1-male_removed_major=,
+1-female_removing_major=,
+1-female_removed_major=,
+
+#lost boots
+2-male_removing_major=,
+2-male_removed_major=,
+2-female_removing_major=,
+2-female_removed_major=,
+
+#lost socks
+3-male_removing_major=,
+3-male_removed_major=,
+3-female_removing_major=,
+3-female_removed_major=,
+
+#lost jacket
+4-male_removing_major=,
+4-male_removed_major=,
+4-female_removing_major=,
+4-female_removed_major=,
+
+#lost shorts
+5-male_removing_major=,
+5-male_removed_major=,
+5-female_removing_major=,
+5-female_removed_major=,
+
+#lost top
+6-male_removing_major=,
+6-male_removed_major=,
+6-female_removing_major=,
+6-female_removed_major=,
+
+#nude
+-3-male_removing_major=,
+-3-male_removed_major=,
+-3-female_removing_major=,
+-3-female_removed_major=,
+
+#masturbating
+-2-male_removing_major=masturbate_intense,Oh y-yeah, let's see some skin...
+-2-male_removed_major=masturbate_a,... N-nice...
+-2-female_removing_major=masturbate_intense,Oh y-yeah, let's see some skin...
+-2-female_removed_major=masturbate_a,... N-nice...
+
+#finished
+-1-male_removing_major=,
+-1-male_removed_major=,
+-1-female_removing_major=,
+-1-female_removed_major=,
+
+##another character is removing important clothes
+#fully clothed
+0-male_chest_will_be_visible=,
+0-male_chest_is_visible=,
+0-male_crotch_will_be_visible=,
+0-male_small_crotch_is_visible=,
+0-male_medium_crotch_is_visible=,
+0-male_large_crotch_is_visible=,
+
+0-female_chest_will_be_visible=,
+0-female_small_chest_is_visible=,
+0-female_medium_chest_is_visible=,
+0-female_large_chest_is_visible=,
+0-female_crotch_will_be_visible=,
+0-female_crotch_is_visible=,
+
+#lost gloves
+1-male_chest_will_be_visible=,
+1-male_chest_is_visible=,
+1-male_crotch_will_be_visible=,
+1-male_small_crotch_is_visible=,
+1-male_medium_crotch_is_visible=,
+1-male_large_crotch_is_visible=,
+
+1-female_chest_will_be_visible=,
+1-female_small_chest_is_visible=,
+1-female_medium_chest_is_visible=,
+1-female_large_chest_is_visible=,
+1-female_crotch_will_be_visible=,
+1-female_crotch_is_visible=,
+
+#lost boots
+2-male_chest_will_be_visible=,
+2-male_chest_is_visible=,
+2-male_crotch_will_be_visible=,
+2-male_small_crotch_is_visible=,
+2-male_medium_crotch_is_visible=,
+2-male_large_crotch_is_visible=,
+
+2-female_chest_will_be_visible=,
+2-female_small_chest_is_visible=,
+2-female_medium_chest_is_visible=,
+2-female_large_chest_is_visible=,
+2-female_crotch_will_be_visible=,
+2-female_crotch_is_visible=,
+
+#lost socks
+3-male_chest_will_be_visible=,
+3-male_chest_is_visible=,
+3-male_crotch_will_be_visible=,
+3-male_small_crotch_is_visible=,
+3-male_medium_crotch_is_visible=,
+3-male_large_crotch_is_visible=,
+
+3-female_chest_will_be_visible=,
+3-female_small_chest_is_visible=,
+3-female_medium_chest_is_visible=,
+3-female_large_chest_is_visible=,
+3-female_crotch_will_be_visible=,
+3-female_crotch_is_visible=,
+
+#lost jacket
+4-male_chest_will_be_visible=,
+4-male_chest_is_visible=,
+4-male_crotch_will_be_visible=,
+4-male_small_crotch_is_visible=,
+4-male_medium_crotch_is_visible=,
+4-male_large_crotch_is_visible=,
+
+4-female_chest_will_be_visible=,
+4-female_small_chest_is_visible=,
+4-female_medium_chest_is_visible=,
+4-female_large_chest_is_visible=,
+4-female_crotch_will_be_visible=,
+4-female_crotch_is_visible=,
+
+#lost shorts
+5-male_chest_will_be_visible=,
+5-male_chest_is_visible=,
+5-male_crotch_will_be_visible=,
+5-male_small_crotch_is_visible=,
+5-male_medium_crotch_is_visible=,
+5-male_large_crotch_is_visible=,
+
+5-female_chest_will_be_visible=,
+5-female_small_chest_is_visible=,
+5-female_medium_chest_is_visible=,
+5-female_large_chest_is_visible=,
+5-female_crotch_will_be_visible=,
+5-female_crotch_is_visible=,
+
+#lost top
+6-male_chest_will_be_visible=,
+6-male_chest_is_visible=,
+6-male_crotch_will_be_visible=,
+6-male_small_crotch_is_visible=,
+6-male_medium_crotch_is_visible=,
+6-male_large_crotch_is_visible=,
+
+6-female_chest_will_be_visible=,
+6-female_small_chest_is_visible=,
+6-female_medium_chest_is_visible=,
+6-female_large_chest_is_visible=,
+6-female_crotch_will_be_visible=,
+6-female_crotch_is_visible=,
+
+#nude
+-3-male_chest_will_be_visible=,
+-3-male_chest_is_visible=,
+-3-male_crotch_will_be_visible=,
+-3-male_small_crotch_is_visible=,
+-3-male_medium_crotch_is_visible=,
+-3-male_large_crotch_is_visible=,
+
+-3-female_chest_will_be_visible=,
+-3-female_small_chest_is_visible=,
+-3-female_medium_chest_is_visible=,
+-3-female_large_chest_is_visible=,
+-3-female_crotch_will_be_visible=,
+-3-female_crotch_is_visible=,
+
+#masturbating
+-2-male_chest_will_be_visible=masturbate_intense,Oh yeah, l-let's see this...
+-2-male_chest_is_visible=masturbate_surprised,Oh y-yes, I'd... I could do things...
+-2-male_crotch_will_be_visible=masturbate_intense,Y-yeah, l-let's see it come out of its cage...
+-2-male_small_crotch_is_visible=masturbate_a,Mmm...
+-2-male_medium_crotch_is_visible=heavy_a,O-ooh, n-now this is what I like to see...
+-2-male_large_crotch_is_visible=masturbate_surprised,H-holy shit, that's a m-major dick going o-on there...
+
+-2-female_chest_will_be_visible=masturbate_intense,Ohh y-yes, let's see those t-tits...
+-2-female_small_chest_is_visible=masturbate_a,Oooh, those are n-niiice...
+-2-female_medium_chest_is_visible=heavy_a,O-ooh my f-fuck those are n-nice...
+-2-female_large_chest_is_visible=masturbate_surprised,H-holy shit, you've g-got some huge funbags!...
+-2-female_crotch_will_be_visible=masturbate_intense,O-ohh, show it to me...
+-2-female_crotch_is_visible=masturbate_a,Ohhh, I could-...I could just get in there a-and...
+
+#finished
+-1-male_chest_will_be_visible=,
+-1-male_chest_is_visible=,
+-1-male_crotch_will_be_visible=,
+-1-male_small_crotch_is_visible=,
+-1-male_medium_crotch_is_visible=,
+-1-male_large_crotch_is_visible=,
+
+-1-female_chest_will_be_visible=,
+-1-female_small_chest_is_visible=,
+-1-female_medium_chest_is_visible=,
+-1-female_large_chest_is_visible=,
+-1-female_crotch_will_be_visible=,
+-1-female_crotch_is_visible=,
+
+##other player is masturbating
+#fully clothed
+0-male_must_masturbate=,
+0-male_start_masturbating=,
+0-male_masturbating=,
+0-male_finished_masturbating=,
+
+0-female_must_masturbate=,
+0-female_start_masturbating=,
+0-female_masturbating=,
+0-female_finished_masturbating=,
+
+#lost gloves
+1-male_must_masturbate=,
+1-male_start_masturbating=,
+1-male_masturbating=,
+1-male_finished_masturbating=,
+
+1-female_must_masturbate=,
+1-female_start_masturbating=,
+1-female_masturbating=,
+1-female_finished_masturbating=,
+
+#lost boots
+2-male_must_masturbate=,
+2-male_start_masturbating=,
+2-male_masturbating=,
+2-male_finished_masturbating=,
+
+2-female_must_masturbate=,
+2-female_start_masturbating=,
+2-female_masturbating=,
+2-female_finished_masturbating=,
+
+#lost socks
+3-male_must_masturbate=,
+3-male_start_masturbating=,
+3-male_masturbating=,
+3-male_finished_masturbating=,
+
+3-female_must_masturbate=,
+3-female_start_masturbating=,
+3-female_masturbating=,
+3-female_finished_masturbating=,
+
+#lost jacket
+4-male_must_masturbate=,
+4-male_start_masturbating=,
+4-male_masturbating=,
+4-male_finished_masturbating=,
+
+4-female_must_masturbate=,
+4-female_start_masturbating=,
+4-female_masturbating=,
+4-female_finished_masturbating=,
+
+#lost shorts
+5-male_must_masturbate=,
+5-male_start_masturbating=,
+5-male_masturbating=,
+5-male_finished_masturbating=,
+
+5-female_must_masturbate=,
+5-female_start_masturbating=,
+5-female_masturbating=,
+5-female_finished_masturbating=,
+
+#lost top
+6-male_must_masturbate=,
+6-male_start_masturbating=,
+6-male_masturbating=,
+6-male_finished_masturbating=,
+
+6-female_must_masturbate=,
+6-female_start_masturbating=,
+6-female_masturbating=,
+6-female_finished_masturbating=,
+
+#nude
+-3-male_must_masturbate=,
+-3-male_start_masturbating=,
+-3-male_masturbating=,
+-3-male_finished_masturbating=,
+
+-3-female_must_masturbate=,
+-3-female_start_masturbating=,
+-3-female_masturbating=,
+-3-female_finished_masturbating=,
+
+#masturbating
+-2-male_must_masturbate=masturbate_intense,Y-yes, start jerking it...
+-2-male_start_masturbating=masturbate_a,Yeah... b-back and forth... j-just like that...
+-2-male_masturbating=masturbate_a,K-keep stroking i-it... You can look at m-me if you need to...
+-2-male_finished_masturbating=masturbate_surprised,O-oh shit it w-went everywhere...
+
+-2-female_must_masturbate=masturbate_intense,Y-yeah, let me see you get in there...
+-2-female_start_masturbating=masturbate_a,Yeah... r-rub it... j-just like that...
+-2-female_masturbating=masturbate_a,K-keep going... W-we can look at each other... f-for motivation...
+-2-female_finished_masturbating=masturbate_surprised,Ohhh s-sweet shit, w-what a n-noise you just made...
+
+#finished
+-1-male_must_masturbate=,
+-1-male_start_masturbating=,
+-1-male_masturbating=horny,
+-1-male_finished_masturbating=,
+
+-1-female_must_masturbate=,
+-1-female_start_masturbating=,
+-1-female_masturbating=,
+-1-female_finished_masturbating=,
