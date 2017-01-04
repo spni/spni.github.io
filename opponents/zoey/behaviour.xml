@@ -234,14 +234,24 @@
 					So that's what you're going for? Really? Not gonna... spice it up at all?
 				</state>
 			</case>
+			<case tag="female_removing_accessory" filter="exhibitionist"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+				<state img="0-shocked.png">
+					I was expecting something a little more... risque from someone with your reputation.
+				</state>
+			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-calm.png">
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="0-interested.png">
+					The shimmy as you strip makes up for it, though.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="0-interested.png">
-					Finally gonna see some underwear!
+					Finally gonna see some underwear! Wait, I don't mean 'finally'. 'Suddenly'. That's the word I wanted!
 				</state>
 			</case>
 			<case tag="female_removing_major" filter="princess"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -274,6 +284,11 @@
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-sad.png">
 					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="exhibitionist"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-calm.png">
+					Having you play with us feels kinda like the fox is guarding the henhouse...
 				</state>
 			</case>
 			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
@@ -556,9 +571,14 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="1-interested.png">
+					The shimmy as you strip makes up for it, though.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="1-interested.png">
-					Finally gonna see some underwear!
+					Finally gonna see some underwear! Wait, I don't mean 'finally'. 'Suddenly'. That's the word I wanted!
 				</state>
 			</case>
 			<case tag="female_removing_major" filter="princess"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -877,9 +897,19 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="2-interested.png">
+					The shimmy as you strip makes up for it, though.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="2-interested.png">
 					Finally gonna see some underwear!
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="2-interested.png">
+					I'm surprised it took this long to get you down to your underwear, ~name~. Are you feeling okay?
 				</state>
 			</case>
 			<case tag="female_removing_major" filter="princess"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -1198,9 +1228,19 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-interested.png">
+					The shimmy as you strip makes up for it, though.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-interested.png">
 					Finally gonna see some underwear!
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="3-interested.png">
+					I'm surprised it took this long to get you down to your underwear, ~name~. Are you feeling okay?
 				</state>
 			</case>
 			<case tag="female_removing_major" filter="princess"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -1518,9 +1558,14 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="4-interested.png">
+					The shimmy as you strip makes up for it, though.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="4-interested.png">
-					Finally gonna see some underwear!
+					Finally gonna see some underwear! I mean, other than mine.
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -1823,9 +1868,14 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="5-interested.png">
+					The shimmy as you strip makes up for it, though.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="5-interested.png">
-					Finally gonna see some underwear!
+					Finally gonna see some underwear! I mean, other than mine.
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -2122,9 +2172,14 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="6-interested.png">
+					The shimmy as you strip makes up for it, though.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="6-interested.png">
-					Finally gonna see some underwear!
+					Finally gonna see some underwear! I mean, other than mine.
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -2421,6 +2476,11 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="7-interested.png">
+					The shimmy as you strip makes up for it, though.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="7-interested.png">
 					Finally gonna see some underwear!
@@ -2715,6 +2775,11 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="8-interested.png">
+					The shimmy as you strip makes up for it, though.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="8-interested.png">
 					Finally gonna see some underwear!
@@ -2982,6 +3047,11 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="9-interested.png">
+					The shimmy as you strip makes up for it, though.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="9-interested.png">
 					Finally gonna see some underwear!
@@ -3234,6 +3304,11 @@
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="10-calm.png">
 					You could at least dance to make it interesting or something.
+				</state>
+			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="10-interested.png">
+					The shimmy as you strip makes up for it, though.
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
