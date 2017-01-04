@@ -564,6 +564,9 @@
             <case tag="female_removed_major" target="spooky">
                 <state img="3-shocked.png">Did you just-- did you just apparate clothes? Without a wand?</state>
             </case>
+            <case tag="female_removed_major" filter="innocent">
+                <state img="3-calm.png">If you need some advice, I'd be happy to chat later.</state>
+            </case>
             <case tag="male_large_crotch_is_visible">
                 <state img="3-shocked.png">Is it supposed to look... swollen like that?</state>
             </case>
@@ -599,6 +602,9 @@
             </case>
             <case tag="male_removing_major">
                 <state img="3-happy.png">My strategy is paying off - and how!</state>
+            </case>
+            <case tag="male_removing_major" filter="innocent">
+                <state img="3-sad.png">I'm glad I didn't lose, but somehow I'm feeling embarrassed.</state>
             </case>
             <case tag="female_removed_accessory">
                 <state img="3-calm.png">The evening is young... perhaps it will get more exciting as we progress.</state>
@@ -654,11 +660,17 @@
             <case tag="female_removing_accessory">
                 <state img="3-loss.png">Is that all?</state>
             </case>
+            <case tag="female_removing_accessory" filter="shy">
+                <state img="3-smug.png">That's about what I expected from you, ~name~.</state>
+            </case>
             <case tag="game_over_victory">
                 <state img="3-excited.png">This went even better than I expected!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="3-happy.png">My strategy is paying off - and how!</state>
+            </case>
+            <case tag="female_removing_major" filter="innocent">
+                <state img="3-sad.png">I'm glad I didn't lose, but somehow I'm feeling embarrassed.</state>
             </case>
             <case tag="male_removing_minor">
                 <state img="3-calm.png">I see!</state>
@@ -882,6 +894,9 @@
             <case tag="female_must_strip">
                 <state img="5-calm.png">Let's just get this game over with, shall we?</state>
             </case>
+            <case tag="female_must_strip" filter="mean">
+                <state img="5-calm.png">The faster you strip, the faster I win.</state>
+            </case>
             <case tag="male_chest_will_be_visible">
                 <state img="5-horny.png">Don't worry - I'll be a lady and not stare... Much.</state>
             </case>
@@ -896,6 +911,9 @@
             </case>
             <case tag="female_removed_major" filter="mean">
                 <state img="5-smug.png">Consider this payback!</state>
+            </case>
+            <case tag="female_removed_major" filter="shy">
+                <state img="5-calm.png">It could be worse, ~name~. You still have your underwear on, after all!</state>
             </case>
             <case tag="female_removed_major" target="spooky">
                 <state img="5-interested.png">I didn't know ghosts could apparate clothes like that! What else can you do?</state>
@@ -930,6 +948,9 @@
             <case tag="female_start_masturbating">
                 <state img="5-interested.png">Of course, I'm not interested in girls myself, so...</state>
             </case>
+            <case tag="female_start_masturbating" filter="innocent">
+                <state img="5-shocked.png">Not that I think of him when I-- I mean, I don't even... Oh! Just get on with it.</state>
+            </case>
             <case tag="male_removing_major">
                 <state img="5-excited.png">This is all rather exciting, isn't it?</state>
             </case>
@@ -953,6 +974,9 @@
             </case>
             <case tag="female_must_masturbate">
                 <state img="5-smug.png">I'll bet Harry wishes he could see THIS.</state>
+            </case>
+            <case tag="female_must_masturbate" filter="innocent">
+                <state img="5-interested.png">Just lie back and think of... well, I don't know. Think of Harry!</state>
             </case>
             <case tag="male_human_must_strip">
                 <state img="5-smug.png">I see that ~name~ has lost the hand.</state>
