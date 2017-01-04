@@ -138,7 +138,7 @@
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-interested.png">
-					Oh! Magic ~clothing~?
+					Oh! Is your ~clothing~? magic?
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -247,7 +247,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-interested.png">
-					Oh! Magic ~clothing~?
+					Oh! Is your ~clothing~ magic?
 				</state>
 			</case>
 			<case tag="female_removing_accessory" target="hermione"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
@@ -280,6 +280,11 @@
 					Ha ha! Looks like someone's blushing!
 				</state>
 			</case>
+			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
+				<state img="0-awkward.png">
+					Nothing personal, ~name~. It's only a game!
+				</state>
+			</case>
 			<case tag="female_chest_will_be_visible" filter="confident"> <!-- a female player's chest will become visible -->
 				<state img="0-nervous.png">
 					...I expected you to blush. Have I fallen into some kind of trap?
@@ -296,7 +301,7 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-happy.png">Yes, it's a rare loot drop: the ~clothing~ of agility!</state>
-				<state img="0-calm.png">Oh, my mistake. So why all the fuss then?</state>
+				<state img="0-awkward.png">Oh, my mistake - just ordinary ~clothing~. So why all the fuss then?</state>
 			</case>
 			<case tag="female_removed_accessory" target="blackrose"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-sad.png">
@@ -320,6 +325,9 @@
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="0-sad.png">This feels like I'm picking on a newbie.</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="0-calm.png">...Although you're handling it well. Better than I would, honestly.</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="0-shocked.png">
@@ -598,6 +606,11 @@
 					Ha ha! Looks like someone's blushing!
 				</state>
 			</case>
+			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
+				<state img="1-awkward.png">
+					Nothing personal, ~name~. It's only a game!
+				</state>
+			</case>
 			<case tag="female_chest_will_be_visible" filter="confident"> <!-- a female player's chest will become visible -->
 				<state img="1-nervous.png">
 					...I expected you to blush. Have I fallen into some kind of trap?
@@ -628,6 +641,9 @@
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="1-sad.png">This feels like I'm picking on a newbie.</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="1-calm.png">...Although you're handling it well. Better than I would, honestly.</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="1-shocked.png">
@@ -766,7 +782,7 @@
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
 				<state img="2-interested.png">
-					Oh! Magic ~clothing~!
+					Oh! There's a magical aura aroud your ~clothing~!
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -888,7 +904,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="2-interested.png">
-					Oh! Magic ~clothing~!
+					Oh! There's a magical aura around your ~clothing~!
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -914,6 +930,11 @@
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="2-interested.png">
 					Ha ha! Looks like someone's blushing!
+				</state>
+			</case>
+			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
+				<state img="2-awkward.png">
+					Nothing personal, ~name~. It's only a game!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible" filter="confident"> <!-- a female player's chest will become visible -->
@@ -1226,6 +1247,11 @@
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="3-interested.png">
 					Ha ha! Looks like someone's blushing!
+				</state>
+			</case>
+			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
+				<state img="3-awkward.png">
+					Nothing personal, ~name~. It's only a game!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible" filter="confident"> <!-- a female player's chest will become visible -->
