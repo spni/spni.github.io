@@ -138,7 +138,7 @@
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-interested.png">
-					Oh! Is your ~clothing~? magic?
+					Oh! Do you have magic ~clothing~?
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -247,7 +247,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-interested.png">
-					Oh! Is your ~clothing~ magic?
+					Oh! Do you have magic ~clothing~?
 				</state>
 			</case>
 			<case tag="female_removing_accessory" target="hermione"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
@@ -953,7 +953,7 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="2-happy.png">Ooh, a rare loot drop: ~clothing~ of charm +2!</state>
-				<state img="2-happy.png">It's too bad you couldn't get ~clothing~ that improves luck!</state>
+				<state img="2-happy.png">It's too bad you couldn't get ~clothing~ of luck!</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-angry.png">
