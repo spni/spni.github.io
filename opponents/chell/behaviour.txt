@@ -1,0 +1,123 @@
+#required for behaviour.xml
+first=Chell
+last=
+label=Chell
+gender=female
+size=small
+#Number of phases to "finish"
+timer=20
+
+#required for meta.xml
+#start picture
+pic=0-calm
+height=5'6"
+from=Portal
+writer=throwaway10671
+artist=Skell-134 & throwaway10671
+description=Test Subject #1 at the Aperture Science computer-aided Enrichment Center.
+
+#Chell's Clothing:
+clothes=Boots,boots,minor,lower
+clothes=Shirt,shirt,major,upper
+clothes=Undershirt,undershirt,important,upperc
+clothes=Pants,pants,major,lower
+clothes=Panties,panties,important,lower
+
+#starting picture and text
+start=0-calm,... ... ... ...
+
+##individual behaviour
+#entries without a number are used when there are no stage-specific entries
+
+#default card behaviour
+#you can include multiple entries to give the character multiple lines and/or appearances in that situation.
+#This is what a character says while they're exchanging cards.
+swap_cards=calm,...
+
+#The character thinks they have a good hand
+good_hand=happy,!
+
+#The character thinks they have a bad hand
+okay_hand=concerned,...
+
+#The character thinks they have a bad hand
+bad_hand=angry,?!
+
+#stripping default
+#This is the character says once they've lost a hand, but before they strip
+must_strip_winning=loss,...?
+must_strip_normal=loss,...
+must_strip_losing=loss,?!?!?
+stripping=strip,... ... ...
+stripped=stripped,!!! !!! !!!
+
+#masturbation
+#these situations relate to when the character is masturbating
+#these only come up in the relevant stages, so you don't need to include the stage numbers here
+#just remember which stage is which when you make the images
+must_masturbate_first=loss,!!!
+must_masturbate=loss,!?!?!?! !!!
+start_masturbating=starting,... ... ...
+heavy_masturbating=heavy,!!! !!! !!! !!! !!!
+finishing_masturbating=finishing,!!!!!!!!!!!!
+finished_masturbating=finished,!!!... ...
+
+game_over_defeat=concerned,...?!
+game_over_victory=happy,!!!
+
+#situations where another male character is stripping
+male_human_must_strip=excited,...?
+male_must_strip=excited,...
+
+male_removing_accessory=concerned,?...
+male_removed_accessory=angry,!?!?!
+
+male_removing_minor=calm,!
+male_removed_minor=happy,!...
+
+male_removing_major=excited,!
+male_removed_major=happy,!!!
+
+male_chest_will_be_visible=excited,...!!!
+male_chest_is_visible=excited,!!!!!
+
+#male crotches have different sizes, allowing your character to have different responses
+male_crotch_will_be_visible=horny,???
+male_small_crotch_is_visible=concerned,...
+male_medium_crotch_is_visible=excited,!
+male_large_crotch_is_visible=horny,!!!
+
+#male masturbation default
+male_must_masturbate=excited,!!!
+male_start_masturbating=horny,..!
+male_masturbating=horny! ! !
+male_finished_masturbating=happy,!
+
+#female stripping default
+#these are mostly the same as the female stripping cases, but the female's size refers to their chest rather than their crotch.
+female_human_must_strip=excited,...?
+female_must_strip=excited,...
+
+female_removing_accessory=concerned,?...
+female_removed_accessory=angry,!?!?!
+
+female_removing_minor=excited,!
+female_removed_minor=happy,!!!
+
+female_removing_major=excited,!
+female_removed_major=excited,!!!
+
+female_chest_will_be_visible=horny,???
+female_small_chest_is_visible=concerned,...
+female_medium_chest_is_visible=excited,!
+female_large_chest_is_visible=horny,!!!
+
+female_crotch_will_be_visible=horny,???
+female_crotch_is_visible=happy,!!!
+
+#female masturbation default
+female_must_masturbate=excited,!!!
+female_start_masturbating=horny,..!
+female_masturbating=horny,! ! !
+female_finished_masturbating=happy,!
+

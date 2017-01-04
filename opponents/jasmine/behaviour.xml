@@ -12,6 +12,14 @@
 	<gender>female</gender>    <!-- Gender (male or female) -->
 	<size>medium</size>      <!-- Size of Naughty Bits (penis if male, boobs if female) -->
     <timer>15</timer>        <!-- Time (in game phases) to 'Finish' -->
+    <tags>
+        <tag>princess</tag>
+        <tag>innocent</tag>
+        <tag>shy</tag>
+        <tag>movie</tag>
+        <tag>cartoon</tag>
+        <tag>straight</tag>
+    </tags>	
 	
 	
 	<!-- Game Start Dialogue -->
@@ -24,14 +32,14 @@
 	<!-- Opponent Wardrobe --> 
 	<!-- Clothing should be listed in reverse order of removal (the first thing removed is the last thing in the list) -->
 	<wardrobe>
-		<clothing proper-name="Earrings" lowercase="earrings" type="extra" position="other" />
-		<clothing proper-name="Necklace" lowercase="necklace" type="extra" position="other" />
-		<clothing proper-name="Cloak" lowercase="cloak" type="major" position="upper" />
+		<clothing proper-name="Pants" lowercase="pants" type="important" position="lower" />
+		<clothing proper-name="Top" lowercase="top" type="important" position="upper" />
 		<clothing proper-name="Diadem" lowercase="diadem" type="extra" position="other" />
 		<clothing proper-name="Slippers" lowercase="slippers" type="minor" position="lower" />
-		<clothing proper-name="Top" lowercase="top" type="important" position="lower" />
-		<clothing proper-name="Pants" lowercase="pants" type="major" position="lower" />
-		<clothing proper-name="Panties" lowercase="panties" type="important" position="lower" />
+		<clothing proper-name="Necklace" lowercase="necklace" type="extra" position="other" />
+		<clothing proper-name="Cloak" lowercase="cloak" type="major" position="upper" />
+		<clothing proper-name="Necklace" lowercase="scarf" type="minor" position="other" />
+		<clothing proper-name="Earrings" lowercase="earrings" type="extra" position="other" />
 	</wardrobe>
 	<!-- An article of clothing can have one of four types: important, major, minor, and extra.
 		 - Important articles of clothing expose the character's chest or crotch when removed (underwear). 
@@ -236,6 +244,11 @@
 					Oh, that counts? I may be better prepared than I thought!
 				</state>
 			</case>
+			<case tag="female_removing_accessory" filter="princess"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+				<state img="0-shocked.png">
+					W-wait. Princess ~name~? What are YOU doing here?
+				</state>
+			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-confused.png">
 					I see! Wait, no I don't. 
@@ -263,6 +276,11 @@
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-confused.png">
 					So... this is fun, is it? Hmm.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-confused.png">
+					I-I mean, there's nothing wrong with that. Your highness. 
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -349,7 +367,7 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="1-calm.png">
-					I wonder - would a Princess outrank a jack?
+					I wonder - would a princess outrank a jack?
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -383,7 +401,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="1-strip.png">
-					I'll give up my necklace. That counts, right?
+					I suppose I have no choice!
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -507,6 +525,11 @@
 					I suppose this makes us even.
 				</state>
 			</case>
+			<case tag="female_removing_accessory" filter="princess"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+				<state img="1-sad.png">
+					I wish I'd known you'd be here, Princess ~name~.
+				</state>
+			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-calm.png">
 					Make yourself more comfortable, ~name~.
@@ -534,6 +557,11 @@
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="1-calm.png">
 					That doesn't even seem like a penalty, but what do I know?
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="1-happy.png">
+					Because, um, I would have worn more appropriate clothing to greet a princess! Right! That's what I meant.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -633,8 +661,8 @@
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
-				<state img="2-angry.png">
-					Be careful with it - it's a family heirloom!
+				<state img="2-shocked.png">
+					What? No, I don't think we've met before. I'm just a plain old regular girl.
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -649,7 +677,7 @@
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
 				<state img="2-loss.png">
-					I can't believe commoners play this game for fun.
+					I can't believe people play this game for fun.
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
@@ -925,7 +953,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="3-strip.png">
-					I don't need this diadem to prove my worth!
+					I'll give up my necklace. That counts, right?
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1176,7 +1204,7 @@
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
 				<state img="4-sad.png">
-					After all, I am still a princess.
+					Be careful with it - it's a family heirloom!
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -1196,7 +1224,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="4-strip.png">
-					I'm down to my last item... good-bye, slippers! You served me well.
+					Good-bye, slippers! You've served me well.
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1446,8 +1474,8 @@
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
-				<state img="5-shocked.png">
-					Well, congratulations to you for a fine game... eh? We're not done yet?!
+				<state img="5-angry.png">
+					Did you think I would back down? That I would cry? You don't know me very well, do you?
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -1467,7 +1495,7 @@
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
 				<state img="5-strip.png">
-					Very well. If I must, I must. 
+					I'm down to my last item...
 				</state>
 			</case>
 			<!-- End of Personal Event Cases -->
@@ -1718,7 +1746,7 @@
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
 				<state img="6-angry.png">
-					Did you think I would back down? That I would cry? You don't know me very well, do you?
+					I am still a princess even without my diadem!
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -1728,12 +1756,12 @@
 			</case>
 			<case tag="must_strip_normal"> <!-- this player lost the hand and isn't winning or losing overall -->
 				<state img="6-loss.png">
-					Oh, if my father could see me now - no longer his precious flower!
+					Your word is my command, my lord.
 				</state>
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
 				<state img="6-loss.png">
-					Stop that! You're leering at me worse than Jafar!
+					You won't get away with this, you monster!
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
@@ -1913,12 +1941,22 @@
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="6-shocked.png">
-					It may be time to have a sleepover at the palace...
+					You're so well endowed! Well. Too bad you're not royalty.
+				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
+				<state img="6-shocked.png">
+					You're a princess AND you're well endowed? Ooh, this isn't fair!
 				</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="6-interested.png">
 					It's like a flower...
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="confident"> <!-- a female player's crotch has become visible -->
+				<state img="6-interested.png">
+					I'd be shaking if I was stripped bare like that! ...I'm jealous of your confidence.
 				</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
@@ -1999,12 +2037,12 @@
 			</case>
 			<case tag="must_strip_normal"> <!-- this player lost the hand and isn't winning or losing overall -->
 				<state img="7-horny.png">
-					Your word is my command, my lord.
+					Oh, if my father could see me now - no longer his precious flower!
 				</state>
 			</case>
 			<case tag="must_strip_losing"> <!-- this player lost the hand and is losing overall -->
 				<state img="7-loss.png">
-					You won't get away with this, you monster!
+					Stop that! You're leering at me worse than Jafar!
 				</state>
 			</case>
 			<case tag="stripping"> <!-- this player is stripping -->
@@ -2716,9 +2754,19 @@
 					Oh, do join in! I could use someone to take charge.
 				</state>
 			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="9-happy.png">
+					I can highly recommend this, your highness...
+				</state>
+			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="9-horny.png">
 					I'll just copy what you're doing, ~name~.
+				</state>
+			</case>
+			<case tag="female_start_masturbating" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="9-interested.png">
+					I feel so relieved! If Princess ~name~ is doing it, it can't be inappropriate.
 				</state>
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
@@ -2726,9 +2774,19 @@
 					If I had one wish... I'd wish for you to join me.
 				</state>
 			</case>
+			<case tag="female_masturbating" filter="princess"> <!-- a female player is masturbating -->
+				<state img="9-confused.png">
+					The scandal this would cause if anyone saw us... well, anyone else.
+				</state>
+			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
 				<state img="9-horny.png">
 					I've learned so much from you!
+				</state>
+			</case>
+			<case tag="female_finished_masturbating" filter="princess"> <!-- a female player has "finished" masturbating -->
+				<state img="9-horny.png">
+					How inspiring! 
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -2944,6 +3002,11 @@
 					I've always wondered how other girls do it...
 				</state>
 			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="10-interested.png">
+					Don't worry, ~name~. A princess can do ANYTHING she wants.
+				</state>
+			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="10-interested.png">
 					Don't you dare close your eyes! I didn't.
@@ -2954,9 +3017,19 @@
 					Your fingers are so skilled! I wonder how they'd feel...
 				</state>
 			</case>
+			<case tag="female_masturbating" filter="princess"> <!-- a female player is masturbating -->
+				<state img="10-horny.png">
+					I should arrange for a royal sleepover sometime. Clothing optional.
+				</state>
+			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
 				<state img="10-happy.png">
-					So now we are sisters, of a kind.
+					So now we are sisters of a kind.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating" filter="princess"> <!-- a female player has "finished" masturbating -->
+				<state img="10-happy.png">
+					At least you're in good company!
 				</state>
 			</case>
 			<!-- End of Female Masturbating Cases -->
@@ -2964,7 +3037,7 @@
 			<!-- Start of Game Over Cases -->
 			<case tag="game_over_defeat">
 				<state img="10-horny.png">
-					A princess is always in control... but it feels so GOOD to lose control... I think I have a new fetish.
+					A princess is always in control... but it felt so GOOD to lose control... I think I have a new fetish.
 				</state>
 			</case>
 			<!-- End of Game Over Cases -->

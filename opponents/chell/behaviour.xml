@@ -1,0 +1,1115 @@
+<opponent>
+
+    <first>Chell</first>
+    <last />
+    <label>Chell</label>
+    <gender>female</gender>
+    <size>small</size>
+    <timer>20</timer>
+    <tags>
+        <tag>video_game</tag>
+        <tag>silent</tag>
+    </tags>	
+
+    <start>
+        <state img="0-calm.png">... ... ... ...</state>
+    </start>
+
+    <wardrobe>
+        <clothing lowercase="panties" position="lower" proper-name="Panties" type="important" />
+        <clothing lowercase="pants" position="lower" proper-name="Pants" type="major" />
+        <clothing lowercase="undershirt" position="upper" proper-name="Undershirt" type="important" />
+        <clothing lowercase="shirt" position="upper" proper-name="Shirt" type="major" />
+        <clothing lowercase="boots" position="lower" proper-name="Boots" type="minor" />
+    </wardrobe>
+
+    <behaviour>
+        <stage id="0">
+            <case tag="female_must_strip">
+                <state img="0-excited.png">...</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="0-excited.png">...!!!</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="0-excited.png">!</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="0-excited.png">!</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="0-excited.png">!!!</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="0-horny.png">!!!</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="0-horny.png">???</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="0-happy.png">!...</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="0-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="0-excited.png">!!!</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="0-horny.png">! ! !</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="0-excited.png">...?</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="0-happy.png">!!!</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="0-horny.png">..!</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="0-excited.png">!</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="0-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="0-happy.png">!!!</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="0-horny.png">..!</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="0-excited.png">!!!!!</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="0-horny.png">!!!</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="0-excited.png">...</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="0-excited.png">!!!</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="0-excited.png">...?</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="0-concerned.png">...</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="0-concerned.png">?...</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="0-happy.png">!</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="0-concerned.png">...</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="0-excited.png">!</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="0-concerned.png">?...</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="0-happy.png">!!!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="0-excited.png">!</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="0-calm.png">!</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="0-happy.png">!</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="0-horny.png">???</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="0-horny.png">! ! !</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="0-happy.png">!!!</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="0-horny.png">???</state>
+            </case>
+            <case tag="good_hand">
+                <state img="0-happy.png">!</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="0-concerned.png">...</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="0-calm.png">...</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="0-angry.png">?!</state>
+            </case>
+            <case tag="stripped">
+                <state img="0-stripped.png">!!! !!! !!!</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="0-loss.png">...</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="0-loss.png">?!?!?</state>
+            </case>
+            <case tag="stripping">
+                <state img="0-strip.png">... ... ...</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="0-loss.png">...?</state>
+            </case>
+        </stage>
+
+        <stage id="1">
+            <case tag="female_must_strip">
+                <state img="1-excited.png">...</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="1-excited.png">...!!!</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="1-excited.png">!</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="1-excited.png">!</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="1-excited.png">!!!</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="1-horny.png">!!!</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="1-horny.png">???</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="1-happy.png">!...</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="1-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="1-excited.png">!!!</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="1-horny.png">! ! !</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="1-excited.png">...?</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="1-happy.png">!!!</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="1-horny.png">..!</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="1-excited.png">!</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="1-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="1-happy.png">!!!</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="1-horny.png">..!</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="1-excited.png">!!!!!</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="1-horny.png">!!!</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="1-excited.png">...</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="1-excited.png">!!!</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="1-excited.png">...?</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="1-concerned.png">...</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="1-concerned.png">?...</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="1-happy.png">!</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="1-concerned.png">...</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="1-excited.png">!</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="1-concerned.png">?...</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="1-happy.png">!!!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="1-excited.png">!</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="1-calm.png">!</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="1-happy.png">!</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="1-horny.png">???</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="1-horny.png">! ! !</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="1-happy.png">!!!</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="1-horny.png">???</state>
+            </case>
+            <case tag="good_hand">
+                <state img="1-happy.png">!</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="1-concerned.png">...</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="1-calm.png">...</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="1-angry.png">?!</state>
+            </case>
+            <case tag="stripped">
+                <state img="1-stripped.png">!!! !!! !!!</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="1-loss.png">...</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="1-loss.png">?!?!?</state>
+            </case>
+            <case tag="stripping">
+                <state img="1-strip.png">... ... ...</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="1-loss.png">...?</state>
+            </case>
+        </stage>
+
+        <stage id="2">
+            <case tag="female_must_strip">
+                <state img="2-excited.png">...</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="2-excited.png">...!!!</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="2-excited.png">!</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="2-excited.png">!</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="2-excited.png">!!!</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="2-horny.png">!!!</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="2-horny.png">???</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="2-happy.png">!...</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="2-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="2-excited.png">!!!</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="2-horny.png">! ! !</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="2-excited.png">...?</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="2-happy.png">!!!</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="2-horny.png">..!</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="2-excited.png">!</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="2-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="2-happy.png">!!!</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="2-horny.png">..!</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="2-excited.png">!!!!!</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="2-horny.png">!!!</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="2-excited.png">...</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="2-excited.png">!!!</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="2-excited.png">...?</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="2-concerned.png">...</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="2-concerned.png">?...</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="2-happy.png">!</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="2-concerned.png">...</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="2-excited.png">!</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="2-concerned.png">?...</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="2-happy.png">!!!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="2-excited.png">!</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="2-calm.png">!</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="2-happy.png">!</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="2-horny.png">???</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="2-horny.png">! ! !</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="2-happy.png">!!!</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="2-horny.png">???</state>
+            </case>
+            <case tag="good_hand">
+                <state img="2-happy.png">!</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="2-concerned.png">...</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="2-calm.png">...</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="2-angry.png">?!</state>
+            </case>
+            <case tag="stripped">
+                <state img="2-stripped.png">!!! !!! !!!</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="2-loss.png">...</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="2-loss.png">?!?!?</state>
+            </case>
+            <case tag="stripping">
+                <state img="2-strip.png">... ... ...</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="2-loss.png">...?</state>
+            </case>
+        </stage>
+
+        <stage id="3">
+            <case tag="female_must_strip">
+                <state img="3-excited.png">...</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="3-excited.png">...!!!</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="3-excited.png">!</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="3-excited.png">!</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="3-excited.png">!!!</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="3-horny.png">!!!</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="3-horny.png">???</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="3-happy.png">!...</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="3-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="3-excited.png">!!!</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="3-horny.png">! ! !</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="3-excited.png">...?</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="3-happy.png">!!!</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="3-horny.png">..!</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="3-excited.png">!</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="3-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="3-happy.png">!!!</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="3-horny.png">..!</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="3-excited.png">!!!!!</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="3-horny.png">!!!</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="3-excited.png">...</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="3-excited.png">!!!</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="3-excited.png">...?</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="3-concerned.png">...</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="3-concerned.png">?...</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="3-happy.png">!</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="3-concerned.png">...</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="3-excited.png">!</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="3-concerned.png">?...</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="3-happy.png">!!!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="3-excited.png">!</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="3-calm.png">!</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="3-happy.png">!</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="3-horny.png">???</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="3-horny.png">! ! !</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="3-happy.png">!!!</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="3-horny.png">???</state>
+            </case>
+            <case tag="good_hand">
+                <state img="3-happy.png">!</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="3-concerned.png">...</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="3-calm.png">...</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="3-angry.png">?!</state>
+            </case>
+            <case tag="stripped">
+                <state img="3-stripped.png">!!! !!! !!!</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="3-loss.png">...</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="3-loss.png">?!?!?</state>
+            </case>
+            <case tag="stripping">
+                <state img="3-strip.png">... ... ...</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="3-loss.png">...?</state>
+            </case>
+        </stage>
+
+        <stage id="4">
+            <case tag="female_must_strip">
+                <state img="4-excited.png">...</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="4-excited.png">...!!!</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="4-excited.png">!</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="4-excited.png">!</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="4-excited.png">!!!</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="4-horny.png">!!!</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="4-horny.png">???</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="4-happy.png">!...</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="4-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="4-excited.png">!!!</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="4-horny.png">! ! !</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="4-excited.png">...?</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="4-happy.png">!!!</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="4-horny.png">..!</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="4-excited.png">!</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="4-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="4-happy.png">!!!</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="4-horny.png">..!</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="4-excited.png">!!!!!</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="4-horny.png">!!!</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="4-excited.png">...</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="4-excited.png">!!!</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="4-excited.png">...?</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="4-concerned.png">...</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="4-concerned.png">?...</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="4-happy.png">!</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="4-concerned.png">...</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="4-excited.png">!</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="4-concerned.png">?...</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="4-happy.png">!!!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="4-excited.png">!</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="4-calm.png">!</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="4-happy.png">!</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="4-horny.png">???</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="4-horny.png">! ! !</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="4-happy.png">!!!</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="4-horny.png">???</state>
+            </case>
+            <case tag="good_hand">
+                <state img="4-happy.png">!</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="4-concerned.png">...</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="4-calm.png">...</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="4-angry.png">?!</state>
+            </case>
+            <case tag="stripped">
+                <state img="4-stripped.png">!!! !!! !!!</state>
+            </case>
+            <case tag="must_strip_normal">
+                <state img="4-loss.png">...</state>
+            </case>
+            <case tag="must_strip_losing">
+                <state img="4-loss.png">?!?!?</state>
+            </case>
+            <case tag="stripping">
+                <state img="4-strip.png">... ... ...</state>
+            </case>
+            <case tag="must_strip_winning">
+                <state img="4-loss.png">...?</state>
+            </case>
+        </stage>
+
+        <stage id="5">
+            <case tag="female_must_strip">
+                <state img="5-excited.png">...</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="5-excited.png">...!!!</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="5-excited.png">!</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="5-excited.png">!</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="5-excited.png">!!!</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="5-horny.png">!!!</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="5-horny.png">???</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="5-happy.png">!...</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="5-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="5-excited.png">!!!</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="5-horny.png">! ! !</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="5-excited.png">...?</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="5-happy.png">!!!</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="5-horny.png">..!</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="5-excited.png">!</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="5-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="5-happy.png">!!!</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="5-horny.png">..!</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="5-excited.png">!!!!!</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="5-horny.png">!!!</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="5-excited.png">...</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="5-excited.png">!!!</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="5-excited.png">...?</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="5-concerned.png">...</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="5-concerned.png">?...</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="5-happy.png">!</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="5-concerned.png">...</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="5-excited.png">!</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="5-concerned.png">?...</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="5-happy.png">!!!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="5-excited.png">!</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="5-calm.png">!</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="5-happy.png">!</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="5-horny.png">???</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="5-horny.png">! ! !</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="5-happy.png">!!!</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="5-horny.png">???</state>
+            </case>
+            <case tag="good_hand">
+                <state img="5-happy.png">!</state>
+            </case>
+            <case tag="okay_hand">
+                <state img="5-concerned.png">...</state>
+            </case>
+            <case tag="swap_cards">
+                <state img="5-calm.png">...</state>
+            </case>
+            <case tag="bad_hand">
+                <state img="5-angry.png">?!</state>
+            </case>
+            <case tag="start_masturbating">
+                <state img="5-starting.png">... ... ...</state>
+            </case>
+            <case tag="stripped">
+                <state img="5-stripped.png">!!! !!! !!!</state>
+            </case>
+            <case tag="must_masturbate_first">
+                <state img="5-loss.png">!!!</state>
+            </case>
+            <case tag="must_masturbate">
+                <state img="5-loss.png">!?!?!?! !!!</state>
+            </case>
+        </stage>
+
+        <stage id="6">
+            <case tag="female_must_strip">
+                <state img="6-excited.png">...</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="6-excited.png">...!!!</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="6-excited.png">!</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="6-excited.png">!</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="6-excited.png">!!!</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="6-horny.png">!!!</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="6-horny.png">???</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="6-happy.png">!...</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="6-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="6-excited.png">!!!</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="6-horny.png">! ! !</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="6-excited.png">...?</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="6-happy.png">!!!</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="6-horny.png">..!</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="6-excited.png">!</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="6-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="6-happy.png">!!!</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="6-horny.png">..!</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="6-excited.png">!!!!!</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="6-horny.png">!!!</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="6-excited.png">...</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="6-excited.png">!!!</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="6-excited.png">...?</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="6-concerned.png">...</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="6-concerned.png">?...</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="6-happy.png">!</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="6-concerned.png">...</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="6-excited.png">!</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="6-concerned.png">?...</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="6-happy.png">!!!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="6-excited.png">!</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="6-calm.png">!</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="6-happy.png">!</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="6-horny.png">???</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="6-horny.png">! ! !</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="6-happy.png">!!!</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="6-horny.png">???</state>
+            </case>
+            <case tag="masturbating">
+                <state img="6-calm.png">... !!! ...</state>
+            </case>
+            <case tag="finishing_masturbating">
+                <state img="6-finishing.png">!!!!!!!!!!!!</state>
+            </case>
+            <case tag="heavy_masturbating">
+                <state img="6-heavy.png">!!! !!! !!! !!! !!!</state>
+            </case>
+        </stage>
+
+        <stage id="7">
+            <case tag="female_must_strip">
+                <state img="7-excited.png">...</state>
+            </case>
+            <case tag="male_chest_will_be_visible">
+                <state img="7-excited.png">...!!!</state>
+            </case>
+            <case tag="female_removing_minor">
+                <state img="7-excited.png">!</state>
+            </case>
+            <case tag="male_medium_crotch_is_visible">
+                <state img="7-excited.png">!</state>
+            </case>
+            <case tag="female_removed_major">
+                <state img="7-excited.png">!!!</state>
+            </case>
+            <case tag="male_large_crotch_is_visible">
+                <state img="7-horny.png">!!!</state>
+            </case>
+            <case tag="female_crotch_will_be_visible">
+                <state img="7-horny.png">???</state>
+            </case>
+            <case tag="male_removed_minor">
+                <state img="7-happy.png">!...</state>
+            </case>
+            <case tag="male_removed_accessory">
+                <state img="7-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_must_masturbate">
+                <state img="7-excited.png">!!!</state>
+            </case>
+            <case tag="female_masturbating">
+                <state img="7-horny.png">! ! !</state>
+            </case>
+            <case tag="female_human_must_strip">
+                <state img="7-excited.png">...?</state>
+            </case>
+            <case tag="female_crotch_is_visible">
+                <state img="7-happy.png">!!!</state>
+            </case>
+            <case tag="female_start_masturbating">
+                <state img="7-horny.png">..!</state>
+            </case>
+            <case tag="male_removing_major">
+                <state img="7-excited.png">!</state>
+            </case>
+            <case tag="female_removed_accessory">
+                <state img="7-angry.png">!?!?!</state>
+            </case>
+            <case tag="male_removed_major">
+                <state img="7-happy.png">!!!</state>
+            </case>
+            <case tag="male_start_masturbating">
+                <state img="7-horny.png">..!</state>
+            </case>
+            <case tag="male_chest_is_visible">
+                <state img="7-excited.png">!!!!!</state>
+            </case>
+            <case tag="female_large_chest_is_visible">
+                <state img="7-horny.png">!!!</state>
+            </case>
+            <case tag="male_must_strip">
+                <state img="7-excited.png">...</state>
+            </case>
+            <case tag="female_must_masturbate">
+                <state img="7-excited.png">!!!</state>
+            </case>
+            <case tag="male_human_must_strip">
+                <state img="7-excited.png">...?</state>
+            </case>
+            <case tag="male_small_crotch_is_visible">
+                <state img="7-concerned.png">...</state>
+            </case>
+            <case tag="male_removing_accessory">
+                <state img="7-concerned.png">?...</state>
+            </case>
+            <case tag="male_finished_masturbating">
+                <state img="7-happy.png">!</state>
+            </case>
+            <case tag="female_small_chest_is_visible">
+                <state img="7-concerned.png">...</state>
+            </case>
+            <case tag="female_medium_chest_is_visible">
+                <state img="7-excited.png">!</state>
+            </case>
+            <case tag="female_removing_accessory">
+                <state img="7-concerned.png">?...</state>
+            </case>
+            <case tag="game_over_victory">
+                <state img="7-happy.png">!!!</state>
+            </case>
+            <case tag="female_removing_major">
+                <state img="7-excited.png">!</state>
+            </case>
+            <case tag="male_removing_minor">
+                <state img="7-calm.png">!</state>
+            </case>
+            <case tag="female_finished_masturbating">
+                <state img="7-happy.png">!</state>
+            </case>
+            <case tag="female_chest_will_be_visible">
+                <state img="7-horny.png">???</state>
+            </case>
+            <case tag="male_masturbating">
+                <state img="7-horny.png">! ! !</state>
+            </case>
+            <case tag="female_removed_minor">
+                <state img="7-happy.png">!!!</state>
+            </case>
+            <case tag="male_crotch_will_be_visible">
+                <state img="7-horny.png">???</state>
+            </case>
+            <case tag="finished_masturbating">
+                <state img="7-finished.png">!!!... ...</state>
+            </case>
+            <case tag="game_over_defeat">
+                <state img="7-concerned.png">...?!</state>
+            </case>
+        </stage>
+
+    </behaviour>
+
+</opponent>
