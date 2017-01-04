@@ -124,7 +124,15 @@ function loadBehaviour (folder, callFunction, slot) {
             var size = $(xml).find('size').text();
             var timer = $(xml).find('timer').text();
             
-            var newPlayer = createNewPlayer(folder, first, last, label, gender, size, [], false, "", Number(timer), 0, 0, [], xml);
+            var tags = $(xml).find('tags');
+            var tagsArray = [];
+            if (typeof tags !== typeof undefined && tags !== false) {
+                $(tags).find('tag').each(function () {
+                    tagsArray.push($(this).text());
+                });
+            }
+            
+            var newPlayer = createNewPlayer(folder, first, last, label, gender, size, [], false, "", Number(timer), tagsArray, 0, 0, [], xml);
             
             loadOpponentWardrobe(newPlayer);
             
@@ -187,7 +195,7 @@ function parseDialogue (caseObject, replace, content) {
  * Updates the behaviour of the given player based on the 
  * provided tag.
  ************************************************************/
-function updateBehaviour (player, tag, replace, content) {
+function updateBehaviour (player, tag, replace, content, opp) {
 	/* determine if the AI is dialogue locked */
 	//Allow characters to speak. If we change forfeit ideas, we'll likely need to change this as well.
 	//if (players[player].forfeit[1] == CANNOT_SPEAK) {
@@ -217,30 +225,68 @@ function updateBehaviour (player, tag, replace, content) {
     }
     
     /* try to find the tag */
-	var found = false;
+	var states = [];
 	$(stage).find('case').each(function () {
 		if ($(this).attr('tag') == tag) {
-            players[player].current = 0;
-			players[player].state = parseDialogue($(this), replace, content);
-			found = true;
+            states.push($(this));
 		}
 	});
-	
+
     /* quick check to see if the tag exists */
-	if (!found) {
+	if (states.length <= 0) {
 		players[player].state = null;
 		console.log("Error: couldn't find "+tag+" dialogue for player "+player+" at stage "+stageNum);
 	}
+    else if (states.length == 1) {
+        players[player].current = 0;
+        players[player].state = parseDialogue(states[0], replace, content);
+    }
+    else {
+        // look for the best match
+        var bestMatch = null;
+        for (var i = 0; i < states.length; i++) {
+            var target = states[i].attr("target");
+            var filter = states[i].attr("filter");
+            
+            if (opp !== null && typeof target !== typeof undefined && target !== false) {
+                target = "opponents/" + target  + "/";
+                if (target === opp.folder) {
+                    console.log("Best match is target!");
+                    bestMatch = states[i];
+                    break;
+                }
+            }
+            else if (opp !== null && typeof filter !== typeof undefined && filter !== false) {
+                // check against tags
+                for (var j = 0; j < opp.tags.length; j++) {
+                    if (filter === opp.tags[j]) {
+                        console.log("Best match is filter!");
+                        bestMatch = states[i];
+                    }
+                }
+            }
+            else if (bestMatch === null) {
+                console.log("Best match is default!");
+                bestMatch = states[i];
+            }
+        }
+        
+        if (bestMatch != null) {
+            players[player].current = 0;
+            players[player].state = parseDialogue(bestMatch, replace, content);
+        }
+        console.log("-------------------------------------");
+    }
 }
 
 /************************************************************
  * Updates the behaviour of all players except the given player 
  * based on the provided tag.
  ************************************************************/
-function updateAllBehaviours (player, tag, replace, content) {
+function updateAllBehaviours (player, tag, replace, content, opp) {
 	for (i = 1; i < players.length; i++) {
 		if (players[i] && i != player) {
-			updateBehaviour(i, tag, replace, content);
+			updateBehaviour(i, tag, replace, content, opp);
 		}
 	}
 }

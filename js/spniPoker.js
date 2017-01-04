@@ -502,7 +502,12 @@ function determineHand (player) {
 			if (have_pair[0] == 1) {
 				hands[player].value = [14, have_pair[1], leftover];
 			} else {
-				hands[player].value = [have_pair[0], have_pair[1], leftover];
+                if (have_pair[0] > have_pair[1]) {
+                    hands[player].value = [have_pair[0], have_pair[1], leftover];
+                }
+				else {
+                    hands[player].value = [have_pair[1], have_pair[0], leftover];
+                }
 			}
 		} else if (have_pair[0] >= 0) {
 			hands[player].strength = PAIR;

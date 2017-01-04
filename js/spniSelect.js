@@ -104,6 +104,11 @@ $groupButton = $("#group-button");
 $groupPageIndicator = $("#group-page-indicator");
 $groupMaxPageIndicator = $("#group-max-page-indicator");
 
+$searchName = $("#search-name");
+$searchSource = $("#search-source");
+$searchTag = $("#search-tag");
+$searchGenderOptions = [$("#search-gender-1"), $("#search-gender-2"), $("#search-gender-3")];
+
 /**********************************************************************
  *****                  Select Screen Variables                   *****
  **********************************************************************/
@@ -126,6 +131,7 @@ var loadedGroups = [];
 /* page variables */
 var individualPage = 0;
 var groupPage = 0;
+var chosenGender = -1;
 
 /* consistence variables */
 var selectedSlot = 0;
@@ -430,12 +436,6 @@ function selectOpponentSlot (slot) {
     if (!players[slot]) {
         /* add a new opponent */
         selectedSlot = slot;
-        
-		/* shallow copy the selectable list */
-		selectableOpponents = [];
-		for (var i = 0; i < loadedOpponents.length; i++) {
-			selectableOpponents[i] = loadedOpponents[i];
-		}
 		
 		/* update max page indicator */
 		$individualMaxPageIndicator.html("of "+Math.ceil(selectableOpponents.length/4));
@@ -840,4 +840,80 @@ function hideGroupSelectionTable() {
     else {
         $groupSelectTable.show();
     }
+}
+
+
+
+function openSearchModal() {
+    $searchModal.modal('show');
+}
+
+
+function closeSearchModal() {
+    var name = $searchName.val().toLowerCase();
+    var source = $searchSource.val().toLowerCase();
+    var tag = $searchTag.val().toLowerCase();
+    
+    // reset filters
+    selectableOpponents = [];
+    
+    // search for matches
+    for (var i = 0; i < loadedOpponents.length; i++) {
+        // filter by name
+        if (name != null && !loadedOpponents[i].label.toLowerCase().includes(name) && !loadedOpponents[i].first.toLowerCase().includes(name) && !loadedOpponents[i].last.toLowerCase().includes(name)) {
+            continue;
+        }
+    
+        // filter by source
+        if (source != null && !loadedOpponents[i].source.toLowerCase().includes(source)) {
+            continue;
+        }
+
+        // filter by tag
+//        var tagMatch = false;
+//        for (var j = 0; j < loadedOpponents[i].tags.length; j++) {
+//            if (loadedOpponents[i].tags[j].toLowerCase().includes(tag)) {
+//                tagMatch = true;
+//            }
+//        }
+//        
+//        if (!tagMatch) {
+//            continue;
+//        }
+
+        // filter by gender
+        if (chosenGender == 2 && loadedOpponents[i].gender !== eGender.MALE) {
+            continue;
+        }
+        else if (chosenGender == 3 && loadedOpponents[i].gender !== eGender.FEMALE) {
+            continue;
+        }
+        
+        selectableOpponents.push(loadedOpponents[i]);
+    }
+    
+    /* hide selected opponents */
+    for (var i = 1; i < players.length; i++) {
+        if (players[i]) {
+            /* find this opponent's placement in the selectable opponents */
+            for (var j = 0; j < selectableOpponents.length; j++) {
+                if (selectableOpponents[j].folder == players[i].folder) {
+                    /* this is a selected player */
+                    selectableOpponents.splice(j, 1);
+                }
+            }
+        }
+    }
+    
+    /* update max page indicator */
+    $individualMaxPageIndicator.html("of "+Math.ceil(selectableOpponents.length/4));
+    
+    // update
+    updateIndividualSelectScreen();
+}
+
+
+function changeSearchGender(gender) {
+    chosenGender = gender;
+    setActiveOption($searchGenderOptions, gender);
 }
