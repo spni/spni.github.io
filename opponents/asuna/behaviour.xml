@@ -252,7 +252,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-interested.png">
-					Oh! Do you have magic ~clothing~?
+					The game begins... and ~name~ is already hurt!
 				</state>
 			</case>
 			<case tag="female_removing_accessory" target="hermione"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
@@ -305,8 +305,8 @@
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="0-happy.png">Yes, it's a rare loot drop: the ~clothing~ of agility!</state>
-				<state img="0-awkward.png">Oh, my mistake - just ordinary ~clothing~. So why all the fuss then?</state>
+				<state img="0-happy.png">I might just win this game yet!</state>
+				<state img="0-happy.png">It's a good start for me!</state>
 			</case>
 			<case tag="female_removed_accessory" target="blackrose"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-sad.png">
@@ -319,9 +319,8 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="0-angry.png">
-					Do you gain experience from something so small?
-				</state>
+				<state img="0-angry.png">Do you gain experience from something so small?</state>
+				<state img="0-angry.png">There's more strategy to this game than I realized.</state>
 			</case>
 			<case tag="female_removed_minor" filter="kind"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-calm.png">
@@ -330,6 +329,7 @@
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="0-sad.png">This feels like I'm picking on a newbie.</state>
+				<state img="0-happy.png">And my guild thought I couldn't handle myself!</state>
 			</case>
 			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="0-calm.png">...Although you're handling it well. Better than I would, honestly.</state>
@@ -636,21 +636,22 @@
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="1-awkward.png">Oh, my mistake - just ordinary ~clothing~. Does it really count, then?</state>
 				<state img="1-happy.png">The ~clothing~ of speed +3... where did you find that?</state>
 				<state img="1-calm.png">I need to upgrade my armor.</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="1-angry.png">
-					You prepared for this game, didn't you?
-				</state>
+				<state img="1-angry.png">Do you gain experience from something so small?</state>
+				<state img="1-angry.png">There's more strategy to this game than I realized.</state>
 			</case>
-			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="1-happy.png">
-					I'm glad to see you came prepared!
+			<case tag="female_removed_minor" filter="kind"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="1-calm.png">
+					Oh, that counts? I should be taking notes!
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="1-sad.png">This feels like I'm picking on a newbie.</state>
+				<state img="1-happy.png">And my guild thought I couldn't handle myself!</state>
 			</case>
 			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="1-calm.png">...Although you're handling it well. Better than I would, honestly.</state>
@@ -967,8 +968,8 @@
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="2-happy.png">Ooh, a rare loot drop: ~clothing~ of charm +2!</state>
-				<state img="2-happy.png">It's too bad you couldn't get ~clothing~ of luck!</state>
+				<state img="2-happy.png">Yes, it's a rare loot drop: the ~clothing~ of charm! Don't worry, you're still charming even without it.</state>
+				<state img="2-happy.png">It's too bad you couldn't get ~clothing~ of luck! Too bad for you, anyway.</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-angry.png">
@@ -976,6 +977,11 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="2-happy.png">
+					I'm glad to see you came prepared!
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="kind"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-happy.png">
 					I'm glad to see you came prepared!
 				</state>
@@ -1303,6 +1309,11 @@
 					I'm glad to see you came prepared!
 				</state>
 			</case>
+			<case tag="female_removed_minor" filter="kind"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-happy.png">
+					I'm glad to see you came prepared!
+				</state>
+			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="3-happy.png">
 					Want to concede the match, ~name~?
@@ -1484,7 +1495,7 @@
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-angry.png">
-					You prepared for this game, didn't you?
+					It seems I've got a lot to learn about playing this game.
 				</state>
 			</case>
 			<case tag="male_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1603,10 +1614,15 @@
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-angry.png">
-					You prepared for this game, didn't you?
+					It seems I've got a lot to learn about playing this game.
 				</state>
 			</case>
 			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="4-angry.png">	
+					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="kind"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-angry.png">	
 					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
 				</state>
@@ -1792,7 +1808,7 @@
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="5-angry.png">
-					You prepared for this game, didn't you?
+					It seems I've got a lot to learn about playing this game.
 				</state>
 			</case>
 			<case tag="male_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1911,10 +1927,15 @@
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="5-angry.png">
-					You prepared for this game, didn't you?
+					It seems I've got a lot to learn about playing this game.
 				</state>
 			</case>
 			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="5-angry.png">	
+					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="kind"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="5-angry.png">	
 					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
 				</state>
@@ -2100,7 +2121,7 @@
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="6-angry.png">
-					You prepared for this game, didn't you?
+					It seems I've got a lot to learn about playing this game.
 				</state>
 			</case>
 			<case tag="male_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -2217,15 +2238,20 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="6-stunned.png">
-					Another rare loot drop: ~clothing~ of luck!  ...Wait. Luck? You'd better not be cheating!
+					Another rare loot drop: ~clothing~ of luck!  ...Wait. LUCK? You'd better not be cheating!
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="6-angry.png">
-					You prepared for this game, didn't you?
+					It seems I've got a lot to learn about playing this game.
 				</state>
 			</case>
 			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="6-angry.png">	
+					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="kind"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="6-angry.png">	
 					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
 				</state>
@@ -2409,7 +2435,7 @@
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="7-angry.png">
-					You prepared for this game, didn't you?
+					It seems I've got a lot to learn about playing this game.
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -2521,7 +2547,7 @@
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="7-angry.png">
-					You prepared for this game, didn't you?
+					It seems I've got a lot to learn about playing this game.
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -2961,7 +2987,7 @@
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="9-angry.png">
-					You prepared for this game, didn't you?
+					It seems I've got a lot to learn about playing this game.
 				</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
@@ -3073,7 +3099,7 @@
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="9-angry.png">
-					You prepared for this game, didn't you?
+					It seems I've got a lot to learn about playing this game.
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
