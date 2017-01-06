@@ -109,6 +109,9 @@
             <case tag="female_large_chest_is_visible">
                 <state img="0-surprised.png">Do those hurt your back?</state>
             </case>
+	    <case tag="female_large_chest_is_visible" alsoPlaying="streaming-chan">
+		<stage img="0-smug.png">I can imagine those are... very well-liked on the little stream over there...</state>
+	    </case>
             <case tag="male_must_strip">
                 <state img="0-smug.png">~name~, you're up.</state>
                 <state img="0-calm.png">It seems ~name~ lost the round.</state>
@@ -206,7 +209,7 @@
                 <state img="0-strip.png">Oh well. It was getting hot in here anyway.</state>
             </case>
 	    <case tag="stripping" alsoPlaying="streaming-chan">
-		<state img="0-strip.png">Is this really being streamed to so many people?</state>
+		<state img="0-strip.png">Is this really being streamed to so many people? That brings back... bad memories.</state>
 	    </case>
             <case tag="must_strip_winning">
                 <state img="0-loss.png">Only a matter of time, I suppose.</state>
