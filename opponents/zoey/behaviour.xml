@@ -15,6 +15,7 @@
         <tag>video game</tag>
         <tag>bi-curious</tag>
         <tag>sarcastic</tag>
+        <tag>confident</tag>
     </tags>
 	
 	<!-- Game Start Information -->
@@ -231,9 +232,6 @@
 				<state img="0-interested.png">Do you want us to queue up some music, ~name~?</state>
 				<state img="0-interested.png">Don't be shy, ~name~.</state>
 			</case>
-			<case tag="female_must_strip" filter="shy"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="0-loss.png">You DO understand the game we're playing, don't you, ~name~?</state>
-			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-happy.png">
 					Alright! Time to see how freaky you are, ~name~!
@@ -266,7 +264,7 @@
 			</case>
 			<case tag="female_removing_major" filter="kind"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="0-sad.png">
-					I feel bad about beating you like this. Not bad enough to stop you, but bad.
+					I feel bad about beating you this fast. Not bad enough to stop you, though.
 				</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -276,7 +274,7 @@
 			</case>
 			<case tag="female_removing_major" filter="princess"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="0-interested.png">
-					I'm guessing 'caution' and 'modesty' aren't royal traits.
+					I'm guessing 'caution' and 'modesty' aren't particularly royal traits.
 				</state>
 			</case>
 			<case tag="female_removing_major" target="hermione"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -327,13 +325,13 @@
 				</state>
 			</case>
 			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="0-loss.png">
+				<state img="0-sad.png">
 					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-happy.png">
-					Well maybe if we keep playing we'll actually see something good.
+					Well, maybe if we keep playing we'll actually see something good.
 				</state>
 			</case>
 			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -348,7 +346,7 @@
 				<state img="0-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
 			</case>
 			<case tag="female_removed_major" filter="shy">
-				<state img="0-interested.png">Blushing already? Ever thought strip poker might not be the game for you?</state>
+				<state img="0-interested.png">Blushing already? Ever thought strip poker might NOT be the game for you?</state>
 			</case>
 			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="0-interested.png">No hesitation at all, huh? This is gonna get interesting.</state>
@@ -456,7 +454,7 @@
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="0-happy.png">Funny, sexy brunette zombie killer wanted to beat helpless group at strip poker.</state>
+                <state img="0-shocked.png">Holy crap. I should have bought lottery tickets.</state>
             </case>
 			
 		</stage>
@@ -661,7 +659,7 @@
 			</case>
 			<case tag="female_removing_major" filter="kind"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="1-sad.png">
-					I feel bad about beating you like this. Not bad enough to stop you, but bad.
+					I feel bad about beating you this fast. Not bad enough to stop you, though.
 				</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -671,7 +669,7 @@
 			</case>
 			<case tag="female_removing_major" filter="princess"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="1-interested.png">
-					I'm guessing 'caution' and 'modesty' aren't royal traits.
+					I'm guessing 'caution' and 'modesty' aren't particularly royal traits.
 				</state>
 			</case>
 			<case tag="female_removing_major" target="hermione"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -717,13 +715,13 @@
 				</state>
 			</case>
 			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="1-loss.png">
+				<state img="1-sad.png">
 					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-happy.png">
-					Well maybe if we keep playing we'll actually see something good.
+					Well, maybe if we keep playing we'll actually see something good.
 				</state>
 			</case>
 			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -738,7 +736,7 @@
 				<state img="1-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
 			</case>
 			<case tag="female_removed_major" filter="shy">
-				<state img="1-interested.png">Blushing already? Ever thought strip poker might not be the game for you?</state>
+				<state img="1-interested.png">Blushing already? Ever thought strip poker might NOT be the game for you?</state>
 			</case>
 			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="1-interested.png">No hesitation at all, huh? This is gonna get interesting.</state>
@@ -846,7 +844,7 @@
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="1-happy.png">Funny, sexy brunette zombie killer wanted to beat helpless group at strip poker.</state>
+                <state img="1-shocked.png">Holy crap. I should have bought lottery tickets.</state>
             </case>
 			
 		</stage>
@@ -1055,7 +1053,7 @@
 			</case>
 			<case tag="female_removing_major" filter="kind"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="2-sad.png">
-					I feel bad about beating you like this. Not bad enough to stop you, but bad.
+					I feel bad about beating you this fast. Not bad enough to stop you, though.
 				</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -1070,7 +1068,7 @@
 			</case>
 			<case tag="female_removing_major" filter="princess"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="2-interested.png">
-					I'm guessing 'caution' and 'modesty' aren't royal traits.
+					I'm guessing 'caution' and 'modesty' aren't particularly royal traits.
 				</state>
 			</case>
 			<case tag="female_removing_major" target="hermione"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -1081,6 +1079,11 @@
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="2-interested.png">
 					Tell me, what's it like being an exhibitionist?
+				</state>
+			</case>
+			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
+				<state img="2-interested.png">
+					They say the best way to deal with shyness is to face it head on... how's that working out for ya?
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
@@ -1111,13 +1114,13 @@
 				</state>
 			</case>
 			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="2-loss.png">
+				<state img="2-sad.png">
 					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-happy.png">
-					Well maybe if we keep playing we'll actually see something good.
+					Well, maybe if we keep playing we'll actually see something good.
 				</state>
 			</case>
 			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1132,7 +1135,7 @@
 				<state img="2-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
 			</case>
 			<case tag="female_removed_major" filter="shy">
-				<state img="2-interested.png">Blushing already? Ever thought strip poker might not be the game for you?</state>
+				<state img="2-interested.png">Blushing already? Ever thought strip poker might NOT be the game for you?</state>
 			</case>
 			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="2-interested.png">No hesitation at all, huh? This is gonna get interesting.</state>
@@ -1245,7 +1248,7 @@
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="2-happy.png">Funny, sexy brunette zombie killer wanted to beat helpless group at strip poker.</state>
+                <state img="2-happy.png">Tradition now dictates that I shake my fully-clothed ass at you whilst singing 'nya-na-na-na-na'.</state>
             </case>
 			
 		</stage>
@@ -1459,7 +1462,7 @@
 			</case>
 			<case tag="female_removing_major" filter="kind"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-sad.png">
-					I feel bad about beating you like this. Not bad enough to stop you, but bad.
+					I feel bad about beating you this fast. Not bad enough to stop you, though.
 				</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -1474,7 +1477,7 @@
 			</case>
 			<case tag="female_removing_major" filter="princess"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-interested.png">
-					I'm guessing 'caution' and 'modesty' aren't royal traits.
+					I'm guessing 'caution' and 'modesty' aren't particularly royal traits.
 				</state>
 			</case>
 			<case tag="female_removing_major" target="hermione"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
@@ -1485,6 +1488,11 @@
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="3-interested.png">
 					Tell me, what's it like being an exhibitionist?
+				</state>
+			</case>
+			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
+				<state img="3-interested.png">
+					They say the best way to deal with shyness is to face it head on... how's that working out for ya?
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
@@ -1515,13 +1523,13 @@
 				</state>
 			</case>
 			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="3-loss.png">
+				<state img="3-sad.png">
 					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-happy.png">
-					Well maybe if we keep playing we'll actually see something good.
+					Well, maybe if we keep playing we'll actually see something good.
 				</state>
 			</case>
 			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1644,7 +1652,7 @@
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="3-happy.png">Funny, sexy brunette zombie killer wanted to beat helpless group at strip poker.</state>
+                <state img="3-happy.png">Tradition now dictates that I shake my fully-clothed ass at you whilst singing 'nya-na-na-na-na'.</state>
             </case>
 			
 		</stage>
@@ -2002,7 +2010,7 @@
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="4-happy.png">Funny, sexy brunette zombie killer wanted to beat helpless group at strip poker.</state>
+                <state img="4-happy.png">Tradition now dictates that I shake my fully-clothed ass at you whilst singing 'nya-na-na-na-na'.</state>
             </case>
 			
 		</stage>
@@ -2036,7 +2044,7 @@
 			<!-- personal event cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
 				<state img="5-sad.png">
-					Oh, c'mon, you guys are a little disappointed, right?
+					Oh, c'mon, you guys are a LITTLE disappointed, right?
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -2360,7 +2368,7 @@
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="5-happy.png">I did it! Can you believe it?</state>
+                <state img="5-happy.png">Tradition now dictates that I shake my fully-clothed ass at you whilst singing 'nya-na-na-na-na'.</state>
             </case>
 			
 		</stage>
@@ -2712,7 +2720,7 @@
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="6-happy.png">I did it! Can you believe it?</state>
+                <state img="6-happy.png">Tradition now dictates that I shake my fully-clothed ass at you whilst singing 'nya-na-na-na-na'.</state>
             </case>
 			
 		</stage>
@@ -3059,7 +3067,7 @@
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="7-happy.png">I did it! Can you believe it?</state>
+                <state img="7-happy.png">Tradition now dictates that I shake my fully-clothed ass at you whilst singing 'nya-na-na-na-na'.</state>
             </case>
 			
 		</stage>
@@ -3406,7 +3414,7 @@
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="8-happy.png">I did it! Can you believe it?</state>
+                <state img="8-sad.png">I won! I did it! I get to stand here naked, the only one who hasn't cum!  ...Oh, crap. I'm the real loser, aren't I?</state>
             </case>
 			
 		</stage>
@@ -3721,7 +3729,7 @@
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="9-happy.png">I did it! Can you believe it?</state>
+                <state img="9-sad.png">I won! I did it! I get to stand here naked, the only one who hasn't cum!  ...Oh, crap. I'm the real loser, aren't I?</state>
             </case>
 			
 		</stage>
