@@ -269,7 +269,8 @@ function updateBehaviour (player, tag, replace, content, opp) {
 	    else if (typeof alsoPlaying !== typeof undefined && alsoPlaying !== false) {
 	    	for (var j = 0; j < players.length; j++) {
 		    if (opp !== players[j]) {
-		    	if ("opponents/" + alsoPlaying + "/" === players[j].folder) {
+			var tempFolder = "opponents/" + alsoPlaying + "/";
+		    	if (tempFolder === players[j].folder) {
 				console.log("Best match is alsoPlaying!");
 				bestMatch = states[i];
 				break;
