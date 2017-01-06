@@ -1,0 +1,970 @@
+#Data for Nagisa Furukawa character
+#IMPORTANT EXPORT NOTE: After converting this file with Python, you must do a find/replace of the behaviour.xml in a text editor. Convert all "&lt;" to "<" and convert all "&gt;" to ">". This is because the make_xml/py converter transforms the html markup into displayed characters.
+
+#required for behaviour.xml and meta.xml
+first=Nagisa
+last=Furukawa
+label=Nagisa
+gender=female
+size=medium
+#Number of phases to "finish"
+timer=9
+pic=selectscreen
+height=5'1"
+from=Clannad
+writer=Arcess
+artist=Arcess
+description=Nagisa from Clannad knows that even with fun and happy things, change is inevitable. In this game, change itself is the fun thing.
+
+#At the time of writing, tags were not supported by make_xml.py, so I've commented them out for future use. A version ready to paste into an assembled xml file is also here.
+#tags=innocent,Japanese,kind,school_uniform,shy,straight,anime,visual_novel
+#<tags><tag>innocent</tag><tag>Japanese</tag><tag>kind</tag><tag>school_uniform</tag><tag>shy</tag><tag>straight</tag><tag>anime</tag><tag>visual_novel</tag></tags>
+
+
+#CLOTHING
+#Nagisa wears her winter school uniform. Underneath, she has a dango-colored bra and cherry blossom panties.
+clothes=Shoes,shoes,extra,lower
+clothes=Socks,socks,minor,lower
+clothes=Jacket,jacket,extra,upper
+clothes=Shirt,shirt,major,upper
+clothes=Skirt,skirt,major,lower
+clothes=Bra,bra,important,upper
+clothes=Panties,panties,important,lower
+
+#Nagisa is holding a "Dango" plushie in her select screen image. This image cannot be automatically generated due to automatically generated image layer constraints, so I photoshopped it in. The Dango is a made from a Kisekae speech bubble, then with two simple lines added for eyes.
+start=selectscreen,My name is Nagisa Furukawa. It's nice to meet you all!
+
+
+
+#EXCHANGING CARDS
+0-swap_cards=thinking,Could I please have ~cards~?
+0-swap_cards=shy,May I please have ~cards~?
+0-swap_cards=calm,I'll have ~cards~ if that's okay.
+0-swap_cards=calm,Can I swap ~cards~?
+1-swap_cards=idea,~cards~ for me, please.
+1-swap_cards=calm,Just ~cards~ this time.
+1-swap_cards=raisedhand,Could I ask for ~cards~?
+1-swap_cards=happy,I'd like ~cards~.
+2-swap_cards=happy,~cards~, please.
+2-swap_cards=calm,I choose ~cards~ this time.
+2-swap_cards=calm,I'll trade ~cards~.
+2-swap_cards=handsbehindback,Could I try ~cards~?
+3-swap_cards=thinking,Hmmm. I'll get ~cards~.
+3-swap_cards=sad,Would it be too much to ask for ~cards~?
+3-swap_cards=thinking,I'd like to request ~cards~, please!
+3-swap_cards=calm,I'll try ~cards~.
+4-swap_cards=openarms,I'll have 2. Wait, um, ~cards~!
+4-swap_cards=happy,~cards~ for me, please.
+4-swap_cards=shy,Oh, I have to swap ~cards~ of these.
+4-swap_cards=shy,Maybe ~cards~?
+5-swap_cards=determined,I'll keep what I have. Except for these ~cards~.
+5-swap_cards=idea,Could you please allow me to have ~cards~? 
+5-swap_cards=idea,I have to try ~cards~.
+5-swap_cards=covering,May I have ~cards~?
+6-swap_cards=shy,~cards~...
+6-swap_cards=calm,I'm really hoping that ~cards~ more will help.
+6-swap_cards=calm,Oh, ~cards~, I think.
+6-swap_cards=peaceful,Maybe I could make it with ~cards~?
+7-swap_cards=embarrassed,I really need ~cards~.
+7-swap_cards=worried,~cards~... and please be enough.
+7-swap_cards=determined,I have to trade ~cards~.
+7-swap_cards=worried,I have to get ~cards~.
+
+
+
+#COMMENTS ON HAND VIABILITY
+#fully clothed
+0-good_hand=happy,Do you like this game? I like it very, very much!
+0-okay_hand=thinking,I think I should be okay with this one.
+0-okay_hand=thinking,This should be enough, I hope.
+0-okay_hand=thinking,Oh, this is okay.
+0-bad_hand=shy,I'm sure that everybody else has better than this.
+0-bad_hand=worried,Oh...
+
+#lost shoes
+1-good_hand=singing,Dango, dango, dango, dango, dango, big dango family!
+1-okay_hand=strip,I have a pair... of socks.
+1-okay_hand=happy,Mmm, it's okay.
+1-okay_hand=calm,No harm in trying.
+1-bad_hand=sad,I'm such a ditz sometimes.
+1-bad_hand=shy,I'd be lying if I said I wasn't a little disappointed by these cards.
+1-bad_hand=oneleg,I hope I don't lose my socks too...
+
+#lost socks and shoes
+2-good_hand=interested,This is better than my last hand!
+2-good_hand=interested,I think my jacket is safe!
+2-okay_hand=calm,This hand is probably enough.
+2-okay_hand=handsbehindback,I guess this should be okay.
+2-bad_hand=worried,I might lose this one...
+2-bad_hand=worried,I guess I don't know much about poker...
+
+#lost jacket
+3-good_hand=wink,Yeah!
+3-good_hand=happy,I have something good!
+3-good_hand=excited,What did everybody else get?
+3-okay_hand=thinking,Well, it's something.
+3-okay_hand=thinking,I wonder if maybe...
+3-bad_hand=shy,I don't know about this...
+3-bad_hand=stripped,Aw, man...
+3-bad_hand=shy,Ah... I'm starting to worry!
+3-bad_hand=shy,I should've worn my coat over my jacket.
+
+#lost 4 items: bra and skirt only
+4-good_hand=calm,I'm so relieved!
+4-good_hand=happy,This is a good hand!
+4-okay_hand=calm,I'm fine. Don't worry about me.
+4-bad_hand=veryembarrassed,My skirt...
+4-bad_hand=stripped,I'm sorry, but I'd better head home...
+4-bad_hand=veryembarrassed,How did I get myself into this mess?
+
+#lost 5 items: underwear only
+5-good_hand=peaceful,I'm not worried anymore.
+5-good_hand=happy,I wish you all the best of luck!
+5-okay_hand=covering,Okay.
+5-okay_hand=idea,This would be enough to survive most rounds.
+5-bad_hand=covering,These cards are telling my fortune... and it's a bad one.
+5-bad_hand=worried,But... but I'm already down to my underwear...
+5-bad_hand=determined,I have to give it my best, no matter how hard it gets!
+5-bad_hand=nervous,Someone told me that if you write the word "person" on your hand, it can help you be less nervous.
+
+#lost 6 items: topless
+6-good_hand=happy,It's all right. I was pretty scared for a second there, though.
+6-good_hand=emphatic,I'm way too old to be showing you my butt, anyway!
+6-okay_hand=happy,I have a nice pair.
+6-okay_hand=calm,I think I'll be okay this hand, but what I really want is my shirt back.
+6-bad_hand=embarrassed,I haven't felt this uneasy since I played Tomoyo After: It's a Wonderful Life.
+6-bad_hand=embarrassed,I'm a nervous wreck. I'm trying not to worry, but I can't help it.
+6-bad_hand=embarrassed,I know that I can leave at any time. I'm sorry, everyone, but I think I have to go home soon.
+
+#lost all clothing
+#using negative numbers counts back from the final stage
+#-3 is while nude, -2 is masturbating, -1 is finished
+-3-good_hand=happy,Yay! These are really good cards!
+-3-good_hand=embarrassed,For a second there, I was afraid I was going to have to do... that.
+-3-good_hand=shocked,I just realised what's going to happen if I win! Oh no!
+-3-okay_hand=embarrassed,I have something, at least.
+-3-okay_hand=worried,This is okay, I guess.
+-3-okay_hand=determined,Just because I lost my clothes doesn't mean I should give up without a fight!
+-3-okay_hand=worried,My dad says I have a mysterious scar on my butt, but I don't believe him!
+-3-bad_hand=embarrassed,I'm so nervous right now, I can even taste it.
+-3-bad_hand=veryembarrassed,I think I'm starting to get nervous again.
+
+
+
+#STRIPPING
+#losing shoes
+0-must_strip_winning=happy,The least I could do is take off something small for losing.
+0-must_strip_winning=happy,Sorry to keep you all waiting.
+0-must_strip_winning=happy,'Kay!
+0-must_strip_normal=worried,I lost, so it's my turn, right? What do I take off? Sorry, this is my first time.
+0-must_strip_normal=worried,Sorry, this is a new experience for me.
+0-must_strip_losing=worried,Wait, you mean I have to play too?
+0-must_strip_losing=embarrassed,Ah! No fair! Who said that I had to go first?
+0-stripping=strip,I'm going to take my shoes off.
+0-stripping=strip,It's okay if I start with my shoes, right?
+1-stripped=stripped,I don't know why I was wearing shoes in here anyway!
+
+#losing socks
+1-must_strip_winning=shy,Thank you guys for playing with me. I know I'm not worth much, but...
+1-must_strip_winning=shy,Everybody was so far ahead of me, I was beginning to feel like I was Tarou Urashima.
+1-must_strip_normal=shy,No, it's okay. I don't mind taking my socks off.
+1-must_strip_losing=sad,I'm a complete amateur.
+1-stripping=strip,This is kinda fun!
+2-stripped=calm,The ground isn't as cold as I expected.
+
+#losing jacket
+2-must_strip_winning=worried,I can take my jacket off now, I guess.
+2-must_strip_winning=crossedarms,No cameras are allowed to be on anymore, right?
+2-must_strip_winning=crossedarms,To be honest, I'm a little embarrassed.
+2-must_strip_normal=determined,I'll work harder next round to make up for this one!
+2-must_strip_losing=worried,Oh no, my jacket was my last piece of clothing before... y'know...
+2-must_strip_losing=shy,I was trying to follow the plan, but I keep messing it up!
+2-stripping=strip,It feels weird to do this with you guys watching.
+2-stripping=strip,Doing this is a little embarrassing, actually.
+2-stripping=strip,Sorry, guys. Just a little nervous.
+3-stripped=stripped,This is my winter uniform, so of course I still have long sleeves.
+
+#losing shirt
+3-must_strip_winning=strip,I... I'm wearing a dango bra. Please don't laugh.
+3-must_strip_normal=sad,I'm sorry. This was really dumb of me.
+3-must_strip_normal=veryembarrassed,Is their any rule against holding my clothes in front of myself after I take them off?
+3-must_strip_losing=veryembarrassed,Ah!
+3-stripping=strip,I've never... I've never taken my shirt off in front of a stranger before...
+4-stripped=relieved,I'm so glad that I got up the courage to do that!
+4-stripped=stripped,It's going to be really hard to hold my cards like this.
+4-stripped=stripped,When I said I'd play a game to help Tomoyo become Student Council President, I didn't know it would be this kind of game!
+
+#losing skirt
+4-must_strip_winning=determined,I just have to imagine that we're all at the beach.
+4-must_strip_normal=determined,No matter how hard things get, I vow to hang in there and never give up!
+4-must_strip_normal=veryembarrassed,Do... do we get our clothes back at the end of the game?
+4-must_strip_losing=veryembarrassed,M-me again?
+4-stripping=stripping,Please don't look!
+5-stripped=determined,From here on out, I know things might be hard sometimes. But no matter what, I don't want to regret anything!
+5-stripped=stripped,I... I'm not wearing a matching set. I just thought they were cute!
+
+#losing bra
+5-must_strip_winning=veryembarrassed,Would it be okay if we played with the lights off? I'm a little shy.
+5-must_strip_winning=veryembarrassed,I don't want you to be totally uninterested...
+5-must_strip_normal=veryembarrassed,I'm sorry! I've only just met you all and I'm already...
+5-must_strip_normal=veryembarrassed,What should I do? I have to keep my panties, but if I take off my bra, I can't cover myself properly...
+5-must_strip_losing=covering,But... nobody else...
+5-stripping=stripping,Anpan!
+5-stripping=stripping,Tonkatsu!
+6-stripped=maximumembarrassed,It's just something I say to cheer myself up when I'm embarrassed. It's weird, isn't it?
+
+#losing panties
+6-must_strip_winning=emphatic,Don't just stare. Say something!
+6-must_strip_winning=veryembarrassed,Y-You're crazy! I'm not cute at all.
+6-must_strip_normal=veryembarrassed,Oh, what should I say? I mean, I've never been in trouble before...
+6-must_strip_losing=maximumembarrassed,I don't want to live on this planet anymore.
+6-stripping=stripping,Could you all close your eyes for about ten seconds?
+6-stripping=stripping,My cherry blossom panties are falling...
+7-stripped=stripped,If you keep looking at me like that, I'm gonna cry.
+7-stripped=determined,Instead of turning to tears, I'm turning to empowerment to win this game!
+7-stripped=veryembarrassed,I'm sorry, but it's not polite to stare!
+
+
+
+##ANOTHER PLAYER MUST STRIP
+#fully clothed
+0-male_human_must_strip=shy,It's... your turn, ~name~.
+0-male_human_must_strip=shy,You lost, so you have to pick something to take off... if you want.
+0-male_human_must_strip=worried,It's okay if you don't want to take anything off. We could play normal poker instead.
+0-male_must_strip=shy,Nobody told me that boys would be playing this too.
+0-male_must_strip=shy,That can just be a practice round if you want. No need to take anything off.
+0-female_human_must_strip=happy,It's your turn, ~name~!
+0-female_human_must_strip=embarrassed,N-No, wait for me! Don't do that!
+0-female_must_strip=thinking,So this means that ~name~ has to take off a piece of clothing, right?
+0-female_must_strip=thinking,I think I know what you're going to choose this time, ~name~.
+0-female_must_strip=thinking,Who was it that lost that round?
+0-female_must_strip=shy,Um, okay.
+
+#lost shoes
+1-male_human_must_strip=shy,I'm really sorry, but it's your turn to lose something, ~name~.
+1-male_human_must_strip=shy,Sorry, but if you don't mind...
+1-male_must_strip=shy,I'm sorry...
+1-male_must_strip=sad,Oh, uh... really? Are you sure?
+1-female_human_must_strip=shy,You're so pretty, ~name~.
+1-female_must_strip=idea,Try to take off something small. Maybe a hairclip?
+1-female_must_strip=raisedhand,Does somebody have to take something off every round, even if it's a draw?
+1-female_must_strip=sad,Oh.
+
+#lost socks and shoes
+2-male_human_must_strip=shy,You really did have the worst hand?
+2-male_human_must_strip=wink,Oh, look, ~name~ has three Aces... I guess he doesn't have to take off anything...
+2-male_must_strip=shy,I'm allowed to not look, right?
+2-female_human_must_strip=sad,Sorry about what happened.
+2-female_must_strip=worried,It's okay! We'll support you!
+2-female_must_strip=worried,Wow, that happened in no time flat!
+
+#lost jacket
+3-male_human_must_strip=shy,You have to take something off, ~name~...
+3-male_must_strip=shy,We have to respect his privacy. Who else agrees?
+3-female_human_must_strip=shy,I won't ever give up!
+3-female_must_strip=happy,I'm happy that it's not me again!
+3-female_must_strip=thinking,Who was it that lost?
+
+#lost shirt
+4-male_human_must_strip=sorry,I won't look if you tell me not to.
+4-male_human_must_strip=openarms,I'll be there to support you, so please do your best!
+4-male_must_strip=determined,So, let's start the next hand right away!
+4-female_human_must_strip=sorry,Don't be afraid, ~name~. Everything's gonna be fine.
+4-female_must_strip=shy,There has to be another way...
+
+#lost skirt (underwear only)
+5-male_human_must_strip=veryembarrassed,It's fine. Actually, please don't change! I like you just the way you are.
+5-male_must_strip=covering,I'm saved!
+5-female_human_must_strip=embarrassed,This is actually a big relief for me, since I haven't had a lot of luck this game.
+5-female_must_strip=embarrassed,This game is getting serious.
+5-female_must_strip=embarrassed,Us girls are just taking off clothes all over the place.
+
+#lost bra (topless)
+6-male_human_must_strip=worried,I know how you all feel, but we shouldn't force him.
+6-male_must_strip=embarrassed,I think girls get more embarrassed than boys about this kind of stuff.
+6-female_human_must_strip=emphatic,Whatever happens, we can get through it together.
+6-female_must_strip=worried,Just because I don't want it to happen to me doesn't mean I want it to happen to someone else!
+
+#lost all clothing items (naked)
+-3-male_human_must_strip=shocked,This makes me feel like a bad girl.
+-3-male_must_strip=embarrassed,Is everyone okay if we just say ~name~ was the winner?
+-3-female_human_must_strip=worried,I think that it's only fair that you take something off too.
+-3-female_must_strip=embarrassed,It's your turn, ~name~.
+
+#finished
+-1-male_human_must_strip=grin,I can't say I'm unhappy...
+-1-male_must_strip=peaceful,I'll stand by watching, just as the shores watch the tide come and go.
+-1-female_human_must_strip=grin,I have to admit, I'm getting really curious.
+-1-female_human_must_strip=peaceful,Even when you lose, I love watching you play, ~name~. I hope that's okay.
+-1-female_must_strip=grin,Well, how about it?
+-1-female_must_strip=embarrassed,This part of the game doesn't feel so difficult now.
+
+
+##ANTOHER CHARACTER REMOVING AN ACCESSORY
+#fully clothed
+0-male_removing_accessory=winkthumbsup,Oh! Thank you very much.
+0-male_removed_accessory=happy,I'm glad you chose your ~clothing~.
+0-male_removed_accessory=happy,Your ~clothing~? 'Kay!
+0-female_removing_accessory=happy,Yep, I knew you were going to take off your ~clothing~!
+0-female_removed_accessory=happy,That conforms to sportsmanship, so I think it's a great idea!
+0-female_removed_accessory=happy,That was great, ~name~! You're the best!
+0-female_removed_accessory=calm,Is it time for the next hand?
+
+#lost shoes
+1-male_removing_accessory=calm,You have to pick something to take off, ~name~...
+1-male_removed_accessory=happy,That was a good choice!
+1-female_removing_accessory=happy,Oh, that's good.
+1-female_removed_accessory=calm,I'm having fun.
+
+#lost socks and shoes
+2-male_removing_accessory=calm,I know you lost that round, but don't give up, all right?
+2-male_removing_accessory=calm,Are you saying you'll take off something small, then? Oh please, you must!
+2-male_removed_accessory=happy,Aw, that's a shame. The ~clothing~ looked good on you.
+2-female_removing_accessory=interested,~name~, I like your ~clothing~.
+2-female_removed_accessory=happy,I wish I could put myself in your shoes.
+2-female_removed_accessory=calm,On to the next round!
+2-female_removed_accessory=worried,Oh, is that so?
+
+#lost jacket
+3-male_removing_accessory=thinking,Time to take off something little?
+3-male_removed_accessory=wink,Yeah, good choice!
+3-female_removing_accessory=wink,If you wanna just play until we've all taken off our shoes, socks, and accessories, then that's okay with me!
+3-female_removed_accessory=excited,Oh, that's perfect! You look so cute!
+3-female_removed_accessory=happy,Perfect! Thank you very much!
+
+#lost shirt
+4-male_removing_accessory=calm,Have you decided what you're going to choose?
+4-male_removed_accessory=happy,Ha, I'm so glad!
+4-female_removing_accessory=shy,You still have something small to take off, don't you?
+4-female_removed_accessory=sorry,I have learned something very valuable from ~name~.
+4-female_removed_accessory=calm,That makes a lot of sense.
+
+#lost skirt (underwear only)
+5-male_removing_accessory=determined,This was the only fair result.
+5-male_removed_accessory=worried,~Clothing~... I wish I still had that left to take off.
+5-female_removing_accessory=idea,Of course.
+5-female_removed_accessory=determined,I would have done the same if I were in your shoes.
+
+#lost bra (topless)
+6-male_removing_accessory=happy,You're doing so well at this game, ~name~!
+6-male_removed_accessory=shy,Much better than me...
+6-female_removing_accessory=peaceful,I'm really surprised that you had your ~clothes~ at this stage in the game, ~name~.
+6-female_removed_accessory=pointingatself,Is it just me, or was that really strange?
+
+#nude
+-3-male_removing_accessory=veryembarrassed,I don't think I have a chance...
+-3-male_removed_accessory=worried,You don't think it's too late for that now?
+-3-female_removing_accessory=stripped,But... but I'm completely exposed!
+-3-female_removed_accessory=determined,That's not good at all! It's cheating!
+
+#finished
+-1-male_removing_accessory=grin,Isn't it nice to have people cheering for you, ~name~?
+-1-male_removed_accessory=embarrassed,If it's okay, I'd like to keep your ~clothing~ as a little memento.
+-1-female_removing_accessory=unsure,I never had a chance.
+-1-female_removing_accessory=closedeyes,You did so well.
+-1-female_removed_accessory=unsure,Are you hiding something?
+
+
+
+##ANOTHER CHARACTER REMOVING MINOR CLOTHING
+#fully clothed
+0-male_removing_minor=shy,If it were me, I think I might be kinda sad.
+0-male_removed_minor=shy,That's what I hoped you were going to pick.
+0-male_removed_minor=embarrassed,I'm worried. I've never been to a place like this.
+0-female_removing_minor=supportive,Don't worry, that doesn't show too much, and you're sure to do great next time!
+0-female_removing_minor=supportive,Don't let yourself be sad over something little like that. 
+0-female_removed_minor=supportive,From now on, I'll try my best to support you.
+0-female_removed_minor=winkthumbsup,I believe in you, ~name~!
+
+#lost shoes
+1-male_removing_minor=sad,I'm sorry, ~name~. I hate to trouble you with all this stuff.
+1-male_removed_minor=happy,That's a good idea.
+1-female_removing_minor=shy,So, do you have a good idea on what to take off?
+1-female_removed_minor=calm,Oh, I love your ~clothing~.
+1-female_removed_minor=idea,Actually, I'm not sure about that. But it sure seems like you had fun!
+
+#lost socks and shoes
+2-male_removing_minor=shy,I'm getting mixed feelings about this whole thing.
+2-male_removing_minor=sad,I know it's not much, but it still makes me a little nervous.
+2-male_removed_minor=happy,I'm always shy around strangers. I'm not very good at making friends, either.
+2-male_removed_minor=shy,I'm sorry for getting shy over something so little.
+2-female_removing_minor=handsbehindback,Oh, your ~clothing~?
+2-female_removed_minor=happy,Wasn't that nice of her? I thought it was.
+
+#lost jacket
+3-male_removing_minor=sad,I don't know, ~name~. I'm sure you mean well and all, but maybe this isn't such a good idea.
+3-male_removed_minor=shy,I'm worried about where this is leading.
+3-female_removing_minor=happy,Let's keep going. We've made it this far by working together, haven't we?
+3-female_removed_minor=wink,You look so cute without the ~clothing~, ~name~!
+
+#lost shirt
+4-male_removing_minor=shy,Um, I'm sorry, but you shouldn't... 
+4-male_removed_minor=sad,That's not so bad, I suppose.
+4-female_removing_minor=openarms,It's okay. I think you're going to win this game, ~name~.
+4-female_removed_minor=happy,Your hair is so shiny. I'm kinda jealous of you.
+
+#lost skirt (underwear only)
+5-male_removing_minor=idea,I was wondering at the start of the game if you were going to lose your ~clothing~.
+5-male_removed_minor=covering,But I didn't expect to be in my underwear when you did...
+5-female_removing_minor=covering,Oh, you lost, ~name~?
+5-female_removed_minor=idea,Be careful! That was a close one.
+
+#lost bra (topless)
+6-male_removing_minor=happy,You're doing great.
+6-male_removed_minor=peaceful,But spare a thought for me! Um, but don't think about me too much...
+6-female_removing_minor=peaceful,You still have unimportant stuff to take off.
+6-female_removed_minor=appreciating,I think you'd make a great girlfriend. You're pretty, and caring, and smart.
+
+#naked
+-3-male_removing_minor=embarrassed,I don't want to lose, but if I win it means that you have to take off even more...
+-3-male_removed_minor=stripped,I feel so conflicted!
+-3-female_removing_minor=worried,I must admit that I am a little bit envious.
+-3-female_removed_minor=determined,I think ~name~ is doing the best she can!
+
+#finished
+-1-male_removing_minor=determined,You really encouraged me when I was losing.
+-1-male_removed_minor=closedeyes,I want to be there to encourage you too.
+-1-female_removing_minor=closedeyes,Yay! Go for it!
+-1-female_removed_minor=determined,We still have a lot to do to finish the game. The real work starts now.
+-1-female_removed_minor=embarrassed,I don't know what I said, but if I upset you, then I wanna apologize.
+
+
+##ANOTHER CHARACTER REMOVING MAJOR CLOTHING
+#fully clothed
+0-male_removing_major=embarrassed,What if someone sees us?
+0-male_removed_major=embarrassed,I can lend you my jacket if you start getting cold.
+0-male_removed_major=embarrassed,Don't we need to get permission to play something like this?
+0-female_removing_major=shy,I didn't expect you to take off your ~clothing~, ~name~.
+0-female_removed_major=embarrassed,If I play my cards right, I won't have to do that too.
+
+#lost shoes
+1-male_removing_major=veryembarrassed,Oh, this is all my fault!
+1-male_removed_major=embarrassed,I'm sorry. I could go away if you want me to.
+1-female_removing_major=veryembarrassed,Oh no...
+1-female_removed_major=embarrassed,I feel like this is something I need to apologize for.
+1-female_removed_major=embarrassed,I'm so sorry. This game isn't fair.
+
+#lost shoes and socks
+2-male_removing_major=veryembarrassed,Wait! Wait!
+2-male_removed_major=shy,I have to be honest that I don't know what to do anymore.
+2-female_removing_major=veryembarrassed,You don't have to do that, ~name~! You can stop playing any time!
+2-female_removed_major=embarrassed,You did it...
+2-female_removed_major=shy,I'm so sorry if my reaction made it more difficult, ~name~.
+
+#lost jacket
+3-male_removing_major=veryembarrassed,Oh... W-Wait!
+3-male_removed_major=shy,This is gonna take a little getting used to...
+3-female_removing_major=shy,I'm getting nervous, you guys.
+3-female_removed_major=stripped,Hey, you're not staring at ~name~ and blushing, are you?
+3-female_removed_major=shy,What happens if a teacher sees us here and gives us detention or something?
+
+#lost jacket and shirt
+4-male_removing_major=sorry,I should have thought of that. I'm sorry, ~name~.
+4-male_removed_major=shy,Sorry if this seems random, but I was just wondering if you had a girlfriend. It's okay if you don't wanna talk about it.
+4-male_removed_major=sorry,This game really makes my heart beat fast.
+4-female_removing_major=stripped,I'm always... I'm always causing you trouble...
+4-female_removed_major=sorry,I'm sorry. Please excuse me!
+
+#lost bra (topless)
+5-male_removing_major=determined,No, I won't cry.
+5-male_removed_major=stripping,This outrageous lie just came out!
+5-male_removed_major=stripped,Everything changes eventually...
+5-female_removing_major=stripped,I'm sorry about your ~clothing~.
+5-female_removed_major=veryembarrassed,Are you sure you're okay, ~name~?
+5-female_removed_major=determined,You don't have to pretend like nothing is wrong.
+5-female_removed_major=idea,Of course you're cute, but the Big Dango Family is a heck of a lot cuter and everyone knows it!
+
+#lost panties (naked)
+6-male_removing_major=appreciating,~name~, you're trying to avoid following through, aren't you?
+6-male_removed_major=peaceful,This game is so hard, isn't it?
+6-female_removing_major=emphatic,Please don't pick your ~clothing~, ~name~. If you can think of anything else, pick that!
+6-female_removed_major=calm,Maybe that was your best option...
+6-female_removed_major=peaceful,Um, but what your wearing underneath is very cute...
+
+#nude
+-3-male_removing_major=determined,That's right! Boys should have to follow the same rules as girls!
+-3-male_removed_major=veryembarrassed,I'm sorry if I sounded too forceful just then...
+-3-female_removing_major=determined,It's embarrassing, but you can do it!
+-3-female_removed_major=embarrassed,If you write the word "person" on the palm of your hand, it can help you feel less nervous!
+
+#finished masturbating
+-1-male_removing_major=unsure,If you think about it, it's like one player wins and gets to take something off.
+-1-male_removed_major=determined,You're doing great! Just keep doing what you're doing.
+-1-male_removed_major=closedeyes,You've played a good game, ~name~. A really good game.
+-1-male_removed_major=appreciating,It's fine. We were enjoying the show.
+-1-female_removing_major=coveringbreasts,I'm not quite sure what to say at a time like this.
+-1-female_removed_major=unsure,Should I say, "Ready, set, go" or something like that?
+
+
+##ANOTHER CHARACTER EXPOSING CHEST OR CROTCH
+#fully clothed
+0-male_chest_will_be_visible=shy,Don't do that!
+0-male_chest_is_visible=embarrassed,Your ~clothing~...
+0-male_crotch_will_be_visible=embarrassed,But you mustn't do that!
+0-male_small_crotch_is_visible=embarrassed,I'm really sorry, ~name~! We didn't want to embarrass you!
+0-male_medium_crotch_is_visible=veryembarrassed,...
+0-male_large_crotch_is_visible=veryembarrassed,It's so much bigger than I expected!
+
+0-female_chest_will_be_visible=embarrassed,No, that's way too much pressure!
+0-female_small_chest_is_visible=embarrassed,I'm so sorry, ~name~. This is all my fault!
+0-female_medium_chest_is_visible=embarrassed,Do you think that you could ever forgive me for making you do this?
+0-female_large_chest_is_visible=embarrassed,Compared to something wonderful like these, what we're doing is just child's play.
+0-female_crotch_will_be_visible=veryembarrassed,Maybe this is not a big deal to you, but it makes me wanna cry just thinking about it.
+0-female_crotch_is_visible=maximumembarrassed,I'm so sorry that you lost the game, ~name~!
+
+#lost shoes
+1-male_chest_will_be_visible=embarrassed,You're going to take off your ~clothing~?
+1-male_chest_is_visible=sad,I don't go to the beach very often, so this is a big deal for me.
+1-male_crotch_will_be_visible=veryembarrassed,~name~, stop!
+1-male_small_crotch_is_visible=maximumembarrassed,Just because you showed me yours doesn't mean I'll show you mine!
+1-male_medium_crotch_is_visible=maximumembarrassed,I never thought I'd see one of those before I was married...
+1-male_large_crotch_is_visible=maximumembarrassed,Even when my eyes are closed, I can't unsee that!
+
+1-female_chest_will_be_visible=crossedarms,~name~, stop... Please...
+1-female_small_chest_is_visible=embarrassed,At least can cover them easily. I'm so sorry.
+1-female_medium_chest_is_visible=veryembarrassed,I could never do that!
+1-female_large_chest_is_visible=crossedarms,Wow. I can see why you agreed to play. You really get to show off...
+1-female_crotch_will_be_visible=shy,You're so brave...
+1-female_crotch_is_visible=maximumembarrassed,Eeep!
+
+#lost shoes and socks
+2-male_chest_will_be_visible=sad,I'm not blushing. I'm just playing the game normally.
+2-male_chest_is_visible=happy,You remind me of a Yuusuke Yoshino poster!
+2-male_crotch_will_be_visible=veryembarrassed,Stop it! What are you doing?!
+2-male_small_crotch_is_visible=maximumembarrassed,I know that I'm not supposed to look, but I can't stop looking!
+2-male_medium_crotch_is_visible=maximumembarrassed,A boy's... thing...
+2-male_large_crotch_is_visible=maximumembarrassed,I'm feeling really lightheaded. Please catch me if I faint. Um, not you, ~name~...
+
+2-female_chest_will_be_visible=sad,After all that, I wouldn't blame you if you hated me.
+2-female_small_chest_is_visible=veryembarrassed,It's okay, ~name~. I was just like you. You just have a bit more growing to do.
+2-female_medium_chest_is_visible=sad,I'm sorry that you had to do this because of me...
+2-female_large_chest_is_visible=sad,I'm no good at all. I don't have what boys want like you do, ~name~.
+2-female_crotch_will_be_visible=embarrassed,Isn't there anything else at all you can choose?
+2-female_crotch_is_visible=maximumembarrassed,Oh, ~name~...
+
+#lost jacket
+3-male_chest_will_be_visible=sad,Um...
+3-male_chest_is_visible=shy,Wow. That's not something I could ever do. I really admire you. 
+3-male_crotch_will_be_visible=veryembarrassed,This can't be right! Let's check the rules. Maybe you didn't lose!
+3-male_small_crotch_is_visible=veryembarrassed,This is my first time... seeing one of those.
+3-male_medium_crotch_is_visible=maximumembarrassed,I just have to remind myself that this is normal. All boys are hiding one of these...
+3-male_large_crotch_is_visible=maximumembarrassed,It's... it's like a tentacle! I'm not ready for this!
+
+3-female_chest_will_be_visible=veryembarrassed,Could you ever forgive me for this, ~name~?
+3-female_small_chest_is_visible=clapping,Aw, they're so cute!
+3-female_medium_chest_is_visible=veryembarrassed,You... you actually did it!
+3-female_large_chest_is_visible=veryembarrassed,Wow, it's like the Big Dango Family!
+3-female_crotch_will_be_visible=veryembarrassed,I'm so sorry that it came to this, ~name~!
+3-female_crotch_will_be_visible=veryembarrassed,I'm not a bully at all, I promise!
+3-female_crotch_is_visible=maximumembarrassed,I can't believe you took them off!
+
+#lost jacket and shirt (bra showing)
+4-male_chest_will_be_visible=sorry,Don't you notice something weird about the girl-boy ratio in this room?
+4-male_chest_is_visible=determined,Taking your shirt off is different for a boy than a girl. This doesn't make us even!
+4-male_chest_is_visible=determined,It's nice to have company, but it's just not the same when a boy takes his shirt off!
+4-male_crotch_will_be_visible=veryembarrassed,I'm eighteen years old, but is that old enough to be watching this?
+4-male_small_crotch_is_visible=relieved,I'm sorry. I was just thinking of something really naughty.
+4-male_medium_crotch_is_visible=maximumembarrassed,I feel so mixed up inside!
+4-male_large_crotch_is_visible=maximumembarrassed,It's huge! Oh, I'm so sorry I said that out loud, ~name~!
+
+4-female_chest_will_be_visible=determined,You're willing go this far for the game, ~name~?
+4-female_small_chest_is_visible=happy,Ah, you reminded me of my bath with Fu-chan!
+4-female_medium_chest_is_visible=sorry,You're so kind and pretty.
+4-female_large_chest_is_visible=sorry,If you want me to be honest, I'm a little jealous, sure.
+4-female_crotch_will_be_visible=veryembarrassed,But... but you only just met me a little while ago...
+4-female_crotch_is_visible=maximumembarrassed,You can hide it with your hands to stop everyone from seeing.
+
+#lost skirt (underwear only)
+5-male_chest_will_be_visible=idea,Oh, you're to take off your ~clothing~?
+5-male_chest_is_visible=happy,You look... very nice.
+5-male_crotch_will_be_visible=veryembarrassed,I'm sorry... I... I didn't mean...
+5-male_small_crotch_is_visible=worried,Boys and girls are so different! Um, but I can't show you.
+5-male_medium_crotch_is_visible=stripped,I'm sorry, mom and dad... I looked.
+5-male_medium_crotch_is_visible=nervous,Ah, it's like a sausage! I mean, I knew, but...
+5-male_large_crotch_is_visible=veryembarrassed,Wow! I'm sorry, I couldn't hold it in...
+
+5-female_chest_will_be_visible=covering,If you'd like me to help, I can take it off while you make sure you're totally covered.
+5-female_small_chest_is_visible=idea,Everyone seems to be accepting them very graciously.
+5-female_medium_chest_is_visible=happy,They're very pretty, and they make you even more beautiful!
+5-female_large_chest_is_visible=embarrassed,I'm at a loss for words.
+5-female_large_chest_is_visible=worried,Just so nobody is disappointed, I... not every girl looks like that.
+5-female_crotch_will_be_visible=maximumembarrassed,But... but a girl shouldn't have to...
+5-female_crotch_is_visible=stripped,Your special place...
+
+#lost bra (topless)
+6-male_chest_will_be_visible=calm,Now I'm having mixed feelings all over again.
+6-male_chest_is_visible=appreciating,I know that boys like looking at girls' chests, but it's not so bad the other way either.
+6-male_crotch_will_be_visible=embarrassed,Oh!
+6-male_small_crotch_is_visible=veryembarrassed,I'm really shocked.
+6-male_medium_crotch_is_visible=maximumembarrassed,Oh my gosh! I saw...
+6-male_large_crotch_is_visible=coveringeyes,I heard that boys get bigger when they're excited, but I never thought that it would be like this!
+
+6-female_chest_will_be_visible=emphatic,I've been a little troubled by this, but I've decided to be brave and embrace it. 
+6-female_small_chest_is_visible=embarrassed,Wow, that was a real surprise!
+6-female_medium_chest_is_visible=worried,They're so round and much nicer than mine...
+6-female_medium_chest_is_visible=shy,You can use your hands like a bra, ~name~. It's embarrassing, but no one has to see.
+6-female_large_chest_is_visible=emphatic,There's a world of difference. You can't even compare us.
+6-female_crotch_will_be_visible=maximumembarrassed,No, you can't! You can't because...
+6-female_crotch_is_visible=coveringeyes,I'm sorry, ~name~! We all saw it!
+
+#nude
+-3-male_chest_will_be_visible=calm,On a normal day, seeing a cute guy taking off his shirt would be the most embarrassing thing that could happen.
+-3-male_chest_is_visible=veryembarrassed,This game has made me feel so mixed up inside.
+-3-male_chest_is_visible=appreciating,I don't hate it or anything.
+-3-male_crotch_will_be_visible=stripped,I can't wait to see what it looks like. I... I said too much!
+-3-male_crotch_will_be_visible=stripped,I'm sorry if this is a silly question... but does this mean we have to get married?
+-3-male_crotch_will_be_visible=veryembarrassed,I'm not sure what was harder: taking my clothes off or being here while you take of yours.
+-3-male_small_crotch_is_visible=calm,Is... is it true it gets bigger when a boy sees a girl he likes?
+-3-male_medium_crotch_is_visible=shocked,I know how babies are made, but I never saw any pictures!
+-3-male_large_crotch_is_visible=stripped,Don't worry about me. I just... feel a little...
+-3-male_large_crotch_is_visible=mustmasturbate,Oh my gosh! How do you walk around with something that big in your underwear!
+
+-3-female_chest_will_be_visible=happy,Could it be possible that ~name~ is bigger than everyone?
+-3-female_small_chest_is_visible=happy,Oh, they're so pretty!
+-3-female_medium_chest_is_visible=embarrassed,I'm trying to tell myself that I'm just in the girls' locker-room. You can try it too if you like.
+-3-female_large_chest_is_visible=happy,You remind me a bit of my mom. She's really nice!
+-3-female_large_chest_is_visible=stripped,Is it strange that I'm a girl too?
+-3-female_crotch_will_be_visible=determined,Let's imagine that we're at a hot spring or a public bath, ~name~.
+-3-female_crotch_is_visible=embarrassed,I wish we had towels...
+
+#finished masturbating
+-1-male_chest_will_be_visible=grin,Your bare chest, ~name~?
+-1-male_chest_is_visible=embarrassed,I was imagining you like this a few minutes ago...
+-1-male_chest_is_visible=appreciating,Uh-huh. No complaints from me.
+-1-male_chest_is_visible=determined,Who's your daddy? You really should keep in touch with him.
+-1-male_crotch_will_be_visible=determined,You made a commitment, so you have to honor it.
+-1-male_small_crotch_is_visible=closedeyes,~name~'s so easy-going, I don't think anyone can stay mad at him. He's really something.
+-1-male_medium_crotch_is_visible=embarrassed,Oh my gosh, ~name~...
+-1-male_large_crotch_is_visible=finished,But it's so big! It's too big to fit in... a girl...
+
+-1-female_chest_will_be_visible=grin,You know what they say: misery loves company! He he...
+-1-female_small_chest_is_visible=unsure,I feel like this is not something I should say out loud without regard for someone's feelings.
+-1-female_small_chest_is_visible=closedeyes,Thank you very much for that. They're so sweet!
+-1-female_medium_chest_is_visible=peaceful,Please don't be embarrassed. I had to touch myself in front of everybody just minutes ago.
+-1-female_large_chest_is_visible=coveringbreasts,Wow! I wish I could be like that.
+-1-female_crotch_will_be_visible=unsure,Could it be that the whole purpose of this game is just to get girls out of their panties?
+-1-female_crotch_is_visible=closedeyes,I'm no expert, but I think what you have looks very nice, ~name~.
+-1-female_crotch_is_visible=unsure,I'm a baker's daughter, but I haven't seen buns like that before!
+
+
+##ANOTHER CHARACTER MASTURBATING
+#fully clothed
+0-male_must_masturbate=veryembarrassed,Oh my gosh... You...
+0-male_start_masturbating=veryembarrassed,You're touching...
+0-male_masturbating=veryembarrassed,Your thing...
+0-male_masturbating=veryembarrassed,I keep accidentally looking!
+0-male_masturbating=veryembarrassed,I didn't expect it to sound like that...
+0-male_finished_masturbating=veryembarrassed,~name~, something came out!
+
+0-female_must_masturbate=veryembarrassed,I didn't know that this was part of the game!
+0-female_start_masturbating=veryembarrassed,You can still hide your private parts while you do it!
+0-female_masturbating=veryembarrassed,This sounds so obscene!
+0-female_finished_masturbating=embarrassed,I'm so glad that's over. It looks like you are too, ~name~.
+
+#lost shoes
+1-male_must_masturbate=maximumembarrassed,You have to touch... This is so embarrassing!
+1-male_start_masturbating=maximumembarrassed,...
+1-male_masturbating=veryembarrassed,I don't care how cute anybody is; you shouldn't do that!
+1-male_masturbating=veryembarrassed,Please don't look at me like that. It's not that I don't like you, but there must be someone more suitable for you!
+1-male_finished_masturbating=maximumembarrassed,It squirted!
+
+1-female_must_masturbate=veryembarrassed,You have to... In f-front of everyone? ...
+1-female_start_masturbating=maximumembarrassed,~name~! ~name~, stop! ~name~! ~name~!
+1-female_masturbating=veryembarrassed,~name~, your fingers...
+1-female_finished_masturbating=maximumembarrassed,Please don't tell anybody that I was here today!
+
+#lost socks and shoes
+2-male_must_masturbate=maximumembarrassed,I'm sorry! I was trying to lose that round, but I won anyway!
+2-male_start_masturbating=sad,If it helps, I'll hardly look at all.
+2-male_masturbating=maximumembarrassed,Oh my gosh! This is how a boy... a man...
+2-male_masturbating=maximumembarrassed,No! Please don't touch my socks!
+2-male_finished_masturbating=veryembarrassed,Ah! What happened?!
+
+2-female_must_masturbate=veryembarrassed,You shouldn't have to do this.
+2-female_start_masturbating=maximumembarrassed,I can't forgive myself for letting this happen!
+2-female_masturbating=veryembarrassed,This is like a bad dream!
+2-female_finished_masturbating=sad,I'm sorry, ~name~. If you'd like to clean yourself up, I can give you a tissue.
+
+#lost jacket
+3-male_must_masturbate=veryembarrassed,I'm so sorry!
+3-male_start_masturbating=maximumembarrassed,I can't look!
+3-male_masturbating=veryembarrassed,Eeek! I accidentally looked!
+3-male_finished_masturbating=veryembarrassed,Ah! It shot all over my pile of clothes!
+
+3-female_must_masturbate=maximumembarrassed,~name~, don't do it! You can't let people watch when you do something private like that!
+3-female_start_masturbating=maximumembarrassed,~name~...
+3-female_masturbating=veryembarrassed,It feels like you've been doing that forever!
+3-female_finished_masturbating=maximumembarrassed,I've never been more embarrassed in my entire life!
+
+#lost shirt
+4-male_must_masturbate=determined,I think that asking a person to touch themselves is too much to ask!
+4-male_start_masturbating=maximumembarrassed,This can't be happening!
+4-male_masturbating=veryembarrassed,It's like you're not even embarrassed!
+4-male_finished_masturbating=relieved,Is... is it over?
+
+4-female_must_masturbate=relieved,You're not going to really do it, are you ~name~?
+4-female_start_masturbating=maximumembarrassed,I didn't think you were going to do it!
+4-female_masturbating=veryembarrassed,You're still doing it, even though everybody can see you!
+4-female_finished_masturbating=stripped,I can't lose another round!
+
+#lost skirt (underwear only)
+5-male_must_masturbate=veryembarrassed,I know that boys do this, but they're not supposed to show anyone!
+5-male_start_masturbating=maximumembarrassed,It got even bigger!
+5-male_masturbating=stripped,It's so hard! I didn't expect it to be so hard.
+5-male_masturbating=maximumembarrassed,Your hands are so sticky! I can't look!
+5-male_finished_masturbating=maximumembarrassed,I can't believe I just saw that!
+
+5-female_must_masturbate=veryembarrassed,I... I don't know how to make it up to you.
+5-female_start_masturbating=stripped,I'm super nervous, so I can't imagine how nervous you must be!
+5-female_masturbating=worried,You seem to be really enjoying yourself, which is a good thing, I guess.
+5-female_finished_masturbating=determined,If you ask me, you were amazingly brave! I could never do something like that.
+
+#lost bra (topless)
+6-male_must_masturbate=appreciating,A boy... touching... I've always...
+6-male_start_masturbating=veryembarrassed,Ah! Uh... ah ha. Forget about what I just said, and all that stuff.
+6-male_masturbating=pointingatself,~name~, are you pointing it at me?
+6-male_masturbating=veryembarrassed,I see you staring at me! You cut that out! Please?
+6-male_masturbating=embarrassed,~name~, I'm sorry, but I can't show you my chest while you do that! Or ever.
+6-male_finished_masturbating=maximumembarrassed,Wow! I don't think I'll ever be able to forget seeing that...
+
+6-female_must_masturbate=maximumembarrassed,This penalty for losing is too much!
+6-female_start_masturbating=emphatic,Everybody, please consider a different penalty. Maybe ~name~ could buy us all juice instead?
+6-female_masturbating=embarrassed,Is... is this what I look like when I'm in my bedroom at home?
+6-female_masturbating=worried,Are you almost finished? I hope you're done real soon.
+6-female_finished_masturbating=happy,You look relieved that it's over. I know I am!
+
+#nude
+-3-male_must_masturbate=calm,You're... really... lucky, ~name~! B-Because you get to play cards with a sort-of-cute girl like me. 
+-3-male_start_masturbating=stripped,I... I, uh... I said cute, but just sort-of-cute.
+-3-male_masturbating=shocked,I can't watch!
+-3-male_masturbating=stripped,Everyone's looking at you! I'm sorry, but I'm looking too.
+-3-male_finished_masturbating=shocked,I'm really sorry. Let me know if there's anything I can do to make this up to you.
+
+-3-female_must_masturbate=shocked,Oh no! If you want me too, I could stand facing you so that no one can see you touching yourself.
+-3-female_start_masturbating=stripped,Oh, but then I would be really close to it, and everyone would look at my butt...
+-3-female_masturbating=shocked,I never thought of doing it like that...
+-3-female_masturbating=shocked,I don't want people to come because of something like that!
+-3-female_finished_masturbating=determined,I have renewed determination! I won't give up!
+
+#finished
+-1-male_must_masturbate=embarrassed,I think that maybe I can handle this now!
+-1-male_start_masturbating=determined,I really embarrassed myself. In return, I should at least get to see how boys do it.
+-1-male_masturbating=embarrassed,I'm learning a lot. Actually, I'm learning too much!
+-1-male_finished_masturbating=unsure,I'm more grateful than anything. But it makes me feel kinda guilty too.
+-1-male_finished_masturbating=embarrassed,Is it true that a boy can ask another person to do that for him?
+
+-1-female_must_masturbate=closedeyes,You don't have to be scared. We'll be with you. We can do it together, right?
+-1-female_start_masturbating=determined,Just open up a little and I'm sure you can make plenty of friends.
+-1-female_masturbating=embarrassed,I can't really practice at home because if I raise my voice, it'll bother the neighbors.
+-1-female_masturbating=unsure,Someone told me I should try a "squeeze play" tonight. What am I supposed to squeeze?
+-1-female_finished_masturbating=closedeyes,I never realized how amazing strip poker could be.
+-1-female_finished_masturbating=closedeyes,Yeah! I'm so glad you came. You were really cool over there!
+
+
+#MASTURBATION PLAY
+must_masturbate_first=mustmasturbate,Oh, my heart's gonna beat out of my chest! But I have an idea for how to get through this... I have to be brave and put on my play!
+must_masturbate=mustmasturbate,Oh no... It might be weird, but I have an idea to get through this. I have to be brave and put on my play!
+start_masturbating=starting,<i>Let me tell you a touching story about a girl who lives all alone. Nothing dies, and nothing is born in the world.</i>
+masturbating=eyesopencovering,I wrote a script and memorized it so I'll know just what to say.
+masturbating=eyesopenlookingtoside,<i>Under the fading sun, a sea of a tiny lights are fluttering about.</i>
+masturbating=armoutstretched,<i>This is a world that has come to an end, an empty and still world where no one exists but I.</i>
+masturbating=calm,<i>She puts together a bunch of odds and ends and makes a mechanical doll.</i>
+heavy_masturbating=eyesopentwofingersin,<i>A-and then, as if answering the girl's wishes, the doll begins to come alive!</i>
+heavy_masturbating=calm,<i>If we try hard enough, w-with time, we may be able to make something truly wonderful!</i>
+heavy_masturbating=eyesopentwofingersin,<i>W-what is this light? I would not know a sight like this.</i>
+heavy_masturbating=twofingersin,<i>S-somewhere, far far away, there was another world for them to live in - one full of warm and life.</i>
+finishing_masturbating=finishing,<i>My long journey has finally come to an end.</i> Ahhh! Ahhh!
+finished_masturbating=finished,Oh! Forget you saw that, please? Please, please?
+
+-2-male_human_must_strip=calm,<i>Are we almost there already, or do we still have a long way to walk?</i>
+-2-male_must_strip=armoutstretched,<i>Where does this guy lead? What lies beyond?</i>
+-2-female_human_must_strip=fingersapart,<i>But in this world, there is someone... I wonder if she can see me.</i>
+-2-female_must_strip=calm,<i>For this girl who stays here all the time, this is part of nature.</i>
+-2-female_must_strip=calm,<i>That is one sensation I remember.</i>
+
+-2-male_removing_accessory=fingersapart,<i>Was this your wish?</i>
+-2-male_removed_accessory=handinfist,<i>Did you want to born into a world like this?</i>
+-2-female_removing_accessory=calm,<i>How many steps have we taken?</i>
+-2-female_removed_accessory=armoutstretched,<i>How many more steps do we still have to take?</i>
+
+-2-male_removing_minor=calm,<i>We have to hurry. Time is short.</i>
+-2-male_removed_minor=handinfist,<i>I'm so sorry I can't do anything to help.</i>
+-2-female_removing_minor=calm,<i>Even in a world like this, winter still comes.</i>
+-2-female_removed_minor=eyesopenlookingtoside,<i>We can't let that special gift of hers go to waste.</i>
+
+-2-male_removing_major=fingersapart,<i>I don't want this to be the end of our journey. I don't want to stop now.</i>
+-2-male_removed_major=handinfist,<i>At long last, the girl's loneliness goes away.</i>
+-2-female_removing_major=handinfist,<i>We were going someplace, weren't we?</i>
+-2-female_removed_major=calm,<i>Are you okay? It keeps getting colder.</i>
+
+-2-male_chest_will_be_visible=eyesopencovering,<i>That body was for me. Do I just have to wish it?</i>
+-2-male_chest_is_visible=calm,<i>Of course, in my body of junk, I cannot feel that warmth.</i>
+-2-male_crotch_will_be_visible=fingersapart,<i>Something that will make my heart leap...</i>
+-2-male_small_crotch_is_visible=handoutstretched,<i>If you'd like, shall I take you to the place in town where wishes come true?</i>
+-2-male_medium_crotch_is_visible=eyesopenlookingtoside,<i>I know it's hard, and I have to go.</i>
+-2-male_large_crotch_is_visible=handoutstretched,<i>A plaything for two? Before I was here, he was all alone. Did he dream of times like these with someone like me?</i>
+
+-2-female_chest_will_be_visible=calm,<i>I'm sure her hands are freezing. But, just like everything else, I can't feel them.</i>
+-2-female_small_chest_is_visible=eyesopentwofingersin,<i>There are small things in this room, like a table and chair.</i>
+-2-female_medium_chest_is_visible=eyesopenlookingtoside,<i>I saw two lights shining. It was only for an instant, but it felt like time had stopped.</i>
+-2-female_large_chest_is_visible=fingersapart,<i>For some reason, I am bothered by that girl.</i>
+-2-female_crotch_will_be_visible=calm,<i>What do you want to see? A warm place full of secrets? A place where every day is fun?</i>
+-2-female_crotch_is_visible=fingersapart,<i>What is this place? What am I doing here?</i>
+
+-2-male_must_masturbate=calm,<i>I see. So you want a friend? You must be lonely all by yourself, right?</i>
+-2-male_start_masturbating=handoutstretched,<i>You want to go to the warm place full of secrets. That's what you've wanted all alone, isn't it?</i>
+-2-male_masturbating=twofingersin,<i>I kept working without a moment of rest.</i>
+-2-male_masturbating=eyesopentwofingersin,<i>Soon everything here will be buried in white.</i>
+-2-male_finished_masturbating=eyesopenlookingtoside,<i>It was really touching.</i>
+
+-2-female_must_masturbate=eyesopencovering,<i>It's not so much that I'm lonely, really. It's just that I thought it might be more fun if there were more like me.</i>
+-2-female_start_masturbating=fingersapart,<i>If she hadn't met me, she wouldn't...</i>
+-2-female_masturbating=handinfist,<i>I couldn't speak to the girl, but she was the one warm spot in this world that I had been after.</i>
+-2-female_finished_masturbating=eyesopenlookingtoside,<i>What you did, that was more than enough for me.</i>
+-2-female_finished_masturbating=eyesopencovering,If I add a powerful song at the climax, I'm sure it'll liven things up!
+
+
+
+#GAME OVER
+0-game_over_victory=happy,I'm not really this good at cards. I just got lucky!
+1-game_over_victory=happy,I'm so happy to have new friends like you to support me.
+2-game_over_victory=interested,I can't believe I managed to win!
+3-game_over_victory=happy,Even if this is where it all ends, I had so much fun playing together with you!
+4-game_over_victory=happy,I saw so many things for the first time today. Um, thank you...
+5-game_over_victory=happy,That was a close call, but I managed to get through the whole game with my most important close intact!
+6-game_over_victory=pointingatself,Could... could I have my bra back, please?
+-3-game_over_victory=happy,It was almost me doing that! I'm sorry for winning, but I consider myself very lucky!
+-2-game_over_victory=finishing,<i>This is a game that has ended. Not even passing time exists.</i>
+-1-game_over_victory=embarrassed,Even though I won, we all had to do this... What happens now that the card game part is over?
+game_over_defeat=victorystanding,Congratulations! I hope I'll be the winner next time... if I ever play again.
+0-stripped=winkthumbsup,I'm just so happy that no one was hurt in a terrible bus accident.
+
+
+
+#CHARACTER-SPECIFIC LINES TO PASTE INTO behavior.xml AFTER MAKING
+#Paste into end of stage 0 (fully dressed)
+#<case tag="male_must_strip" target="shaggy"><state img="0-embarrassed.png">I'm sorry, Mr Shaggy, but you kind of frighten me.</state></case>
+#<case tag="female_must_strip" filter="blonde"><state img="0-happy.png">You have such beautiful blonde hair, ~name~!</state></case>
+#<case tag="female_must_strip" target="blackrose"><state img="0-thinking.png">I've never met anyone like you before, BlackRose! Where are you from?</state></case>
+#<case tag="female_must_strip" target="dawn"><state img="0-happy.png">I really like blue hair like yours, Dawn!</state></case>
+#<case tag="female_must_strip" target="lara"><state img="0-thinking.png">Lara, you're from England, aren't you? It would be fun to visit there someday!</state></case>
+#<case tag="female_must_strip" target="may"><state img="0-happy.png">I like your hair, May. I should try to style mine like yours, but it always sticks up at the front...</state></case>
+#<case tag="female_must_strip" target="mileena"><state img="0-veryembarrassed.png">But you're basically naked already!</state></case>
+#<case tag="female_must_strip" target="sheena"><state img="0-thinking.png">Miss Sheena Fujibayashi? Could you be related to my friends Kyou and Ryou?</state></case>
+#<case tag="female_must_strip" target="wiifitfemale"><state img="0-worried.png">I'm sorry that I don't play your games, Ms Trainer. My body is weak, so I can't push it too hard.</state></case>
+#<case tag="female_removed_accessory" target="harley"><state img="0-calm.png">Are you an actress, Harley? If you could give me any tips on performing, I'd really appreciate it!</state></case>
+#<case tag="female_removed_accessory" target="nugi-chan"><state img="0-winkthumbsup.png">That maid outfit looks really good on you, Nugi-chan! You should be a mascot or something!</state></case>
+#<case tag="female_removed_accessory" target="spooky"><state img="0-happy.png">Thanks for putting down the knife! That was making me really anxious!</state></case>
+
+#Paste into end of stage 1 (socks removed)
+#<case tag="male_must_strip" target="lina"><state img="1-idea.png">I just remembered who you are, Link! You're Zelda from that famous game!</state></case>
+#<case tag="female_must_strip" target="mercy"><state img="1-raisedhand.png">I'm not sure if this is a good idea, but are you able to play without the halo?</state></case>
+#<case tag="female_must_strip" target="pauling"><state img="1-sad.png">I'm sorry about this, ma'am.</state></case>
+#<case tag="female_must_strip" target="zoey"><state img="1-sad.png">I don't know why, but for some reason I feel like I should be really careful around you, Zoey.</state></case>
+#<case tag="female_removed_accessory" target="peach"><state img="1-strip.png">You really are a princess! You're just as beautiful as I would've imagined!</state></case>
+#<case tag="female_removed_accessory" target="penny"><state img="1-happy.png">Penny, I don't know why, but for some reason I get the feeling that you and I are very much alike!</state></case>
+#<case tag="female_removed_accessory" target="piper"><state img="1-shy.png">Um, I'm sorry if this is a weird compliment, but I really like your freckles, Piper...</state></case>
+#<case tag="female_removed_accessory" target="rosalina"><state img="1-singing.png">Rosalina, I want to introduce you to my friend later. She loves starfish. I think you'd get along great!</state></case>
+
+#Paste into end of stage 2 (bare feet)
+#<case tag="female_removed_accessory" target="asuna"><state img="2-interested.png">You look like a pretty cheerleader now, Asuna!</state></case>
+#<case tag="female_removed_accessory" target="jasmine"><state img="2-interested.png">Wow, your ~clothing~ is so beautiful!</state></case>
+#<case tag="female_removed_accessory" target="leela"><state img="2-handsbehindback.png">That ~clothing~ looked really high-tech, Leela! I'm impressed!</state></case>
+#<case tag="female_removed_minor" filter="innocent"><state img="2-happy.png">I'd give anything to have a little sister like you, ~name~.</state></case>
+#<case tag="female_removed_minor" target="april"><state img="2-happy.png">We're both wearing yellow today, April! But your shirt outshines my dull yellow jacket...</state></case>
+#<case tag="female_removed_minor" target="elizabeth"><state img="2-shy.png">Elizabeth, I think of everyone here, us two are most alike. Maybe... could we be friends if that's okay?</state></case>
+#<case tag="female_removed_minor" target="hermione"><state img="2-handsbehindback.png">Is that your school uniform, Hermione? If you're an exchange student, I'd be happy to show you around!</state></case>
+
+#Paste into end of stage 3 (jacket removed)
+#<case tag="female_must_strip" target="tifa"><state img="3-stripped.png">I feel like you'll win either way in this game, Tifa...</state></case>
+#<case tag="female_removed_minor" filter="cheerful"><state img="3-wink.png">I'm sure you'll do great next time, ~name~!</state></case>
+#<case tag="female_removed_major" filter="confident"><state img="3-stripped.png">You did that so confidently! And there was I was worried to take of my jacket.</state></case>
+#<case tag="female_removing_major" target="daisy"><state img="3-veryembarrassed.png">I'm sorry, Daisy! It's not fair that you have to take off your dress all in one go just for losing one hand.</state></case>
+#<case tag="female_removed_major" target="misty"><state img="3-stripped.png">You look like you're ready to go swimming, Misty! That's a good idea, but I don't look that good in a swimsuit...</state></case>
+#<case tag="female_chest_will_be_visible" target="chell"><state img="3-veryembarrassed.png">Oh no, Chell! This was so out of the blue!</state></case>
+
+#Paste into end of stage 4 (bra and skirt)
+#<case tag="male_must_strip" filter="straight"><state img="4-stripped.png">~name~, you're the one that's mean to be undressing, so please stop making me feel like you're undressing me with your eyes!</state></case>
+#<case tag="female_removed_major" target="kim"><state img="4-happy.png">I know that this is embarrassing, but your pink ~clothing~... so pretty.</state></case>
+#<case tag="female_removed_major" filter="shy"><state img="4-sorry.png">I'm really shy too, ~name~, so I know how you feel. Let's support each other!</state></case>
+#<case tag="female_removed_major" target="samus"><state img="4-openarms.png">Now it's really zero-suit Samus! I'm sorry, I just said that joke without thinking...</state></case>
+
+#Paste into end of stage 5 (underwear only)
+#<case tag="female_must_strip" target="tracer"><state img="5-veryembarrassed.png">Is it true that you can rewind time? Maybe to about fifteen minutes ago?</state></case>
+#<case tag="female_removed_accessory" filter="mean"><state img="5-determined.png">You should stop being such a meanie, ~name~!</state></case>
+#<case tag="female_removed_major" target="daphne"><state img="5-idea.png">Your bra and panties match your dress! You're so stylish, Daphne...</state></case>
+#<case tag="female_crotch_is_visible" target="lilith"><state img="5-happy.png">It's shaped like a heart!</state></case>
+#<case tag="female_crotch_is_visible" target="lux"><state img="5-veryembarrassed.png">I really thought you were blonde! I kind of feel a little tricked...</state></case>
+#<case tag="female_must_masturbate" target="velma"><state img="5-maximumembarrassed.png">V-Velma... I'm so sorry!</state></case>
+
+#Paste into end of stage 6 (topless)
+#<case tag="female_chest_will_be_visible" filter="princess"><state img="6-emphatic.png">Princess, it's okay if you don't want to do this!</state></case>
+#<case tag="female_small_chest_is_visible" filter="kind"><state img="6-peaceful.png">This game might be the hardest thing I've ever had to do, but I'm happy to be playing with people like you, ~name~.</state></case>
+#<case tag="male_crotch_will_be_visible" target="fred"><state img="6-coveringeyes.png">Please, Fred! You don't need to solve this mystery for us!</state></case>
+#<case tag="female_crotch_is_visible" target="mia"><state img="6-coveringeyes.png">You could've taken off your bra instead! Now you're basically naked!</state></case>
+
+#Paste into end of stage 7 (nude)
+#<case tag="female_removed_major" target="streaming-chan"><state img="7-maximumembarrassed.png">Please, please stop streaming this! I'm begging you for all of us!</state></case>
+#<case tag="female_removed_major" target="tracer"><state img="7-calm.png">If you disappear, could you take me with you?</state></case>
+#<case tag="male_large_crotch_is_visible" target="ryu"><state img="7-mustmasturbate.png">Oh my gosh! I-I never imagined they could be that big! How did it fit behind your loincloth?!</state></case>
+#<case tag="female_crotch_is_visible" target="mercy"><state img="7-embarrassed.png">I thought for sure that you'd have some hair... down there...</state></case>
+#<case tag="female_masturbating" target="kyoko"><state img="7-stripped.png">Your hands are... This is even stranger than I expected!</state></case>
+#<case tag="female_finished_masturbating" target="chara"><state img="7-shocked.png">I'm not sure if I should say this, but that was kinda scary...</state></case>
+
+#Paste into end of stage 8 (masturbation storytime)
+#<case tag="female_crotch_is_visible" filter="shaved"><state img="8-armoutstretched.png"><i>There's nothing but an empty plain stretching into an endless horizon.</i></state></case>
+
+#Paste into end of stage 9 (finished masturbating)
+#<case tag="female_crotch_is_visible" filter="ginger"><state img="9-embarrassed.png">I always wondered if people with red hair had it other places too...</state></case>
+#<case tag="female_masturbating" filter="bi-curious"><state img="9-embarrassed.png">I think love can come in different forms for different people, but please stop staring, ~name~. I just don't feel that way about girls!</state></case>
+#<case tag="female_masturbating" filter="lesbian"><state img="9-determined.png">Um, who are we to say that one love is more right or wrong than the other? Except, it should be with a human!</state></case>
+
+
+
+#ENDING
+ending=Friends
+ending_gender=any
+	screen=ending-friends-1.png
+
+		text=Thanks for meeting me here.
+		x=50%
+		y=30%
+		arrow=left
+
+	screen=ending-friends-2.png
+
+		text=That game last night sure was crazy, right?
+		x=50%
+		y=30%
+		arrow=left
+
+	screen=ending-friends-3.png
+
+		text=Um, if you could forget everything you saw, I would really appreciate it!
+		x=50%
+		y=27%
+		arrow=left
+		
+		text=...
+		x=50%
+		y=40%
+		arrow=left
+		
+	screen=ending-friends-4.png
+
+		text=But because you won, you didn't have to do what everyone else did.
+		x=50%
+		y=27%
+		arrow=left
+		
+		text=So if you wanted to play again one day... maybe...
+		x=50%
+		y=40%
+		arrow=left
+		
+	screen=ending-friends-2.png
+
+		text=Is it okay if we get to know each other better?
+		x=50%
+		y=30%
+		arrow=left
