@@ -1075,7 +1075,7 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="3-nervous.png">
-					We may need to team up for this.
+					We may need to team up for this quest.
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -1253,6 +1253,11 @@
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-angry.png">
 					I see you've maxed your apparel skill.
+				</state>
+			</case>
+			<case tag="female_removing_minor" filter="mean"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-angry.png">
+					You're proving to be a difficult opponent... exactly what I expected.
 				</state>
 			</case>
 			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1583,6 +1588,11 @@
 					I see you've maxed your apparel skill.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="mean"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="4-angry.png">
+					You're proving to be a difficult opponent... exactly what I expected.
+				</state>
+			</case>
 			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-angry.png">
 					I see you've maxed your apparel skill. That's paying off tonight.
@@ -1896,6 +1906,11 @@
 					I see you've maxed your apparel skill.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="mean"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="5-angry.png">
+					You're proving to be a difficult opponent... exactly what I expected.
+				</state>
+			</case>
 			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="5-angry.png">
 					I see you've maxed your apparel skill. That's paying off tonight.
@@ -2203,14 +2218,13 @@
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="6-angry.png">
-					I see you've maxed your apparel skill.
-				</state>
+				<state img="6-shocked.png">What is this, some kind of boss fight?</state>
 			</case>
 			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="6-angry.png">
-					I see you've maxed your apparel skill. That's paying off tonight.
-				</state>
+				<state img="6-angry.png">You have the most incredible luck, ~name~.</state>
+			</case>
+			<case tag="female_removing_minor" filter="mean"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="6-angry.png">I can't believe I expected this to be a fair fight!</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="6-nervous.png">
@@ -2512,14 +2526,13 @@
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="7-angry.png">
-					I see you've maxed your apparel skill.
-				</state>
+				<state img="7-shocked.png">What is this, some kind of boss fight?</state>
 			</case>
 			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="7-angry.png">
-					I see you've maxed your apparel skill. That's paying off tonight.
-				</state>
+				<state img="7-angry.png">You have the most incredible luck, ~name~.</state>
+			</case>
+			<case tag="female_removing_minor" filter="mean"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="7-angry.png">I can't believe I expected this to be a fair fight!</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="7-interested.png">
@@ -2796,14 +2809,13 @@
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="8-angry.png">
-					I see you've maxed your apparel skill.
-				</state>
+				<state img="8-shocked.png">What is this, some kind of boss fight?</state>
 			</case>
 			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="8-angry.png">
-					I see you've maxed your apparel skill. That's paying off tonight.
-				</state>
+				<state img="8-angry.png">You have the most incredible luck, ~name~.</state>
+			</case>
+			<case tag="female_removing_minor" filter="mean"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="8-angry.png">I can't believe I expected this to be a fair fight!</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="8-happy.png">
@@ -3064,14 +3076,7 @@
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="9-angry.png">
-					I see you've maxed your apparel skill.
-				</state>
-			</case>
-			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="9-angry.png">
-					I see you've maxed your apparel skill. That's paying off tonight.
-				</state>
+				<state img="9-shocked.png">This has got to be some kind of server glitch.</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="9-happy.png">
@@ -3291,7 +3296,7 @@
 			</case>
 			<case tag="male_finished_masturbating"> <!-- a male player has "finished" masturbating -->
 				<state img="10-horny.png">
-					Um... ~name~? Do you want to join my party?
+					Um... ~name~? D-do you want to join my guild?
 				</state>
 			</case>
 			<!-- End of Male Player Masturbating Cases -->
@@ -3314,14 +3319,7 @@
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="10-angry.png">
-					I see you've maxed your apparel skill.
-				</state>
-			</case>
-			<case tag="female_removing_minor" filter="shy"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="10-angry.png">
-					I see you've maxed your apparel skill. That's paying off tonight.
-				</state>
+				<state img="10-shocked.png">This has got to be some kind of server glitch.</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="10-happy.png">
