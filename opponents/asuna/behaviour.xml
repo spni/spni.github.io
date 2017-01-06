@@ -90,7 +90,7 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="0-sad.png">
-					P-please, be nice to me...
+					Let's do this.
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -243,7 +243,7 @@
 				<state img="0-interested.png">I thought you said you'd played this before, ~name~.</state>
 			</case>
 			<case tag="female_must_strip" filter="mean"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="0-interested.png">Bad luck, ~name~.</state>
+				<state img="0-interested.png">And here I thought you were going to be a challenge!</state>
 			</case>
 			<case tag="female_must_strip" filter="blonde"> <!-- a female player will strip, but you don't know what they will remove -->
 				<state img="0-interested.png">
@@ -252,7 +252,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-interested.png">
-					The game begins... and ~name~ is already hurt!
+					The game begins... and ~name~ is already losing!
 				</state>
 			</case>
 			<case tag="female_removing_accessory" target="hermione"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
@@ -282,7 +282,7 @@
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="0-interested.png">
-					Ha ha! Looks like someone's blushing!
+					Hee hee! Looks like someone's blushing!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
@@ -418,12 +418,12 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="1-angry.png">
-					Let's do this.
+					P-please, be nice to me...
 				</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
 				<state img="1-lost.png">
-					Oh, well, that figures.
+					Oh, well, THAT figures.
 				</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -510,7 +510,7 @@
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-angry.png">
-					You prepared for this game, didn't you?
+					You really prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="male_removed_minor" filter="innocent"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -579,14 +579,14 @@
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
 				<state img="1-interested.png">Need some tips on playing, ~name~?</state>
 			</case>
-			<case tag="female_must_strip" filter="confident"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="1-interested.png">I thought you said you'd played this before, ~name~.</state>
-			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
 				<state img="1-interested.png">Need some tips on playing, ~name~?</state>
 			</case>
+			<case tag="female_must_strip" filter="confident"> <!-- a female player will strip, but you don't know what they will remove -->
+				<state img="1-interested.png">I thought you said you'd played this before, ~name~.</state>
+			</case>
 			<case tag="female_must_strip" filter="mean"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="1-interested.png">Bad luck, ~name~.</state>
+				<state img="1-interested.png">And here I thought you were going to be a challenge!</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="1-interested.png">Ah! That's magical, isn't it?</state>
@@ -613,7 +613,7 @@
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="1-interested.png">
-					Ha ha! Looks like someone's blushing!
+					Hee hee! Looks like someone's blushing!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
@@ -832,7 +832,7 @@
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-angry.png">
-					You prepared for this game, didn't you?
+					You really prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="male_removed_minor" filter="innocent"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -899,24 +899,10 @@
 			
 			<!-- Start of Female Player Pre Stripping Cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="2-interested.png">
-					Need some tips on playing, ~name~?
-				</state>
+				<state img="2-interested.png">Ooh, bad luck, ~name~!</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="2-interested.png">
-					Need some tips on playing, ~name~?
-				</state>
-			</case>
-			<case tag="female_must_strip" filter="confident"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="2-interested.png">
-					I thought you said you'd played this before, ~name~.
-				</state>
-			</case>
-			<case tag="female_must_strip" filter="mean"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="2-interested.png">
-					Bad luck, ~name~.
-				</state>
+				<state img="2-interested.png">Ooh, bad luck, ~name~!</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="2-interested.png">
@@ -945,7 +931,7 @@
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="2-interested.png">
-					Ha ha! Looks like someone's blushing!
+					Hee hee! Looks like someone's blushing!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
@@ -973,7 +959,7 @@
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-angry.png">
-					You prepared for this game, didn't you?
+					You really prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1162,12 +1148,12 @@
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="3-calm.png">
-					Your defences are down!
+					At least your defences are down now.
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-angry.png">
-					You prepared for this game, didn't you?
+					You really prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="male_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1234,16 +1220,10 @@
 			
 			<!-- Start of Female Player Pre Stripping Cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="3-interested.png">Keep your guard up or you'll end up naked, ~name~.</state>
+				<state img="3-interested.png">Ooh, bad luck, ~name~!</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="3-interested.png">Keep your guard up or you'll end up naked, ~name~.</state>
-			</case>
-			<case tag="female_must_strip" filter="shy"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="3-interested.png">Keep your guard up or you'll end up naked, ~name~. And you wouldn't want that, would you?</state>
-			</case>
-			<case tag="female_must_strip" filter="mean"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="3-interested.png">Your guard is down, ~name~!</state>
+				<state img="3-interested.png">Ooh, bad luck, ~name~!</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="3-angry.png">
@@ -1277,7 +1257,7 @@
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="3-interested.png">
-					Ha ha! Looks like someone's blushing!
+					Hee hee! Looks like someone's blushing!
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
@@ -1301,12 +1281,12 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="3-calm.png">
-					Your defences are down!
+					At least your defences are down now.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-angry.png">
-					You prepared for this game, didn't you?
+					You really prepared for this game, didn't you?
 				</state>
 			</case>
 			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1495,7 +1475,7 @@
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="4-calm.png">
-					Your defences are down!
+					At least your defences are down now.
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1567,16 +1547,19 @@
 			
 			<!-- Start of Female Player Pre Stripping Cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="4-interested.png">Keep your guard up or you'll end up naked, ~name~.</state>
+				<state img="4-interested.png">Keep your guard up, ~name~!</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="4-interested.png">Keep your guard up or you'll end up naked, ~name~.</state>
+				<state img="4-interested.png">Keep your guard up, ~name~!</state>
+			</case>
+			<case tag="female_must_strip" filter="exhibitionist"> <!-- a female player will strip, but you don't know what they will remove -->
+				<state img="4-shocked.png">Are you TRYING to lose, ~name~?</state>
 			</case>
 			<case tag="female_must_strip" filter="shy"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="4-interested.png">Keep your guard up or you'll end up naked, ~name~. And you wouldn't want that, would you?</state>
+				<state img="4-interested.png">You've got to do better than that, ~name~!</state>
 			</case>
 			<case tag="female_must_strip" filter="mean"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="4-interested.png">Your guard is down, ~name~!</state>
+				<state img="4-happy.png">Bad move, ~name~.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="4-angry.png">
@@ -1619,7 +1602,7 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="4-calm.png">
-					Your defences are down!
+					At least your defences are down now.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1813,7 +1796,7 @@
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="5-calm.png">
-					Your defences are down!
+					At least your defences are down now.
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -1885,16 +1868,19 @@
 			
 			<!-- Start of Female Player Pre Stripping Cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="5-interested.png">Keep your guard up or you'll end up naked, ~name~.</state>
+				<state img="5-interested.png">Keep your guard up, ~name~!</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="5-interested.png">Keep your guard up or you'll end up naked, ~name~.</state>
+				<state img="5-interested.png">Keep your guard up, ~name~!</state>
+			</case>
+			<case tag="female_must_strip" filter="exhibitionist"> <!-- a female player will strip, but you don't know what they will remove -->
+				<state img="5-shocked.png">Are you TRYING to lose, ~name~?</state>
 			</case>
 			<case tag="female_must_strip" filter="shy"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="5-interested.png">Keep your guard up or you'll end up naked, ~name~. And you wouldn't want that, would you?</state>
+				<state img="5-interested.png">You've got to do better than that, ~name~!</state>
 			</case>
 			<case tag="female_must_strip" filter="mean"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="5-interested.png">Your guard is down, ~name~!</state>
+				<state img="5-happy.png">Bad move, ~name~.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="5-angry.png">
@@ -1937,7 +1923,7 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="5-calm.png">
-					Your defences are down!
+					At least your defences are down now.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -2203,19 +2189,16 @@
 			
 			<!-- Start of Female Player Pre Stripping Cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="6-interested.png">
-					Yes!
-				</state>
+				<state img="6-happy.png">Yes!</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="6-interested.png">
-					Yes!
-				</state>
+				<state img="6-happy.png">Yes!</state>
+			</case>
+			<case tag="female_must_strip" filter="shy"> <!-- a female player will strip, but you don't know what they will remove -->
+				<state img="6-nervous.png">Nothing personal, ~name~...</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
-				<state img="6-interested.png">
-					I see an aura around your ~clothing~...
-				</state>
+				<state img="6-interested.png">I see an aura around your ~clothing~...</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="6-shocked.png">What is this, some kind of boss fight?</state>
@@ -2511,14 +2494,10 @@
 			
 			<!-- Start of Female Player Pre Stripping Cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="7-interested.png">
-					Yes!
-				</state>
+				<state img="7-happy.png">I can still win!</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="7-interested.png">
-					Yes!
-				</state>
+				<state img="7-happy.png">I can still win!</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="7-angry.png">
@@ -2707,8 +2686,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="8-happy.png">
-					A critical hit!
+				<state img="8-sad.png">
+					...Is there a prize for coming in second?
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -2794,14 +2773,10 @@
 			
 			<!-- Start of Female Player Pre Stripping Cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="8-interested.png">
-					Yes!
-				</state>
+				<state img="8-interested.png">Show me what you've got, ~name~!</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="8-interested.png">
-					Yes!
-				</state>
+				<state img="8-interested.png">Show me what you've got, ~name~!</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="8-angry.png">
@@ -2818,8 +2793,8 @@
 				<state img="8-angry.png">I can't believe I expected this to be a fair fight!</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="8-happy.png">
-					A critical hit!
+				<state img="8-sad.png">
+					...Is there a prize for second place?
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -2974,8 +2949,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="9-interested.png">
-					A critical hit!
+				<state img="9-sad.png">
+					...Is there a prize for coming in second?
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -2985,7 +2960,7 @@
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
 				<state img="9-horny.png">
-					How lewd!
+					This could knock you out of the running, ~name~...
 				</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
@@ -2994,7 +2969,7 @@
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="9-calm.png">
-					Your defences are down!
+					At least your defences are down now.
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -3061,14 +3036,10 @@
 			
 			<!-- Start of Female Player Pre Stripping Cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="9-interested.png">
-					Yes!
-				</state>
+				<state img="9-sad.png">If only I could have held on just a little longer...</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="9-interested.png">
-					Yes!
-				</state>
+				<state img="9-sad.png">If only I could have held on just a little longer...</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="9-angry.png">
@@ -3079,8 +3050,8 @@
 				<state img="9-shocked.png">This has got to be some kind of server glitch.</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="9-happy.png">
-					A critical hit!
+				<state img="9-sad.png">
+					...Is there a prize for coming in second?
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
@@ -3090,7 +3061,7 @@
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
 				<state img="9-horny.png">
-					How lewd!
+					This could knock you out of the running, ~name~...
 				</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
@@ -3099,7 +3070,7 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="9-calm.png">
-					Your defences are down!
+					At least your defences are down now.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -3228,7 +3199,7 @@
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
 				<state img="10-horny.png">
-					How lewd!
+					This could knock you out of the running, ~name~...
 				</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
@@ -3304,14 +3275,10 @@
 			
 			<!-- Start of Female Player Pre Stripping Cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="10-interested.png">
-					Yes!
-				</state>
+				<state img="10-angry.png">Sigh... fine.</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="10-interested.png">
-					Yes!
-				</state>
+				<state img="10-angry.png">Sigh... fine.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="10-angry.png">
@@ -3333,7 +3300,7 @@
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
 				<state img="10-horny.png">
-					How lewd!
+					This could knock you out of the running, ~name~...
 				</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
