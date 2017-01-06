@@ -485,10 +485,13 @@ function determineHand (player) {
 	if (hands[player].strength == NONE) {
 		if (have_three_kind >= 0 && have_pair[0] >= 0) {
 			hands[player].strength = FULL_HOUSE;
-			hands[player].value = have_three_kind;
+			hands[player].value = have_three_kind == 1 ? 14 : have_three_kind;
 		} else if (have_three_kind >= 0) {
 			hands[player].strength = THREE_OF_A_KIND;
-			hands[player].value = have_three_kind;
+			hands[player].value = have_three_kind == 1 ? 14 : have_three_kind;
+            if (have_pair[0] == 1) {
+				hands[player].value = [14, have_pair[1], leftover];
+			}
 		} else if (have_pair[0] >= 0 && have_pair[1] >= 0) {
 			hands[player].strength = TWO_PAIR;
 			
