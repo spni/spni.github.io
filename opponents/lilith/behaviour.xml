@@ -11,6 +11,11 @@
 	<gender>female</gender> <!-- what's their gender? -->
 	<size>large</size>      <!-- Size of Naughty Bits (penis if male, boobs if female) -->
     <timer>19</timer>       <!-- how long do they... uh... take to 'finish'? -->
+    <tags>
+        <tag>kind</tag>
+        <tag>video_game</tag>
+        <tag>confident</tag>
+    </tags>
 	
 	<!-- Game Start Information -->
 	<start>
@@ -199,6 +204,22 @@
 					What are you going to take off, ~name~?
 				</state>
 			</case>
+            <case tag="female_must_strip" filter="brave">
+                <state img="0-interested.png">
+					This should be nothing for you, ~name~!
+				</state>
+            </case>
+            <case tag="female_must_strip" filter="kind">
+                <state img="0-interested.png">
+					It's okay, ~name~, take your time.
+				</state>
+            </case>
+            <case tag="female_must_strip" target="zoey">
+                <state img="0-interested.png">
+					Still beats fighting zombies though, right?
+				</state>
+            </case>
+            
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
 				<state img="0-interested.png">
 					What are you going to take off, ~name~?

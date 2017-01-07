@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <opponent>
 
     <first>Kimberly Ann</first>
@@ -6,6 +7,13 @@
     <gender>female</gender>
     <size>small</size>
     <timer>20</timer>
+    <tags>
+        <tag>cartoon</tag>
+        <tag>confident</tag>
+        <tag>bi-curious</tag>
+        <tag>ginger</tag>
+        <tag>sporty</tag>
+    </tags>
 
     <start>
         <state img="0-calm.png">What's the sitch? Strip poker? I can do that.</state>
@@ -26,11 +34,20 @@
             <case tag="female_must_strip">
                 <state img="0-calm.png">That's how these things go, huh?</state>
             </case>
+            <case tag="female_must_strip" target="elizabeth">
+                <state img="0-angry.png">Don't take this the wrong way, but I don't have a great track record with mad science. I'm watching you!</state>
+            </case>
             <case tag="male_chest_will_be_visible">
                 <state img="0-excited.png">This game just went to the next level!</state>
             </case>
             <case tag="female_removing_minor">
                 <state img="0-calm.png">Well, well. Looks like ~name~ is losing.</state>
+            </case>
+            <case tag="female_removing_minor" target="lara">
+                <state img="0-awkward.png">M-Miss Croft? Kim Possible. Big fan.</state>
+            </case>
+            <case tag="female_removing_minor" filter="innocent">
+                <state img="0-calm.png">Hey, if that's the most you take off you'll be having a great night.</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="0-stunned.png">I SAID I wasn't ready!</state>
@@ -71,6 +88,9 @@
             <case tag="female_removed_accessory">
                 <state img="0-calm.png">This is just the beginning!</state>
             </case>
+            <case tag="female_removed_accessory" target="harley">
+                <state img="0-shocked.png">Is-- That can't possibly be blood on your ~clothing~, can it?</state>
+            </case>
             <case tag="male_removed_major">
                 <state img="0-awkward.png">This game is going a little TOO fast. ...Not complaining, just observing.</state>
             </case>
@@ -79,6 +99,9 @@
             </case>
             <case tag="male_chest_is_visible">
                 <state img="0-interested.png">Not bad, ~name~.</state>
+            </case>
+            <case tag="male_chest_is_visible" target="link">
+                <state img="0-shocked.png">Wait... did you just--?</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="0-shocked.png">You really--!  But that means I'll have to--! Ohhh.</state>
@@ -125,11 +148,17 @@
             <case tag="female_chest_will_be_visible">
                 <state img="0-happy.png">I'm okay with stopping here, ~name~. I mean, we both know who won.</state>
             </case>
+            <case tag="female_chest_will_be_visible" filter="princess">
+                <state img="0-awkward.png">...So what's the protocol for a naked princess? Am I supposed to curtsy?</state>
+            </case>
             <case tag="male_masturbating">
                 <state img="0-interested.png">Sick and wrong. And fascinating.</state>
             </case>
             <case tag="female_removed_minor">
                 <state img="0-happy.png">Up for another round?</state>
+            </case>
+            <case tag="female_removed_minor" target="lara">
+                <state img="0-awkward.png">I, um, I wonder if you'd autograph something for me after the game?</state>
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="0-shocked.png">Wait! I'm not ready!</state>
@@ -214,6 +243,9 @@
             <case tag="female_removed_accessory">
                 <state img="1-calm.png">I see you came prepared, ~name~.</state>
             </case>
+            <case tag="female_removed_accessory" target="harley">
+                <state img="1-shocked.png">Is-- That can't possibly be blood on your ~clothing~, can it?</state>
+            </case>
             <case tag="male_removed_major">
                 <state img="1-horny.png">I wish I'd discovered this game back in high school.</state>
             </case>
@@ -222,6 +254,9 @@
             </case>
             <case tag="male_chest_is_visible">
                 <state img="1-interested.png">Not bad, ~name~.</state>
+            </case>
+            <case tag="male_chest_is_visible" target="link">
+                <state img="1-shocked.png">Wait... did you just--?</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="1-shocked.png">You really--!  But that means I'll have to--! Ohhh.</state>
@@ -268,11 +303,17 @@
             <case tag="female_chest_will_be_visible">
                 <state img="1-happy.png">I'm okay with stopping here, ~name~. I mean, we both know who won.</state>
             </case>
+            <case tag="female_chest_will_be_visible" filter="princess">
+                <state img="1-awkward.png">...So what's the protocol for a naked princess? Am I supposed to curtsy?</state>
+            </case>
             <case tag="male_masturbating">
                 <state img="1-interested.png">Sick and wrong. And fascinating.</state>
             </case>
             <case tag="female_removed_minor">
                 <state img="1-calm.png">You've got to start somewhere!</state>
+            </case>
+            <case tag="female_removed_minor" filter="mean">
+                <state img="1-calm.png">Go ahead and gloat - you'll be naked soon enough.</state>
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="1-shocked.png">Wait! I'm not ready!</state>
@@ -311,6 +352,9 @@
         <stage id="2">
             <case tag="female_must_strip">
                 <state img="2-interested.png">It's everybody's favorite time again!</state>
+            </case>
+            <case tag="female_must_strip" filter="shy">
+                <state img="2-interested.png">It's everybody's favorite time again! Well... mostly everybody.</state>
             </case>
             <case tag="male_chest_will_be_visible">
                 <state img="2-excited.png">I'm glad I came tonight!</state>
@@ -366,6 +410,9 @@
             <case tag="male_chest_is_visible">
                 <state img="2-calm.png">I'm sure Ron will have no problem fighting Dr. D while I'm here, right?</state>
             </case>
+            <case tag="male_chest_is_visible" target="link">
+                <state img="2-shocked.png">Wait... did you just--?</state>
+            </case>
             <case tag="female_large_chest_is_visible">
                 <state img="2-shocked.png">Actually, I'm not sure they have anything in your size.</state>
             </case>
@@ -410,6 +457,9 @@
             </case>
             <case tag="female_chest_will_be_visible">
                 <state img="2-happy.png">Would this be a good time to mention that Club Banana is having a clothing sale?</state>
+            </case>
+            <case tag="female_chest_will_be_visible" filter="princess">
+                <state img="2-awkward.png">...So what's the protocol for a naked princess? Am I supposed to curtsy?</state>
             </case>
             <case tag="male_masturbating">
                 <state img="2-horny.png">Wow, ~name~'s really going at it, isn't he?</state>
@@ -467,6 +517,9 @@
             <case tag="female_removed_major">
                 <state img="3-happy.png">Trust me, you have NOTHING to be ashamed of.</state>
             </case>
+            <case tag="female_removed_major" filter="mean">
+                <state img="3-interested.png">I mean, I've seen worse. A LOT worse.</state>
+            </case>
             <case tag="male_large_crotch_is_visible">
                 <state img="3-shocked.png">Except, um, a little bigger than I expected.</state>
             </case>
@@ -489,7 +542,10 @@
                 <state img="3-excited.png">I love what you're wearing! WERE wearing, I mean.</state>
             </case>
             <case tag="female_crotch_is_visible">
-                <state img="3-horny.png">I've been missing out?</state>
+                <state img="3-horny.png">I've been missing out.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="3-horny.png">But there's a real difference between them and you.</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="3-shocked.png">I can't believe you're really--!!</state>
@@ -508,6 +564,9 @@
             </case>
             <case tag="male_chest_is_visible">
                 <state img="3-excited.png">So worth coming.</state>
+            </case>
+            <case tag="male_chest_is_visible" target="link">
+                <state img="3-shocked.png">Wait... did you just--?</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="3-stunned.png">Just so you know: I am NOT jelling over your chest! I am perfectly fine with mine!</state>
@@ -554,11 +613,20 @@
             <case tag="female_chest_will_be_visible">
                 <state img="3-interested.png">Take off that ~clothing~ and show us what you're hiding, ~name~!</state>
             </case>
+            <case tag="female_chest_will_be_visible" filter="princess">
+                <state img="3-awkward.png">...So what's the protocol for a naked princess? Am I supposed to curtsy?</state>
+            </case>
             <case tag="male_masturbating">
                 <state img="3-horny.png">Someday I want to inspire that much passion...</state>
             </case>
             <case tag="female_removed_minor">
                 <state img="3-interested.png">Don't think this is the end for you. Not by a long shot!</state>
+            </case>
+            <case tag="female_removed_minor" filter="shy">
+                <state img="3-interested.png">Just think - the evening is young!</state>
+            </case>
+            <case tag="female_removed_minor" filter="innocent">
+                <state img="3-interested.png">Aw, I think you're blushing!</state>
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="3-calm.png">Huh. Just like prom night.</state>
@@ -628,11 +696,17 @@
             <case tag="female_masturbating">
                 <state img="4-horny.png">Faster! Rub it like you mean it!</state>
             </case>
+            <case tag="female_masturbating" target="lara">
+                <state img="4-horny.png">This is my teenage fantasy come to life!</state>
+            </case>
             <case tag="female_human_must_strip">
                 <state img="4-interested.png">So we're finally seeing more of you, ~name~?</state>
             </case>
             <case tag="female_crotch_is_visible">
                 <state img="4-stunned.png">Guess THAT answers that question. Wow.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="4-stunned.png">Guess THAT answers that question. Wow. You're so smooth!</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="4-happy.png">Don't worry - it's nothing I haven't seen before.</state>
@@ -651,6 +725,9 @@
             </case>
             <case tag="male_chest_is_visible">
                 <state img="4-interested.png">I see you keep in shape, ~name~.</state>
+            </case>
+            <case tag="male_chest_is_visible" target="link">
+                <state img="4-shocked.png">Wait... did you just--?</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="4-shocked.png">They're still jiggling?  Wow, that's... hypnotizing...</state>
@@ -696,6 +773,9 @@
             </case>
             <case tag="female_chest_will_be_visible">
                 <state img="4-interested.png">Just think of it as Mardi Gras!</state>
+            </case>
+            <case tag="female_chest_will_be_visible" filter="princess">
+                <state img="4-interested.png">Just think of it as a state function! ...In the nude.</state>
             </case>
             <case tag="male_masturbating">
                 <state img="4-shocked.png">I see you DON'T need help!</state>
@@ -771,11 +851,17 @@
             <case tag="female_masturbating">
                 <state img="5-shocked.png">I see you DON'T need help!</state>
             </case>
+            <case tag="female_masturbating" target="lara">
+                <state img="5-horny.png">This is my teenage fantasy come to life!</state>
+            </case>
             <case tag="female_human_must_strip">
                 <state img="5-excited.png">Your turn, ~name~!</state>
             </case>
             <case tag="female_crotch_is_visible">
                 <state img="5-interested.png">I appreciate the view, though!</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="5-horny.png">Okay, I stand corrected. None of them were daring enough to shave.</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="5-happy.png">I could cheer you on if it would help.</state>
@@ -794,6 +880,9 @@
             </case>
             <case tag="male_chest_is_visible">
                 <state img="5-horny.png">Losing my top was worth it.</state>
+            </case>
+            <case tag="male_chest_is_visible" target="link">
+                <state img="5-shocked.png">Wait... did you just--?</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="5-shocked.png">Wow. Just... wow.</state>
@@ -896,6 +985,9 @@
             <case tag="female_removed_major">
                 <state img="6-interested.png">I love your underwear! ...And HATE my lack of it.</state>
             </case>
+            <case tag="female_removed_major" target="lara">
+                <state img="6-shocked.png">Chest binding? But that means you're even bigger than I--</state>
+            </case>
             <case tag="male_large_crotch_is_visible">
                 <state img="6-angry.png">Okay, Kim... imagine Drakken in the buff... imagine DNAmy... ah! It's not working!</state>
             </case>
@@ -913,6 +1005,9 @@
             </case>
             <case tag="female_masturbating">
                 <state img="6-horny.png">Sitting here in my panties, looking at you... this is just like cheerleading auditions!</state>
+            </case>
+            <case tag="female_masturbating" target="lara">
+                <state img="6-horny.png">This is my teenage fantasy come to life!</state>
             </case>
             <case tag="female_human_must_strip">
                 <state img="6-interested.png">Time for those clothes to go, ~name~.</state>
@@ -938,8 +1033,14 @@
             <case tag="male_chest_is_visible">
                 <state img="6-excited.png">Did you think you could get away without losing your ~clothing~? Poor boy.</state>
             </case>
+            <case tag="male_chest_is_visible" target="link">
+                <state img="6-shocked.png">Wait... did you just--?</state>
+            </case>
             <case tag="female_large_chest_is_visible">
                 <state img="6-shocked.png">I DIDN'T have a size complex until now.</state>
+            </case>
+            <case tag="female_large_chest_is_visible" filter="princess">
+                <state img="6-stunned.png">She's a princess, she's gorgeous, she's naked... and I'm taken. Why me?</state>
             </case>
             <case tag="male_must_strip">
                 <state img="6-interested.png">Time for those clothes to go, ~name~.</state>
@@ -962,8 +1063,14 @@
             <case tag="female_small_chest_is_visible">
                 <state img="6-happy.png">They're so perky! You ought to be more confident.</state>
             </case>
+            <case tag="female_small_chest_is_visible" filter="princess">
+                <state img="6-awkward.png">Twice as cute, though.</state>
+            </case>
             <case tag="female_medium_chest_is_visible">
                 <state img="6-awkward.png">Although I guess you do have a lot going for you...</state>
+            </case>
+            <case tag="female_medium_chest_is_visible" filter="princess">
+                <state img="6-awkward.png">Although you're somehow just as elegant as before.</state>
             </case>
             <case tag="female_removing_accessory">
                 <state img="6-angry.png">Oh, good. Your ~clothing~.</state>
@@ -978,10 +1085,16 @@
                 <state img="6-stunned.png">Your... your ~clothing~?</state>
             </case>
             <case tag="female_finished_masturbating">
-                <state img="6-horny.png">Believe me, you'd make the team.</state>
+                <state img="6-horny.png">Believe me, you'd make the cheer squad if I was still in charge.</state>
             </case>
             <case tag="female_chest_will_be_visible">
                 <state img="6-calm.png">Not so cocky now, are you?</state>
+            </case>
+            <case tag="female_chest_will_be_visible" filter="princess">
+                <state img="6-calm.png">Not so fancy now, are you?</state>
+            </case>
+            <case tag="female_chest_will_be_visible" filter="shy">
+                <state img="6-horny.png">You're adorable when you blush...</state>
             </case>
             <case tag="male_masturbating">
                 <state img="6-horny.png">Wow, ~name~'s really going at it, isn't he?</state>
@@ -1027,6 +1140,12 @@
             <case tag="female_must_strip">
                 <state img="7-excited.png">Don't be shy, ~name~. I mean, just look at me!</state>
             </case>
+            <case tag="female_must_strip" filter="mean">
+                <state img="7-excited.png">Time to even the odds!</state>
+            </case>
+            <case tag="female_must_strip" filter="shy">
+                <state img="7-awkward.png">Just remember: it can't be worse for you than it is for me.</state>
+            </case>
             <case tag="male_chest_will_be_visible">
                 <state img="7-happy.png">Here comes my favorite part!</state>
             </case>
@@ -1038,6 +1157,15 @@
             </case>
             <case tag="female_removed_major">
                 <state img="7-sad.png">You seem awfully calm, ~name~. I guess you're sitting pretty compared to me...</state>
+            </case>
+            <case tag="female_removed_major" filter="shy">
+                <state img="7-sad.png">There's really no reason for you to be so flustered, ~name~. I mean, you're doing great compared to me!</state>
+            </case>
+            <case tag="female_removed_major" filter="mean">
+                <state img="7-angry.png">You seem pretty confident, ~name~. But I've gotten out of worse situations!</state>
+            </case>
+            <case tag="female_removed_major" filter="confident">
+                <state img="7-angry.png">You seem pretty confident, ~name~. But I've gotten out of worse situations!</state>
             </case>
             <case tag="male_large_crotch_is_visible">
                 <state img="7-happy.png">Hee hee! It IS fun to let loose now and then!</state>
@@ -1057,11 +1185,17 @@
             <case tag="female_masturbating">
                 <state img="7-horny.png">Your technique is good, but I bet I could teach you a thing or two...</state>
             </case>
+            <case tag="female_masturbating" target="lara">
+                <state img="7-horny.png">This is my teenage fantasy come to life!</state>
+            </case>
             <case tag="female_human_must_strip">
                 <state img="7-excited.png">Don't be shy, ~name~. I mean, just look at me!</state>
             </case>
             <case tag="female_crotch_is_visible">
                 <state img="7-happy.png">And that was pretty crazy! We won the championship... Brick spiked the punch... Boobs, boobs everywhere!</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="7-interested.png">I love what you've done with it. It's so smooth...</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="7-excited.png">Go for it, ~name~!</state>
@@ -1080,6 +1214,9 @@
             </case>
             <case tag="male_chest_is_visible">
                 <state img="7-horny.png">I will NEVER get tired of seeing a man take off his ~clothing~.</state>
+            </case>
+            <case tag="male_chest_is_visible" target="link">
+                <state img="7-shocked.png">Wait... did you just--?</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="7-angry.png">My boyfriend says more than a handful is a waste. Hmph.</state>
@@ -1105,8 +1242,14 @@
             <case tag="female_small_chest_is_visible">
                 <state img="7-excited.png">We could be twins!</state>
             </case>
+            <case tag="female_small_chest_is_visible" filter="mean">
+                <state img="7-interested.png">So... it's a competition between us now?</state>
+            </case>
             <case tag="female_medium_chest_is_visible">
                 <state img="7-happy.png">Very nice, ~name~.</state>
+            </case>
+            <case tag="female_medium_chest_is_visible" filter="mean">
+                <state img="7-angry.png">Why do the bad ones always look so good?</state>
             </case>
             <case tag="female_removing_accessory">
                 <state img="7-angry.png">Do you know what I really hate?</state>
@@ -1125,6 +1268,9 @@
             </case>
             <case tag="female_chest_will_be_visible">
                 <state img="7-interested.png">Just pretend we're in the girl's locker room together, ~name~.</state>
+            </case>
+            <case tag="female_chest_will_be_visible" filter="mean">
+                <state img="7-interested.png">I DO enjoy seeing you squirm, ~name~.</state>
             </case>
             <case tag="male_masturbating">
                 <state img="7-horny.png">Am I turning you on THAT much?</state>
@@ -1197,6 +1343,9 @@
             <case tag="female_masturbating">
                 <state img="8-horny.png">This brings back so many memories from my cheerleading days...</state>
             </case>
+            <case tag="female_masturbating" target="lara">
+                <state img="8-horny.png">This is my teenage fantasy come to life!</state>
+            </case>
             <case tag="female_human_must_strip">
                 <state img="8-awkward.png">Could you wiggle a little more, ~name~?</state>
             </case>
@@ -1220,6 +1369,9 @@
             </case>
             <case tag="male_chest_is_visible">
                 <state img="8-horny.png">Thanks for the inspiration.</state>
+            </case>
+            <case tag="male_chest_is_visible" target="link">
+                <state img="8-shocked.png">Wait... did you just--?</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="8-awkward.png">Looks like a LOT has rubbed off on you. Wow!</state>
@@ -1321,11 +1473,17 @@
             <case tag="female_masturbating">
                 <state img="9-shocked.png">Wow. There's definitely a few things you could teach me!</state>
             </case>
+            <case tag="female_masturbating" target="lara">
+                <state img="9-horny.png">This is my teenage fantasy come to life!</state>
+            </case>
             <case tag="female_human_must_strip">
                 <state img="9-excited.png">Time for some karmic justice!</state>
             </case>
             <case tag="female_crotch_is_visible">
                 <state img="9-interested.png">...And Wade, who's probably filming this.</state>
+            </case>
+            <case tag="female_crotch_is_visible" filter="shaved">
+                <state img="9-interested.png">Speaking of secrets: tell me, do you shave or wax it? I don't see any stubble!</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="9-interested.png">I mean, it's nothing you haven't seen already today...</state>
@@ -1344,6 +1502,9 @@
             </case>
             <case tag="male_chest_is_visible">
                 <state img="9-horny.png">I will NEVER get tired of seeing a man take off his ~clothing~.</state>
+            </case>
+            <case tag="male_chest_is_visible" target="link">
+                <state img="9-shocked.png">Wait... did you just--?</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="9-horny.png">I'm jealous!</state>
@@ -1385,6 +1546,12 @@
                 <state img="9-awkward.png">Here I am, naked and sweaty, watching as you peel off your ~clothing~.</state>
             </case>
             <case tag="female_finished_masturbating">
+                <state img="9-horny.png">Very inspiring, ~name~. VERY inspiring.</state>
+            </case>
+            <case tag="female_finished_masturbating" filter="bi-curious">
+                <state img="9-horny.png">So, um, I have a boyfriend... and he's into threesomes... talk later?</state>
+            </case>
+            <case tag="female_finished_masturbating" filter="bisexual">
                 <state img="9-horny.png">So, um, I have a boyfriend... and he's into threesomes... talk later?</state>
             </case>
             <case tag="female_chest_will_be_visible">

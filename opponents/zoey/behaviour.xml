@@ -11,6 +11,12 @@
 	<gender>female</gender> <!-- what's their gender? -->
 	<size>medium</size>     <!-- Size of Naughty Bits (penis if male, boobs if female) -->
     <timer>15</timer>       <!-- how long do they... uh... take to 'finish'? -->
+    <tags>
+        <tag>video game</tag>
+        <tag>bi-curious</tag>
+        <tag>sarcastic</tag>
+        <tag>confident</tag>
+    </tags>
 	
 	<!-- Game Start Information -->
 	<start>
@@ -123,18 +129,18 @@
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="0-calm.png">
-					At least try to make it sexy!
+				<state img="0-sad.png">
+					At least TRY to make it sexy!
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="0-interested.png">
-					No, no! Take it off slowwwly!
+				<state img="0-happy.png">
+					This is not turning out badly for me.
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="0-interested.png">
-					I am kicking ass!
+				<state img="0-happy.png">
+					Yes! I am kicking ass!
 				</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
@@ -159,14 +165,19 @@
 					Heh... all according to keikaku.
 				</state>
 			</case>
+			<case tag="male_removed_major" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="0-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="0-horny.png">
 					You are a charming, beautiful man.
 				</state>
 			</case>
-			<case tag="male_crotch_is_visible"> <!-- a male player's crotch has become visible -->
-				<state img="0-awkward.png">
-					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
+			<case tag="male_chest_is_visible" target="link"> <!-- a male player's chest has become visible -->
+				<state img="0-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -214,18 +225,21 @@
 			
 			<!-- female player pre stripping cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="0-interested.png">
-					Do you want us to queue up some music, ~name~?
-				</state>
+				<state img="0-interested.png">Do you want us to queue up some music, ~name~?</state>
+				<state img="0-interested.png">Don't be shy, ~name~.</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="0-interested.png">
-					Do you want us to queue up some music, ~name~?
-				</state>
+				<state img="0-interested.png">Do you want us to queue up some music, ~name~?</state>
+				<state img="0-interested.png">Don't be shy, ~name~.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
-				<state img="0-sad.png">
-					So that's what you're going for? Really? Not gonna... spice it up at all?
+				<state img="0-happy.png">
+					Alright! Time to see how freaky you are, ~name~!
+				</state>
+			</case>
+			<case tag="female_removing_accessory" filter="exhibitionist"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+				<state img="0-shocked.png">
+					I was expecting something a little more... risque from someone with your reputation.
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -233,68 +247,166 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
-			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="0-happy.png">
+					I can't wait to see more!
+				</state>
+			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-interested.png">
-					Finally gonna see some underwear!
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
+				</state>
+			</case>
+			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="0-loss.png">
+					Finally gonna see some underwear! Wait, I don't mean 'finally'. 'Suddenly'. That's the word I wanted!
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="kind"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="0-sad.png">
+					I feel bad about beating you this fast. Not bad enough to stop you, though.
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="blonde"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="0-loss.png">
+					I take it 'blondes do it better' isn't referring to poker.
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="princess"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="0-interested.png">
+					I'm guessing 'caution' and 'modesty' aren't particularly royal traits.
+				</state>
+			</case>
+			<case tag="female_removing_major" target="hermione"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="0-loss.png">
+					Aren't you supposed to be magic or something? Guess it's not good for much, huh?
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
+				<state img="0-awkward.png">	Can you dial your inner slut back a little, ~name~? Some of us are trying to play hard to get.</state>
+			</case>
+			<case tag="female_chest_will_be_visible" filter="princess"> <!-- a female player's chest will become visible -->
+				<state img="0-interested.png">This is some kind of humiliation game for you, isn't it?</state>
+			</case>
+			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
 				<state img="0-interested.png">
-					Can you dial your inner slut back a little, ~name~? Some of us are trying to play hard to get.
+					This is some kind of humiliation game for you, isn't it?
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="0-horny.png">
-					Take it off! Take it off! And let us see the back too!
-				</state>
+				<state img="0-horny.png">Take it off! Take it off! And let us see the back too!</state>
+				<state img="0-horny.png">And now to answer the question on everyone's minds: does the carpet match the drapes?</state>
+				<state img="0-interested.png">Next up on 'Girls Gone Wild': ~name~ bares all!</state>
 			</case>
 			
 			<!-- female player stripping cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-loss.png">
+					We're really pushing the boundaries of this game here, aren't we?
+				</state>
+			</case>
+			<case tag="female_removed_accessory" target="hermione"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-happy.png">
+					You're wound really tight, aren't you? I bet you're a freak in bed.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" target="spooky"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-happy.png">
+					Yes, yes, we're all just terrified of you, Spooky.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="confident"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-sad.png">
-					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
+					You had my hopes up there.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="exhibitionist"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-calm.png">
+					Having you play with us feels kinda like the fox is guarding the henhouse...
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-sad.png">
+					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-happy.png">
-					Well maybe if we keep playing we'll actually see something good.
+					Well, maybe if we keep playing we'll actually see something good.
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="0-happy.png">
+					With skills like that, this can't be your first rodeo. 
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
-				<state img="0-interested.png">
-					Is that a blush? I think you're blushing, ~name~! I bet you like this.
-				</state>
+				<state img="0-interested.png">Be honest, ~name~: you're not trying to win, are you?</state>
 			</case>
-			<case tag="female_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="0-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="0-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="shy">
+				<state img="0-loss.png">Blushing already? Ever thought strip poker might NOT be the game for you?</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="0-interested.png">No hesitation at all, huh? This is gonna get interesting.</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="0-interested.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="0-interested.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="exhibitionist"> <!-- a female player's chest has become visible -->
+				<state img="0-interested.png">It's freakin' adorable how into this you are.</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="0-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="shy"> <!-- a female player's chest has become visible -->
+				<state img="0-sad.png">...What does it say about me that your blushing is turning me on more than your boobs?</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="0-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="0-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
+				<state img="0-interested.png">Nice boobs. Very princessy.</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="0-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="0-shocked.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="0-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
+				<state img="0-interested.png">Gingers may not have souls, but clearly they DO have boobs.</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="0-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
-				<state img="0-interested.png">
-					Maybe you can do a few poses now?
-				</state>
+				<state img="0-interested.png">Maybe you can do a few poses now?</state>
+				<state img="0-interested.png">Nice ass, ~name~. Very spankable.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="0-horny.png">Wow... it looks really pretty like that.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="0-interested.png">Pretty brave of you, baring that bush for us.</state>
 			</case>
 			
 			<!-- female player masturbating cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="0-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="blonde"> <!-- a female player has to masturbate -->
+				<state img="0-interested.png">
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="0-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -304,7 +416,7 @@
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="0-horny.png">
-					Uh, oh! I think I see your toes curling, ~name~!
+					Check out little miss Exhibitionist over here...
 				</state>
 			</case>
 			<case tag="female_heavy_masturbating"> <!-- a female player has gotten really into masturbating -->
@@ -312,13 +424,23 @@
 					Uh, oh! I think I see your toes curling, ~name~!
 				</state>
 			</case>
-			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
+			<case tag="female_heavy_masturbating" target="streaming-chan"> <!-- a female player has gotten really into masturbating -->
 				<state img="0-shocked.png">
-					That was actually... kinda hot. Man, this game is doing weird things to me.
+					Are you-- are you actually filming yourself as you do that? That's a whole new level of kink.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
+				<state img="0-horny.png">
+					Thank you, strip poker gods, for your bounty tonight.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating" filter="blonde"> <!-- a female player has "finished" masturbating -->
+				<state img="0-interested.png">
+					So... is it true that blondes have more fun? Or did it just look like it?
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="0-happy.png">Funny, sexy brunette zombie killer wanted to beat helpless group at strip poker.</state>
+                <state img="0-shocked.png">Holy crap. I should have bought lottery tickets.</state>
             </case>
 			
 		</stage>
@@ -393,18 +515,18 @@
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="1-calm.png">
-					At least try to make it sexy!
+				<state img="1-sad.png">
+					At least TRY to make it sexy!
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="1-interested.png">
-					No, no! Take it off slowwwly!
+				<state img="1-happy.png">
+					This is not turning out badly for me.
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="1-interested.png">
-					I am kicking ass!
+				<state img="1-happy.png">
+					Yes! I am kicking ass!
 				</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
@@ -429,9 +551,19 @@
 					Heh... all according to keikaku.
 				</state>
 			</case>
+			<case tag="male_removed_major" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="1-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="1-horny.png">
 					You are a charming, beautiful man.
+				</state>
+			</case>
+			<case tag="male_chest_is_visible" target="link"> <!-- a male player's chest has become visible -->
+				<state img="1-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -479,18 +611,16 @@
 			
 			<!-- female player pre stripping cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="1-interested.png">
-					Do you want us to queue up some music, ~name~?
-				</state>
+				<state img="1-interested.png">Do you want us to queue up some music, ~name~?</state>
+				<state img="1-interested.png">Don't be shy, ~name~.</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="1-interested.png">
-					Do you want us to queue up some music, ~name~?
-				</state>
+				<state img="1-interested.png">Do you want us to queue up some music, ~name~?</state>
+				<state img="1-interested.png">Don't be shy, ~name~.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
-				<state img="1-sad.png">
-					So that's what you're going for? Really? Not gonna... spice it up at all?
+				<state img="1-happy.png">
+					Alright! Time to see how freaky you are, ~name~!
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -498,46 +628,131 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
-			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="1-happy.png">
+					I can't wait to see more!
+				</state>
+			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-interested.png">
-					Finally gonna see some underwear!
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
+				</state>
+			</case>
+			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="1-loss.png">
+					Finally gonna see some underwear! Wait, I don't mean 'finally'. 'Suddenly'. That's the word I wanted!
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="kind"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="1-sad.png">
+					I feel bad about beating you this fast. Not bad enough to stop you, though.
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="blonde"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="1-loss.png">
+					I take it 'blondes do it better' isn't referring to poker.
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="princess"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="1-interested.png">
+					I'm guessing 'caution' and 'modesty' aren't particularly royal traits.
+				</state>
+			</case>
+			<case tag="female_removing_major" target="hermione"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="1-interested.png">
+					Aren't you supposed to be magic or something? Guess it's not good for much, huh?
 				</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
+				<state img="1-awkward.png">Can you dial your inner slut back a little, ~name~? Some of us are trying to play hard to get.</state>
+			</case>
+			<case tag="female_chest_will_be_visible" filter="princess"> <!-- a female player's chest will become visible -->
+				<state img="1-interested.png">This is some kind of humiliation game for you, isn't it?</state>
+			</case>
+			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
 				<state img="1-interested.png">
-					Here it comes, boys. Get ready!
+					This is some kind of humiliation game for you, isn't it?
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="1-horny.png">
-					Take it off! Take it off! And let us see the back too!
-				</state>
+				<state img="1-horny.png">Take it off! Take it off! And let us see the back too!</state>
+				<state img="1-horny.png">And now to answer the question on everyone's minds: does the carpet match the drapes?</state>
+				<state img="1-interested.png">Next up on 'Girls Gone Wild': ~name~ bares all!</state>
 			</case>
 			
 			<!-- female player stripping cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="1-sad.png">
-					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
+					I don't know what I was expecting.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" target="hermione"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="1-happy.png">
+					You're wound really tight, aren't you? I bet you're a freak in bed.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" target="spooky"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="1-happy.png">
+					Yes, yes, we're all just terrified of you, Spooky.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="confident"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="1-sad.png">
+					You had my hopes up there.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="1-sad.png">
+					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-happy.png">
-					Well maybe if we keep playing we'll actually see something good.
+					Well, maybe if we keep playing we'll actually see something good.
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="1-happy.png">
+					With skills like that, this can't be your first rodeo. 
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
-				<state img="1-interested.png">
-					Is that a blush? I think you're blushing, ~name~! I bet you like this.
-				</state>
+				<state img="1-interested.png">Be honest, ~name~: you're not trying to win, are you?</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="1-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="shy">
+				<state img="1-loss.png">Blushing already? Ever thought strip poker might NOT be the game for you?</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="1-interested.png">No hesitation at all, huh? This is gonna get interesting.</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="1-interested.png">
-					I'm not usually one for girls, but... I'm enjoying this!
+				<state img="1-interested.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="exhibitionist"> <!-- a female player's chest has become visible -->
+				<state img="1-interested.png">It's freakin' adorable how into this you are.</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="1-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="shy"> <!-- a female player's chest has become visible -->
+				<state img="1-sad.png">...What does it say about me that your blushing is turning me on more than your boobs?</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="1-horny.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
+				<state img="1-interested.png">Nice boobs. Very princessy.</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="1-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -545,16 +760,41 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
-			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
 				<state img="1-interested.png">
-					Maybe you can do a few poses now?
+					Gingers may not have souls, but clearly they DO have boobs.
 				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="1-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+				<state img="1-interested.png">Maybe you can do a few poses now?</state>
+				<state img="1-interested.png">Nice ass, ~name~. Very spankable.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="1-horny.png">Wow... it looks really pretty like that.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="1-interested.png">Pretty brave of you, baring that bush for us.</state>
 			</case>
 			
 			<!-- female player masturbating cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="1-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="blonde"> <!-- a female player has to masturbate -->
+				<state img="1-interested.png">
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="1-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -564,7 +804,7 @@
 			</case>
 			<case tag="female_masturbating"> <!-- a female player is masturbating -->
 				<state img="1-horny.png">
-					Uh, oh! I think I see your toes curling, ~name~!
+					Check out little miss Exhibitionist over here...
 				</state>
 			</case>
 			<case tag="female_heavy_masturbating"> <!-- a female player has gotten really into masturbating -->
@@ -572,13 +812,23 @@
 					Uh, oh! I think I see your toes curling, ~name~!
 				</state>
 			</case>
-			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
+			<case tag="female_heavy_masturbating" target="streaming-chan"> <!-- a female player has gotten really into masturbating -->
 				<state img="1-shocked.png">
-					That was actually... kinda hot. Man, this game is doing weird things to me.
+					Are you-- are you actually filming yourself as you do that? That's a whole new level of kink.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
+				<state img="1-horny.png">
+					Thank you, strip poker gods, for your bounty tonight.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating" filter="blonde"> <!-- a female player has "finished" masturbating -->
+				<state img="1-interested.png">
+					So... is it true that blondes have more fun? Or did it just look like it?
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="1-happy.png">Funny, sexy brunette zombie killer wanted to beat helpless group at strip poker.</state>
+                <state img="1-shocked.png">Holy crap. I should have bought lottery tickets.</state>
             </case>
 			
 		</stage>
@@ -653,18 +903,18 @@
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="2-calm.png">
-					At least try to make it sexy!
+				<state img="2-sad.png">
+					At least TRY to make it sexy!
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="2-interested.png">
-					No, no! Take it off slowwwwly!
+				<state img="2-happy.png">
+					This is not turning out badly for me.
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="2-interested.png">
-					I am kicking ass!
+				<state img="2-happy.png">
+					Yes! I am kicking ass!
 				</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
@@ -676,7 +926,7 @@
 			<!-- male player stripping cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="2-awkward.png">
-					Does that even count?
+					Not cool, ~name~.
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -689,9 +939,19 @@
 					Heh... all according to keikaku.
 				</state>
 			</case>
+			<case tag="male_removed_major" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="2-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="2-horny.png">
 					You are a charming, beautiful man.
+				</state>
+			</case>
+			<case tag="male_chest_is_visible" target="link"> <!-- a male player's chest has become visible -->
+				<state img="2-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -739,18 +999,20 @@
 			
 			<!-- female player pre stripping cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="2-interested.png">
-					Just like HBO... if there was still cable.
-				</state>
+				<state img="2-interested.png">Just like HBO... if there was still cable.</state>
+				<state img="2-interested.png">I know a guy who'd pay to see this!</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="2-interested.png">
-					Just like HBO... if there was still cable.
-				</state>
+				<state img="2-interested.png">Just like HBO... if there was still cable.</state>
+				<state img="2-interested.png">I know a guy who'd pay to see this!</state>
+			</case>
+			<case tag="female_must_strip" filter="princess"> <!-- a female player will strip, but you don't know what they will remove -->
+				<state img="2-interested.png">Just like HBO... if there was still cable.</state>
+				<state img="2-interested.png">I know a guy who'd pay through the nose to see this.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
-				<state img="2-sad.png">
-					So that's what you're going for? Really? Not gonna... spice it up at all?
+				<state img="2-happy.png">
+					Alright! Time to see how freaky you are, ~name~!
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -758,46 +1020,131 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="2-happy.png">
+					I can't wait to see more!
+				</state>
+			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="2-interested.png">
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="2-interested.png">
 					Finally gonna see some underwear!
 				</state>
 			</case>
-			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="2-interested.png">
-					Here it comes, boys. Get ready!
+			<case tag="female_removing_major" filter="kind"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="2-sad.png">
+					I feel bad about beating you this fast. Not bad enough to stop you, though.
 				</state>
 			</case>
-			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="2-horny.png">
-					Take it off! Take it off! And let us see the back too!
+			<case tag="female_removing_major" filter="blonde"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="2-loss.png">
+					I take it 'blondes do it better' isn't referring to poker.
 				</state>
+			</case>
+			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="2-interested.png">
+					I'm surprised it took this long to get you down to your underwear, ~name~. Are you feeling okay?
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="princess"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="2-interested.png">
+					I'm guessing 'caution' and 'modesty' aren't particularly royal traits.
+				</state>
+			</case>
+			<case tag="female_removing_major" target="hermione"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="2-interested.png">
+					Aren't you supposed to be magic or something? Guess it's not good for much, huh?
+				</state>
+			</case>
+			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
+				<state img="2-interested.png">Tell me, what's it like being an exhibitionist?</state>
+			</case>
+			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
+				<state img="2-interested.png">They say the best way to deal with shyness is to face it head on... how's that working out for ya?</state>
+			</case>
+			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
+				<state img="2-horny.png">Take it off! Take it off! And let us see the back too!</state>
+				<state img="2-horny.png">And now to answer the question on everyone's minds: does the carpet match the drapes?</state>
+				<state img="2-interested.png">Next up on 'Girls Gone Wild': ~name~ bares all!</state>
 			</case>
 			
 			<!-- female player stripping cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="2-sad.png">
-					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
+					I don't know what I was expecting.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" target="hermione"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="2-happy.png">
+					You're wound really tight, aren't you? I bet you're a freak in bed.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" target="spooky"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="2-happy.png">
+					Yes, yes, we're all just terrified of you, Spooky.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="confident"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="2-sad.png">
+					You had my hopes up there.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="2-sad.png">
+					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-happy.png">
-					Well maybe if we keep playing we'll actually see something good.
+					Well, maybe if we keep playing we'll actually see something good.
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="2-happy.png">
+					With skills like that, this can't be your first rodeo. 
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
-				<state img="2-interested.png">
-					Is that a blush? I think you're blushing, ~name~! I bet you like this.
-				</state>
+				<state img="2-interested.png">Be honest, ~name~: you're not trying to win, are you?</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="2-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="shy">
+				<state img="2-loss.png">Blushing already? Ever thought strip poker might NOT be the game for you?</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="2-interested.png">No hesitation at all, huh? This is gonna get interesting.</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="2-interested.png">
-					I'm not usually one for girls, but... I'm enjoying this!
+				<state img="2-interested.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="exhibitionist"> <!-- a female player's chest has become visible -->
+				<state img="2-interested.png">It's freakin' adorable how into this you are.</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="2-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="shy"> <!-- a female player's chest has become visible -->
+				<state img="2-sad.png">...What does it say about me that your blushing is turning me on more than your boobs?</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="2-horny.png">
 					I'm not usually one for girls, but... I'm enjoying this!
+				</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
+				<state img="2-interested.png">Nice boobs. Very princessy.</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="2-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -805,16 +1152,44 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
-			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
 				<state img="2-interested.png">
-					Maybe you can do a few poses now?
+					Gingers may not have souls, but clearly they DO have boobs.
 				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="2-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+				<state img="2-interested.png">Maybe you can do a few poses now?</state>
+				<state img="2-interested.png">Nice ass, ~name~. Very spankable.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="2-interested.png">Wow... it looks nice like that.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="2-horny.png">Wow... it looks really pretty like that.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="2-interested.png">Pretty brave of you, baring that bush for us.</state>
 			</case>
 			
 			<!-- female player masturbating cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="2-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="blonde"> <!-- a female player has to masturbate -->
+				<state img="2-interested.png">
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="2-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -832,13 +1207,23 @@
 					Uh, oh! I think I see your toes curling, ~name~!
 				</state>
 			</case>
-			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
+			<case tag="female_heavy_masturbating" target="streaming-chan"> <!-- a female player has gotten really into masturbating -->
 				<state img="2-shocked.png">
-					That was actually... kinda hot. Man, this game is doing weird things to me.
+					Are you-- are you actually filming yourself as you do that? That's a whole new level of kink.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
+				<state img="2-horny.png">
+					Thank you, strip poker gods, for your bounty tonight.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating" filter="blonde"> <!-- a female player has "finished" masturbating -->
+				<state img="2-interested.png">
+					So... is it true that blondes have more fun? Or did it just look like it?
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="2-happy.png">Funny, sexy brunette zombie killer wanted to beat helpless group at strip poker.</state>
+                <state img="2-happy.png">Tradition now dictates that I shake my fully-clothed ass at you whilst singing 'nya-na-na-na-na'.</state>
             </case>
 			
 		</stage>
@@ -899,12 +1284,12 @@
 			<!-- male player pre stripping cases -->
 			<case tag="male_human_must_strip"> <!-- a male human player is about to strip, but you don't know what they will remove -->
 				<state img="3-interested.png">
-					Hey, ~name~. Guywhostripssayswhat?
+					You wanna see the titties, you gotta pay the price. Strip 'em!
 				</state>
 			</case>
 			<case tag="male_must_strip"> <!-- a male player will strip, but you don't know what they will remove -->
 				<state img="3-interested.png">
-					Hey, ~name~. Guywhostripssayswhat?
+					You wanna see the titties, you gotta pay the price. Strip 'em!
 				</state>
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
@@ -913,18 +1298,18 @@
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="3-calm.png">
-					At least try to make it sexy!
+				<state img="3-sad.png">
+					At least TRY to make it sexy!
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-interested.png">
-					No, no! Take it off slowwwly!
+					Bow chicka-wow wow...
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="3-interested.png">
-					I am kicking ass!
+				<state img="3-happy.png">
+					Yes! I am kicking ass!
 				</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
@@ -932,11 +1317,16 @@
 					Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.
 				</state>
 			</case>
+			<case tag="male_crotch_will_be_visible" target="link"> <!-- a male player's crotch will become visible -->
+				<state img="3-loss.png">
+					Now to answer the age-old question: what DO elves have 'down there'?
+				</state>
+			</case>
 			
 			<!-- male player stripping cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="3-awkward.png">
-					Does that even count?
+					Not cool, ~name~.
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -949,9 +1339,19 @@
 					Heh... all according to keikaku.
 				</state>
 			</case>
+			<case tag="male_removed_major" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="3-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="3-happy.png">
 					Okay! I might actually get through this. I'm doing all right!
+				</state>
+			</case>
+			<case tag="male_chest_is_visible" target="link"> <!-- a male player's chest has become visible -->
+				<state img="3-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -999,14 +1399,16 @@
 			
 			<!-- female player pre stripping cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="3-interested.png">
-					Just like HBO... if there was still cable.
-				</state>
+				<state img="3-interested.png">Just like HBO... if there was still cable.</state>
+				<state img="3-interested.png">I know a guy who'd pay to see this! Actually, several guys. I hang out with losers, okay?</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="3-interested.png">
-					Just like HBO... if there was still cable.
-				</state>
+				<state img="3-interested.png">Just like HBO... if there was still cable.</state>
+				<state img="3-interested.png">I know a guy who'd pay to see this! Actually, several guys. I hang out with losers, okay?</state>
+			</case>
+			<case tag="female_must_strip" filter="princess"> <!-- a female player will strip, but you don't know what they will remove -->
+				<state img="3-interested.png">Just like HBO... if there was still cable.</state>
+				<state img="3-interested.png">I know a guy who'd pay through the nose to see this.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="3-sad.png">
@@ -1018,20 +1420,56 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-happy.png">
+					I can't wait to see more!
+				</state>
+			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-interested.png">
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-interested.png">
 					Finally gonna see some underwear!
 				</state>
 			</case>
-			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="3-interested.png">
-					Here it comes, boys. Get ready!
+			<case tag="female_removing_major" filter="kind"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="3-sad.png">
+					I feel bad about beating you this fast. Not bad enough to stop you, though.
 				</state>
 			</case>
-			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="3-horny.png">
-					Take it off! Take it off! And let us see the back too!
+			<case tag="female_removing_major" filter="blonde"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="3-loss.png">
+					I take it 'blondes do it better' isn't referring to poker.
 				</state>
+			</case>
+			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="3-interested.png">
+					I'm surprised it took this long to get you down to your underwear, ~name~. Are you feeling okay?
+				</state>
+			</case>
+			<case tag="female_removing_major" filter="princess"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="3-interested.png">
+					I'm guessing 'caution' and 'modesty' aren't particularly royal traits.
+				</state>
+			</case>
+			<case tag="female_removing_major" target="hermione"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="3-interested.png">
+					Aren't you supposed to be magic or something? Guess it's not good for much, huh?
+				</state>
+			</case>
+			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
+				<state img="3-interested.png">Tell me, what's it like being an exhibitionist?</state>
+			</case>
+			<case tag="female_chest_will_be_visible" filter="shy"> <!-- a female player's chest will become visible -->
+				<state img="3-interested.png">They say the best way to deal with shyness is to face it head on... how's that working out for ya?</state>
+			</case>
+			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
+				<state img="3-horny.png">Take it off! Take it off! And let us see the back too!</state>
+				<state img="3-horny.png">And now to answer the question on everyone's minds: does the carpet match the drapes?</state>
+				<state img="3-interested.png">Next up on 'Girls Gone Wild': ~name~ bares all!</state>
 			</case>
 			
 			<!-- female player stripping cases -->
@@ -1040,19 +1478,60 @@
 					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
 				</state>
 			</case>
+			<case tag="female_removed_accessory" target="hermione"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="3-happy.png">
+					You're wound really tight, aren't you? I bet you're a freak in bed.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" target="spooky"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="3-happy.png">
+					Yes, yes, we're all just terrified of you, Spooky.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="confident"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="3-sad.png">
+					You had my hopes up there.
+				</state>
+			</case>
+			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="3-sad.png">
+					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.
+				</state>
+			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-happy.png">
-					Well maybe if we keep playing we'll actually see something good.
+					Well, maybe if we keep playing we'll actually see something good.
+				</state>
+			</case>
+			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-happy.png">
+					With skills like that, this can't be your first rodeo. 
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
-				<state img="3-interested.png">
-					Is that a blush? I think you're blushing, ~name~! I bet you like this.
-				</state>
+				<state img="3-interested.png">Is that a blush? I think you're blushing, ~name~! I bet you like this.</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="3-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="shy">
+				<state img="3-interested.png">You're beet red, ~name~. It's a good look on you.</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="3-interested.png">Is that a grin? You little minx, you're enjoying this, aren't you?</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="3-interested.png">
-					I'm not usually one for girls, but... I'm enjoying this!
+				<state img="3-interested.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="exhibitionist"> <!-- a female player's chest has become visible -->
+				<state img="3-interested.png">It's freakin' adorable how into this you are.</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="shy"> <!-- a female player's chest has become visible -->
+				<state img="3-sad.png">...What does it say about me that your blushing is turning me on more than your boobs?</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="3-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -1060,21 +1539,54 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
+				<state img="3-interested.png">Nice boobs. Very princessy.</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="3-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="3-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
-			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
 				<state img="3-interested.png">
-					Maybe you can do a few poses now?
+					Gingers may not have souls, but clearly they DO have boobs.
 				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="3-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+				<state img="3-interested.png">Maybe you can do a few poses now?</state>
+				<state img="3-interested.png">Nice ass, ~name~. Very spankable.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="3-horny.png">Wow... it looks really pretty like that.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="3-interested.png">Pretty brave of you, baring that bush for us.</state>
 			</case>
 			
 			<!-- female player masturbating cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="3-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="blonde"> <!-- a female player has to masturbate -->
+				<state img="3-interested.png">
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="3-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -1092,13 +1604,23 @@
 					Uh, oh! I think I see your toes curling, ~name~!
 				</state>
 			</case>
-			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
+			<case tag="female_heavy_masturbating" target="streaming-chan"> <!-- a female player has gotten really into masturbating -->
 				<state img="3-shocked.png">
-					That was actually... kinda hot. Man, this game is doing weird things to me.
+					Are you-- are you actually filming yourself as you do that? That's a whole new level of kink.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
+				<state img="3-horny.png">
+					Thank you, strip poker gods, for your bounty tonight.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating" filter="blonde"> <!-- a female player has "finished" masturbating -->
+				<state img="3-interested.png">
+					So... is it true that blondes have more fun? Or did it just look like it?
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="3-happy.png">Funny, sexy brunette zombie killer wanted to beat helpless group at strip poker.</state>
+                <state img="3-happy.png">Tradition now dictates that I shake my fully-clothed ass at you whilst singing 'nya-na-na-na-na'.</state>
             </case>
 			
 		</stage>
@@ -1159,12 +1681,12 @@
 			<!-- male player pre stripping cases -->
 			<case tag="male_human_must_strip"> <!-- a male human player is about to strip, but you don't know what they will remove -->
 				<state img="4-interested.png">
-					Oh shit, looks like it's Chip-n-Dale's time, ~name~!
+					You wanna see the titties, you gotta pay the price. Strip 'em!
 				</state>
 			</case>
 			<case tag="male_must_strip"> <!-- a male player will strip, but you don't know what they will remove -->
 				<state img="4-interested.png">
-					Yes! Hee hee, take it off, ~name~!
+					You wanna see the titties, you gotta pay the price. Strip 'em!
 				</state>
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
@@ -1173,13 +1695,13 @@
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="4-calm.png">
-					At least try to make it sexy!
+				<state img="4-sad.png">
+					Your ~clothing~? Be still my heart!
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="4-interested.png">
-					No, no! Take it off slowwwly!
+					Bow chicka-wow wow...
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -1190,6 +1712,11 @@
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
 				<state img="4-horny.png">
 					Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.
+				</state>
+			</case>
+			<case tag="male_crotch_will_be_visible" target="link"> <!-- a male player's crotch will become visible -->
+				<state img="4-loss.png">
+					Now to answer the age-old question: what DO elves have 'down there'?
 				</state>
 			</case>
 			
@@ -1209,9 +1736,19 @@
 					Well. That was refreshing.
 				</state>
 			</case>
+			<case tag="male_removed_major" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="4-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="4-happy.png">
 					Okay! I might actually get through this. I'm doing all right!
+				</state>
+			</case>
+			<case tag="male_chest_is_visible" target="link"> <!-- a male player's chest has become visible -->
+				<state img="4-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -1221,7 +1758,7 @@
 			</case>
 			<case tag="male_medium_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="4-awkward.png">
-					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
+					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
 			</case>
 			<case tag="male_large_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -1259,14 +1796,12 @@
 			
 			<!-- female player pre stripping cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="4-interested.png">
-					Way to cramp the 'last woman on Earth' thing I've got going for me, ~name~.
-				</state>
+				<state img="4-awkward.png">Way to cramp the 'last woman on Earth' thing I've got going for me, ~name~.</state>
+				<state img="4-interested.png">Don't be embarrassed, ~name~. Save that for later.</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="4-interested.png">
-					Way to cramp the 'last woman on Earth' thing I've got going for me, ~name~.
-				</state>
+				<state img="4-awkward.png">Way to cramp the 'last woman on Earth' thing I've got going for me, ~name~.</state>
+				<state img="4-interested.png">Don't be embarrassed, ~name~. Save that for later.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="4-sad.png">
@@ -1278,20 +1813,31 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
+			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="4-happy.png">
+					I can't wait to see more!
+				</state>
+			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="4-interested.png">
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
+				</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="4-interested.png">
-					Finally gonna see some underwear!
+					Finally gonna see some underwear! I mean, other than mine.
 				</state>
+			</case>
+			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
+				<state img="4-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="4-interested.png">
-					Here it comes, boys. Get ready!
-				</state>
+				<state img="4-interested.png">Here it comes, boys. Get ready!</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="4-horny.png">
-					Take it off! Take it off! And let us see the back too!
-				</state>
+				<state img="4-horny.png">Take it off! Take it off! And let us see the back too!</state>
+				<state img="4-horny.png">And now to answer the question on everyone's minds: does the carpet match the drapes?</state>
+				<state img="4-interested.png">Next up on 'Girls Gone Wild': ~name~ bares all!</state>
 			</case>
 			
 			<!-- female player stripping cases -->
@@ -1300,19 +1846,37 @@
 					And of COURSE ~name~ still had her ~clothing~.
 				</state>
 			</case>
+			<case tag="female_removed_accessory" target="hermione"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="4-happy.png">
+					You're wound really tight, aren't you? I bet you're a freak in bed.
+				</state>
+			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-awkward.png">
 					Next to you, I feel kinda underdressed for the apocalypse.
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
-				<state img="4-interested.png">
-					Is that a blush? I think you're blushing, ~name~! I bet you like this.
-				</state>
+				<state img="4-interested.png">Is that a blush? I think you're blushing, ~name~! I bet you like this.</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="4-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="shy">
+				<state img="4-interested.png">You're beet red, ~name~. It's a good look on you.</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="4-interested.png">Is that a grin? You little minx, you're enjoying this, aren't you?</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="4-interested.png">
-					I'm not usually one for girls, but... I'm enjoying this!
+				<state img="4-interested.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="exhibitionist"> <!-- a female player's chest has become visible -->
+				<state img="4-interested.png">It's freakin' adorable how into this you are.</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="4-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -1320,21 +1884,54 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
+				<state img="4-interested.png">Nice boobs. Very princessy.</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="4-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="4-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
-			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
 				<state img="4-interested.png">
-					Maybe you can do a few poses now?
+					Gingers may not have souls, but clearly they DO have boobs.
 				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="4-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+				<state img="4-interested.png">Maybe you can do a few poses now?</state>
+				<state img="4-interested.png">Nice ass, ~name~. Very spankable.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="4-horny.png">Wow... it looks really pretty like that.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="4-interested.png">Pretty brave of you, baring that bush for us.</state>
 			</case>
 			
 			<!-- female player masturbating cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="4-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="blonde"> <!-- a female player has to masturbate -->
+				<state img="4-interested.png">
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="4-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -1352,13 +1949,23 @@
 					Uh, oh! I think I see your toes curling, ~name~!
 				</state>
 			</case>
-			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
+			<case tag="female_heavy_masturbating" target="streaming-chan"> <!-- a female player has gotten really into masturbating -->
 				<state img="4-shocked.png">
-					That was actually... kinda hot. Man, this game is doing weird things to me.
+					Are you-- are you actually filming yourself as you do that? That's a whole new level of kink.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
+				<state img="4-horny.png">
+					Thank you, strip poker gods, for your bounty tonight.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating" filter="blonde"> <!-- a female player has "finished" masturbating -->
+				<state img="4-interested.png">
+					So... is it true that blondes have more fun? Or did it just look like it?
 				</state>
 			</case>
             <case tag="game_over_victory">
-                <state img="4-happy.png">Funny, sexy brunette zombie killer wanted to beat helpless group at strip poker.</state>
+                <state img="4-happy.png">Tradition now dictates that I shake my fully-clothed ass at you whilst singing 'nya-na-na-na-na'.</state>
             </case>
 			
 		</stage>
@@ -1392,7 +1999,7 @@
 			<!-- personal event cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
 				<state img="5-sad.png">
-					Oh, c'mon, you guys are a little disappointed, right?
+					Oh, c'mon, you guys are a LITTLE disappointed, right?
 				</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
@@ -1424,7 +2031,7 @@
 			</case>
 			<case tag="male_must_strip"> <!-- a male player will strip, but you don't know what they will remove -->
 				<state img="5-interested.png">
-					Yes! Hee hee, take it off, ~name~!
+					Oh shit, looks like it's Chip-n-Dale's time, ~name~!
 				</state>
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
@@ -1433,13 +2040,13 @@
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="5-calm.png">
-					At least try to make it sexy!
+				<state img="5-sad.png">
+					Your ~clothing~? Be still my heart!
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="5-interested.png">
-					No, no! Take it off slowwwly!
+					Bow chicka-wow wow...
 				</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
@@ -1450,6 +2057,11 @@
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
 				<state img="5-horny.png">
 					Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.
+				</state>
+			</case>
+			<case tag="male_crotch_will_be_visible" target="link"> <!-- a male player's crotch will become visible -->
+				<state img="5-loss.png">
+					Now to answer the age-old question: what DO elves have 'down there'?
 				</state>
 			</case>
 			
@@ -1469,9 +2081,19 @@
 					Well. That was refreshing.
 				</state>
 			</case>
+			<case tag="male_removed_major" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="5-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="5-horny.png">
 					~name~! You... look GOOD bare-chested.
+				</state>
+			</case>
+			<case tag="male_chest_is_visible" target="link"> <!-- a male player's chest has become visible -->
+				<state img="5-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -1481,7 +2103,7 @@
 			</case>
 			<case tag="male_medium_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="5-awkward.png">
-					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
+					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
 			</case>
 			<case tag="male_large_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -1519,14 +2141,12 @@
 			
 			<!-- female player pre stripping cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="5-interested.png">
-					Way to cramp the 'last woman on Earth' thing I've got going for me, ~name~.
-				</state>
+				<state img="5-awkward.png">Way to cramp the 'last woman on Earth' thing I've got going for me, ~name~.</state>
+				<state img="5-interested.png">Don't be embarrassed, ~name~. Save that for later.</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="5-interested.png">
-					Way to cramp the 'last woman on Earth' thing I've got going for me, ~name~.
-				</state>
+				<state img="5-awkward.png">Way to cramp the 'last woman on Earth' thing I've got going for me, ~name~.</state>
+				<state img="5-interested.png">Don't be embarrassed, ~name~. Save that for later.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="5-sad.png">
@@ -1538,20 +2158,29 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
-			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="5-interested.png">
-					Finally gonna see some underwear!
+			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="5-happy.png">
+					I can't wait to see more!
 				</state>
+			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="5-interested.png">
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
+				</state>
+			</case>
+			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="5-interested.png">Finally gonna see some underwear! I mean, other than mine.</state>
+			</case>
+			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
+				<state img="5-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="5-interested.png">
-					Show us your tits! Wooooo!
-				</state>
+				<state img="5-interested.png">Here it comes, boys. Get ready!</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="5-horny.png">
-					Take it off! Take it off! And let us see the back too!
-				</state>
+				<state img="5-horny.png">Take it off! Take it off! And let us see the back too!</state>
+				<state img="5-horny.png">And now to answer the question on everyone's minds: does the carpet match the drapes?</state>
+				<state img="5-interested.png">Next up on 'Girls Gone Wild': ~name~ bares all!</state>
 			</case>
 			
 			<!-- female player stripping cases -->
@@ -1560,19 +2189,37 @@
 					And of COURSE ~name~ still had her ~clothing~.
 				</state>
 			</case>
+			<case tag="female_removed_accessory" target="hermione"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="5-happy.png">
+					You're wound really tight, aren't you? I bet you're a freak in bed.
+				</state>
+			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="5-awkward.png">
 					Next to you, I feel kinda underdressed for the apocalypse.
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
-				<state img="5-interested.png">
-					Is that a blush? I think you're blushing, ~name~! I bet you like this.
-				</state>
+				<state img="5-interested.png">Is that a blush? I think you're blushing, ~name~! I bet you like this.</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="5-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="shy">
+				<state img="5-interested.png">You're beet red, ~name~. It's a good look on you.</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="5-interested.png">Is that a grin? You little minx, you're enjoying this, aren't you?</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="5-interested.png">
-					I'm not usually one for girls, but... I'm enjoying this!
+				<state img="5-interested.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="exhibitionist"> <!-- a female player's chest has become visible -->
+				<state img="5-interested.png">It's freakin' adorable how into this you are.</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="5-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -1580,21 +2227,54 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="5-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
+				<state img="5-interested.png">Nice boobs. Very princessy.</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="5-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
-			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
 				<state img="5-interested.png">
-					Maybe you can do a few poses now?
+					Gingers may not have souls, but clearly they DO have boobs.
 				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="5-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+				<state img="5-interested.png">Maybe you can do a few poses now?</state>
+				<state img="5-interested.png">Nice ass, ~name~. Very spankable.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="5-horny.png">Wow... it looks really pretty like that.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="5-interested.png">Pretty brave of you, baring that bush for us.</state>
 			</case>
 			
 			<!-- female player masturbating cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="5-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="blonde"> <!-- a female player has to masturbate -->
+				<state img="5-interested.png">
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="5-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -1612,13 +2292,23 @@
 					Uh, oh! I think I see your toes curling, ~name~!
 				</state>
 			</case>
+			<case tag="female_heavy_masturbating" target="streaming-chan"> <!-- a female player has gotten really into masturbating -->
+				<state img="5-shocked.png">
+					Are you-- are you actually filming yourself as you do that? That's a whole new level of kink.
+				</state>
+			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
 				<state img="5-shocked.png">
 					That was actually... kinda hot. Man, this game is doing weird things to me.
 				</state>
 			</case>
+			<case tag="female_finished_masturbating" filter="blonde"> <!-- a female player has "finished" masturbating -->
+				<state img="5-interested.png">
+					So... is it true that blondes have more fun? Or did it just look like it?
+				</state>
+			</case>
             <case tag="game_over_victory">
-                <state img="5-happy.png">I did it! Can you believe it?</state>
+                <state img="5-happy.png">Tradition now dictates that I shake my fully-clothed ass at you whilst singing 'nya-na-na-na-na'.</state>
             </case>
 			
 		</stage>
@@ -1684,7 +2374,7 @@
 			</case>
 			<case tag="male_must_strip"> <!-- a male player will strip, but you don't know what they will remove -->
 				<state img="6-interested.png">
-					Yes! Hee hee, take it off, ~name~!
+					Oh shit, looks like it's Chip-n-Dale's time, ~name~!
 				</state>
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
@@ -1693,8 +2383,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="6-calm.png">
-					At least try to make it sexy!
+				<state img="6-sad.png">
+					Your ~clothing~? Be still my heart!
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
@@ -1710,6 +2400,11 @@
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
 				<state img="6-horny.png">
 					Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.
+				</state>
+			</case>
+			<case tag="male_crotch_will_be_visible" target="link"> <!-- a male player's crotch will become visible -->
+				<state img="6-loss.png">
+					Now to answer the age-old question: what DO elves have 'down there'?
 				</state>
 			</case>
 			
@@ -1729,9 +2424,19 @@
 					Well. That was refreshing.
 				</state>
 			</case>
+			<case tag="male_removed_major" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="6-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="6-horny.png">
 					~name~! You... look GOOD bare-chested.
+				</state>
+			</case>
+			<case tag="male_chest_is_visible" target="link"> <!-- a male player's chest has become visible -->
+				<state img="6-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -1740,13 +2445,13 @@
 				</state>
 			</case>
 			<case tag="male_medium_crotch_is_visible"> <!-- a male player's crotch has become visible -->
-				<state img="6-awkward.png">
-					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
+				<state img="6-horny.png">
+					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
 			</case>
 			<case tag="male_large_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="6-shocked.png">
-					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
+					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
 			</case>
 			
@@ -1798,20 +2503,29 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
-			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="6-interested.png">
-					Finally gonna see some underwear!
+			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="6-happy.png">
+					I can't wait to see more!
 				</state>
+			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="6-interested.png">
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
+				</state>
+			</case>
+			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="6-interested.png">Finally gonna see some underwear! I mean, other than mine.</state>
+			</case>
+			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
+				<state img="6-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="6-interested.png">
-					Show us your tits! Wooooo!
-				</state>
+				<state img="6-interested.png">Okay, ~name~. Show us the goods.</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="6-horny.png">
-					Take it off! Take it off! And let us see the back too!
-				</state>
+				<state img="6-horny.png">Take it off! Take it off! And let us see the back too!</state>
+				<state img="6-horny.png">And now to answer the question on everyone's minds: does the carpet match the drapes?</state>
+				<state img="6-interested.png">Next up on 'Girls Gone Wild': ~name~ bares all!</state>
 			</case>
 			
 			<!-- female player stripping cases -->
@@ -1820,19 +2534,37 @@
 					And of COURSE ~name~ still had her ~clothing~.
 				</state>
 			</case>
+			<case tag="female_removed_accessory" target="hermione"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="6-happy.png">
+					You're wound really tight, aren't you? I bet you're a freak in bed.
+				</state>
+			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="6-awkward.png">
 					Next to you, I feel kinda underdressed for the apocalypse.
 				</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
-				<state img="6-interested.png">
-					Is that a blush? I think you're blushing, ~name~! I bet you like this.
-				</state>
+				<state img="6-interested.png">So it's true what they say, ~name~... your ~clothing~ really does look good on the bedroom floor.</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="6-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="shy">
+				<state img="6-interested.png">You're beet red, ~name~. It's a good look on you.</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="6-interested.png">Is that a grin? You little minx, you're enjoying this, aren't you?</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="6-interested.png">
-					I'm not usually one for girls, but... I'm enjoying this!
+				<state img="6-interested.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="exhibitionist"> <!-- a female player's chest has become visible -->
+				<state img="6-interested.png">It's freakin' adorable how into this you are.</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="6-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -1840,21 +2572,54 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="6-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
+				<state img="6-interested.png">Nice boobs. Very princessy.</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="6-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
-			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
 				<state img="6-interested.png">
-					Maybe you can do a few poses now?
+					Gingers may not have souls, but clearly they DO have boobs.
 				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="6-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+				<state img="6-interested.png">Maybe you can do a few poses now?</state>
+				<state img="6-interested.png">Nice ass, ~name~. Very spankable.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="6-horny.png">Wow... it looks really pretty like that.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="6-interested.png">Pretty brave of you, baring that bush for us.</state>
 			</case>
 			
 			<!-- female player masturbating cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="6-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="blonde"> <!-- a female player has to masturbate -->
+				<state img="6-interested.png">
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="6-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -1872,13 +2637,23 @@
 					Uh, oh! I think I see your toes curling, ~name~!
 				</state>
 			</case>
+			<case tag="female_heavy_masturbating" target="streaming-chan"> <!-- a female player has gotten really into masturbating -->
+				<state img="6-shocked.png">
+					Are you-- are you actually filming yourself as you do that? That's a whole new level of kink.
+				</state>
+			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
 				<state img="6-shocked.png">
 					That was actually... kinda hot. Man, this game is doing weird things to me.
 				</state>
 			</case>
+			<case tag="female_finished_masturbating" filter="blonde"> <!-- a female player has "finished" masturbating -->
+				<state img="6-interested.png">
+					So... is it true that blondes have more fun? Or did it just look like it?
+				</state>
+			</case>
             <case tag="game_over_victory">
-                <state img="6-happy.png">I did it! Can you believe it?</state>
+                <state img="6-happy.png">Tradition now dictates that I shake my fully-clothed ass at you whilst singing 'nya-na-na-na-na'.</state>
             </case>
 			
 		</stage>
@@ -1895,7 +2670,7 @@
 			</case>
 			<case tag="good_hand"> <!-- the character has a good hand after the exchange -->
 				<state img="7-happy.png">
-					Heh, looking good. Looking very good.
+					Oh, yeah.
 				</state>
 			</case>
 			<case tag="okay_hand"> <!-- the character has an okay hand after the exchange -->
@@ -1939,12 +2714,12 @@
 			<!-- male player pre stripping cases -->
 			<case tag="male_human_must_strip"> <!-- a male human player is about to strip, but you don't know what they will remove -->
 				<state img="7-interested.png">
-					Oh shit, looks like it's Chip-n-Dale's time, ~name~!
+					Get undressed, ~name~.
 				</state>
 			</case>
 			<case tag="male_must_strip"> <!-- a male player will strip, but you don't know what they will remove -->
 				<state img="7-interested.png">
-					Yes! Hee hee, take it off, ~name~!
+					Get undressed, ~name~.
 				</state>
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
@@ -1953,8 +2728,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="7-calm.png">
-					At least try to make it sexy!
+				<state img="7-sad.png">
+					Your ~clothing~? Be still my heart!
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
@@ -1970,6 +2745,11 @@
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
 				<state img="7-horny.png">
 					Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.
+				</state>
+			</case>
+			<case tag="male_crotch_will_be_visible" target="link"> <!-- a male player's crotch will become visible -->
+				<state img="7-loss.png">
+					Now to answer the age-old question: what DO elves have 'down there'?
 				</state>
 			</case>
 			
@@ -1994,19 +2774,24 @@
 					Just fair warning, ~name~, I'm totally objectifying you right now.
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" target="link"> <!-- a male player's chest has become visible -->
+				<state img="7-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="7-calm.png">
 					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
 				</state>
 			</case>
 			<case tag="male_medium_crotch_is_visible"> <!-- a male player's crotch has become visible -->
-				<state img="7-awkward.png">
-					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
+				<state img="7-horny.png">
+					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
 			</case>
 			<case tag="male_large_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="7-shocked.png">
-					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
+					Sweet Jesus.
 				</state>
 			</case>
 			
@@ -2058,20 +2843,29 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
-			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="7-interested.png">
-					Finally gonna see some underwear!
+			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="7-happy.png">
+					I can't wait to see more!
 				</state>
+			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="7-interested.png">
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
+				</state>
+			</case>
+			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="7-interested.png">Finally gonna see some underwear!</state>
+			</case>
+			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
+				<state img="7-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="7-interested.png">
-					Show us your tits! Wooooo!
-				</state>
+				<state img="7-interested.png">Okay, ~name~. Show us the goods.</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="7-horny.png">
-					Take it off! Take it off! And let us see the back too!
-				</state>
+				<state img="7-horny.png">Take it off! Take it off! And let us see the back too!</state>
+				<state img="7-horny.png">And now to answer the question on everyone's minds: does the carpet match the drapes?</state>
+				<state img="7-interested.png">Next up on 'Girls Gone Wild': ~name~ bares all!</state>
 			</case>
 			
 			<!-- female player stripping cases -->
@@ -2085,14 +2879,32 @@
 					All right, ~name~. REAL brave.
 				</state>
 			</case>
-			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
-				<state img="7-interested.png">
-					Is that a blush? I think you're blushing, ~name~! I bet you like this.
+			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="7-sad.png">
+					...Is what I'd say if I weren't standing here exposed for everyone to see.
 				</state>
 			</case>
+			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="7-interested.png">So it's true what they say, ~name~... your ~clothing~ really does look good on the bedroom floor.</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="7-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="shy">
+				<state img="7-interested.png">Don't worry, ~name~. You'll learn to like it!</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="7-interested.png">Is that a grin? You little minx, you're enjoying this, aren't you?</state>
+			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="7-interested.png">
-					I'm not usually one for girls, but... I'm enjoying this!
+				<state img="7-interested.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="exhibitionist"> <!-- a female player's chest has become visible -->
+				<state img="7-interested.png">It's freakin' adorable how into this you are.</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="7-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -2100,21 +2912,51 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="7-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="7-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
-			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
 				<state img="7-interested.png">
-					Maybe you can do a few poses now?
+					Gingers may not have souls, but clearly they DO have boobs.
 				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="7-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+				<state img="7-interested.png">Maybe you can do a few poses now?</state>
+				<state img="7-interested.png">Nice ass, ~name~. Very spankable.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="7-horny.png">Wow... it looks really pretty like that.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="7-interested.png">Pretty brave of you, baring that bush for us.</state>
 			</case>
 			
 			<!-- female player masturbating cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="7-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="blonde"> <!-- a female player has to masturbate -->
+				<state img="7-interested.png">
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="7-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -2132,13 +2974,23 @@
 					Uh, oh! I think I see your toes curling, ~name~!
 				</state>
 			</case>
+			<case tag="female_heavy_masturbating" target="streaming-chan"> <!-- a female player has gotten really into masturbating -->
+				<state img="7-shocked.png">
+					Are you-- are you actually filming yourself as you do that? That's a whole new level of kink.
+				</state>
+			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
 				<state img="7-shocked.png">
 					That was actually... kinda hot. Man, this game is doing weird things to me.
 				</state>
 			</case>
+			<case tag="female_finished_masturbating" filter="blonde"> <!-- a female player has "finished" masturbating -->
+				<state img="7-interested.png">
+					So... is it true that blondes have more fun? Or did it just look like it?
+				</state>
+			</case>
             <case tag="game_over_victory">
-                <state img="7-happy.png">I did it! Can you believe it?</state>
+                <state img="7-happy.png">Tradition now dictates that I shake my fully-clothed ass at you whilst singing 'nya-na-na-na-na'.</state>
             </case>
 			
 		</stage>
@@ -2194,12 +3046,12 @@
 			<!-- male player pre stripping cases -->
 			<case tag="male_human_must_strip"> <!-- a male human player is about to strip, but you don't know what they will remove -->
 				<state img="8-interested.png">
-					Oh shit, looks like it's Chip-n-Dale's time, ~name~!
+					Get undressed, ~name~.
 				</state>
 			</case>
 			<case tag="male_must_strip"> <!-- a male player will strip, but you don't know what they will remove -->
 				<state img="8-interested.png">
-					Yes! Hee hee, take it off, ~name~!
+					Get undressed, ~name~.
 				</state>
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
@@ -2208,8 +3060,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="8-calm.png">
-					At least try to make it sexy!
+				<state img="8-sad.png">
+					Your ~clothing~? Be still my heart!
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
@@ -2225,6 +3077,11 @@
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
 				<state img="8-horny.png">
 					Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.
+				</state>
+			</case>
+			<case tag="male_crotch_will_be_visible" target="link"> <!-- a male player's crotch will become visible -->
+				<state img="8-loss.png">
+					Now to answer the age-old question: what DO elves have 'down there'?
 				</state>
 			</case>
 			
@@ -2244,9 +3101,19 @@
 					Looking good.
 				</state>
 			</case>
+			<case tag="male_removed_major" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="8-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
 				<state img="8-horny.png">
 					Just fair warning, ~name~, I'm totally objectifying you right now.
+				</state>
+			</case>
+			<case tag="male_chest_is_visible" target="link"> <!-- a male player's chest has become visible -->
+				<state img="8-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
 				</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -2255,8 +3122,8 @@
 				</state>
 			</case>
 			<case tag="male_medium_crotch_is_visible"> <!-- a male player's crotch has become visible -->
-				<state img="8-awkward.png">
-					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
+				<state img="8-horny.png">
+					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
 			</case>
 			<case tag="male_large_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -2313,20 +3180,29 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
-			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="8-interested.png">
-					Finally gonna see some underwear!
+			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="8-happy.png">
+					I can't wait to see more!
 				</state>
+			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="8-interested.png">
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
+				</state>
+			</case>
+			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="8-interested.png">Finally gonna see some underwear!</state>
+			</case>
+			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
+				<state img="8-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="8-interested.png">
-					Show us your tits! Wooooo!
-				</state>
+				<state img="8-interested.png">Show us your tits! Wooooo!</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="8-horny.png">
-					Take it off! Take it off! And let us see the back too!
-				</state>
+				<state img="8-horny.png">Take it off! Take it off! And let us see the back too!</state>
+				<state img="8-horny.png">And now to answer the question on everyone's minds: does the carpet match the drapes?</state>
+				<state img="8-interested.png">Next up on 'Girls Gone Wild': ~name~ bares all!</state>
 			</case>
 			
 			<!-- female player stripping cases -->
@@ -2340,14 +3216,32 @@
 					All right, ~name~. REAL brave.
 				</state>
 			</case>
-			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
-				<state img="8-interested.png">
-					Is that a blush? I think you're blushing, ~name~! I bet you like this.
+			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="8-sad.png">
+					...Is what I'd say if I weren't standing here exposed for everyone to see.
 				</state>
 			</case>
+			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="8-interested.png">So it's true what they say, ~name~... your ~clothing~ really does look good on the bedroom floor.</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="8-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="shy">
+				<state img="8-interested.png">Don't worry, ~name~. You'll learn to like it!</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="8-interested.png">Is that a grin? You little minx, you're enjoying this, aren't you?</state>
+			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="8-interested.png">
-					I'm not usually one for girls, but... I'm enjoying this!
+				<state img="8-interested.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="exhibitionist"> <!-- a female player's chest has become visible -->
+				<state img="8-interested.png">It's freakin' adorable how into this you are.</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="8-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -2355,21 +3249,51 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="8-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="8-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
-			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
 				<state img="8-interested.png">
-					Maybe you can do a few poses now?
+					Gingers may not have souls, but clearly they DO have boobs.
 				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="8-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+				<state img="8-interested.png">Maybe you can do a few poses now?</state>
+				<state img="8-interested.png">Nice ass, ~name~. Very spankable.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="8-horny.png">Wow... it looks really pretty like that.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="8-interested.png">Pretty brave of you, baring that bush for us.</state>
 			</case>
 			
 			<!-- female player masturbating cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="8-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="blonde"> <!-- a female player has to masturbate -->
+				<state img="8-interested.png">
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="8-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -2387,13 +3311,23 @@
 					Uh, oh! I think I see your toes curling, ~name~!
 				</state>
 			</case>
+			<case tag="female_heavy_masturbating" target="streaming-chan"> <!-- a female player has gotten really into masturbating -->
+				<state img="8-shocked.png">
+					Are you-- are you actually filming yourself as you do that? That's a whole new level of kink.
+				</state>
+			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
 				<state img="8-shocked.png">
 					That was actually... kinda hot. Man, this game is doing weird things to me.
 				</state>
 			</case>
+			<case tag="female_finished_masturbating" filter="blonde"> <!-- a female player has "finished" masturbating -->
+				<state img="8-interested.png">
+					So... is it true that blondes have more fun? Or did it just look like it?
+				</state>
+			</case>
             <case tag="game_over_victory">
-                <state img="8-happy.png">I did it! Can you believe it?</state>
+                <state img="8-sad.png">I won! I did it! I get to stand here naked, the only one who hasn't cum!  ...Oh, crap. I'm the real loser, aren't I?</state>
             </case>
 			
 		</stage>
@@ -2422,7 +3356,7 @@
 			<!-- male player pre stripping cases -->
 			<case tag="male_human_must_strip"> <!-- a male human player is about to strip, but you don't know what they will remove -->
 				<state img="9-interested.png">
-					Oh shit, looks like it's Chip-n-Dale's time, ~name~!
+					Yes! Hee hee, take it off, ~name~!
 				</state>
 			</case>
 			<case tag="male_must_strip"> <!-- a male player will strip, but you don't know what they will remove -->
@@ -2436,8 +3370,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="9-calm.png">
-					At least try to make it sexy!
+				<state img="9-sad.png">
+					Your ~clothing~? Be still my heart!
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
@@ -2455,11 +3389,16 @@
 					Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.
 				</state>
 			</case>
+			<case tag="male_crotch_will_be_visible" target="link"> <!-- a male player's crotch will become visible -->
+				<state img="9-loss.png">
+					Now to answer the age-old question: what DO elves have 'down there'?
+				</state>
+			</case>
 			
 			<!-- male player stripping cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="9-awkward.png">
-					Hey, Jerkass! You're not just going to take off something big? REALLY?
+					Hey, Jerkass! You're just going to take off your ~clothing~? REALLY?
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -2477,14 +3416,19 @@
 					Just fair warning, ~name~, I'm totally objectifying you right now.
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" target="link"> <!-- a male player's chest has become visible -->
+				<state img="9-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="9-calm.png">
 					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
 				</state>
 			</case>
 			<case tag="male_medium_crotch_is_visible"> <!-- a male player's crotch has become visible -->
-				<state img="9-awkward.png">
-					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
+				<state img="9-horny.png">
+					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
 			</case>
 			<case tag="male_large_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -2541,20 +3485,29 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
-			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="9-interested.png">
-					Finally gonna see some underwear!
+			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="9-happy.png">
+					I can't wait to see more!
 				</state>
+			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="9-interested.png">
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
+				</state>
+			</case>
+			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="9-interested.png">Finally gonna see some underwear!</state>
+			</case>
+			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
+				<state img="9-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="9-interested.png">
-					Show us your tits! Wooooo!
-				</state>
+				<state img="9-interested.png">Show us your tits! Wooooo!</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="9-horny.png">
-					Take it off! Take it off! And let us see the back too!
-				</state>
+				<state img="9-horny.png">Take it off! Take it off! And let us see the back too!</state>
+				<state img="9-horny.png">And now to answer the question on everyone's minds: does the carpet match the drapes?</state>
+				<state img="9-interested.png">Next up on 'Girls Gone Wild': ~name~ bares all!</state>
 			</case>
 			
 			<!-- female player stripping cases -->
@@ -2568,14 +3521,32 @@
 					All right, ~name~. REAL brave.
 				</state>
 			</case>
-			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
-				<state img="9-interested.png">
-					Is that a blush? I think you're blushing, ~name~! I bet you like this.
+			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="9-sad.png">
+					...Is what I'd say if I weren't standing here exposed for everyone to see.
 				</state>
 			</case>
+			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="9-interested.png">So it's true what they say, ~name~... your ~clothing~ really does look good on the bedroom floor.</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="9-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="shy">
+				<state img="9-interested.png">Don't worry, ~name~. You'll learn to like it!</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="9-interested.png">Is that a grin? You little minx, you're enjoying this, aren't you?</state>
+			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="9-interested.png">
-					I'm not usually one for girls, but... I'm enjoying this!
+				<state img="9-interested.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="exhibitionist"> <!-- a female player's chest has become visible -->
+				<state img="9-interested.png">It's freakin' adorable how into this you are.</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="9-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -2583,21 +3554,51 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="9-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="9-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
-			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
 				<state img="9-interested.png">
-					Maybe you can do a few poses now?
+					Gingers may not have souls, but clearly they DO have boobs.
 				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="9-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+				<state img="9-interested.png">Maybe you can do a few poses now?</state>
+				<state img="9-interested.png">Nice ass, ~name~. Very spankable.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="9-horny.png">Wow... it looks really pretty like that.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="9-interested.png">Pretty brave of you, baring that bush for us.</state>
 			</case>
 			
 			<!-- female player masturbating cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="9-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="blonde"> <!-- a female player has to masturbate -->
+				<state img="9-interested.png">
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="9-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -2615,13 +3616,23 @@
 					Uh, oh! I think I see your toes curling, ~name~!
 				</state>
 			</case>
+			<case tag="female_heavy_masturbating" target="streaming-chan"> <!-- a female player has gotten really into masturbating -->
+				<state img="9-shocked.png">
+					Are you-- are you actually filming yourself as you do that? That's a whole new level of kink.
+				</state>
+			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
 				<state img="9-shocked.png">
 					That was actually... kinda hot. Man, this game is doing weird things to me.
 				</state>
 			</case>
+			<case tag="female_finished_masturbating" filter="blonde"> <!-- a female player has "finished" masturbating -->
+				<state img="9-interested.png">
+					So... is it true that blondes have more fun? Or did it just look like it?
+				</state>
+			</case>
             <case tag="game_over_victory">
-                <state img="9-happy.png">I did it! Can you believe it?</state>
+                <state img="9-sad.png">I won! I did it! I get to stand here naked, the only one who hasn't cum!  ...Oh, crap. I'm the real loser, aren't I?</state>
             </case>
 			
 		</stage>
@@ -2631,15 +3642,13 @@
 		<stage id="10">	 
 		
 			<case tag="finished_masturbating"> <!-- this player is finished -->
-				<state img="10-finished.png">
-					I just fingerblasted myself with an audience... and actually got off. This is a new low...
-				</state>
+				<state img="10-finished.png">I just fingerblasted myself with an audience... and actually got off. This is a new low...</state>
 			</case>
 			
 			<!-- male player pre stripping cases -->
 			<case tag="male_human_must_strip"> <!-- a male human player is about to strip, but you don't know what they will remove -->
 				<state img="10-interested.png">
-					Oh shit, looks like it's Chip-n-Dale's time, ~name~!
+					Yes! Hee hee, take it off, ~name~!
 				</state>
 			</case>
 			<case tag="male_must_strip"> <!-- a male player will strip, but you don't know what they will remove -->
@@ -2653,8 +3662,8 @@
 				</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="10-calm.png">
-					At least try to make it sexy!
+				<state img="10-sad.png">
+					Your ~clothing~? Be still my heart!
 				</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
@@ -2672,11 +3681,16 @@
 					Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.
 				</state>
 			</case>
+			<case tag="male_crotch_will_be_visible" target="link"> <!-- a male player's crotch will become visible -->
+				<state img="10-loss.png">
+					Now to answer the age-old question: what DO elves have 'down there'?
+				</state>
+			</case>
 			
 			<!-- male player stripping cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="10-awkward.png">
-					Hey, Jerkass! You're not just going to take off something big? REALLY?
+					Hey, Jerkass! You're just going to take off your ~clothing~? REALLY?
 				</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
@@ -2694,14 +3708,19 @@
 					Just fair warning, ~name~, I'm totally objectifying you right now.
 				</state>
 			</case>
+			<case tag="male_chest_is_visible" target="link"> <!-- a male player's chest has become visible -->
+				<state img="10-calm.png">
+					Dude. You have issues. But you're also hot, so all is forgiven.
+				</state>
+			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
 				<state img="10-calm.png">
 					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
 				</state>
 			</case>
 			<case tag="male_medium_crotch_is_visible"> <!-- a male player's crotch has become visible -->
-				<state img="10-awkward.png">
-					Well, well. This game has apparently made somebody who shall remain nameless here excited. *cough*~name~*cough*.
+				<state img="10-horny.png">
+					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
 			</case>
 			<case tag="male_large_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -2758,20 +3777,29 @@
 					You could at least dance to make it interesting or something.
 				</state>
 			</case>
-			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="10-interested.png">
-					Finally gonna see some underwear!
+			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="10-happy.png">
+					I can't wait to see more!
 				</state>
+			</case>
+			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="10-interested.png">
+					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
+				</state>
+			</case>
+			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+				<state img="10-interested.png">Finally gonna see some underwear!</state>
+			</case>
+			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
+				<state img="10-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="10-interested.png">
-					Show us your tits! Wooooo!
-				</state>
+				<state img="10-interested.png">Show us your tits! Wooooo!</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="10-horny.png">
-					Take it off! Take it off! And let us see the back too!
-				</state>
+				<state img="10-horny.png">Take it off! Take it off! And let us see the back too!</state>
+				<state img="10-horny.png">And now to answer the question on everyone's minds: does the carpet match the drapes?</state>
+				<state img="10-interested.png">Next up on 'Girls Gone Wild': ~name~ bares all!</state>
 			</case>
 			
 			<!-- female player stripping cases -->
@@ -2785,14 +3813,32 @@
 					All right, ~name~. REAL brave.
 				</state>
 			</case>
-			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
-				<state img="10-interested.png">
-					Is that a blush? I think you're blushing, ~name~! I bet you like this.
+			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="10-sad.png">
+					...Is what I'd say if I weren't standing here exposed for everyone to see.
 				</state>
 			</case>
+			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="10-interested.png">So it's true what they say, ~name~... your ~clothing~ really does look good on the bedroom floor.</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="10-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="shy">
+				<state img="10-interested.png">Don't worry, ~name~. You'll learn to like it!</state>
+			</case>
+			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="10-interested.png">Is that a grin? You little minx, you're enjoying this, aren't you?</state>
+			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="10-interested.png">
-					I'm not usually one for girls, but... I'm enjoying this!
+				<state img="10-interested.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="exhibitionist"> <!-- a female player's chest has become visible -->
+				<state img="10-interested.png">It's freakin' adorable how into this you are.</state>
+			</case>
+			<case tag="female_small_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="10-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
@@ -2800,21 +3846,51 @@
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="10-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="10-shocked.png">
 					I'm not usually one for girls, but... I'm enjoying this!
 				</state>
 			</case>
-			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
 				<state img="10-interested.png">
-					Maybe you can do a few poses now?
+					Gingers may not have souls, but clearly they DO have boobs.
 				</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
+				<state img="10-awkward.png">
+					Okay, this would be a lot more fun if you'd SAY SOMETHING.
+				</state>
+			</case>
+			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
+				<state img="10-interested.png">Maybe you can do a few poses now?</state>
+				<state img="10-interested.png">Nice ass, ~name~. Very spankable.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="shaved"> <!-- a female player's crotch has become visible -->
+				<state img="10-horny.png">Wow... it looks really pretty like that.</state>
+			</case>
+			<case tag="female_crotch_is_visible" filter="hairy"> <!-- a female player's crotch has become visible -->
+				<state img="10-interested.png">Pretty brave of you, baring that bush for us.</state>
 			</case>
 			
 			<!-- female player masturbating cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="10-interested.png">
 					You've got nothing left to take off, sister. Time to flick that bean like there's no tomorrow!
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="blonde"> <!-- a female player has to masturbate -->
+				<state img="10-interested.png">
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+				</state>
+			</case>
+			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
+				<state img="10-interested.png">
+					Now to see if royalty's really all it's cracked up to be.
 				</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
@@ -2832,9 +3908,19 @@
 					Uh, oh! I think I see your toes curling, ~name~!
 				</state>
 			</case>
+			<case tag="female_heavy_masturbating" target="streaming-chan"> <!-- a female player has gotten really into masturbating -->
+				<state img="10-shocked.png">
+					Are you-- are you actually filming yourself as you do that? That's a whole new level of kink.
+				</state>
+			</case>
 			<case tag="female_finished_masturbating"> <!-- a female player has "finished" masturbating -->
 				<state img="10-shocked.png">
 					That was actually... kinda hot. Man, this game is doing weird things to me.
+				</state>
+			</case>
+			<case tag="female_finished_masturbating" filter="blonde"> <!-- a female player has "finished" masturbating -->
+				<state img="10-interested.png">
+					So... is it true that blondes have more fun? Or did it just look like it?
 				</state>
 			</case>
             <case tag="game_over_defeat">
