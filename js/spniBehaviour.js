@@ -247,6 +247,7 @@ function updateBehaviour (player, tag, replace, content, opp) {
         for (var i = 0; i < states.length; i++) {
             var target = states[i].attr("target");
             var filter = states[i].attr("filter");
+	    var alsoPlaying = states[i].attr("alsoPlaying");
             
             if (opp !== null && typeof target !== typeof undefined && target !== false) {
                 target = "opponents/" + target  + "/";
@@ -265,6 +266,19 @@ function updateBehaviour (player, tag, replace, content, opp) {
                     }
                 }
             }
+	    else if (typeof alsoPlaying !== typeof undefined && alsoPlaying !== false) {
+	    	for (var j = 0; j < players.length; j++) {
+		    if (opp !== players[j]) {
+		    	if ("opponents/" + alsoPlaying + "/" === players[j].folder) {
+				console.log("Best match is alsoPlaying!");
+				bestMatch = states[i];
+				break;
+		    	}
+		    }
+
+		}
+
+	    }
             else if (bestMatch === null) {
                 console.log("Best match is default!");
                 bestMatch = states[i];
