@@ -122,9 +122,10 @@
 				<state img="0-interested.png">Alright, Tiger. Up and at 'em!</state>
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
-				<state img="0-sad.png">
-					Pansy!
-				</state>
+				<state img="0-sad.png">Pansy!</state>
+			</case>
+			<case tag="male_removing_accessory" filter="fashionable"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
+				<state img="0-loss.png">Good choice - it's a faux pas to be better dressed than the girls you're playing with.</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-sad.png">
@@ -221,9 +222,7 @@
 				<state img="0-interested.png">Don't be shy, ~name~.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
-				<state img="0-happy.png">
-					Alright! Time to see how freaky you are, ~name~!
-				</state>
+				<state img="0-happy.png">Alright! Time to see how freaky you are, ~name~!</state>
 			</case>
 			<case tag="female_removing_accessory" filter="exhibitionist"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-shocked.png">
