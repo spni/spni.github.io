@@ -224,10 +224,11 @@
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-happy.png">Alright! Time to see how freaky you are, ~name~!</state>
 			</case>
+			<case tag="female_removing_accessory" target="mia"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+				<state img="0-sad.png">Hey, I just thought of this: if you're a medium, does that mean you can talk to zombies?</state>
+			</case>
 			<case tag="female_removing_accessory" filter="exhibitionist"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
-				<state img="0-shocked.png">
-					I was expecting something a little more... risque from someone with your reputation.
-				</state>
+				<state img="0-shocked.png">I was expecting something a little more... risque from someone with your reputation.</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-calm.png">You could at least dance to make it interesting or something.</state>
@@ -288,6 +289,9 @@
 			<!-- female player stripping cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-loss.png">We're really pushing the boundaries of the game here, aren't we?</state>
+			</case>
+			<case tag="female_removed_accessory" target="mia"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
+				<state img="0-loss.png">Well, I mean, anyone can talk to zombies... but not anyone can get an answer other than 'rawr brains'.</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-happy.png">You're wound really tight, aren't you? I bet you're a freak in bed.</state>
@@ -350,8 +354,14 @@
 			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
 				<state img="0-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> <!-- a female player's chest has become visible -->
+				<state img="0-happy.png">You're so cute, this ought to be illegal!</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="0-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="pierced_nipples"> <!-- a female player's chest has become visible -->
+				<state img="0-shocked.png">Well, that's... a little too daring even for me. Nice piercing, though.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
 				<state img="0-interested.png">Gingers may not have souls, but clearly they DO have boobs.</state>
@@ -697,32 +707,28 @@
 				<state img="1-sad.png">...What does it say about me that your blushing is turning me on more than your boobs?</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="1-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="1-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
 				<state img="1-interested.png">Nice boobs. Very princessy.</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="1-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="1-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> <!-- a female player's chest has become visible -->
+				<state img="1-happy.png">You're so cute, this ought to be illegal!</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="1-shocked.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="1-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="pierced_nipples"> <!-- a female player's chest has become visible -->
+				<state img="1-shocked.png">Well, that's... a little too daring even for me. Nice piercing, though.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
-				<state img="1-interested.png">
-					Gingers may not have souls, but clearly they DO have boobs.
-				</state>
+				<state img="1-interested.png">Gingers may not have souls, but clearly they DO have boobs.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="1-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="1-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="1-interested.png">Maybe you can do a few poses now?</state>
@@ -1046,14 +1052,10 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="2-happy.png">
-					Well, maybe if we keep playing we'll actually see something good.
-				</state>
+				<state img="2-happy.png">Well, maybe if we keep playing we'll actually see something good.</state>
 			</case>
 			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="2-happy.png">
-					With skills like that, this can't be your first rodeo. 
-				</state>
+				<state img="2-happy.png">With skills like that, this can't be your first rodeo.</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="2-interested.png">Be honest, ~name~: you're not trying to win, are you?</state>
@@ -1082,32 +1084,28 @@
 				<state img="2-sad.png">...What does it say about me that your blushing is turning me on more than your boobs?</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="2-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="2-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
 				<state img="2-interested.png">Nice boobs. Very princessy.</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="2-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="2-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> <!-- a female player's chest has become visible -->
+				<state img="2-happy.png">You're so cute, this ought to be illegal!</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="2-shocked.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="2-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="pierced_nipples"> <!-- a female player's chest has become visible -->
+				<state img="2-shocked.png">Well, that's... a little too daring even for me. Nice piercing, though.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
-				<state img="2-interested.png">
-					Gingers may not have souls, but clearly they DO have boobs.
-				</state>
+				<state img="2-interested.png">Gingers may not have souls, but clearly they DO have boobs.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="2-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="2-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="2-interested.png">Maybe you can do a few poses now?</state>
@@ -1351,29 +1349,22 @@
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="3-calm.png">
-					You could at least dance to make it interesting or something.
-				</state>
+				<state img="3-calm.png">You could at least dance to make it interesting or something.</state>
 			</case>
 			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="3-happy.png">
-					I can't wait to see more!
-				</state>
+				<state img="3-happy.png">I can't wait to see more!</state>
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="3-interested.png">
-					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
-				</state>
+				<state img="3-interested.png">I gotta say, the shimmy as you strip makes up for the lack of exposed skin.</state>
+			</case>
+			<case tag="female_removing_minor" target="nagisa"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-happy.png">Plain white socks, pleated skirt... you're like a Weeaboo wet dream.</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="3-interested.png">
-					Finally gonna see some underwear!
-				</state>
+				<state img="3-interested.png">Finally gonna see some underwear!</state>
 			</case>
 			<case tag="female_removing_major" filter="kind"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="3-sad.png">
-					I feel bad about beating you this fast. Not bad enough to stop you, though.
-				</state>
+				<state img="3-sad.png">I feel bad about beating you this fast. Not bad enough to stop you, though.</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-loss.png">
@@ -1434,20 +1425,22 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="3-happy.png">
-					Well, maybe if we keep playing we'll actually see something good.
-				</state>
+				<state img="3-happy.png">Well, maybe if we keep playing we'll actually see something good.</state>
 			</case>
 			<case tag="female_removed_minor" filter="confident"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="3-happy.png">
-					With skills like that, this can't be your first rodeo. 
-				</state>
+				<state img="3-happy.png">With skills like that, this can't be your first rodeo.</state>
+			</case>
+			<case tag="female_removed_minor" target="nagisa"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="3-loss.png">I wonder if that innocence is really just an act...</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="3-interested.png">Is that a blush? I think you're blushing, ~name~! I bet you like this.</state>
 			</case>
 			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="3-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="innocent"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="3-interested.png">You seem like a nice girl, ~name~. What the Hell are you doing here?</state>
 			</case>
 			<case tag="female_removed_major" filter="shy">
 				<state img="3-interested.png">You're beet red, ~name~. It's a good look on you.</state>
@@ -1470,32 +1463,28 @@
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="3-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="3-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
 				<state img="3-interested.png">Nice boobs. Very princessy.</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="3-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="3-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> <!-- a female player's chest has become visible -->
+				<state img="3-happy.png">You're so cute, this ought to be illegal!</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="3-shocked.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="3-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="pierced_nipples"> <!-- a female player's chest has become visible -->
+				<state img="3-shocked.png">Well, that's... a little too daring even for me. Nice piercing, though.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
-				<state img="3-interested.png">
-					Gingers may not have souls, but clearly they DO have boobs.
-				</state>
+				<state img="3-interested.png">Gingers may not have souls, but clearly they DO have boobs.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="3-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="3-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="3-interested.png">Maybe you can do a few poses now?</state>
@@ -1732,19 +1721,16 @@
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="4-calm.png">
-					You could at least dance to make it interesting or something.
-				</state>
+				<state img="4-calm.png">You could at least dance to make it interesting or something.</state>
 			</case>
 			<case tag="female_removing_minor" filter="cheerful"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="4-happy.png">
-					I can't wait to see more!
-				</state>
+				<state img="4-happy.png">I can't wait to see more!</state>
 			</case>
 			<case tag="female_removing_minor" filter="confident"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="4-interested.png">
-					I gotta say, the shimmy as you strip makes up for the lack of exposed skin.
-				</state>
+				<state img="4-interested.png">I gotta say, the shimmy as you strip makes up for the lack of exposed skin.</state>
+			</case>
+			<case tag="female_removing_minor" target="nagisa"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="4-happy.png">Plain white socks, pleated skirt... you're like a Weeaboo wet dream.</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="4-interested.png">
@@ -1770,20 +1756,22 @@
 				</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="4-happy.png">
-					You're wound really tight, aren't you? I bet you're a freak in bed.
-				</state>
+				<state img="4-happy.png">You're wound really tight, aren't you? I bet you're a freak in bed.</state>
+			</case>
+			<case tag="female_removed_minor" target="nagisa"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="4-loss.png">I wonder if that innocence is really just an act...</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="4-awkward.png">
-					Next to you, I feel kinda underdressed for the apocalypse.
-				</state>
+				<state img="4-awkward.png">Next to you, I feel kinda underdressed for the apocalypse.</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="4-interested.png">Is that a blush? I think you're blushing, ~name~! I bet you like this.</state>
 			</case>
 			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="4-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
+			</case>
+			<case tag="female_removed_major" filter="innocent"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="4-interested.png">You seem like a nice girl, ~name~. What the Hell are you doing here?</state>
 			</case>
 			<case tag="female_removed_major" filter="shy">
 				<state img="4-interested.png">You're beet red, ~name~. It's a good look on you.</state>
@@ -1803,32 +1791,28 @@
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="4-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="4-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
 				<state img="4-interested.png">Nice boobs. Very princessy.</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="4-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="4-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> <!-- a female player's chest has become visible -->
+				<state img="4-happy.png">You're so cute, this ought to be illegal!</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="4-shocked.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="4-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="pierced_nipples"> <!-- a female player's chest has become visible -->
+				<state img="4-shocked.png">Well, that's... a little too daring even for me. Nice piercing, though.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
-				<state img="4-interested.png">
-					Gingers may not have souls, but clearly they DO have boobs.
-				</state>
+				<state img="4-interested.png">Gingers may not have souls, but clearly they DO have boobs.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="4-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="4-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="4-interested.png">Maybe you can do a few poses now?</state>
@@ -2116,6 +2100,9 @@
 			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="5-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
 			</case>
+			<case tag="female_removed_major" filter="innocent"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="5-interested.png">You seem like a nice girl, ~name~. What the Hell are you doing here?</state>
+			</case>
 			<case tag="female_removed_major" filter="shy">
 				<state img="5-interested.png">You're beet red, ~name~. It's a good look on you.</state>
 			</case>
@@ -2134,32 +2121,28 @@
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="5-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="5-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="5-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="5-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
 				<state img="5-interested.png">Nice boobs. Very princessy.</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> <!-- a female player's chest has become visible -->
+				<state img="5-happy.png">You're so cute, this ought to be illegal!</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="5-shocked.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="5-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="pierced_nipples"> <!-- a female player's chest has become visible -->
+				<state img="5-shocked.png">Well, that's... a little too daring even for me. Nice piercing, though.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
-				<state img="5-interested.png">
-					Gingers may not have souls, but clearly they DO have boobs.
-				</state>
+				<state img="5-interested.png">Gingers may not have souls, but clearly they DO have boobs.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="5-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="5-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="5-interested.png">Maybe you can do a few poses now?</state>
@@ -2476,32 +2459,28 @@
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="6-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="6-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="6-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="6-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="princess"> <!-- a female player's chest has become visible -->
 				<state img="6-interested.png">Nice boobs. Very princessy.</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> <!-- a female player's chest has become visible -->
+				<state img="6-happy.png">You're so cute, this ought to be illegal!</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="6-shocked.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="6-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="pierced_nipples"> <!-- a female player's chest has become visible -->
+				<state img="6-shocked.png">Well, that's... a little too daring even for me. Nice piercing, though.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
-				<state img="6-interested.png">
-					Gingers may not have souls, but clearly they DO have boobs.
-				</state>
+				<state img="6-interested.png">Gingers may not have souls, but clearly they DO have boobs.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="6-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="6-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="6-interested.png">Maybe you can do a few poses now?</state>
@@ -2813,29 +2792,19 @@
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="7-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
-			</case>
-			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="7-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="7-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="7-shocked.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="7-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="pierced_nipples"> <!-- a female player's chest has become visible -->
+				<state img="7-shocked.png">Well, that's... a little too daring even for me. Nice piercing, though.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
-				<state img="7-interested.png">
-					Gingers may not have souls, but clearly they DO have boobs.
-				</state>
+				<state img="7-interested.png">Gingers may not have souls, but clearly they DO have boobs.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="7-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="7-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="7-interested.png">Maybe you can do a few poses now?</state>
@@ -3147,29 +3116,19 @@
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="8-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
-			</case>
-			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="8-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="8-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="8-shocked.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="8-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="pierced_nipples"> <!-- a female player's chest has become visible -->
+				<state img="8-shocked.png">Well, that's... a little too daring even for me. Nice piercing, though.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
-				<state img="8-interested.png">
-					Gingers may not have souls, but clearly they DO have boobs.
-				</state>
+				<state img="8-interested.png">Gingers may not have souls, but clearly they DO have boobs.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="8-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="8-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="8-interested.png">Maybe you can do a few poses now?</state>
@@ -3449,29 +3408,19 @@
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="9-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
-			</case>
-			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="9-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="9-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="9-shocked.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="9-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="pierced_nipples"> <!-- a female player's chest has become visible -->
+				<state img="9-shocked.png">Well, that's... a little too daring even for me. Nice piercing, though.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
-				<state img="9-interested.png">
-					Gingers may not have souls, but clearly they DO have boobs.
-				</state>
+				<state img="9-interested.png">Gingers may not have souls, but clearly they DO have boobs.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="9-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="9-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="9-interested.png">Maybe you can do a few poses now?</state>
@@ -3738,24 +3687,16 @@
 				</state>
 			</case>
 			<case tag="female_medium_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="10-horny.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
-			</case>
-			<case tag="female_medium_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
-				<state img="10-awkward.png">
-					Okay, this would be a lot more fun if you'd SAY SOMETHING.
-				</state>
+				<state img="10-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="10-shocked.png">
-					I'm not usually one for girls, but... I'm enjoying this!
-				</state>
+				<state img="10-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_large_chest_is_visible" filter="pierced_nipples"> <!-- a female player's chest has become visible -->
+				<state img="10-shocked.png">Well, that's... a little too daring even for me. Nice piercing, though.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="ginger"> <!-- a female player's chest has become visible -->
-				<state img="10-interested.png">
-					Gingers may not have souls, but clearly they DO have boobs.
-				</state>
+				<state img="10-interested.png">Gingers may not have souls, but clearly they DO have boobs.</state>
 			</case>
 			<case tag="female_large_chest_is_visible" filter="silent"> <!-- a female player's chest has become visible -->
 				<state img="10-awkward.png">

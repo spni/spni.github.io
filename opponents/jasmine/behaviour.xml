@@ -285,9 +285,7 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="0-confused.png">
-					So... this is fun, is it? Hmm.
-				</state>
+				<state img="0-confused.png">So... this is fun, is it? Hmm.</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="0-interested.png">
@@ -566,9 +564,10 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="1-calm.png">
-					I've seen more flesh on display walking through the market.
-				</state>
+				<state img="1-calm.png">I've seen more flesh on display walking through the market.</state>
+			</case>
+			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="1-happy.png">My! You appear to be well brought-up, ~name~. Unlike SOME people I could mention.</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="1-confused.png">
@@ -837,9 +836,10 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="2-happy.png">
-					I've seen more flesh on display walking through the market!
-				</state>
+				<state img="2-happy.png">I've seen more flesh on display walking through the market!</state>
+			</case>
+			<case tag="female_removed_minor" filter="innocent"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="2-happy.png">My! You appear to be well brought-up, ~name~. Unlike SOME people I could mention.</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="2-interested.png">
