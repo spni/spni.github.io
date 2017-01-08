@@ -133,6 +133,9 @@
 		<case tag="female_large_chest_is_visible" target="nugi-chan">
 			<state img="0-peeved.png">Hey! Band-aids are cheating!</state>
 		</case>
+            <case tag="female_large_chest_is_visible" target="lilith">
+                <state img="0-kawaii.png">Ooh! That's a nice nipple piercing you've got there!</state>
+            </case>
             <case tag="male_must_strip">
                 <state img="0-neutral.png">It's your turn, ~name~.</state>
                 <state img="0-excited.png">Everyone's watching, ~name~!</state>
@@ -372,7 +375,9 @@
 		<case tag="female_large_chest_is_visible" target="nugi-chan">
 			<state img="1-peeved.png">Hey! Band-aids are cheating!</state>
 		</case>
-
+            <case tag="female_large_chest_is_visible" target="lilith">
+                <state img="1-kawaii.png">Ooh! That's a nice nipple piercing you've got there!</state>
+            </case>
             <case tag="male_must_strip">
                 <state img="1-neutral.png">It's your turn, ~name~.</state>
                 <state img="1-excited.png">Everyone's watching, ~name~!</state>
@@ -611,7 +616,10 @@
             </case>
 		<case tag="female_large_chest_is_visible" target="nugi-chan">
 			<state img="2-peeved.png">Hey! Band-aids are cheating!</state>
-		</case>
+		
+            <case tag="female_large_chest_is_visible" target="lilith">
+                <state img="2-kawaii.png">Ooh! That's a nice nipple piercing you've got there!</state>
+            </case>
             <case tag="male_must_strip">
                 <state img="2-neutral.png">It's your turn, ~name~.</state>
                 <state img="2-excited.png">Everyone's watching, ~name~!</state>
@@ -851,6 +859,9 @@
 		<case tag="female_large_chest_is_visible" target="nugi-chan">
 			<state img="3-peeved.png">Hey! Band-aids are cheating!</state>
 		</case>
+            <case tag="female_large_chest_is_visible" target="lilith">
+                <state img="3-kawaii.png">Ooh! That's a nice nipple piercing you've got there!</state>
+            </case>
             <case tag="male_must_strip">
                 <state img="3-neutral.png">It's your turn, ~name~.</state>
                 <state img="3-excited.png">Everyone's watching, ~name~!</state>
@@ -1090,7 +1101,9 @@
 		<case tag="female_large_chest_is_visible" target="nugi-chan">
 			<state img="4-peeved.png">Hey! Band-aids are cheating!</state>
 		</case>
-
+            <case tag="female_large_chest_is_visible" target="lilith">
+                <state img="4-kawaii.png">Ooh! That's a nice nipple piercing you've got there!</state>
+            </case>
             <case tag="male_must_strip">
                 <state img="4-neutral.png">It's your turn, ~name~.</state>
                 <state img="4-excited.png">Everyone's watching, ~name~!</state>
@@ -1330,7 +1343,9 @@
 		<case tag="female_large_chest_is_visible" target="nugi-chan">
 			<state img="5-peeved.png">Hey! Band-aids are cheating!</state>
 		</case>
-
+            <case tag="female_large_chest_is_visible" target="lilith">
+                <state img="5-kawaii.png">Ooh! That's a nice nipple piercing you've got there!</state>
+            </case>
             <case tag="male_must_strip">
                 <state img="5-neutral.png">It's your turn, ~name~.</state>
                 <state img="5-excited.png">Everyone's watching, ~name~!</state>
@@ -1570,7 +1585,9 @@
 		<case tag="female_large_chest_is_visible" target="nugi-chan">
 			<state img="6-peeved.png">Hey! Band-aids are cheating!</state>
 		</case>
-
+            <case tag="female_large_chest_is_visible" target="lilith">
+                <state img="6-kawaii.png">Ooh! That's a nice nipple piercing you've got there!</state>
+            </case>
             <case tag="male_must_strip">
                 <state img="6-neutral.png">It's your turn, ~name~.</state>
                 <state img="6-excited.png">Everyone's watching, ~name~!</state>
@@ -1798,7 +1815,9 @@
 		<case tag="female_large_chest_is_visible" target="nugi-chan">
 			<state img="7-peeved.png">Hey! Band-aids are cheating!</state>
 		</case>
-
+            <case tag="female_large_chest_is_visible" target="lilith">
+                <state img="7-kawaii.png">Ooh! That's a nice nipple piercing you've got there!</state>
+            </case>
             <case tag="male_must_strip">
                 <state img="7-neutral.png">It's your turn, ~name~.</state>
                 <state img="7-excited.png">Everyone's watching, ~name~!</state>
@@ -2168,6 +2187,9 @@
 		<case tag="female_large_chest_is_visible" target="nugi-chan">
 			<state img="9-peeved.png">Hey! Band-aids are cheating!</state>
 		</case>
+            <case tag="female_large_chest_is_visible" target="lilith">
+                <state img="9-kawaii.png">Ooh! That's a nice nipple piercing you've got there!</state>
+            </case>
 
             <case tag="male_must_strip">
                 <state img="9-neutral.png">It's your turn, ~name~.</state>
@@ -2256,5 +2278,118 @@
         </stage>
 
     </behaviour>
+
+    <epilogue gender="any">
+        <title>We're Doing This Live</title>
+        <screen img="epilogue-0.png">
+            <text>
+                <x>centered</x>
+                <y>50%</y>
+                <width>12%</width>
+                <content>The Next Day...</content>
+            </text>
+        </screen>
+        <screen img="epilogue-1.png">
+            <text>
+                <x>50%</x>
+                <y>20%</y>
+                <arrow>left</arrow>
+                <content>You're crazy, you know that?</content>
+            </text>
+        </screen>
+        <screen img="epilogue-2.png">
+            <text>
+                <x>50%</x>
+                <y>20%</y>
+                <arrow>left</arrow>
+                <content>After that... fun game we had...</content>
+            </text>
+        </screen>
+        <screen img="epilogue-3.png">
+            <text>
+                <x>45%</x>
+                <y>10%</y>
+                <arrow>left</arrow>
+                <content>You agreed to meet up at a motel...</content>
+            </text>
+            <text>
+                <x>48%</x>
+                <y>30%</y>
+                <arrow>left</arrow>
+                <content>You signed a waiver...</content>
+            </text>
+            <text>
+                <x>51%</x>
+                <y>50%</y>
+                <arrow>left</arrow>
+                <content>... and then you actually showed up!</content>
+            </text>
+            <text>
+                <x>54%</x>
+                <y>70%</y>
+                <arrow>left</arrow>
+                <content>You're insane, and I love it!</content>
+            </text>
+        </screen>
+        <screen img="epilogue-4.png">
+            <text>
+                <x>40%</x>
+                <y>40%</y>
+                <arrow>right</arrow>
+                <content>Let's go inside! The viewers have the attention spans of a fruit fly.</content>
+            </text>
+        </screen>
+        <screen img="epilogue-5.png">
+            <text>
+                <x>48%</x>
+                <y>20%</y>
+                <arrow>right</arrow>
+                <content>The camera's already set up!</content>
+            </text>
+            <text>
+                <x>51%</x>
+                <y>40%</y>
+                <arrow>right</arrow>
+                <content>Keep them entertained while I get more... comfortable.</content>
+            </text>
+        </screen>
+        <screen img="epilogue-6.png">
+            <text>
+                <x>60%</x>
+                <y>15%</y>
+                <arrow>left</arrow>
+                <content>This is going to be a fun night!</content>
+            </text>
+            <text>
+                <x>63%</x>
+                <y>45%</y>
+                <arrow>left</arrow>
+                <content>I had the Premium viewers vote on what we should do...</content>
+            </text>
+            <text>
+                <x>66%</x>
+                <y>75%</y>
+                <arrow>left</arrow>
+                <content>They made a choice that I've been meaning to try out more often...</content>
+            </text>
+        </screen>
+        <screen img="epilogue-7.png">
+            <text>
+                <x>51%</x>
+                <y>30%</y>
+                <arrow>right</arrow>
+                <content>I'm ready!</content>
+            </text>
+        </screen>
+        <screen img="epilogue-8.png">
+            <text>
+                <x>80%</x>
+                <y>30%</y>
+                <arrow>right</arrow>
+                <content>On your knees, ~name~!</content>
+            </text>
+        </screen>
+
+    </epilogue>
 
 </opponent>
