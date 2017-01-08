@@ -13,10 +13,12 @@
         <tag>cheerful</tag>
         <tag>princess</tag>
         <tag>bi-curious</tag>
+		<tag>Mushroom_Kingdom</tag>
     </tags>	
 
     <start>
         <state img="0-calm.png">Good evening. I hope we all enjoy ourselves tonight.</state>
+        <state img="0-calm.png">I'm Peach, princess of the Mushroom Kingdom. No need to bow!</state>
     </start>
 
     <wardrobe>
@@ -36,7 +38,7 @@
                 <state img="0-interested.png">It's your turn now, dear.</state>
             </case>
             <case tag="male_chest_will_be_visible">
-                <state img="0-interested.png">You've got something nice to show us, don't you?</state>
+                <state img="0-interested.png">Tee hee hee! You're blushing, ~name~.</state>
             </case>
             <case tag="female_removing_minor">
                 <state img="0-calm.png">Moving on to something a bit bigger?</state>
@@ -93,7 +95,7 @@
                 <state img="0-horny.png">Just relax, and have fun.</state>
             </case>
             <case tag="male_chest_is_visible">
-                <state img="0-happy.png">That's a fine chest, ~name~.</state>
+                <state img="0-happy.png">Now THAT's one for the scrapbook!</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="0-shocked.png">My, ~name~, I think you've had a few too many mushrooms.</state>
@@ -116,7 +118,7 @@
                 <state img="0-calm.png">I suppose that's the smallest thing you have on.</state>
             </case>
             <case tag="male_finished_masturbating">
-                <state img="0-shocked.png">Ah! See, you are having fun.</state>
+                <state img="0-shocked.png">You inhuman beast! How could you?</state>
             </case>
             <case tag="female_small_chest_is_visible">
                 <state img="0-happy.png">Ah! They're adorable!</state>
@@ -128,7 +130,7 @@
                 <state img="0-calm.png">I suppose that's the smallest thing you have on.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="0-happy.png">I WON!</state>
+                <state img="0-happy.png">Yes, first place!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="0-interested.png">So it's your ~clothing~ this time?</state>
@@ -152,14 +154,14 @@
                 <state img="0-horny.png">Well, ~name~, it's finally time to see your prize.</state>
             </case>
             <case tag="good_hand">
-                <state img="0-happy.png">These are lovely.</state>
-                <state img="0-happy.png">Aren't these nice?</state>
-                <state img="0-happy.png">This is pleasant.</state>
+                <state img="0-happy.png">Tee hee hee!</state>
+                <state img="0-happy.png">Soooo peachy!</state>
             </case>
             <case tag="okay_hand">
+				<state img="0-calm.png">Be good cards and I'll make you knights!</state>
+				<state img="0-calm.png">Tee hee! Hearts and diamonds are the suits that suit me best!</state>
                 <state img="0-calm.png">These will do.</state>
-                <state img="0-calm.png">This hand should be alright.</state>
-                <state img="0-calm.png">I have a decent hand.</state>
+                <state img="0-calm.png">I should be alright.</state>
                 <state img="0-calm.png">This could go either way, it seems.</state>
             </case>
             <case tag="swap_cards">
@@ -168,10 +170,10 @@
                 <state img="0-calm.png">~cards~ new cards, please.</state>
             </case>
             <case tag="bad_hand">
+                <state img="0-sad.png">Oh, fudge.</state>
+                <state img="0-sad.png">I have a bad feeling about this...</state>
                 <state img="0-sad.png">I can't always win.</state>
-                <state img="0-sad.png">This is a bad hand.</state>
                 <state img="0-sad.png">I was hoping for better cards this round.</state>
-                <state img="0-sad.png">You may be seeing some more of me, soon.</state>
             </case>
             <case tag="stripped">
                 <state img="0-sad.png">What the character says just after they take their clothes off.</state>
@@ -195,7 +197,7 @@
                 <state img="1-interested.png">It's your turn now, dear.</state>
             </case>
             <case tag="male_chest_will_be_visible">
-                <state img="1-interested.png">You've got something nice to show us, don't you?</state>
+                <state img="1-interested.png">Tee hee hee! You're blushing, ~name~.</state>
             </case>
             <case tag="female_removing_minor">
                 <state img="1-calm.png">Moving on to something a bit bigger?</state>
@@ -252,7 +254,7 @@
                 <state img="1-horny.png">Just relax, and have fun.</state>
             </case>
             <case tag="male_chest_is_visible">
-                <state img="1-happy.png">That's a fine chest, ~name~.</state>
+                <state img="1-happy.png">Now THAT's one for the scrapbook!</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="1-shocked.png">My, ~name~, I think you've had a few too many mushrooms.</state>
@@ -287,7 +289,7 @@
                 <state img="1-calm.png">I suppose that's the smallest thing you have on.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="1-happy.png">I WON!</state>
+                <state img="1-happy.png">Yes, first place!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="1-interested.png">So it's your ~clothing~ this time?</state>
@@ -311,14 +313,14 @@
                 <state img="1-horny.png">Well, ~name~, it's finally time to see your prize.</state>
             </case>
             <case tag="good_hand">
-                <state img="1-happy.png">These are lovely.</state>
-                <state img="1-happy.png">Aren't these nice?</state>
-                <state img="1-happy.png">This is pleasant.</state>
+                <state img="1-happy.png">Tee hee hee!</state>
+                <state img="1-happy.png">Soooo peachy!</state>
             </case>
             <case tag="okay_hand">
+				<state img="1-calm.png">Be good cards and I'll make you knights!</state>
+				<state img="1-calm.png">Tee hee! Hearts and diamonds are the suits that suit me best!</state>
                 <state img="1-calm.png">These will do.</state>
-                <state img="1-calm.png">This hand should be alright.</state>
-                <state img="1-calm.png">I have a decent hand.</state>
+                <state img="1-calm.png">I should be alright.</state>
                 <state img="1-calm.png">This could go either way, it seems.</state>
             </case>
             <case tag="swap_cards">
@@ -327,10 +329,10 @@
                 <state img="1-calm.png">~cards~ new cards, please.</state>
             </case>
             <case tag="bad_hand">
+                <state img="1-sad.png">Oh, fudge.</state>
+                <state img="1-sad.png">I have a bad feeling about this...</state>
                 <state img="1-sad.png">I can't always win.</state>
-                <state img="1-sad.png">This is a bad hand.</state>
                 <state img="1-sad.png">I was hoping for better cards this round.</state>
-                <state img="1-sad.png">You may be seeing some more of me, soon.</state>
             </case>
             <case tag="stripped">
                 <state img="1-stripped.png">Not much, but it'll get better.</state>
@@ -354,7 +356,7 @@
                 <state img="2-interested.png">It's your turn now, dear.</state>
             </case>
             <case tag="male_chest_will_be_visible">
-                <state img="2-interested.png">You've got something nice to show us, don't you?</state>
+                <state img="2-interested.png">Tee hee hee! You're blushing, ~name~.</state>
             </case>
             <case tag="female_removing_minor">
                 <state img="2-calm.png">Moving on to something a bit bigger?</state>
@@ -446,7 +448,7 @@
                 <state img="2-calm.png">I suppose that's the smallest thing you have on.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="2-happy.png">I WON!</state>
+                <state img="2-happy.png">Yeah, Peach has got it!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="2-interested.png">So it's your ~clothing~ this time?</state>
@@ -475,9 +477,10 @@
                 <state img="2-happy.png">This is pleasant.</state>
             </case>
             <case tag="okay_hand">
+				<state img="2-calm.png">Be good cards and I'll make you knights!</state>
+				<state img="2-calm.png">Tee hee! Hearts and diamonds are the suits that suit me best!</state>
                 <state img="2-calm.png">These will do.</state>
-                <state img="2-calm.png">This hand should be alright.</state>
-                <state img="2-calm.png">I have a decent hand.</state>
+                <state img="2-calm.png">I should be alright.</state>
                 <state img="2-calm.png">This could go either way, it seems.</state>
             </case>
             <case tag="swap_cards">
@@ -486,10 +489,10 @@
                 <state img="2-calm.png">~cards~ new cards, please.</state>
             </case>
             <case tag="bad_hand">
+                <state img="2-sad.png">Oh, fudge.</state>
+                <state img="2-sad.png">I have a bad feeling about this...</state>
                 <state img="2-sad.png">I can't always win.</state>
-                <state img="2-sad.png">This is a bad hand.</state>
                 <state img="2-sad.png">I was hoping for better cards this round.</state>
-                <state img="2-sad.png">You may be seeing some more of me, soon.</state>
             </case>
             <case tag="stripped">
                 <state img="2-stripped.png">Did you like them?</state>
@@ -513,7 +516,7 @@
                 <state img="3-interested.png">It's your turn now, dear.</state>
             </case>
             <case tag="male_chest_will_be_visible">
-                <state img="3-interested.png">You've got something nice to show us, don't you?</state>
+                <state img="3-interested.png">Tee hee hee! You're blushing, ~name~.</state>
             </case>
             <case tag="female_removing_minor">
                 <state img="3-calm.png">Moving on to something a bit bigger?</state>
@@ -576,7 +579,7 @@
                 <state img="3-shocked.png">My, ~name~, I think you've had a few too many mushrooms.</state>
             </case>
             <case tag="male_must_strip">
-                <state img="3-interested.png">It's your turn, ~name~.</state>
+                <state img="3-interested.png">Don't think I'll go easy on you, ~name~! I plan on winning today!</state>
             </case>
             <case tag="female_must_masturbate">
                 <state img="3-interested.png">It's your turn to go, ~name~, and I don't see any clothes left...</state>
@@ -605,7 +608,7 @@
                 <state img="3-calm.png">I suppose that's the smallest thing you have on.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="3-happy.png">I WON!</state>
+                <state img="3-happy.png">Yeah, Peach is the winner!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="3-interested.png">So it's your ~clothing~ this time?</state>
@@ -634,9 +637,10 @@
                 <state img="3-happy.png">This is pleasant.</state>
             </case>
             <case tag="okay_hand">
+				<state img="3-calm.png">Be good cards and I'll make you knights!</state>
+				<state img="3-calm.png">Tee hee! Hearts and diamonds are the suits that suit me best!</state>
                 <state img="3-calm.png">These will do.</state>
-                <state img="3-calm.png">This hand should be alright.</state>
-                <state img="3-calm.png">I have a decent hand.</state>
+                <state img="3-calm.png">I should be alright.</state>
                 <state img="3-calm.png">This could go either way, it seems.</state>
             </case>
             <case tag="swap_cards">
@@ -645,10 +649,10 @@
                 <state img="3-calm.png">~cards~ new cards, please.</state>
             </case>
             <case tag="bad_hand">
+                <state img="3-sad.png">Oh, fudge.</state>
+                <state img="3-sad.png">I have a bad feeling about this...</state>
                 <state img="3-sad.png">I can't always win.</state>
-                <state img="3-sad.png">This is a bad hand.</state>
                 <state img="3-sad.png">I was hoping for better cards this round.</state>
-                <state img="3-sad.png">You may be seeing some more of me, soon.</state>
             </case>
             <case tag="stripped">
                 <state img="3-stripped.png">I'm feeling a bit colder now.</state>
@@ -735,7 +739,7 @@
                 <state img="4-shocked.png">My, ~name~, I think you've had a few too many mushrooms.</state>
             </case>
             <case tag="male_must_strip">
-                <state img="4-interested.png">It's your turn, ~name~.</state>
+                <state img="4-interested.png">Don't think I'll go easy on you, ~name~! I plan on winning today!</state>
             </case>
             <case tag="female_must_masturbate">
                 <state img="4-interested.png">It's your turn to go, ~name~, and I don't see any clothes left...</state>
@@ -764,7 +768,7 @@
                 <state img="4-calm.png">I suppose that's the smallest thing you have on.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="4-happy.png">I WON!</state>
+                <state img="4-happy.png">Oh, yay! I did it!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="4-interested.png">So it's your ~clothing~ this time?</state>
@@ -788,14 +792,15 @@
                 <state img="4-horny.png">Well, ~name~, it's finally time to see your prize.</state>
             </case>
             <case tag="good_hand">
-                <state img="4-happy.png">These are lovely.</state>
-                <state img="4-happy.png">Aren't these nice?</state>
-                <state img="4-happy.png">This is pleasant.</state>
+                <state img="4-happy.png">Lucky!</state>
+                <state img="4-happy.png">Sweet!</state>
+                <state img="4-happy.png">All right!</state>
             </case>
             <case tag="okay_hand">
+				<state img="4-calm.png">Be good cards and I'll make you knights!</state>
+				<state img="4-calm.png">Tee hee! Hearts and diamonds are the suits that suit me best!</state>
                 <state img="4-calm.png">These will do.</state>
-                <state img="4-calm.png">This hand should be alright.</state>
-                <state img="4-calm.png">I have a decent hand.</state>
+                <state img="4-calm.png">I should be alright.</state>
                 <state img="4-calm.png">This could go either way, it seems.</state>
             </case>
             <case tag="swap_cards">
@@ -804,10 +809,10 @@
                 <state img="4-calm.png">~cards~ new cards, please.</state>
             </case>
             <case tag="bad_hand">
+                <state img="4-sad.png">Oh, fudge.</state>
+                <state img="4-sad.png">I have a bad feeling about this...</state>
                 <state img="4-sad.png">I can't always win.</state>
-                <state img="4-sad.png">This is a bad hand.</state>
                 <state img="4-sad.png">I was hoping for better cards this round.</state>
-                <state img="4-sad.png">You may be seeing some more of me, soon.</state>
             </case>
             <case tag="stripped">
                 <state img="4-stripped.png">You know, I have nothing small left to protect me.</state>
@@ -924,7 +929,7 @@
                 <state img="5-calm.png">I suppose that's the smallest thing you have on.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="5-happy.png">I WON!</state>
+                <state img="5-happy.png">Oh, yay! I did it!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="5-interested.png">So it's your ~clothing~ this time?</state>
@@ -948,14 +953,15 @@
                 <state img="5-horny.png">Well, ~name~, it's finally time to see your prize.</state>
             </case>
             <case tag="good_hand">
-                <state img="5-happy.png">These are lovely.</state>
-                <state img="5-happy.png">Aren't these nice?</state>
-                <state img="5-happy.png">This is pleasant.</state>
+                <state img="5-happy.png">Lucky!</state>
+                <state img="5-happy.png">Sweet!</state>
+                <state img="5-happy.png">All right!</state>
             </case>
             <case tag="okay_hand">
+				<state img="5-calm.png">Be good cards and I'll make you knights!</state>
+				<state img="5-calm.png">Tee hee! Hearts and diamonds are the suits that suit me best!</state>
                 <state img="5-calm.png">These will do.</state>
-                <state img="5-calm.png">This hand should be alright.</state>
-                <state img="5-calm.png">I have a decent hand.</state>
+                <state img="5-calm.png">I should be alright.</state>
                 <state img="5-calm.png">This could go either way, it seems.</state>
             </case>
             <case tag="swap_cards">
@@ -1083,7 +1089,7 @@
                 <state img="6-calm.png">I suppose that's the smallest thing you have on.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="6-happy.png">I WON!</state>
+                <state img="6-calm.png">Oh, did I win?</state>
             </case>
             <case tag="female_removing_major">
                 <state img="6-interested.png">So it's your ~clothing~ this time?</state>
@@ -1108,14 +1114,14 @@
                 <state img="6-horny.png">Well, ~name~, it's finally time to see your prize.</state>
             </case>
             <case tag="good_hand">
-                <state img="6-happy.png">These are lovely.</state>
-                <state img="6-happy.png">Aren't these nice?</state>
-                <state img="6-happy.png">This is pleasant.</state>
+                <state img="6-happy.png">Excellent.</state>
+                <state img="6-happy.png">Just what I needed!</state>
             </case>
             <case tag="okay_hand">
+				<state img="6-calm.png">Be good cards and I'll make you knights!</state>
+				<state img="6-calm.png">Tee hee! Hearts and diamonds are the suits that suit me best!</state>
                 <state img="6-calm.png">These will do.</state>
-                <state img="6-calm.png">This hand should be alright.</state>
-                <state img="6-calm.png">I have a decent hand.</state>
+                <state img="6-calm.png">I should be alright.</state>
                 <state img="6-calm.png">This could go either way, it seems.</state>
             </case>
             <case tag="swap_cards">
@@ -1124,7 +1130,7 @@
                 <state img="6-calm.png">~cards~ new cards, please.</state>
             </case>
             <case tag="bad_hand">
-                <state img="6-sad.png">It really seems as if my luck has turned sour for this game.</state>
+                <state img="6-sad.png">You may be seeing some more of me soon!</state>
             </case>
             <case tag="stripped">
                 <state img="6-stripped.png">I hope I'm as cute with them off, as I am with them on.</state>
@@ -1237,7 +1243,7 @@
                 <state img="7-happy.png">Funny how I'm almost nude and you're just getting started!</state>
             </case>
             <case tag="game_over_victory">
-                <state img="7-happy.png">I WON!</state>
+                <state img="7-calm.png">Who knew all this would happen?</state>
             </case>
             <case tag="female_removing_major">
                 <state img="7-interested.png">So it's your ~clothing~ this time?</state>
@@ -1262,14 +1268,14 @@
                 <state img="7-horny.png">Well, ~name~, it's finally time to see your prize.</state>
             </case>
             <case tag="good_hand">
-                <state img="7-happy.png">These are lovely.</state>
-                <state img="7-happy.png">Aren't these nice?</state>
-                <state img="7-happy.png">This is pleasant.</state>
+                <state img="7-happy.png">Excellent.</state>
+                <state img="7-happy.png">Just what I needed!</state>
             </case>
             <case tag="okay_hand">
+				<state img="7-calm.png">Be good cards and I'll make you knights!</state>
+				<state img="7-calm.png">Tee hee! Hearts and diamonds are the suits that suit me best!</state>
                 <state img="7-calm.png">These will do.</state>
-                <state img="7-calm.png">This hand should be alright.</state>
-                <state img="7-calm.png">I have a decent hand.</state>
+                <state img="7-calm.png">I should be alright.</state>
                 <state img="7-calm.png">This could go either way, it seems.</state>
             </case>
             <case tag="swap_cards">
@@ -1278,7 +1284,7 @@
                 <state img="7-calm.png">~cards~ new cards, please.</state>
             </case>
             <case tag="bad_hand">
-                <state img="7-sad.png">It really seems as if my luck has turned sour for this game.</state>
+                <state img="7-sad.png">Would you be so kind as to trade cards with me? I would be forever in your debt!</state>
             </case>
             <case tag="stripped">
                 <state img="7-stripped.png">Stare all you want, these are a royal treasure.</state>
@@ -1394,7 +1400,7 @@
                 <state img="8-calm.png">Only a measly ~clothing~?</state>
             </case>
             <case tag="game_over_victory">
-                <state img="8-happy.png">I WON!</state>
+                <state img="8-calm.png">Yay. Not bad.</state>
             </case>
             <case tag="female_removing_major">
                 <state img="8-interested.png">So it's your ~clothing~ this time?</state>
@@ -1420,16 +1426,16 @@
                 <state img="8-happy.png">I am eager to see how my body has excited you!</state>
             </case>
             <case tag="good_hand">
-                <state img="8-happy.png">These are lovely.</state>
-                <state img="8-happy.png">Aren't these nice?</state>
-                <state img="8-happy.png">This is pleasant.</state>
+                <state img="8-happy.png">Tee hee hee!</state>
+                <state img="8-happy.png">Soooo peachy!</state>
             </case>
             <case tag="okay_hand">
+ 				<state img="8-calm.png">Be good cards and I'll make you knights!</state>
+				<state img="8-calm.png">Tee hee! Hearts and diamonds are the suits that suit me best!</state>
                 <state img="8-calm.png">These will do.</state>
-                <state img="8-calm.png">This hand should be alright.</state>
-                <state img="8-calm.png">I have a decent hand.</state>
+                <state img="8-calm.png">I should be alright.</state>
                 <state img="8-calm.png">This could go either way, it seems.</state>
-            </case>
+           </case>
             <case tag="swap_cards">
                 <state img="8-calm.png">May I have ~cards~ cards?</state>
                 <state img="8-calm.png">I will exchange ~cards~ cards.</state>
@@ -1554,7 +1560,7 @@
                 <state img="9-sad.png">I...was h-hoping for a little more...</state>
             </case>
             <case tag="game_over_victory">
-                <state img="9-happy.png">I WON!</state>
+                <state img="9-calm.png">Yay. Not bad.</state>
             </case>
             <case tag="female_removing_major">
                 <state img="9-horny.png">Mmm... Let's see, ~name~...</state>
@@ -1688,9 +1694,6 @@
                 <state img="10-calm.png">I must say, ~name~, you're doing quite well for yourself!</state>
                 <state img="10-calm.png">However, I must admit I hope your win streak doesn't last.</state>
             </case>
-            <case tag="game_over_victory">
-                <state img="10-happy.png">I WON!</state>
-            </case>
             <case tag="female_removing_major">
                 <state img="10-interested.png">So it's your ~clothing~ this time?</state>
             </case>
@@ -1720,7 +1723,7 @@
                 <state img="10-finished.png">This is fun!</state>
             </case>
             <case tag="game_over_defeat">
-                <state img="10-calm.png">Congratulations, ~name~.</state>
+                <state img="10-shocked.png">Oh, no! I lost? How could I lose?</state>
             </case>
         </stage>
 
