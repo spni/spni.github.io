@@ -6,6 +6,8 @@ gender=female
 size=large
 #Number of phases to "finish"
 timer=20
+#tags=creepy,hairy,mean,video_game
+#<tags><tag>video_game</tag><tag>creepy</tag><tag>mean</tag><tag>hairy</tag></tags>	
 
 #required for meta.xml
 #start picture
@@ -14,7 +16,7 @@ height=5'9"
 from=Mortal Kombat
 writer=Throwaway10671
 artist=Throwaway10671
-description=Mileena of Mortal Kombat, wearing her iconic "Flesh Pits" outfit. 
+description=A clone of Kitana created by sorcery, Mileena is a vicious and evil woman whose fondest wish is to kill her 'sister' and claim her existence for her own.
 
 #Mileena's Clothing:
 clothes=Upper Bandages,upper bandages,important,upper
@@ -29,31 +31,33 @@ start=0-calm,Let us dance!
 #default card behaviour
 #you can include multiple entries to give the character multiple lines and/or appearances in that situation.
 #This is what a character says while they're exchanging cards.
-swap_cards=calm,May I have ~cards~ cards?
-swap_cards=calm,I'll take ~cards~.
-swap_Cards=calm,~cards~ new cards, please.
+swap_cards=calm,Give me ~cards~ cards.
+swap_cards=calm,I demand ~cards~!
+swap_cards=calm,You owe me ~cards~ new cards.
 
 #The character thinks they have a good hand
-good_hand=happy,Splendid!
-good_hand=happy,Oh, how nice.
-hood_hand=happy,Great hand!
+good_hand=happy,I will show you how I play...
+good_hand=happy,This is good. Let's see how good.
+good_hand=happy,Any final words?
+good_hand=happy,Soon you will be extinct.
 
 #The character thinks they have a bad hand
-okay_hand=calm,These cards are alright.
-okay_hand=calm,I have an average hand.
-okay_hand=calm,This is a decent hand.
+okay_hand=calm,The Empress deserves better.
+okay_hand=calm,I suppose I should not be surprised.
+okay_hand=calm,This is acceptable.
 
 #The character thinks they have a bad hand
-bad_hand=calm,These cards could be better...
-bad_hand=calm,This is a bad hand.
-bad_hand=calm,Some bad cards right here.
+bad_hand=sad,Is the dealer working with those who planned to betray me?
+bad_hand=calm,This is a problem...
+bad_hand=calm,I will never give up my fight!
+bad_hand=calm,I will not be silenced! 
 
 #stripping default
 #character is stripping situations
 #Losing Upper Bandages/Topless
 0-must_strip_winning=loss,Oh! It's finally my turn to strip.
 0-must_strip_winning=loss,I don't know how I've been winning this long. I only wore this because I wanted to show off. 
-0-must_strip_normal=loss,I lost that hand, my turn to put on a show. 
+0-must_strip_normal=loss,I lost that hand. It's almost my turn to put on a show. 
 0-must_strip_losing=loss,Looks like I get to be the first to take it off. 
 0-stripping=strip,I'm surprised these haven't fallen off already
 1-stripped=stripped,Like my breasts? Stare all you want...
@@ -62,6 +66,7 @@ bad_hand=calm,Some bad cards right here.
 1-must_strip_winning=loss,I don't know how I've been winning this long. I only wore this because I wanted to show off. 
 1-must_strip_normal=loss,All eyes on me, it's my turn to strip. 
 1-must_strip_losing=loss,I lost again, now you really get to see it all!
+1-must_strip_losing=loss,I will have my due... 
 1-stripping=strip,Just going to pull these bandages off down there...
 2-stripped=stripped,Do you like what you see? It feels good to show it all off like this.
 
@@ -77,16 +82,16 @@ heavy_masturbating=heavy,Wow! I am really close to climaxing now...
 finishing_masturbating=finishing,CUMALITY!
 finished_masturbating=finished,That felt so good... It's so much better with an audience!
 
-game_over_defeat=happy,Congratulations ~name~! Did you enjoy seeing me naked?
-game_over_victory=calm,Flawless victory!
-
 male_human_must_strip=happy,A male is stripping? It's about time!
+male_human_must_strip=happy,Let's see you!
 male_must_strip=happy,Yes! A guy is stripping!
 
 male_removing_accessory=sad,Only your ~clothing~? Come on ~name~ look at how little I am wearing. This isn't fair.
 male_removed_accessory=calm,If that's all you are going to take off right now then at least flash us or something.
+male_removed_accessory=sad,You've become quite the bore...
 
 male_removing_minor=happy,You're getting closer and closer to being naked!
+male_removing_minor=happy,Your ~clothing~ is no longer required.
 male_removed_minor=horny,It is nice to see you more exposed, ~name~.
 
 male_removing_major=happy,Slowly take off your ~clothing~ now ~name~. Give us a show!
@@ -94,10 +99,14 @@ male_removed_major=horny,Don't mind me staring...
 male_removed_major=horny,Without your ~clothing~ on you look pretty sexy, ~name~...
 
 male_chest_will_be_visible=interested,I've been looking forward to this, ~name~. 
+male_chest_will_be_visible=interested,Fresh meat... 
 male_chest_is_visible=horny,Wow! Nice chest, ~name~.
+male_chest_is_visible=horny,Come closer...
+male_chest_is_visible=horny,Come, let me warm you... 
 
 #male crotches have different sizes, allowing your character to have different responses
 male_crotch_will_be_visible=happy,YES! It's finally time for ~name~ to expose his penis! I can't wait to see it.
+male_crotch_will_be_visible=happy,The main course!
 male_small_crotch_is_visible=calm,Uh that's pretty small... Want me to rub it and see how big it really gets?
 male_medium_crotch_is_visible=horny,Nice! Look at how hard you are, ~name~. I can tell you have been staring at me...
 male_large_crotch_is_visible=shocked,WOAH! It's huge! I'm so turned on right now...
@@ -120,23 +129,29 @@ male_finished_masturbating=shocked,Damn ~name~ I bet that felt really good.
 #these are mostly the same as the female stripping cases, but the female's size refers to their chest rather than their crotch.
 female_human_must_strip=interested,Your turn to strip, ~name~!
 female_must_strip=interested,Get ready to strip, ~name~.
+female_must_strip=interested,Perhaps you will share a bit more... 
 
 female_removing_accessory=sad,Only your ~clothing~? Come on ~name~ look at how little I am wearing. This isn't fair.
+female_removing_accessory=sad,Those not with me are against me!
 female_removed_accessory=calm,If that's all you are going to take off right now then at least flash us or something.
 
 female_removing_minor=happy,You're getting closer and closer to being naked!
 female_removed_minor=horny,It is nice to see you more exposed, ~name~.
 
 female_removing_major=happy,Slowly take off your ~clothing~ now ~name~. Give us a show!
+female_removing_major=happy,Do what you must.
 female_removed_major=horny,Don't mind me staring...
 
 female_chest_will_be_visible=interested,I'm looking forward to this I want to see if they are as big as mine.
+female_chest_will_be_visible=interested,The anticipation is killing me... 
 female_small_chest_is_visible=calm,Those are pretty small. Are you envious of me, ~name~?
 female_medium_chest_is_visible=horny,Nice! But mine are still bigger.
+female_medium_chest_is_visible=horny,Delicious!
 female_large_chest_is_visible=shocked,WOAH! Those might just be bigger than mine. Impressive!
 
 female_crotch_will_be_visible=happy,Time to show us your pussy, ~name~. Slide those panties off.
-female_crotch_is_visible=horny,Very pretty! Look at how wet you are, I think you are enjoying this.
+female_crotch_will_be_visible=happy,I see no reason to spare you. 
+female_crotch_is_visible=horny,Very pretty! Look at how wet you are. I think you are enjoying this.
 
 #female masturbation default
 female_must_masturbate=interested,It's time for ~name~ to start masturbating now! This is going to be fun.
@@ -144,3 +159,30 @@ female_start_masturbating=horny,Yeah just like that, rub it good.
 female_masturbating=horny,Feels good doesn't it?
 female_finished_masturbating=shocked,Wow! You squirt like a waterfall, ~name~!
 
+0-game_over_victory=calm,Flawless victory!
+1-game_over_victory=calm,You reek of weakness!
+-3-game_over_victory=calm,You reek of weakness!
+-2-game_over_victory=calm,You reek of weakness!
+-1-game_over_victory=happy,Even in defeat I am victorious!
+game_over_defeat=sad,You don't impress me for a minute.
+
+#CHARACTER-SPECIFIC LINES TO PASTE INTO behavior.xml AFTER MAKING
+#Paste into end of stage 0 (all bandages still on)
+#<case tag="female_must_strip" target="harley"><state img="0-happy.png">Sharp tongue, dull mind.</state></case>
+#<case tag="female_removed_accessory" target="hermione"><state img="0-shocked.png">Earthrealm witch!</state></case>
+
+#Paste into end of stage 1 (top bandages off, lower bandages on)
+#<case tag="female_removed_accessory" target="spooky"><state img="1-shocked.png">A toy? How adorable.</state></case>
+
+#Paste into end of stage 2 (naked)
+#<case tag="female_removed_accessory" target="lux"><state img="2-happy.png">I wish to admire your ~clothing~.</state></case>
+#<case tag="female_removing_major" filter="shy"><state img="2-shocked.png">Take off your ~clothing~ faster or I will rip it off you!</state></case>
+
+#Paste into end of stage 3 (masturbating)
+#<case tag="female_must_masturbate" filter=k"ind"><state img="3-heavy.png">Your blood must taste so sweet... </state></case>
+
+#Paste into end of stage 4 (defeated)
+#<case tag="female_removing_major" filter="American"><state img="4-interested.png">Afraid, Earthrealmer?</state></case>
+#<case tag="female_removing_major" filter="American"><state img="4-interested.png">Afraid, Earthrealmer?</state></case>
+#<case tag="female_crotch_will_be_visible" target="chara"><state img="4-horny.png">Your face is too repulsive to eat. But maybe down there...</state></case>
+#<case tag="female_must_masturbate" target="spooky"><state img="4-horny.png">Lost, little girl?</state></case>
