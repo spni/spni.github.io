@@ -37,13 +37,27 @@
                 <state img="0-calm.png">I'll exchange ~cards~ cards.</state>
             </case>
             <case tag="good_hand">
-                <state img="0-happy.png">Brilliant!</state>
+                <state img="0-excited.png">Brilliant!</state>
+                <state img="0-happy.png">I... think this will work. Yes!</state>
+                <state img="0-smug.png">Just what I needed!</state>
+                <state img="0-interested.png">Perfect.</state>
             </case>
             <case tag="okay_hand">
                 <state img="0-calm.png">This should do.</state>
+                <state img="0-loss.png">It could be worse.</state>
+                <state img="0-calm.png">This will do, I suppose.</state>
+                <state img="0-loss.png">I hope this is enough!</state>
             </case>
             <case tag="bad_hand">
                 <state img="0-loss.png">This does not appear to be a winning hand.</state>
+                <state img="0-stunned.png">Oh, rats!</state>
+                <state img="0-sad.png">Merlin's pants! These cards are horrible.</state>
+                <state img="3-angry.png">I was never good at divination. Shouldn't have discarded that last one!</state>
+                <state img="3-sad.png">I'm starting to regret taking this dare.</state>
+                <state img="3-stunned.png">I'm beginning to think my cards may be cursed!</state>
+                <state img="3-angry.png">It could be worse... Draco could be watching!</state>
+                <state img="8-stunned.png">Oh, I wish I'd taken that Felix Felicis!</state>
+                <state img="8-stunned.png">No, no, no! Where's a time-turner when you need one?</state>
             </case>
             <case tag="game_over_victory">
                 <state img="0-smug.png">I'm going to have to play with a handicap next time!</state>
@@ -423,16 +437,24 @@
                 <state img="1-stunned.png">Wha-- really, ~name~?</state>
             </case>
             <case tag="good_hand">
-                <state img="1-happy.png">Just what I needed!</state>
+                <state img="1-excited.png">Brilliant!</state>
+                <state img="1-happy.png">I... think this will work. Yes!</state>
+                <state img="1-smug.png">Just what I needed!</state>
+                <state img="1-interested.png">Perfect.</state>
             </case>
             <case tag="okay_hand">
-                <state img="1-calm.png">It could be worse.</state>
+                <state img="1-calm.png">This should do.</state>
+                <state img="1-loss.png">It could be worse.</state>
+                <state img="1-calm.png">This will do, I suppose.</state>
+                <state img="1-loss.png">I hope this is enough!</state>
             </case>
             <case tag="swap_cards">
                 <state img="1-calm.png">I'll exchange ~cards~ cards.</state>
             </case>
             <case tag="bad_hand">
+                <state img="1-loss.png">This does not appear to be a winning hand.</state>
                 <state img="1-stunned.png">Oh, rats!</state>
+                <state img="1-sad.png">Merlin's pants! These cards are horrible.</state>
             </case>
             <case tag="stripped">
                 <state img="1-stripped.png">You have no idea how good it feels to take these off.</state>
@@ -633,15 +655,23 @@
                 <state img="2-smug.png">There's no shame in losing, ~name~. I am, after all, the brightest witch of my generation.</state>
             </case>
             <case tag="good_hand">
+                <state img="2-excited.png">Brilliant!</state>
+                <state img="2-happy.png">I... think this will work. Yes!</state>
+                <state img="2-smug.png">Just what I needed!</state>
                 <state img="2-interested.png">Perfect.</state>
             </case>
             <case tag="okay_hand">
-                <state img="2-loss.png">This will do, I suppose.</state>
+                <state img="2-calm.png">This should do.</state>
+                <state img="2-loss.png">It could be worse.</state>
+                <state img="2-calm.png">This will do, I suppose.</state>
+                <state img="2-loss.png">I hope this is enough!</state>
             </case>
             <case tag="swap_cards">
                 <state img="2-calm.png">I'll exchange ~cards~ cards.</state>
             </case>
             <case tag="bad_hand">
+                <state img="2-loss.png">This does not appear to be a winning hand.</state>
+                <state img="2-stunned.png">Oh, rats!</state>
                 <state img="2-sad.png">Merlin's pants! These cards are horrible.</state>
             </case>
             <case tag="stripped">
@@ -859,15 +889,24 @@
             </case>
             <case tag="good_hand">
                 <state img="3-excited.png">Brilliant!</state>
+                <state img="3-happy.png">I... think this will work. Yes!</state>
+                <state img="3-smug.png">Just what I needed!</state>
+                <state img="3-interested.png">Perfect.</state>
             </case>
             <case tag="okay_hand">
-                <state img="3-sad.png">I hope this is enough.</state>
+                <state img="3-calm.png">This should do.</state>
+                <state img="3-loss.png">It could be worse.</state>
+                <state img="3-calm.png">This will do, I suppose.</state>
+                <state img="3-loss.png">I hope this is enough!</state>
             </case>
             <case tag="swap_cards">
                 <state img="3-calm.png">I'll exchange ~cards~ cards.</state>
             </case>
             <case tag="bad_hand">
                 <state img="3-angry.png">I was never good at divination. Shouldn't have discarded that last one!</state>
+                <state img="3-sad.png">I'm starting to regret taking this dare.</state>
+                <state img="3-stunned.png">I'm beginning to think my cards may be cursed!</state>
+                <state img="3-angry.png">It could be worse... Draco could be watching!</state>
             </case>
             <case tag="stripped">
                 <state img="3-stripped.png">It's more comfortable this way anyway.</state>
@@ -1038,16 +1077,24 @@
                 <state img="4-smug.png">Clearly you need me to tutor you in poker, ~name~.</state>
             </case>
             <case tag="good_hand">
-                <state img="4-calm.png">This ought to do it! Thank goodness.</state>
+                <state img="4-excited.png">My luck is beginning to change!</state>
+                <state img="4-happy.png">Thank Merlin!</state>
+                <state img="4-happy.png">This ought to do it! Thank goodness.</state>
+                <state img="4-interested.png">Phew! A good hand, at last.</state>
             </case>
             <case tag="okay_hand">
-                <state img="4-loss.png">Perhaps this will work.</state>
+                <state img="4-loss.png">Perhaps this will work...</state>
+                <state img="4-loss.png">I wonder if the library has any strategy guides I could borrow...</state>
+                <state img="4-loss.png">For once I'm glad the others aren't interested in Muggle games. Standing here like this...</state>
             </case>
             <case tag="swap_cards">
                 <state img="4-calm.png">I'll exchange ~cards~ cards.</state>
             </case>
             <case tag="bad_hand">
+                <state img="4-angry.png">I was never good at divination. Shouldn't have discarded that last one!</state>
                 <state img="4-sad.png">I'm starting to regret taking this dare.</state>
+                <state img="4-stunned.png">I'm beginning to think my cards may be cursed!</state>
+                <state img="4-angry.png">It could be worse... Draco could be watching!</state>
             </case>
             <case tag="stripped">
                 <state img="4-sad.png">But now I'm out of uniform! You... you won't tell the professors, will you?</state>
@@ -1234,15 +1281,23 @@
             </case>
             <case tag="good_hand">
                 <state img="5-excited.png">My luck is beginning to change!</state>
+                <state img="5-happy.png">Thank Merlin!</state>
+                <state img="5-happy.png">This ought to do it! Thank goodness.</state>
+                <state img="5-interested.png">Phew! A good hand, at last.</state>
             </case>
             <case tag="okay_hand">
-                <state img="5-angry.png">I wonder if the library has any strategy guides I could borrow...</state>
+                <state img="5-loss.png">Perhaps this will work...</state>
+                <state img="5-loss.png">I wonder if the library has any strategy guides I could borrow...</state>
+                <state img="5-loss.png">For once I'm glad the others aren't interested in Muggle games. Standing here like this...</state>
             </case>
             <case tag="swap_cards">
                 <state img="5-calm.png">I'll exchange ~cards~ cards.</state>
             </case>
             <case tag="bad_hand">
+                <state img="5-angry.png">I was never good at divination. Shouldn't have discarded that last one!</state>
+                <state img="5-sad.png">I'm starting to regret taking this dare.</state>
                 <state img="5-stunned.png">I'm beginning to think my cards may be cursed!</state>
+                <state img="5-angry.png">It could be worse... Draco could be watching!</state>
             </case>
             <case tag="stripped">
                 <state img="5-stripped.png">This is nothing a prefect can't handle!</state>
@@ -1449,15 +1504,23 @@
                 <state img="6-horny.png">Should I be seeing this?</state>
             </case>
             <case tag="good_hand">
-                <state img="6-happy.png">I... think this will work. Yes!</state>
+                <state img="6-excited.png">My luck is beginning to change!</state>
+                <state img="6-happy.png">Thank Merlin!</state>
+                <state img="6-happy.png">This ought to do it! Thank goodness.</state>
+                <state img="6-interested.png">Phew! A good hand, at last.</state>
             </case>
             <case tag="okay_hand">
+                <state img="6-loss.png">Perhaps this will work...</state>
+                <state img="6-loss.png">I wonder if the library has any strategy guides I could borrow...</state>
                 <state img="6-loss.png">For once I'm glad the others aren't interested in Muggle games. Standing here like this...</state>
             </case>
             <case tag="swap_cards">
                 <state img="6-calm.png">I'll exchange ~cards~ cards.</state>
             </case>
             <case tag="bad_hand">
+                <state img="6-angry.png">I was never good at divination. Shouldn't have discarded that last one!</state>
+                <state img="6-sad.png">I'm starting to regret taking this dare.</state>
+                <state img="6-stunned.png">I'm beginning to think my cards may be cursed!</state>
                 <state img="6-angry.png">It could be worse... Draco could be watching!</state>
             </case>
             <case tag="stripped">
@@ -1647,16 +1710,21 @@
                 <state img="7-horny.png">You know... I've always wanted to see a few boys naked. Just for scientific purposes, of course!</state>
             </case>
             <case tag="good_hand">
-                <state img="7-calm.png">Phew! A good hand, at last.</state>
+                <state img="7-excited.png">My luck is beginning to change!</state>
+                <state img="7-happy.png">Thank Merlin!</state>
+                <state img="7-happy.png">This ought to do it! Thank goodness.</state>
+                <state img="7-interested.png">Phew! A good hand, at last.</state>
             </case>
             <case tag="okay_hand">
                 <state img="7-sad.png">I hope this is enough. I couldn't bear to lose again...</state>
+                <state img="7-shocked.png">Please let this be enough! Oh, please!</state>
             </case>
             <case tag="swap_cards">
                 <state img="7-calm.png">I'll exchange ~cards~ cards.</state>
             </case>
             <case tag="bad_hand">
                 <state img="7-stunned.png">Oh, I wish I'd taken that Felix Felicis!</state>
+                <state img="7-stunned.png">No, no, no! Where's a time-turner when you need one?</state>
             </case>
             <case tag="stripped">
                 <state img="7-stripped.png">Oh, Merlin! This is so embarrassing.</state>
@@ -1845,15 +1913,20 @@
                 <state img="8-horny.png">Is that a wand in your pocket or are you just happy to see me? Hee hee.</state>
             </case>
             <case tag="good_hand">
-                <state img="8-excited.png">Thank Merlin!</state>
+                <state img="8-excited.png">My luck is beginning to change!</state>
+                <state img="8-happy.png">Thank Merlin!</state>
+                <state img="8-happy.png">This ought to do it! Thank goodness.</state>
+                <state img="8-interested.png">Phew! A good hand, at last.</state>
             </case>
             <case tag="okay_hand">
-                <state img="8-loss.png">Please let this be enough! Oh, please!</state>
+                <state img="8-sad.png">I hope this is enough. I couldn't bear to lose again...</state>
+                <state img="8-shocked.png">Please let this be enough! Oh, please!</state>
             </case>
             <case tag="swap_cards">
                 <state img="8-calm.png">I'll exchange ~cards~ cards.</state>
             </case>
             <case tag="bad_hand">
+                <state img="8-stunned.png">Oh, I wish I'd taken that Felix Felicis!</state>
                 <state img="8-stunned.png">No, no, no! Where's a time-turner when you need one?</state>
             </case>
             <case tag="start_masturbating">
