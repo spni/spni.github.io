@@ -18,6 +18,8 @@
         <tag>shy</tag>
         <tag>innocent</tag>
         <tag>straight</tag>
+        <tag>Japanese</tag>
+        <tag>virtual</tag>
     </tags>
 	
 	
@@ -83,12 +85,18 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="0-happy.png">Got it!</state>
+				<state img="0-happy.png">These cards are S-class!</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="0-lost.png">Let's do this.</state>
+				<state img="0-nervous.png">P-please, be nice to me...</state>
+				<state img="0-nervous.png">We may need to team up for this quest.</state>
+				<state img="0-nervous.png">Don't do anything mean, okay?</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
 				<state img="0-nervous.png">Feel that? There's a bad vibe in here.</state>
+				<state img="0-angry.png">Oh, well, THAT figures.</state>
+				<state img="0-angry.png">These cards are beyond fishy, don't you think?</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
 			
@@ -267,6 +275,9 @@
 				<state img="0-happy.png">I might just win this game yet!</state>
 				<state img="0-happy.png">It's a good start for me!</state>
 			</case>
+			<case tag="female_removed_accessory" target="mercy"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+				<state img="0-angry.png">Please don't take this personally, but I've had a lifetime of doctors already, ~name~. </state>
+			</case>
 			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-happy.png">That means I can go all out against you!</state>
 			</case>
@@ -286,6 +297,12 @@
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="0-embarrassed.png">This feels like I'm picking on a newbie.</state>
 				<state img="0-happy.png">And my guild thought I couldn't handle myself!</state>
+			</case>
+			<case tag="female_removed_major" target="mia"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="0-sad.png">The way you talk reminds me of my father's lawyers. I have the sudden urge to scream.</state>
+			</case>
+			<case tag="female_removed_major" target="nagisa"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="0-happy.png">Hee hee hee! Sorry, ~name~. It's just that your bra looks like dango!</state>
 			</case>
 			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="0-calm.png">...Although you're handling it well. Better than I would, honestly.</state>
@@ -346,13 +363,19 @@
 				<state img="1-calm.png">I'll exchange ~cards~ cards.</state>
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
+				<state img="1-happy.png">Got it!</state>
 				<state img="1-happy.png">These cards are S-class!</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
+				<state img="1-lost.png">Let's do this.</state>
 				<state img="1-nervous.png">P-please, be nice to me...</state>
+				<state img="1-nervous.png">We may need to team up for this quest.</state>
+				<state img="1-nervous.png">Don't do anything mean, okay?</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="1-nervous.png">Feel that? There's a bad vibe in here.</state>
 				<state img="1-angry.png">Oh, well, THAT figures.</state>
+				<state img="1-angry.png">These cards are beyond fishy, don't you think?</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
 			
@@ -559,6 +582,12 @@
 				<state img="1-embarrassed.png">This feels like I'm picking on a newbie.</state>
 				<state img="1-happy.png">And my guild thought I couldn't handle myself!</state>
 			</case>
+			<case tag="female_removed_major" target="mia"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="1-sad.png">The way you talk reminds me of my father's lawyers. I have the sudden urge to scream.</state>
+			</case>
+			<case tag="female_removed_major" target="nagisa"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="1-happy.png">Hee hee hee! Dango bra!</state>
+			</case>
 			<case tag="female_removed_major" filter="confident"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="1-calm.png">...Although you're handling it well. Better than I would, honestly.</state>
 			</case>
@@ -629,11 +658,17 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="2-happy.png">Got it!</state>
+				<state img="2-happy.png">These cards are S-class!</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="2-lost.png">Don't count me out just yet!</state>
+				<state img="2-lost.png">Let's do this.</state>
+				<state img="2-nervous.png">P-please, be nice to me...</state>
+				<state img="2-nervous.png">We may need to team up for this quest.</state>
+				<state img="2-nervous.png">Don't do anything mean, okay?</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
+				<state img="2-nervous.png">Feel that? There's a bad vibe in here.</state>
+				<state img="2-angry.png">Oh, well, THAT figures.</state>
 				<state img="2-angry.png">These cards are beyond fishy, don't you think?</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
@@ -837,6 +872,9 @@
 				<state img="2-happy.png">Want to concede the match, ~name~?</state>
 				<state img="2-happy.png">That quest reward is as good as mine!</state>
 			</case>
+			<case tag="female_removed_major" target="mia"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="2-sad.png">The way you talk reminds me of my father's lawyers. I have the sudden urge to scream.</state>
+			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="2-calm.png">This is why you don't make charisma a dump stat. Heh.</state>
 			</case>
@@ -902,12 +940,18 @@
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
 				<state img="3-happy.png">Thank you, random number generator!</state>
+				<state img="3-happy.png">Okay, break time is over.</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
+				<state img="3-lost.png">Let's do this.</state>
+				<state img="3-nervous.png">P-please, be nice to me...</state>
 				<state img="3-nervous.png">We may need to team up for this quest.</state>
+				<state img="3-nervous.png">Don't do anything mean, okay?</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
 				<state img="3-sad.png">It's no use!</state>
+				<state img="3-nervous.png">I'm done for!</state>
+				<state img="3-embarrassed.png">I can't go on...</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
 			
@@ -1103,6 +1147,9 @@
 				<state img="3-happy.png">Want to concede the match, ~name~?</state>
 				<state img="3-happy.png">That quest reward is as good as mine!</state>
 			</case>
+			<case tag="female_removed_major" target="mia"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="3-sad.png">The way you talk reminds me of my father's lawyers. I have the sudden urge to scream.</state>
+			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="3-calm.png">This is why you don't make charisma a dump stat. Heh.</state>
 			</case>
@@ -1169,19 +1216,19 @@
 				</state>
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
-				<state img="4-happy.png">
-					Okay, break time is over.
-				</state>
+				<state img="4-happy.png">Thank you, random number generator!</state>
+				<state img="4-happy.png">Okay, break time is over.</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="4-nervous.png">
-					Don't do anything mean, okay?
-				</state>
+				<state img="4-lost.png">Don't count me out just yet!</state>
+				<state img="4-angry.png">I'm not sure about this hand...</state>
+				<state img="4-angry.png">This won't stop me!</state>
+				<state img="4-angry.png">I'll never give up!</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="4-nervous.png">
-					I'm done for!
-				</state>
+				<state img="4-sad.png">It's no use!</state>
+				<state img="4-nervous.png">I'm done for!</state>
+				<state img="4-embarrassed.png">I can't go on...</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
 			
@@ -1460,19 +1507,19 @@
 				</state>
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
-				<state img="5-happy.png">
-					Okay, break time is over.
-				</state>
+				<state img="5-happy.png">Thank you, random number generator!</state>
+				<state img="5-happy.png">Okay, break time is over.</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="5-angry.png">
-					I'm not sure about this hand...
-				</state>
+				<state img="5-lost.png">Don't count me out just yet!</state>
+				<state img="5-angry.png">I'm not sure about this hand...</state>
+				<state img="5-angry.png">This won't stop me!</state>
+				<state img="5-angry.png">I'll never give up!</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="5-embarrassed.png">
-					I can't go on...
-				</state>
+				<state img="5-sad.png">It's no use!</state>
+				<state img="5-nervous.png">I'm done for!</state>
+				<state img="5-embarrassed.png">I can't go on...</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
 			
@@ -1775,19 +1822,19 @@
 				</state>
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
-				<state img="6-happy.png">
-					Okay, break time is over.
-				</state>
+				<state img="6-happy.png">Thank you, random number generator!</state>
+				<state img="6-happy.png">Okay, break time is over.</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="6-angry.png">
-					This won't stop me!
-				</state>
+				<state img="6-lost.png">Don't count me out just yet!</state>
+				<state img="6-angry.png">I'm not sure about this hand...</state>
+				<state img="6-angry.png">This won't stop me!</state>
+				<state img="6-angry.png">I'll never give up!</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="6-shocked.png">
-					I shouldn't even be here! I just logged in on my brother's account!
-				</state>
+				<state img="6-shocked.png">I shouldn't even be here! I just logged in on my brother's account!</state>
+				<state img="6-embarrassed.png">Just kill me now!</state>
+				<state img="6-shocked.png">Save me, Kirito-kun!</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
 			
@@ -2076,19 +2123,18 @@
 				</state>
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
-				<state img="7-happy.png">
-					I'm saved!
-				</state>
+				<state img="7-happy.png">I'm saved!</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="7-angry.png">
-					I'll never give up!
-				</state>
+				<state img="7-lost.png">Don't count me out just yet!</state>
+				<state img="7-angry.png">I'm not sure about this hand...</state>
+				<state img="7-angry.png">This won't stop me!</state>
+				<state img="7-angry.png">I'll never give up!</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="7-embarrassed.png">
-					Just kill me now!
-				</state>
+				<state img="7-shocked.png">I shouldn't even be here! I just logged in on my brother's account!</state>
+				<state img="7-embarrassed.png">Just kill me now!</state>
+				<state img="7-shocked.png">Save me, Kirito-kun!</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
 			
@@ -2363,19 +2409,18 @@
 				</state>
 			</case>
 			<case tag="good_hand"> <!-- this player has a good hand after the exchange -->
-				<state img="8-happy.png">
-					I'm saved!
-				</state>
+				<state img="8-happy.png">I'm saved!</state>
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
-				<state img="8-angry.png">
-					I'll never give up! Prepare yourself!
-				</state>
+				<state img="8-lost.png">Don't count me out just yet!</state>
+				<state img="8-angry.png">I'm not sure about this hand...</state>
+				<state img="8-angry.png">This won't stop me!</state>
+				<state img="8-angry.png">I'll never give up!</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
-				<state img="8-shocked.png">
-					Save me, Kirito-kun!
-				</state>
+				<state img="8-shocked.png">I shouldn't even be here! I just logged in on my brother's account!</state>
+				<state img="8-embarrassed.png">Just kill me now!</state>
+				<state img="8-shocked.png">Save me, Kirito-kun!</state>
 			</case>
 			<!-- End of Hand Strength Cases -->
 			
