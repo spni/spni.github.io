@@ -245,16 +245,29 @@ function updateBehaviour (player, tag, replace, content, opp) {
         // look for the best match
         var bestMatch = null;
         for (var i = 0; i < states.length; i++) {
-            var target = states[i].attr("target");
-            var filter = states[i].attr("filter");
-	    var alsoPlaying = states[i].attr("alsoPlaying");
+            var target =           states[i].attr("target");
+            var filter =           states[i].attr("filter");
+	    var alsoPlaying =      states[i].attr("alsoPlaying");
+	    var hasHand =          states[i].attr("hasHand");
+            var oppHand =          states[i].attr("oppHand");
+            var targetStage =      states[i].attr("targetStage");
+            var alsoPlayingStage = states[i].attr("alsoPlayingStage");
             
             if (opp !== null && typeof target !== typeof undefined && target !== false) {
                 target = "opponents/" + target  + "/";
                 if (target === opp.folder) {
-                    console.log("Best match is target!");
-                    bestMatch = states[i];
-                    break;
+		        if (typeof targetStage !== typeof undefined && targetStage !== false) {
+		            if (targetStage === opp.stage + '') {
+			        console.log("Best match is targetStage!");
+                                bestMatch = states[i];
+                                break;
+		            }
+		        }
+                        else {
+                            console.log("Best match is target!");
+                            bestMatch = states[i];
+                            break;
+		    }
                 }
             }
             else if (opp !== null && typeof filter !== typeof undefined && filter !== false) {
@@ -270,15 +283,46 @@ function updateBehaviour (player, tag, replace, content, opp) {
 	    	for (var j = 0; j < players.length; j++) {
 		    if (opp !== players[j]) {
 		    	if ("opponents/" + alsoPlaying + "/" === players[j].folder) {
+
+                            if (typeof alsoPlayingStage !== typeof undefined && alsoPlayingStage !== false) {
+                                if (alsoPlayingStage === players[j].stage + '')
+                                {
+                                    console.log("Best match is alsoPlayingStage!");
+                                    bestMatch = states[i];
+                                    break;
+                                }
+
+                            }
+                            else{
 				console.log("Best match is alsoPlaying!");
 				bestMatch = states[i];
 				break;
+                            }
 		    	}
 		    }
 
 		}
 
 	    }
+	    else if (typeof hasHand !== typeof undefined && hasHand !== false) {
+		if (handStrengthToString(hands[player].strength) === hasHand) {
+			console.log("Best match is hasHand!");
+                        bestMatch = states[i];
+                        break;
+                }
+
+	    }
+            else if (opp !== null && typeof oppHand !== typeof undefined && oppHand !== false) {
+                for (var q = 0; q < players.length; q++) {
+                if (opp === players[q]) {
+                    if (handStrengthToString(hands[q].strength) === oppHand) {
+                        console.log("Best match is oppHand!");
+                        bestMatch = states[i];
+                        break;
+                    }
+                }
+                }
+            }
             else if (bestMatch === null) {
                 console.log("Best match is default!");
                 bestMatch = states[i];
