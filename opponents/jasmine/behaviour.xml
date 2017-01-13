@@ -129,14 +129,12 @@
 			
 			<!-- Start of Male Player Pre Stripping Cases -->
 			<case tag="male_human_must_strip"> <!-- a male human player is about to strip, but you don't know what they will remove -->
-				<state img="0-interested.png">
-					So ~name~ lost? What does that mean?
-				</state>
+				<state img="0-interested.png">Okay, so, um... did I win or lose?</state>
+				<state img="0-interested.png">What happens now?</state>
 			</case>
 			<case tag="male_must_strip"> <!-- a male player will strip, but you don't know what they will remove -->
-				<state img="0-interested.png">
-					So ~name~ lost? What does that mean?
-				</state>
+				<state img="0-interested.png">Okay, so, um... did I win or lose?</state>
+				<state img="0-interested.png">What happens now?</state>
 			</case>
 			<case tag="male_removing_accessory"> <!-- a male player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-happy.png">
@@ -231,14 +229,12 @@
 			
 			<!-- Start of Female Player Pre Stripping Cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="0-interested.png">
-					So ~name~ lost? What does that mean?
-				</state>
+				<state img="0-interested.png">So ~name~ lost? What does that mean?</state>
+				<state img="0-sad.png">Wait, don't tell me - I lost, didn't I?</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="0-interested.png">
-					So ~name~ lost? What does that mean?
-				</state>
+				<state img="0-interested.png">So ~name~ lost? What does that mean?</state>
+				<state img="0-sad.png">Wait, don't tell me - I lost, didn't I?</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-happy.png">
@@ -510,14 +506,12 @@
 			
 			<!-- Start of Female Player Pre Stripping Cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="1-confused.png">
-					I could order my servants to strip... where's the fun in this?
-				</state>
+				<state img="1-confused.png">I could order my servants to strip... where's the fun in this?</state>
+				<state img="1-interested.png">If I've got this right, then ~name~ lost.</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="1-confused.png">
-					I could order my servants to strip... where's the fun in this?
-				</state>
+				<state img="1-confused.png">I could order my servants to strip... where's the fun in this?</state>
+				<state img="1-interested.png">If I've got this right, then ~name~ lost.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="1-calm.png">
