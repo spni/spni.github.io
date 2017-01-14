@@ -140,19 +140,14 @@
 				<state img="0-interested.png">You seem overdressed in this heat, ~name~.</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="0-happy.png">
-					It must be beginner's luck!
-				</state>
+				<state img="0-happy.png">It must be beginner's luck!</state>
+				<state img="0-interested.png">I'm better at this game than I realized.</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="0-confused.png">
-					I'm not sure I see the point of this game...
-				</state>
+				<state img="0-confused.png">I'm not sure I see the point of this game...</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
-				<state img="0-horny.png">
-					Perhaps I CAN see the point of the game...
-				</state>
+				<state img="0-horny.png">Perhaps I <i>can</i> see the point of the game...</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
 			
@@ -237,6 +232,9 @@
 				<state img="0-happy.png">I see! Wait, no I don't.</state>
 				<state img="0-confused.png">Oh... are you out of jewelry already?</state>
 			</case>
+			<case tag="female_removing_minor" targetStage=0> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="0-confused.png">Surely you must have <i>something</i> smaller to start with?</state>
+			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="0-interested.png">This means I'm winning, right?</state>
 			</case>
@@ -283,9 +281,7 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="0-angry.png">
-					Stop that, all of you! How dare you force this poor, defenceless young girl to--
-				</state>
+				<state img="0-angry.png">Stop that, all of you! How dare you force this poor, defenceless young girl to--</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="0-shocked.png">
@@ -350,16 +346,16 @@
 				<state img="1-stripped.png">I get them back at the end, don't I? They were a gift from my father!</state>
 			</case>
 			<case tag="stripped" alsoPlaying="zoey" targetStage=0> <!-- this player just stripped down to the stage -->
-				<state img="1-shocked.png">W-what are you talking about? I'm just a plain, ordinary peasant girl, not the incredibly beautiful and famous princess!</state>
+				<state img="1-shocked.png">W-what are you talking about, Zoey? I'm just a plain, ordinary peasant girl, not the incredibly beautiful and famous princess!</state>
 			</case>
 			<case tag="stripped" alsoPlaying="zoey" targetStage=1> <!-- this player just stripped down to the stage -->
-				<state img="1-shocked.png">W-what are you talking about? I'm just a plain, ordinary peasant girl, not the incredibly beautiful and famous princess!</state>
+				<state img="1-shocked.png">W-what are you talking about, Zoey? I'm just a plain, ordinary peasant girl, not the incredibly beautiful and famous princess!</state>
 			</case>
 			<case tag="stripped" alsoPlaying="zoey" targetStage=2> <!-- this player just stripped down to the stage -->
-				<state img="1-shocked.png">W-what are you talking about? I'm just a plain, ordinary peasant girl, not the incredibly beautiful and famous princess!</state>
+				<state img="1-shocked.png">W-what are you talking about, Zoey? I'm just a plain, ordinary peasant girl, not the incredibly beautiful and famous princess!</state>
 			</case>
 			<case tag="stripped" alsoPlaying="zoey" targetStage=3> <!-- this player just stripped down to the stage -->
-				<state img="1-shocked.png">W-what are you talking about? I'm just a plain, ordinary peasant girl, not the incredibly beautiful and famous princess!</state>
+				<state img="1-shocked.png">W-what are you talking about, Zoey? I'm just a plain, ordinary peasant girl, not the incredibly beautiful and famous princess!</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
 				<state img="1-loss.png">
@@ -405,17 +401,14 @@
 				<state img="1-interested.png">You seem overdressed in this heat, ~name~.</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
+				<state img="1-happy.png">It must be beginner's luck!</state>
 				<state img="1-interested.png">I'm better at this game than I realized.</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="1-interested.png">
-					Ah, now we're getting somewhere!
-				</state>
+				<state img="1-confused.png">I'm not sure I see the point of this game...</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
-				<state img="1-shocked.png">
-					Tell me the truth, ~name~: you wanted to lose, didn't you? 
-				</state>
+				<state img="1-horny.png">Perhaps I <i>can</i> see the point of the game...</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
 			
@@ -503,7 +496,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="1-shocked.png">...</state>
-				<state img="1-interested.png">Just like the dance of the seven veils!</state>
+				<state img="1-interested.png">Oh, is this the legendary dance of the seven veils?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="1-shocked.png">I feel like I've wandered into the harem by mistake!</state>
@@ -561,9 +554,7 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="1-angry.png">
-					Stop that, all of you! How dare you force this poor, defenceless young girl to--
-				</state>
+				<state img="1-angry.png">Stop that, all of you! How dare you force this poor, defenceless young girl to--</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="1-shocked.png">
@@ -673,19 +664,16 @@
 				<state img="2-interested.png">You seem overdressed in this heat, ~name~.</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="2-interested.png">
-					Don't be so stuffy, ~name~. We're all friends here!
-				</state>
+				<state img="2-interested.png">Don't be so stuffy, ~name~. We're all friends here!</state>
+				<state img="2-interested.png">Ah, <i>now</i> we're getting somewhere!</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="2-interested.png">
-					Ah, now we're getting somewhere!
-				</state>
+				<state img="2-interested.png">Ah, now we're getting somewhere!</state>
+				<state img="2-interested.png">Are you trying to win my heart, ~name~? I'm sorry to tell you I'm spoken for.</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
-				<state img="2-horny.png">
-					No matter what the species, men are men.
-				</state>
+				<state img="2-shocked.png">Tell me the truth, ~name~: you wanted to lose, didn't you?</state>
+				<state img="2-angry.png">If you're trying to impress me, I'd prefer a game of wits.</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
 			
@@ -728,9 +716,7 @@
 			
 			<!-- Start of Male Player Masturbating Cases -->
 			<case tag="male_must_masturbate"> <!-- a male player has to masturbate -->
-				<state img="2-shocked.png">
-					...I HAVE led a sheltered life. 
-				</state>
+				<state img="2-shocked.png">...I <i>have</i> led a sheltered life.</state>
 			</case>
 			<case tag="male_start_masturbating"> <!-- a male player has started masturbating -->
 				<state img="2-angry.png">
@@ -769,7 +755,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="2-shocked.png">...</state>
-				<state img="2-interested.png">Just like the dance of the seven veils!</state>
+				<state img="2-interested.png">Oh, is this the legendary dance of the seven veils?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="2-shocked.png">I feel like I've wandered into the harem by mistake!</state>
@@ -809,9 +795,7 @@
 				</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
-				<state img="2-shocked.png">
-					This game is completely ridiculous, but... let's keep playing.
-				</state>
+				<state img="2-shocked.png">This game is completely ridiculous, but... let's keep playing anyway.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> <!-- a female player's crotch has become visible -->
 				<state img="2-shocked.png">
@@ -823,9 +807,8 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="2-interested.png">
-					So THIS is why Aladdin wanted to play?
-				</state>
+				<state img="2-angry.png">So <i>this</i> is why Aladdin wanted to play!</state>
+				<state img="2-shocked.png">So <i>this</i> is what my people do for fun?</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="2-shocked.png">
@@ -874,7 +857,7 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="3-calm.png">I've seen the guards playing cards before...</state>
-				<state img="3-calm.png">Wait, is this a flush? I should have watched the guards more carefully.</state>
+				<state img="3-confused.png">Wait, is this a flush? I should have watched the guards more carefully.</state>
 				<state img="3-calm.png">I can do this! I think.</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -930,24 +913,21 @@
 				<state img="3-angry.png">I'm not mad. It would be petty to be mad over a game. A <i>stupid</i> game.</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="3-calm.png">
-					You seem overdressed for such a hot evening, ~name~.
-				</state>
+				<state img="3-calm.png">You seem overdressed for the heat, ~name~.</state>
+				<state img="3-angry.png">You've never heard of <i>noblesse oblige</i>, have you?</state>
+				<state img="3-angry.png">Well! You have no respect for royalty, do you?</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="3-interested.png">
-					Don't be so stuffy, ~name~. We're all friends here!
-				</state>
+				<state img="3-interested.png">Don't be so stuffy, ~name~. We're all friends here!</state>
+				<state img="3-interested.png">Ah, <i>now</i> we're getting somewhere!</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="3-interested.png">
-					Ah, now we're getting somewhere!
-				</state>
+				<state img="3-interested.png">Ah, now we're getting somewhere!</state>
+				<state img="3-interested.png">Are you trying to win my heart, ~name~? I'm sorry to tell you I'm spoken for.</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
-				<state img="3-horny.png">
-					No matter what the species, men are men.
-				</state>
+				<state img="3-shocked.png">Tell me the truth, ~name~: you wanted to lose, didn't you?</state>
+				<state img="3-angry.png">If you're trying to impress me, I'd prefer a game of wits.</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
 			
@@ -1032,8 +1012,8 @@
 				<state img="3-angry.png">How... shrewd of you.</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="2-shocked.png">...</state>
-				<state img="2-interested.png">Just like the dance of the seven veils!</state>
+				<state img="3-shocked.png">...</state>
+				<state img="3-interested.png">Oh, is this the legendary dance of the seven veils?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="3-horny.png">I am not a prize to be won... but I'm beginning to think that <i>you</i> might be.</state>
@@ -1084,9 +1064,8 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="3-interested.png">
-					So THIS is why Aladdin wanted to play?
-				</state>
+				<state img="3-angry.png">So <i>this</i> is why Aladdin wanted to play!</state>
+				<state img="3-shocked.png">So <i>this</i> is what my people do for fun?</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="3-shocked.png">
@@ -1135,7 +1114,7 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="4-calm.png">I've seen the guards playing cards before...</state>
-				<state img="4-calm.png">Wait, is this a flush? I should have watched the guards more carefully.</state>
+				<state img="4-confused.png">Wait, is this a flush? I should have watched the guards more carefully.</state>
 				<state img="4-calm.png">I can do this! I think.</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -1191,24 +1170,20 @@
 				<state img="4-angry.png">I'm not mad. It would be petty to be mad over a game. A <i>stupid</i> game.</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="4-calm.png">
-					You seem overdressed for such a hot evening, ~name~.
-				</state>
+				<state img="4-calm.png">You seem overdressed for the heat, ~name~.</state>
+				<state img="4-angry.png">You've never heard of <i>noblesse oblige</i>, have you?</state>
+				<state img="4-angry.png">Well! You have no respect for royalty, do you?</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="4-interested.png">
-					Do as I command, ~name~: remove your ~clothing~!
-				</state>
+				<state img="4-interested.png">Do as I command, ~name~: remove your ~clothing~!</state>
+				<state img="4-embarrassed.png">I certainly don't mind seeing more of you...</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="4-interested.png">
-					Why, ~name~, are you trying to win my heart?
-				</state>
+				<state img="4-interested.png">Ah, now we're getting somewhere!</state>
+				<state img="4-interested.png">Are you trying to win my heart, ~name~? I'm sorry to tell you I'm spoken for.</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
-				<state img="4-horny.png">
-					No matter what the species, men are men.
-				</state>
+				<state img="4-horny.png">No matter what the species, men are men.</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
 			
@@ -1294,7 +1269,7 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="4-shocked.png">...</state>
-				<state img="4-interested.png">Just like the dance of the seven veils!</state>
+				<state img="4-interested.png">Oh, is this the legendary dance of the seven veils?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="4-horny.png">I am not a prize to be won... but I'm beginning to think that <i>you</i> might be.</state>
@@ -1344,9 +1319,8 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="4-interested.png">
-					So THIS is why Aladdin wanted to play?
-				</state>
+				<state img="4-angry.png">So <i>this</i> is why Aladdin wanted to play!</state>
+				<state img="4-shocked.png">So <i>this</i> is what my people do for fun?</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="4-shocked.png">
@@ -1394,7 +1368,7 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="5-calm.png">I've seen the guards playing cards before...</state>
-				<state img="5-calm.png">Wait, is this a flush? I should have watched the guards more carefully.</state>
+				<state img="5-confused.png">Wait, is this a flush? I should have watched the guards more carefully.</state>
 				<state img="5-calm.png">I can do this! I think.</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -1450,24 +1424,20 @@
 				<state img="5-angry.png">I'm not mad. It would be petty to be mad over a game. A <i>stupid</i> game.</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="5-angry.png">
-					You've never heard of noblesse oblige, have you?
-				</state>
+				<state img="5-calm.png">You seem overdressed for the heat, ~name~.</state>
+				<state img="5-angry.png">You've never heard of <i>noblesse oblige</i>, have you?</state>
+				<state img="5-angry.png">Well! You have no respect for royalty, do you?</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="5-interested.png">
-					Don't be so stuffy, ~name~. We're all friends here!
-				</state>
+				<state img="5-interested.png">Do as I command, ~name~: remove your ~clothing~!</state>
+				<state img="5-embarrassed.png">I certainly don't mind seeing more of you...</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="5-interested.png">
-					Why, ~name~, are you trying to win my heart?
-				</state>
+				<state img="5-interested.png">Ah, now we're getting somewhere!</state>
+				<state img="5-interested.png">Are you trying to win my heart, ~name~? I'm sorry to tell you I'm spoken for.</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
-				<state img="5-horny.png">
-					No matter what the species, men are men.
-				</state>
+				<state img="5-horny.png">No matter what the species, men are men.</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
 			
@@ -1603,7 +1573,8 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="5-shocked.png">So this is what my people do for fun? I see.</state>
+				<state img="5-angry.png">So <i>this</i> is why Aladdin wanted to play!</state>
+				<state img="5-shocked.png">So <i>this</i> is what my people do for fun?</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="5-horny.png">
@@ -1709,24 +1680,20 @@
 				<state img="6-angry.png">Hmph! This hardly seems fair.</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="6-angry.png">
-					You've never heard of noblesse oblige, have you?
-				</state>
+				<state img="6-calm.png">You seem overdressed for the heat, ~name~.</state>
+				<state img="6-angry.png">You've never heard of <i>noblesse oblige</i>, have you?</state>
+				<state img="6-angry.png">Well! You have no respect for royalty, do you?</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="6-interested.png">
-					Don't be so stuffy, ~name~. We're all friends here!
-				</state>
+				<state img="6-interested.png">Do as I command, ~name~: remove your ~clothing~!</state>
+				<state img="6-embarrassed.png">I certainly don't mind seeing more of you...</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="6-interested.png">
-					Ah, now we're getting somewhere!
-				</state>
+				<state img="6-interested.png">Ah, now we're getting somewhere!</state>
+				<state img="6-interested.png">Are you trying to win my heart, ~name~? I'm sorry to tell you I'm spoken for.</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
-				<state img="6-horny.png">
-					No matter what the species, men are men.
-				</state>
+				<state img="6-horny.png">No matter what the species, men are men.</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
 			
@@ -1871,7 +1838,8 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="6-shocked.png">So this is what my people do for fun? I see.</state>
+				<state img="6-angry.png">So <i>this</i> is why Aladdin wanted to play!</state>
+				<state img="6-shocked.png">So <i>this</i> is what my people do for fun?</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="6-horny.png">
@@ -1977,24 +1945,20 @@
 				<state img="7-angry.png">Hmph! This hardly seems fair.</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="7-angry.png">
-					You have a lot to learn about being a gentleman.
-				</state>
+				<state img="7-angry.png">You have a <i>lot</i> to learn about being a gentleman, ~name~!</state>
+				<state img="7-angry.png">Hmph! This hardly seems fair.</state>
+				<state img="7-interested.png">If you don't mind, could you lose faster?</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="7-interested.png">
-					I certainly don't mind seeing more of you.
-				</state>
+				<state img="7-interested.png">Do as I command, ~name~: remove your ~clothing~!</state>
+				<state img="7-embarrassed.png">I certainly don't mind seeing more of you...</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="7-interested.png">
-					Ah, now we're getting somewhere!
-				</state>
+				<state img="7-interested.png">Ah, now we're getting somewhere!</state>
+				<state img="7-interested.png">Are you trying to win my heart, ~name~? I'm sorry to tell you I'm spoken for.</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
-				<state img="7-horny.png">
-					No matter what the species, men are men.
-				</state>
+				<state img="7-horny.png">No matter what the species, men are men.</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
 			
@@ -2013,7 +1977,8 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
-				<state img="7-horny.png">I've changed my mind. I love this game!</state>
+				<state img="7-horny.png">Now that's a sight for sore eyes...</state>
+				<state img="7-happy.png">I've changed my mind. I love this game!</state>
 				<state img="7-interested.png">Hmm! I never realized how incredibly handsome you are...</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -2129,9 +2094,8 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="7-interested.png">
-					This is a rare sight outside the harem... I'll be watching closely.
-				</state>
+				<state img="7-interested.png">This is a rare sight outside the harem... I'll be watching closely!</state>
+				<state img="7-interested.png">I've always wondered how other girls do it...</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="7-horny.png">
@@ -2232,24 +2196,21 @@
 				<state img="8-angry.png">Hmph! This hardly seems fair.</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="8-angry.png">
-					You have a lot to learn about being a gentleman.
-				</state>
+				<state img="8-angry.png">You have a <i>lot</i> to learn about being a gentleman, ~name~!</state>
+				<state img="8-angry.png">Hmph! This hardly seems fair.</state>
+				<state img="8-interested.png">If you don't mind, could you lose faster?</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="8-interested.png">
-					I certainly don't mind seeing more of you.
-				</state>
+				<state img="8-interested.png">Do as I command, ~name~: remove your ~clothing~!</state>
+				<state img="8-embarrassed.png">I certainly don't mind seeing more of you...</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="8-interested.png">
-					Ah, now we're getting somewhere!
-				</state>
+				<state img="8-interested.png">Ah, now we're getting somewhere!</state>
+				<state img="8-interested.png">Are you trying to win my heart, ~name~? I'm sorry to tell you I'm spoken for.</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
-				<state img="8-horny.png">
-					No matter what the species, men are men.
-				</state>
+				<state img="8-horny.png">Show me a whole new world, ~name~!</state>
+				<state img="8-horny.png">I really <i>must</i> play this game with Aladdin!</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
 			
@@ -2268,7 +2229,8 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
-				<state img="8-horny.png">I've changed my mind. I love this game!</state>
+				<state img="8-horny.png">Now that's a sight for sore eyes...</state>
+				<state img="8-happy.png">I've changed my mind. I love this game!</state>
 				<state img="8-interested.png">Hmm! I never realized how incredibly handsome you are...</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -2385,9 +2347,8 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="8-interested.png">
-					This is a rare sight outside the harem... I'll be watching closely.
-				</state>
+				<state img="8-interested.png">This is a rare sight outside the harem... I'll be watching closely!</state>
+				<state img="8-interested.png">I've always wondered how other girls do it...</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="8-horny.png">
@@ -2463,24 +2424,17 @@
 				<state img="9-angry.png">You have a <i>lot</i> to learn about being a gentleman!</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="9-angry.png">
-					Hmph! This hardly seems fair.
-				</state>
+				<state img="9-interested.png">If you don't mind, could you lose faster?</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="9-interested.png">
-					Well, it's about time!
-				</state>
+				<state img="9-interested.png">Well, it's about time!</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="9-interested.png">
-					Now that's a sight for sore eyes...
-				</state>
+				<state img="9-interested.png">Ah, now we're getting somewhere!</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
-				<state img="9-horny.png">
-					Show me a whole new world, ~name~!
-				</state>
+				<state img="9-horny.png">Show me a whole new world, ~name~!</state>
+				<state img="9-horny.png">I really <i>must</i> play this game with Aladdin!</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
 			
@@ -2498,7 +2452,8 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
-				<state img="9-horny.png">I've changed my mind. I love this game!</state>
+				<state img="9-horny.png">Now that's a sight for sore eyes...</state>
+				<state img="9-happy.png">I've changed my mind. I love this game!</state>
 				<state img="9-interested.png">Hmm! I never realized how incredibly handsome you are...</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -2609,9 +2564,8 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="9-happy.png">
-					Oh, do join in! I could use someone to take charge.
-				</state>
+				<state img="9-happy.png">Oh, do join in! I could use someone to take charge.</state>
+				<state img="9-interested.png">I've always wondered how other girls do it...</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
 				<state img="9-happy.png">
@@ -2682,24 +2636,19 @@
 				<state img="10-sad.png">When I tell this story, I'll leave out this part.</state>
 			</case>
 			<case tag="male_removing_minor"> <!-- a male player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="10-interested.png">
-					If you don't mind, could you lose faster?
-				</state>
+				<state img="10-angry.png">You have a <i>lot</i> to learn about being a gentleman, ~name~!</state>
+				<state img="10-angry.png">Hmph! This hardly seems fair.</state>
+				<state img="10-interested.png">If you don't mind, could you lose faster?</state>
 			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
-				<state img="10-interested.png">
-					Ah, now we're getting somewhere!
-				</state>
+				<state img="10-interested.png">Well, it's about time!</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> <!-- a male player's chest will become visible -->
-				<state img="10-interested.png">
-					Ah, now we're getting somewhere!
-				</state>
+				<state img="10-interested.png">Ah, now we're getting somewhere!</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> <!-- a male player's crotch will become visible -->
-				<state img="10-horny.png">
-					I really MUST play this game with Aladdin!
-				</state>
+				<state img="10-horny.png">Show me a whole new world, ~name~!</state>
+				<state img="10-horny.png">I really <i>must</i> play this game with Aladdin!</state>
 			</case>
 			<!-- End of Male Player Pre Stripping Cases -->
 			
@@ -2718,7 +2667,8 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible"> <!-- a male player's chest has become visible -->
-				<state img="10-horny.png">I've changed my mind. I love this game!</state>
+				<state img="10-horny.png">Now that's a sight for sore eyes...</state>
+				<state img="10-happy.png">I've changed my mind. I love this game!</state>
 				<state img="10-interested.png">Hmm! I never realized how incredibly handsome you are...</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> <!-- a male player's crotch has become visible -->
@@ -2832,14 +2782,11 @@
 			
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
-				<state img="10-interested.png">
-					I've always wondered how other girls do it...
-				</state>
+				<state img="10-interested.png">I've always wondered how other girls do it...</state>
+				<state img="10-interested.png">I've always wondered how other girls do it...</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> <!-- a female player has to masturbate -->
-				<state img="10-interested.png">
-					Don't worry, ~name~. A princess can do ANYTHING she wants.
-				</state>
+				<state img="10-interested.png">Don't worry, ~name~. A princess can do <i>anything</i> she wants.</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="10-interested.png">
