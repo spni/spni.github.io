@@ -303,6 +303,7 @@ bad_hand=disappointed,I've played Phoenix before. I'm used to bad hands...
 -3-male_removed_accessory=embarrassed,You all just wanted to get me naked, right?
 -3-female_removing_accessory=shocked,This is a sham!
 -3-female_removed_accessory=sad,You all just wanted to get me naked, right?
+-3-female_removed_accessory=shocked,That accessory... is an accessory to a crime!
 
 #masturbating
 -2-male_removing_accessory=disappointed,Aw... 
@@ -665,7 +666,7 @@ bad_hand=disappointed,I've played Phoenix before. I'm used to bad hands...
 
 #nude
 -3-male_must_masturbate=calm,Court is now in session, ~name~.
--3-male_start_masturbating=tsundere,...You can look at me if you need help.
+-3-male_start_masturbating=tsundere,... You can look at me if you need help.
 -3-male_masturbating=horny,Haven't been in a situation like this in fifteen years.
 -3-male_masturbating=excited,C'mon ~name~! Get the lead out, as it were.
 -3-male_finished_masturbating=shocked,You practically exploded!
@@ -750,6 +751,11 @@ game_over_victory=shocked,I can't believe I pulled it off!
 
 #Paste into end of stage 0 (fully clothed)
 #<case tag="female_must_strip" target="kyoko" targetStage=0><state img="0-calm.png">Ah, there's a detective on the scene. What evidence can you share with us, Ms. Kirigiri?</state></case>
+#<case tag="female_removed_accessory" target="jasmine" targetStage=1><state img="0-thougtful.png">Hmmm, there's a contradiction here I just know it.</state></case>
+
+#Paste into end of stage 1 (shoes removed)
+#<case tag="female_removing_accessory" target="jasmine" targetStage=0><state img="1-thougtful.png">I can't quite place it, but there's something different about you, Jasmine.</state></case>
+#<case tag="female_removed_accessory" target="jasmine" targetStage=1><state img="1-tsundere.png">Your shoes don't match your cloak, but there's something else I can't quite place.</state></case>
 
 #Paste into end of stage 3 (in dress)
 #<case tag="female_large_chest_is_visible" alsoPlaying="streaming-chan"><state img="3-interested.png">Ms. Chen has really made a name for herself. With your chest, I'd wager, ~name~.</state></case>
