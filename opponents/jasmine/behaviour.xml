@@ -158,7 +158,7 @@
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-loss.png">There <i>must</i> be something I'm missing about all this.</state>
-				<state img="0-loss.png">So... this is fun, is it? Hmm.</state>
+				<state img="0-loss.png">So... this is <i>fun</i>, is it? Hmm.</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-embarrassed.png">So... <i>this</i> is the point of the game? Hmm.</state>
@@ -245,13 +245,13 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-loss.png">There <i>must</i> be something I'm missing about all this.</state>
-				<state img="0-loss.png">So... this is fun, is it? Hmm.</state>
+				<state img="0-loss.png">So... this is <i>fun</i>, is it? Hmm.</state>
 			</case>
 			<case tag="female_removed_accessory" filter="princess" targetStage=1> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="0-confused.png">I-I mean, there's nothing wrong with that. Your highness.</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="0-confused.png">So... this is fun, is it? Hmm.</state>
+				<state img="0-confused.png">So... this is <i>fun</i>, is it? Hmm.</state>
 				<state img="0-confused.png">Maybe we're not at the exciting part yet.</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
@@ -453,7 +453,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="1-calm.png">I suppose this makes us even...</state>
-				<state img="1-happy.png">I like this game! It seems like harmless fun.</state>
+				<state img="1-happy.png">I was getting all worked up about nothing - this game seems like harmless fun.</state>
 			</case>
 			<case tag="female_removing_accessory" filter="princess" targetStage=1> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="1-sad.png">I wish I'd known you'd be here, Princess ~name~.</state>
@@ -698,7 +698,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="2-calm.png">I suppose this makes us even...</state>
-				<state img="2-happy.png">I like this game! It seems like harmless fun.</state>
+				<state img="2-happy.png">I was getting all worked up about nothing - this game seems like harmless fun.</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-happy.png">I see! Wait, no I don't.</state>
@@ -806,7 +806,31 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="3-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="3-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Royal Flush"> <!-- this player has an okay hand after the exchange -->
+				<state img="3-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="3-confused.png">Wait, is this a royal flush? I should have watched the guards more carefully.</state>
+				<state img="3-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Straight Flush"> <!-- this player has an okay hand after the exchange -->
+				<state img="3-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="3-confused.png">Wait, is this a straight flush? I should have watched the guards more carefully.</state>
+				<state img="3-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Flush"> <!-- this player has an okay hand after the exchange -->
+				<state img="3-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
 				<state img="3-confused.png">Wait, is this a flush? I should have watched the guards more carefully.</state>
+				<state img="3-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Straight"> <!-- this player has an okay hand after the exchange -->
+				<state img="3-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="3-confused.png">Wait, is this a flush? I should have watched the guards more carefully.</state>
+				<state img="3-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Full House"> <!-- this player has an okay hand after the exchange -->
+				<state img="3-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="3-confused.png">Wait, is this a full house? I should have watched the guards more carefully.</state>
 				<state img="3-calm.png">I can do this! I think.</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -952,7 +976,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="3-calm.png">I've never seen such a thing in the markets of Agrabah! Wherever did you buy it?</state>
-				<state img="3-shocked.png">Wait... does this mean I'm losing?</state>
+				<state img="3-shocked.png">Does this mean I'm losing?</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-interested.png">Make yourself more comfortable, ~name~.</state>
@@ -1054,7 +1078,31 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="4-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="4-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Royal Flush"> <!-- this player has an okay hand after the exchange -->
+				<state img="4-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="4-confused.png">Wait, is this a royal flush? I should have watched the guards more carefully.</state>
+				<state img="4-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Straight Flush"> <!-- this player has an okay hand after the exchange -->
+				<state img="4-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="4-confused.png">Wait, is this a straight flush? I should have watched the guards more carefully.</state>
+				<state img="4-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Flush"> <!-- this player has an okay hand after the exchange -->
+				<state img="4-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
 				<state img="4-confused.png">Wait, is this a flush? I should have watched the guards more carefully.</state>
+				<state img="4-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Straight"> <!-- this player has an okay hand after the exchange -->
+				<state img="4-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="4-confused.png">Wait, is this a flush? I should have watched the guards more carefully.</state>
+				<state img="4-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Full House"> <!-- this player has an okay hand after the exchange -->
+				<state img="4-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="4-confused.png">Wait, is this a full house? I should have watched the guards more carefully.</state>
 				<state img="4-calm.png">I can do this! I think.</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -1198,7 +1246,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="4-calm.png">I've never seen such a thing in the markets of Agrabah! Wherever did you buy it?</state>
-				<state img="4-shocked.png">Wait... does this mean I'm losing?</state>
+				<state img="4-shocked.png">Does this mean I'm losing?</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-interested.png">Make yourself more comfortable, ~name~.</state>
@@ -1298,7 +1346,31 @@
 			</case>
 			<case tag="okay_hand"> <!-- this player has an okay hand after the exchange -->
 				<state img="5-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="5-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Royal Flush"> <!-- this player has an okay hand after the exchange -->
+				<state img="5-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="5-confused.png">Wait, is this a royal flush? I should have watched the guards more carefully.</state>
+				<state img="5-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Straight Flush"> <!-- this player has an okay hand after the exchange -->
+				<state img="5-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="5-confused.png">Wait, is this a straight flush? I should have watched the guards more carefully.</state>
+				<state img="5-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Flush"> <!-- this player has an okay hand after the exchange -->
+				<state img="5-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
 				<state img="5-confused.png">Wait, is this a flush? I should have watched the guards more carefully.</state>
+				<state img="5-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Straight"> <!-- this player has an okay hand after the exchange -->
+				<state img="5-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="5-confused.png">Wait, is this a flush? I should have watched the guards more carefully.</state>
+				<state img="5-calm.png">I can do this! I think.</state>
+			</case>
+			<case tag="okay_hand" hasHand="Full House"> <!-- this player has an okay hand after the exchange -->
+				<state img="5-calm.png">I know what I'm doing! I've seen the guards playing cards before...</state>
+				<state img="5-confused.png">Wait, is this a full house? I should have watched the guards more carefully.</state>
 				<state img="5-calm.png">I can do this! I think.</state>
 			</case>
 			<case tag="bad_hand"> <!-- this player has a bad hand after the exchange -->
@@ -1442,7 +1514,7 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="5-calm.png">I've never seen such a thing in the markets of Agrabah! Wherever did you buy it?</state>
-				<state img="5-shocked.png">Wait... does this mean I'm losing?</state>
+				<state img="5-shocked.png">Does this mean I'm losing?</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="5-interested.png">Make yourself more comfortable, ~name~.</state>
@@ -1722,6 +1794,10 @@
 				<state img="6-interested.png">You're gorgeous! I'm a little jealous.</state>
 				<state img="6-interested.png">You must have a lot of suitors!</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="mean"> <!-- a female player's chest has become visible -->
+				<state img="6-angry.png">There's no justice if a girl like you is as stunning as that!</state>
+				<state img="6-interested.png">Those <i>definitely</i> make up for your personality.</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="6-angry.png">You're so well endowed! Well. Too bad you're not <i>royalty</i>.</state>
 			</case>
@@ -1975,6 +2051,10 @@
 				<state img="7-interested.png">You're gorgeous! I'm a little jealous.</state>
 				<state img="7-interested.png">You must have a lot of suitors!</state>
 			</case>
+			<case tag="female_medium_chest_is_visible" filter="mean"> <!-- a female player's chest has become visible -->
+				<state img="7-angry.png">There's no justice if a girl like you is as stunning as that!</state>
+				<state img="7-interested.png">Those <i>definitely</i> make up for your personality.</state>
+			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="7-angry.png">You're so well endowed! Well. Too bad you're not <i>royalty</i>.</state>
 			</case>
@@ -2000,7 +2080,6 @@
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="7-interested.png">This is a rare sight outside a harem... I'll be watching closely!</state>
-				<state img="7-interested.png">I've always wondered how other girls do it...</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="7-embarrassed.png">I... I've always wondered how other girls do it.</state>
@@ -2241,7 +2320,6 @@
 			<!-- Start of Female Masturbating Cases -->
 			<case tag="female_must_masturbate"> <!-- a female player has to masturbate -->
 				<state img="8-interested.png">This is a rare sight outside a harem... I'll be watching closely!</state>
-				<state img="8-interested.png">I've always wondered how other girls do it...</state>
 			</case>
 			<case tag="female_start_masturbating"> <!-- a female player has started masturbating -->
 				<state img="8-embarrassed.png">I... I've always wondered how other girls do it.</state>
@@ -2617,6 +2695,10 @@
 				<state img="10-interested.png">You must have a lot of suitors!</state>
 				<state img="10-horny.png">I hear the guards talk about breasts like those... and what they'd like to do with them.
 				</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" filter="mean"> <!-- a female player's chest has become visible -->
+				<state img="10-angry.png">There's no justice if a girl like you is as stunning as that!</state>
+				<state img="10-interested.png">Those <i>definitely</i> make up for your personality.</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="10-sad.png">Such a buxom chest! I admit defeat. And to a little envy.</state>
