@@ -1248,6 +1248,9 @@
 				<state img="4-calm.png">I've never seen such a thing in the markets of Agrabah! Wherever did you buy it?</state>
 				<state img="4-shocked.png">Does this mean I'm losing?</state>
 			</case>
+			<case tag="female_removing_accessory" target="mia" targetStage=2>
+				<state img="4-stripped.png">Such a powerful amulet!</state>
+			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-interested.png">Make yourself more comfortable, ~name~.</state>
 				<state img="4-angry.png">How... shrewd of you.</state>
@@ -1270,6 +1273,10 @@
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="4-angry.png">Oh, you wouldn't know fashion if it came up and bit you on the leg.</state>
+			</case>
+			
+			<case tag="female_removed_accessory" target="mia" targetStage=3>
+				<state img="4-happy.png">Are you able to harness your amulet's magic?</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-loss.png">Being honest, this seems dreadfully boring.</state>

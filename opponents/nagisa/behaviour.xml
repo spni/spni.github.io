@@ -26,7 +26,6 @@
         <stage id="0">
             <case tag="female_must_strip">
                 <state img="0-thinking.png">So this means that ~name~ has to take off a piece of clothing, right?</state>
-                <state img="0-thinking.png">I think I know what you're going to choose this time, ~name~.</state>
                 <state img="0-thinking.png">Who was it that lost that round?</state>
                 <state img="0-shy.png">Um, okay.</state>
             </case>
@@ -122,7 +121,9 @@
                 <state img="0-embarrassed.png">Do you think that you could ever forgive me for making you do this?</state>
             </case>
             <case tag="female_removing_accessory">
-                <state img="0-happy.png">Yep, I knew you were going to take off your ~clothing~!</state>
+                <state img="0-thinking.png">I wonder what you're going to pick.</state>
+                <state img="0-shy.png">I haven't played this game before, so I'm watching you for tips, ~name~.</state>
+                <state img="0-calm.png">Does ~name~ choose or do we?</state>
             </case>
             <case tag="game_over_victory">
                 <state img="0-happy.png">I'm not really this good at cards. I just got lucky!</state>
@@ -208,6 +209,7 @@
                 <state img="1-idea.png">Try to take off something small. Maybe a hairclip?</state>
                 <state img="1-raisedhand.png">Does somebody have to take something off every round, even if it's a draw?</state>
                 <state img="1-sad.png">Oh.</state>
+                <state img="1-idea.png">I think I know what you're going to choose this time, ~name~.</state>
             </case>
             <case tag="male_chest_will_be_visible">
                 <state img="1-embarrassed.png">You're going to take off your ~clothing~?</state>
@@ -295,6 +297,7 @@
             </case>
             <case tag="female_removing_accessory">
                 <state img="1-happy.png">Oh, that's good.</state>
+                <state img="1-happy.png">Yep, I knew you were going to take off your ~clothing~!</state>
             </case>
             <case tag="game_over_victory">
                 <state img="1-happy.png">I'm so happy to have new friends like you to support me.</state>
@@ -365,6 +368,8 @@
 			<case tag="female_removed_accessory" target="penny"><state img="1-happy.png">Penny, I don't know why, but for some reason I get the feeling that you and I are very much alike!</state></case>
 			<case tag="female_removed_accessory" target="piper"><state img="1-shy.png">Um, I'm sorry if this is a weird compliment, but I really like your freckles, Piper...</state></case>
 			<case tag="female_removed_accessory" target="rosalina"><state img="1-singing.png">Rosalina, I want to introduce you to my friend later. She loves starfish. I think you'd get along great!</state></case>
+			<case tag="female_removing_major" target="jasmine" targetStage=2><state img="1-crossedarms.png">Really?!</state></case>
+			<case tag="female_removed_major" target="jasmine" targetStage=3><state img="1-singing.png">Wow! You had me fooled!</state></case>
         </stage>
 
         <stage id="2">
@@ -383,7 +388,7 @@
             </case>
             <case tag="female_removed_major">
                 <state img="2-embarrassed.png">You did it...</state>
-                <state img="2-shy.png">I'm so sorry if my reaction made it more difficult, ~name~.</state>
+                <state img="2-shy.png">I'm so sorry if my reaction made it more difficult...</state>
             </case>
             <case tag="male_large_crotch_is_visible">
                 <state img="2-maximumembarrassed.png">I'm feeling really lightheaded. Please catch me if I faint. Um, not you, ~name~...</state>
@@ -420,6 +425,7 @@
                 <state img="2-happy.png">I wish I could put myself in your shoes.</state>
                 <state img="2-calm.png">On to the next round!</state>
                 <state img="2-worried.png">Oh, is that so?</state>
+                <state img="2-handsbehindback.png">Don't feel bad. Things can change before you know it.</state>
             </case>
             <case tag="male_removed_major">
                 <state img="2-shy.png">I have to be honest that I don't know what to do anymore.</state>
@@ -461,6 +467,7 @@
             </case>
             <case tag="female_removing_accessory">
                 <state img="2-interested.png">~name~, I like your ~clothing~.</state>
+                <state img="2-calm.png">Don't give up, ~name~. You're doing great!</state>
             </case>
             <case tag="game_over_victory">
                 <state img="2-interested.png">I can't believe I managed to win!</state>
@@ -533,6 +540,8 @@
 			<case tag="female_removed_minor" target="april"><state img="2-happy.png">We're both wearing yellow today, April! But your shirt outshines my dull yellow jacket...</state></case>
 			<case tag="female_removed_minor" target="elizabeth"><state img="2-shy.png">Elizabeth, I think of everyone here, us two are most alike. Maybe... could we be friends if that's okay?</state></case>
 			<case tag="female_removed_minor" target="hermione"><state img="2-handsbehindback.png">Is that your school uniform, Hermione? If you're an exchange student, I'd be happy to show you around!</state></case>
+			<case tag="female_removing_major" target="jasmine" targetStage=2><state img="2-interested.png">Really?!</state></case>
+			<case tag="female_removed_major" target="jasmine" targetStage=3><state img="2-happy.png">Wow! You had me fooled!</state></case>
         </stage>
 
         <stage id="3">
@@ -587,6 +596,7 @@
             <case tag="female_removed_accessory">
                 <state img="3-excited.png">Oh, that's perfect! You look so cute!</state>
                 <state img="3-happy.png">Perfect! Thank you very much!</state>
+                <state img="3-wink.png">Good job for working so hard!</state>
             </case>
             <case tag="male_removed_major">
                 <state img="3-shy.png">This is gonna take a little getting used to...</state>
@@ -626,6 +636,7 @@
             </case>
             <case tag="female_removing_accessory">
                 <state img="3-wink.png">If you wanna just play until we've all taken off our shoes, socks, and accessories, then that's okay with me!</state>
+                <state img="3-shy.png">Are you feeling as unsure as I am?</state>
             </case>
             <case tag="game_over_victory">
                 <state img="3-happy.png">Even if this is where it all ends, I had so much fun playing together with you!</state>
@@ -674,6 +685,7 @@
             </case>
             <case tag="stripped">
                 <state img="3-stripped.png">This is my winter uniform, so of course I still have long sleeves.</state>
+                <state img="3-shy.png">Please be nice to me.</state>
             </case>
             <case tag="must_strip_normal">
                 <state img="3-sad.png">I'm sorry. This was really dumb of me.</state>
@@ -690,9 +702,9 @@
             </case>
 			<case tag="female_must_strip" target="tifa"><state img="3-stripped.png">I feel like you'll win either way in this game, Tifa...</state></case>
 			<case tag="female_removed_minor" filter="cheerful"><state img="3-wink.png">I'm sure you'll do great next time, ~name~!</state></case>
+			<case tag="female_removing_major" target="daisy"><state img="3-veryembarrassed.png">I'm sorry, Daisy! It's not fair that you have to take off your dress all in one go just for losing one hand.</state></case>
 			<case tag="female_removing_major" target="jasmine" targetStage=2><state img="3-excited.png">Really?!</state></case>
 			<case tag="female_removed_major" target="jasmine" targetStage=3><state img="3-clapping.png">Wow! You had me fooled!</state></case>
-			<case tag="female_removing_major" target="daisy"><state img="3-veryembarrassed.png">I'm sorry, Daisy! It's not fair that you have to take off your dress all in one go just for losing one hand.</state></case>
 			<case tag="female_removed_major" filter="confident"><state img="3-stripped.png">You did that so confidently! And there I was worried to take off my jacket.</state></case>
 			<case tag="female_removed_major" target="misty"><state img="3-stripped.png">You look like you're ready to go swimming, Misty! That's a good idea, but I don't look that good in a swimsuit...</state></case>
 			<case tag="female_chest_will_be_visible" target="chell"><state img="3-veryembarrassed.png">Oh no, Chell! This was so out of the blue!</state></case>
@@ -851,6 +863,8 @@
                 <state img="4-determined.png">I just have to imagine that we're all at the beach.</state>
             </case>
 			<case tag="male_must_strip" filter="straight"><state img="4-stripped.png">~name~, you're the one that's mean to be undressing, so please stop making me feel like you're undressing me with your eyes!</state></case>
+			<case tag="female_removing_major" target="jasmine" targetStage=2><state img="4-happy.png">Really?!</state></case>
+			<case tag="female_removed_major" target="jasmine" targetStage=3><state img="4-openarms.png">Wow! You had me fooled!</state></case>
 			<case tag="female_removed_major" target="kim"><state img="4-happy.png">I know that this is embarrassing, but your pink underwear... so pretty.</state></case>
 			<case tag="female_removed_major" filter="shy"><state img="4-sorry.png">I'm really shy too, ~name~, so I know how you feel. Let's support each other!</state></case>
 			<case tag="female_removed_major" target="samus"><state img="4-openarms.png">Now it's really zero-suit Samus! I'm sorry, I just said that joke without thinking...</state></case>
@@ -1175,6 +1189,8 @@
                 <state img="6-emphatic.png">Don't just stare. Say something!</state>
                 <state img="6-veryembarrassed.png">Y-You're crazy! I'm not cute at all.</state>
             </case>
+			<case tag="female_removing_major" target="jasmine" targetStage=2><state img="6-emphatic.png">Really?!</state></case>
+			<case tag="female_removed_major" target="jasmine" targetStage=3><state img="6-peaceful.png">Wow! You had me fooled!</state></case>
 			<case tag="female_chest_will_be_visible" filter="princess"><state img="6-emphatic.png">Princess, it's okay if you don't want to do this!</state></case>
 			<case tag="female_small_chest_is_visible" filter="kind"><state img="6-peaceful.png">This game might be the hardest thing I've ever had to do, but I'm happy to be playing with people like you, ~name~.</state></case>
 			<case tag="male_crotch_will_be_visible" target="fred"><state img="6-coveringeyes.png">Please, Fred! You don't need to solve this mystery for us!</state></case>
@@ -1275,6 +1291,7 @@
             </case>
             <case tag="game_over_victory">
                 <state img="7-happy.png">It was almost me doing that! I'm sorry for winning, but I consider myself very lucky!</state>
+                <state img="7-embarrassed.png">Even though I won, you all... for me... What happens now that the card game part is over?</state>
             </case>
             <case tag="female_removing_major">
                 <state img="7-determined.png">It's embarrassing, but you can do it!</state>
@@ -1578,7 +1595,7 @@
                 <state img="9-closedeyes.png">You did so well.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="9-embarrassed.png">Even though I won, we all had to do this... What happens now that the card game part is over?</state>
+                <state img="9-unsure.png">I thought it was impossible, but somehow I won!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="9-coveringbreasts.png">I'm not quite sure what to say at a time like this.</state>
