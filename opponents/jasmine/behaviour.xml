@@ -139,6 +139,9 @@
 				<state img="0-calm.png">Well, that's... something.</state>
 				<state img="0-interested.png">You seem overdressed in this heat, ~name~.</state>
 			</case>
+			<case tag="male_removing_minor" target="fred" targetStage=1> 
+				<state img="0-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="0-happy.png">It must be beginner's luck!</state>
 				<state img="0-interested.png">I'm better at this game than I realized.</state>
@@ -159,6 +162,9 @@
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-embarrassed.png">So... <i>this</i> is the point of the game? Hmm.</state>
+			</case>
+			<case tag="male_removed_minor" target="fred" targetStage=2> 
+				<state img="0-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
 				<state img="0-interested.png">For some reason, I thought it would be harder to reach this stage.</state>
@@ -198,11 +204,11 @@
 			
 			<!-- Start of Female Player Pre Stripping Cases -->
 			<case tag="female_human_must_strip"> <!-- a female human player is about to strip, but you don't know what they will remove -->
-				<state img="0-interested.png">So ~name~ lost? What does that mean?</state>
+				<state img="0-interested.png">So ~name~ lost? What does she do now?</state>
 				<state img="0-sad.png">Wait, don't tell me - I lost, didn't I?</state>
 			</case>
 			<case tag="female_must_strip"> <!-- a female player will strip, but you don't know what they will remove -->
-				<state img="0-interested.png">So ~name~ lost? What does that mean?</state>
+				<state img="0-interested.png">So ~name~ lost? What does she do now?</state>
 				<state img="0-sad.png">Wait, don't tell me - I lost, didn't I?</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
@@ -214,7 +220,10 @@
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-happy.png">I see! Wait, no I don't.</state>
-				<state img="0-confused.png">Oh... are you out of jewelry already?</state>
+				<state img="0-confused.png">Oh... are you out of jewelry already? I'd forgotten how poor peasants are.</state>
+			</case>
+			<case tag="female_removing_minor" filter="princess"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="0-shocked.png">Are you out of jewelry <i>already</i>? I didn't think that was possible.</state>
 			</case>
 			<case tag="female_removing_minor" targetStage=0> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="0-confused.png">Surely you must have <i>something</i> smaller to start with?</state>
@@ -376,6 +385,9 @@
 				<state img="1-calm.png">Well, that's... something.</state>
 				<state img="1-interested.png">You seem overdressed in this heat, ~name~.</state>
 			</case>
+			<case tag="male_removing_minor" target="fred" targetStage=1>
+				<state img="1-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="1-happy.png">It must be beginner's luck!</state>
 				<state img="1-interested.png">I'm better at this game than I realized.</state>
@@ -397,6 +409,9 @@
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-loss.png">We're going to be here for a while, aren't we?</state>
 				<state img="1-angry.png">What are you, a mouse or a man?</state>
+			</case>
+			<case tag="male_removed_minor" target="fred" targetStage=2> 
+				<state img="1-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
 				<state img="1-interested.png">For some reason, I thought it would be harder to reach this stage.</state>
@@ -452,7 +467,10 @@
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-happy.png">I see! Wait, no I don't.</state>
-				<state img="1-confused.png">Oh... are you out of jewelry already?</state>
+				<state img="1-confused.png">Oh... are you out of jewelry already? I'd forgotten how poor peasants are.</state>
+			</case>
+			<case tag="female_removing_minor" filter="princess"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="1-shocked.png">Are you out of jewelry <i>already</i>? I didn't think that was possible.</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="1-shocked.png">...</state>
@@ -607,6 +625,9 @@
 				<state img="2-calm.png">Well, that's... something.</state>
 				<state img="2-interested.png">You seem overdressed in this heat, ~name~.</state>
 			</case>
+			<case tag="male_removing_minor" target="fred" targetStage=1>
+				<state img="2-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="2-interested.png">Don't be so stuffy, ~name~. We're all friends here!</state>
 				<state img="2-interested.png">Ah, <i>now</i> we're getting somewhere!</state>
@@ -624,11 +645,14 @@
 			
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
-				<state img="2-calm.png">I wonder if this is why my suitors always wore so much jewelry?</state>
+				<state img="2-confused.png">I wonder if this is why my suitors always wore so much jewelry?</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-loss.png">We're going to be here for a while, aren't we?</state>
 				<state img="2-angry.png">What are you, a mouse or a man?</state>
+			</case>
+			<case tag="male_removed_minor" target="fred" targetStage=2> 
+				<state img="2-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
 				<state img="2-interested.png">I suppose this <i>is</i> a little fun!</state>
@@ -685,7 +709,10 @@
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-happy.png">I see! Wait, no I don't.</state>
-				<state img="2-confused.png">Oh... are you out of jewelry already?</state>
+				<state img="2-confused.png">Oh... are you out of jewelry already? I'd forgotten how poor peasants are.</state>
+			</case>
+			<case tag="female_removing_minor" filter="princess"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
+				<state img="2-shocked.png">Are you out of jewelry <i>already</i>? I didn't think that was possible.</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="2-shocked.png">...</state>
@@ -717,6 +744,10 @@
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="2-embarrassed.png">Things are really different outside the palace, aren't they?</state>
 				<state img="2-interested.png">You could dance for a living, ~name~!</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="2-interested.png">You're so... muscular! Are you an athlete of some kind?</state>
+				<state img="2-embarrassed.png">Things are really different outside the palace, aren't they?</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="2-interested.png">Don't worry, my dear - I'm sure they'll grow.</state>
@@ -795,9 +826,10 @@
 			
 			<!-- Start of Personal Event Cases -->
 			<case tag="stripped"> <!-- this player just stripped down to the stage -->
-				<state img="3-stripped.png">
-					...Aren't you surprised? I thought this disguise was pretty good.
-				</state>
+				<state img="3-stripped.png">...Aren't you surprised? I thought this disguise was pretty good.</state>
+			</case>
+			<case tag="stripped" alsoPlaying="streaming-chan"> <!-- this player just stripped down to the stage -->
+				<state img="3-happy.png">It is nice to appear in public without my guards. It lets me discover what my people are doing!</state>
 			</case>
 			<case tag="must_strip_winning"> <!-- this player lost the hand but is winning overall -->
 				<state img="3-loss.png">
@@ -842,6 +874,9 @@
 				<state img="3-angry.png">You've never heard of <i>noblesse oblige</i>, have you?</state>
 				<state img="3-angry.png">Well! You have no respect for royalty, do you?</state>
 			</case>
+			<case tag="male_removing_minor" target="fred" targetStage=1>
+				<state img="3-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-interested.png">Don't be so stuffy, ~name~. We're all friends here!</state>
 				<state img="3-interested.png">Ah, <i>now</i> we're getting somewhere!</state>
@@ -859,11 +894,14 @@
 			
 			<!-- Start of Male Player Stripping Cases -->
 			<case tag="male_removed_accessory"> <!-- a male player has removed an accessory (hat, gloves, belt) -->
-				<state img="3-calm.png">I wonder if this is why my suitors always wore so much jewelry?</state>
+				<state img="3-confused.png">I wonder if this is why my suitors always wore so much jewelry?</state>
 			</case>
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-loss.png">We're going to be here for a while, aren't we?</state>
 				<state img="3-angry.png">What are you, a mouse or a man?</state>
+			</case>
+			<case tag="male_removed_minor" target="fred" targetStage=2> 
+				<state img="3-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
 				<state img="3-interested.png">I suppose this <i>is</i> a little fun!</state>
@@ -932,7 +970,7 @@
 				<state img="3-interested.png">Is that the legendary dance of the seven veils?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="3-horny.png">I am not a prize to be won... but I'm beginning to think that <i>you</i> might be.</state>
+				<state img="3-horny.png">I am not a prize to be won... but I'm beginning to think that <i>you</i> might be, ~name~.</state>
 				<state img="3-interested.png">I had no idea that women could be so bold.</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
@@ -954,6 +992,10 @@
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="3-embarrassed.png">Things are really different outside the palace, aren't they?</state>
 				<state img="3-interested.png">You could dance for a living, ~name~!</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="3-interested.png">You're so... muscular! Are you an athlete of some kind?</state>
+				<state img="3-embarrassed.png">Things are really different outside the palace, aren't they?</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="3-interested.png">Don't worry, my dear - I'm sure they'll grow.</state>
@@ -1079,6 +1121,9 @@
 				<state img="4-angry.png">You've never heard of <i>noblesse oblige</i>, have you?</state>
 				<state img="4-angry.png">Well! You have no respect for royalty, do you?</state>
 			</case>
+			<case tag="male_removing_minor" target="fred" targetStage=1>
+				<state img="4-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="4-interested.png">Do as I command, ~name~: remove your ~clothing~!</state>
 				<state img="4-embarrassed.png">I certainly don't mind seeing more of you...</state>
@@ -1100,6 +1145,9 @@
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-loss.png">We're going to be here for a while, aren't we?</state>
 				<state img="4-angry.png">What are you, a mouse or a man?</state>
+			</case>
+			<case tag="male_removed_minor" target="fred" targetStage=2> 
+				<state img="4-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
 				<state img="4-interested.png">I must say, you look very dashing!</state>
@@ -1168,7 +1216,7 @@
 				<state img="4-interested.png">Is that the legendary dance of the seven veils?</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="4-horny.png">I am not a prize to be won... but I'm beginning to think that <i>you</i> might be.</state>
+				<state img="4-horny.png">I am not a prize to be won... but I'm beginning to think that <i>you</i> might be, ~name~.</state>
 				<state img="4-interested.png">I had no idea that women could be so bold.</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
@@ -1189,6 +1237,10 @@
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="4-embarrassed.png">Things are really different outside the palace, aren't they?</state>
 				<state img="4-interested.png">You could dance for a living, ~name~!</state>
+			</case>
+			<case tag="female_removed_major" filter="sporty"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
+				<state img="4-interested.png">You're so... muscular! Are you an athlete of some kind?</state>
+				<state img="4-embarrassed.png">Things are really different outside the palace, aren't they?</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> <!-- a female player's chest has become visible -->
 				<state img="4-interested.png">Don't worry, my dear - I'm sure they'll grow.</state>
@@ -1313,6 +1365,9 @@
 				<state img="5-angry.png">You've never heard of <i>noblesse oblige</i>, have you?</state>
 				<state img="5-angry.png">Well! You have no respect for royalty, do you?</state>
 			</case>
+			<case tag="male_removing_minor" target="fred" targetStage=1>
+				<state img="5-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="5-interested.png">Do as I command, ~name~: remove your ~clothing~!</state>
 				<state img="5-embarrassed.png">I certainly don't mind seeing more of you...</state>
@@ -1334,6 +1389,9 @@
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="5-angry.png">It's not right to toy with people like that!</state>
 				<state img="5-angry.png">When I rule Agrabah, the first thing I will decree is to change this stupid rule.</state>
+			</case>
+			<case tag="male_removed_minor" target="fred" targetStage=2> 
+				<state img="5-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
 				<state img="5-interested.png">I must say, you look very dashing!</state>
@@ -1402,7 +1460,7 @@
 				<state img="5-interested.png">There's something to the way you slip out of your ~clothing~ that catches the eye.  I'll have to learn how to shimmy like that.</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
-				<state img="5-horny.png">I am not a prize to be won... but I'm beginning to think that <i>you</i> might be.</state>
+				<state img="5-horny.png">I am not a prize to be won... but I'm beginning to think that <i>you</i> might be, ~name~.</state>
 				<state img="5-interested.png">I had no idea that women could be so bold.</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
@@ -1549,6 +1607,9 @@
 				<state img="6-angry.png">You've never heard of <i>noblesse oblige</i>, have you?</state>
 				<state img="6-angry.png">Well! You have no respect for royalty, do you?</state>
 			</case>
+			<case tag="male_removing_minor" target="fred" targetStage=1>
+				<state img="6-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
+			</case>
 			<case tag="male_removing_major"> <!-- a male player has to remove a major article of clothing (shirt, pants) -->
 				<state img="6-interested.png">Do as I command, ~name~: remove your ~clothing~!</state>
 				<state img="6-embarrassed.png">I certainly don't mind seeing more of you...</state>
@@ -1570,6 +1631,9 @@
 			<case tag="male_removed_minor"> <!-- a male player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="6-angry.png">It's not right to toy with people like that!</state>
 				<state img="6-angry.png">When I rule Agrabah, the first thing I will decree is to change this stupid rule.</state>
+			</case>
+			<case tag="male_removed_minor" target="fred" targetStage=2> 
+				<state img="6-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> <!-- a male player has removed a major article of clothing (shirt, pants) -->
 				<state img="6-interested.png">I must say, you look very dashing!</state>
