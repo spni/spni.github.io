@@ -6,6 +6,9 @@ gender=female
 size=large
 #Number of phases to "finish"
 timer=18
+#tags=Japanese,video_game
+#As make_xml.py does not have tag support, you'll need to paste the tags line below into the output xml each time. It goes between </timer> and <start>. Exclude the hash.
+#<tags><tag>Japanese</tag><tag>video_game</tag></tags>
 
 #required for meta.xml
 #start picture
@@ -15,8 +18,7 @@ from=Ace Attorney
 writer=TossawayCog
 artist=TossawayCog
 description=The (late) mentor of legendary attorney Phoenix Wright. She may look just as she did in life, but her sister Maya is channeling her.
-#tags=Japanese,video_game
-#<tags><tag>Japanese</tag><tag>video_game</tag></tags>	
+
 
 #clothes in order of removal
 #how much they cover = important (covering nudity), major (a lot of skin), minor (small amount of skin), extra (accessories, boots, etc)
@@ -35,13 +37,15 @@ start=0-calm,The defense is ready to play.
 ##individual behaviour
 #entries without a number are used when there are no stage-specific entries
 
-#default card behaviour
-#you can include multiple entries to give the character multiple lines and/or appearances in that situation.
-#This is what a character says while they're exchanging cards.
+#SWAPPING CARDS
 swap_cards=calm,Dealer, ~cards~ cards, please.
 swap_cards=happy,I'd like ~cards~ cards.
-swap_Cards=calm,Give me ~cards~.
+swap_cards=calm,Give me ~cards~.
 
+
+
+#GOOD OR BAD HAND
+#stage 0/1/2/3 cases
 #The character thinks they have a good hand
 good_hand=happy,I've got it!
 good_hand=calm,This should be more than sufficient.
@@ -58,163 +62,7 @@ bad_hand=sad,There's gotta be something I can use...
 bad_hand=thoughtful,Think, Mia, think...
 bad_hand=disappointed,I've played Phoenix before. I'm used to bad hands...
 
-#stripping default
-#This is the character says once they've lost a hand, but before they strip
-must_strip_winning=calm,With this large a lead, I'm not even mad.
-must_strip_normal=horny,I almost want to take my ~clothing~ off.
-must_strip_normal=excited,Let's do it!
-must_strip_losing=loss,Jeez, even my trials never go this poor.
-stripping=strip,Off it goes...
-stripped=disappointed,Haah...
-
-#masturbation
-#these situations relate to when the character is masturbating
-#these only come up in the relevant stages, so you don't need to include the stage numbers here
-#just remember which stage is which when you make the images
-must_masturbate_first=loss,I thought I was better than this.
-must_masturbate=embarrassed,There's nothing left... it's over...
-must_masturbate=embarrassed,Would it be too much to ask you to look away?
-start_masturbating=starting,Hope you don't mind, Maya...
-start_masturbating=starting,This'll be weird with all of you watching me.
-start_masturbating=starting,I bet Diego would've loved to see this.
-masturbating=masturbate_a,Mmm...
-masturbating=masturbate_a,Mmm... Ahhh....
-masturbating=masturbate_a,Oh god... Ohh...
-masturbating=masturbate_b,Hah...You're all staring...
-masturbating=masturbate_b,Mmmm... Please, look away...
-masturbating=masturbate_b,Oh... you're... watching...
-masturbating=masturbate_c,Ahhh.... Ahhh...
-masturbating=masturbate_c,Oh...Yes...
-masturbating=masturbate_c,Ohh... This feels so good...
-heavy_masturbating=heavy_a,Hah... Don't look...
-heavy_masturbating=heavy_a,So... humiliating...
-heavy_masturbating=heavy_a,Ohhh... 
-heavy_masturbating=heavy_b,I can't believe I'm masturbating in someone else's body...
-heavy_masturbating=heavy_b,Tsk... So shameful...
-heavy_masturbating=heavy_b,Yes... Mmm!.. Ahhh...
-heavy_masturbating=heavy_c,Ahhh... I'm... so close...
-heavy_masturbating=heavy_c,I think I'm close...
-heavy_masturbating=heavy_c,Ah! Now...?
-heavy_masturbating=heavy_c,I must... keep pressing on!
-finishing_masturbating=finishing,Ahhh...AHHHH!
-finished_masturbating=finished,Please don't tell the Agency about this.
-finished_masturbating=finished,You, uh, didn't tape that or anything, did you?
-finished_masturbating=finished,I, uh, hope you don't think less of me for that.
-game_over_defeat=calm,Congratulations, ~name~. Your win was well-earned.
-game_over_victory=shocked,I can't believe I pulled it off.
-
-#situations where another male character is stripping
-male_human_must_strip=interested,This is going to be interesting indeed...
-male_must_strip=interested,A guy? Well, let's see.
-male_must_strip=happy,No choice.
-
-male_removing_accessory=disappointed,I guess it's too early to get excited, huh?
-male_removed_accessory=thoughtful,Boring.
-
-male_removing_minor=calm,I'll keep breaking down your defenses...
-male_removed_minor=calm,Slowly but surely.
-
-male_removing_major=interested,Oh!...
-male_removed_major=appreciative,Sorry if I blush.
-
-male_chest_will_be_visible=excited,This I've gotta see.
-male_chest_is_visible=appreciative,Talk about eye candy!
-
-#male crotches have different sizes, allowing your character to have different responses
-male_crotch_will_be_visible=horny,Moment of truth.
-male_crotch_will_be_visible=excited,I think I see it twitching, and it's not even out.
-male_crotch_will_be_visible=interested,C'mon ~name~, don't be shy. 
-male_small_crotch_is_visible=appreciative,Aww, look at the cute little guy!
-male_medium_crotch_is_visible=horny,Adding THAT to the Court Record.
-male_large_crotch_is_visible=embarrassed,Oh... just like his...
-
-#male masturbation default
-male_must_masturbate=thoughtful,Are you really going to do it?
-male_start_masturbating=shocked,Well, you surely didn't hesitate.
-male_masturbating=embarrassed,I want to look away, but I can't.
-male_finished_masturbating=horny,You practically exploded!
-
-#female stripping default
-#these are mostly the same as the male stripping cases, but the female's size refers to their chest rather than their crotch.
-female_human_must_strip=interested,Alright, ~name~, your turn!
-female_must_strip=excited,You don't need it anyway.
-female_must_strip=calm,So many choices, ~name~.
-
-female_removing_accessory=disappointed,Boring.
-female_removed_accessory=calm,Everyone starts somewhere.
-
-female_removing_minor=calm,I'll keep breaking down your defenses...
-female_removed_minor=calm,Slowly but surely.
-
-female_removing_major=happy,NOW it gets fun.
-female_removed_major=excited,Maybe you should go home like that.
-
-female_chest_will_be_visible=excited,Go ahead ~name~, we're waiting.
-female_small_chest_is_visible=happy,I like them, they're really cute.
-female_medium_chest_is_visible=calm,Nothing to be ashamed of, ~name~.
-female_large_chest_is_visible=sad, Well, your milkshakes must bring all the boys to the yard.
-
-female_crotch_will_be_visible=excited,Well, ~name~, hope you don't mind being bottomless.
-female_crotch_is_visible=interested,My my.
-
-#female masturbation default
-female_must_masturbate=interested,Go nice and slow for us.
-female_start_masturbating=excited,Maybe we can all stop and just watch her? No?
-female_masturbating=happy,It's exciting seeing how others do it.
-female_finished_masturbating=interested,And now you're all wet.
-
-
-#These responses are stage specific.
-#Refer to the above entries to see what sort of situations these refer to, and what the default images are.
-#Each situation has been repeated enough for the maximum eight items of clothing.
-#If your character has fewer items, delete the extra entries.
-#if you don't include a stage-specific entry for a situation, the script will use the default response as defined above.
-
-
-#character is stripping situations
-#losing shoes
-0-must_strip_winning=calm,It was foolish to think I would make it unscathed.
-0-must_strip_normal=thoughtful,I'm up? 
-0-must_strip_losing=thoughtful,I'll test the waters, I guess. 
-0-stripping=strip,I always considered it rude to not leave your shoes at the door.
-1-stripped=stripped,There we go. Let's continue.
-
-#losing scarf
-1-must_strip_winning=calm,I know I shouldn't worry yet, but...
-1-must_strip_normal=calm,Alright, alright.
-1-must_strip_losing=loss,This is not going well.
-1-stripping=strip,I guess it is a bit stuffy, isn't it?
-2-stripped=calm,Phew, much better.
-
-#losing magatama
-2-must_strip_winning=calm,Don't worry Mia, everyone else is in more dire straights.
-2-must_strip_normal=thoughtful,Shame my experience hasn't helped me at all.
-2-must_strip_losing=sad,I can't believe I dressed up in my old suit for this.
-2-stripping=strip,Seems my magatama has to go next. Oh well.
-3-stripped=stripped,I gave up the spiritual lifestyle long ago. In a sense, anyway.
-
-#losing dress
-3-must_strip_winning=sad,Fair's fair, even if I don't like it.
-3-must_strip_normal=shocked,...!
-3-must_strip_losing=loss,...!
-3-stripping=strip,I hoped it wouldn't come to this, but as they say...
-4-stripped=stripped,A lawyer is someone who smiles, no matter how hard it gets.
-
-#losing panties
-4-must_strip_winning=awkward,W-well, at least I won't be alone.
-4-must_strip_normal=shocked,I object to this!
-4-must_strip_losing=embarrassed,I think I need to reconsider how I spend my time.
-4-stripping=strip,Anyway, I've seen you all staring at my chest...
-5-stripped=stripped,Think you've earned a glimpse? Think again!
-
-#losing bra
-5-must_strip_winning=embarrassed,No, wait! There is, uh, a clear...contradiction here?
-5-must_strip_normal=embarrassed,No, wait! There is, uh, a clear...contradiction here?
-5-must_strip_losing=embarrassed,No, wait! There is, uh, a clear...contradiction here?
-5-stripping=strip,Crap.
--3-stripped=stripped,Keep it cool, Mia... you're only naked in front of four other people...
-
-#card cases
+#specific cases
 #fully clothed
 #0-good_hand=,
 #0-okay_hand=,
@@ -247,7 +95,6 @@ female_finished_masturbating=interested,And now you're all wet.
 5-bad_hand=shocked,Is this the end?
 5-bad_hand=loss,Stick a fork in me, I'm done.
 
-
 #lost all clothing
 #using negative numbers counts back from the final stage
 #-3 is while nude, -2 is masturbating, -1 is finished
@@ -259,15 +106,72 @@ female_finished_masturbating=interested,And now you're all wet.
 -3-okay_hand=calm,Well, at least I haven't reached Ms. Byrde's level of luck yet.
 -3-bad_hand=disappointed,I need a miracle...
 
-##other player must strip specific
+
+
+#STRIPPING
+#losing shoes
+0-must_strip_winning=calm,It was foolish to think I would make it unscathed.
+0-must_strip_normal=thoughtful,I'm up? 
+0-must_strip_normal=excited,Let's do it!
+0-must_strip_losing=thoughtful,I'll test the waters, I guess. 
+0-stripping=strip,I always considered it rude to not leave your shoes at the door.
+0-stripping=strip,Off they come...
+1-stripped=stripped,There we go. Let's continue.
+
+#losing scarf
+1-must_strip_winning=calm,I know I shouldn't worry yet, but...
+1-must_strip_winning=calm,With this large a lead, I'm not even mad.
+1-must_strip_normal=calm,Alright, alright.
+1-must_strip_normal=horny,I almost want to take my scarf off.
+1-must_strip_losing=loss,This is not going well.
+1-stripping=strip,I guess it is a bit stuffy, isn't it?
+2-stripped=calm,Phew, much better.
+
+#losing magatama
+2-must_strip_winning=calm,Don't worry Mia, everyone else is in more dire straights.
+2-must_strip_normal=thoughtful,Shame my experience hasn't helped me at all.
+2-must_strip_losing=sad,I can't believe I dressed up in my old suit for this.
+2-stripping=strip,Seems my magatama has to go next. Oh well.
+3-stripped=stripped,I gave up the spiritual lifestyle long ago. In a sense, anyway.
+3-stripped=disappointed,Haah...
+
+#losing dress
+3-must_strip_winning=sad,Fair's fair, even if I don't like it.
+3-must_strip_normal=shocked,...!
+3-must_strip_losing=loss,...!
+3-must_strip_losing=loss,Jeez, even my trials never go this poor.
+3-stripping=strip,I hoped it wouldn't come to this, but as they say...
+4-stripped=stripped,A lawyer is someone who smiles, no matter how hard it gets.
+
+#losing panties
+4-must_strip_winning=awkward,W-well, at least I won't be alone.
+4-must_strip_normal=shocked,I object to this!
+4-must_strip_losing=embarrassed,I think I need to reconsider how I spend my time.
+4-must_strip_losing=embarrassed,I-I should have been more careful.
+4-stripping=strip,Anyway, I've seen you all staring at my chest...
+5-stripped=stripped,Think you've earned a glimpse? Think again!
+
+#losing bra
+5-must_strip_winning=embarrassed,No, wait! There is, uh, a clear...contradiction here?
+5-must_strip_normal=embarrassed,No, wait! There is, uh, a clear...contradiction here?
+5-must_strip_losing=embarrassed,No, wait! There is, uh, a clear...contradiction here?
+5-stripping=strip,Crap.
+5-stripping=strip,Alright, this is it. The real deal! 
+-3-stripped=stripped,Keep it cool, Mia... you're only naked in front of strangers...
+
+#OPPONENT MUST STRIP
+
 #fully clothed
 0-male_human_must_strip=,This is going to be interesting indeed...
 0-male_human_must_strip=,No choice now, ~name~.
+0-male_must_strip=interested,A guy? Well, let's see.
 0-male_must_strip=,Go on, ~name~.
+0-male_must_strip=happy,No choice.
 0-female_human_must_strip=calm,Alright, ~name~, your turn.
 0-female_human_must_strip=,Don't chicken out, ~name~.
 0-female_must_strip=,What's it gonna be?
 0-female_must_strip=,So many choices, ~name~.
+0-female_must_strip=excited,You don't need it anyway.
 
 #lost shoes
 1-male_human_must_strip=,I won't look if it makes you feel better.
@@ -298,6 +202,7 @@ female_finished_masturbating=interested,And now you're all wet.
 3-female_human_must_strip=,I won't look if it makes you feel better.
 3-female_must_strip=,~name~ looks a bit red.
 3-female_must_strip=,So it's ~name~'s turn now.
+3-female_must_strip=excited,Go present something. You've got nothing to lose!
 
 #lost dress
 4-male_human_must_strip=,Okay, ~name~, show it.
@@ -340,27 +245,33 @@ female_finished_masturbating=interested,And now you're all wet.
 -2-female_must_strip=,Ah...
 
 #finished
--1-male_human_must_strip=Don't stare...don't stare...
+-1-male_human_must_strip=awkward,Don't stare...don't stare...
 -1-male_human_must_strip=awkward,Pull it together, Mia...
--1-male_must_strip=,Don't stare...don't stare...
+-1-male_must_strip=awkward,Don't stare...don't stare...
 -1-male_must_strip=awkward,Pull it together, Mia...
--1-female_human_must_strip=,Don't stare...don't stare...
+-1-female_human_must_strip=awkward,Don't stare...don't stare...
 -1-female_human_must_strip=awkward,Pull it together, Mia...
--1-female_must_strip=,Don't stare...don't stare...
+-1-female_must_strip=awkward,Don't stare...don't stare...
 -1-female_must_strip=awkward,Pull it together, Mia...
 
-##another character is removing accessories
+
+
+#OPPPONENT REMOVING ACCESSORY
+
 #fully clothed
 0-male_removing_accessory=thoughtful,That's a pretty small thing.
+0-male_removing_accessory=thoughtful,Objection!
 0-male_removed_accessory=disappointed,I thought this would go faster.
 0-female_removing_accessory=thoughtful,I didn't think you'd choose THAT of all things.
 0-female_removed_accessory=calm,Nonetheless, it's valuable evidence.
 
 #lost shoes
 1-male_removing_accessory=thoughtful,A bit of a boring choice, ~name~.
+1-male_removing_accessory=disappointed,I guess it's too early to get excited, huh?
 1-male_removed_accessory=calm,Maybe something bigger next time?
 1-female_removing_accessory=thoughtful,Not really making any big plays there.
 1-female_removed_accessory=calm,No use crying over it, ~name~.
+1-female_removed_accessory=calm,Everyone starts somewhere.
 
 #lost scarf
 2-male_removing_accessory=disappointed,Couldn't you take off just a little more?
@@ -371,6 +282,7 @@ female_finished_masturbating=interested,And now you're all wet.
 #lost magatama
 3-male_removing_accessory=interested,Taking off something big now...?
 3-male_removed_accessory=disappointed,Well, I disappointed myself.
+3-male_removed_accessory=thoughtful,Boring.
 3-female_removing_accessory=shocked,Just that?
 3-female_removed_accessory=disappointed,That's a shame.
 
@@ -404,7 +316,10 @@ female_finished_masturbating=interested,And now you're all wet.
 -1-female_removing_accessory=tsundere,Wow.
 -1-female_removed_accessory=sad,Here I am, and you're just starting...
 
-##another character is removing minor clothing items
+
+
+#OPPONENT REMOVING MINOR
+
 #fully clothed
 0-male_removing_minor=calm,Not bad.
 0-male_removed_minor=appreciative,Keep it going, ~name~.
@@ -427,7 +342,9 @@ female_finished_masturbating=interested,And now you're all wet.
 3-male_removing_minor=thoughtful,That's not much at all.
 3-male_removed_minor=happy,Maybe you could double down? Just a suggestion.
 3-female_removing_minor=happy,Well, it's an improvement.
+3-female_removing_minor=calm,I'll keep breaking down your defenses...
 3-female_removed_minor=thoughtful,Still a while before the good stuff.
+3-female_removed_minor=calm,Slowly but surely.
 
 #lost dress
 4-male_removing_minor=appreciative,Getting closer.
@@ -459,7 +376,10 @@ female_finished_masturbating=interested,And now you're all wet.
 -1-female_removing_minor=thoughtful,Did I read the rules wrong?
 -1-female_removed_minor=tsundere,I thought I was a decent player.
 
-##another character is removing major clothes
+
+
+#OPPONENT REMOVING MAJOR
+
 #fully clothed
 0-male_removing_major=interested,Here it comes.
 0-male_removed_major=appreciative,Very nice!
@@ -480,14 +400,18 @@ female_finished_masturbating=interested,And now you're all wet.
 
 #lost magatama
 3-male_removing_major=excited,Let's see...
+3-male_removing_major=interested,Oh!...
 3-male_removed_major=horny,I'm not staring... maybe a little.
+3-male_removed_major=horny,I have to say, ~name~, I'm impressed!
 3-female_removing_major=excited,Let's take a good look...
 3-female_removed_major=appreciative,Very nice.
+3-female_removed_major=excited,Maybe you should go home like that.
 
 #lost dress
 4-male_removing_major=happy,Step up to the stand, ~name~!
 4-male_removed_major=horny,Make yourself comfortable, ~name~. I already have.
 4-female_removing_major=calm,Step up to the stand, ~name~!
+4-female_removing_major=happy,NOW it gets fun.
 4-female_removed_major=tsundere,Make yourself comfortable. Like me.
 
 #lost panties
@@ -514,7 +438,10 @@ female_finished_masturbating=interested,And now you're all wet.
 -1-female_removing_major=happy,Join me in indecency, ~name~.
 -1-female_removed_major=appreciative,Like that.
 
-##another character is removing important clothes
+
+
+#OPPONENT REVEALING CHEST OR CROTCH
+
 #fully clothed
 0-male_chest_will_be_visible=shocked,Amazing that we're here already.
 0-male_chest_is_visible=appreciative,No objections here.
@@ -573,12 +500,14 @@ female_finished_masturbating=interested,And now you're all wet.
 3-female_medium_chest_is_visible=horny,A respectable set.
 3-female_large_chest_is_visible=shocked,Well, we know whose milkshake brings all the boys to the yard...
 3-female_crotch_will_be_visible=happy,It looks like we're about to see something big...
-3-female_crotch_is_visible=interested,And thus the truth is laid bare.
+3-female_crotch_is_visible=interested,My my.
 
 #lost dress
 4-male_chest_will_be_visible=calm,Think of it like the beach, ~name~.
+4-male_chest_will_be_visible=excited,This I've gotta see.
 4-male_chest_is_visible=appreciative,I won't object.
 4-male_crotch_will_be_visible=shocked,Wait...next is!
+4-male_crotch_will_be_visible=horny,Moment of truth.
 4-male_small_crotch_is_visible=calm,Nothing to be ashamed of, ~name~. 
 4-male_medium_crotch_is_visible=horny,Adding THAT to the Court Record.
 4-male_large_crotch_is_visible=shocked,Do they really come that big?
@@ -594,23 +523,29 @@ female_finished_masturbating=interested,And now you're all wet.
 5-male_chest_will_be_visible=thoughtful,I can see you're shaking.
 5-male_chest_is_visible=calm,I think you look just fine.
 5-male_crotch_will_be_visible=thoughtful,Looks like we'll both be bottomless, ~name~.
+5-male_crotch_will_be_visible=excited,I think I see it twitching, and it's not even out.
 5-male_small_crotch_is_visible=awkward,Huh. Why does Mr. Kudo come to mind?
+5-male_small_crotch_is_visible=appreciative,Aww, look at the cute little guy!
 5-male_medium_crotch_is_visible=interested,No need to explain, ~name~.
-5-male_large_crotch_is_visible=shocked,Just like Diego's!
+5-male_large_crotch_is_visible=embarrassed,Oh... just like his...
 
 5-female_chest_will_be_visible=interested,What will they be like, I wonder...
 5-female_small_chest_is_visible=calm,Aww, they're adorable.
 5-female_medium_chest_is_visible=happy,They compliment you well.
 5-female_large_chest_is_visible=excited,They're practically balloons!
+5-female_large_chest_is_visible=sad, Well, your milkshakes must bring all the boys to the yard.
 5-female_crotch_will_be_visible=awkward,Your luck's run out too, it seems.
+5-female_crotch_will_be_visible=excited,Well, ~name~, hope you don't mind being bottomless.
 5-female_crotch_is_visible=calm,At least we're in it together.
 
 #nude
 -3-male_chest_will_be_visible=thoughtful,I can see you're shaking.
 -3-male_chest_is_visible=calm,I think you look just fine.
 -3-male_crotch_will_be_visible=excited,The defense wants to see some action!
+-3-male_crotch_will_be_visible=interested,C'mon ~name~, don't be shy. 
 -3-male_small_crotch_is_visible=awkward,Huh. Why does Mr. Kudo come to mind?
 -3-male_medium_crotch_is_visible=interested,No need to explain, ~name~.
+-3-male_medium_crotch_is_visible=horny,Adding THAT to the Court Record.
 -3-male_large_crotch_is_visible=horny,Just like Diego's!
 
 -3-female_chest_will_be_visible=excited,The defense wants to see some action!
@@ -638,19 +573,25 @@ female_finished_masturbating=interested,And now you're all wet.
 #finished
 -1-male_chest_will_be_visible=disappointed,I could've used this a while ago...
 -1-male_chest_is_visible=interested,What I wouldn't do for Mr. Justice's perception skills right about now.
+-1-male_chest_is_visible=appreciative,Talk about eye candy!
 -1-male_crotch_will_be_visible=interested,How about you give me a good memory?
 -1-male_small_crotch_is_visible=happy,Don't be shy. You've seen me at my worst, after all.
 -1-male_medium_crotch_is_visible=awkward,Am I staring? Sorry...
 -1-male_large_crotch_is_visible=shocked,Eep!
 
 -1-female_chest_will_be_visible=calm,Share your secrets, ~name~!
+-1-female_chest_will_be_visible=excited,Go ahead ~name~, we're waiting.
 -1-female_small_chest_is_visible=calm,How quaint.
+-1-female_small_chest_is_visible=happy,I like them, they're really cute.
 -1-female_medium_chest_is_visible=calm,Let your inhibitions go, and move on.
 -1-female_large_chest_is_visible=awkward,So, uh, guess I'm not the only top-heavy one.
 -1-female_crotch_will_be_visible=happy,Maybe this will answer a few questions.
 -1-female_crotch_is_visible=interested,Yep, cleared them riiiiight up.
 
-##other player is masturbating
+
+
+#OPPONENT MASTURBATION
+
 #fully clothed
 0-male_must_masturbate=horny,It's not my birthday, is it?
 0-male_start_masturbating=calm,If you want me to turn around, just say so.
@@ -664,8 +605,10 @@ female_finished_masturbating=interested,And now you're all wet.
 
 #lost shoes
 1-male_must_masturbate=horny,It's not my birthday, is it?
+1-male_must_masturbate=thoughtful,Are you really going to do it?
 1-male_start_masturbating=calm,If you want me to turn around, just say so.
 1-male_masturbating=happy,You're pretty eager about this...
+1-male_masturbating=embarrassed,I want to look away, but I can't.
 1-male_finished_masturbating=shocked,So much came out!
 
 1-female_must_masturbate=appreciative,Sorry ~name~, but that's how these things go.
@@ -676,6 +619,7 @@ female_finished_masturbating=interested,And now you're all wet.
 #lost scarf
 2-male_must_masturbate=excited,It's that time already?
 2-male_start_masturbating=happy,Excuse me if I watch your technique.
+2-male_start_masturbating=shocked,Well, you surely didn't hesitate.
 2-male_masturbating=thoughtful,You're really going fast now.
 2-male_finished_masturbating=tsundere,Hey! This dress is expensive you know! Don't stain it!
 
@@ -715,7 +659,9 @@ female_finished_masturbating=interested,And now you're all wet.
 5-female_must_masturbate=happy,How confident are you in your skills?
 5-female_start_masturbating=calm,No need to rush.
 5-female_masturbating=embarrassed,I just realized that might be me soon...
+5-female_masturbating=happy,It's exciting seeing how others do it.
 5-female_finished_masturbating=calm,I think you had fun doing that.
+5-female_finished_masturbating=interested,And now you're all wet.
 
 #nude
 -3-male_must_masturbate=calm,Court is now in session, ~name~.
@@ -727,8 +673,10 @@ female_finished_masturbating=interested,And now you're all wet.
 
 -3-female_must_masturbate=interested,The fun's about to start.
 -3-female_start_masturbating=calm,You knew what you were getting into.
+-3-female_start_masturbating=excited,Maybe we can all stop and just watch her? No?
 -3-female_masturbating=appreciative,Do you have experience with this type of thing?
 -3-female_masturbating=tsundere,I'm not turned on! It's just Maya's body being weird!
+-3-female_masturbating=appreciative,Testify, sister!
 -3-female_finished_masturbating=calm,I think our witness had a breakdown. 
 -3-female_finished_masturbating=excited,Did it like a champ!
 
@@ -756,8 +704,245 @@ female_finished_masturbating=interested,And now you're all wet.
 -1-male_finished_masturbating=interested,Oh, you made quite the crime scene...
 
 -1-female_must_masturbate=calm,I call Ms. ~name~ to take the stand.
+-1-female_must_masturbate=interested,Go nice and slow for us.
 -1-female_start_masturbating=thoughtful,We're nearing the end, I feel.
 -1-female_masturbating=calm,I almost wish I lasted longer.
 -1-female_masturbating=calm,You're really going at it!
 -1-female_finished_masturbating=excited,Feels good, doesn't it?
 -1-female_finished_masturbating=excited,Found a new hobby, ~name~?
+
+
+
+#SELF MASTURBATION
+must_masturbate_first=loss,I thought I was better than this.
+must_masturbate=embarrassed,There's nothing left... it's over...
+must_masturbate=embarrassed,Would it be too much to ask you to look away?
+start_masturbating=starting,Hope you don't mind, Maya...
+start_masturbating=starting,This'll be weird with all of you watching me.
+start_masturbating=starting,I bet Diego would've loved to see this.
+masturbating=masturbate_a,Mmm...
+masturbating=masturbate_a,Mmm... Ahhh....
+masturbating=masturbate_a,Oh god... Ohh...
+masturbating=masturbate_b,Hah...You're all staring...
+masturbating=masturbate_b,Mmmm... Please, look away...
+masturbating=masturbate_b,Oh... you're... watching...
+masturbating=masturbate_c,Ahhh.... Ahhh...
+masturbating=masturbate_c,Oh...Yes...
+masturbating=masturbate_c,Ohh... This feels so good...
+heavy_masturbating=heavy_a,Hah... Don't look...
+heavy_masturbating=heavy_a,So... humiliating...
+heavy_masturbating=heavy_a,Ohhh... 
+heavy_masturbating=heavy_b,I can't believe I'm masturbating in someone else's body...
+heavy_masturbating=heavy_b,Tsk... So shameful...
+heavy_masturbating=heavy_b,Yes... Mmm!.. Ahhh...
+heavy_masturbating=heavy_c,Ahhh... I'm... so close...
+heavy_masturbating=heavy_c,I think I'm close...
+heavy_masturbating=heavy_c,Ah! Now...?
+heavy_masturbating=heavy_c,I must... keep pressing on!
+finishing_masturbating=finishing,Ahhh...AHHHH!
+finished_masturbating=finished,Please don't tell the Agency about this.
+finished_masturbating=finished,You, uh, didn't tape that or anything, did you?
+finished_masturbating=finished,I, uh, hope you don't think less of me for that.
+game_over_defeat=calm,Congratulations, ~name~. Your win was well-earned.
+game_over_victory=shocked,I can't believe I pulled it off!
+4-game_over_victory=happy,Say, how about dinner. On me?
+
+
+#Paste into end of stage 0 (fully clothed)
+#<case tag="female_must_strip" target="kyoko" targetStage=0><state img="0-calm.png">Ah, there's a detective on the scene. What evidence can you share with us, Ms. Kirigiri?</state></case>
+
+#Paste into end of stage 3 (in dress)
+#<case tag="female_large_chest_is_visible" alsoPlaying="streaming-chan"><state img="3-interested.png">Ms. Chen has really made a name for herself. With your chest, I'd wager, ~name~.</state></case>
+#<case tag="female_must_masturbate" filter="silent"><state img="3-happy.png">As your legal counsel, I advise that you comply with this order of unrestraint, ~name~.</state></case>
+
+#Paste into end of stage 4 (underwear only)
+#<case tag="female_removed_major" filter="innocent"><state img="4-interested.png">Sorry, ~name~. Normally I defend the innocent, but you are way too cute for me to stop you.</state><state img="4-appreciative.png">Don't worry! I believe in your innocence!</state></case>
+#<case tag="female_removed_major" target="nagisa" targetStage=4><state img="4-stripped.png">Dangos? Aw, Maya used to love singing their little theme song.</state></case>
+
+#Paste into end of stage 5 (bottomless)
+#<case tag="female_medium_chest_is_visible" target="nagisa"><state img="5-excited.png">You can't cry yet! The only time you can cry is when it's all over.</state></case>
+
+#Paste into end of stage 6 (naked)
+#<case tag="female_medium_chest_is_visible" alsoPlaying="streaming-chan"><state img="6-horny.png">Ms. Chen, I'm going to have to ask for a saved copy of your stream... as evidence.</state></case>
+
+#Paste into end of stage 7 (masturbating)
+#<case tag="male_large_crotch_is_visible" filter="video_game"><state img="7-heavy_c.png">This might be the first time I've wanted evidence rubbed in my face.</state></case>
+
+
+#ENDINGS
+ending=Changing channels
+ending_gender=male
+	screen=fey-epilogue-1.png
+
+		text=There's not much time left. Time to submit Exhibit D!
+		x=60%
+		y=30%
+		arrow=left
+
+	screen=fey-epilogue-2.png
+
+		text=Ahhhh! Ahhhh!
+		x=60%
+		y=30%
+		arrow=left
+
+	screen=fey-epilogue-3.png
+
+		text=If there's one thing I miss most about being alive, it's probably liaisons like this, ~name~.
+		x=60%
+		y=27%
+		arrow=left
+		
+		text=I wish I could enjoy you longer, but I've already drained her of so much spiritual power today.
+		x=60%
+		y=40%
+		arrow=left
+		
+	screen=fey-epilogue-4.png
+
+		text=Maya's had to get used to waking up to some pretty sticky situations after channeling me!
+		x=60%
+		y=27%
+		arrow=left
+		
+		text=Say hi to my sister for me, won't you?
+		x=60%
+		y=40%
+		arrow=left
+		
+	screen=fey-epilogue-5.png
+
+		text=Huh?
+		x=60%
+		y=27%
+		arrow=left
+
+		text=Ah! You're naked! And I'm...
+		x=60%
+		y=40%
+		arrow=left
+		
+	screen=fey-epilogue-6.png
+
+		text=She told me she was just going to play cards this time...
+		x=60%
+		y=27%
+		arrow=left
+
+		text=But here I am in my apartment totally wet. Again.
+		x=60%
+		y=40%
+		arrow=left
+
+	screen=fey-epilogue-6.png
+
+		text=It could be worse. This guy is really cute.
+		x=60%
+		y=27%
+		arrow=left
+
+		text=And at least she isn't having Pearly do this...
+		x=60%
+		y=40%
+		arrow=left
+		
+	screen=fey-epilogue-7.png
+
+		text=Well, since we're here already...
+		x=60%
+		y=27%
+		arrow=left
+
+		text=Wanna have some fun?
+		x=60%
+		y=40%
+		arrow=left
+
+
+ending=The Kurain Technique
+ending_gender=female
+	screen=fey-epilogue-7.png
+
+		text=That was amazing, ~name~!
+		x=60%
+		y=27%
+		arrow=left
+		
+		text=The way you used your tongue... Ema would be jealous!
+		x=60%
+		y=40%
+		arrow=left
+
+	screen=fey-epilogue-6.png
+
+		text=It, um, was totally necessary for recharging my channeling power, of course.
+		x=60%
+		y=30%
+		arrow=left
+
+	screen=fey-epilogue-5.png
+
+		text=I'm opening the connection to my sister now.
+		x=60%
+		y=27%
+		arrow=left
+		
+		text=Please be gentle. No rope marks! Remember, it's still my body.
+		x=60%
+		y=40%
+		arrow=left
+		
+	screen=fey-epilogue-4.png
+
+		text=~name~. Hello.
+		x=60%
+		y=27%
+		arrow=left
+		
+		text=I see that you and Maya had some fun.
+		x=60%
+		y=40%
+		arrow=left
+		
+	screen=fey-epilogue-3.png
+
+		text=Oh, she said no bondage tonight?
+		x=60%
+		y=27%
+		arrow=left
+
+		text=Why don't you get some of Maya's toys? They're in the dresser.
+		x=60%
+		y=40%
+		arrow=left
+		
+	screen=fey-epilogue-1.png
+
+		text=Yes, the Steel Samurai one. Turn it on.
+		x=60%
+		y=27%
+		arrow=left
+
+		text=Wait, get a second one. We'll go together.
+		x=60%
+		y=40%
+		arrow=left
+
+	screen=fey-epilogue-2.png
+
+		text=Oh... Ahh... Just a little higher...
+		x=60%
+		y=30%
+		arrow=left
+		
+	screen=fey-epilogue-3.png
+
+		text=Excellent technique, ~name~.
+		x=60%
+		y=27%
+		arrow=left
+
+		text=Now get out of that bra and go get me the rope.
+		x=60%
+		y=40%
+		arrow=left

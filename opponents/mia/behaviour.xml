@@ -29,6 +29,7 @@
             <case tag="female_must_strip">
                 <state img="0-interested.png">What's it gonna be?</state>
                 <state img="0-interested.png">So many choices, ~name~.</state>
+                <state img="0-excited.png">You don't need it anyway.</state>
             </case>
             <case tag="male_chest_will_be_visible">
                 <state img="0-shocked.png">Amazing that we're here already.</state>
@@ -89,7 +90,9 @@
                 <state img="0-shocked.png">Well, we know whose milkshake brings all the boys to the yard...</state>
             </case>
             <case tag="male_must_strip">
+                <state img="0-interested.png">A guy? Well, let's see.</state>
                 <state img="0-interested.png">Go on, ~name~.</state>
+                <state img="0-happy.png">No choice.</state>
             </case>
             <case tag="female_must_masturbate">
                 <state img="0-calm.png">Please give a demonstration to the court, ~name~.</state>
@@ -103,6 +106,7 @@
             </case>
             <case tag="male_removing_accessory">
                 <state img="0-thoughtful.png">That's a pretty small thing.</state>
+                <state img="0-thoughtful.png">Objection!</state>
             </case>
             <case tag="male_finished_masturbating">
                 <state img="0-shocked.png">No, uh, further questions.</state>
@@ -117,7 +121,7 @@
                 <state img="0-thoughtful.png">I didn't think you'd choose THAT of all things.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="0-shocked.png">I can't believe I pulled it off.</state>
+                <state img="0-shocked.png">I can't believe I pulled it off!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="0-interested.png">Here it comes.</state>
@@ -162,20 +166,23 @@
                 <state img="0-disappointed.png">I've played Phoenix before. I'm used to bad hands...</state>
             </case>
             <case tag="stripped">
-                <state img="0-disappointed.png">Haah...</state>
+                <state img="0-sad.png">I miss my ~clothing~ already...</state>
             </case>
             <case tag="must_strip_normal">
                 <state img="0-thoughtful.png">I'm up?</state>
+                <state img="0-excited.png">Let's do it!</state>
             </case>
             <case tag="must_strip_losing">
                 <state img="0-thoughtful.png">I'll test the waters, I guess.</state>
             </case>
             <case tag="stripping">
                 <state img="0-strip.png">I always considered it rude to not leave your shoes at the door.</state>
+                <state img="0-strip.png">Off they come...</state>
             </case>
             <case tag="must_strip_winning">
                 <state img="0-calm.png">It was foolish to think I would make it unscathed.</state>
             </case>
+			<case tag="female_must_strip" target="kyoko" targetStage=0><state img="0-calm.png">Ah, there's a detective on the scene. What evidence can you share with us, Ms. Kirigiri?</state></case>
         </stage>
 
         <stage id="1">
@@ -209,6 +216,7 @@
             </case>
             <case tag="male_must_masturbate">
                 <state img="1-horny.png">It's not my birthday, is it?</state>
+                <state img="1-thoughtful.png">Are you really going to do it?</state>
             </case>
             <case tag="female_masturbating">
                 <state img="1-interested.png">We'll keep playing, you do your part.</state>
@@ -228,6 +236,7 @@
             </case>
             <case tag="female_removed_accessory">
                 <state img="1-calm.png">No use crying over it, ~name~.</state>
+                <state img="1-calm.png">Everyone starts somewhere.</state>
             </case>
             <case tag="male_removed_major">
                 <state img="1-happy.png">Fascinating.</state>
@@ -257,6 +266,7 @@
             </case>
             <case tag="male_removing_accessory">
                 <state img="1-thoughtful.png">A bit of a boring choice, ~name~.</state>
+                <state img="1-disappointed.png">I guess it's too early to get excited, huh?</state>
             </case>
             <case tag="male_finished_masturbating">
                 <state img="1-shocked.png">So much came out!</state>
@@ -271,7 +281,7 @@
                 <state img="1-thoughtful.png">Not really making any big plays there.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="1-shocked.png">I can't believe I pulled it off.</state>
+                <state img="1-shocked.png">I can't believe I pulled it off!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="1-interested.png">What secrets are you hiding?</state>
@@ -287,6 +297,7 @@
             </case>
             <case tag="male_masturbating">
                 <state img="1-happy.png">You're pretty eager about this...</state>
+                <state img="1-embarrassed.png">I want to look away, but I can't.</state>
             </case>
             <case tag="female_removed_minor">
                 <state img="1-calm.png">We're getting there.</state>
@@ -320,6 +331,7 @@
             </case>
             <case tag="must_strip_normal">
                 <state img="1-calm.png">Alright, alright.</state>
+                <state img="1-horny.png">I almost want to take my scarf off.</state>
             </case>
             <case tag="must_strip_losing">
                 <state img="1-loss.png">This is not going well.</state>
@@ -329,6 +341,7 @@
             </case>
             <case tag="must_strip_winning">
                 <state img="1-calm.png">I know I shouldn't worry yet, but...</state>
+                <state img="1-calm.png">With this large a lead, I'm not even mad.</state>
             </case>
         </stage>
 
@@ -388,6 +401,7 @@
             </case>
             <case tag="male_start_masturbating">
                 <state img="2-happy.png">Excuse me if I watch your technique.</state>
+                <state img="2-shocked.png">Well, you surely didn't hesitate.</state>
             </case>
             <case tag="male_chest_is_visible">
                 <state img="2-appreciative.png">No objections here.</state>
@@ -425,7 +439,7 @@
                 <state img="2-disappointed.png">That barely counts.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="2-shocked.png">I can't believe I pulled it off.</state>
+                <state img="2-shocked.png">I can't believe I pulled it off!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="2-interested.png">Let's take a good look...</state>
@@ -490,18 +504,21 @@
             <case tag="female_must_strip">
                 <state img="3-interested.png">~name~ looks a bit red.</state>
                 <state img="3-interested.png">So it's ~name~'s turn now.</state>
+                <state img="3-excited.png">Go present something. You've got nothing to lose!</state>
             </case>
             <case tag="male_chest_will_be_visible">
                 <state img="3-interested.png">Show us your chest, if you please.</state>
             </case>
             <case tag="female_removing_minor">
                 <state img="3-happy.png">Well, it's an improvement.</state>
+                <state img="3-calm.png">I'll keep breaking down your defenses...</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="3-horny.png">Adding THAT to the Court Record.</state>
             </case>
             <case tag="female_removed_major">
                 <state img="3-appreciative.png">Very nice.</state>
+                <state img="3-excited.png">Maybe you should go home like that.</state>
             </case>
             <case tag="male_large_crotch_is_visible">
                 <state img="3-shocked.png">Do they really come that big?</state>
@@ -514,6 +531,7 @@
             </case>
             <case tag="male_removed_accessory">
                 <state img="3-disappointed.png">Well, I disappointed myself.</state>
+                <state img="3-thoughtful.png">Boring.</state>
             </case>
             <case tag="male_must_masturbate">
                 <state img="3-calm.png">You were caught with your pants down, ~name~. It's time.</state>
@@ -526,19 +544,21 @@
                 <state img="3-interested.png">I won't look if it makes you feel better.</state>
             </case>
             <case tag="female_crotch_is_visible">
-                <state img="3-interested.png">And thus the truth is laid bare.</state>
+                <state img="3-interested.png">My my.</state>
             </case>
             <case tag="female_start_masturbating">
                 <state img="3-calm.png">This trial's just getting started.</state>
             </case>
             <case tag="male_removing_major">
                 <state img="3-excited.png">Let's see...</state>
+                <state img="3-interested.png">Oh!...</state>
             </case>
             <case tag="female_removed_accessory">
                 <state img="3-disappointed.png">That's a shame.</state>
             </case>
             <case tag="male_removed_major">
                 <state img="3-horny.png">I'm not staring... maybe a little.</state>
+                <state img="3-horny.png">I have to say, ~name~, I'm impressed!</state>
             </case>
             <case tag="male_start_masturbating">
                 <state img="3-happy.png">Excuse me if I watch your technique.</state>
@@ -579,7 +599,7 @@
                 <state img="3-shocked.png">Just that?</state>
             </case>
             <case tag="game_over_victory">
-                <state img="3-shocked.png">I can't believe I pulled it off.</state>
+                <state img="3-shocked.png">I can't believe I pulled it off!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="3-excited.png">Let's take a good look...</state>
@@ -598,6 +618,7 @@
             </case>
             <case tag="female_removed_minor">
                 <state img="3-thoughtful.png">Still a while before the good stuff.</state>
+                <state img="3-calm.png">Slowly but surely.</state>
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="3-shocked.png">Wait...next is!</state>
@@ -625,12 +646,14 @@
             </case>
             <case tag="stripped">
                 <state img="3-stripped.png">I gave up the spiritual lifestyle long ago. In a sense, anyway.</state>
+                <state img="3-disappointed.png">Haah...</state>
             </case>
             <case tag="must_strip_normal">
                 <state img="3-shocked.png">...!</state>
             </case>
             <case tag="must_strip_losing">
                 <state img="3-loss.png">...!</state>
+                <state img="3-loss.png">Jeez, even my trials never go this poor.</state>
             </case>
             <case tag="stripping">
                 <state img="3-strip.png">I hoped it wouldn't come to this, but as they say...</state>
@@ -638,6 +661,8 @@
             <case tag="must_strip_winning">
                 <state img="3-sad.png">Fair's fair, even if I don't like it.</state>
             </case>
+			<case tag="female_large_chest_is_visible" alsoPlaying="streaming-chan"><state img="3-interested.png">Ms. Chen has really made a name for herself. With your chest, I'd wager, ~name~.</state></case>
+			<case tag="female_must_masturbate" filter="silent"><state img="3-happy.png">As your legal counsel, I advise that you comply with this order of unrestraint, ~name~.</state></case>
         </stage>
 
         <stage id="4">
@@ -647,6 +672,7 @@
             </case>
             <case tag="male_chest_will_be_visible">
                 <state img="4-calm.png">Think of it like the beach, ~name~.</state>
+                <state img="4-excited.png">This I've gotta see.</state>
             </case>
             <case tag="female_removing_minor">
                 <state img="4-happy.png">One more piece out of the way.</state>
@@ -733,10 +759,11 @@
                 <state img="4-shocked.png">That's it?</state>
             </case>
             <case tag="game_over_victory">
-                <state img="4-shocked.png">I can't believe I pulled it off.</state>
+                <state img="4-happy.png">Say, how about dinner. On me?</state>
             </case>
             <case tag="female_removing_major">
                 <state img="4-calm.png">Step up to the stand, ~name~!</state>
+                <state img="4-happy.png">NOW it gets fun.</state>
             </case>
             <case tag="male_removing_minor">
                 <state img="4-appreciative.png">Getting closer.</state>
@@ -755,6 +782,7 @@
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="4-shocked.png">Wait...next is!</state>
+                <state img="4-horny.png">Moment of truth.</state>
             </case>
             <case tag="good_hand">
                 <state img="4-excited.png">Yes! Safe!</state>
@@ -778,6 +806,7 @@
             </case>
             <case tag="must_strip_losing">
                 <state img="4-embarrassed.png">I think I need to reconsider how I spend my time.</state>
+                <state img="4-embarrassed.png">I-I should have been more careful.</state>
             </case>
             <case tag="stripping">
                 <state img="4-strip.png">Anyway, I've seen you all staring at my chest...</state>
@@ -785,6 +814,8 @@
             <case tag="must_strip_winning">
                 <state img="4-awkward.png">W-well, at least I won't be alone.</state>
             </case>
+			<case tag="female_removed_major" filter="innocent"><state img="4-interested.png">Sorry, ~name~. Normally I defend the innocent, but you are way too cute for me to stop you.</state><state img="4-appreciative.png">Don't worry! I believe in your innocence!</state></case>
+			<case tag="female_removed_major" target="nagisa" targetStage=4><state img="4-stripped.png">Dangos? Aw, Maya used to love singing their little theme song.</state></case>
         </stage>
 
         <stage id="5">
@@ -805,10 +836,11 @@
                 <state img="5-calm.png">I shouldn't be the only one showing skin.</state>
             </case>
             <case tag="male_large_crotch_is_visible">
-                <state img="5-shocked.png">Just like Diego's!</state>
+                <state img="5-embarrassed.png">Oh... just like his...</state>
             </case>
             <case tag="female_crotch_will_be_visible">
                 <state img="5-awkward.png">Your luck's run out too, it seems.</state>
+                <state img="5-excited.png">Well, ~name~, hope you don't mind being bottomless.</state>
             </case>
             <case tag="male_removed_minor">
                 <state img="5-tsundere.png">Eye for an eye, you know?</state>
@@ -821,6 +853,7 @@
             </case>
             <case tag="female_masturbating">
                 <state img="5-embarrassed.png">I just realized that might be me soon...</state>
+                <state img="5-happy.png">It's exciting seeing how others do it.</state>
             </case>
             <case tag="female_human_must_strip">
                 <state img="5-interested.png">C'mon ~name~, off with it.</state>
@@ -849,6 +882,7 @@
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="5-excited.png">They're practically balloons!</state>
+                <state img="5-sad.png"> Well, your milkshakes must bring all the boys to the yard.</state>
             </case>
             <case tag="male_must_strip">
                 <state img="5-interested.png">With my current state of dress, I say this is fair.</state>
@@ -863,6 +897,7 @@
             </case>
             <case tag="male_small_crotch_is_visible">
                 <state img="5-awkward.png">Huh. Why does Mr. Kudo come to mind?</state>
+                <state img="5-appreciative.png">Aww, look at the cute little guy!</state>
             </case>
             <case tag="male_removing_accessory">
                 <state img="5-embarrassed.png">I'm practically naked!</state>
@@ -880,7 +915,7 @@
                 <state img="5-embarrassed.png">I'm practically naked!</state>
             </case>
             <case tag="game_over_victory">
-                <state img="5-shocked.png">I can't believe I pulled it off.</state>
+                <state img="5-shocked.png">I can't believe I pulled it off!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="5-tsundere.png">About time.</state>
@@ -890,6 +925,7 @@
             </case>
             <case tag="female_finished_masturbating">
                 <state img="5-calm.png">I think you had fun doing that.</state>
+                <state img="5-interested.png">And now you're all wet.</state>
             </case>
             <case tag="female_chest_will_be_visible">
                 <state img="5-interested.png">What will they be like, I wonder...</state>
@@ -902,6 +938,7 @@
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="5-thoughtful.png">Looks like we'll both be bottomless, ~name~.</state>
+                <state img="5-excited.png">I think I see it twitching, and it's not even out.</state>
             </case>
             <case tag="good_hand">
                 <state img="5-excited.png">The turnabout starts now!</state>
@@ -930,10 +967,12 @@
             </case>
             <case tag="stripping">
                 <state img="5-strip.png">Crap.</state>
+                <state img="5-strip.png">Alright, this is it. The real deal!</state>
             </case>
             <case tag="must_strip_winning">
                 <state img="5-embarrassed.png">No, wait! There is, uh, a clear...contradiction here?</state>
             </case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"><state img="5-excited.png">You can't cry yet! The only time you can cry is when it's all over.</state></case>
         </stage>
 
         <stage id="6">
@@ -949,6 +988,7 @@
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="6-interested.png">No need to explain, ~name~.</state>
+                <state img="6-horny.png">Adding THAT to the Court Record.</state>
             </case>
             <case tag="female_removed_major">
                 <state img="6-excited.png">Man, this is getting heated.</state>
@@ -957,7 +997,7 @@
                 <state img="6-horny.png">Just like Diego's!</state>
             </case>
             <case tag="female_crotch_will_be_visible">
-                <state img="6-excited.png">Well, ~name~, hope you don't mind being bottomless.</state>
+                <state img="6-horny.png">I guess you have to show 'that' to me now, ~name~...</state>
             </case>
             <case tag="male_removed_minor">
                 <state img="6-tsundere.png">That doesn't make me feel any better.</state>
@@ -971,6 +1011,7 @@
             <case tag="female_masturbating">
                 <state img="6-appreciative.png">Do you have experience with this type of thing?</state>
                 <state img="6-tsundere.png">I'm not turned on! It's just Maya's body being weird!</state>
+                <state img="6-appreciative.png">Testify, sister!</state>
             </case>
             <case tag="female_human_must_strip">
                 <state img="6-interested.png">Continue please, Ms. ~name~.</state>
@@ -982,6 +1023,7 @@
             </case>
             <case tag="female_start_masturbating">
                 <state img="6-calm.png">You knew what you were getting into.</state>
+                <state img="6-excited.png">Maybe we can all stop and just watch her? No?</state>
             </case>
             <case tag="male_removing_major">
                 <state img="6-awkward.png">Sorry if I blush...</state>
@@ -1032,7 +1074,7 @@
                 <state img="6-shocked.png">This is a sham!</state>
             </case>
             <case tag="game_over_victory">
-                <state img="6-shocked.png">I can't believe I pulled it off.</state>
+                <state img="6-shocked.png">I can't believe I pulled it off!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="6-calm.png">Sorry if I blush...</state>
@@ -1056,6 +1098,7 @@
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="6-excited.png">The defense wants to see some action!</state>
+                <state img="6-interested.png">C'mon ~name~, don't be shy.</state>
             </case>
             <case tag="good_hand">
                 <state img="6-happy.png">We're holding off on the verdict for now.</state>
@@ -1080,7 +1123,7 @@
                 <state img="6-starting.png">I bet Diego would've loved to see this.</state>
             </case>
             <case tag="stripped">
-                <state img="6-stripped.png">Keep it cool, Mia... you're only naked in front of four other people...</state>
+                <state img="6-stripped.png">Keep it cool, Mia... you're only naked in front of strangers...</state>
             </case>
             <case tag="must_masturbate_first">
                 <state img="6-loss.png">I thought I was better than this.</state>
@@ -1089,6 +1132,7 @@
                 <state img="6-embarrassed.png">There's nothing left... it's over...</state>
                 <state img="6-embarrassed.png">Would it be too much to ask you to look away?</state>
             </case>
+			<case tag="female_medium_chest_is_visible" alsoPlaying="streaming-chan"><state img="6-horny.png">Ms. Chen, I'm going to have to ask for a saved copy of your stream... as evidence.</state></case>
         </stage>
 
         <stage id="7">
@@ -1186,7 +1230,7 @@
                 <state img="7-disappointed.png">Aw...</state>
             </case>
             <case tag="game_over_victory">
-                <state img="7-shocked.png">I can't believe I pulled it off.</state>
+                <state img="7-shocked.png">I can't believe I pulled it off!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="7-interested.png">Go on, ~name~...</state>
@@ -1237,11 +1281,12 @@
                 <state img="7-heavy_c.png">Ah! Now...?</state>
                 <state img="7-heavy_c.png">I must... keep pressing on!</state>
             </case>
+			<case tag="male_large_crotch_is_visible" filter="video_game"><state img="7-heavy_c.png">This might be the first time I've wanted evidence rubbed in my face.</state></case>
         </stage>
 
         <stage id="8">
             <case tag="female_must_strip">
-                <state img="8-interested.png">Don't stare...don't stare...</state>
+                <state img="8-awkward.png">Don't stare...don't stare...</state>
                 <state img="8-awkward.png">Pull it together, Mia...</state>
             </case>
             <case tag="male_chest_will_be_visible">
@@ -1276,7 +1321,7 @@
                 <state img="8-calm.png">You're really going at it!</state>
             </case>
             <case tag="female_human_must_strip">
-                <state img="8-interested.png">Don't stare...don't stare...</state>
+                <state img="8-awkward.png">Don't stare...don't stare...</state>
                 <state img="8-awkward.png">Pull it together, Mia...</state>
             </case>
             <case tag="female_crotch_is_visible">
@@ -1299,19 +1344,21 @@
             </case>
             <case tag="male_chest_is_visible">
                 <state img="8-interested.png">What I wouldn't do for Mr. Justice's perception skills right about now.</state>
+                <state img="8-appreciative.png">Talk about eye candy!</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="8-awkward.png">So, uh, guess I'm not the only top-heavy one.</state>
             </case>
             <case tag="male_must_strip">
-                <state img="8-interested.png">Don't stare...don't stare...</state>
+                <state img="8-awkward.png">Don't stare...don't stare...</state>
                 <state img="8-awkward.png">Pull it together, Mia...</state>
             </case>
             <case tag="female_must_masturbate">
                 <state img="8-calm.png">I call Ms. ~name~ to take the stand.</state>
+                <state img="8-interested.png">Go nice and slow for us.</state>
             </case>
             <case tag="male_human_must_strip">
-                <state img="8-interested.png">Don't stare...don't stare...</state>
+                <state img="8-awkward.png">Don't stare...don't stare...</state>
                 <state img="8-awkward.png">Pull it together, Mia...</state>
             </case>
             <case tag="male_small_crotch_is_visible">
@@ -1326,6 +1373,7 @@
             </case>
             <case tag="female_small_chest_is_visible">
                 <state img="8-calm.png">How quaint.</state>
+                <state img="8-happy.png">I like them, they're really cute.</state>
             </case>
             <case tag="female_medium_chest_is_visible">
                 <state img="8-calm.png">Let your inhibitions go, and move on.</state>
@@ -1334,7 +1382,7 @@
                 <state img="8-tsundere.png">Wow.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="8-shocked.png">I can't believe I pulled it off.</state>
+                <state img="8-shocked.png">I can't believe I pulled it off!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="8-happy.png">Join me in indecency, ~name~.</state>
@@ -1348,6 +1396,7 @@
             </case>
             <case tag="female_chest_will_be_visible">
                 <state img="8-calm.png">Share your secrets, ~name~!</state>
+                <state img="8-excited.png">Go ahead ~name~, we're waiting.</state>
             </case>
             <case tag="male_masturbating">
                 <state img="8-happy.png">Losing's not that bad, all things considered.</state>
@@ -1370,5 +1419,257 @@
         </stage>
 
     </behaviour>
+
+    <epilogue gender="male">
+        <title>Changing channels</title>
+        <screen img="fey-epilogue-1.png">
+            <text>
+                <x>60%</x>
+                <y>30%</y>
+                <arrow>left</arrow>
+                <content>There's not much time left. Time to submit Exhibit D!</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-2.png">
+            <text>
+                <x>60%</x>
+                <y>30%</y>
+                <arrow>left</arrow>
+                <content>Ahhhh! Ahhhh!</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-3.png">
+            <text>
+                <x>60%</x>
+                <y>27%</y>
+                <arrow>left</arrow>
+                <content>If there's one thing I miss most about being alive, it's probably liaisons like this, ~name~.</content>
+            </text>
+
+            <text>
+                <x>60%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>I wish I could enjoy you longer, but I've already drained her of so much spiritual power today.</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-4.png">
+            <text>
+                <x>60%</x>
+                <y>27%</y>
+                <arrow>left</arrow>
+                <content>Maya's had to get used to waking up to some pretty sticky situations after channeling me!</content>
+            </text>
+
+            <text>
+                <x>60%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>Say hi to my sister for me, won't you?</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-5.png">
+            <text>
+                <x>60%</x>
+                <y>27%</y>
+                <arrow>left</arrow>
+                <content>Huh?</content>
+            </text>
+
+            <text>
+                <x>60%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>Ah! You're naked! And I'm...</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-6.png">
+            <text>
+                <x>60%</x>
+                <y>27%</y>
+                <arrow>left</arrow>
+                <content>She told me she was just going to play cards this time...</content>
+            </text>
+
+            <text>
+                <x>60%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>But here I am in my apartment totally wet. Again.</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-6.png">
+            <text>
+                <x>60%</x>
+                <y>27%</y>
+                <arrow>left</arrow>
+                <content>It could be worse. This guy is really cute.</content>
+            </text>
+
+            <text>
+                <x>60%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>And at least she isn't having Pearly do this...</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-7.png">
+            <text>
+                <x>60%</x>
+                <y>27%</y>
+                <arrow>left</arrow>
+                <content>Well, since we're here already...</content>
+            </text>
+
+            <text>
+                <x>60%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>Wanna have some fun?</content>
+            </text>
+
+        </screen>
+
+    </epilogue>
+
+    <epilogue gender="female">
+        <title>The Kurain Technique</title>
+        <screen img="fey-epilogue-7.png">
+            <text>
+                <x>60%</x>
+                <y>27%</y>
+                <arrow>left</arrow>
+                <content>That was amazing, ~name~!</content>
+            </text>
+
+            <text>
+                <x>60%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>The way you used your tongue... Ema would be jealous!</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-6.png">
+            <text>
+                <x>60%</x>
+                <y>30%</y>
+                <arrow>left</arrow>
+                <content>It, um, was totally necessary for recharging my channeling power, of course.</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-5.png">
+            <text>
+                <x>60%</x>
+                <y>27%</y>
+                <arrow>left</arrow>
+                <content>I'm opening the connection to my sister now.</content>
+            </text>
+
+            <text>
+                <x>60%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>Please be gentle. No rope marks! Remember, it's still my body.</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-4.png">
+            <text>
+                <x>60%</x>
+                <y>27%</y>
+                <arrow>left</arrow>
+                <content>~name~. Hello.</content>
+            </text>
+
+            <text>
+                <x>60%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>I see that you and Maya had some fun.</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-3.png">
+            <text>
+                <x>60%</x>
+                <y>27%</y>
+                <arrow>left</arrow>
+                <content>Oh, she said no bondage tonight?</content>
+            </text>
+
+            <text>
+                <x>60%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>Why don't you get some of Maya's toys? They're in the dresser.</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-1.png">
+            <text>
+                <x>60%</x>
+                <y>27%</y>
+                <arrow>left</arrow>
+                <content>Yes, the Steel Samurai one. Turn it on.</content>
+            </text>
+
+            <text>
+                <x>60%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>Wait, get a second one. We'll go together.</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-2.png">
+            <text>
+                <x>60%</x>
+                <y>30%</y>
+                <arrow>left</arrow>
+                <content>Oh... Ahh... Just a little higher...</content>
+            </text>
+
+        </screen>
+
+        <screen img="fey-epilogue-3.png">
+            <text>
+                <x>60%</x>
+                <y>27%</y>
+                <arrow>left</arrow>
+                <content>Excellent technique, ~name~.</content>
+            </text>
+
+            <text>
+                <x>60%</x>
+                <y>40%</y>
+                <arrow>left</arrow>
+                <content>Now get out of that bra and go get me the rope.</content>
+            </text>
+
+        </screen>
+
+    </epilogue>
 
 </opponent>

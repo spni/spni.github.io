@@ -247,7 +247,7 @@
                 <state img="1-maximumembarrassed.png">Eeep!</state>
             </case>
             <case tag="female_start_masturbating">
-                <state img="1-maximumembarrassed.png">~name~! ~name~, stop! ~name~! ~name~!</state>
+                <state img="1-maximumembarrassed.png">~name~! Stop!</state>
             </case>
             <case tag="male_removing_major">
                 <state img="1-veryembarrassed.png">Oh, this is all my fault!</state>
@@ -690,8 +690,10 @@
             </case>
 			<case tag="female_must_strip" target="tifa"><state img="3-stripped.png">I feel like you'll win either way in this game, Tifa...</state></case>
 			<case tag="female_removed_minor" filter="cheerful"><state img="3-wink.png">I'm sure you'll do great next time, ~name~!</state></case>
-			<case tag="female_removed_major" filter="confident"><state img="3-stripped.png">You did that so confidently! And there I was worried to take off my jacket.</state></case>
+			<case tag="female_removing_major" target="jasmine" targetStage=2><state img="3-excited.png">Really?!</state></case>
+			<case tag="female_removed_major" target="jasmine" targetStage=3><state img="3-clapping.png">Wow! You had me fooled!</state></case>
 			<case tag="female_removing_major" target="daisy"><state img="3-veryembarrassed.png">I'm sorry, Daisy! It's not fair that you have to take off your dress all in one go just for losing one hand.</state></case>
+			<case tag="female_removed_major" filter="confident"><state img="3-stripped.png">You did that so confidently! And there I was worried to take off my jacket.</state></case>
 			<case tag="female_removed_major" target="misty"><state img="3-stripped.png">You look like you're ready to go swimming, Misty! That's a good idea, but I don't look that good in a swimsuit...</state></case>
 			<case tag="female_chest_will_be_visible" target="chell"><state img="3-veryembarrassed.png">Oh no, Chell! This was so out of the blue!</state></case>
         </stage>
@@ -1337,6 +1339,8 @@
 			<case tag="female_removed_major" target="tracer"><state img="7-calm.png">If you disappear, could you take me with you?</state></case>
 			<case tag="male_large_crotch_is_visible" target="ryu"><state img="7-mustmasturbate.png">Oh my gosh! I-I never imagined they could be that big! How did it fit behind your loincloth?!</state></case>
 			<case tag="female_crotch_is_visible" target="mercy"><state img="7-embarrassed.png">I thought for sure that you'd have some hair... down there...</state></case>
+			<case tag="female_must_masturbate" filter="princess"><state img="7-shocked.png">If even a <i>princess</i> has to do it, what chance do I have?</state></case>
+			<case tag="female_start_masturbating" filter="princess"><state img="7-veryembarrassed.png">I'm so sorry, princess!</state></case>
 			<case tag="female_masturbating" target="kyoko"><state img="7-stripped.png">Your hands are... This is even stranger than I expected!</state></case>
 			<case tag="female_finished_masturbating" target="chara"><state img="7-shocked.png">I'm not sure if I should say this, but that was kinda scary...</state></case>
         </stage>
