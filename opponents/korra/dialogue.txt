@@ -1,0 +1,840 @@
+#required for behaviour.xml
+first=Korra
+last=
+label=Korra
+gender=female
+size=large
+#Number of phases to "finish"
+timer=25
+tags=confident, bisexual, hairy, tomboy, cartoon, brave
+
+#required for meta.xml
+#start picture
+pic=0-calm
+height=5'7"
+from=The Legend of Korra
+writer=throwaway10671 & Arcess
+artist=Zombiqaz & josephkantel
+description=Korra is the current incarnation of the Avatar and immediate successor of Avatar Aang.
+
+#Korra's Clothing:
+clothes=Boots,boots,extra,other
+clothes=Socks,socks,extra,other
+clothes=Wristbands,wristbands,extra,other
+clothes=Jacket,jacket,extra,lower
+clothes=Shirt,shirt,major,upper
+clothes=Pants,pants,major,lower
+clothes=Bra,bra,important,upper
+clothes=Panties,panties,important,lower
+
+#starting picture and text
+start=0-calm,Strip poker? I haven't mastered that element yet.
+
+##individual behaviour
+#entries without a number are used when there are no stage-specific entries
+
+#you can include multiple entries to give the character multiple lines and/or appearances in that situation.
+#This is what a character says while they're exchanging cards.
+swap_cards=calm,I need to bend these ~cards~ into new cards.
+swap_cards=calm,Give me ~cards~.
+swap_cards=calm,~cards~ new cards, please!
+swap_cards=calm,Yeah, I'm going to need ~cards~.
+
+#masturbation
+#these situations relate to when the character is masturbating
+#these only come up in the relevant stages, so you don't need to include the stage numbers here
+#just remember which stage is which when you make the images
+must_masturbate_first=loss,What? I have to do that? I really hit the dirt this time.
+must_masturbate_first=loss,I'm already fully naked! Isn't that enough?
+must_masturbate=loss,At least I'm not the first to do it. Now it's my turn to do some "bending".
+start_masturbating=starting,Well, I guess I have to get started...
+masturbating=horny,Ahhh... This feels great...
+masturbating=horny,If I use a little waterbending I can hit my G-Spot really hard...
+masturbating=horny,Going at it in front of an audience is kinda hot...
+heavy_masturbating=heavy,I'm getting really close to climaxing now!
+heavy_masturbating=heavy,OH! AhhHHh! I'm almost there!
+finishing_masturbating=finishing,I'M CUMMING!!!
+finished_masturbating=finished,That was really nice... I haven't felt that good in years.
+finished_masturbating=finished,Now I'm all sticky. I need a bath in some spirit water; anyone want to join me?
+game_over_defeat=calm,Congratulations, ~name~. You beat the Avatar!
+game_over_victory=calm,I WON! You gotta deal with it!
+
+#character is stripping situations
+#Losing Boots
+0-must_strip_winning=loss,I feel like I've only just begun.
+0-must_strip_normal=loss,I guess I'll be walking this path without shoes.
+0-must_strip_losing=loss,I have to strip first? No fair!
+0-stripping=strip,I'm better at earthbending without my boots anyway.
+1-stripped=stripped,I feel a little shorter without these boots on.
+
+#Losing Socks
+1-must_strip_winning=loss,Ah! there goes my winning streak.
+1-must_strip_normal=loss,I guess it's my turn now.
+1-must_strip_losing=loss,I lost again? I bet you are all just plotting to see me naked.
+1-stripping=strip,I'm just going to take off my socks. Nothing big for you all.
+2-stripped=stripped,I'm a better bender this way anyways. I wish card bending was a thing though...
+
+#Losing Wristbands
+2-must_strip_winning=loss,What? That's ridiculous. I was on a winning streak!
+2-must_strip_normal=loss,I still have a lot of clothes on. You guys shouldn't get cocky!
+2-must_strip_losing=loss,I have to strip again? This is ridiculous!
+2-stripping=strip,Sorry to disappoint you, but it's just my wristbands this time.
+3-stripped=stripped,These don't cover up much so I guess this isn't a big loss.
+
+#Losing Jacket
+3-must_strip_winning=loss,I should be able to fix this. I'm the Avatar after all.
+3-must_strip_normal=loss,I'm not running from anyone.
+3-must_strip_losing=loss,I have a feeling I'll be naked soon... I really wish I could learn card bending right about now.
+3-must_strip_losing=sad,Maybe I'm just not cut out to be a poker player...
+3-stripping=strip,Everything changed when these terrible cards attacked. Now I have to strip my jacket.
+4-stripped=stripped,I hope I don't lose the next round. Then I will really have to start showing skin. That jacket was my last accessory.
+
+#Losing Shirt
+4-must_strip_winning=loss,Great. More attention to me.
+4-must_strip_normal=loss,It looks like you're not giving me a choice.
+4-must_strip_losing=loss,Uh oh, now things are getting serious.
+4-must_strip_losing=loss,There's so much responsibility on my shoulders. But thanks to you guys, it's the shirt that comes off.
+4-stripping=strip,Off comes the shirt...
+5-stripped=stripped,Try not to stare at my cleavage too much. I might just send some fire bending your way!
+
+#Losing Pants
+5-must_strip_winning=loss,... I know I can do this...
+5-must_strip_normal=loss,Light and peace... Light and peace...
+5-must_strip_losing=loss,I'm getting my butt kicked...
+5-stripping=strip,The Avatar should really have more modesty then this, but off goes my pants...
+6-stripped=stripped,This is very revealing. I can't believe I have to stand in front of you all in my underwear now.
+6-stripped=stripped,Stop staring at me in my underwear! That's creepy!
+
+#Losing Bra
+6-must_strip_winning=loss,I have all this power, but I don't know what I'm supposed to be doing half the time. It seems like I should be... wiser. 
+6-must_strip_normal=loss,This won't bring balance. It will throw the world into chaos!
+6-must_strip_losing=loss,I have to show my breasts now?! How could I lose this bad?
+6-stripping=strip,I can't believe I'm removing my bra in front of everyone... Off it goes...
+6-stripping=strip,I can't believe I have to show my bust...
+7-stripped=stripped,Please stop staring! I wish I could bend some cover right now.
+7-stripped=stripped,Quit staring, you perv!
+7-stripped=stripped,Stop looking at my boobs! Creeps!
+
+#Losing Panties
+7-must_strip_winning=loss,Well if everyone else is naked I guess it's not that bad...
+7-must_strip_normal=loss,I've never backed away from anything in my life! I can do this... I think.
+7-must_strip_losing=loss,Maybe I'm not ready to be the Avatar... I can't even win a simple card game.
+7-stripping=strip,I wish I wore more clothing or at least shaved today. Now look at me...
+7-stripping=strip,Oh no, I 'lost'. Totally not on purpose...
+8-stripped=stripped,This is SOOO embarrassing! I thought I could win this game, now I'm in my birthday suit with you all staring at me...
+8-stripped=stripped,I really wished I shaved today... This is embarrassing! Stop staring at me so much, pervs!
+8-stripped=stripped,This is no state for the Avatar to be in! Naked in front of an audience...
+8-stripped=stripped,I really should have shaved today... But I didn't think I would lose all my clothes.
+
+#victory lines. one for each stage.
+0-game_over_victory=happy,I'm the Avatar, this was a piece of cake!
+0-game_over_victory=happy,I WON! You gotta deal with it!
+1-game_over_victory=happy,WOOO! I WON! Can I get my boots back now?
+1-game_over_victory=happy,I WON! You gotta deal with it!
+2-game_over_victory=happy,No shoes, no socks, but I still won!
+2-game_over_victory=happy,I WON! You gotta deal with it!
+3-game_over_victory=happy,I won! I feel relieved I was just about to run out of accessories.
+4-game_over_victory=excited,Nice! I won! I was out of accessories too.
+5-game_over_victory=embarrassed,No shoes, no shirt, but I still won!
+6-game_over_victory=embarrassed,Yes!  I won! I was about to have to show it all too. Do I get my clothes back  now?  I can't just go around as the Avatar in my underwear.
+7-game_over_victory=embarrassed,I WON! Can I put my clothes back on now? I'm not used to having my tits out like this.
+-3-game_over_victory=embarrassed,That was close, I almost had to masturbate in front of all of you. I'm glad I won!
+
+#card cases
+#Fully Clothed
+0-good_hand=happy,Let's do this.
+0-good_hand=happy,Seems easy enough.
+0-good_hand=happy,I got a good feeling about tonight.
+0-good_hand=excited,Book One: Winning!
+0-okay_hand=calm,I think I got this.
+0-bad_hand=angry,It's a long shot...
+0-bad_hand=sad,It looks like I have to start stripping now.
+
+#Lost Boots
+1-good_hand=happy,Perfect! I can't possibly lose!
+1-good_hand=happy,Sweet!
+1-okay_hand=calm,Thanks. This should be enough.
+1-bad_hand=angry,I got nothing.
+1-bad_hand=angry,Whatever. 
+
+#Lost Socks
+2-good_hand=happy,These are great cards! I can't possibly lose this round.
+2-okay_hand=calm,It's worth a try.
+2-okay_hand=calm,Yeah, okay. Not so bad.
+2-bad_hand=sad,I think I'm doing it wrong...
+2-bad_hand=sad,Well, I- I'm not sure what I can do about this.
+
+#Lost Wristbands
+3-good_hand=happy,Oooh, I got a nice hand.
+3-okay_hand=calm,I think these cards are alright.
+3-bad_hand=sad,I don't like the looks of this.
+3-bad_hand=angry,I'm still a little new at this, so back off!
+
+#Lost Jacket
+4-good_hand=happy,I'm not stripping with cards like these!
+4-okay_hand=calm,I hope this works...
+4-bad_hand=sad,This is a disaster.
+4-bad_hand=sad,You know I'm not very good at this.
+
+#Lost Shirt
+5-good_hand=happy,I'll be all right.
+5-okay_hand=calm,Eh, these cards are fine I guess.
+5-bad_hand=sad,If I keep getting hands like this, I'm toast.
+
+#Lost Pants
+6-good_hand=happy,Nice! This is a hand fit for the Avatar.
+6-okay_hand=calm,I hope these are enough.
+6-bad_hand=angry,I'm not giving up!
+6-bad_hand=sad,I have this awful pit in my stomach. 
+6-bad_hand=sad,I'm running out of time.
+
+#Lost Bra
+7-good_hand=happy,I wouldn't count me out just yet.
+7-good_hand=happy,I'm keeping this hand close to my chest!
+7-okay_hand=calm,These are good enough I guess.
+7-bad_hand=sad,That's impossible. There's no way.
+7-bad_hand=sad,It's looking like I have to show it all...
+
+#Lost Panties/Fully Nude
+#using negative numbers counts back from the final stage
+#-3 is while nude, -2 is masturbating, -1 is finished
+#this lets you use the same numbers with different amounts of clothing
+-3-good_hand=happy,My era's not over yet!
+-3-good_hand=happy,I'm saved!
+-3-okay_hand=calm,I might not be "bending" just yet.
+-3-okay_hand=calm,I needed at least this much, if not more.
+-3-bad_hand=sad,No one can help me now...
+-3-bad_hand=sad,Is it okay if I just turn into a block of ice for a hundred years?
+
+##other player must strip specific
+#Fully Clothed
+0-male_human_must_strip=happy,Time for the good stuff!
+0-male_must_strip=happy,Take it off! Take it off!
+0-female_human_must_strip=happy,Time for the good stuff!
+0-female_must_strip=happy,Take it off! Take it off!
+0-female_must_strip=happy,Strip for us, ~name~. Please.
+
+#Lost Boots
+1-male_human_must_strip=excited,STRIP! STRIP! STRIP!
+1-male_must_strip=excited,Take it off, ~name~. Show us what you have under those clothes.
+1-female_human_must_strip=excited,If a pretty girl wants to strip for me, who am I to turn her down?
+1-female_must_strip=excited,Take it off, ~name~. Show us what you have under those clothes.
+1-female_must_strip=excited,I took something off. It's your turn now, ~name~.
+
+#Lost Socks
+2-male_human_must_strip=excited,Yes! ~name~ is stripping!
+2-male_must_strip=excited,Take it off, ~name~. Show us what you have under those clothes.
+2-female_human_must_strip=excited,Yes! ~name~ is stripping!
+2-female_must_strip=excited,Take it off, ~name~. Show us what you have under those clothes.
+
+#Lost Wristbands
+3-male_human_must_strip=happy,It's about time, ~name~. Start stripping!
+3-male_must_strip=calm,Ahem.
+3-female_human_must_strip=happy,It's about time, ~name~. Start stripping!
+3-female_must_strip=calm,Ahem.
+
+#Lost Jacket
+4-male_human_must_strip=happy,This is my favorite part!
+4-male_must_strip=happy,Your turn, ~name~. Strip for us.
+4-female_human_must_strip=happy,Wait, ~name~, we can help you take something off! Where should we start?
+4-female_must_strip=happy,It's time for a little tough love.
+4-female_must_strip=excited,Oh yeah! I didn't lose and I get to see some skin! Sweet!
+
+#Lost Shirt
+5-male_human_must_strip=happy,I've been stripping so you should too, ~name~.
+5-male_must_strip=calm,There's no use in talking anymore. You know what you have to do.
+5-female_human_must_strip=happy,Thanks for buying me some time. 
+5-female_must_strip=happy,The less clothes the better.
+5-female_must_strip=happy,This is the best part!
+
+#Lost Pants
+6-male_human_must_strip=happy,I've stripped a lot so it's good to see you do some stripping.
+6-male_human_must_strip=happy,Let's just say I've got some high expectations, ~name~.
+6-male_must_strip=happy,It's always nice to get a breeze going on your skin.
+6-female_human_must_strip=happy,I've stripped a lot so it's good to see you do some stripping.
+6-female_must_strip=happy,It's always nice to get a breeze going on your skin.
+6-female_must_strip=happy,You're as hot as I feel right now, ~name~. You'd better take something off.
+
+#Lost Bra
+7-male_human_must_strip=excited,It's about time ~name~! Show some skin like me.
+7-male_must_strip=happy,It feels good to show off every now and then.
+7-female_human_must_strip=excited,It's about time ~name~! Show some skin like me.
+7-female_must_strip=happy,It feels good to show off every now and then.
+
+#Lost Panties/Fully Nude
+-3-male_human_must_strip=excited,STRIP! STRIP! STRIP!
+-3-male_must_strip=excited,Nice ~name~! Get naked just like me!
+-3-female_human_must_strip=excited,STRIP! STRIP! STRIP!
+-3-female_must_strip=excited,Nice ~name~! Get naked just like me!
+
+#Masturbating
+-2-male_human_must_strip=horny,Oh yes! This is what I want to see!
+-2-male_must_strip=horny,Show your body, ~name~!
+-2-female_human_must_strip=horny,Oh yes! This is what I want to see!
+-2-female_must_strip=horny,Show your body, ~name~!
+
+#Finished
+-1-male_human_must_strip=excited,Those clothes sure are coming off fast, ~name~.
+-1-male_must_strip=calm,Soon you'll be standing here with sticky thighs just like me.
+-1-female_human_must_strip=excited,Those clothes sure are coming off fast, ~name~.
+-1-female_must_strip=calm,Soon you'll be standing here with sticky thighs just like me.
+-1-female_must_strip=calm,Yes, each piece you take off brings us closer to balance.
+
+##another character is removing accessories
+#Fully Clothed
+0-male_removing_accessory=calm,Just your ~clothing~ for now?
+0-male_removed_accessory=sad,Lame. Is that what we're here for? ~Clothing~ removal?
+0-female_removing_accessory=calm,Just your ~clothing~ for now?
+0-female_removed_accessory=calm,I haven't stripped yet, but if I did I would probably take off something small like that too.
+
+#Lost Boots
+1-male_removing_accessory=calm,Just your ~clothing~ for now?
+1-male_removed_accessory=annoyed,Oh, big sacrifice. I hope that you don't catch a cold without your ~clothing~!
+1-female_removing_accessory=calm,Just your ~clothing~ for now?
+1-female_removed_accessory=calm,I haven't stripped that much yet either. I'm taking the small stuff off just like you, ~name~.
+
+#Lost Socks
+2-male_removing_accessory=calm,Just your ~clothing~ for now?
+2-male_removed_accessory=calm,Just a little boring there, ~name~. You could've taken off your ~clothing~ last, you know.
+2-female_removing_accessory=calm,Just your ~clothing~ for now?
+2-female_removed_accessory=calm,I've seen better.
+
+#Lost Wristbands
+3-male_removing_accessory=calm,Patience, Korra...
+3-male_removing_accessory=calm,You've got the right idea just stripping your ~clothing~, ~name~.
+3-male_removed_accessory=calm,I'm just stripping my small stuff too.
+3-female_removing_accessory=calm,You've got the right idea just stripping your ~clothing~, ~name~.
+3-female_removed_accessory=calm,I'm just stripping my small stuff too.
+
+#Lost Jacket
+4-male_removing_accessory=sad,Just your ~clothing~? Are you sure you don't want to take off more?
+4-male_removed_accessory=angry,Ugh, that's no fun but alright.
+4-female_removing_accessory=sad,Just your ~clothing~? Are you sure you don't want to take off more?
+4-female_removed_accessory=sad,I guess what you're saying is... we need to be patient. 
+
+#Lost Shirt
+5-male_removing_accessory=sad,Aww I thought my cleavage would entice you to strip more. 
+5-male_removed_accessory=sad,Oh, so nothing then?
+5-female_removing_accessory=sad,Aww I thought my cleavage would entice you to strip more. 
+5-female_removed_accessory=sad,Please take off more than just your ~clothing~ next time.
+
+#Lost Pants
+6-male_removing_accessory=sad,I hate this "being patient" stuff.
+6-male_removed_accessory=angry,I can't talk to you when you're like this. I'm in my underwear and you're only taking off your ~clothing~.
+6-female_removing_accessory=sad,I hate this "being patient" stuff.
+6-female_removed_accessory=angry,Are you planning to start playing? It's really unclear.
+
+#Lost Bra
+7-male_removing_accessory=angry,Only your ~clothing~? This is such a waste of time.
+7-male_removed_accessory=angry,I'm topless and your only taking off your ~clothing~? This is frustrating.
+7-female_removing_accessory=angry,Only your ~clothing~? This is such a waste of time.
+7-female_removed_accessory=angry,I'm topless and your only taking off your ~clothing~? This is frustrating.
+
+#Lost Panties/Fully Nude
+-3-male_removing_accessory=angry,I'm sorry, what now? Your ~clothing~?!
+-3-male_removing_accessory=shocked,Oh, you're still here? You haven's stripped in like forever!
+-3-male_removed_accessory=angry,I'm showing it ALL off and you are just going to take off your ~clothing~!?! WOW ~name~, not cool!
+-3-female_removing_accessory=shocked,Oh, you're still here? You haven's stripped in like forever!
+-3-female_removed_accessory=angry,I'm showing it ALL off and you are just going to take off your ~clothing~!?! WOW ~name~, not cool!
+
+#Masturbating
+-2-male_removing_accessory=calm,~name~ strip some more... Please!
+-2-male_removed_accessory=angry,What does it take to undress this guy?!
+-2-female_removing_accessory=calm,~name~ strip some more... Please!
+-2-female_removed_accessory=angry,Look, I don't have anything against you, but you're losing your ~clothing~?!
+-2-female_removed_accessory=angry,What does it take to undress this chick?! You have too many accessories on!
+
+#Finished
+-1-male_removing_accessory=angry,Only your ~clothing~? I just got my self off and this is what I get? So unfair!
+-1-male_removed_accessory=sad,I really tried to enjoy that. Tried and failed.
+-1-female_removing_accessory=angry,Only your ~clothing~? I just got my self off and this is what I get? So unfair!
+-1-female_removed_accessory=sad,Not cool. You need to strip more, ~name~.
+
+##another character is removing minor clothing items
+#Fully Clothed
+0-male_removing_minor=calm,Sure. I can appreciate the effort.
+0-male_removed_minor=interested,Just do that a few more times, okay?
+0-female_removing_minor=calm,It's something.
+0-female_removed_minor=interested,Just do that a few more times, okay?
+
+#Lost Boots
+1-male_removing_minor=sad,Is it too much to hope for a lot more skin?
+1-male_removed_minor=calm,I guess your ~clothing~ is okay. I've only lost my boots after all.
+1-female_removing_minor=sad,Is it too much to hope for a lot more skin?
+1-female_removed_minor=calm,I guess it was. Get ready to shed more next round, missy!
+
+#Lost Socks
+2-male_removing_minor=sad,Is it too much to hope for a lot more skin?
+2-male_removed_minor=calm,I guess your ~clothing~ is okay for now. I haven't lost that much after all.
+2-female_removing_minor=sad,Is it too much to hope for a lot more skin?
+2-female_removed_minor=calm,I guess it was. Get ready to shed more next round, missy!
+
+#Lost Wristbands
+3-male_removing_minor=sad,Is it too much to hope for a lot more skin?
+3-male_removed_minor=calm,I guess your ~clothing~ is okay for now. I haven't lost that much after all.
+3-female_removing_minor=sad,Is it too much to hope for a lot more skin?
+3-female_removed_minor=calm,I guess it was. Get ready to shed more next round, missy!
+
+#Lost Jacket
+4-male_removing_minor=sad,Just taking off your ~clothing~? Strip some more while you are at it!
+4-male_removed_minor=sad,Come on ~name~, you need to get naked before I do!
+4-female_removing_minor=sad,Just taking off your ~clothing~? Strip some more while you are at it!
+4-female_removed_minor=sad,Come on ~name~, you need to get naked before I do!
+
+#Lost Shirt
+5-male_removing_minor=sad,Only your ~clothing~? I'm standing here without a shirt on!
+5-male_removed_minor=sad,I wish you would take off more, ~name~. You need to put on a show for us.
+5-female_removing_minor=sad,Only your ~clothing~? I'm standing here without a shirt on!
+5-female_removed_minor=sad,Come on ~name~, you need to get naked before I do!
+
+#Lost Pants
+6-male_removing_minor=sad,Only your ~clothing~? I'm standing here in my underwear!
+6-male_removed_minor=sad,I wish you would take off more, ~name~. You need to put on a show for us.
+6-female_removing_minor=sad,Only your ~clothing~? I'm standing here in my underwear!
+6-female_removed_minor=sad,Come on ~name~, you need to get naked before I do!
+
+#Lost Bra
+7-male_removing_minor=calm,Taking off your ~clothing~? That means we are getting closer to the good stuff.
+7-male_removed_minor=sad,Come on, ~name~. That's one of the saddest strippings I've ever seen.
+7-female_removing_minor=calm,Taking off your ~clothing~? That means we are getting closer to the good stuff.
+7-female_removed_minor=sad,Come on, ~name~. That's one of the saddest strippings I've ever seen.
+
+#Lost Panties/Fully Nude
+-3-male_removing_minor=sad,Just taking off your ~clothing~? Strip some more while you are at it!
+-3-male_removed_minor=sad,Come on ~name~, you need to get naked like me.
+-3-female_removing_minor=annoyed,Oh, yeah, sure. This seems totally fair.
+-3-female_removed_minor=sad,Come on ~name~, you need to get naked like me.
+
+#Masturbating
+-2-male_removing_minor=sad,I'm flicking my bean and you are just taking off your ~clothing~? There is no balance here.
+-2-male_removed_minor=sad,I need to see more than that...
+-2-female_removing_minor=sad,I'm flicking my bean and you are just taking off your ~clothing~? There is no balance here.
+-2-female_removed_minor=horny,I'll just have to let my imagination run wild then...
+
+#Finished
+-1-male_removing_minor=sad,Just your ~clothing~? You are no fun...
+-1-male_removed_minor=sad, Oh frog-squirrels!
+-1-female_removing_minor=sad,Just your ~clothing~? You are no fun...
+-1-female_removed_minor=sad,Leaves from the vine, falling so slow...
+
+##another character is removing major clothes
+#Fully Clothed
+0-male_removing_major=happy,WOAH! ~name~ is taking off his ~clothing~ before I've even taken off a single article. I must be a cardbender or something!
+0-male_removed_major=happy,Hey, nice! That's what I'm talking about!
+0-female_removing_major=happy,WOAH! ~name~ is taking off her ~clothing~ before I've even taken off a single article. I must be a cardbender or something!
+0-female_removed_major=happy,Hey, nice! That's what I'm talking about!
+
+#Lost Boots
+1-male_removing_major=happy,WOAH! ~name~ is taking off his ~clothing~ this early. I must be a cardbender or something!
+1-male_removed_major=happy,Hey, nice! That's what I'm talking about!
+1-female_removing_major=happy,Don't mind me. I'm just going to watch and enjoy.
+1-female_removed_major=happy,What can I say? Those that play well are rewarded!
+
+#Lost Socks
+2-male_removing_major=happy,WOAH! ~name~ is taking off his ~clothing~ this early. I must be a cardbender or something!
+2-male_removed_major=happy,Hey, nice! That's what I'm talking about!
+2-female_removing_major=happy,WOAH! ~name~ is taking off her ~clothing~ this early. I must be a cardbender or something!
+2-female_removed_major=happy,Hey, nice! That's what I'm talking about!
+
+#Lost Wristbands
+3-male_removing_major=excited,What are we waiting for, ~name~? Take it off!
+3-male_removed_major=interested,I got to admit, I'm impressed.
+3-female_removing_major=excited,What are we waiting for, ~name~? Take it off!
+3-female_removed_major=interested,I got to admit, I'm impressed.
+
+#Lost Jacket
+4-male_removing_major=happy,This is the part I was looking forward to.
+4-male_removed_major=excited,Tenzin never trained me to handle this!
+4-female_removing_major=happy,This is the part I was looking forward to.
+4-female_removed_major=excited,Tenzin never trained me to handle this!
+
+#Lost Shirt
+5-male_removing_major=interested,And thank you sir!
+5-male_removed_major=happy,Seriously, thanks.
+5-female_removing_major=interested,Yes! I've been waiting to see you take off your ~clothing~.
+5-female_removed_major=horny,You're hotter than Ember Island, girl!
+
+#Lost Pants
+6-male_removing_major=excited,I took it off... So you should too, ~name~.
+6-male_removed_major=horny,Bam. ~Clothing~ gone. That wasn't so hard, was it?
+6-female_removing_major=excited,I took it off... So you should too, ~name~.
+6-female_removed_major=interested,You look a little damp there, ~name~. Are you enjoying the game?
+
+#Lost Bra
+7-male_removing_major=excited,What are we waiting for, ~name~? Take it off!
+7-male_removed_major=horny,Is that a boomerang in your pocket, or do you just like seeing me topless?
+7-female_removing_major=excited,What are we waiting for, ~name~? Take it off!
+7-female_removed_major=interested,You look a little damp there, ~name~. Are you enjoying the game?
+
+#Lost Panties/Fully Nude
+-3-male_removing_major=excited,Nice ~name~! Strip nude just like me!
+-3-male_removed_major=horny,Is that a boomerang in your pocket, or do you just like seeing me naked?
+-3-female_removing_major=excited,Nice ~name~! Strip nude just like me!
+-3-female_removed_major=interested,You look a little damp there, ~name~. Are you enjoying the game?
+
+#Masturbating
+-2-male_removing_major=excited,Yes! Some eye candy for me, I'm gonna need this...
+-2-male_removed_major=sad,You're  not going to strip more? Come on ~name~, I need you to strip more than  just your ~clothing~ right now. I want to see your dick...
+-2-female_removing_major=excited,Yes! Some eye candy for me, I'm gonna need this...
+-2-female_removed_major=sad,You're  not going to strip more? Come on ~name~, I need you to strip more than  just your ~clothing~ right now. I want to see your pussy...
+
+#Finished
+-1-male_removing_major=excited,Nice ~name~! Strip nude just like me!
+-1-male_removed_major=horny,Nice, but you stopped before the best part!
+-1-female_removing_major=excited,Nice ~name~! Strip nude just like me!
+-1-female_removed_major=horny,Nice, but you stopped before the best part!
+
+##another character is removing important clothes
+#Fully Clothed
+0-male_chest_will_be_visible=excited,Getting shirtless so soon? I must be really good at this game.
+0-male_chest_is_visible=happy,I'm so lucky I didn't have to strip for this. I can stare all I want.
+0-male_crotch_will_be_visible=excited,You're gonna whip it out already, ~name~? I haven't even stripped yet, it might not be hard yet!
+0-male_small_crotch_is_visible=awkward,That's pretty embarrassing. It's so small!
+0-male_medium_crotch_is_visible=horny,I didn't even have to strip to see this! Nice!
+0-male_large_crotch_is_visible=shocked,The world isn't safe as long as you have that weapon!
+0-male_large_crotch_is_visible=shocked,Wow! I didn't even have to strip to see a HUGE cock like that! I love this game!
+
+0-female_chest_will_be_visible=excited,Showing your breasts so soon, ~name~? I haven't even taken off my boots yet.
+0-female_small_chest_is_visible=interested,I can't complain. I get to match a pair of sevens to see a strip show!
+0-female_medium_chest_is_visible=happy,These are nice, but I think mine are bigger. Too bad you don't get to see them!
+0-female_large_chest_is_visible=horny,They're beautiful!
+0-female_crotch_will_be_visible=horny,Be the leaf. Or, in this case, remove the leaf.
+0-female_crotch_will_be_visible=shocked,Already removing your panties? That was fast!
+0-female_crotch_is_visible=shocked,You look a little wet. You must like getting naked in front of us.
+0-female_crotch_is_visible=shocked,I haven't even stripped at all and you are showing us all your pussy. This is a crazy game!
+
+#Lost Boots
+1-male_chest_will_be_visible=excited,Don't panic. We're just here to watch.
+1-male_chest_is_visible=horny,I'll join your taskforce anytime!
+1-male_crotch_will_be_visible=excited,You're gonna whip it out already, ~name~? I've barely stripped anything, it might not be hard yet!
+1-male_small_crotch_is_visible=awkward,No wonder you were so nervous around us!
+1-male_medium_crotch_is_visible=horny,Maybe if I stripped more it would get even bigger.
+1-male_large_crotch_is_visible=shocked,Wow. I've never seen one like that!
+
+1-female_chest_will_be_visible=interested,Oooh ~name~ has to show us all her boobs! I'm nowhere close to doing that.
+1-female_small_chest_is_visible=happy,Aw, cute. You remind me of Jinora.
+1-female_medium_chest_is_visible=interested,So pretty. So pretty and so cool!
+1-female_large_chest_is_visible=shocked,You have a natural gift. That's pretty lucky.
+1-female_crotch_will_be_visible=horny,Some girls just can't keep their panties on, can they ~name~?
+1-female_crotch_is_visible=horny,Nice hairbending! Very cute.
+
+#Lost Socks
+2-male_chest_will_be_visible=excited,I've been looking foward to this.
+2-male_chest_is_visible=horny,Taking off my socks was a cheap price for this view!
+2-male_crotch_will_be_visible=excited,You're gonna whip it out already, ~name~? I've barely stripped anything, it might not be hard yet!
+2-male_small_crotch_is_visible=awkward,Hey, it's okay. We were all a twelve-year-old boy once.
+2-male_medium_crotch_is_visible=horny,Ahem. Oh, hey, ~name~.
+2-male_medium_crotch_is_visible=horny,Maybe if I stripped more it would get even bigger.
+2-male_large_crotch_is_visible=horny,It's very impressive, Mr ~name~. I really want to see it in action now...
+
+2-female_chest_will_be_visible=interested,Oooh ~name~ has to show us all her boobs! I'm nowhere close to doing that.
+2-female_small_chest_is_visible=sad,You remind me of my twin cousins, Desna and Eska. Desna, specifically.
+2-female_medium_chest_is_visible=interested,So pretty. So pretty and so cool!
+2-female_large_chest_is_visible=shocked,You have a natural gift. That's pretty lucky.
+2-female_crotch_will_be_visible=horny,Be the leaf. Or, in this case, remove the leaf.
+2-female_crotch_is_visible=horny,Nice hairbending! Very cute.
+
+#Lost Wristbands
+3-male_chest_will_be_visible=excited,I've been looking foward to this.
+3-male_chest_is_visible=horny,I like it ~name~, I want to see some more next round and it looks like you don't have much left. Lucky me.
+3-male_crotch_will_be_visible=excited,Okay, let's see what you got!
+3-male_small_crotch_is_visible=awkward,Hey, it's okay. We were all a twelve-year-old boy once.
+3-male_medium_crotch_is_visible=horny,Maybe if I stripped more it would get even bigger.
+3-male_large_crotch_is_visible=horny,Now that's what I call a Fire Ferret!
+
+3-female_chest_will_be_visible=interested,Oooh ~name~ has to show us all her boobs! I'm nowhere close to doing that.
+3-female_small_chest_is_visible=happy,Aw, cute. You remind me of Jinora.
+3-female_medium_chest_is_visible=interested,So pretty. So pretty and so cool!
+3-female_large_chest_is_visible=shocked,Nice cabbages!
+3-female_crotch_will_be_visible=horny,Be the leaf. Or, in this case, remove the leaf.
+3-female_crotch_is_visible=horny,Nice hairbending! Very cute.
+
+#Lost Jacket
+4-male_chest_will_be_visible=excited,I've been looking foward to this.
+4-male_chest_is_visible=horny,I'm impressed!
+4-male_chest_is_visible=horny,I like it ~name~, I want to see some more next round and it looks like you don't have much left. Lucky me.
+4-male_crotch_will_be_visible=excited,What do you think is down there?
+4-male_small_crotch_is_visible=awkward,Hey, it's okay. We were all a twelve-year-old boy once.
+4-male_medium_crotch_is_visible=horny,Maybe if I stripped more it would get even bigger.
+4-male_large_crotch_is_visible=shocked,Whoa! Unbelievable! IT'S HUGE!
+
+4-female_chest_will_be_visible=interested,Oooh, ~name~ has to show us all her boobs! I'm nowhere close to doing that.
+4-female_small_chest_is_visible=awkward,Those are pretty small, ~name~. I almost thought you were a guy!
+4-female_small_chest_is_visible=happy,Aw, cute. You remind me of Jinora.
+4-female_medium_chest_is_visible=interested,So pretty. So pretty and so cool!
+4-female_large_chest_is_visible=shocked,Nice cabbages!
+4-female_crotch_will_be_visible=horny,Be the leaf. Or, in this case, remove the leaf.
+4-female_crotch_is_visible=happy,Moon us, girlfriend!
+
+#Lost Shirt
+5-male_chest_will_be_visible=excited,I've been looking foward to this.
+5-male_chest_is_visible=horny,I like it very much ~name~, I want to see some more next round and it looks like you don't have much left. Lucky me.
+5-male_crotch_will_be_visible=excited,YES! Finally! I mean... Thank you.
+5-male_small_crotch_is_visible=sad,Is that all you got? It doesn't get any bigger?
+5-male_medium_crotch_is_visible=horny,I could already sense your whole body with my earthbending. Not bad!
+5-male_large_crotch_is_visible=shocked,Whoa! Unbelievable!
+
+5-female_chest_will_be_visible=interested,Oooh ~name~ has to show us all her boobs!
+5-female_small_chest_is_visible=awkward,Looks like mine are bigger, don't get too envious now.
+5-female_medium_chest_is_visible=horny,I like your nipples, very perky!
+5-female_large_chest_is_visible=shocked,Nice cabbages!
+5-female_large_chest_is_visible=shocked,They sure do bounce a lot!
+5-female_crotch_will_be_visible=horny,Be the leaf. Or, in this case, remove the leaf.
+5-female_crotch_is_visible=happy,Moon us, girlfriend!
+
+#Lost Pants
+6-male_chest_will_be_visible=excited,I've been looking foward to this.
+6-male_chest_is_visible=horny,I like it very much ~name~, I want to see some more next round and it looks like you don't have much left. Lucky me.
+6-male_crotch_will_be_visible=excited,YES! Finally! I mean... Thank you.
+6-male_crotch_will_be_visible=excited,I'm glad you are getting naked before me ~name~.
+6-male_small_crotch_is_visible=calm,You'll never be a star in the "movers", but I'm only mildly disappointed.
+6-male_medium_crotch_is_visible=horny,I could already sense your whole body with my earthbending. Not bad!
+6-male_large_crotch_is_visible=horny,Now that's a cannon! And believe me, I've handled some pretty big cannons. I wonder how far you can shoot yours...
+6-male_large_crotch_is_visible=horny,It looks like I'm the Avatar and you're Titanic!
+
+6-female_chest_will_be_visible=interested,Oooh ~name~ has to show her boobs first! I got lucky this round!
+6-female_small_chest_is_visible=awkward,Looks like mine are bigger; don't get too envious now.
+6-female_medium_chest_is_visible=horny,I like your nipples, very perky!
+6-female_large_chest_is_visible=shocked,Those are huge! Big and bouncy!
+6-female_large_chest_is_visible=horny,Those  are out of this world! As the bridge between worlds, I'm kinda an  expert on these things.
+6-female_crotch_will_be_visible=horny,Be the leaf. Or, in this case, remove the leaf.
+6-female_crotch_is_visible=happy,Moon us, girlfriend!
+
+#Lost Bra
+7-male_chest_will_be_visible=excited ,Looks like we can both be topless together, ~name~.
+7-male_chest_is_visible=horny,Let's have nights like this more often. The poker part could be optional...
+7-male_crotch_will_be_visible=excited,I'm glad you are getting naked before me ~name~. Maybe everyone else won't stare at my tits so much with your dick out.
+7-male_small_crotch_is_visible=angry,WHAT?! Why isn't it bigger? I'm in front of you topless and you don't have a raging erection?
+7-male_medium_crotch_is_visible=horny,I can tell you've been staring at me topless, ~name~. That's a nice boner. Now it's my turn to do some staring.
+7-male_large_crotch_is_visible=horny,I can tell you've been staring at me topless, ~name~. Your dick is fully erect! Now it's my turn to do some staring.
+
+7-female_chest_will_be_visible=excited ,Looks like we can both be topless together, ~name~.
+7-female_small_chest_is_visible=happy,Ha! Mine are wayyyy bigger than yous!
+7-female_medium_chest_is_visible=happy,I can appreciate both feminine and masculine beauty. I guess you could call me an Equalist.
+7-female_large_chest_is_visible=horny,I bet we are both comparing each other right about now, ~name~.
+7-female_crotch_will_be_visible=excited,It's time to see your Red Lotus!
+7-female_crotch_is_visible=awkward,I'll probably be in your position soon, ~name~. I hope it's not too embarrassing.
+
+#Lost Panties/Fully Nude
+-3-male_chest_will_be_visible=interested,Finally! ~name~'s gonna start showing some real skin.
+-3-male_chest_will_be_visible=excited ,Looks like we can both be topless together, ~name~.
+-3-male_chest_is_visible=happy,Nice body, ~name~. I wish you would show the rest since I'm standing here completely naked.
+-3-male_chest_is_visible=embarrassed,Even  though we are both topless, I think you are still getting a wayyyy  better deal. Maybe if you flashed me your cock we could be even... for  now.
+-3-male_crotch_will_be_visible=excited,Your turn, ~name~. Get naked just like me. We can streak around together.
+-3-male_crotch_will_be_visible=interested,I wonder if ~name~ has more hair than I do down there. I guess there's only one way to find out.
+-3-male_small_crotch_is_visible=angry,WHAT?! Why isn't it bigger? I'm in front of you totally naked and you don't have a raging erection?
+-3-male_medium_crotch_is_visible=horny,I can tell you've been staring at me nude, ~name~. That's a nice boner. Now it's my turn to do some staring.
+-3-male_large_crotch_is_visible=horny,I can tell you've been staring at me nude, ~name~. Your dick is fully erect! Now it's my turn to do some staring.
+
+-3-female_chest_will_be_visible=excited ,Looks like we can both show our tits together, ~name~.
+-3-female_small_chest_is_visible=happy,Ha! Mine are wayyyy bigger than yous!
+-3-female_medium_chest_is_visible=happy,I can appreciate both feminine and masculine beauty. I guess you could call me an Equalist.
+-3-female_large_chest_is_visible=horny,I bet we are both comparing each other right about now, ~name~.
+-3-female_crotch_will_be_visible=excited,Your turn, ~name~. Get naked just like me. We can streak around together.
+-3-female_crotch_will_be_visible=awkward,I wonder if you are hairy down there like me...
+-3-female_crotch_will_be_visible=interested,I wonder if ~name~ has more hair than I do down there. I guess there's only one way to find out.
+-3-female_crotch_is_visible=horny,We should do some bending together, ~name~. If you know what I mean.
+
+#Masturbating
+-2-male_chest_will_be_visible=excited,Oh, yes! I need this!
+-2-male_chest_is_visible=horny,That is definitely helping!
+-2-male_crotch_will_be_visible=excited,Sweet! This was totally worth it!
+-2-male_small_crotch_is_visible=horny,Still a good replacement for my fingers.
+-2-male_medium_crotch_is_visible=horny,Guess what I'm thinking about!
+-2-male_large_crotch_is_visible=horny,With that massive dick out I should finish any minute now...
+
+-2-female_chest_will_be_visible=excited,It's about time! Let's see those titties!
+-2-female_small_chest_is_visible=happy,Ha! Mine are wayyyy bigger than yours!
+-2-female_medium_chest_is_visible=horny,Guess what I'm thinking about!
+-2-female_large_chest_is_visible=shocked,WOAH! Those might be bigger than mine! Impressive!
+-2-female_crotch_will_be_visible=excited,It's finally time!
+-2-female_crotch_is_visible=horny,Hey, interested in joining Team Avatar? It looks like we both have an opening.
+
+#Finished
+-1-male_chest_will_be_visible=excited,It's about time, ~name~. Strip down to my level!
+-1-male_chest_is_visible=horny,Oh no, he's hot!
+-1-male_chest_is_visible=horny,I like it very much ~name~, I want to see some more next round and it looks like you don't have much left. Lucky me.
+-1-male_crotch_will_be_visible=excited,It's about time you got naked like me! Pull out that dick!
+-1-male_small_crotch_is_visible=sad,I'm not impressed. Pathetic.
+-1-male_medium_crotch_is_visible=horny,I wish I had that to look at while I was masturbating.
+-1-male_large_crotch_is_visible=horny,I wish I had that to look at while I was masturbating. I would have finished in seconds!
+
+-1-female_chest_will_be_visible=excited,It's about time! Let's see those titties!
+-1-female_small_chest_is_visible=happy,Ha! Mine are wayyyy bigger than yous!
+-1-female_medium_chest_is_visible=horny,Guess what I'm thinking about!
+-1-female_large_chest_is_visible=shocked,WOAH! Those might be bigger than mine! Impressive!
+-1-female_crotch_will_be_visible=excited,It's finally time!
+-1-female_crotch_will_be_visible=excited,Show it all just like me, girlfriend!
+-1-female_crotch_is_visible=horny,Hey, interested in joining Team Avatar? It looks like we both have an opening.
+
+##other player is masturbating
+#Fully Clothed
+0-male_must_masturbate=horny,It's about time you showed us some "bending", don't you think?
+0-male_start_masturbating=horny,Wow you really got right to it, ~name~. Do you do this a lot?
+0-male_masturbating=horny,You're going really fast. That must feel really good.
+0-male_finished_masturbating=shocked,That was quick, ~name~! You must like performing in front of an audience.
+
+0-female_must_masturbate=horny,It's about time you showed us some "bending", don't you think?
+0-female_start_masturbating=horny,Wow you really got right to it, ~name~. Do you do this a lot?
+0-female_masturbating=calm,Can't talk. Meditating.
+0-female_finished_masturbating=shocked,What? How is it over already? 
+
+#Lost Boots
+1-male_must_masturbate=horny,It's about time you showed us some "bending", don't you think?
+1-male_start_masturbating=horny,Wow you really got right to it, ~name~. Do you do this a lot?
+1-male_masturbating=horny,You're going really fast. That must feel really good.
+1-male_finished_masturbating=shocked,That was quick, ~name~! You must like performing in front of an audience.
+
+1-female_must_masturbate=horny,It's about time you showed us some "bending", don't you think?
+1-female_start_masturbating=horny,Wow you really got right to it, ~name~. Do you do this a lot?
+1-female_masturbating=horny,I've been too sheltered. Tonight is amazing!
+1-female_finished_masturbating=shocked,That was quick, ~name~! You must like performing in front of an audience.
+
+#Lost Socks
+2-male_must_masturbate=interested,I mean, your dick is out on display. Might as well put it to some use.
+2-male_start_masturbating=horny,Nice ~name~! That's what I like to see!
+2-male_masturbating=horny,It's hard to focus on these cards while you are stroking your dick in front of me, ~name~.
+2-male_finished_masturbating=shocked,That cumshot makes me wonder if semen bending is a thing. Are you a bender, ~name~?
+
+2-female_must_masturbate=excited,~name~, do the thing!
+2-female_start_masturbating=horny,It's hard to focus on these cards while you are rubbing your clit like that.
+2-female_masturbating=horny,This is starting to feel more like 'The Lezzing of Korra'...
+2-female_finished_masturbating=happy,The Avatar thanks you for your loyal service.
+
+#Lost Wristbands
+3-male_must_masturbate=excited,What can I say? I'm pumped up to see this!
+3-male_must_masturbate=interested,I mean, your dick is out on display. Might as well put it to some use.
+3-male_start_masturbating=horny,Nice ~name~! That's what I like to see!
+3-male_masturbating=horny,It's hard to focus on these cards while you are stroking your dick in front of me, ~name~.
+3-male_finished_masturbating=shocked,What did I think? That was amazing!
+
+3-female_must_masturbate=excited,What can I say? I'm pumped up to see this!
+3-female_start_masturbating=excited,This is so exciting!
+3-female_masturbating=horny,This is starting to feel more like 'The Lezzing of Korra'...
+3-female_finished_masturbating=shocked,What did I think? That was amazing!
+
+#Lost Jacket
+4-male_must_masturbate=interested,I mean, your dick is out on display. Might as well put it to some use.
+4-male_start_masturbating=horny,Nice ~name~! That's what I like to see!
+4-male_masturbating=horny,It's hard to focus on these cards while you are stroking your dick in front of me, ~name~.
+4-male_finished_masturbating=shocked,That cumshot makes me wonder if semen bending is a thing. Are you a bender, ~name~?
+
+4-female_must_masturbate=excited,What can I say? I'm pumped up to see this!
+4-female_start_masturbating=excited,This is so exciting!
+4-female_masturbating=horny,This is starting to feel more like 'The Lezzing of Korra'...
+4-female_finished_masturbating=shocked,What did I think? That was amazing!
+
+#Lost Shirt
+5-male_must_masturbate=interested,I mean, your dick is out on display. Might as well put it to some use.
+5-male_start_masturbating=horny,I  hope my cleavage is enough to get you started. Maybe you'll get lucky  and I'll lose the next few hand and give you some more inspiration.
+5-male_masturbating=horny,It's hard to focus on these cards while you are stroking your dick in front of me, ~name~.
+5-male_masturbating=horny,Looks like you are doing just fine.
+5-male_masturbating=happy,It's throbbing. Hot!
+5-male_finished_masturbating=shocked,That cumshot makes me wonder if semen bending is a thing. Are you a bender, ~name~?
+
+5-female_must_masturbate=excited,I don't see an opening, but I'm about to!
+5-female_start_masturbating=excited,It's time for a touching scene, and I know just the woman for the job!
+5-female_masturbating=horny,This is starting to feel more like 'The Lezzing of Korra'...
+5-female_finished_masturbating=horny,Yeah, that was pretty awesome!
+
+#Lost Pants
+6-male_must_masturbate=interested,I mean, your dick is out on display. Might as well put it to some use.
+6-male_start_masturbating=horny,I  hope my underwear is enough to get you started. Maybe you'll get lucky  and I'll lose the next hand and give you some real inspiration.
+6-male_masturbating=horny,Wow you are going really fast, ~name~! Do you like what you see? 
+6-male_finished_masturbating=shocked,That cumshot makes me wonder if semen bending is a thing. Are you a bender, ~name~?
+
+6-female_must_masturbate=excited,I don't see an opening, but I'm about to!
+6-female_start_masturbating=excited,It's time for a touching scene, and I know just the woman for the job!
+6-female_masturbating=horny,Wow, nice! You're a natural at this.
+6-female_masturbating=horny,I can see this is making you VERY wet. You must be a waterbender!
+6-female_masturbating=horny,This is starting to feel more like 'The Lezzing of Korra'...
+6-female_finished_masturbating=horny,Yeah, that was pretty awesome!
+
+#Lost Bra
+7-male_must_masturbate=interested,I mean, your dick is out on display. Might as well put it to some use.
+7-male_start_masturbating=horny,Check me out all you like. I know it helps!
+7-male_masturbating=horny,Wow you are going really fast, ~name~! Do you like what you see? 
+7-male_finished_masturbating=horny,Are you really just going to leave your dick and hands covered in cum? You need to clean up. I wonder... I might be able to...
+
+7-female_must_masturbate=excited,I don't see an opening, but I'm about to!
+7-female_start_masturbating=excited,It's time for a touching scene, and I know just the woman for the job!
+7-female_masturbating=horny,This is starting to feel more like 'The Lezzing of Korra'...
+7-female_finished_masturbating=horny,Yeah, that was pretty awesome!
+
+#Lost Panties/Fully Nude
+-3-male_must_masturbate=horny,Why don't you go first, ~name~?
+-3-male_start_masturbating=horny,Check me out all you like. I know it helps!
+-3-male_masturbating=horny,Wow you are going really fast, ~name~! Do you like what you see? 
+-3-male_finished_masturbating=horny,Are you really just going to leave your dick and hands covered in cum? You need to clean up. I wonder... I might be able to...
+
+-3-female_must_masturbate=horny,Why don't you go first, ~name~?
+-3-female_start_masturbating=excited,It's time for a touching scene, and I know just the woman for the job!
+-3-female_masturbating=horny,Wow ~name~, you're a natural!
+-3-female_finished_masturbating=horny,Yeah, that was pretty awesome!
+
+#Masturbating
+-2-male_must_masturbate=horny,Why don't you try it with me, ~name~?
+-2-male_start_masturbating=horny,Yes! Join me ~name~! It feels great!
+-2-male_masturbating=horny,This feels so much better doing it with you.
+-2-male_finished_masturbating=horny,Are you really just going to leave your dick and hands covered in cum? You need to clean up. I wonder... I might be able to...
+
+-2-female_must_masturbate=horny,Why don't you try it with me, ~name~?
+-2-female_start_masturbating=horny,Yes! Join me ~name~! It feels great!
+-2-female_masturbating=horny,This is starting to feel more like 'The Lezzing of Korra'...
+-2-female_masturbating=horny,This feels so much better doing it with you.
+-2-female_finished_masturbating=horny,Are you really just going to leave your pussy all sticky? You need to clean up. I wonder... I might be able to...
+
+#Finished
+-1-male_must_masturbate=horny,Don't cover it up, ~name~! We need to see everything!
+-1-male_start_masturbating=horny,There you go! Keep it up!
+-1-male_masturbating=horny,I'm so glad I came today! Seeing this makes me want to join in the fun.
+-1-male_finished_masturbating=horny,Are you really just going to leave your dick and hands covered in cum? You need to clean up. I wonder... I might be able to...
+-1-male_finished_masturbating=horny,Since we are both covered in our juices we should take a bath... together.
+
+-1-female_must_masturbate=horny,About time! This is what I came for!
+-1-female_start_masturbating=horny,Try waterbending to increase the sensation. I can help if you're not a natural bender.
+-1-female_masturbating=horny,I'm so glad I came today! Seeing this makes me want to join in the fun.
+-1-female_finished_masturbating=horny,If you'd like to know how a real pro does it, I could give you some private lessons.
+
+
+#ending data
+#this is optional. Delete it if you don't have an ending thought up yet.
+#you can also have multiple endings.
+#each one starts with the "ending" entry
+#the tabs aren't necessary, but make it easier to read.
+ending=This is the title of the character's ending, and the start of a new ending
+        ending_gender="male", "female", or "any". This is the gender of player that can see the ending
+
+        #each ending has a number of screens. each screen has an image, and one or more text boxes
+        #the entry "screen" marks the start of a new screen
+        screen=filename (including extension) of the background image for a screen. Also the start of a new screen
+
+                #the text boxes in a screen
+                #the entry "text" starts a new text box
+                text=The text in the text box.
+                 x=The x-position of the text box. Specifically, the position of the  text box's left side. This can be a percentage, or the word "centered"
+                y=The y-position of the top of the text box. Must be a percentage.
+                width=The width of a text box. This is optional. Must be a percentage.
+                 arrow="up", "down", "left", or "right". Gives the text box a dialogue  arrow in the specified direction. Can be left out, if you don't want the  text box to be an arrow.
+
+        #this screen is an example
+        #the filename is the image you want to use
+        screen=example-filename.png
+
+                text=This is text that will be seen by the player. It has a width of 34% and an arrow pointing down.
+                x=10%
+                y=20%
+                width=34%
+                arrow=right
+
+                text=This is a centered text box. It has the default width and an arrow pointing right.
+                x=centered
+                y=50%
+                arrow=right
+
+                text=This third text box has minimum amount of values specified. It uses the default width, and has no arrow.
+                x=75%
+                y=50%
+
+#if you want additional endings, start the new one with the "ending" line
+

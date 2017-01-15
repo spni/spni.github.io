@@ -496,7 +496,7 @@ function determineForfeitSituation (player) {
 	
 	/* return appropriate trigger */
 	if (out > 0) {
-		return PLAYER_START_MASTURBATING;
+		return PLAYER_MUST_MASTURBATE;
 	} else {
 		return PLAYER_MUST_MASTURBATE_FIRST;
 	}
