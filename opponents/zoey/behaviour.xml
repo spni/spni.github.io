@@ -223,8 +223,11 @@
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-happy.png">Alright! Time to see how freaky you are, ~name~!</state>
 			</case>
-			<case tag="female_removing_accessory" target="mia"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+			<case tag="female_removing_accessory" target="mia">
 				<state img="0-sad.png">Hey, I just thought of this: if you're a medium, does that mean you can talk to zombies?</state>
+			</case>
+			<case tag="female_removing_accessory" target="blackrose" targetState=0>
+				<state img="0-happy.png">Tell us, BlackRose - is it true what they say about girls who wear chokers?</state>
 			</case>
 			<case tag="female_removing_accessory" filter="exhibitionist"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-shocked.png">I was expecting something a little more... risque from someone with your reputation.</state>
@@ -242,9 +245,7 @@
 				<state img="0-interested.png">I gotta say, the shimmy as you strip makes up for the lack of exposed skin.</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="0-loss.png">
-					Finally gonna see some underwear! Wait, I don't mean 'finally'. 'Suddenly'. That's the word I wanted!
-				</state>
+				<state img="0-loss.png">Finally gonna see some underwear! Wait, I don't mean 'finally'. 'Suddenly'. That's the word I wanted!</state>
 			</case>
 			<case tag="female_removing_major" filter="kind"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="0-sad.png">I feel bad about beating you this fast. Not bad enough to stop you, though.</state>
@@ -597,6 +598,9 @@
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="1-happy.png">Alright! Time to see how freaky you are, ~name~!</state>
+			</case>
+			<case tag="female_removing_accessory" target="blackrose" targetState=0>
+				<state img="1-happy.png">Tell us, BlackRose - is it true what they say about girls who wear chokers?</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-calm.png">You could at least dance to make it interesting or something.</state>
@@ -967,9 +971,10 @@
 				<state img="2-interested.png">I know a guy who'd pay through the nose to see this.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
-				<state img="2-happy.png">
-					Alright! Time to see how freaky you are, ~name~!
-				</state>
+				<state img="2-happy.png">Alright! Time to see how freaky you are, ~name~!</state>
+			</case>
+			<case tag="female_removing_accessory" target="blackrose" targetState=0>
+				<state img="2-happy.png">Tell us, BlackRose - is it true what they say about girls who wear chokers?</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-calm.png">
@@ -987,14 +992,13 @@
 				</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="2-interested.png">
-					Finally gonna see some underwear!
-				</state>
+				<state img="2-interested.png">Finally gonna see some underwear!</state>
+			</case>
+			<case tag="female_removing_major" target="blackrose" targetState=4>
+				<state img="2-interested.png">Need a hand there, BlackRose?</state>
 			</case>
 			<case tag="female_removing_major" filter="kind"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="2-sad.png">
-					I feel bad about beating you this fast. Not bad enough to stop you, though.
-				</state>
+				<state img="2-sad.png">I feel bad about beating you this fast. Not bad enough to stop you, though.</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="2-loss.png">
@@ -1349,9 +1353,7 @@
 				<state img="3-interested.png">I know a guy who'd pay through the nose to see this.</state>
 			</case>
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
-				<state img="3-sad.png">
-					So that's what you're going for? Really? Not gonna... spice it up at all?
-				</state>
+				<state img="3-sad.png">So that's what you're going for? Really? Not gonna... spice it up at all?</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-calm.png">You could at least dance to make it interesting or something.</state>
@@ -1367,6 +1369,9 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-interested.png">Finally gonna see some underwear!</state>
+			</case>
+			<case tag="female_removing_major" target="blackrose" targetState=4>
+				<state img="3-interested.png">Need a hand there, BlackRose?</state>
 			</case>
 			<case tag="female_removing_major" filter="kind"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-sad.png">I feel bad about beating you this fast. Not bad enough to stop you, though.</state>
@@ -1740,9 +1745,10 @@
 				<state img="4-happy.png">Plain white socks, pleated skirt... you're like a Weeaboo wet dream.</state>
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
-				<state img="4-interested.png">
-					Finally gonna see some underwear! I mean, other than mine.
-				</state>
+				<state img="4-interested.png">Finally gonna see some underwear! I mean, other than mine.</state>
+			</case>
+			<case tag="female_removing_major" target="blackrose" targetState=4>
+				<state img="4-interested.png">Need a hand there, BlackRose?</state>
 			</case>
 			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
 				<state img="4-awkward.png">You're really into this stripping thing, huh?</state>
@@ -2073,6 +2079,9 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="5-interested.png">Finally gonna see some underwear! I mean, other than mine.</state>
+			</case>
+			<case tag="female_removing_major" target="blackrose" targetState=4>
+				<state img="5-interested.png">Need a hand there, BlackRose?</state>
 			</case>
 			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
 				<state img="5-awkward.png">You're really into this stripping thing, huh?</state>
@@ -2413,6 +2422,9 @@
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="6-interested.png">Finally gonna see some underwear! I mean, other than mine.</state>
 			</case>
+			<case tag="female_removing_major" target="blackrose" targetState=4>
+				<state img="6-interested.png">Need a hand there, BlackRose?</state>
+			</case>
 			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
 				<state img="6-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
@@ -2744,6 +2756,9 @@
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="7-interested.png">Finally gonna see some underwear!</state>
 			</case>
+			<case tag="female_removing_major" target="blackrose" targetState=4>
+				<state img="7-interested.png">Need a hand there, BlackRose?</state>
+			</case>
 			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
 				<state img="7-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
@@ -3066,6 +3081,9 @@
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="8-interested.png">Finally gonna see some underwear!</state>
 			</case>
+			<case tag="female_removing_major" target="blackrose" targetState=4>
+				<state img="8-interested.png">Need a hand there, BlackRose?</state>
+			</case>
 			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
 				<state img="8-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
@@ -3358,6 +3376,9 @@
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="9-interested.png">Finally gonna see some underwear!</state>
 			</case>
+			<case tag="female_removing_major" target="blackrose" targetState=4>
+				<state img="9-interested.png">Need a hand there, BlackRose?</state>
+			</case>
 			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
 				<state img="9-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
@@ -3636,6 +3657,9 @@
 			</case>
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="10-interested.png">Finally gonna see some underwear!</state>
+			</case>
+			<case tag="female_removing_major" target="blackrose" targetState=4>
+				<state img="10-interested.png">Need a hand there, BlackRose?</state>
 			</case>
 			<case tag="female_removing_major" filter="exhibitionist"> <!-- a female player's chest will become visible -->
 				<state img="10-awkward.png">You're really into this stripping thing, huh?</state>
