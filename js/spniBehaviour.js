@@ -244,90 +244,181 @@ function updateBehaviour (player, tag, replace, content, opp) {
     else {
         // look for the best match
         var bestMatch = null;
+		var bestMatchPriority = -1;
+		
         for (var i = 0; i < states.length; i++) {
+
             var target =           states[i].attr("target");
             var filter =           states[i].attr("filter");
-	    var alsoPlaying =      states[i].attr("alsoPlaying");
-	    var hasHand =          states[i].attr("hasHand");
-            var oppHand =          states[i].attr("oppHand");
-            var targetStage =      states[i].attr("targetStage");
-            var alsoPlayingStage = states[i].attr("alsoPlayingStage");
-            
-            if (opp !== null && typeof target !== typeof undefined && target !== false) {
-                target = "opponents/" + target  + "/";
-                if (target === opp.folder) {
-		        if (typeof targetStage !== typeof undefined && targetStage !== false) {
-		            if (targetStage === opp.stage + '') {
-			        console.log("Best match is targetStage!");
-                                bestMatch = states[i];
-                                break;
-		            }
-		        }
-                        else {
-                            console.log("Best match is target!");
-                            bestMatch = states[i];
-                            break;
-		    }
-                }
-            }
-            else if (opp !== null && typeof filter !== typeof undefined && filter !== false) {
-                // check against tags
-                for (var j = 0; j < opp.tags.length; j++) {
+			var targetStage =      states[i].attr("targetStage");
+			var oppHand =          states[i].attr("oppHand");
+			var hasHand =          states[i].attr("hasHand");
+			var alsoPlaying =      states[i].attr("alsoPlaying");
+			var alsoPlayingStage = states[i].attr("alsoPlayingStage");
+			var alsoPlayingHand =  states[i].attr("alsoPlayingHand");
+			var totalMales =	   states[i].attr("totalMales");
+			var totalFemales =	   states[i].attr("totalFemales");
+			
+			var totalPriority = 0; // this is used to determine which of the states that
+									// doesn't fail any conditions should be used
+			
+			
+			///////////////////////////////////////////////////////////////////////
+			// go through different conditions required until one of them fails
+			// if none of them fail, then this state is considered for use with a certain priority
+			
+			// target (priority = 300)
+			if (opp !== null && typeof target !== typeof undefined && target !== false) {
+				target = "opponents/" + target + "/";
+				if (target === opp.folder) {
+					totalPriority += 300; 	// priority
+				}
+				else {
+					continue;				// failed "target" requirement
+				}
+			}
+			
+			// filter (priority = 150)
+			if (opp !== null && typeof filter !== typeof undefined && filter !== false) {
+				// check against tags
+				var found = false;
+                for (var j = 0; j < opp.tags.length && found === false; j++) {
                     if (filter === opp.tags[j]) {
-                        console.log("Best match is filter!");
-                        bestMatch = states[i];
+						totalPriority += 150;	// priority
+						found = true;
                     }
                 }
-            }
-	    else if (typeof alsoPlaying !== typeof undefined && alsoPlaying !== false) {
-	    	for (var j = 0; j < players.length; j++) {
-		    if (opp !== players[j]) {
-		    	if ("opponents/" + alsoPlaying + "/" === players[j].folder) {
-
-                            if (typeof alsoPlayingStage !== typeof undefined && alsoPlayingStage !== false) {
-                                if (alsoPlayingStage === players[j].stage + '')
-                                {
-                                    console.log("Best match is alsoPlayingStage!");
-                                    bestMatch = states[i];
-                                    break;
-                                }
-
-                            }
-                            else{
-				console.log("Best match is alsoPlaying!");
+				if (found === false) {
+					continue;				// failed "filter" requirement
+				}
+			}
+			
+			// targetStage (priority = 80)
+			if (opp !== null && typeof targetStage !== typeof undefined && targetStage !== false) {
+				if (targetStage === opp.stage + '') {
+					totalPriority += 80;		// priority
+				}
+				else {
+					continue;				// failed "targetStage" requirement
+				}
+			}
+			
+			// oppHand (priority = 30)
+			if (opp !== null && typeof oppHand !== typeof undefined && oppHand !== false) {
+				for (var q = 0; q < players.length; q++)
+				{
+					if (opp === players[q]) {
+						if (handStrengthToString(hands[q].strength) === oppHand) {
+							totalPriority += 30;	// priority
+						}
+						else {
+							continue;				// failed "oppHand" requirement
+						}
+					}
+				}
+			}
+			
+			// hasHand (priority = 20)
+			if (typeof hasHand !== typeof undefined && hasHand !== false) {
+				if (handStrengthToString(hands[player].strength) === hasHand) {
+					totalPriority += 20;		// priority
+				}
+				else {
+					continue;				// failed "hasHand" requirement
+				}
+			}
+			
+            // alsoPlaying, alsoPlayingStage, alsoPlayingHand (priority = 100, 40, 5)
+			if (typeof alsoPlaying !== typeof undefined && alsoPlaying !== false) {
+			
+				var foundEm = false;
+				var j = 0;
+				for (j = 0; j < players.length && foundEm === false; j++) {
+					if (opp !== players[j]) {
+						if ("opponents/" + alsoPlaying + "/" === players[j].folder) {
+							totalPriority += 100; 	// priority
+							foundEm = true;
+						}
+					}
+				}
+				
+				if (foundEm === false)
+				{
+					continue;				// failed "alsoPlaying" requirement
+				}
+				else
+				{
+					if (typeof alsoPlayingStage !== typeof undefined && alsoPlayingStage !== false) {
+						if (alsoPlayingStage === players[j].stage + '')
+						{
+							totalPriority += 40;	// priority
+						}
+						else {
+							continue;		// failed "alsoPlayingStage" requirement
+						}
+					}
+					if (typeof alsoPlayingHand !== typeof undefined && alsoPlayingHand !== false) {
+						if (handStrengthToString(hands[j].strength) === alsoPlayingHand)
+						{
+							totalPriority += 5;		// priority
+						}
+						else {
+							continue;		// failed "alsoPlayingHand" requirement
+						}
+					}
+				}
+			}
+			
+			// totalMales (priority = 5)
+			if (typeof totalMales !== typeof undefined && totalMales !== false) {
+				var count = 0;
+				for (var q = 0; q < players.length; q++)
+				{
+					if (players[q].gender === eGender.MALE)
+					{
+						count++;
+					}
+				}
+				if (count + '' === totalMales)
+				{
+					totalPriority += 5;		// priority
+				}
+				else {
+					continue;		// failed "totalMales" requirement
+				}
+			}
+			
+			// totalFemales (priority = 5)
+			if (typeof totalFemales !== typeof undefined && totalFemales !== false) {
+				var count = 0;
+				for (var q = 0; q < players.length; q++)
+				{
+					if (players[q].gender === eGender.FEMALE)
+					{
+						count++;
+					}
+				}
+				if (count + '' === totalFemales)
+				{
+					totalPriority += 5;		// priority
+				}
+				else {
+					continue;		// failed "totalFemales" requirement
+				}
+			}
+			
+			
+			// Finished going through - if a state has still survived up to this point,
+			// it's then determined if it's the highest priority so far
+			
+			if (totalPriority > bestMatchPriority)
+			{
+				console.log("New best match with " + totalPriority + " priority.");
 				bestMatch = states[i];
-				break;
-                            }
-		    	}
-		    }
-
-		}
-
-	    }
-	    else if (typeof hasHand !== typeof undefined && hasHand !== false) {
-		if (handStrengthToString(hands[player].strength) === hasHand) {
-			console.log("Best match is hasHand!");
-                        bestMatch = states[i];
-                        break;
-                }
-
-	    }
-            else if (opp !== null && typeof oppHand !== typeof undefined && oppHand !== false) {
-                for (var q = 0; q < players.length; q++) {
-                if (opp === players[q]) {
-                    if (handStrengthToString(hands[q].strength) === oppHand) {
-                        console.log("Best match is oppHand!");
-                        bestMatch = states[i];
-                        break;
-                    }
-                }
-                }
-            }
-            else if (bestMatch === null) {
-                console.log("Best match is default!");
-                bestMatch = states[i];
-            }
-        }
+				bestMatchPriority = totalPriority;
+			}
+			
+    }
         
         if (bestMatch != null) {
             players[player].current = 0;

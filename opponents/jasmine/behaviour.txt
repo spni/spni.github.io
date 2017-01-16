@@ -5,6 +5,7 @@ label=Jasmine
 gender=female
 size=medium
 timer=15
+#tags=princess,innocent,shy,movie,cartoon,straight,Arabian
 
 #required for meta.xml
 pic=0-calm
@@ -762,4 +763,6 @@ start=0-calm,I suppose a friendly game wouldn't hurt.
 10-female_masturbating=10-horny,I should arrange for a royal sleepover sometime. Clothing optional.
 10-female_finished_masturbating=10-happy,At least you're in good company!
 
-
+#Paste into stage 4 of behaviour.xml
+#<case tag="female_removing_accessory" target="mia" targetStage=2><state img="1-crossedarms.png">Such a powerful amulet!</state></case>
+#<case tag="female_removed_accessory" target="mia" targetStage=3><state img="1-singing.png">Are you able to harness your amulet's power?</state></case>
