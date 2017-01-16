@@ -229,7 +229,7 @@
 			<case tag="female_removing_accessory" target="mia">
 				<state img="0-sad.png">Hey, I just thought of this: if you're a medium, does that mean you can talk to zombies?</state>
 			</case>
-			<case tag="female_removing_accessory" target="blackrose" targetState=0>
+			<case tag="female_removing_accessory" target="blackrose" targetState="0">
 				<state img="0-happy.png">Tell us, BlackRose - is it true what they say about girls who wear chokers?</state>
 			</case>
 			<case tag="female_removing_accessory" filter="exhibitionist"> 
@@ -237,6 +237,9 @@
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="0-calm.png">You could at least dance to make it interesting or something.</state>
+			</case>
+			<case tag="female_removing_minor" target="asuna" targetState="2"> 
+				<state img="0-loss.png">The obvious choice? Sure. The fun choice? Not even close.</state>
 			</case>
 			<case tag="female_removing_minor" filter="school_uniform"> 
 				<state img="0-loss.png">Hold up there, ~name~. Aren't you worried you'll get detention for being out of uniform?</state>
@@ -323,6 +326,9 @@
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="0-happy.png">Well, maybe if we keep playing we'll actually see something good.</state>
+			</case>
+			<case tag="female_removed_minor" target="asuna" targetStage="1"> 
+				<state img="0-sad.png">Or you could, I don't know, GO TO THE STORE like a regular person.</state>
 			</case>
 			<case tag="female_removed_minor" target="jasmine" targetStage="2"> 
 				<state img="0-loss.png">You look familiar. Are you an actress?</state>
@@ -617,6 +623,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="1-calm.png">You could at least dance to make it interesting or something.</state>
 			</case>
+			<case tag="female_removing_minor" target="asuna" targetState="2"> 
+				<state img="1-loss.png">The obvious choice? Sure. The fun choice? Not even close.</state>
+			</case>
 			<case tag="female_removing_minor" filter="school_uniform"> 
 				<state img="1-loss.png">Hold up there, ~name~. Aren't you worried you'll get detention for being out of uniform?</state>
 			</case>
@@ -696,6 +705,9 @@
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="1-happy.png">Well, maybe if we keep playing we'll actually see something good.</state>
+			</case>
+			<case tag="female_removed_minor" target="asuna" targetStage="1"> 
+				<state img="1-sad.png">Or you could, I don't know, GO TO THE STORE like a regular person.</state>
 			</case>
 			<case tag="female_removed_minor" target="jasmine" targetStage="2"> 
 				<state img="1-loss.png">You look familiar. Are you an actress?</state>
@@ -995,9 +1007,10 @@
 				<state img="2-happy.png">Tell us, BlackRose - is it true what they say about girls who wear chokers?</state>
 			</case>
 			<case tag="female_removing_minor"> 
-				<state img="2-calm.png">
-					You could at least dance to make it interesting or something.
-				</state>
+				<state img="2-calm.png">You could at least dance to make it interesting or something.</state>
+			</case>
+			<case tag="female_removing_minor" target="asuna" targetState="2"> 
+				<state img="2-loss.png">The obvious choice? Sure. The fun choice? Not even close.</state>
 			</case>
 			<case tag="female_removing_minor" filter="cheerful"> 
 				<state img="2-happy.png">
@@ -1085,6 +1098,9 @@
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="2-happy.png">Well, maybe if we keep playing we'll actually see something good.</state>
+			</case>
+			<case tag="female_removed_minor" target="asuna" targetStage="1"> 
+				<state img="1-sad.png">Or you could, I don't know, GO TO THE STORE like a regular person.</state>
 			</case>
 			<case tag="female_removed_minor" target="jasmine" targetStage="2"> 
 				<state img="2-loss.png">You look familiar. Are you an actress?</state>
@@ -1383,6 +1399,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="3-calm.png">You could at least dance to make it interesting or something.</state>
 			</case>
+			<case tag="female_removing_minor" target="asuna" targetState="2"> 
+				<state img="3-loss.png">The obvious choice? Sure. The fun choice? Not even close.</state>
+			</case>
 			<case tag="female_removing_minor" filter="cheerful"> 
 				<state img="3-happy.png">I can't wait to see more!</state>
 			</case>
@@ -1465,6 +1484,9 @@
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="3-happy.png">Well, maybe if we keep playing we'll actually see something good.</state>
+			</case>
+			<case tag="female_removed_minor" target="asuna" targetStage="1"> 
+				<state img="3-sad.png">Or you could, I don't know, GO TO THE STORE like a regular person.</state>
 			</case>
 			<case tag="female_removed_minor" target="jasmine" targetStage="2"> 
 				<state img="3-loss.png">You look familiar. Are you an actress?</state>
@@ -1764,6 +1786,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="4-calm.png">You could at least dance to make it interesting or something.</state>
 			</case>
+			<case tag="female_removing_minor" target="asuna" targetState="2"> 
+				<state img="4-loss.png">The obvious choice? Sure. The fun choice? Not even close.</state>
+			</case>
 			<case tag="female_removing_minor" filter="cheerful"> 
 				<state img="4-happy.png">I can't wait to see more!</state>
 			</case>
@@ -1805,6 +1830,9 @@
 			</case>
 			<case tag="female_removed_minor" target="nagisa"> 
 				<state img="4-loss.png">I wonder if that innocence is really just an act...</state>
+			</case>
+			<case tag="female_removed_minor" target="asuna" targetStage="1"> 
+				<state img="4-sad.png">Or you could, I don't know, GO TO THE STORE like a regular person.</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="4-awkward.png">Next to you, I feel kinda underdressed for the apocalypse.</state>
@@ -2093,9 +2121,10 @@
 				<state img="5-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
 			</case>
 			<case tag="female_removing_minor"> 
-				<state img="5-calm.png">
-					You could at least dance to make it interesting or something.
-				</state>
+				<state img="5-calm.png">You could at least dance to make it interesting or something.</state>
+			</case>
+			<case tag="female_removing_minor" target="asuna" targetState="2"> 
+				<state img="5-loss.png">The obvious choice? Sure. The fun choice? Not even close.</state>
 			</case>
 			<case tag="female_removing_minor" filter="cheerful"> 
 				<state img="5-happy.png">
@@ -2137,9 +2166,10 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> 
-				<state img="5-awkward.png">
-					Next to you, I feel kinda underdressed for the apocalypse.
-				</state>
+				<state img="5-awkward.png">Next to you, I feel kinda underdressed for the apocalypse.</state>
+			</case>
+			<case tag="female_removed_minor" target="asuna" targetStage="1"> 
+				<state img="5-sad.png">Or you could, I don't know, GO TO THE STORE like a regular person.</state>
 			</case>
 			<case tag="female_removed_major"> 
 				<state img="5-interested.png">Is that a blush? I think you're blushing, ~name~! I bet you like this.</state>
