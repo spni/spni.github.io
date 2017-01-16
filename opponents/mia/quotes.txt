@@ -213,6 +213,7 @@ bad_hand=disappointed,I've played Phoenix before. I'm used to bad hands...
 4-female_human_must_strip=,All you can do is strip, ~name~!
 4-female_must_strip=,I'm reminded of Ms. May all of a sudden.
 4-female_must_strip=,Go ahead, don't mind us.
+4-female_must_strip=happy,Who's the victim this time?
 
 #lost panties
 5-male_human_must_strip=,You've seen me, time to return the favor.
@@ -264,6 +265,7 @@ bad_hand=disappointed,I've played Phoenix before. I'm used to bad hands...
 0-male_removed_accessory=disappointed,I thought this would go faster.
 0-female_removing_accessory=thoughtful,I didn't think you'd choose THAT of all things.
 0-female_removed_accessory=calm,Nonetheless, it's valuable evidence.
+0-female_removed_accessory=happy,~Clothing~ removed from the Court Record.
 
 #lost shoes
 1-male_removing_accessory=thoughtful,A bit of a boring choice, ~name~.
@@ -751,10 +753,10 @@ game_over_victory=shocked,I can't believe I pulled it off!
 
 #Paste into end of stage 0 (fully clothed)
 #<case tag="female_must_strip" target="kyoko" targetStage=0><state img="0-calm.png">Ah, there's a detective on the scene. What evidence can you share with us, Ms. Kirigiri?</state></case>
-#<case tag="female_removed_accessory" target="jasmine" targetStage=1><state img="0-thougtful.png">Hmmm, there's a contradiction here I just know it.</state></case>
+#<case tag="female_removed_accessory" target="jasmine" targetStage=1><state img="0-thoughtful.png">Hmmm, there's a contradiction here I just know it.</state></case>
 
 #Paste into end of stage 1 (shoes removed)
-#<case tag="female_removing_accessory" target="jasmine" targetStage=0><state img="1-thougtful.png">I can't quite place it, but there's something different about you, Jasmine.</state></case>
+#<case tag="female_removing_accessory" target="jasmine" targetStage=0><state img="1-thoughtful.png">I can't quite place it, but there's something different about you, Jasmine.</state></case>
 #<case tag="female_removed_accessory" target="jasmine" targetStage=1><state img="1-tsundere.png">Your shoes don't match your cloak, but there's something else I can't quite place.</state></case>
 
 #Paste into end of stage 3 (in dress)

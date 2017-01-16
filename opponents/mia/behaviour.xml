@@ -76,6 +76,7 @@
             </case>
             <case tag="female_removed_accessory">
                 <state img="0-calm.png">Nonetheless, it's valuable evidence.</state>
+				<state img="0-happy.png">~Clothing~ removed from the Court Record.</state>
             </case>
             <case tag="male_removed_major">
                 <state img="0-appreciative.png">Very nice!</state>
@@ -183,7 +184,7 @@
                 <state img="0-calm.png">It was foolish to think I would make it unscathed.</state>
             </case>
 			<case tag="female_must_strip" target="kyoko" targetStage=0><state img="0-calm.png">Ah, there's a detective on the scene. What evidence can you share with us, Ms. Kirigiri?</state></case>
-			<case tag="female_removed_accessory" target="jasmine" targetStage=1><state img="0-thougtful.png">Hmmm, there's a contradiction here I just know it.</state></case>
+			<case tag="female_removed_accessory" target="jasmine" targetStage=1><state img="0-thoughtful.png">Hmmm, there's a contradiction here I just know it.</state></case>
         </stage>
 
         <stage id="1">
@@ -344,7 +345,7 @@
                 <state img="1-calm.png">I know I shouldn't worry yet, but...</state>
                 <state img="1-calm.png">With this large a lead, I'm not even mad.</state>
             </case>
-			<case tag="female_removing_accessory" target="jasmine" targetStage=0><state img="1-thougtful.png">I can't quite place it, but there's something different about you, Jasmine.</state></case>
+			<case tag="female_removing_accessory" target="jasmine" targetStage=0><state img="1-thoughtful.png">I can't quite place it, but there's something different about you, Jasmine.</state></case>
 			<case tag="female_removed_accessory" target="jasmine" targetStage=1><state img="1-tsundere.png">Your shoes don't match your cloak, but there's something else I can't quite place.</state></case>
         </stage>
 
@@ -672,6 +673,7 @@
             <case tag="female_must_strip">
                 <state img="4-interested.png">I'm reminded of Ms. May all of a sudden.</state>
                 <state img="4-interested.png">Go ahead, don't mind us.</state>
+				<state img="4-happy.png">Who's the victim this time?</state>
             </case>
             <case tag="male_chest_will_be_visible">
                 <state img="4-calm.png">Think of it like the beach, ~name~.</state>
