@@ -240,17 +240,18 @@
 			<case tag="female_removing_accessory" target="hermione"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-calm.png">So... you're some kind of magic user, right?</state>
 			</case>
-			<case tag="female_removing_accessory" target="blackrose"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+			<case tag="female_removing_accessory" target="blackrose" targetStage=0>
 				<state img="0-interested.png">Tell me, ~name~ - what's The World really like? I hear it's got some serious issues.
 				</state>
 			</case>
-			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="0-calm.png">
-					Removing your ~clothing~? Okay.
-				</state>
+			<case tag="female_removing_minor">
+				<state img="0-calm.png">Removing your ~clothing~? Okay.</state>
 			</case>
-			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+			<case tag="female_removing_major">
 				<state img="0-nervous.png">I'm sorry about this...</state>
+			</case>
+			<case tag="female_removing_major" target="blackrose" targetStage=4>
+				<state img="0-interested.png">Stalling tactics won't work, you know.</state>
 			</case>
 			<case tag="female_removing_major" filter="mean"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="0-happy.png">I'd like to say I'm sorry about this, but I'm not.</state>
@@ -281,8 +282,14 @@
 			<case tag="female_removed_accessory" filter="princess"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-happy.png">That means I can go all out against you!</state>
 			</case>
-			<case tag="female_removed_accessory" target="blackrose"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
+			<case tag="female_removed_accessory" target="blackrose" targetStage=1>
 				<state img="0-lost.png">Not that I can criticize... ALfeim Online has had more than its own share of problems!</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=2>
+				<state img="0-angry.png">Of <i>course</i> they're not for keeps... They'd <i>better</i> not be for keeps!</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=4>
+				<state img="0-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="0-interested.png">I've never seen one wearing clothes like that. Do they give you some kind of bonus?</state>
@@ -291,8 +298,11 @@
 				<state img="0-lost.png">Do you gain experience from something so small?</state>
 				<state img="0-lost.png">There's more strategy to this game than I realized.</state>
 			</case>
-			<case tag="female_removed_minor" filter="kind"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
+			<case tag="female_removed_minor" filter="kind">
 				<state img="0-calm.png">Oh, that counts? I should be taking notes!</state>
+			</case>
+			<case tag="female_removed_minor" target="blackrose" targetStage=3>
+				<state img="0-interested.png">It's funny how arrogant you're being, BlackRose. That prize is all mine!</state>
 			</case>
 			<case tag="female_removed_major"> <!-- a female player has removed a major article of clothing (shirt, pants) -->
 				<state img="0-embarrassed.png">This feels like I'm picking on a newbie.</state>
@@ -524,18 +534,21 @@
 			<case tag="female_removing_accessory"> <!-- a female player has to remove an accessory (hat, gloves, belt) -->
 				<state img="1-interested.png">Ah! That's magical, isn't it?</state>
 			</case>
+			<case tag="female_removing_accessory" target="blackrose" targetStage=0>
+				<state img="1-interested.png">Tell me, ~name~ - what's The World really like? I hear it's got some serious issues.
+				</state>
+			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="1-calm.png">
-					~name~, you sly fox!
-				</state>
+				<state img="1-calm.png">~name~, you sly fox!</state>
 			</case>
-			<case tag="female_removing_minor" filter="innocent"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="1-calm.png">
-					A wise move.
-				</state>
+			<case tag="female_removing_minor" filter="innocent">
+				<state img="1-calm.png">A wise move.</state>
 			</case>
-			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+			<case tag="female_removing_major">
 				<state img="1-nervous.png">I'm sorry about this...</state>
+			</case>
+			<case tag="female_removing_major" target="blackrose" targetStage=4>
+				<state img="1-interested.png">Stalling tactics won't work, you know.</state>
 			</case>
 			<case tag="female_removing_major" filter="mean"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="1-happy.png">I'd like to say I'm sorry about this, but I'm not.</state>
@@ -556,9 +569,7 @@
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="1-awkward.png">
-					So THIS is why we had to turn our moral codes off, huh?
-				</state>
+				<state img="1-awkward.png">So THIS is why we had to turn our moral codes off, huh?</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
 			
@@ -568,6 +579,15 @@
 				<state img="1-awkward.png">Oh, my mistake - just ordinary ~clothing~. Does it really count, then?</state>
 				<state img="1-happy.png">The ~clothing~ of speed +3... where did you find that?</state>
 				<state img="1-calm.png">I need to upgrade my armor.</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=1>
+				<state img="1-lost.png">Not that I can criticize... ALfeim Online has had more than its own share of problems!</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=2>
+				<state img="1-angry.png">Of <i>course</i> they're not for keeps... They'd <i>better</i> not be for keeps!</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=4>
+				<state img="1-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="1-lost.png">Do you gain experience from something so small?</state>
@@ -819,17 +839,16 @@
 				</state>
 			</case>
 			<case tag="female_removing_minor"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="2-calm.png">
-					~name~, you sly fox!
-				</state>
+				<state img="2-calm.png">~name~, you sly fox!</state>
 			</case>
-			<case tag="female_removing_minor" filter="innocent"> <!-- a female player has to remove a minor article of clothing (belt, shoes, socks, jacket) -->
-				<state img="2-calm.png">
-					A wise move.
-				</state>
+			<case tag="female_removing_minor" filter="innocent">
+				<state img="2-calm.png">A wise move.</state>
 			</case>
-			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
+			<case tag="female_removing_major">
 				<state img="2-happy.png">Come back when you've levelled up!</state>
+			</case>
+			<case tag="female_removing_major" target="blackrose" targetStage=4>
+				<state img="2-interested.png">Stalling tactics won't work, you know.</state>
 			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="2-interested.png">
@@ -847,9 +866,10 @@
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="2-awkward.png">
-					So THIS is why we had to turn our moral codes off, huh?
-				</state>
+				<state img="2-awkward.png">So THIS is why we had to turn our moral codes off, huh?</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="blackrose">
+				<state img="2-happy.png">Pft! Like you had any dignity to begin with!</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
 			
@@ -858,6 +878,12 @@
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
 				<state img="2-happy.png">Yes, it's a rare loot drop: the ~clothing~ of charm! Don't worry, you're still charming even without it.</state>
 				<state img="2-happy.png">It's too bad you couldn't get ~clothing~ of luck! Too bad for you, anyway.</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=2>
+				<state img="2-angry.png">Of <i>course</i> they're not for keeps... They'd <i>better</i> not be for keeps!</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=4>
+				<state img="2-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="2-angry.png">You really prepared for this game, didn't you?</state>
@@ -1096,6 +1122,9 @@
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-happy.png">Come back when you've levelled up!</state>
 			</case>
+			<case tag="female_removing_major" target="blackrose" targetStage=4>
+				<state img="3-interested.png">Stalling tactics won't work, you know.</state>
+			</case>
 			<case tag="female_removing_major" filter="mean"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="3-happy.png">
 					I'd like to say I'm sorry about this, but I'm not.
@@ -1117,18 +1146,23 @@
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="3-horny.png">
-					After this we'll both need a break!
-				</state>
+				<state img="3-horny.png">After this we'll both need a break!</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="blackrose">
+				<state img="3-happy.png">Pft! Like you had any dignity to begin with!</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
 			
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="3-calm.png">
-					At least your defences are down now.
-				</state>
+				<state img="3-calm.png">At least your defences are down now.</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=2>
+				<state img="3-angry.png">Of <i>course</i> they're not for keeps... They'd <i>better</i> not be for keeps!</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=4>
+				<state img="3-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="3-angry.png">You really prepared for this game, didn't you?</state>
@@ -1394,24 +1428,32 @@
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="4-happy.png">A critical hit!</state>
 			</case>
+			<case tag="female_removing_major" target="blackrose" targetStage=4>
+				<state img="4-interested.png">Stalling tactics won't work, you know.</state>
+			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="4-nervous.png">
 					This is just like bathing together. That's all. I can handle this.
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="4-horny.png">
-					After this we'll both need a break!
-				</state>
+				<state img="4-horny.png">After this we'll both need a break!</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="blackrose">
+				<state img="4-happy.png">Pft! Like you had any dignity to begin with!</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
 			
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="4-calm.png">
-					At least your defences are down now.
-				</state>
+				<state img="4-calm.png">At least your defences are down now.</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=2>
+				<state img="4-angry.png">Of <i>course</i> they're not for keeps... They'd <i>better</i> not be for keeps!</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=4>
+				<state img="4-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="4-angry.png">
@@ -1709,24 +1751,32 @@
 			<case tag="female_removing_major"> <!-- a female player has to remove a major article of clothing (shirt, pants) -->
 				<state img="5-happy.png">A critical hit!</state>
 			</case>
+			<case tag="female_removing_major" target="blackrose" targetStage=4>
+				<state img="5-interested.png">Stalling tactics won't work, you know.</state>
+			</case>
 			<case tag="female_chest_will_be_visible"> <!-- a female player's chest will become visible -->
 				<state img="5-nervous.png">
 					This is just like bathing together. That's all. I can handle this.
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="5-horny.png">
-					After this we'll both need a break!
-				</state>
+				<state img="5-horny.png">After this we'll both need a break!</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="blackrose">
+				<state img="5-happy.png">Pft! Like you had any dignity to begin with!</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
 			
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="5-calm.png">
-					At least your defences are down now.
-				</state>
+				<state img="5-calm.png">At least your defences are down now.</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=2>
+				<state img="5-angry.png">Of <i>course</i> they're not for keeps... They'd <i>better</i> not be for keeps!</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=4>
+				<state img="5-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="5-angry.png">
@@ -2016,14 +2066,19 @@
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
 				<state img="6-shocked.png">How lewd!</state>
 			</case>
+			<case tag="female_crotch_will_be_visible" target="blackrose">
+				<state img="6-happy.png">Pft! Like you had any dignity to begin with!</state>
+			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
 			
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="6-stunned.png">
-					Another rare loot drop: ~clothing~ of luck!  ...Wait. LUCK? You'd better not be cheating!
+				<state img="6-stunned.png">Another rare loot drop: ~clothing~ of luck!  ...Wait. LUCK? You'd better not be cheating!
 				</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=4>
+				<state img="6-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="6-angry.png">
@@ -2308,18 +2363,20 @@
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="7-shocked.png">
-					How lewd!
-				</state>
+				<state img="7-shocked.png">How lewd!</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="blackrose">
+				<state img="7-happy.png">Pft! Like you had any dignity to begin with!</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
 			
 			
 			<!-- Start of Female Player Stripping Cases -->
 			<case tag="female_removed_accessory"> <!-- a female player has removed an accessory (hat, gloves, belt) -->
-				<state img="7-calm.png">
-					Stupid game.
-				</state>
+				<state img="7-calm.png">Stupid game.</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage=4>
+				<state img="7-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
 			<case tag="female_removed_minor"> <!-- a female player has removed a minor article of clothing (belt, shoes, socks, jacket) -->
 				<state img="7-angry.png">
@@ -2584,9 +2641,10 @@
 				</state>
 			</case>
 			<case tag="female_crotch_will_be_visible"> <!-- a female player's crotch will become visible -->
-				<state img="8-horny.png">
-					How lewd!
-				</state>
+				<state img="8-horny.png">How lewd!</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="blackrose">
+				<state img="8-happy.png">Pft! Like you had any dignity to begin with!</state>
 			</case>
 			<!-- End of Female Player Pre Stripping Cases -->
 			
