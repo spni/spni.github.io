@@ -247,8 +247,11 @@
 			<case tag="female_removing_major"> 
 				<state img="0-loss.png">Finally gonna see some underwear! Wait, I don't mean 'finally'. 'Suddenly'. That's the word I wanted!</state>
 			</case>
+			<case tag="female_removing_major" target="jasmine" targetStage=2> 
+				<state img="0-shocked.png">You... wore a disguise. To a game involving stripping. And you don't see any problem with that?</state>
+			</case>
 			<case tag="female_removing_major" filter="kind"> 
-				<state img="0-sad.png">I feel bad about beating you this fast. Not bad enough to stop you, though.</state>
+				<state img="0-sad.png">I feel bad about beating you this fast. not bad enough to stop you, just bad.</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> 
 				<state img="0-loss.png">
@@ -291,7 +294,7 @@
 			
 			
 			<case tag="female_removed_accessory"> 
-				<state img="0-loss.png">We're really pushing the boundaries of the game here, aren't we?</state>
+				<state img="0-loss.png">We're <i>really</i> pushing the boundaries of the game here, aren't we?</state>
 			</case>
 			<case tag="female_removed_accessory" target="mia"> 
 				<state img="0-loss.png">Well, I mean, anyone can talk to zombies... but not anyone can get an answer other than 'rawr brains'.</state>
@@ -317,6 +320,9 @@
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="0-happy.png">Well, maybe if we keep playing we'll actually see something good.</state>
+			</case>
+			<case tag="female_removed_minor" target="jasmine" targetStage=2> 
+				<state img="0-loss.png">You look familiar. Are you an actress?</state>
 			</case>
 			<case tag="female_removed_minor" filter="school_uniform"> 
 				<state img="0-loss.png">I saw a documentary about this once. Oh, wait... that was porn.</state>
@@ -617,8 +623,11 @@
 			<case tag="female_removing_major"> 
 				<state img="1-loss.png">Finally gonna see some underwear! Wait, I don't mean 'finally'. 'Suddenly'. That's the word I wanted!</state>
 			</case>
+			<case tag="female_removing_major" target="jasmine" targetStage=2> 
+				<state img="1-shocked.png">You... wore a disguise. To a game involving stripping. And you don't see any problem with that?</state>
+			</case>
 			<case tag="female_removing_major" filter="kind"> 
-				<state img="1-sad.png">I feel bad about beating you this fast. Not bad enough to stop you, though.</state>
+				<state img="1-sad.png">I feel bad about beating you this fast. not bad enough to stop you, just bad.</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> 
 				<state img="1-loss.png">I take it 'blondes do it better' isn't referring to poker.</state>
@@ -681,6 +690,9 @@
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="1-happy.png">Well, maybe if we keep playing we'll actually see something good.</state>
+			</case>
+			<case tag="female_removed_minor" target="jasmine" targetStage=2> 
+				<state img="1-loss.png">You look familiar. Are you an actress?</state>
 			</case>
 			<case tag="female_removed_minor" filter="school_uniform"> 
 				<state img="1-loss.png">I saw a documentary about this once. Oh, wait... that was porn.</state>
@@ -823,7 +835,7 @@
 				<state img="2-calm.png">...It's worth a shot.</state>
 			</case>
 			<case tag="bad_hand"> 
-				<state img="2-awkward.png">Come on! Come on! COME ON! Stupid cards!</state>
+				<state img="2-awkward.png">Come on! Come on! COME <i>ON</i>! Stupid cards!</state>
 				<state img="2-awkward.png">Oh man! Oh man, oh man, oh man!</state>
 			</case>
 			
@@ -994,11 +1006,14 @@
 			<case tag="female_removing_major"> 
 				<state img="2-interested.png">Finally gonna see some underwear!</state>
 			</case>
+			<case tag="female_removing_major" target="jasmine" targetStage=2> 
+				<state img="2-shocked.png">You... wore a disguise. To a game involving stripping. And you don't see any problem with that?</state>
+			</case>
 			<case tag="female_removing_major" target="blackrose" targetState=4>
 				<state img="2-interested.png">Need a hand there, BlackRose?</state>
 			</case>
 			<case tag="female_removing_major" filter="kind"> 
-				<state img="2-sad.png">I feel bad about beating you this fast. Not bad enough to stop you, though.</state>
+				<state img="2-sad.png">I feel bad about beating you this fast. not bad enough to stop you, just bad.</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> 
 				<state img="2-loss.png">
@@ -1010,10 +1025,11 @@
 					I'm surprised it took this long to get you down to your underwear, ~name~. Are you feeling okay?
 				</state>
 			</case>
+			<case tag="female_removing_major" target="jasmine" targetStage=2> 
+				<state img="2-shocked.png">You... wore a disguise. To a game involving stripping. And you don't see any problem with that?</state>
+			</case>
 			<case tag="female_removing_major" filter="princess"> 
-				<state img="2-interested.png">
-					I'm guessing 'caution' and 'modesty' aren't particularly royal traits.
-				</state>
+				<state img="2-interested.png">I'm guessing 'caution' and 'modesty' aren't particularly royal traits.</state>
 			</case>
 			<case tag="female_removing_major" target="hermione"> 
 				<state img="2-interested.png">
@@ -1063,6 +1079,9 @@
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="2-happy.png">Well, maybe if we keep playing we'll actually see something good.</state>
+			</case>
+			<case tag="female_removed_minor" target="jasmine" targetStage=2> 
+				<state img="2-loss.png">You look familiar. Are you an actress?</state>
 			</case>
 			<case tag="female_removed_minor" filter="confident"> 
 				<state img="2-happy.png">With skills like that, this can't be your first rodeo.</state>
@@ -1205,7 +1224,7 @@
 				<state img="3-calm.png">No worries. Probably.</state>
 			</case>
 			<case tag="bad_hand"> 
-				<state img="3-awkward.png">Come on! Come on! COME ON! Stupid cards!</state>
+				<state img="3-awkward.png">Come on! Come on! COME <i>ON</i>! Stupid cards!</state>
 				<state img="3-awkward.png">Oh man! Oh man, oh man, oh man!</state>
 			</case>
 			
@@ -1370,11 +1389,14 @@
 			<case tag="female_removing_major"> 
 				<state img="3-interested.png">Finally gonna see some underwear!</state>
 			</case>
+			<case tag="female_removing_major" target="jasmine" targetStage=2> 
+				<state img="3-shocked.png">You... wore a disguise. To a game involving stripping. And you don't see any problem with that?</state>
+			</case>
 			<case tag="female_removing_major" target="blackrose" targetState=4>
 				<state img="3-interested.png">Need a hand there, BlackRose?</state>
 			</case>
 			<case tag="female_removing_major" filter="kind"> 
-				<state img="3-sad.png">I feel bad about beating you this fast. Not bad enough to stop you, though.</state>
+				<state img="3-sad.png">I feel bad about beating you this fast. not bad enough to stop you, just bad.</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> 
 				<state img="3-loss.png">
@@ -1387,9 +1409,7 @@
 				</state>
 			</case>
 			<case tag="female_removing_major" filter="princess"> 
-				<state img="3-interested.png">
-					I'm guessing 'caution' and 'modesty' aren't particularly royal traits.
-				</state>
+				<state img="3-interested.png">I'm guessing 'caution' and 'modesty' aren't particularly royal traits.</state>
 			</case>
 			<case tag="female_removing_major" target="hermione"> 
 				<state img="3-interested.png">
@@ -1439,6 +1459,9 @@
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="3-happy.png">Well, maybe if we keep playing we'll actually see something good.</state>
+			</case>
+			<case tag="female_removed_minor" target="jasmine" targetStage=2> 
+				<state img="3-loss.png">You look familiar. Are you an actress?</state>
 			</case>
 			<case tag="female_removed_minor" filter="confident"> 
 				<state img="3-happy.png">With skills like that, this can't be your first rodeo.</state>
@@ -1768,7 +1791,7 @@
 			
 			<case tag="female_removed_accessory"> 
 				<state img="4-sad.png">
-					And of COURSE ~name~ still had her ~clothing~.
+					And of <i>course</i> ~name~ still had her ~clothing~.
 				</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
@@ -1921,7 +1944,7 @@
 			
 			<case tag="stripped"> 
 				<state img="5-sad.png">
-					Oh, c'mon, you guys are a LITTLE disappointed, right?
+					Oh, c'mon, you guys are a <i>little</i> disappointed, right?
 				</state>
 			</case>
 			<case tag="must_strip_winning"> 
@@ -2003,7 +2026,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> 
 				<state img="5-horny.png">
-					~name~! You... look GOOD bare-chested.
+					~name~! You... look <i>good</i> bare-chested.
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
@@ -2098,7 +2121,7 @@
 			
 			<case tag="female_removed_accessory"> 
 				<state img="5-sad.png">
-					And of COURSE ~name~ still had her ~clothing~.
+					And of <i>course</i> ~name~ still had her ~clothing~.
 				</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
@@ -2241,7 +2264,7 @@
 				<state img="6-happy.png">Heh, looking good. Looking very good.</state>
 			</case>
 			<case tag="okay_hand"> 
-				<state img="6-sad.png">I'm just on a HUGE lucky streak, huh?</state>
+				<state img="6-sad.png">I'm just on a <i>huge</i> lucky streak, huh?</state>
 				<state img="6-calm.png">Ehhh, I doubt I have anything to worry about. What could possibly go wrong?</state>
 			</case>
 			<case tag="bad_hand"> 
@@ -2337,7 +2360,7 @@
 			</case>
 			<case tag="male_chest_is_visible"> 
 				<state img="6-horny.png">
-					~name~! You... look GOOD bare-chested.
+					~name~! You... look <i>good</i> bare-chested.
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
@@ -2440,7 +2463,7 @@
 			
 			<case tag="female_removed_accessory"> 
 				<state img="6-sad.png">
-					And of COURSE ~name~ still had her ~clothing~.
+					And of <i>course</i> ~name~ still had her ~clothing~.
 				</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
@@ -2454,7 +2477,7 @@
 				</state>
 			</case>
 			<case tag="female_removed_major"> 
-				<state img="6-interested.png">So it's true what they say, ~name~... your ~clothing~ really does look good on the bedroom floor.</state>
+				<state img="6-interested.png">So it's true what they say, ~name~... your ~clothing~ really <i>does</i> look good on the bedroom floor.</state>
 			</case>
 			<case tag="female_removed_major" filter="sporty"> 
 				<state img="6-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
@@ -2580,7 +2603,7 @@
 				<state img="7-happy.png">Heh, looking good. Looking very good.</state>
 			</case>
 			<case tag="okay_hand"> 
-				<state img="7-sad.png">I'm just on a HUGE lucky streak, huh?</state>
+				<state img="7-sad.png">I'm just on a <i>huge</i> lucky streak, huh?</state>
 				<state img="7-calm.png">Ehhh, I doubt I have anything to worry about. What could possibly go wrong?</state>
 			</case>
 			<case tag="bad_hand"> 
@@ -2788,7 +2811,7 @@
 				</state>
 			</case>
 			<case tag="female_removed_major"> 
-				<state img="7-interested.png">So it's true what they say, ~name~... your ~clothing~ really does look good on the bedroom floor.</state>
+				<state img="7-interested.png">So it's true what they say, ~name~... your ~clothing~ really <i>does</i> look good on the bedroom floor.</state>
 			</case>
 			<case tag="female_removed_major" filter="sporty"> 
 				<state img="7-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
@@ -2905,7 +2928,7 @@
 				<state img="8-happy.png">Heh, looking good. Looking very good.</state>
 			</case>
 			<case tag="okay_hand"> 
-				<state img="8-sad.png">I'm just on a HUGE lucky streak, huh?</state>
+				<state img="8-sad.png">I'm just on a <i>huge</i> lucky streak, huh?</state>
 				<state img="8-calm.png">Ehhh, I doubt I have anything to worry about. What could possibly go wrong?</state>
 			</case>
 			<case tag="bad_hand"> 
@@ -3113,7 +3136,7 @@
 				</state>
 			</case>
 			<case tag="female_removed_major"> 
-				<state img="8-interested.png">So it's true what they say, ~name~... your ~clothing~ really does look good on the bedroom floor.</state>
+				<state img="8-interested.png">So it's true what they say, ~name~... your ~clothing~ really <i>does</i> look good on the bedroom floor.</state>
 			</case>
 			<case tag="female_removed_major" filter="sporty"> 
 				<state img="8-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
@@ -3408,7 +3431,7 @@
 				</state>
 			</case>
 			<case tag="female_removed_major"> 
-				<state img="9-interested.png">So it's true what they say, ~name~... your ~clothing~ really does look good on the bedroom floor.</state>
+				<state img="9-interested.png">So it's true what they say, ~name~... your ~clothing~ really <i>does</i> look good on the bedroom floor.</state>
 			</case>
 			<case tag="female_removed_major" filter="sporty"> 
 				<state img="9-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
@@ -3690,7 +3713,7 @@
 				</state>
 			</case>
 			<case tag="female_removed_major"> 
-				<state img="10-interested.png">So it's true what they say, ~name~... your ~clothing~ really does look good on the bedroom floor.</state>
+				<state img="10-interested.png">So it's true what they say, ~name~... your ~clothing~ really <i>does</i> look good on the bedroom floor.</state>
 			</case>
 			<case tag="female_removed_major" filter="sporty"> 
 				<state img="10-sad.png">Those are some well-defined abs, ~name~! As if I needed another thing to feel self-conscious about...</state>
