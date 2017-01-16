@@ -223,6 +223,9 @@
 			<case tag="female_removing_accessory"> 
 				<state img="0-happy.png">Alright! Time to see how freaky you are, ~name~!</state>
 			</case>
+			<case tag="female_removing_accessory" target="april" targetStage=0> 
+				<state img="0-happy.png">Ha ha! Sorry, for a second there I thought you were serious.</state>
+			</case>
 			<case tag="female_removing_accessory" target="mia">
 				<state img="0-sad.png">Hey, I just thought of this: if you're a medium, does that mean you can talk to zombies?</state>
 			</case>
@@ -604,6 +607,9 @@
 			</case>
 			<case tag="female_removing_accessory"> 
 				<state img="1-happy.png">Alright! Time to see how freaky you are, ~name~!</state>
+			</case>
+			<case tag="female_removing_accessory" target="april" targetStage=0> 
+				<state img="1-happy.png">Ha ha! Sorry, for a second there I thought you were serious.</state>
 			</case>
 			<case tag="female_removing_accessory" target="blackrose" targetState=0>
 				<state img="1-happy.png">Tell us, BlackRose - is it true what they say about girls who wear chokers?</state>
@@ -2081,9 +2087,10 @@
 				<state img="5-interested.png">Don't be embarrassed, ~name~. Save that for later.</state>
 			</case>
 			<case tag="female_removing_accessory"> 
-				<state img="5-sad.png">
-					So that's what you're going for? Really? Not gonna... spice it up at all?
-				</state>
+				<state img="5-sad.png">So that's what you're going for? Really? Not gonna... spice it up at all?</state>
+			</case>
+			<case tag="female_removing_accessory" target="april" targetStage=5> 
+				<state img="5-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="5-calm.png">
@@ -2423,9 +2430,10 @@
 				</state>
 			</case>
 			<case tag="female_removing_accessory"> 
-				<state img="6-sad.png">
-					So that's what you're going for? Really? Not gonna... spice it up at all?
-				</state>
+				<state img="6-sad.png">So that's what you're going for? Really? Not gonna... spice it up at all?</state>
+			</case>
+			<case tag="female_removing_accessory" target="april" targetStage=5> 
+				<state img="6-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="6-calm.png">
@@ -2501,6 +2509,9 @@
 			</case>
 			<case tag="female_medium_chest_is_visible"> 
 				<state img="6-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" target="april"> 
+				<state img="6-horny.png">Signature required for boob delivery... lean in a little closer!</state>
 			</case>
 			<case tag="female_medium_chest_is_visible" filter="silent"> 
 				<state img="6-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
@@ -2757,9 +2768,10 @@
 				</state>
 			</case>
 			<case tag="female_removing_accessory"> 
-				<state img="7-sad.png">
-					So that's what you're going for? Really? Not gonna... spice it up at all?
-				</state>
+				<state img="7-sad.png">So that's what you're going for? Really? Not gonna... spice it up at all?</state>
+			</case>
+			<case tag="female_removing_accessory" target="april" targetStage=5> 
+				<state img="7-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="7-calm.png">
@@ -2835,6 +2847,9 @@
 			</case>
 			<case tag="female_medium_chest_is_visible"> 
 				<state img="7-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" target="april"> 
+				<state img="7-horny.png">Signature required for boob delivery... lean in a little closer!</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> 
 				<state img="7-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
@@ -3082,9 +3097,10 @@
 				</state>
 			</case>
 			<case tag="female_removing_accessory"> 
-				<state img="8-sad.png">
-					So that's what you're going for? Really? Not gonna... spice it up at all?
-				</state>
+				<state img="8-sad.png">So that's what you're going for? Really? Not gonna... spice it up at all?</state>
+			</case>
+			<case tag="female_removing_accessory" target="april" targetStage=5> 
+				<state img="8-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="8-calm.png">
@@ -3160,6 +3176,9 @@
 			</case>
 			<case tag="female_medium_chest_is_visible"> 
 				<state img="8-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" target="april"> 
+				<state img="8-horny.png">Signature required for boob delivery... lean in a little closer!</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> 
 				<state img="8-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
@@ -3377,9 +3396,10 @@
 				</state>
 			</case>
 			<case tag="female_removing_accessory"> 
-				<state img="9-sad.png">
-					So that's what you're going for? Really? Not gonna... spice it up at all?
-				</state>
+				<state img="9-sad.png">So that's what you're going for? Really? Not gonna... spice it up at all?</state>
+			</case>
+			<case tag="female_removing_accessory" target="april" targetStage=5> 
+				<state img="9-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="9-calm.png">
@@ -3455,6 +3475,9 @@
 			</case>
 			<case tag="female_medium_chest_is_visible"> 
 				<state img="9-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" target="april"> 
+				<state img="9-horny.png">Signature required for boob delivery... lean in a little closer!</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> 
 				<state img="9-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>
@@ -3659,9 +3682,10 @@
 				</state>
 			</case>
 			<case tag="female_removing_accessory"> 
-				<state img="10-sad.png">
-					So that's what you're going for? Really? Not gonna... spice it up at all?
-				</state>
+				<state img="10-sad.png">So that's what you're going for? Really? Not gonna... spice it up at all?</state>
+			</case>
+			<case tag="female_removing_accessory" target="april" targetStage=5> 
+				<state img="10-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="10-calm.png">
@@ -3737,6 +3761,9 @@
 			</case>
 			<case tag="female_medium_chest_is_visible"> 
 				<state img="10-horny.png">I'm not usually one for girls, but... I'm enjoying this!</state>
+			</case>
+			<case tag="female_medium_chest_is_visible" target="april"> 
+				<state img="10-horny.png">Signature required for boob delivery... lean in a little closer!</state>
 			</case>
 			<case tag="female_large_chest_is_visible"> 
 				<state img="10-shocked.png">I'm not usually one for girls, but... I'm enjoying this!</state>

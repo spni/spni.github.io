@@ -233,8 +233,11 @@
 			<case tag="female_removing_accessory" filter="princess"> 
 				<state img="0-lost.png">So, ~name~, you're a princess? Doesn't that make you an NPC?</state>
 			</case>
-			<case tag="female_removing_accessory" target="hermione"> 
+			<case tag="female_removing_accessory" target="hermione" targetStage=0> 
 				<state img="0-calm.png">So... you're some kind of magic user, right?</state>
+			</case>
+			<case tag="female_removing_accessory" target="april" targetStage=0> 
+				<state img="0-angry.png">Just regular ones? Do they even count, then?</state>
 			</case>
 			<case tag="female_removing_accessory" target="blackrose" targetStage=0>
 				<state img="0-interested.png">Tell me, ~name~ - what's The World really like? I hear it's got some serious issues.
@@ -287,8 +290,8 @@
 			<case tag="female_removed_accessory" target="blackrose" targetStage=4>
 				<state img="0-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
-			<case tag="female_removed_accessory" target="hermione"> 
-				<state img="0-interested.png">I've never seen one wearing clothes like that. Do they give you some kind of bonus?</state>
+			<case tag="female_removed_accessory" target="hermione" targetStage=1> 
+				<state img="0-interested.png">I've never seen one wearing clothes like yours. Do they give you some kind of bonus?</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="0-lost.png">Do you gain experience from something so small?</state>
@@ -534,6 +537,12 @@
 				<state img="1-interested.png">Tell me, ~name~ - what's The World really like? I hear it's got some serious issues.
 				</state>
 			</case>
+			<case tag="female_removing_accessory" target="april" targetStage=0> 
+				<state img="1-angry.png">Just regular ones? Do they even count, then?</state>
+			</case>
+			<case tag="female_removing_accessory" target="hermione" targetStage=0> 
+				<state img="1-calm.png">So... you're some kind of magic user, right?</state>
+			</case>
 			<case tag="female_removing_minor"> 
 				<state img="1-calm.png">~name~, you sly fox!</state>
 			</case>
@@ -584,6 +593,9 @@
 			</case>
 			<case tag="female_removed_accessory" target="blackrose" targetStage=4>
 				<state img="1-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
+			</case>
+			<case tag="female_removed_accessory" target="hermione" targetStage=1> 
+				<state img="1-interested.png">I've never seen one wearing clothes like yours. Do they give you some kind of bonus?</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="1-lost.png">Do you gain experience from something so small?</state>
@@ -830,9 +842,10 @@
 				<state img="2-interested.png">Ooh, bad luck, ~name~!</state>
 			</case>
 			<case tag="female_removing_accessory"> 
-				<state img="2-interested.png">
-					Oh! There's a magical aura around your ~clothing~!
-				</state>
+				<state img="2-interested.png">Oh! There's a magical aura around your ~clothing~!</state>
+			</case>
+			<case tag="female_removing_accessory" target="april" targetStage=0> 
+				<state img="2-angry.png">Just regular ones? Do they even count, then?</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="2-calm.png">~name~, you sly fox!</state>
