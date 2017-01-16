@@ -135,7 +135,7 @@
 				<state img="0-calm.png">Well, that's... something.</state>
 				<state img="0-interested.png">You seem overdressed in this heat, ~name~.</state>
 			</case>
-			<case tag="male_removing_minor" target="fred" targetStage=1> 
+			<case tag="male_removing_minor" target="fred" targetStage="1"> 
 				<state img="0-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
 			</case>
 			<case tag="male_removing_major"> 
@@ -159,7 +159,7 @@
 			<case tag="male_removed_minor"> 
 				<state img="0-embarrassed.png">So... <i>this</i> is the point of the game? Hmm.</state>
 			</case>
-			<case tag="male_removed_minor" target="fred" targetStage=2> 
+			<case tag="male_removed_minor" target="fred" targetStage="2"> 
 				<state img="0-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> 
@@ -211,7 +211,7 @@
 				<state img="0-happy.png">Oh, that counts? I may be better prepared than I thought!</state>
 				<state img="0-sad.png">This could be an expensive game if we don't get those back...</state>
 			</case>
-			<case tag="female_removing_accessory" filter="princess" targetStage=1> 
+			<case tag="female_removing_accessory" filter="princess" targetStage="1"> 
 				<state img="0-shocked.png">W-wait. Princess ~name~? What are YOU doing here?</state>
 			</case>
 			<case tag="female_removing_minor"> 
@@ -221,7 +221,7 @@
 			<case tag="female_removing_minor" filter="princess"> 
 				<state img="0-shocked.png">Are you out of jewelry <i>already</i>? I didn't think that was possible.</state>
 			</case>
-			<case tag="female_removing_minor" targetStage=0> 
+			<case tag="female_removing_minor" targetStage="0"> 
 				<state img="0-confused.png">Surely you must have <i>something</i> smaller to start with?</state>
 			</case>
 			<case tag="female_removing_major"> 
@@ -243,7 +243,7 @@
 				<state img="0-loss.png">There <i>must</i> be something I'm missing about all this.</state>
 				<state img="0-loss.png">So... this is <i>fun</i>, is it? Hmm.</state>
 			</case>
-			<case tag="female_removed_accessory" filter="princess" targetStage=1> 
+			<case tag="female_removed_accessory" filter="princess" targetStage="1"> 
 				<state img="0-confused.png">I-I mean, there's nothing wrong with that. Your highness.</state>
 			</case>
 			<case tag="female_removed_minor"> 
@@ -326,16 +326,16 @@
 			<case tag="stripped"> 
 				<state img="1-stripped.png">I get them back at the end, don't I? They were a gift from my father!</state>
 			</case>
-			<case tag="stripped" alsoPlaying="zoey" targetStage=0> 
+			<case tag="stripped" alsoPlaying="zoey" targetStage="0"> 
 				<state img="1-shocked.png">W-what are you talking about, Zoey? I'm just a plain, ordinary peasant girl, not the incredibly beautiful and famous princess!</state>
 			</case>
-			<case tag="stripped" alsoPlaying="zoey" targetStage=1> 
+			<case tag="stripped" alsoPlaying="zoey" targetStage="1"> 
 				<state img="1-shocked.png">W-what are you talking about, Zoey? I'm just a plain, ordinary peasant girl, not the incredibly beautiful and famous princess!</state>
 			</case>
-			<case tag="stripped" alsoPlaying="zoey" targetStage=2> 
+			<case tag="stripped" alsoPlaying="zoey" targetStage="2"> 
 				<state img="1-shocked.png">W-what are you talking about, Zoey? I'm just a plain, ordinary peasant girl, not the incredibly beautiful and famous princess!</state>
 			</case>
-			<case tag="stripped" alsoPlaying="zoey" targetStage=3> 
+			<case tag="stripped" alsoPlaying="zoey" targetStage="3"> 
 				<state img="1-shocked.png">W-what are you talking about, Zoey? I'm just a plain, ordinary peasant girl, not the incredibly beautiful and famous princess!</state>
 			</case>
 			<case tag="must_strip_winning"> 
@@ -374,7 +374,7 @@
 				<state img="1-calm.png">Well, that's... something.</state>
 				<state img="1-interested.png">You seem overdressed in this heat, ~name~.</state>
 			</case>
-			<case tag="male_removing_minor" target="fred" targetStage=1>
+			<case tag="male_removing_minor" target="fred" targetStage="1">
 				<state img="1-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
 			</case>
 			<case tag="male_removing_major"> 
@@ -399,7 +399,7 @@
 				<state img="1-loss.png">We're going to be here for a while, aren't we?</state>
 				<state img="1-angry.png">What are you, a mouse or a man?</state>
 			</case>
-			<case tag="male_removed_minor" target="fred" targetStage=2> 
+			<case tag="male_removed_minor" target="fred" targetStage="2"> 
 				<state img="1-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> 
@@ -451,7 +451,7 @@
 				<state img="1-calm.png">I suppose this makes us even...</state>
 				<state img="1-happy.png">I was getting all worked up about nothing - this game seems like harmless fun.</state>
 			</case>
-			<case tag="female_removing_accessory" filter="princess" targetStage=1> 
+			<case tag="female_removing_accessory" filter="princess" targetStage="1"> 
 				<state img="1-sad.png">I wish I'd known you'd be here, Princess ~name~.</state>
 			</case>
 			<case tag="female_removing_minor"> 
@@ -481,7 +481,7 @@
 				<state img="1-happy.png">I saw that coming. I must be catching on!</state>
 				<state img="1-confused.png">That doesn't even seem like a penalty, but what do I know?</state>
 			</case>
-			<case tag="female_removed_accessory" filter="princess" targetStage=1> 
+			<case tag="female_removed_accessory" filter="princess" targetStage="1"> 
 				<state img="1-happy.png">
 					Because, um, I would have worn more appropriate clothing to greet a princess! Right! That's what I meant.
 				</state>
@@ -614,7 +614,7 @@
 				<state img="2-calm.png">Well, that's... something.</state>
 				<state img="2-interested.png">You seem overdressed in this heat, ~name~.</state>
 			</case>
-			<case tag="male_removing_minor" target="fred" targetStage=1>
+			<case tag="male_removing_minor" target="fred" targetStage="1">
 				<state img="2-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
 			</case>
 			<case tag="male_removing_major"> 
@@ -640,7 +640,7 @@
 				<state img="2-loss.png">We're going to be here for a while, aren't we?</state>
 				<state img="2-angry.png">What are you, a mouse or a man?</state>
 			</case>
-			<case tag="male_removed_minor" target="fred" targetStage=2> 
+			<case tag="male_removed_minor" target="fred" targetStage="2"> 
 				<state img="2-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> 
@@ -887,7 +887,7 @@
 				<state img="3-angry.png">You've never heard of <i>noblesse oblige</i>, have you?</state>
 				<state img="3-angry.png">Well! You have no respect for royalty, do you?</state>
 			</case>
-			<case tag="male_removing_minor" target="fred" targetStage=1>
+			<case tag="male_removing_minor" target="fred" targetStage="1">
 				<state img="3-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
 			</case>
 			<case tag="male_removing_major"> 
@@ -913,7 +913,7 @@
 				<state img="3-loss.png">We're going to be here for a while, aren't we?</state>
 				<state img="3-angry.png">What are you, a mouse or a man?</state>
 			</case>
-			<case tag="male_removed_minor" target="fred" targetStage=2> 
+			<case tag="male_removed_minor" target="fred" targetStage="2"> 
 				<state img="3-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> 
@@ -1158,7 +1158,7 @@
 				<state img="4-angry.png">You've never heard of <i>noblesse oblige</i>, have you?</state>
 				<state img="4-angry.png">Well! You have no respect for royalty, do you?</state>
 			</case>
-			<case tag="male_removing_minor" target="fred" targetStage=1>
+			<case tag="male_removing_minor" target="fred" targetStage="1">
 				<state img="4-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
 			</case>
 			<case tag="male_removing_major"> 
@@ -1183,7 +1183,7 @@
 				<state img="4-loss.png">We're going to be here for a while, aren't we?</state>
 				<state img="4-angry.png">What are you, a mouse or a man?</state>
 			</case>
-			<case tag="male_removed_minor" target="fred" targetStage=2> 
+			<case tag="male_removed_minor" target="fred" targetStage="2"> 
 				<state img="4-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> 
@@ -1244,7 +1244,7 @@
 				<state img="4-calm.png">I've never seen such a thing in the markets of Agrabah! Wherever did you buy it?</state>
 				<state img="4-shocked.png">Does this mean I'm losing?</state>
 			</case>
-			<case tag="female_removing_accessory" target="mia" targetStage=2>
+			<case tag="female_removing_accessory" target="mia" targetStage="2">
 				<state img="4-stripped.png">Such a powerful amulet!</state>
 			</case>
 			<case tag="female_removing_minor"> 
@@ -1271,7 +1271,7 @@
 				<state img="4-angry.png">Oh, you wouldn't know fashion if it came up and bit you on the leg.</state>
 			</case>
 			
-			<case tag="female_removed_accessory" target="mia" targetStage=3>
+			<case tag="female_removed_accessory" target="mia" targetStage="3">
 				<state img="4-happy.png">Are you able to harness your amulet's magic?</state>
 			</case>
 			<case tag="female_removed_minor"> 
@@ -1433,7 +1433,7 @@
 				<state img="5-angry.png">You've never heard of <i>noblesse oblige</i>, have you?</state>
 				<state img="5-angry.png">Well! You have no respect for royalty, do you?</state>
 			</case>
-			<case tag="male_removing_minor" target="fred" targetStage=1>
+			<case tag="male_removing_minor" target="fred" targetStage="1">
 				<state img="5-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
 			</case>
 			<case tag="male_removing_major"> 
@@ -1458,7 +1458,7 @@
 				<state img="5-angry.png">It's not right to toy with people like that!</state>
 				<state img="5-angry.png">When I rule Agrabah, the first thing I will decree is to change this stupid rule.</state>
 			</case>
-			<case tag="male_removed_minor" target="fred" targetStage=2> 
+			<case tag="male_removed_minor" target="fred" targetStage="2"> 
 				<state img="5-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> 
@@ -1673,7 +1673,7 @@
 				<state img="6-angry.png">You've never heard of <i>noblesse oblige</i>, have you?</state>
 				<state img="6-angry.png">Well! You have no respect for royalty, do you?</state>
 			</case>
-			<case tag="male_removing_minor" target="fred" targetStage=1>
+			<case tag="male_removing_minor" target="fred" targetStage="1">
 				<state img="6-interested.png">You <i>do</i> seem overdressed, ~name~.</state>
 			</case>
 			<case tag="male_removing_major"> 
@@ -1698,7 +1698,7 @@
 				<state img="6-angry.png">It's not right to toy with people like that!</state>
 				<state img="6-angry.png">When I rule Agrabah, the first thing I will decree is to change this stupid rule.</state>
 			</case>
-			<case tag="male_removed_minor" target="fred" targetStage=2> 
+			<case tag="male_removed_minor" target="fred" targetStage="2"> 
 				<state img="6-interested.png">It makes me wonder if you have something to hide.</state>
 			</case>
 			<case tag="male_removed_major"> 
