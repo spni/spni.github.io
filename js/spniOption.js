@@ -190,7 +190,7 @@ $("#options-modal").on("hidden.bs.modal", function () {
 });
 
 
-$backgroundSettings = [$("#settings-background-1"), $("#settings-background-2"), $("#settings-background-3"), $("#settings-background-4"), $("#settings-background-5"), $("#settings-background-6"), $("#settings-background-7")];
+$backgroundSettings = [$("#settings-background-1"), $("#settings-background-2"), $("#settings-background-3"), $("#settings-background-4"), $("#settings-background-5"), $("#settings-background-6"), $("#settings-background-7"), $("#settings-background-8")];
 
 
 /************************************************************
@@ -215,6 +215,7 @@ function setBackground (choice) {
         case 5: $("body").css("background-image", "url(img/background5.png)"); break;
         case 6: $("body").css("background-image", "url(img/background6.png)"); break;
         case 7: $("body").css("background-image", "url(img/background7.png)"); break;
+        case 8: $("body").css("background-image", "url(img/background8.png)"); break;
 		default: $("body").css("background-image", "url(img/background1.png)");
 	}
 	setActiveOption($backgroundSettings, choice);
