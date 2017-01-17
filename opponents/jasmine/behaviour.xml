@@ -246,6 +246,12 @@
 			<case tag="female_removed_accessory" filter="princess" targetStage="1"> 
 				<state img="0-confused.png">I-I mean, there's nothing wrong with that. Your highness.</state>
 			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage="1"> 
+				<state img="0-angry.png">How <i>dare</i> you call me that!</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="0-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="0-confused.png">So... this is <i>fun</i>, is it? Hmm.</state>
 				<state img="0-confused.png">Maybe we're not at the exciting part yet.</state>
@@ -482,9 +488,13 @@
 				<state img="1-confused.png">That doesn't even seem like a penalty, but what do I know?</state>
 			</case>
 			<case tag="female_removed_accessory" filter="princess" targetStage="1"> 
-				<state img="1-happy.png">
-					Because, um, I would have worn more appropriate clothing to greet a princess! Right! That's what I meant.
-				</state>
+				<state img="1-happy.png">Because, um, I would have worn more appropriate clothing to greet a princess! Right! That's what I meant.</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage="1"> 
+				<state img="1-angry.png">How <i>dare</i> you call me that!</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="1-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="1-loss.png">Being honest, this seems dreadfully boring.</state>
@@ -722,6 +732,12 @@
 			<case tag="female_removed_accessory"> 
 				<state img="2-happy.png">I saw that coming. I must be catching on!</state>
 				<state img="2-confused.png">That doesn't even seem like a penalty, but what do I know?</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage="1"> 
+				<state img="2-angry.png">How <i>dare</i> you call me that!</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="2-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="2-loss.png">Being honest, this seems dreadfully boring.</state>
@@ -997,6 +1013,12 @@
 			<case tag="female_removed_accessory"> 
 				<state img="3-happy.png">I saw that coming. I must be catching on!</state>
 				<state img="3-confused.png">That doesn't even seem like a penalty, but what do I know?</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage="1"> 
+				<state img="3-angry.png">How <i>dare</i> you call me that!</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="3-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="3-loss.png">Being honest, this seems dreadfully boring.</state>
@@ -1274,6 +1296,9 @@
 			<case tag="female_removed_accessory" target="mia" targetStage="3">
 				<state img="4-happy.png">Are you able to harness your amulet's magic?</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="4-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="4-loss.png">Being honest, this seems dreadfully boring.</state>
 				<state img="4-interested.png">I'm honestly surprised you were wearing so much to begin with!</state>
@@ -1542,6 +1567,9 @@
 			<case tag="female_removed_accessory"> 
 				<state img="5-angry.png">Oh, you wouldn't know fashion if it came up and bit you on the leg.</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="5-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="5-sad.png">Is that all? I've seen more flesh on display walking through the market.</state>
 				<state img="5-loss.png">I was told this would be an unforgettable game. I didn't realize it was because I'd be humiliated!</state>
@@ -1780,6 +1808,9 @@
 			
 			<case tag="female_removed_accessory"> 
 				<state img="6-angry.png">Oh, you wouldn't know fashion if it came up and bit you on the leg.</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="6-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="6-sad.png">Is that all? I've seen more flesh on display walking through the market.</state>
@@ -2038,6 +2069,9 @@
 				<state img="7-shocked.png">How could you?</state>
 				<state img="7-angry.png">Some people just don't fight fair.</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="7-sad.png">Don't worry, Chara. I'm about to die of embarrassment anyway.</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="7-sad.png">Is that all? I've seen more flesh on display walking through the market.</state>
 				<state img="7-loss.png">I was told this would be an unforgettable game. I didn't realize it was because I'd be humiliated!</state>
@@ -2285,6 +2319,9 @@
 				<state img="8-shocked.png">How could you?</state>
 				<state img="8-angry.png">Some people just don't fight fair.</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="8-sad.png">Don't worry, Chara. I'm about to die of embarrassment anyway.</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="8-sad.png">Is that all? I've seen more flesh on display walking through the market.</state>
 				<state img="8-loss.png">I was told this would be an unforgettable game. I didn't realize it was because I'd be humiliated!</state>
@@ -2491,6 +2528,9 @@
 			<case tag="female_removed_accessory"> 
 				<state img="9-embarrassed.png">I can feel every eye on me!</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="9-sad.png">Don't worry, Chara. I'm about to die of embarrassment anyway.</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="9-horny.png">Everyone's staring at me...</state>
 			</case>
@@ -2682,6 +2722,9 @@
 			<case tag="female_removed_accessory"> 
 				<state img="10-shocked.png">How could you?</state>
 				<state img="10-angry.png">Some people just don't fight fair.</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="10-sad.png">Don't worry, Chara. I'm about to die of embarrassment anyway.</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="10-angry.png">Too little, too late. Stupid cards.</state>

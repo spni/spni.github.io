@@ -127,22 +127,16 @@
 				<state img="0-loss.png">Good choice - it's a faux pas to be better dressed than the girls you're playing with.</state>
 			</case>
 			<case tag="male_removing_minor"> 
-				<state img="0-sad.png">
-					At least TRY to make it sexy!
-				</state>
+				<state img="0-sad.png">At least <i>try</i> to make it sexy!</state>
 			</case>
 			<case tag="male_removing_major"> 
-				<state img="0-happy.png">
-					This is not turning out badly for me.
-				</state>
+				<state img="0-happy.png">This is not turning out badly for me.</state>
 			</case>
 			<case tag="male_chest_will_be_visible"> 
-				<state img="0-happy.png">
-					Yes! I am kicking ass!
-				</state>
+				<state img="0-happy.png">Yes! I am kicking ass!</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> 
-				<state img="0-shocked.png">This is SO messed up.</state>
+				<state img="0-shocked.png">This is <i>so</i> messed up.</state>
 			</case>
 			
 			
@@ -302,11 +296,14 @@
 			<case tag="female_removed_accessory"> 
 				<state img="0-loss.png">We're <i>really</i> pushing the boundaries of the game here, aren't we?</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="0-loss.png">You're off your meds again, huh, Chara?</state>
+			</case>
 			<case tag="female_removed_accessory" target="mia"> 
 				<state img="0-loss.png">Well, I mean, anyone can talk to zombies... but not anyone can get an answer other than 'rawr brains'.</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
-				<state img="0-happy.png">You're wound really tight, aren't you? I bet you're a freak in bed.</state>
+				<state img="0-happy.png">You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.</state>
 			</case>
 			<case tag="female_removed_accessory" target="spooky"> 
 				<state img="0-happy.png">Yes, yes, we're all just terrified of you, Spooky.</state>
@@ -515,7 +512,7 @@
 			</case>
 			<case tag="male_removing_minor"> 
 				<state img="1-sad.png">
-					At least TRY to make it sexy!
+					At least <i>try</i> to make it sexy!
 				</state>
 			</case>
 			<case tag="male_removing_major"> 
@@ -529,7 +526,7 @@
 				</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> 
-				<state img="1-horny.png">This is SO messed up!</state>
+				<state img="1-horny.png">This is <i>so</i> messed up!</state>
 			</case>
 			
 			
@@ -681,24 +678,19 @@
 			
 			
 			<case tag="female_removed_accessory"> 
-				<state img="1-sad.png">
-					I don't know what I was expecting.
-				</state>
+				<state img="1-sad.png">I don't know <i>what</i> I was expecting.</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="1-loss.png">You're off your meds again, huh, Chara?</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
-				<state img="1-happy.png">
-					You're wound really tight, aren't you? I bet you're a freak in bed.
-				</state>
+				<state img="1-happy.png">You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.</state>
 			</case>
 			<case tag="female_removed_accessory" target="spooky"> 
-				<state img="1-happy.png">
-					Yes, yes, we're all just terrified of you, Spooky.
-				</state>
+				<state img="1-happy.png">Yes, yes, we're all just terrified of you, Spooky.</state>
 			</case>
 			<case tag="female_removed_accessory" filter="confident"> 
-				<state img="1-sad.png">
-					You had my hopes up there for a minute.
-				</state>
+				<state img="1-sad.png">You had my hopes up there for a minute.</state>
 			</case>
 			<case tag="female_removed_accessory" filter="princess"> 
 				<state img="1-sad.png">Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.</state>
@@ -902,7 +894,7 @@
 			</case>
 			<case tag="male_removing_minor"> 
 				<state img="2-sad.png">
-					At least TRY to make it sexy!
+					At least <i>try</i> to make it sexy!
 				</state>
 			</case>
 			<case tag="male_removing_major"> 
@@ -916,7 +908,7 @@
 				</state>
 			</case>
 			<case tag="male_crotch_will_be_visible"> 
-				<state img="2-horny.png">This is SO messed up!</state>
+				<state img="2-horny.png">This is <i>so</i> messed up!</state>
 			</case>
 			
 			
@@ -1072,29 +1064,22 @@
 			
 			
 			<case tag="female_removed_accessory"> 
-				<state img="2-sad.png">
-					I don't know what I was expecting.
-				</state>
+				<state img="2-sad.png">I don't know <i>what</i> I was expecting.</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="2-loss.png">You're off your meds again, huh, Chara?</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
-				<state img="2-happy.png">
-					You're wound really tight, aren't you? I bet you're a freak in bed.
-				</state>
+				<state img="2-happy.png">You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.</state>
 			</case>
 			<case tag="female_removed_accessory" target="spooky"> 
-				<state img="2-happy.png">
-					Yes, yes, we're all just terrified of you, Spooky.
-				</state>
+				<state img="2-happy.png">Yes, yes, we're all just terrified of you, Spooky.</state>
 			</case>
 			<case tag="female_removed_accessory" filter="confident"> 
-				<state img="2-sad.png">
-					You had my hopes up there.
-				</state>
+				<state img="2-sad.png">You had my hopes up there.</state>
 			</case>
 			<case tag="female_removed_accessory" filter="princess"> 
-				<state img="2-sad.png">
-					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.
-				</state>
+				<state img="2-sad.png">Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="2-happy.png">Well, maybe if we keep playing we'll actually see something good.</state>
@@ -1295,7 +1280,7 @@
 			</case>
 			<case tag="male_removing_minor"> 
 				<state img="3-sad.png">
-					At least TRY to make it sexy!
+					At least <i>try</i> to make it sexy!
 				</state>
 			</case>
 			<case tag="male_removing_major"> 
@@ -1458,13 +1443,14 @@
 			
 			
 			<case tag="female_removed_accessory"> 
-				<state img="3-sad.png">
-					Wow, that SURE was revealing, ~name~. How embarrassing. I can't believe you took that off.
-				</state>
+				<state img="3-sad.png">Wow, that <i>sure</i> was revealing, ~name~. How embarrassing. I can't believe you took that off.</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="3-loss.png">You're off your meds again, huh, Chara?</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
 				<state img="3-happy.png">
-					You're wound really tight, aren't you? I bet you're a freak in bed.
+					You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.
 				</state>
 			</case>
 			<case tag="female_removed_accessory" target="spooky"> 
@@ -1478,9 +1464,7 @@
 				</state>
 			</case>
 			<case tag="female_removed_accessory" filter="princess"> 
-				<state img="3-sad.png">
-					Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.
-				</state>
+				<state img="3-sad.png">Let's hope nobody finds out Princess ~name~ took off her ~clothing~. It would be a royal scandal.</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="3-happy.png">Well, maybe if we keep playing we'll actually see something good.</state>
@@ -1821,12 +1805,13 @@
 			
 			
 			<case tag="female_removed_accessory"> 
-				<state img="4-sad.png">
-					And of <i>course</i> ~name~ still had her ~clothing~.
-				</state>
+				<state img="4-sad.png">And of <i>course</i> ~name~ still had her ~clothing~.</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="4-loss.png">You're off your meds again, huh, Chara?</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
-				<state img="4-happy.png">You're wound really tight, aren't you? I bet you're a freak in bed.</state>
+				<state img="4-happy.png">You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.</state>
 			</case>
 			<case tag="female_removed_minor" target="nagisa"> 
 				<state img="4-loss.png">I wonder if that innocence is really just an act...</state>
@@ -2156,14 +2141,13 @@
 			
 			
 			<case tag="female_removed_accessory"> 
-				<state img="5-sad.png">
-					And of <i>course</i> ~name~ still had her ~clothing~.
-				</state>
+				<state img="5-sad.png">And of <i>course</i> ~name~ still had her ~clothing~.</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="5-loss.png">You're off your meds again, huh, Chara?</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
-				<state img="5-happy.png">
-					You're wound really tight, aren't you? I bet you're a freak in bed.
-				</state>
+				<state img="5-happy.png">You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="5-awkward.png">Next to you, I feel kinda underdressed for the apocalypse.</state>
@@ -2506,7 +2490,7 @@
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
 				<state img="6-happy.png">
-					You're wound really tight, aren't you? I bet you're a freak in bed.
+					You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> 
