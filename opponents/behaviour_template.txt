@@ -6,6 +6,7 @@ gender=male or female
 size=small, medium, or large
 #Number of phases to "finish"
 timer=15
+#tags= (tags are currently unsupported by make_xml.py and will have to be edited in manually)
 
 #required for meta.xml
 #start picture
@@ -14,7 +15,7 @@ height=0'0"
 from=Where the character is from
 writer=Who wrote the character
 artist=Who drew the character
-description=Description of the character
+description=Description of the character for the More Info button
 
 #clothes
 #these must be in order of removal
@@ -42,12 +43,12 @@ start=0-calm,This is what the character says once they've been selected
 #This is what a character says while they're exchanging cards.
 swap_cards=calm,May I have ~cards~ cards?
 swap_cards=calm,I'll take ~cards~.
-swap_Cards=calm,~cards~ new cards, please.
+swap_cards=calm,~cards~ new cards, please.
 
 #The character thinks they have a good hand
 good_hand=happy,These are nice.
 good_hand=happy,Oh, how very nice.
-hood_hand=happy,A lovely hand.
+good_hand=happy,A lovely hand.
 
 #The character thinks they have a bad hand
 okay_hand=calm,These cards are alright.
@@ -60,6 +61,7 @@ bad_hand=sad,These cards could be better...
 bad_hand=sad,This is a bad hand.
 bad_hand=sad,This is... concerning.
 
+
 #stripping default
 #This is the character says once they've lost a hand, but before they strip
 must_strip_winning=loss,They say this when they're winning - they have more clothing items left than other players.
@@ -68,20 +70,6 @@ must_strip_losing=loss,The character has lost a round, and also has the fewest c
 stripping=strip,What the character says as they take their clothes off. The picture and text should be unique to what they're taking off.
 stripped=sad,What the character says just after they take their clothes off.
 
-#masturbation
-#these situations relate to when the character is masturbating
-#these only come up in the relevant stages, so you don't need to include the stage numbers here
-#just remember which stage is which when you make the images
-must_masturbate_first=loss,This is the character response when they lost their last hand and have to masturbate, and they're the first character who's required to masturbate.
-must_masturbate=loss,This is the character response when they lost their last hand and have to masturbate, and they're not the first character who's required to masturbate.
-start_masturbating=starting,What the character says as they start masturbating.
-masturbating=calm,What the character says while they're masturbating.
-heavy_masturbating=heavy,What the character says while they're masturbating, and closer to "finishing".
-finishing_masturbating=finishing,What the masturbating character says as they "finish".
-finished_masturbating=finished,What the character says just after they've finished masturbating.
-#I don't think this line is actually used by the game.
-game_over_defeat=calm,What the character says when someone else has won the game. This can only occur when a player is in the "finished" stage.
-game_over_victory=calm,What the character says when they win the game. Can happen in any stage.
 
 #situations where another male character is stripping
 male_human_must_strip=interested,What they say to a male player who has lost a round
@@ -204,18 +192,7 @@ female_finished_masturbating=shocked,What the character says when a female chara
 7-stripping=,
 8-stripped=,
 
-#victory lines. one for each stage.
-0-game_over_victory=,
-1-game_over_victory=,
-2-game_over_victory=,
-3-game_over_victory=,
-4-game_over_victory=,
-5-game_over_victory=,
-6-game_over_victory=,
-7-game_over_victory=,
--3-game_over_victory=,
--2-game_over_victory=,
--1-game_over_victory=,
+
 
 #card cases
 #fully clothed
@@ -271,6 +248,7 @@ female_finished_masturbating=shocked,What the character says when a female chara
 0-male_human_must_strip=,
 0-male_must_strip=,
 0-female_human_must_strip=,
+0-female_must_strip=,
 0-female_must_strip=,
 
 #lost 1 item
@@ -338,6 +316,8 @@ female_finished_masturbating=shocked,What the character says when a female chara
 0-male_removing_accessory=,
 0-male_removed_accessory=,
 0-female_removing_accessory=,
+0-female_removing_accessory=,
+0-female_removed_accessory=,
 0-female_removed_accessory=,
 
 #lost 1 item
@@ -828,6 +808,36 @@ female_finished_masturbating=shocked,What the character says when a female chara
 -1-female_start_masturbating=,
 -1-female_masturbating=,
 -1-female_finished_masturbating=,
+
+
+#masturbation
+#these situations relate to when the character is masturbating
+#these only come up in the relevant stages, so you don't need to include the stage numbers here
+#just remember which stage is which when you make the images
+must_masturbate_first=loss,This is the character response when they lost their last hand and have to masturbate, and they're the first character who's required to masturbate.
+must_masturbate=loss,This is the character response when they lost their last hand and have to masturbate, and they're not the first character who's required to masturbate.
+start_masturbating=starting,What the character says as they start masturbating.
+masturbating=calm,What the character says while they're masturbating.
+heavy_masturbating=heavy,What the character says while they're masturbating, and closer to "finishing".
+finishing_masturbating=finishing,What the masturbating character says as they "finish".
+finished_masturbating=finished,What the character says just after they've finished masturbating.
+
+
+game_over_defeat=calm,What the character says when someone else has won the game. This can only occur when a player is in the "finished" stage.
+game_over_victory=calm,What the character says when they win the game. Can happen in any stage unless you have specific line for that stage.
+
+#victory lines. one for each stage.
+0-game_over_victory=,
+1-game_over_victory=,
+2-game_over_victory=,
+3-game_over_victory=,
+4-game_over_victory=,
+5-game_over_victory=,
+6-game_over_victory=,
+7-game_over_victory=,
+-3-game_over_victory=,
+-2-game_over_victory=,
+-1-game_over_victory=,
 
 
 #ending data
