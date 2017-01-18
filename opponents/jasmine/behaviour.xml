@@ -218,6 +218,9 @@
 				<state img="0-happy.png">I see! Wait, no I don't.</state>
 				<state img="0-confused.png">Oh... are you out of jewelry already? I'd forgotten how poor peasants are.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="0-shocked.png">How terrible!</state>
+            </case>
 			<case tag="female_removing_minor" filter="princess"> 
 				<state img="0-shocked.png">Are you out of jewelry <i>already</i>? I didn't think that was possible.</state>
 			</case>
@@ -235,6 +238,9 @@
 				<state img="0-shocked.png">You think I don't know anything, huh? I know plenty about the real world! I'm not shocked by this at <i>all</i>!</state>
 				<state img="0-shocked.png">I had no idea this kind of game was happening in my k-- um, my neighbourhood.</state>
 			</case>
+			<case tag="female_crotch_will_be_visible" target="dawn"> 
+				<state img="0-happy.png">Oh! Do you have a magic carpet, too?</state>
+			</case>
 			
 			
 			
@@ -246,12 +252,24 @@
 			<case tag="female_removed_accessory" filter="princess" targetStage="1"> 
 				<state img="0-confused.png">I-I mean, there's nothing wrong with that. Your highness.</state>
 			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage="1"> 
+				<state img="0-angry.png">How <i>dare</i> you call me that!</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="0-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="0-confused.png">So... this is <i>fun</i>, is it? Hmm.</state>
 				<state img="0-confused.png">Maybe we're not at the exciting part yet.</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="0-shocked.png">That must have been painful...</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="0-loss.png">Call me sheltered, but I just don't see the appeal of this.</state>
+			</case>
+			<case tag="female_removed_major" target="dawn" targetStage=5> 
+				<state img="0-interested.png">It <i>is</i> very nice.</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> 
 				<state img="0-sad.png">How humiliating for you!</state>
@@ -264,6 +282,9 @@
 			</case>
 			<case tag="female_crotch_is_visible"> 
 				<state img="0-sad.png">...Is this what I have to compete with?</state>
+			</case>
+			<case tag="female_crotch_is_visible" target="dawn"> 
+				<state img="0-shocked.png">Oh! You meant your-- is <i>that</i> what Aladdin meant?!?</state>
 			</case>
 			
 			
@@ -458,6 +479,9 @@
 				<state img="1-happy.png">I see! Wait, no I don't.</state>
 				<state img="1-confused.png">Oh... are you out of jewelry already? I'd forgotten how poor peasants are.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="1-shocked.png">How terrible!</state>
+            </case>
 			<case tag="female_removing_minor" filter="princess"> 
 				<state img="1-shocked.png">Are you out of jewelry <i>already</i>? I didn't think that was possible.</state>
 			</case>
@@ -473,6 +497,9 @@
 				<state img="1-shocked.png">You think I don't know anything, huh? I know plenty about the real world! I'm not shocked by this at <i>all</i>!</state>
 				<state img="1-shocked.png">I had no idea this kind of game was happening in my k-- um, my neighbourhood.</state>
 			</case>
+			<case tag="female_crotch_will_be_visible" target="dawn"> 
+				<state img="1-happy.png">Oh! Do you have a magic carpet, too?</state>
+			</case>
 			
 			
 			
@@ -482,9 +509,13 @@
 				<state img="1-confused.png">That doesn't even seem like a penalty, but what do I know?</state>
 			</case>
 			<case tag="female_removed_accessory" filter="princess" targetStage="1"> 
-				<state img="1-happy.png">
-					Because, um, I would have worn more appropriate clothing to greet a princess! Right! That's what I meant.
-				</state>
+				<state img="1-happy.png">Because, um, I would have worn more appropriate clothing to greet a princess! Right! That's what I meant.</state>
+			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage="1"> 
+				<state img="1-angry.png">How <i>dare</i> you call me that!</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="1-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="1-loss.png">Being honest, this seems dreadfully boring.</state>
@@ -493,8 +524,14 @@
 			<case tag="female_removed_minor" filter="innocent"> 
 				<state img="1-happy.png">My! You appear to be well brought-up, ~name~. Unlike <i>some</i> people I could mention.</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="1-shocked.png">That must have been painful...</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="1-loss.png">Call me sheltered, but I just don't see the appeal of this.</state>
+			</case>
+			<case tag="female_removed_major" target="dawn" targetStage=5> 
+				<state img="1-interested.png">It <i>is</i> very nice.</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> 
 				<state img="1-sad.png">How humiliating for you!</state>
@@ -507,6 +544,9 @@
 			</case>
 			<case tag="female_crotch_is_visible"> 
 				<state img="1-sad.png">...Is this what I have to compete with?</state>
+			</case>
+			<case tag="female_crotch_is_visible" target="dawn"> 
+				<state img="1-shocked.png">Oh! You meant your-- is <i>that</i> what Aladdin meant?!?</state>
 			</case>
 			
 			
@@ -700,6 +740,9 @@
 				<state img="2-happy.png">I see! Wait, no I don't.</state>
 				<state img="2-confused.png">Oh... are you out of jewelry already? I'd forgotten how poor peasants are.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="2-shocked.png">How terrible!</state>
+            </case>
 			<case tag="female_removing_minor" filter="princess"> 
 				<state img="2-shocked.png">Are you out of jewelry <i>already</i>? I didn't think that was possible.</state>
 			</case>
@@ -715,6 +758,9 @@
 				<state img="2-shocked.png">You think I don't know anything, huh? I know plenty about the real world! I'm not shocked by this at <i>all</i>!</state>
 				<state img="2-shocked.png">I had no idea this kind of game was happening in my k-- um, my neighbourhood.</state>
 			</case>
+			<case tag="female_crotch_will_be_visible" target="dawn"> 
+				<state img="2-happy.png">Oh! Do you have a magic carpet, too?</state>
+			</case>
 			
 			
 			
@@ -723,6 +769,12 @@
 				<state img="2-happy.png">I saw that coming. I must be catching on!</state>
 				<state img="2-confused.png">That doesn't even seem like a penalty, but what do I know?</state>
 			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage="1"> 
+				<state img="2-angry.png">How <i>dare</i> you call me that!</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="2-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="2-loss.png">Being honest, this seems dreadfully boring.</state>
 				<state img="2-interested.png">I'm honestly surprised you were wearing so much to begin with!</state>
@@ -730,9 +782,15 @@
 			<case tag="female_removed_minor" filter="innocent"> 
 				<state img="2-happy.png">My! You appear to be well brought-up, ~name~. Unlike <i>some</i> people I could mention.</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="2-shocked.png">That must have been painful...</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="2-embarrassed.png">Things are really different outside the palace, aren't they?</state>
 				<state img="2-interested.png">You could dance for a living, ~name~!</state>
+			</case>
+			<case tag="female_removed_major" target="dawn" targetStage=5> 
+				<state img="2-interested.png">It <i>is</i> very nice.</state>
 			</case>
 			<case tag="female_removed_major" filter="sporty"> 
 				<state img="2-interested.png">You're so... muscular! Are you an athlete of some kind?</state>
@@ -753,6 +811,9 @@
 			<case tag="female_crotch_is_visible"> 
 				<state img="2-shocked.png">It's an indescribable sight...</state>
 				<state img="2-calm.png">Bravo, ~name~! How brave!</state>
+			</case>
+			<case tag="female_crotch_is_visible" target="dawn"> 
+				<state img="2-shocked.png">Oh! You meant your-- is <i>that</i> what Aladdin meant?!?</state>
 			</case>
 			
 			
@@ -978,6 +1039,9 @@
 				<state img="3-interested.png">Make yourself more comfortable, ~name~.</state>
 				<state img="3-angry.png">How... shrewd of you.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="3-shocked.png">How terrible!</state>
+            </case>
 			<case tag="female_removing_major"> 
 				<state img="3-shocked.png">...</state>
 				<state img="3-interested.png">Is that the legendary dance of the seven veils?</state>
@@ -990,6 +1054,9 @@
 				<state img="3-angry.png">Be brave, ~name~!</state>
 				<state img="3-horny.png">Just like the baths at home!</state>
 			</case>
+			<case tag="female_crotch_will_be_visible" target="dawn"> 
+				<state img="3-happy.png">Oh! Do you have a magic carpet, too?</state>
+			</case>
 			
 			
 			
@@ -998,13 +1065,25 @@
 				<state img="3-happy.png">I saw that coming. I must be catching on!</state>
 				<state img="3-confused.png">That doesn't even seem like a penalty, but what do I know?</state>
 			</case>
+			<case tag="female_removed_accessory" target="blackrose" targetStage="1"> 
+				<state img="3-angry.png">How <i>dare</i> you call me that!</state>
+			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="3-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="3-loss.png">Being honest, this seems dreadfully boring.</state>
 				<state img="3-interested.png">I'm honestly surprised you were wearing so much to begin with!</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="3-shocked.png">That must have been painful...</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="3-embarrassed.png">Things are really different outside the palace, aren't they?</state>
 				<state img="3-interested.png">You could dance for a living, ~name~!</state>
+			</case>
+			<case tag="female_removed_major" target="dawn" targetStage=5> 
+				<state img="3-interested.png">It <i>is</i> very nice.</state>
 			</case>
 			<case tag="female_removed_major" filter="sporty"> 
 				<state img="3-interested.png">You're so... muscular! Are you an athlete of some kind?</state>
@@ -1025,6 +1104,9 @@
 			<case tag="female_crotch_is_visible"> 
 				<state img="3-shocked.png">It's an indescribable sight...</state>
 				<state img="3-calm.png">Bravo, ~name~! How brave!</state>
+			</case>
+			<case tag="female_crotch_is_visible" target="dawn"> 
+				<state img="3-shocked.png">Oh! You meant your-- is <i>that</i> what Aladdin meant?!?</state>
 			</case>
 			
 			
@@ -1251,6 +1333,9 @@
 				<state img="4-interested.png">Make yourself more comfortable, ~name~.</state>
 				<state img="4-angry.png">How... shrewd of you.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="4-shocked.png">How terrible!</state>
+            </case>
 			<case tag="female_removing_major"> 
 				<state img="4-shocked.png">...</state>
 				<state img="4-interested.png">Is that the legendary dance of the seven veils?</state>
@@ -1263,6 +1348,9 @@
 				<state img="4-angry.png">Be brave, ~name~!</state>
 				<state img="4-horny.png">Just like the baths at home!</state>
 			</case>
+			<case tag="female_crotch_will_be_visible" target="dawn"> 
+				<state img="4-happy.png">Oh! Do you have a magic carpet, too?</state>
+			</case>
 			
 			
 			
@@ -1274,13 +1362,22 @@
 			<case tag="female_removed_accessory" target="mia" targetStage="3">
 				<state img="4-happy.png">Are you able to harness your amulet's magic?</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="4-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="4-loss.png">Being honest, this seems dreadfully boring.</state>
 				<state img="4-interested.png">I'm honestly surprised you were wearing so much to begin with!</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="4-shocked.png">That must have been painful...</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="4-embarrassed.png">Things are really different outside the palace, aren't they?</state>
 				<state img="4-interested.png">You could dance for a living, ~name~!</state>
+			</case>
+			<case tag="female_removed_major" target="dawn" targetStage=5> 
+				<state img="4-interested.png">It <i>is</i> very nice.</state>
 			</case>
 			<case tag="female_removed_major" filter="sporty"> 
 				<state img="4-interested.png">You're so... muscular! Are you an athlete of some kind?</state>
@@ -1301,6 +1398,9 @@
 			<case tag="female_crotch_is_visible"> 
 				<state img="4-shocked.png">It's an indescribable sight...</state>
 				<state img="4-calm.png">Bravo, ~name~! How brave!</state>
+			</case>
+			<case tag="female_crotch_is_visible" target="dawn"> 
+				<state img="4-shocked.png">Oh! You meant your-- is <i>that</i> what Aladdin meant?!?</state>
 			</case>
 			
 			
@@ -1523,6 +1623,9 @@
 				<state img="5-interested.png">Make yourself more comfortable, ~name~.</state>
 				<state img="5-angry.png">How... shrewd of you.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="5-shocked.png">How terrible!</state>
+            </case>
 			<case tag="female_removing_major"> 
 				<state img="5-angry.png">Honestly! If Aladdin wanted to see <i>this</i>, all he had to do was ask me!</state>
 				<state img="5-interested.png">There's something to the way you slip out of your ~clothing~ that catches the eye.  I'll have to learn how to shimmy like that.</state>
@@ -1535,6 +1638,9 @@
 				<state img="5-angry.png">Be brave, ~name~!</state>
 				<state img="5-horny.png">Just like the baths at home!</state>
 			</case>
+			<case tag="female_crotch_will_be_visible" target="dawn"> 
+				<state img="5-happy.png">Oh! Do you have a magic carpet, too?</state>
+			</case>
 			
 			
 			
@@ -1542,13 +1648,22 @@
 			<case tag="female_removed_accessory"> 
 				<state img="5-angry.png">Oh, you wouldn't know fashion if it came up and bit you on the leg.</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="5-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="5-sad.png">Is that all? I've seen more flesh on display walking through the market.</state>
 				<state img="5-loss.png">I was told this would be an unforgettable game. I didn't realize it was because I'd be humiliated!</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="5-shocked.png">That must have been painful...</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="5-interested.png">Maybe I <i>will</i> let Aladdin play this game...</state>
 				<state img="5-interested.png">You're not leaving a lot to the imagination... which isn't a bad thing.</state>
+			</case>
+			<case tag="female_removed_major" target="dawn" targetStage=5> 
+				<state img="5-interested.png">It <i>is</i> very nice.</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> 
 				<state img="5-interested.png">Don't worry, my dear - I'm sure they'll grow.</state>
@@ -1565,6 +1680,9 @@
 			<case tag="female_crotch_is_visible"> 
 				<state img="5-shocked.png">It's an indescribable sight...</state>
 				<state img="5-calm.png">Bravo, ~name~! How brave!</state>
+			</case>
+			<case tag="female_crotch_is_visible" target="dawn"> 
+				<state img="5-shocked.png">Oh! You meant your-- is <i>that</i> what Aladdin meant?!?</state>
 			</case>
 			
 			
@@ -1762,6 +1880,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="6-embarrassed.png">Clearly I have a <i>lot</i> to learn about this game.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="6-shocked.png">How terrible!</state>
+            </case>
 			<case tag="female_removing_major"> 
 				<state img="6-angry.png">Honestly! If Aladdin wanted to see <i>this</i>, all he had to do was ask me!</state>
 				<state img="6-interested.png">There's something to the way you slip out of your ~clothing~ that catches the eye.  I'll have to learn how to shimmy like that.</state>
@@ -1774,6 +1895,9 @@
 				<state img="6-happy.png">This is kind of fun, like playing at being harem slaves.</state>
 				<state img="6-happy.png">Silly girl, caught by the same trap as me!</state>
 			</case>
+			<case tag="female_crotch_will_be_visible" target="dawn"> 
+				<state img="6-happy.png">Oh! Do you have a magic carpet, too?</state>
+			</case>
 			
 			
 			
@@ -1781,13 +1905,22 @@
 			<case tag="female_removed_accessory"> 
 				<state img="6-angry.png">Oh, you wouldn't know fashion if it came up and bit you on the leg.</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="6-shocked.png">...This <i>is</i> just a friendly game, isn't it?</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="6-sad.png">Is that all? I've seen more flesh on display walking through the market.</state>
 				<state img="6-loss.png">I was told this would be an unforgettable game. I didn't realize it was because I'd be humiliated!</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="6-shocked.png">That must have been painful...</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="6-interested.png">Maybe I <i>will</i> let Aladdin play this game...</state>
 				<state img="6-interested.png">You're not leaving a lot to the imagination... which isn't a bad thing.</state>
+			</case>
+			<case tag="female_removed_major" target="dawn" targetStage=5> 
+				<state img="6-interested.png">It <i>is</i> very nice.</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> 
 				<state img="6-interested.png">It may be time to arrange a royal sleepover...</state>
@@ -1819,6 +1952,9 @@
 			</case>
 			<case tag="female_crotch_is_visible" filter="confident"> 
 				<state img="6-interested.png">I'd be shaking if I was stripped naked like that! ...I admire your confidence.</state>
+			</case>
+			<case tag="female_crotch_is_visible" target="dawn"> 
+				<state img="6-shocked.png">Oh! You meant your-- is <i>that</i> what Aladdin meant?!?</state>
 			</case>
 			
 			
@@ -2018,6 +2154,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="7-embarrassed.png">Clearly I have a <i>lot</i> to learn about this game.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="7-shocked.png">How terrible!</state>
+            </case>
 			<case tag="female_removing_major"> 
 				<state img="7-angry.png">Honestly! If Aladdin wanted to see <i>this</i>, all he had to do was ask me!</state>
 				<state img="7-interested.png">There's something to the way you slip out of your ~clothing~ that catches the eye.  I'll have to learn how to shimmy like that.</state>
@@ -2038,13 +2177,22 @@
 				<state img="7-shocked.png">How could you?</state>
 				<state img="7-angry.png">Some people just don't fight fair.</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="7-sad.png">Don't worry, Chara. I'm about to die of embarrassment anyway.</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="7-sad.png">Is that all? I've seen more flesh on display walking through the market.</state>
 				<state img="7-loss.png">I was told this would be an unforgettable game. I didn't realize it was because I'd be humiliated!</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="7-shocked.png">That must have been painful...</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="7-interested.png">Maybe I <i>will</i> let Aladdin play this game...</state>
 				<state img="7-interested.png">You're not leaving a lot to the imagination... which isn't a bad thing.</state>
+			</case>
+			<case tag="female_removed_major" target="dawn" targetStage=5> 
+				<state img="7-interested.png">It <i>is</i> very nice.</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> 
 				<state img="7-interested.png">It may be time to arrange a royal sleepover...</state>
@@ -2264,6 +2412,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="8-embarrassed.png">Clearly I have a <i>lot</i> to learn about this game.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="8-shocked.png">How terrible!</state>
+            </case>
 			<case tag="female_removing_major"> 
 				<state img="8-angry.png">Honestly! If Aladdin wanted to see <i>this</i>, all he had to do was ask me!</state>
 				<state img="8-interested.png">There's something to the way you slip out of your ~clothing~ that catches the eye.  I'll have to learn how to shimmy like that.</state>
@@ -2285,13 +2436,22 @@
 				<state img="8-shocked.png">How could you?</state>
 				<state img="8-angry.png">Some people just don't fight fair.</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="8-sad.png">Don't worry, Chara. I'm about to die of embarrassment anyway.</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="8-sad.png">Is that all? I've seen more flesh on display walking through the market.</state>
 				<state img="8-loss.png">I was told this would be an unforgettable game. I didn't realize it was because I'd be humiliated!</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="8-shocked.png">That must have been painful...</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="8-interested.png">Maybe I <i>will</i> let Aladdin play this game...</state>
 				<state img="8-interested.png">You're not leaving a lot to the imagination... which isn't a bad thing.</state>
+			</case>
+			<case tag="female_removed_major" target="dawn" targetStage=5> 
+				<state img="8-interested.png">It <i>is</i> very nice.</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> 
 				<state img="8-interested.png">Oh, those yearn to be stroked...</state>
@@ -2473,6 +2633,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="9-horny.png">Do you think anyone will notice something that little when I'm here doing <i>this</i>?</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="9-shocked.png">How terrible!</state>
+            </case>
 			<case tag="female_removing_major"> 
 				<state img="9-horny.png">You call that a strip tease? Dance!</state>
 			</case>
@@ -2491,9 +2654,15 @@
 			<case tag="female_removed_accessory"> 
 				<state img="9-embarrassed.png">I can feel every eye on me!</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="9-sad.png">Don't worry, Chara. I'm about to die of embarrassment anyway.</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="9-horny.png">Everyone's staring at me...</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="9-shocked.png">That must have been painful...</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="9-interested.png">Mm, but it's working - I want to see more!</state>
 			</case>
@@ -2664,6 +2833,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="10-embarrassed.png">Clearly I have a <i>lot</i> to learn about this game.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="10-shocked.png">How terrible!</state>
+            </case>
 			<case tag="female_removing_major"> 
 				<state img="10-interested.png">Now that's more like it!</state>
 			</case>
@@ -2683,9 +2855,15 @@
 				<state img="10-shocked.png">How could you?</state>
 				<state img="10-angry.png">Some people just don't fight fair.</state>
 			</case>
+			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
+				<state img="10-sad.png">Don't worry, Chara. I'm about to die of embarrassment anyway.</state>
+			</case>
 			<case tag="female_removed_minor"> 
 				<state img="10-angry.png">Too little, too late. Stupid cards.</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="10-shocked.png">That must have been painful...</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="10-interested.png">Maybe I <i>will</i> let Aladdin play this game...</state>
 				<state img="10-interested.png">You're not leaving a lot to the imagination... which isn't a bad thing.</state>
