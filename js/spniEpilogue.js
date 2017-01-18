@@ -16,8 +16,8 @@ var textBoxDivName = "#epilogueDivBox";
 var epilogueSelections = []; //references to the epilogue selection UI elements
 
 var winStr = "You've won the game, and possibly made some friends. Who among these players did you become close with?"; //Winning the game, with endings available
-var winStrNone = "You've won the game, and possibly made some friends? Unfortunately, none of your competitors are ready for a friend like you."; //Player won the game, but none of the characters have an ending written
-var lossStr = "Well you lost. And you didn't manage to make any new friends. But you saw some people strip down and show off, and isn't that what life is all about?"; //Player lost the game. Currently no support for ending scenes when other players win
+var winStrNone = "You've won the game, and possibly made some friends? Unfortunately, none of your competitors are ready for a friend like you.<br>(None of the characters you played with have an ending written.)"; //Player won the game, but none of the characters have an ending written
+var lossStr = "Well you lost. And you didn't manage to make any new friends. But you saw some people strip down and show off, and isn't that what life is all about?<br>(You may only view an ending when you win.)"; //Player lost the game. Currently no support for ending scenes when other players win
 
 /* NPC chosen for epilogue */
 var epilogueCharacter = -1; //the character whose epilogue is playing
