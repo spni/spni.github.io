@@ -61,7 +61,7 @@
                 <state img="0-interested.png">Just do that a few more times, okay?</state>
             </case>
             <case tag="male_removed_accessory">
-                <state img="0-sad.png">Lame. Is that what we're here for? ~Clothing~ removal?</state>
+                <state img="0-annoyed.png">Lame. Is that what we're here for? ~Clothing~ removal?</state>
             </case>
             <case tag="male_must_masturbate">
                 <state img="0-horny.png">It's about time you showed us some "bending", don't you think?</state>
@@ -84,7 +84,7 @@
             </case>
             <case tag="female_removed_accessory">
                 <state img="0-calm.png">I haven't stripped yet, but if I did I would probably take off something small like that too.</state>
-				<state img="0-calm.png">No problem. I'm still one more piece ahead.</state>
+                <state img="0-calm.png">No problem. I'm still one more piece ahead.</state>
             </case>
             <case tag="male_removed_major">
                 <state img="0-happy.png">Hey, nice! That's what I'm talking about!</state>
@@ -127,7 +127,7 @@
             </case>
             <case tag="game_over_victory">
                 <state img="0-happy.png">I'm the Avatar, this was a piece of cake!</state>
-                <state img="0-happy.png">I WON! You gotta deal with it!</state>
+                <state img="0-victory.png">I WON! You gotta deal with it!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="0-happy.png">WOAH! ~name~ is taking off her ~clothing~ before I've even taken off a single article. I must be a cardbender or something!</state>
@@ -136,7 +136,7 @@
                 <state img="0-calm.png">Sure. I can appreciate the effort.</state>
             </case>
             <case tag="female_finished_masturbating">
-                <state img="0-shocked.png">What? How is it over already?</state>
+                <state img="0-confused.png">What? How is it over already?</state>
             </case>
             <case tag="female_chest_will_be_visible">
                 <state img="0-excited.png">Showing your breasts so soon, ~name~? I haven't even taken off my boots yet.</state>
@@ -152,7 +152,7 @@
             </case>
             <case tag="good_hand">
                 <state img="0-happy.png">Let's do this.</state>
-                <state img="0-happy.png">Seems easy enough.</state>
+                <state img="0-calm.png">Seems easy enough.</state>
                 <state img="0-happy.png">I got a good feeling about tonight.</state>
                 <state img="0-excited.png">Book One: Winning!</state>
             </case>
@@ -163,7 +163,7 @@
                 <state img="0-calm.png">I need to bend these ~cards~ into new cards.</state>
                 <state img="0-calm.png">Give me ~cards~.</state>
                 <state img="0-calm.png">~cards~ new cards, please!</state>
-                <state img="0-calm.png">Yeah, I'm going to need ~cards~.</state>
+                <state img="0-angry.png">Yeah, I'm going to need ~cards~.</state>
             </case>
             <case tag="bad_hand">
                 <state img="0-angry.png">It's a long shot...</state>
@@ -234,8 +234,8 @@
                 <state img="1-happy.png">WOAH! ~name~ is taking off his ~clothing~ this early. I must be a cardbender or something!</state>
             </case>
             <case tag="female_removed_accessory">
-				<state img="1-calm.png">Starting small. I can accept that.</state>
-				<state img="1-calm.png">Don't think that every round will be this easy.</state>
+                <state img="1-calm.png">Starting small. I can accept that.</state>
+                <state img="1-calm.png">Don't think that every round will be this easy.</state>
             </case>
             <case tag="male_removed_major">
                 <state img="1-happy.png">Hey, nice! That's what I'm talking about!</state>
@@ -278,7 +278,7 @@
             </case>
             <case tag="game_over_victory">
                 <state img="1-happy.png">WOOO! I WON! Can I get my boots back now?</state>
-                <state img="1-happy.png">I WON! You gotta deal with it!</state>
+                <state img="1-victory.png">I WON! You gotta deal with it!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="1-happy.png">Don't mind me. I'm just going to watch and enjoy.</state>
@@ -312,11 +312,11 @@
                 <state img="1-calm.png">I need to bend these ~cards~ into new cards.</state>
                 <state img="1-calm.png">Give me ~cards~.</state>
                 <state img="1-calm.png">~cards~ new cards, please!</state>
-                <state img="1-calm.png">Yeah, I'm going to need ~cards~.</state>
+                <state img="1-angry.png">Yeah, I'm going to need ~cards~.</state>
             </case>
             <case tag="bad_hand">
                 <state img="1-angry.png">I got nothing.</state>
-                <state img="1-angry.png">Whatever.</state>
+                <state img="1-annoyed.png">Whatever.</state>
             </case>
             <case tag="stripped">
                 <state img="1-stripped.png">I feel a little shorter without these boots on.</state>
@@ -460,11 +460,12 @@
                 <state img="2-calm.png">I need to bend these ~cards~ into new cards.</state>
                 <state img="2-calm.png">Give me ~cards~.</state>
                 <state img="2-calm.png">~cards~ new cards, please!</state>
-                <state img="2-calm.png">Yeah, I'm going to need ~cards~.</state>
+                <state img="2-angry.png">Yeah, I'm going to need ~cards~.</state>
             </case>
             <case tag="bad_hand">
                 <state img="2-sad.png">I think I'm doing it wrong...</state>
-                <state img="2-sad.png">Well, I- I'm not sure what I can do about this.</state>
+                <state img="2-awkward.png">Well, I- I'm not sure what I can do about this.</state>
+                <state img="2-annoyed.png">There's not much I can do with these cards.</state>
             </case>
             <case tag="stripped">
                 <state img="2-stripped.png">I'm a better bender this way anyways. I wish card bending was a thing though...</state>
@@ -479,7 +480,7 @@
                 <state img="2-strip.png">Sorry to disappoint you, but it's just my wristbands this time.</state>
             </case>
             <case tag="must_strip_winning">
-                <state img="2-loss.png">What? That's ridiculous. I was on a winning streak!</state>
+                <state img="2-stripped.png">What? That's ridiculous. I was on a winning streak!</state>
             </case>
         </stage>
 
@@ -558,8 +559,8 @@
                 <state img="3-awkward.png">Hey, it's okay. We were all a twelve-year-old boy once.</state>
             </case>
             <case tag="male_removing_accessory">
-                <state img="3-calm.png">Patience, Korra...</state>
-                <state img="3-calm.png">You've got the right idea just stripping your ~clothing~, ~name~.</state>
+                <state img="3-sad.png">Patience, Korra...</state>
+                <state img="3-calm.png">You've got the right idea just stripping your ~clothing~, ~name~. Just do it faster.</state>
             </case>
             <case tag="male_finished_masturbating">
                 <state img="3-shocked.png">What did I think? That was amazing!</state>
@@ -607,7 +608,7 @@
                 <state img="3-calm.png">I need to bend these ~cards~ into new cards.</state>
                 <state img="3-calm.png">Give me ~cards~.</state>
                 <state img="3-calm.png">~cards~ new cards, please!</state>
-                <state img="3-calm.png">Yeah, I'm going to need ~cards~.</state>
+                <state img="3-angry.png">Yeah, I'm going to need ~cards~.</state>
             </case>
             <case tag="bad_hand">
                 <state img="3-sad.png">I don't like the looks of this.</state>
@@ -620,14 +621,14 @@
                 <state img="3-loss.png">I'm not running from anyone.</state>
             </case>
             <case tag="must_strip_losing">
-                <state img="3-loss.png">I have a feeling I'll be naked soon... I really wish I could learn card bending right about now.</state>
+                <state img="3-awkward.png">I have a feeling I'll be naked soon... I really wish I could learn card bending right about now.</state>
                 <state img="3-sad.png">Maybe I'm just not cut out to be a poker player...</state>
             </case>
             <case tag="stripping">
                 <state img="3-strip.png">Everything changed when these terrible cards attacked.</state>
             </case>
             <case tag="must_strip_winning">
-                <state img="3-loss.png">I should be able to fix this. I'm the Avatar after all.</state>
+                <state img="3-stunned.png">I should be able to fix this. I'm the Avatar after all.</state>
             </case>
         </stage>
 
@@ -723,7 +724,7 @@
                 <state img="4-sad.png">Just your ~clothing~? Are you sure you don't want to take off more?</state>
             </case>
             <case tag="game_over_victory">
-                <state img="4-excited.png">Nice! I won! I was out of accessories too.</state>
+                <state img="4-victory.png">Nice! I won! I was out of accessories too.</state>
             </case>
             <case tag="female_removing_major">
                 <state img="4-happy.png">This is the part I was looking forward to.</state>
@@ -756,30 +757,32 @@
                 <state img="4-calm.png">I need to bend these ~cards~ into new cards.</state>
                 <state img="4-calm.png">Give me ~cards~.</state>
                 <state img="4-calm.png">~cards~ new cards, please!</state>
-                <state img="4-calm.png">Yeah, I'm going to need ~cards~.</state>
+                <state img="4-angry.png">Yeah, I'm going to need ~cards~.</state>
             </case>
             <case tag="bad_hand">
-                <state img="4-sad.png">This is a disaster.</state>
+                <state img="4-nervous.png">This is a disaster.</state>
                 <state img="4-sad.png">You know I'm not very good at this.</state>
             </case>
             <case tag="stripped">
                 <state img="4-stripped.png">I hope I don't lose the next round. Then I'll really have to start showing skin.</state>
-				<state img="4-stripped.png">That jacket was my last accessory. When you grow up in a Water Tribe, you learn to dress in layers.</state>
+                <state img="4-stripped.png">That jacket was my last accessory. When you grow up in a Water Tribe, you learn to dress in layers.</state>
             </case>
             <case tag="must_strip_normal">
                 <state img="4-loss.png">It looks like you're not giving me a choice.</state>
             </case>
             <case tag="must_strip_losing">
                 <state img="4-loss.png">Uh oh, now things are getting serious.</state>
-                <state img="4-loss.png">There's so much responsibility on my shoulders. But thanks to you guys, it's the shirt that comes off.</state>
+                <state img="4-stripped.png">There's so much responsibility on my shoulders. But thanks to you guys, it's the shirt that comes off.</state>
             </case>
             <case tag="stripping">
                 <state img="4-strip.png">Off comes the shirt...</state>
             </case>
             <case tag="must_strip_winning">
-                <state img="4-loss.png">Great. More attention to me.</state>
+                <state img="4-annoyed.png">Great. More attention to me.</state>
             </case>
-			<case tag="female_removed_accessory" target="nagisa"><state img="4-calm.png">Nagisa, if you're not feeling confident, come train with me at the Water Tribe sometime. How are you with cold weather?</state></case>
+			<case tag="female_removed_accessory" target="nagisa">
+				<state img="4-calm.png">Nagisa, if you're not feeling confident, come train with me at the Water Tribe sometime. How are you with cold weather?</state>
+			</case>
         </stage>
 
         <stage id="5">
@@ -836,7 +839,7 @@
                 <state img="5-happy.png">Seriously, thanks.</state>
             </case>
             <case tag="male_start_masturbating">
-                <state img="5-horny.png">I  hope my cleavage is enough to get you started. Maybe you'll get lucky  and I'll lose the next few hand and give you some more inspiration.</state>
+                <state img="5-horny.png">I hope my cleavage is enough to get you started. Maybe you'll get lucky and I'll lose the next few hand and give you some more inspiration.</state>
             </case>
             <case tag="male_chest_is_visible">
                 <state img="5-horny.png">I like it very much ~name~, I want to see some more next round and it looks like you don't have much left. Lucky me.</state>
@@ -908,7 +911,7 @@
                 <state img="5-calm.png">I need to bend these ~cards~ into new cards.</state>
                 <state img="5-calm.png">Give me ~cards~.</state>
                 <state img="5-calm.png">~cards~ new cards, please!</state>
-                <state img="5-calm.png">Yeah, I'm going to need ~cards~.</state>
+                <state img="5-angry.png">Yeah, I'm going to need ~cards~.</state>
             </case>
             <case tag="bad_hand">
                 <state img="5-sad.png">If I keep getting hands like this, I'm toast.</state>
@@ -920,7 +923,7 @@
                 <state img="5-loss.png">Light and peace... Light and peace...</state>
             </case>
             <case tag="must_strip_losing">
-                <state img="5-loss.png">I'm getting my butt kicked...</state>
+                <state img="5-shocked.png">I'm getting my butt kicked...</state>
             </case>
             <case tag="stripping">
                 <state img="5-strip.png">The Avatar should really have more modesty then this, but off go my pants...</state>
@@ -987,14 +990,14 @@
                 <state img="6-horny.png">Bam. ~Clothing~ gone. That wasn't so hard, was it?</state>
             </case>
             <case tag="male_start_masturbating">
-                <state img="6-horny.png">I  hope my underwear is enough to get you started. Maybe you'll get lucky  and I'll lose the next hand and give you some real inspiration.</state>
+                <state img="6-horny.png">I hope my underwear is enough to get you started. Maybe you'll get lucky and I'll lose the next hand and give you some real inspiration.</state>
             </case>
             <case tag="male_chest_is_visible">
                 <state img="6-horny.png">I like it very much ~name~, I want to see some more next round and it looks like you don't have much left. Lucky me.</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="6-shocked.png">Those are huge! Big and bouncy!</state>
-                <state img="6-horny.png">Those  are out of this world! As the bridge between worlds, I'm kinda an  expert on these things.</state>
+                <state img="6-horny.png">Those are out of this world! As the bridge between worlds, I'm kinda an expert on these things.</state>
             </case>
             <case tag="male_must_strip">
                 <state img="6-happy.png">It's always nice to get a breeze going on your skin.</state>
@@ -1025,7 +1028,7 @@
                 <state img="6-sad.png">I hate this "being patient" stuff.</state>
             </case>
             <case tag="game_over_victory">
-                <state img="6-victory.png">Yes!  I won! I was about to have to show it all too. Do I get my clothes back  now?  I can't just go around as the Avatar in my underwear.</state>
+                <state img="6-victory.png">Yes! I won! I was about to have to show it all too. Do I get my clothes back now? I can't just go around as the Avatar in my underwear.</state>
             </case>
             <case tag="female_removing_major">
                 <state img="6-excited.png">I took it off... So you should too, ~name~.</state>
@@ -1059,7 +1062,7 @@
                 <state img="6-calm.png">I need to bend these ~cards~ into new cards.</state>
                 <state img="6-calm.png">Give me ~cards~.</state>
                 <state img="6-calm.png">~cards~ new cards, please!</state>
-                <state img="6-calm.png">Yeah, I'm going to need ~cards~.</state>
+                <state img="6-angry.png">Yeah, I'm going to need ~cards~.</state>
             </case>
             <case tag="bad_hand">
                 <state img="6-angry.png">I'm not giving up!</state>
@@ -1077,11 +1080,11 @@
                 <state img="6-loss.png">I have to show my breasts now?! How could I lose this bad?</state>
             </case>
             <case tag="stripping">
-                <state img="6-strip.png">I can't believe I'm removing my bra in front of everyone... Off it goes...</state>
+                <state img="6-strip.png">I can't believe I'm taking this off in front of everyone... But off it goes...</state>
                 <state img="6-strip.png">I can't believe I have to show my bust...</state>
             </case>
             <case tag="must_strip_winning">
-                <state img="6-loss.png">I have all this power, but I don't know what I'm supposed to be doing half the time. It seems like I should be... wiser.</state>
+                <state img="6-awkward.png">I have all this power, but I don't know what I'm supposed to be doing half the time. It seems like I should be... wiser.</state>
             </case>
         </stage>
 
@@ -1208,16 +1211,16 @@
                 <state img="7-calm.png">I need to bend these ~cards~ into new cards.</state>
                 <state img="7-calm.png">Give me ~cards~.</state>
                 <state img="7-calm.png">~cards~ new cards, please!</state>
-                <state img="7-calm.png">Yeah, I'm going to need ~cards~.</state>
+                <state img="7-angry.png">Yeah, I'm going to need ~cards~.</state>
             </case>
             <case tag="bad_hand">
                 <state img="7-sad.png">That's impossible. There's no way.</state>
-                <state img="7-sad.png">It's looking like I have to show it all...</state>
+                <state img="7-akward.png">It's looking like I have to show it all...</state>
             </case>
             <case tag="stripped">
-                <state img="7-stripped.png">Please stop staring! I wish I could bend some cover right now.</state>
+                <state img="7-nervous.png">Please stop staring! I wish I could bend some cover right now.</state>
                 <state img="7-stripped.png">Quit staring, you perv!</state>
-                <state img="7-stripped.png">Stop looking at my boobs! Creeps!</state>
+                <state img="7-disappoint.png">Stop looking at my boobs! Creeps!</state>
             </case>
             <case tag="must_strip_normal">
                 <state img="7-loss.png">I've never backed away from anything in my life! I can do this... I think.</state>
@@ -1227,10 +1230,11 @@
             </case>
             <case tag="stripping">
                 <state img="7-strip.png">I wish I wore more clothing or at least shaved today. Now look at me...</state>
-                <state img="7-strip.png">Oh no, I 'lost'. Totally not on purpose...</state>
+                <state img="7-strip.png">...</state>
             </case>
             <case tag="must_strip_winning">
-                <state img="7-loss.png">Well if everyone else is naked I guess it's not that bad...</state>
+                <state img="7-awkward.png">Well if everyone else is naked I guess it's not that bad...</state>
+                <state img="7-happy.png">Oh no, I 'lost'. Totally not on purpose...</state>
             </case>
         </stage>
 
@@ -1294,7 +1298,7 @@
             </case>
             <case tag="male_chest_is_visible">
                 <state img="8-happy.png">Nice body, ~name~. I wish you would show the rest since I'm standing here completely naked.</state>
-                <state img="8-angry.png">Even though we are both topless, I think you are still getting a wayyyy better deal. Maybe if you flashed me your cock we could be even... for  ow.</state>
+                <state img="8-angry.png">Even though we are both topless, I think you are still getting a wayyyy better deal. Maybe if you flashed me your cock we could be even... for now.</state>
             </case>
             <case tag="female_large_chest_is_visible">
                 <state img="8-horny.png">I bet we are both comparing each other right about now, ~name~.</state>
@@ -1310,6 +1314,7 @@
             </case>
             <case tag="male_small_crotch_is_visible">
                 <state img="8-angry.png">WHAT?! Why isn't it bigger? I'm in front of you totally naked and you don't have a raging erection?</state>
+                <state img="8-confused.png">Heh. That all you got?</state>
             </case>
             <case tag="male_removing_accessory">
                 <state img="8-angry.png">I'm sorry, what now? Your ~clothing~?!</state>
@@ -1353,28 +1358,28 @@
                 <state img="8-interested.png">I wonder if ~name~ has more hair than I do down there. I guess there's only one way to find out.</state>
             </case>
             <case tag="good_hand">
-                <state img="8-happy.png">My era's not over yet!</state>
+                <state img="8-excited.png">My era's not over yet!</state>
                 <state img="8-happy.png">I'm saved!</state>
             </case>
             <case tag="okay_hand">
-                <state img="8-calm.png">I might not be "bending" just yet.</state>
+                <state img="8-happy.png">I might not be "bending" just yet.</state>
                 <state img="8-calm.png">I needed at least this much, if not more.</state>
             </case>
             <case tag="swap_cards">
                 <state img="8-calm.png">I need to bend these ~cards~ into new cards.</state>
                 <state img="8-calm.png">Give me ~cards~.</state>
                 <state img="8-calm.png">~cards~ new cards, please!</state>
-                <state img="8-calm.png">Yeah, I'm going to need ~cards~.</state>
+                <state img="8-angry.png">Yeah, I'm going to need ~cards~.</state>
             </case>
             <case tag="bad_hand">
                 <state img="8-sad.png">No one can help me now...</state>
-                <state img="8-sad.png">Is it okay if I just turn into a block of ice for a hundred years?</state>
+                <state img="8-nervous.png">Is it okay if I just turn into a block of ice for a hundred years?</state>
             </case>
             <case tag="start_masturbating">
                 <state img="8-starting.png">Well, I guess I have to get started...</state>
             </case>
             <case tag="stripped">
-                <state img="8-stripped.png">This is SOOO embarrassing! I thought I could win this game, now I'm in my birthday suit with you all staring at me...</state>
+                <state img="8-stripped.png">This is SOOO embarrassing! I thought I could win this game, but now I'm in my birthday suit with you all staring at me...</state>
                 <state img="8-stripped.png">I really wished I shaved today... This is embarrassing! Stop staring at me so much, pervs!</state>
                 <state img="8-stripped.png">This is no state for the Avatar to be in! Naked in front of an audience...</state>
                 <state img="8-stripped.png">I really should have shaved today... But I didn't think I would lose all my clothes.</state>
@@ -1402,7 +1407,7 @@
                 <state img="9-horny.png">Guess what I'm thinking about!</state>
             </case>
             <case tag="female_removed_major">
-                <state img="9-sad.png">You're  not going to strip more? Come on ~name~, I need you to strip more than  just your ~clothing~ right now. I want to see your pussy...</state>
+                <state img="9-sad.png">You're not going to strip more? Come on ~name~, I need you to strip more than just your ~clothing~ right now. I want to see your pussy...</state>
             </case>
             <case tag="male_large_crotch_is_visible">
                 <state img="9-horny.png">With that massive dick out I should finish any minute now...</state>
@@ -1414,7 +1419,7 @@
                 <state img="9-sad.png">I need to see more than that...</state>
             </case>
             <case tag="male_removed_accessory">
-                <state img="9-angry.png">What does it take to undress this guy?!</state>
+                <state img="9-confused.png">What does it take to undress this guy?!</state>
             </case>
             <case tag="male_must_masturbate">
                 <state img="9-horny.png">Why don't you try it with me, ~name~?</state>
@@ -1440,7 +1445,7 @@
                 <state img="9-angry.png">What does it take to undress this chick?! You have too many accessories on!</state>
             </case>
             <case tag="male_removed_major">
-                <state img="9-sad.png">You're  not going to strip more? Come on ~name~, I need you to strip more than  just your ~clothing~ right now. I want to see your dick...</state>
+                <state img="9-sad.png">You're not going to strip more? Come on ~name~, I need you to strip more than just your ~clothing~ right now. I want to see your dick...</state>
             </case>
             <case tag="male_start_masturbating">
                 <state img="9-horny.png">Yes! Join me ~name~! It feels great!</state>
@@ -1479,7 +1484,7 @@
                 <state img="9-calm.png">~name~ strip some more... Please!</state>
             </case>
             <case tag="game_over_victory">
-                <state img="9-calm.png">I WON! You gotta deal with it!</state>
+                <state img="9-excited.png">If you think about it, we all won!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="9-excited.png">Yes! Some eye candy for me, I'm gonna need this...</state>
@@ -1504,11 +1509,11 @@
             </case>
             <case tag="masturbating">
                 <state img="9-horny.png">Ahhh... This feels great...</state>
-                <state img="9-horny.png">If I use a little waterbending I can hit my G-Spot really hard...</state>
+                <state img="9-horny.png">If I use a little waterbending I can hit my G-spot really hard...</state>
                 <state img="9-horny.png">Going at it in front of an audience is kinda hot...</state>
             </case>
             <case tag="finishing_masturbating">
-                <state img="9-finishing.png">I'M CUMMING!!!</state>
+                <state img="9-finishing.png">I'M CUMMING!</state>
             </case>
             <case tag="heavy_masturbating">
                 <state img="9-heavy.png">I'm getting really close to climaxing now!</state>
@@ -1642,44 +1647,5 @@
         </stage>
 
     </behaviour>
-
-    <epilogue gender="&quot;male&quot;, &quot;female&quot;, or &quot;any&quot;. This is the gender of player that can see the ending">
-        <title>This is the title of the character's ending, and the start of a new ending</title>
-        <screen img="filename (including extension) of the background image for a screen. Also the start of a new screen">
-            <text>
-                <x>The x-position of the text box. Specifically, the position of the  text box's left side. This can be a percentage, or the word "centered"</x>
-                <y>The y-position of the top of the text box. Must be a percentage.</y>
-                <width>The width of a text box. This is optional. Must be a percentage.</width>
-                <arrow>"up", "down", "left", or "right". Gives the text box a dialogue  arrow in the specified direction. Can be left out, if you don't want the  text box to be an arrow.</arrow>
-                <content>The text in the text box.</content>
-            </text>
-
-        </screen>
-
-        <screen img="example-filename.png">
-            <text>
-                <x>10%</x>
-                <y>20%</y>
-                <width>34%</width>
-                <arrow>right</arrow>
-                <content>This is text that will be seen by the player. It has a width of 34% and an arrow pointing down.</content>
-            </text>
-
-            <text>
-                <x>centered</x>
-                <y>50%</y>
-                <arrow>right</arrow>
-                <content>This is a centered text box. It has the default width and an arrow pointing right.</content>
-            </text>
-
-            <text>
-                <x>75%</x>
-                <y>50%</y>
-                <content>This third text box has minimum amount of values specified. It uses the default width, and has no arrow.</content>
-            </text>
-
-        </screen>
-
-    </epilogue>
 
 </opponent>
