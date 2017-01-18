@@ -110,7 +110,7 @@
                 <state img="0-calm.png">Well, well. Looks like ~name~ is losing.</state>
                 <state img="0-happy.png">This game might be easier than I thought...</state>
             </case>
-            <case tag="female_removing_minor" target="lara">
+            <case tag="female_removing_minor" target="lara" targetStage=0>
                 <state img="0-awkward.png">M-Miss Croft? Kim Possible. Big fan.</state>
             </case>
             <case tag="female_removing_minor" target="kyoko" targetStage=2>
@@ -132,7 +132,7 @@
             <case tag="female_removed_minor" target="kyoko" targetStage=6>
                 <state img="0-sad.png">They're not ugly, Kyoko. <i>Nothing</i> about you could be.</state>
             </case>
-            <case tag="female_removed_minor" target="lara">
+            <case tag="female_removed_minor" target="lara" targetStage=1>
                 <state img="0-awkward.png">I, um, I wonder if you'd autograph something for me after the game?</state>
             </case>
             <case tag="female_removed_minor" filter="mean">
@@ -313,6 +313,9 @@
             <case tag="female_removing_minor">
                 <state img="1-calm.png">Just your ~clothing~? Okay.</state>
             </case>
+            <case tag="female_removing_minor" target="lara" targetStage=0>
+                <state img="1-awkward.png">M-Miss Croft? Kim Possible. Big fan.</state>
+            </case>
             <case tag="female_removed_minor">
                 <state img="1-calm.png">You've got to start somewhere!</state>
             </case>
@@ -321,6 +324,9 @@
             </case>
             <case tag="female_removing_minor" target="kyoko" targetStage=2>
                 <state img="1-interested.png">Really? 'Cause you look <i>hotter</i> this way to me.</state>
+            </case>
+            <case tag="female_removed_minor" target="lara" targetStage=1>
+                <state img="1-awkward.png">I, um, I wonder if you'd autograph something for me after the game?</state>
             </case>
             <case tag="female_removed_minor" filter="mean">
                 <state img="1-calm.png">Go ahead and gloat - you'll be naked soon enough.</state>
@@ -507,6 +513,9 @@
             <case tag="female_removing_minor">
                 <state img="2-happy.png">Your turn, ~name~.</state>
             </case>
+            <case tag="female_removing_minor" target="lara" targetStage=0>
+                <state img="2-awkward.png">M-Miss Croft? Kim Possible. Big fan.</state>
+            </case>
             <case tag="female_removed_minor">
                 <state img="2-calm.png">So not the drama, amirite?</state>
             </case>
@@ -515,6 +524,9 @@
             </case>
             <case tag="female_removing_minor" target="kyoko" targetStage=2>
                 <state img="2-interested.png">Really? 'Cause you look <i>hotter</i> this way to me.</state>
+            </case>
+            <case tag="female_removed_minor" target="lara" targetStage=1>
+                <state img="2-awkward.png">I, um, I wonder if you'd autograph something for me after the game?</state>
             </case>
             <case tag="female_removing_major">
                 <state img="2-calm.png">Looks like we'll be seeing more of ~name~.</state>
