@@ -79,7 +79,7 @@
                 <state img="0-calm.png">~name~ has the lowest hand.</state>
             </case>
             <case tag="female_must_strip" filter="innocent">
-                <state img="0-shocked.png">You DO understand how the game is played, don't you, ~name~?</state>
+                <state img="0-shocked.png">You <i>do</i> understand how the game is played, don't you, ~name~?</state>
             </case>
             <case tag="female_removing_accessory">
                 <state img="0-angry.png">Somehow it's not quite as exciting as I'd expected.</state>
@@ -115,12 +115,18 @@
             <case tag="female_removing_minor" target="kim" targetStage="0">
                 <state img="0-happy.png">That's kind of you, Kim!</state>
             </case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="0-shocked.png">Oh my goodness!</state>
+            </case>
             <case tag="female_removed_minor">
                 <state img="0-calm.png">Whose turn is it to deal?</state>
                 <state img="0-angry.png">I really shouldn't be so impatient!</state>
             </case>
             <case tag="female_removing_minor" target="kim" targetStage="1">
                 <state img="0-calm.png">I shall endeavor to follow your example, should it become necessary.</state>
+            </case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="0-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
             </case>
             <case tag="female_removed_minor" target="nagisa">
                 <state img="0-sad.png">Are you feeling well, ~name~? You look pale.</state>
@@ -151,6 +157,9 @@
             </case>
             <case tag="female_chest_will_be_visible">
                 <state img="0-interested.png">It will be just between us girls, ~name~.</state>
+            </case>
+            <case tag="female_chest_will_be_visible" target="korra">
+                <state img="0-shocked.png">If it helps, Korra, I can't believe <i>any</i> of this!</state>
             </case>
             <case tag="female_chest_will_be_visible" filter="confident">
                 <state img="0-shocked.png">You're... you're not even pausing!</state>
@@ -187,6 +196,9 @@
             </case>
             <case tag="female_crotch_is_visible">
                 <state img="0-stunned.png">So... there's no reason to be embarassed, ~name~. R-really.</state>
+            </case>
+            <case tag="female_crotch_is_visible" target="kyoko">
+                <state img="0-sad.png">It's probably because you're standing in front of total strangers completely naked. ...Oh, um, that isn't helping, is it? Sorry.</state>
             </case>
             <case tag="female_crotch_is_visible" filter="confident">
                 <state img="0-stunned.png">Well! you could at least <i>pretend</i> to be embarrassed!</state>
@@ -354,8 +366,14 @@
             <case tag="female_removing_minor">
                 <state img="1-happy.png">A solid choice!</state>
             </case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="1-shocked.png">Oh my goodness!</state>
+            </case>
             <case tag="female_removed_minor">
                 <state img="1-calm.png">Shall we get back to the game?</state>
+            </case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="1-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="1-happy.png">It looks like you've lost again, ~name~.</state>
@@ -383,6 +401,9 @@
             </case>
             <case tag="female_chest_will_be_visible">
                 <state img="1-interested.png">It will be just between us girls, ~name~.</state>
+            </case>
+            <case tag="female_chest_will_be_visible" target="korra">
+                <state img="1-shocked.png">If it helps, Korra, I can't believe <i>any</i> of this!</state>
             </case>
             <case tag="female_chest_will_be_visible" filter="confident">
                 <state img="1-shocked.png">You're... you're not even pausing!</state>
@@ -561,8 +582,14 @@
 			<case tag="female_removing_minor">
                 <state img="2-smug.png">Oh, I know what you're doing...</state>
             </case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="2-shocked.png">Oh my goodness!</state>
+            </case>
             <case tag="female_removed_minor">
                 <state img="2-interested.png">That was smart of you!</state>
+            </case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="2-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
             </case>
             <case tag="female_removing_major">
                 <state img="2-smug.png">I don't believe that's regulation, ~name~.</state>
@@ -593,6 +620,9 @@
             </case>
             <case tag="female_chest_will_be_visible">
                 <state img="2-interested.png">Put on a good show for the boys, ~name~!</state>
+            </case>
+            <case tag="female_chest_will_be_visible" target="korra">
+                <state img="2-shocked.png">If it helps, Korra, I can't believe <i>any</i> of this!</state>
             </case>
             <case tag="female_chest_will_be_visible" totalMales="0">
                 <state img="2-interested.png">Put on a good show us, ~name~!</state>
@@ -746,6 +776,9 @@
             </case>
             <case tag="female_removing_minor">
                 <state img="3-calm.png">I see!</state>
+            </case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="3-shocked.png">Oh my goodness!</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="3-excited.png">Is... is it getting hot in here?</state>
@@ -924,6 +957,9 @@
             <case tag="female_chest_will_be_visible">
                 <state img="3-interested.png">Put on a good show for the boys, ~name~!</state>
             </case>
+            <case tag="female_chest_will_be_visible" target="korra">
+                <state img="3-shocked.png">If it helps, Korra, I can't believe <i>any</i> of this!</state>
+            </case>
             <case tag="female_chest_will_be_visible" totalMales="0">
                 <state img="3-interested.png">Put on a good show us, ~name~!</state>
             </case>
@@ -939,6 +975,9 @@
             </case>
             <case tag="female_removed_minor">
                 <state img="3-loss.png">At least that's out of the way.</state>
+            </case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="3-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="3-smug.png">There's no shame in losing, ~name~. I am, after all, the brightest witch of my generation.</state>
@@ -990,6 +1029,9 @@
             </case>
             <case tag="female_removing_minor">
                 <state img="4-interested.png">Don't keep us waiting!</state>
+            </case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="4-shocked.png">Oh my goodness!</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="4-excited.png">Just stay calm, Hermione. It's nothing you haven't seen before!</state>
@@ -1085,7 +1127,7 @@
                 <state img="4-shocked.png">It's not that I'm interested or anything. It's just the rules.</state>
             </case>
             <case tag="female_must_masturbate">
-                <state img="4-smug.png">I'll bet Harry wishes he could see THIS.</state>
+                <state img="4-smug.png">I'll bet Harry wishes he could see <i>this</i>.</state>
             </case>
             <case tag="male_human_must_strip">
                 <state img="4-shocked.png">It's not that I'm interested or anything. It's just the rules.</state>
@@ -1132,12 +1174,18 @@
             <case tag="female_chest_will_be_visible">
                 <state img="4-smug.png">It's nothing I haven't seen before in the girl's baths.</state>
             </case>
+            <case tag="female_chest_will_be_visible" target="korra">
+                <state img="4-shocked.png">If it helps, Korra, I can't believe <i>any</i> of this!</state>
+            </case>
             <case tag="male_masturbating">
                 <state img="4-horny.png">There's something fascinating about the way your hand moves up and down, like I can't look away...</state>
                 <state img="4-shocked.png">Is... is it normal if I feel damp down there?</state>
             </case>
             <case tag="female_removed_minor">
                 <state img="4-loss.png">At least it's something.</state>
+            </case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="4-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="4-smug.png">Clearly you need me to tutor you in poker, ~name~.</state>
@@ -1191,6 +1239,9 @@
             </case>
             <case tag="female_removing_minor">
                 <state img="5-interested.png">I've been waiting for this.</state>
+            </case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="5-shocked.png">Oh my goodness!</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="5-excited.png">Oh! You're just like Ronald! Um, not that I would know.</state>
@@ -1292,7 +1343,7 @@
                 <state img="5-smug.png">I see that ~name~ has lost the hand.</state>
             </case>
             <case tag="female_must_masturbate">
-                <state img="5-smug.png">I'll bet Harry wishes he could see THIS.</state>
+                <state img="5-smug.png">I'll bet Harry wishes he could see <i>this</i>.</state>
             </case>
             <case tag="female_must_masturbate" filter="innocent">
                 <state img="5-interested.png">Just lie back and think of... well, I don't know. Think of Harry!</state>
@@ -1345,12 +1396,18 @@
             <case tag="female_chest_will_be_visible">
                 <state img="5-interested.png">I wonder who's larger... well, we'll find out!</state>
             </case>
+            <case tag="female_chest_will_be_visible" target="korra">
+                <state img="5-shocked.png">If it helps, Korra, I can't believe <i>any</i> of this!</state>
+            </case>
             <case tag="male_masturbating">
                 <state img="5-horny.png">There's something fascinating about the way your hand moves up and down, like I can't look away...</state>
                 <state img="5-shocked.png">Is... is it normal if I feel damp down there?</state>
             </case>
             <case tag="female_removed_minor">
                 <state img="5-angry.png">Don't think you can get away so easily next hand.</state>
+            </case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="5-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="5-horny.png">So! What kind of specimen are you, ~name~?</state>
@@ -1408,6 +1465,9 @@
             <case tag="female_removing_minor">
                 <state img="6-angry.png">Get on with it, ~name~.</state>
             </case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="6-shocked.png">Oh my goodness!</state>
+            </case>
             <case tag="female_removing_minor" filter="mean">
                 <state img="6-angry.png">Oh, just strip off your ~clothing~. Stop drawing it out.</state>
             </case>
@@ -1416,6 +1476,9 @@
             </case>
             <case tag="female_removed_minor">
                 <state img="6-stunned.png">I can't believe how badly I'm doing!</state>
+            </case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="6-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="6-excited.png">It's - it's pulsing! I didn't know they could do that!</state>
@@ -1576,12 +1639,18 @@
             <case tag="female_chest_will_be_visible">
                 <state img="6-horny.png">I wonder how they look...</state>
             </case>
+            <case tag="female_chest_will_be_visible" target="korra">
+                <state img="6-shocked.png">If it helps, Korra, I can't believe <i>any</i> of this!</state>
+            </case>
             <case tag="male_masturbating">
                 <state img="6-horny.png">We're breaking so many rules right now!</state>
                 <state img="6-stunned.png">Stop staring at me while you do that!</state>
             </case>
             <case tag="female_removed_minor" filter="mean">
                 <state img="6-stunned.png">I know you're cheating, ~name~. I don't know how you're doing it, but I know you're cheating.</state>
+            </case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="6-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="6-horny.png">Should I be seeing this?</state>
@@ -1607,7 +1676,7 @@
                 <state img="6-angry.png">It could be worse... Draco could be watching!</state>
             </case>
             <case tag="stripped">
-                <state img="6-stripped.png">Well spotted - I AM a girl.</state>
+                <state img="6-stripped.png">Well spotted - I <i>am</i> a girl.</state>
             </case>
             <case tag="stripped" alsoPlaying="streaming-chan">
                 <state img="6-stripped.png">Put that camera away! Honestly, Streaming-chan, you're worse than Rita Skeeter!</state>
@@ -1635,6 +1704,9 @@
             </case>
             <case tag="female_removing_minor">
                 <state img="7-interested.png">Go on, then.</state>
+            </case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="7-shocked.png">Oh my goodness!</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="7-interested.png">You must be very popular with the girls, ~name~.</state>
@@ -1799,6 +1871,9 @@
             <case tag="female_removed_minor">
                 <state img="7-angry.png">You know, some people would consider this to be poor sportsmanship.</state>
             </case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="7-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
+            </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="7-horny.png">You know... I've always wanted to see a few boys naked. Just for scientific purposes, of course!</state>
             </case>
@@ -1848,6 +1923,9 @@
             </case>
             <case tag="female_removing_minor">
                 <state img="8-excited.png">Thank Merlin! I was beginning to think you were cheating.</state>
+            </case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="8-shocked.png">Oh my goodness!</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="8-horny.png">My goodness! Has someone cast <i>petrificus totalus</i> on you?</state>
@@ -2009,6 +2087,9 @@
             <case tag="female_removed_minor">
                 <state img="8-angry.png">You know, you have SUSPICIOUSLY good luck.</state>
             </case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="8-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
+            </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="8-horny.png">Is that a wand in your pocket or are you just happy to see me? Hee hee.</state>
             </case>
@@ -2052,6 +2133,9 @@
             </case>
             <case tag="female_removing_minor">
                 <state img="9-excited.png">Yes, take it off!</state>
+            </case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="9-shocked.png">Oh my goodness!</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="9-mast.png">Why, ~name~, is that for <i>me</i>? I'm flattered.</state>
@@ -2173,6 +2257,9 @@
             <case tag="female_removed_minor">
                 <state img="9-mast.png">This... isn't... fair!</state>
             </case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="9-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
+            </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="9-mast.png">Ooh, just in time!</state>
             </case>
@@ -2198,6 +2285,9 @@
             </case>
             <case tag="female_removing_minor">
                 <state img="10-loss.png">It's about time!</state>
+            </case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="10-shocked.png">Oh my goodness!</state>
             </case>
             <case tag="female_removed_major">
                 <state img="10-shocked.png">You don't have any excuse to be shy, ~name~. I mean... look at me!</state>
@@ -2327,6 +2417,9 @@
             <case tag="female_removed_minor">
                 <state img="10-angry.png">I have half a mind to hex you!</state>
                 <state img="10-interested.png">I've been taking notes on your strategy for the next time I play.</state>
+            </case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="10-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
             </case>
             <case tag="male_crotch_will_be_visible">
                 <state img="10-horny.png">No, no, no! We're getting the order of things all mixed up!</state>

@@ -244,6 +244,9 @@
 			<case tag="female_removing_minor">
 				<state img="0-calm.png">Removing your ~clothing~? Okay.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="0-shocked.png">You poor thing!</state>
+            </case>
 			<case tag="female_removing_major">
 				<state img="0-nervous.png">I'm sorry about this...</state>
 			</case>
@@ -301,6 +304,9 @@
 			<case tag="female_removed_minor" target="blackrose" targetStage="3">
 				<state img="0-interested.png">It's funny how arrogant you're being, BlackRose. That prize is all mine!</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="0-lost.png">I don't get it... Don't they have healers in your server?</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="0-embarrassed.png">This feels like I'm picking on a newbie.</state>
 				<state img="0-happy.png">And my guild thought I couldn't handle myself!</state>
@@ -540,6 +546,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="1-calm.png">~name~, you sly fox!</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="1-shocked.png">You poor thing!</state>
+            </case>
 			<case tag="female_removing_minor" filter="innocent">
 				<state img="1-calm.png">A wise move.</state>
 			</case>
@@ -596,10 +605,11 @@
 				<state img="1-lost.png">There's more strategy to this game than I realized.</state>
 			</case>
 			<case tag="female_removed_minor" filter="kind"> 
-				<state img="1-calm.png">
-					Oh, that counts? I should be taking notes!
-				</state>
+				<state img="1-calm.png">Oh, that counts? I should be taking notes!</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="1-lost.png">I don't get it... Don't they have healers in your server?</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="1-embarrassed.png">This feels like I'm picking on a newbie.</state>
 				<state img="1-happy.png">And my guild thought I couldn't handle myself!</state>
@@ -842,6 +852,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="2-calm.png">~name~, you sly fox!</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="2-shocked.png">You poor thing!</state>
+            </case>
 			<case tag="female_removing_minor" filter="innocent">
 				<state img="2-calm.png">A wise move.</state>
 			</case>
@@ -895,6 +908,9 @@
 			<case tag="female_removed_minor" filter="kind"> 
 				<state img="2-happy.png">I'm glad to see you came prepared!</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="2-lost.png">I don't get it... Don't they have healers in your server?</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="2-happy.png">Want to concede the match, ~name~?</state>
 				<state img="2-happy.png">That quest reward is as good as mine!</state>
@@ -1115,6 +1131,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="3-angry.png">I see you've maxed your apparel skill.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="3-shocked.png">You poor thing!</state>
+            </case>
 			<case tag="female_removing_minor" filter="mean"> 
 				<state img="3-happy.png">You're proving to be a difficult opponent... exactly what I expected.</state>
 			</case>
@@ -1168,15 +1187,14 @@
 				<state img="3-angry.png">You really prepared for this game, didn't you?</state>
 			</case>
 			<case tag="female_removed_minor" filter="innocent"> 
-				<state img="3-happy.png">
-					I'm glad to see you came prepared!
-				</state>
+				<state img="3-happy.png">I'm glad to see you came prepared!</state>
 			</case>
 			<case tag="female_removed_minor" filter="kind"> 
-				<state img="3-happy.png">
-					I'm glad to see you came prepared!
-				</state>
+				<state img="3-happy.png">I'm glad to see you came prepared!</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="3-lost.png">I don't get it... Don't they have healers in your server?</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="3-happy.png">Want to concede the match, ~name~?</state>
 				<state img="3-happy.png">That quest reward is as good as mine!</state>
@@ -1412,19 +1430,16 @@
 				</state>
 			</case>
 			<case tag="female_removing_minor"> 
-				<state img="4-angry.png">
-					I see you've maxed your apparel skill.
-				</state>
+				<state img="4-angry.png">I see you've maxed your apparel skill.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="4-shocked.png">You poor thing!</state>
+            </case>
 			<case tag="female_removing_minor" filter="mean"> 
-				<state img="4-angry.png">
-					You're proving to be a difficult opponent... exactly what I expected.
-				</state>
+				<state img="4-angry.png">You're proving to be a difficult opponent... exactly what I expected.</state>
 			</case>
 			<case tag="female_removing_minor" filter="shy"> 
-				<state img="4-angry.png">
-					I see you've maxed your apparel skill. That's paying off tonight.
-				</state>
+				<state img="4-angry.png">I see you've maxed your apparel skill. That's paying off tonight.</state>
 			</case>
 			<case tag="female_removing_major"> 
 				<state img="4-happy.png">A critical hit!</state>
@@ -1457,20 +1472,17 @@
 				<state img="4-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
 			<case tag="female_removed_minor"> 
-				<state img="4-angry.png">
-					It seems I've got a lot to learn about playing this game.
-				</state>
+				<state img="4-angry.png">It seems I've got a <i>lot</i> to learn about playing this game.</state>
 			</case>
 			<case tag="female_removed_minor" filter="innocent"> 
-				<state img="4-angry.png">	
-					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
-				</state>
+				<state img="4-angry.png">Don't take this the wrong way, but I'm going to have to beat you if I want that prize.	</state>
 			</case>
 			<case tag="female_removed_minor" filter="kind"> 
-				<state img="4-angry.png">	
-					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
-				</state>
+				<state img="4-angry.png">Don't take this the wrong way, but I'm going to have to beat you if I want that prize.	</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="4-lost.png">I don't get it... Don't they have healers in your server?</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="4-happy.png">Aren't you glad this isn't happening in real life?</state>
 			</case>
@@ -1729,10 +1741,11 @@
 				</state>
 			</case>
 			<case tag="female_removing_minor"> 
-				<state img="5-angry.png">
-					I see you've maxed your apparel skill.
-				</state>
+				<state img="5-angry.png">I see you've maxed your apparel skill.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="5-shocked.png">You poor thing!</state>
+            </case>
 			<case tag="female_removing_minor" filter="mean"> 
 				<state img="5-angry.png">
 					You're proving to be a difficult opponent... exactly what I expected.
@@ -1774,20 +1787,17 @@
 				<state img="5-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
 			<case tag="female_removed_minor"> 
-				<state img="5-angry.png">
-					It seems I've got a lot to learn about playing this game.
-				</state>
+				<state img="5-angry.png">It seems I've got a lot to learn about playing this game.</state>
 			</case>
 			<case tag="female_removed_minor" filter="innocent"> 
-				<state img="5-angry.png">	
-					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
-				</state>
+				<state img="5-angry.png">Don't take this the wrong way, but I'm going to have to beat you if I want that prize.</state>
 			</case>
 			<case tag="female_removed_minor" filter="kind"> 
-				<state img="5-angry.png">	
-					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
-				</state>
+				<state img="5-angry.png">Don't take this the wrong way, but I'm going to have to beat you if I want that prize.	</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="5-lost.png">I don't get it... Don't they have healers in your server?</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="5-nervous.png">Aren't you glad this isn't happening in real life?  This... this <i>isn't</i> happening in real life, right?</state>
 			</case>
@@ -2040,6 +2050,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="6-shocked.png">What is this, some kind of boss fight?</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="6-shocked.png">You poor thing!</state>
+            </case>
 			<case tag="female_removing_minor" filter="shy"> 
 				<state img="6-angry.png">You have the most incredible luck, ~name~.</state>
 			</case>
@@ -2070,20 +2083,17 @@
 				<state img="6-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
 			<case tag="female_removed_minor"> 
-				<state img="6-angry.png">
-					It seems I've got a lot to learn about playing this game.
-				</state>
+				<state img="6-angry.png">It seems I've got a lot to learn about playing this game.</state>
 			</case>
 			<case tag="female_removed_minor" filter="innocent"> 
-				<state img="6-angry.png">	
-					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
-				</state>
+				<state img="6-angry.png">Don't take this the wrong way, but I'm going to have to beat you if I want that prize.	</state>
 			</case>
 			<case tag="female_removed_minor" filter="kind"> 
-				<state img="6-angry.png">	
-					Don't take this the wrong way, but I'm going to have to beat you if I want that prize.
-				</state>
+				<state img="6-angry.png">Don't take this the wrong way, but I'm going to have to beat you if I want that prize.	</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="6-lost.png">I don't get it... Don't they have healers in your server?</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="6-interested.png">So we both happen to be wearing our best underwear today... What are the odds of that?</state>
 				<state img="6-nervous.png">I can't even look at you without blushing!</state>
@@ -2335,6 +2345,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="7-shocked.png">What is this, some kind of boss fight?</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="7-shocked.png">You poor thing!</state>
+            </case>
 			<case tag="female_removing_minor" filter="shy"> 
 				<state img="7-angry.png">You have the most incredible luck, ~name~.</state>
 			</case>
@@ -2366,10 +2379,11 @@
 				<state img="7-happy.png">Go ahead and quit, BlackRose - it means less competition for me!</state>
 			</case>
 			<case tag="female_removed_minor"> 
-				<state img="7-angry.png">
-					It seems I've got a lot to learn about playing this game.
-				</state>
+				<state img="7-angry.png">It seems I've got a lot to learn about playing this game.</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="7-lost.png">I don't get it... Don't they have healers in your server?</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="7-interested.png">So we both happen to be wearing our best underwear today... What are the odds of that?</state>
 				<state img="7-nervous.png">I can't even look at you without blushing!</state>
@@ -2611,6 +2625,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="8-shocked.png">What is this, some kind of boss fight?</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="8-shocked.png">You poor thing!</state>
+            </case>
 			<case tag="female_removing_minor" filter="shy"> 
 				<state img="8-angry.png">You have the most incredible luck, ~name~.</state>
 			</case>
@@ -2641,6 +2658,9 @@
 			<case tag="female_removed_minor"> 
 				<state img="8-angry.png">Care to sit? I'm sure it would take some weight off your cloven hooves. You goat.</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="8-lost.png">I don't get it... Don't they have healers in your server?</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="8-calm.png">Please, ~name~. Don't stop there on MY account.</state>
 			</case>
@@ -2859,6 +2879,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="9-shocked.png">This has got to be some kind of server glitch.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="9-shocked.png">You poor thing!</state>
+            </case>
 			<case tag="female_removing_major"> 
 				<state img="9-sad.png">...Is there a prize for coming in second?</state>
 			</case>
@@ -2882,10 +2905,11 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> 
-				<state img="9-angry.png">
-					It seems I've got a lot to learn about playing this game.
-				</state>
+				<state img="9-angry.png">It seems I've got a <i>lot</i> to learn about playing this game.</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="9-lost.png">I don't get it... Don't they have healers in your server?</state>
+            </case>
 			<case tag="female_removed_major"> 
 				<state img="9-nervous.png">I'm sorry about this...</state>
 			</case>
@@ -3090,6 +3114,9 @@
 			<case tag="female_removing_minor"> 
 				<state img="10-shocked.png">This has got to be some kind of server glitch.</state>
 			</case>
+            <case tag="female_removing_minor" target="kyoko" targetStage=5>
+                <state img="10-shocked.png">You poor thing!</state>
+            </case>
 			<case tag="female_removing_major"> 
 				<state img="10-happy.png">A critical hit!</state>
 			</case>
@@ -3113,12 +3140,13 @@
 				</state>
 			</case>
 			<case tag="female_removed_minor"> 
-				<state img="10-angry.png">
-					You... you... you dummy!
-				</state>
+				<state img="10-angry.png">You... you... you dummy!</state>
 			</case>
+            <case tag="female_removed_minor" target="kyoko" targetStage=6>
+                <state img="10-lost.png">I don't get it... Don't they have healers in your server?</state>
+            </case>
 			<case tag="female_removed_major"> 
-				<state img="10-angry.png">You know what? I'm NOT sorry about this!</state>
+				<state img="10-angry.png">You know what? I'm <i>not</i> sorry about this!</state>
 			</case>
 			<case tag="female_small_chest_is_visible"> 
 				<state img="10-interested.png">Oh! I feel so motherly.</state>
