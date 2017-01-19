@@ -6,7 +6,7 @@ gender=female
 size=large
 #Number of phases to "finish"
 timer=25
-tags=confident, bisexual, hairy, tomboy, cartoon, brave
+#tags=athletic,brave,cartoon,confident,bisexual,brave,hairy,tomboy
 
 #required for meta.xml
 #start picture
@@ -14,7 +14,7 @@ pic=0-calm
 height=5'7"
 from=The Legend of Korra
 writer=throwaway10671 & Arcess
-artist=Zombiqaz & josephkantel
+artist=undeadclown & josephkantel
 description=Korra is the current incarnation of the Avatar and immediate successor of Avatar Aang.
 
 #Korra's Clothing:
@@ -38,26 +38,8 @@ start=0-calm,Strip poker? I haven't mastered that element yet.
 swap_cards=calm,I need to bend these ~cards~ into new cards.
 swap_cards=calm,Give me ~cards~.
 swap_cards=calm,~cards~ new cards, please!
-swap_cards=calm,Yeah, I'm going to need ~cards~.
+swap_cards=angry,Yeah, I'm going to need ~cards~.
 
-#masturbation
-#these situations relate to when the character is masturbating
-#these only come up in the relevant stages, so you don't need to include the stage numbers here
-#just remember which stage is which when you make the images
-must_masturbate_first=loss,What? I have to do that? I really hit the dirt this time.
-must_masturbate_first=loss,I'm already fully naked! Isn't that enough?
-must_masturbate=loss,At least I'm not the first to do it. Now it's my turn to do some "bending".
-start_masturbating=starting,Well, I guess I have to get started...
-masturbating=horny,Ahhh... This feels great...
-masturbating=horny,If I use a little waterbending I can hit my G-Spot really hard...
-masturbating=horny,Going at it in front of an audience is kinda hot...
-heavy_masturbating=heavy,I'm getting really close to climaxing now!
-heavy_masturbating=heavy,OH! AhhHHh! I'm almost there!
-finishing_masturbating=finishing,I'M CUMMING!!!
-finished_masturbating=finished,That was really nice... I haven't felt that good in years.
-finished_masturbating=finished,Now I'm all sticky. I need a bath in some spirit water; anyone want to join me?
-game_over_defeat=calm,Congratulations, ~name~. You beat the Avatar!
-game_over_victory=calm,I WON! You gotta deal with it!
 
 #character is stripping situations
 #Losing Boots
@@ -75,76 +57,65 @@ game_over_victory=calm,I WON! You gotta deal with it!
 2-stripped=stripped,I'm a better bender this way anyways. I wish card bending was a thing though...
 
 #Losing Wristbands
-2-must_strip_winning=loss,What? That's ridiculous. I was on a winning streak!
+2-must_strip_winning=stripped,What? That's ridiculous. I was on a winning streak!
 2-must_strip_normal=loss,I still have a lot of clothes on. You guys shouldn't get cocky!
 2-must_strip_losing=loss,I have to strip again? This is ridiculous!
 2-stripping=strip,Sorry to disappoint you, but it's just my wristbands this time.
 3-stripped=stripped,These don't cover up much so I guess this isn't a big loss.
 
 #Losing Jacket
-3-must_strip_winning=loss,I should be able to fix this. I'm the Avatar after all.
+3-must_strip_winning=stunned,I should be able to fix this. I'm the Avatar after all.
 3-must_strip_normal=loss,I'm not running from anyone.
-3-must_strip_losing=loss,I have a feeling I'll be naked soon... I really wish I could learn card bending right about now.
+3-must_strip_losing=awkward,I have a feeling I'll be naked soon... I really wish I could learn card bending right about now.
 3-must_strip_losing=sad,Maybe I'm just not cut out to be a poker player...
 3-stripping=strip,Everything changed when these terrible cards attacked.
 4-stripped=stripped,I hope I don't lose the next round. Then I'll really have to start showing skin.
 4-stripped=stripped,That jacket was my last accessory. When you grow up in a Water Tribe, you learn to dress in layers.
 
 #Losing Shirt
-4-must_strip_winning=loss,Great. More attention to me.
+4-must_strip_winning=annoyed,Great. More attention to me.
 4-must_strip_normal=loss,It looks like you're not giving me a choice.
 4-must_strip_losing=loss,Uh oh, now things are getting serious.
-4-must_strip_losing=loss,There's so much responsibility on my shoulders. But thanks to you guys, it's the shirt that comes off.
+4-must_strip_losing=stripped,There's so much responsibility on my shoulders. But thanks to you guys, it's the shirt that comes off.
 4-stripping=strip,Off comes the shirt...
 5-stripped=stripped,Try not to stare at my cleavage too much. I might just send some fire bending your way!
 
 #Losing Pants
 5-must_strip_winning=loss,... I know I can do this...
 5-must_strip_normal=loss,Light and peace... Light and peace...
-5-must_strip_losing=loss,I'm getting my butt kicked...
+5-must_strip_losing=shocked,I'm getting my butt kicked...
 5-stripping=strip,The Avatar should really have more modesty then this, but off go my pants...
 6-stripped=stripped,This is very revealing. I can't believe I have to stand in front of you all in my underwear now.
 6-stripped=stripped,Stop staring at me in my underwear! That's creepy!
 
 #Losing Bra
-6-must_strip_winning=loss,I have all this power, but I don't know what I'm supposed to be doing half the time. It seems like I should be... wiser. 
+6-must_strip_winning=awkward,I have all this power, but I don't know what I'm supposed to be doing half the time. It seems like I should be... wiser. 
 6-must_strip_normal=loss,This won't bring balance. It will throw the world into chaos!
 6-must_strip_losing=loss,I have to show my breasts now?! How could I lose this bad?
-6-stripping=strip,I can't believe I'm removing my bra in front of everyone... Off it goes...
+6-stripping=strip,I can't believe I'm taking this off in front of everyone... But off it goes...
 6-stripping=strip,I can't believe I have to show my bust...
-7-stripped=stripped,Please stop staring! I wish I could bend some cover right now.
+7-stripped=nervous,Please stop staring! I wish I could bend some cover right now.
 7-stripped=stripped,Quit staring, you perv!
-7-stripped=stripped,Stop looking at my boobs! Creeps!
+7-stripped=disappoint,Stop looking at my boobs! Creeps!
 
 #Losing Panties
-7-must_strip_winning=loss,Well if everyone else is naked I guess it's not that bad...
+7-must_strip_winning=awkward,Well if everyone else is naked I guess it's not that bad...
+7-must_strip_winning=happy,Oh no, I 'lost'. Totally not on purpose...
 7-must_strip_normal=loss,I've never backed away from anything in my life! I can do this... I think.
 7-must_strip_losing=loss,Maybe I'm not ready to be the Avatar... I can't even win a simple card game.
 7-stripping=strip,I wish I wore more clothing or at least shaved today. Now look at me...
-7-stripping=strip,Oh no, I 'lost'. Totally not on purpose...
-8-stripped=stripped,This is SOOO embarrassing! I thought I could win this game, now I'm in my birthday suit with you all staring at me...
+7-stripping=strip,...
+8-stripped=stripped,This is SOOO embarrassing! I thought I could win this game, but now I'm in my birthday suit with you all staring at me...
 8-stripped=stripped,I really wished I shaved today... This is embarrassing! Stop staring at me so much, pervs!
 8-stripped=stripped,This is no state for the Avatar to be in! Naked in front of an audience...
 8-stripped=stripped,I really should have shaved today... But I didn't think I would lose all my clothes.
 
-#victory lines. one for each stage.
-0-game_over_victory=happy,I'm the Avatar, this was a piece of cake!
-0-game_over_victory=victory,I WON! You gotta deal with it!
-1-game_over_victory=happy,WOOO! I WON! Can I get my boots back now?
-1-game_over_victory=victory,I WON! You gotta deal with it!
-2-game_over_victory=happy,No shoes, no socks, but I still won!
-2-game_over_victory=happy,I WON! You gotta deal with it!
-3-game_over_victory=happy,I won! I feel relieved I was just about to run out of accessories.
-4-game_over_victory=victory,Nice! I won! I was out of accessories too.
-5-game_over_victory=victory,No shoes, no shirt, but I still won!
-6-game_over_victory=victory,Yes!  I won! I was about to have to show it all too. Do I get my clothes back  now?  I can't just go around as the Avatar in my underwear.
-7-game_over_victory=victory,I WON! Can I put my clothes back on now? I'm not used to having my tits out like this.
--3-game_over_victory=victory,That was close, I almost had to masturbate in front of all of you. I'm glad I won!
+
 
 #card cases
 #Fully Clothed
 0-good_hand=happy,Let's do this.
-0-good_hand=happy,Seems easy enough.
+0-good_hand=calm,Seems easy enough.
 0-good_hand=happy,I got a good feeling about tonight.
 0-good_hand=excited,Book One: Winning!
 0-okay_hand=calm,I think I got this.
@@ -156,14 +127,15 @@ game_over_victory=calm,I WON! You gotta deal with it!
 1-good_hand=happy,Sweet!
 1-okay_hand=calm,Thanks. This should be enough.
 1-bad_hand=angry,I got nothing.
-1-bad_hand=angry,Whatever. 
+1-bad_hand=annoyed,Whatever. 
 
 #Lost Socks
 2-good_hand=happy,These are great cards! I can't possibly lose this round.
 2-okay_hand=calm,It's worth a try.
 2-okay_hand=calm,Yeah, okay. Not so bad.
 2-bad_hand=sad,I think I'm doing it wrong...
-2-bad_hand=sad,Well, I- I'm not sure what I can do about this.
+2-bad_hand=awkward,Well, I- I'm not sure what I can do about this.
+2-bad_hand=annoyed,There's not much I can do with these cards.
 
 #Lost Wristbands
 3-good_hand=happy,Oooh, I got a nice hand.
@@ -174,7 +146,7 @@ game_over_victory=calm,I WON! You gotta deal with it!
 #Lost Jacket
 4-good_hand=happy,I'm not stripping with cards like these!
 4-okay_hand=calm,I hope this works...
-4-bad_hand=sad,This is a disaster.
+4-bad_hand=nervous,This is a disaster.
 4-bad_hand=sad,You know I'm not very good at this.
 
 #Lost Shirt
@@ -194,18 +166,18 @@ game_over_victory=calm,I WON! You gotta deal with it!
 7-good_hand=happy,I'm keeping this hand close to my chest!
 7-okay_hand=calm,These are good enough I guess.
 7-bad_hand=sad,That's impossible. There's no way.
-7-bad_hand=sad,It's looking like I have to show it all...
+7-bad_hand=akward,It's looking like I have to show it all...
 
 #Lost Panties/Fully Nude
 #using negative numbers counts back from the final stage
 #-3 is while nude, -2 is masturbating, -1 is finished
 #this lets you use the same numbers with different amounts of clothing
--3-good_hand=happy,My era's not over yet!
+-3-good_hand=excited,My era's not over yet!
 -3-good_hand=happy,I'm saved!
--3-okay_hand=calm,I might not be "bending" just yet.
+-3-okay_hand=happy,I might not be "bending" just yet.
 -3-okay_hand=calm,I needed at least this much, if not more.
 -3-bad_hand=sad,No one can help me now...
--3-bad_hand=sad,Is it okay if I just turn into a block of ice for a hundred years?
+-3-bad_hand=nervous,Is it okay if I just turn into a block of ice for a hundred years?
 
 ##other player must strip specific
 #Fully Clothed
@@ -284,7 +256,7 @@ game_over_victory=calm,I WON! You gotta deal with it!
 ##another character is removing accessories
 #Fully Clothed
 0-male_removing_accessory=calm,Just your ~clothing~ for now?
-0-male_removed_accessory=sad,Lame. Is that what we're here for? ~Clothing~ removal?
+0-male_removed_accessory=annoyed,Lame. Is that what we're here for? ~Clothing~ removal?
 0-female_removing_accessory=calm,Just your ~clothing~ for now?
 0-female_removed_accessory=calm,I haven't stripped yet, but if I did I would probably take off something small like that too.
 0-female_removed_accessory=calm,No problem. I'm still one more piece ahead.
@@ -303,8 +275,8 @@ game_over_victory=calm,I WON! You gotta deal with it!
 2-female_removed_accessory=calm,I've seen better.
 
 #Lost Wristbands
-3-male_removing_accessory=calm,Patience, Korra...
-3-male_removing_accessory=calm,You've got the right idea just stripping your ~clothing~, ~name~.
+3-male_removing_accessory=sad,Patience, Korra...
+3-male_removing_accessory=calm,You've got the right idea just stripping your ~clothing~, ~name~. Just do it faster.
 3-male_removed_accessory=calm,I'm just stripping my small stuff too.
 3-female_removing_accessory=calm,You've got the right idea just stripping your ~clothing~, ~name~.
 3-female_removed_accessory=calm,I'm just stripping my small stuff too.
@@ -342,7 +314,7 @@ game_over_victory=calm,I WON! You gotta deal with it!
 
 #Masturbating
 -2-male_removing_accessory=calm,~name~ strip some more... Please!
--2-male_removed_accessory=angry,What does it take to undress this guy?!
+-2-male_removed_accessory=confused,What does it take to undress this guy?!
 -2-female_removing_accessory=calm,~name~ strip some more... Please!
 -2-female_removed_accessory=angry,Look, I don't have anything against you, but you're losing your ~clothing~?!
 -2-female_removed_accessory=angry,What does it take to undress this chick?! You have too many accessories on!
@@ -477,9 +449,9 @@ game_over_victory=calm,I WON! You gotta deal with it!
 
 #Masturbating
 -2-male_removing_major=excited,Yes! Some eye candy for me, I'm gonna need this...
--2-male_removed_major=sad,You're  not going to strip more? Come on ~name~, I need you to strip more than  just your ~clothing~ right now. I want to see your dick...
+-2-male_removed_major=sad,You're not going to strip more? Come on ~name~, I need you to strip more than just your ~clothing~ right now. I want to see your dick...
 -2-female_removing_major=excited,Yes! Some eye candy for me, I'm gonna need this...
--2-female_removed_major=sad,You're  not going to strip more? Come on ~name~, I need you to strip more than  just your ~clothing~ right now. I want to see your pussy...
+-2-female_removed_major=sad,You're not going to strip more? Come on ~name~, I need you to strip more than just your ~clothing~ right now. I want to see your pussy...
 
 #Finished
 -1-male_removing_major=excited,Nice ~name~! Strip nude just like me!
@@ -599,7 +571,7 @@ game_over_victory=calm,I WON! You gotta deal with it!
 6-female_small_chest_is_visible=awkward,Looks like mine are bigger; don't get too envious now.
 6-female_medium_chest_is_visible=horny,I like your nipples, very perky!
 6-female_large_chest_is_visible=shocked,Those are huge! Big and bouncy!
-6-female_large_chest_is_visible=horny,Those  are out of this world! As the bridge between worlds, I'm kinda an  expert on these things.
+6-female_large_chest_is_visible=horny,Those are out of this world! As the bridge between worlds, I'm kinda an expert on these things.
 6-female_crotch_will_be_visible=horny,Be the leaf. Or, in this case, remove the leaf.
 6-female_crotch_is_visible=happy,Moon us, girlfriend!
 
@@ -622,10 +594,11 @@ game_over_victory=calm,I WON! You gotta deal with it!
 -3-male_chest_will_be_visible=interested,Finally! ~name~'s gonna start showing some real skin.
 -3-male_chest_will_be_visible=excited,Looks like we can both be topless together, ~name~.
 -3-male_chest_is_visible=happy,Nice body, ~name~. I wish you would show the rest since I'm standing here completely naked.
--3-male_chest_is_visible=angry,Even though we are both topless, I think you are still getting a wayyyy  better deal. Maybe if you flashed me your cock we could be even... for now.
+-3-male_chest_is_visible=angry,Even though we are both topless, I think you are still getting a wayyyy better deal. Maybe if you flashed me your cock we could be even... for now.
 -3-male_crotch_will_be_visible=excited,Your turn, ~name~. Get naked just like me. We can streak around together.
 -3-male_crotch_will_be_visible=interested,I wonder if ~name~ has more hair than I do down there. I guess there's only one way to find out.
 -3-male_small_crotch_is_visible=angry,WHAT?! Why isn't it bigger? I'm in front of you totally naked and you don't have a raging erection?
+-3-male_small_crotch_is_visible=confused,Heh. That all you got?
 -3-male_medium_crotch_is_visible=horny,I can tell you've been staring at me nude, ~name~. That's a nice boner. Now it's my turn to do some staring.
 -3-male_large_crotch_is_visible=horny,I can tell you've been staring at me nude, ~name~. Your dick is fully erect! Now it's my turn to do some staring.
 
@@ -680,7 +653,7 @@ game_over_victory=calm,I WON! You gotta deal with it!
 0-female_must_masturbate=horny,It's about time you showed us some "bending", don't you think?
 0-female_start_masturbating=horny,Wow you really got right to it, ~name~. Do you do this a lot?
 0-female_masturbating=calm,Can't talk. Meditating.
-0-female_finished_masturbating=shocked,What? How is it over already? 
+0-female_finished_masturbating=confused,What? How is it over already? 
 
 #Lost Boots
 1-male_must_masturbate=horny,It's about time you showed us some "bending", don't you think?
@@ -729,7 +702,7 @@ game_over_victory=calm,I WON! You gotta deal with it!
 
 #Lost Shirt
 5-male_must_masturbate=interested,I mean, your dick is out on display. Might as well put it to some use.
-5-male_start_masturbating=horny,I  hope my cleavage is enough to get you started. Maybe you'll get lucky  and I'll lose the next few hand and give you some more inspiration.
+5-male_start_masturbating=horny,I hope my cleavage is enough to get you started. Maybe you'll get lucky and I'll lose the next few hand and give you some more inspiration.
 5-male_masturbating=horny,It's hard to focus on these cards while you are stroking your dick in front of me, ~name~.
 5-male_masturbating=horny,Looks like you are doing just fine.
 5-male_masturbating=happy,It's throbbing. Hot!
@@ -742,7 +715,7 @@ game_over_victory=calm,I WON! You gotta deal with it!
 
 #Lost Pants
 6-male_must_masturbate=interested,I mean, your dick is out on display. Might as well put it to some use.
-6-male_start_masturbating=horny,I  hope my underwear is enough to get you started. Maybe you'll get lucky  and I'll lose the next hand and give you some real inspiration.
+6-male_start_masturbating=horny,I hope my underwear is enough to get you started. Maybe you'll get lucky and I'll lose the next hand and give you some real inspiration.
 6-male_masturbating=horny,Wow you are going really fast, ~name~! Do you like what you see? 
 6-male_finished_masturbating=shocked,That cumshot makes me wonder if semen bending is a thing. Are you a bender, ~name~?
 
@@ -800,46 +773,43 @@ game_over_victory=calm,I WON! You gotta deal with it!
 -1-female_finished_masturbating=horny,If you'd like to know how a real pro does it, I could give you some private lessons.
 
 
-#ending data
-#this is optional. Delete it if you don't have an ending thought up yet.
-#you can also have multiple endings.
-#each one starts with the "ending" entry
-#the tabs aren't necessary, but make it easier to read.
-ending=This is the title of the character's ending, and the start of a new ending
-        ending_gender="male", "female", or "any". This is the gender of player that can see the ending
+#masturbation
+#these situations relate to when the character is masturbating
+#these only come up in the relevant stages, so you don't need to include the stage numbers here
+#just remember which stage is which when you make the images
+must_masturbate_first=loss,What? I have to do that? I really hit the dirt this time.
+must_masturbate_first=loss,I'm already fully naked! Isn't that enough?
+must_masturbate=loss,At least I'm not the first to do it. Now it's my turn to do some "bending".
+start_masturbating=starting,Well, I guess I have to get started...
+masturbating=horny,Ahhh... This feels great...
+masturbating=horny,If I use a little waterbending I can hit my G-spot really hard...
+masturbating=horny,Going at it in front of an audience is kinda hot...
+heavy_masturbating=heavy,I'm getting really close to climaxing now!
+heavy_masturbating=heavy,OH! AhhHHh! I'm almost there!
+finishing_masturbating=finishing,I'M CUMMING!
+finished_masturbating=finished,That was really nice... I haven't felt that good in years.
+finished_masturbating=finished,Now I'm all sticky. I need a bath in some spirit water; anyone want to join me?
+game_over_defeat=calm,Congratulations, ~name~. You beat the Avatar!
+game_over_victory=calm,I WON! You gotta deal with it!
 
-        #each ending has a number of screens. each screen has an image, and one or more text boxes
-        #the entry "screen" marks the start of a new screen
-        screen=filename (including extension) of the background image for a screen. Also the start of a new screen
+#victory lines. one for each stage.
+0-game_over_victory=happy,I'm the Avatar, this was a piece of cake!
+0-game_over_victory=victory,I WON! You gotta deal with it!
+1-game_over_victory=happy,WOOO! I WON! Can I get my boots back now?
+1-game_over_victory=victory,I WON! You gotta deal with it!
+2-game_over_victory=happy,No shoes, no socks, but I still won!
+2-game_over_victory=happy,I WON! You gotta deal with it!
+3-game_over_victory=happy,I won! I feel relieved I was just about to run out of accessories.
+4-game_over_victory=victory,Nice! I won! I was out of accessories too.
+5-game_over_victory=victory,No shoes, no shirt, but I still won!
+6-game_over_victory=victory,Yes! I won! I was about to have to show it all too. Do I get my clothes back now? I can't just go around as the Avatar in my underwear.
+7-game_over_victory=victory,I WON! Can I put my clothes back on now? I'm not used to having my tits out like this.
+-3-game_over_victory=victory,That was close, I almost had to masturbate in front of all of you. I'm glad I won!
+-2-game_over_victory=excited,If you think about it, we all won!
 
-                #the text boxes in a screen
-                #the entry "text" starts a new text box
-                text=The text in the text box.
-                 x=The x-position of the text box. Specifically, the position of the  text box's left side. This can be a percentage, or the word "centered"
-                y=The y-position of the top of the text box. Must be a percentage.
-                width=The width of a text box. This is optional. Must be a percentage.
-                 arrow="up", "down", "left", or "right". Gives the text box a dialogue  arrow in the specified direction. Can be left out, if you don't want the  text box to be an arrow.
 
-        #this screen is an example
-        #the filename is the image you want to use
-        screen=example-filename.png
-
-                text=This is text that will be seen by the player. It has a width of 34% and an arrow pointing down.
-                x=10%
-                y=20%
-                width=34%
-                arrow=right
-
-                text=This is a centered text box. It has the default width and an arrow pointing right.
-                x=centered
-                y=50%
-                arrow=right
-
-                text=This third text box has minimum amount of values specified. It uses the default width, and has no arrow.
-                x=75%
-                y=50%
-
-#if you want additional endings, start the new one with the "ending" line
+#Paste into stage 0 of behaviour.xml
+#<case tag="female_must_strip" target="may" targetStage=0 alsoPlaying="mei"><state img="0-confused">Wait, you're <i>both</i> named May? <i>May</i>be one of you should get a new name.</state></case>
 
 #Paste into stage 4 of behaviour.xml
 #<case tag="female_removed_accessory" target="nagisa"><state img="4-calm.png">Nagisa, if you're not feeling confident, come train with me at the Water Tribe sometime. How are you with cold weather?</state></case>
