@@ -95,6 +95,9 @@
             <case tag="female_removing_accessory" target="spooky">
                 <state img="0-excited.png">I never thought I'd be doing this with a ghost!</state>
             </case>
+			<case tag="female_removing_accessory" target="kim" targetState="2">
+				<state img="0-smug.png">If by useful you mean 'delaying the inevitable,' then yes, it's useful.</state>
+			</case>
             <case tag="female_removing_accessory" filter="mean">
                 <state img="0-smug.png">Pull all the tricks you want - I think you'll find I'm well prepared.</state>
             </case>
@@ -131,6 +134,9 @@
             </case>
             <case tag="female_removing_minor" target="kim" targetStage="1">
                 <state img="0-calm.png">I shall endeavor to follow your example, should it become necessary.</state>
+            </case>
+            <case tag="female_removing_minor" target="asuna" targetStage="0">
+                <state img="0-interested.png">Oh, they're magical? I'm envious! They don't let us have magic items until we graduate.</state>
             </case>
             <case tag="female_removed_minor" target="kyoko" targetStage=6>
                 <state img="0-sad.png">There's no reason to apologize! In fact, I should be the one to do so. I had no idea, truly!</state>
@@ -370,6 +376,9 @@
             <case tag="female_removing_accessory" target="spooky">
                 <state img="1-excited.png">I never thought I'd be doing this with a ghost!</state>
             </case>
+			<case tag="female_removing_accessory" target="kim" targetState="2">
+				<state img="1-smug.png">If by useful you mean 'delaying the inevitable,' then yes, it's useful.</state>
+			</case>
             <case tag="female_removed_accessory">
                 <state img="1-smug.png">Another step closer to victory!</state>
                 <state img="1-angry.png">I suppose I shouldn't have expected anything else.</state>
@@ -556,6 +565,13 @@
                 <state img="2-calm.png">This will do, I suppose.</state>
                 <state img="2-loss.png">I hope this is enough!</state>
             </case>
+            <case tag="okay_hand" alsoPlaying="harley">
+                <state img="2-angry.png">Hey! Keep your eyes on your own cards, Harley!</state>
+                <state img="2-calm.png">This should do.</state>
+                <state img="2-loss.png">It could be worse.</state>
+                <state img="2-calm.png">This will do, I suppose.</state>
+                <state img="2-loss.png">I hope this is enough!</state>
+            </case>
             <case tag="bad_hand">
                 <state img="2-loss.png">This does not appear to be a winning hand.</state>
                 <state img="2-stunned.png">Oh, rats!</state>
@@ -590,6 +606,9 @@
             <case tag="female_removing_accessory">
                 <state img="2-excited.png">I knew it!</state>
             </case>
+			<case tag="female_removing_accessory" target="kim" targetState="2">
+				<state img="2-smug.png">If by useful you mean 'delaying the inevitable,' then yes, it's useful.</state>
+			</case>
             <case tag="female_removed_accessory">
                 <state img="2-smug.png">That's exactly what I would have done.</state>
             </case>
@@ -1117,6 +1136,9 @@
             <case tag="female_start_masturbating">
                 <state img="4-interested.png">Of course, I'm not interested in girls myself, so...</state>
             </case>
+            <case tag="female_start_masturbating" target="kim">
+                <state img="4-stunned.png">That had better not be <i>my</i> Ron you're thinking of or I'm going to have to do something unforgiveable to you both!</state>
+            </case>
             <case tag="male_removing_major">
                 <state img="4-interested.png">Finally, ~name~'s ~clothing~ comes off!</state>
             </case>
@@ -1329,6 +1351,9 @@
             </case>
             <case tag="female_start_masturbating">
                 <state img="5-interested.png">Of course, I'm not interested in girls myself, so...</state>
+            </case>
+            <case tag="female_start_masturbating" target="kim">
+                <state img="5-stunned.png">That had better not be <i>my</i> Ron you're thinking of or I'm going to have to do something unforgiveable to you both!</state>
             </case>
             <case tag="female_start_masturbating" filter="innocent">
                 <state img="5-shocked.png">Not that I think of him when I-- I mean, I don't even... Oh! Just get on with it.</state>
@@ -1564,6 +1589,9 @@
             <case tag="female_start_masturbating">
                 <state img="6-interested.png">I have to say I don't mind it being you, ~name~.</state>
             </case>
+            <case tag="female_start_masturbating" target="kim">
+                <state img="5-stunned.png">That had better not be <i>my</i> Ron you're thinking of or I'm going to have to do something unforgiveable to you both!</state>
+            </case>
             <case tag="male_removing_major">
                 <state img="6-happy.png">Finally the tables are turning, ~name~.</state>
             </case>
@@ -1791,6 +1819,9 @@
             </case>
             <case tag="female_start_masturbating">
                 <state img="7-interested.png">It looks like you're already wet...</state>
+            </case>
+            <case tag="female_start_masturbating" target="kim">
+                <state img="7-stunned.png">That had better not be <i>my</i> Ron you're thinking of or I'm going to have to do something unforgiveable to you both!</state>
             </case>
             <case tag="male_removing_major">
                 <state img="7-excited.png">Merlin's beard! I was beginning to think you were cheating, ~name~.</state>

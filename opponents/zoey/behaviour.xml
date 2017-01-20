@@ -226,6 +226,9 @@
 			<case tag="female_removing_accessory" target="blackrose" targetState="0">
 				<state img="0-happy.png">Tell us, BlackRose - is it true what they say about girls who wear chokers?</state>
 			</case>
+			<case tag="female_removing_accessory" target="kim" targetState="2">
+				<state img="0-loss.png">I figured a purse just got in the way of your... adventuring thing.</state>
+			</case>
 			<case tag="female_removing_accessory" filter="exhibitionist"> 
 				<state img="0-shocked.png">I was expecting something a little more... risque from someone with your reputation.</state>
 			</case>
@@ -233,7 +236,10 @@
 				<state img="0-calm.png">You could at least dance to make it interesting or something.</state>
 			</case>
 			<case tag="female_removing_minor" target="asuna" targetState="2"> 
-				<state img="0-loss.png">The obvious choice? Sure. The fun choice? Not even close.</state>
+				<state img="0-loss.png">The obvious choice? Sure. The <i>fun</i> choice? Not even close.</state>
+			</case>
+			<case tag="female_removing_minor" target="kim" targetState="1"> 
+				<state img="0-happy.png">Go on, Kim. Idle threats are the best part of the game!</state>
 			</case>
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="0-shocked.png">Wait, what?</state>
@@ -252,6 +258,9 @@
 			</case>
 			<case tag="female_removing_major" target="jasmine" targetStage="2"> 
 				<state img="0-shocked.png">You... wore a disguise. To a game involving stripping. And you don't see any problem with that?</state>
+			</case>
+			<case tag="female_removing_major" target="kim" targetStage="3"> 
+				<state img="0-loss.png">I hope they're paying you for that ad, Kim.</state>
 			</case>
 			<case tag="female_removing_major" filter="kind"> 
 				<state img="0-sad.png">I feel bad about beating you this fast. not bad enough to stop you, just bad.</state>
@@ -639,15 +648,21 @@
 			<case tag="female_removing_accessory" target="blackrose" targetState=0>
 				<state img="1-happy.png">Tell us, BlackRose - is it true what they say about girls who wear chokers?</state>
 			</case>
+			<case tag="female_removing_accessory" target="kim" targetState="2">
+				<state img="1-loss.png">I figured a purse just got in the way of your... adventuring thing.</state>
+			</case>
 			<case tag="female_removing_minor"> 
 				<state img="1-calm.png">You could at least dance to make it interesting or something.</state>
 			</case>
 			<case tag="female_removing_minor" target="asuna" targetState="2"> 
-				<state img="1-loss.png">The obvious choice? Sure. The fun choice? Not even close.</state>
+				<state img="1-loss.png">The obvious choice? Sure. The <i>fun</i> choice? Not even close.</state>
 			</case>
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="1-shocked.png">Wait, what?</state>
             </case>
+			<case tag="female_removing_minor" target="kim" targetState="1"> 
+				<state img="1-happy.png">Go on, Kim. Idle threats are the best part of the game!</state>
+			</case>
 			<case tag="female_removing_minor" filter="school_uniform"> 
 				<state img="1-loss.png">Hold up there, ~name~. Aren't you worried you'll get detention for being out of uniform?</state>
 			</case>
@@ -662,6 +677,9 @@
 			</case>
 			<case tag="female_removing_major" target="jasmine" targetStage="2"> 
 				<state img="1-shocked.png">You... wore a disguise. To a game involving stripping. And you don't see any problem with that?</state>
+			</case>
+			<case tag="female_removing_major" target="kim" targetStage="3"> 
+				<state img="1-loss.png">I hope they're paying you for that ad, Kim.</state>
 			</case>
 			<case tag="female_removing_major" filter="kind"> 
 				<state img="1-sad.png">I feel bad about beating you this fast. not bad enough to stop you, just bad.</state>
@@ -1042,11 +1060,17 @@
 			<case tag="female_removing_accessory" target="blackrose" targetState=0>
 				<state img="2-happy.png">Tell us, BlackRose - is it true what they say about girls who wear chokers?</state>
 			</case>
+			<case tag="female_removing_accessory" target="kim" targetState="2">
+				<state img="2-loss.png">I figured a purse just got in the way of your... adventuring thing.</state>
+			</case>
 			<case tag="female_removing_minor"> 
 				<state img="2-calm.png">You could at least dance to make it interesting or something.</state>
 			</case>
 			<case tag="female_removing_minor" target="asuna" targetState="2"> 
-				<state img="2-loss.png">The obvious choice? Sure. The fun choice? Not even close.</state>
+				<state img="2-loss.png">The obvious choice? Sure. The <i>fun</i> choice? Not even close.</state>
+			</case>
+			<case tag="female_removing_minor" target="kim" targetState="1"> 
+				<state img="2-happy.png">Go on, Kim. Idle threats are the best part of the game!</state>
 			</case>
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="2-shocked.png">Wait, what?</state>
@@ -1067,6 +1091,9 @@
 			<case tag="female_removing_major" target="jasmine" targetStage="2"> 
 				<state img="2-shocked.png">You... wore a disguise. To a game involving stripping. And you don't see any problem with that?</state>
 			</case>
+			<case tag="female_removing_major" target="kim" targetStage="3"> 
+				<state img="2-loss.png">I hope they're paying you for that ad, Kim.</state>
+			</case>
 			<case tag="female_removing_major" target="blackrose" targetState=4>
 				<state img="2-interested.png">Need a hand there, BlackRose?</state>
 			</case>
@@ -1085,6 +1112,9 @@
 			</case>
 			<case tag="female_removing_major" target="jasmine" targetStage="2"> 
 				<state img="2-shocked.png">You... wore a disguise. To a game involving stripping. And you don't see any problem with that?</state>
+			</case>
+			<case tag="female_removing_major" target="kim" targetStage="3"> 
+				<state img="2-loss.png">I hope they're paying you for that ad, Kim.</state>
 			</case>
 			<case tag="female_removing_major" filter="princess"> 
 				<state img="2-interested.png">I'm guessing 'caution' and 'modesty' aren't particularly royal traits.</state>
@@ -1447,15 +1477,21 @@
 			<case tag="female_removing_accessory"> 
 				<state img="3-sad.png">So that's what you're going for? Really? Not gonna... spice it up at all?</state>
 			</case>
+			<case tag="female_removing_accessory" target="kim" targetState="2">
+				<state img="3-loss.png">I figured a purse just got in the way of your... adventuring thing.</state>
+			</case>
 			<case tag="female_removing_minor"> 
 				<state img="3-calm.png">You could at least dance to make it interesting or something.</state>
 			</case>
 			<case tag="female_removing_minor" target="asuna" targetState="2"> 
-				<state img="3-loss.png">The obvious choice? Sure. The fun choice? Not even close.</state>
+				<state img="3-loss.png">The obvious choice? Sure. The <i>fun</i> choice? Not even close.</state>
 			</case>
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="3-shocked.png">Wait, what?</state>
             </case>
+			<case tag="female_removing_minor" target="kim" targetState="1"> 
+				<state img="3-happy.png">Go on, Kim. Idle threats are the best part of the game!</state>
+			</case>
 			<case tag="female_removing_minor" filter="cheerful"> 
 				<state img="3-happy.png">I can't wait to see more!</state>
 			</case>
@@ -1470,6 +1506,9 @@
 			</case>
 			<case tag="female_removing_major" target="jasmine" targetStage="2"> 
 				<state img="3-shocked.png">You... wore a disguise. To a game involving stripping. And you don't see any problem with that?</state>
+			</case>
+			<case tag="female_removing_major" target="kim" targetStage="3"> 
+				<state img="3-loss.png">I hope they're paying you for that ad, Kim.</state>
 			</case>
 			<case tag="female_removing_major" target="blackrose" targetState=4>
 				<state img="3-interested.png">Need a hand there, BlackRose?</state>
@@ -1854,17 +1893,23 @@
 				<state img="4-sad.png">So that's what you're going for? Really? Not gonna... spice it up at all?</state>
 			</case>
 			<case tag="female_removing_accessory" target="hermione"> 
-				<state img="4-angry.png">Oh, no! Not your tie! However will you live with yourself in the morning?</state>
+				<state img="4-angry.png">Oh, no! Not your <i>tie</i>! However will you live with yourself in the morning?</state>
+			</case>
+			<case tag="female_removing_accessory" target="kim" targetState="2">
+				<state img="4-loss.png">I figured a purse just got in the way of your... adventuring thing.</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="4-calm.png">You could at least dance to make it interesting or something.</state>
 			</case>
 			<case tag="female_removing_minor" target="asuna" targetState="2"> 
-				<state img="4-loss.png">The obvious choice? Sure. The fun choice? Not even close.</state>
+				<state img="4-loss.png">The obvious choice? Sure. The <i>fun</i> choice? Not even close.</state>
 			</case>
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="4-shocked.png">Wait, what?</state>
             </case>
+			<case tag="female_removing_minor" target="kim" targetState="1"> 
+				<state img="4-happy.png">Go on, Kim. Idle threats are the best part of the game!</state>
+			</case>
 			<case tag="female_removing_minor" filter="cheerful"> 
 				<state img="4-happy.png">I can't wait to see more!</state>
 			</case>
@@ -1879,6 +1924,9 @@
 			</case>
 			<case tag="female_removing_major" target="blackrose" targetState=4>
 				<state img="4-interested.png">Need a hand there, BlackRose?</state>
+			</case>
+			<case tag="female_removing_major" target="kim" targetStage="3"> 
+				<state img="4-loss.png">I hope they're paying you for that ad, Kim.</state>
 			</case>
 			<case tag="female_removing_major" filter="exhibitionist"> 
 				<state img="4-awkward.png">You're really into this stripping thing, huh?</state>
@@ -2214,20 +2262,26 @@
 				<state img="5-sad.png">So that's what you're going for? Really? Not gonna... spice it up at all?</state>
 			</case>
 			<case tag="female_removing_accessory" target="hermione"> 
-				<state img="5-angry.png">Oh, no! Not your tie! However will you live with yourself in the morning?</state>
+				<state img="5-angry.png">Oh, no! Not your <i>tie</i>! However will you live with yourself in the morning?</state>
 			</case>
 			<case tag="female_removing_accessory" target="april" targetStage="5"> 
 				<state img="5-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
+			</case>
+			<case tag="female_removing_accessory" target="kim" targetState="2">
+				<state img="5-loss.png">I figured a purse just got in the way of your... adventuring thing.</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="5-calm.png">You could at least dance to make it interesting or something.</state>
 			</case>
 			<case tag="female_removing_minor" target="asuna" targetState="2"> 
-				<state img="5-loss.png">The obvious choice? Sure. The fun choice? Not even close.</state>
+				<state img="5-loss.png">The obvious choice? Sure. The <i>fun</i> choice? Not even close.</state>
 			</case>
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="5-shocked.png">Wait, what?</state>
             </case>
+			<case tag="female_removing_minor" target="kim" targetState="1"> 
+				<state img="5-happy.png">Go on, Kim. Idle threats are the best part of the game!</state>
+			</case>
 			<case tag="female_removing_minor" filter="cheerful"> 
 				<state img="5-happy.png">
 					I can't wait to see more!
@@ -2243,6 +2297,9 @@
 			</case>
 			<case tag="female_removing_major" target="blackrose" targetState=4>
 				<state img="5-interested.png">Need a hand there, BlackRose?</state>
+			</case>
+			<case tag="female_removing_major" target="kim" targetStage="3"> 
+				<state img="5-loss.png">I hope they're paying you for that ad, Kim.</state>
 			</case>
 			<case tag="female_removing_major" filter="exhibitionist"> 
 				<state img="5-awkward.png">You're really into this stripping thing, huh?</state>
@@ -2589,7 +2646,7 @@
 				<state img="6-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
 			</case>
 			<case tag="female_removing_accessory" target="hermione"> 
-				<state img="6-angry.png">Oh, no! Not your tie! However will you live with yourself in the morning?</state>
+				<state img="6-angry.png">Oh, no! Not your <i>tie</i>! However will you live with yourself in the morning?</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="6-calm.png">
@@ -2946,7 +3003,7 @@
 				<state img="7-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
 			</case>
 			<case tag="female_removing_accessory" target="hermione"> 
-				<state img="7-angry.png">Oh, no! Not your tie! However will you live with yourself in the morning?</state>
+				<state img="7-angry.png">Oh, no! Not your <i>tie</i>! However will you live with yourself in the morning?</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="7-calm.png">
@@ -3296,7 +3353,7 @@
 				<state img="8-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
 			</case>
 			<case tag="female_removing_accessory" target="hermione"> 
-				<state img="8-angry.png">Oh, no! Not your tie! However will you live with yourself in the morning?</state>
+				<state img="8-angry.png">Oh, no! Not your <i>tie</i>! However will you live with yourself in the morning?</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="8-calm.png">
@@ -3608,7 +3665,7 @@
 				<state img="9-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
 			</case>
 			<case tag="female_removing_accessory" target="hermione"> 
-				<state img="9-angry.png">Oh, no! Not your tie! However will you live with yourself in the morning?</state>
+				<state img="9-angry.png">Oh, no! Not your <i>tie</i>! However will you live with yourself in the morning?</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="9-calm.png">
@@ -3909,7 +3966,7 @@
 				<state img="10-sad.png">Yeah, just like a three of clubs is <i>totally</i> a high card.</state>
 			</case>
 			<case tag="female_removing_accessory" target="hermione"> 
-				<state img="10-angry.png">Oh, no! Not your tie! However will you live with yourself in the morning?</state>
+				<state img="10-angry.png">Oh, no! Not your <i>tie</i>! However will you live with yourself in the morning?</state>
 			</case>
 			<case tag="female_removing_minor"> 
 				<state img="10-calm.png">
