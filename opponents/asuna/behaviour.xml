@@ -89,6 +89,13 @@
 				<state img="0-nervous.png">We may need to team up for this quest.</state>
 				<state img="0-nervous.png">Don't do anything mean, okay?</state>
 			</case>
+			<case tag="okay_hand" alsoPlaying="blackrose"> 
+				<state img="0-interested.png">Tell me, ~name~ - what's The World really like? I hear it's got some serious issues.
+				<state img="0-lost.png">Let's do this.</state>
+				<state img="0-nervous.png">P-please, be nice to me...</state>
+				<state img="0-nervous.png">We may need to team up for this quest.</state>
+				<state img="0-nervous.png">Don't do anything mean, okay?</state>
+			</case>
 			<case tag="bad_hand"> 
 				<state img="0-nervous.png">Feel that? There's a bad vibe in here.</state>
 				<state img="0-angry.png">Oh, well, <i>that</i> figures.</state>
@@ -237,10 +244,6 @@
 			<case tag="female_removing_accessory" target="april" targetStage="0"> 
 				<state img="0-angry.png">Just regular ones? Do they even count, then?</state>
 			</case>
-			<case tag="female_removing_accessory" target="blackrose" targetStage="0">
-				<state img="0-interested.png">Tell me, ~name~ - what's The World really like? I hear it's got some serious issues.
-				</state>
-			</case>
 			<case tag="female_removing_minor">
 				<state img="0-calm.png">Removing your ~clothing~? Okay.</state>
 			</case>
@@ -281,9 +284,6 @@
 			</case>
 			<case tag="female_removed_accessory" filter="princess"> 
 				<state img="0-happy.png">That means I can go all out against you!</state>
-			</case>
-			<case tag="female_removed_accessory" target="blackrose" targetStage="1">
-				<state img="0-lost.png">Not that I can criticize... ALfeim Online has had more than its own share of problems!</state>
 			</case>
 			<case tag="female_removed_accessory" target="blackrose" targetStage="2">
 				<state img="0-angry.png">Of <i>course</i> they're not for keeps... They'd <i>better</i> not be for keeps!</state>
