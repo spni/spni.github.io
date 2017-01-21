@@ -166,9 +166,7 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
-				<state img="0-calm.png">
-					Dude. You have issues. But you're also hot, so all is forgiven.
-				</state>
+				<state img="0-calm.png">Link, dude... You have issues. But you're also seriously hot, so all is forgiven.</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> 
 				<state img="0-awkward.png">Oh, gross! Nobody wants to see that!</state>
@@ -318,7 +316,10 @@
 				<state img="0-loss.png">Well, I mean, anyone can talk to zombies... but not anyone can get an answer other than 'rawr brains'.</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
-				<state img="0-happy.png">You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.</state>
+				<state img="0-happy.png">You're wound really tight, aren't you? I bet you're a total freak in bed.</state>
+			</case>
+			<case tag="female_removed_accessory" target="lux" targetStage=1> 
+				<state img="0-happy.png">Keep telling yourself that, Lux. Maybe you'll start to believe it.</state>
 			</case>
 			<case tag="female_removed_accessory" target="spooky"> 
 				<state img="0-happy.png">Yes, yes, we're all just terrified of you, Spooky.</state>
@@ -587,9 +588,7 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
-				<state img="1-calm.png">
-					Dude. You have issues. But you're also hot, so all is forgiven.
-				</state>
+				<state img="1-calm.png">Link, dude... You have issues. But you're also seriously hot, so all is forgiven.</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> 
 				<state img="1-awkward.png">Oh, gross!</state>
@@ -730,7 +729,10 @@
 				<state img="1-loss.png">You're off your meds again, huh, Chara?</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
-				<state img="1-happy.png">You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.</state>
+				<state img="1-happy.png">You're wound really tight, aren't you? I bet you're a total freak in bed.</state>
+			</case>
+			<case tag="female_removed_accessory" target="lux" targetStage=1> 
+				<state img="1-happy.png">Keep telling yourself that, Lux. Maybe you'll start to believe it.</state>
 			</case>
 			<case tag="female_removed_accessory" target="spooky"> 
 				<state img="1-happy.png">Yes, yes, we're all just terrified of you, Spooky.</state>
@@ -1000,9 +1002,7 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
-				<state img="2-calm.png">
-					Dude. You have issues. But you're also hot, so all is forgiven.
-				</state>
+				<state img="2-calm.png">Link, dude... You have issues. But you're also seriously hot, so all is forgiven.</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> 
 				<state img="2-sad.png">Wow, that's... actually turning me on. I have GOT to get laid.</state>
@@ -1150,7 +1150,10 @@
 				<state img="2-loss.png">You're off your meds again, huh, Chara?</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
-				<state img="2-happy.png">You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.</state>
+				<state img="2-happy.png">You're wound really tight, aren't you? I bet you're a total freak in bed.</state>
+			</case>
+			<case tag="female_removed_accessory" target="lux" targetStage=1> 
+				<state img="2-happy.png">Keep telling yourself that, Lux. Maybe you'll start to believe it.</state>
 			</case>
 			<case tag="female_removed_accessory" target="spooky"> 
 				<state img="2-happy.png">Yes, yes, we're all just terrified of you, Spooky.</state>
@@ -1392,6 +1395,9 @@
 			<case tag="male_crotch_will_be_visible"> 
 				<state img="3-horny.png">This is what separates the men from the boys.</state>
 			</case>
+			<case tag="male_crotch_will_be_visible" target="link"> 
+				<state img="3-horny.png">Link, if I wasn't having that effect on you, <i>I'd</i> be the embarrassed one!</state>
+			</case>
 			
 			
 			<case tag="male_removed_accessory"> 
@@ -1420,9 +1426,7 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
-				<state img="3-calm.png">
-					Dude. You have issues. But you're also hot, so all is forgiven.
-				</state>
+				<state img="3-calm.png">Link, dude... You have issues. But you're also seriously hot, so all is forgiven.</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> 
 				<state img="3-sad.png">Wow, that's... actually turning me on. I have GOT to get laid.</state>
@@ -1559,10 +1563,11 @@
 			<case tag="female_removed_accessory" target="chara" targetStage="1"> 
 				<state img="3-loss.png">You're off your meds again, huh, Chara?</state>
 			</case>
+			<case tag="female_removed_accessory" target="lux" targetStage=1> 
+				<state img="3-happy.png">Keep telling yourself that, Lux. Maybe you'll start to believe it.</state>
+			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
-				<state img="3-happy.png">
-					You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.
-				</state>
+				<state img="3-happy.png">You're wound really tight, aren't you? I bet you're a total freak in bed.</state>
 			</case>
 			<case tag="female_removed_accessory" target="spooky"> 
 				<state img="3-happy.png">
@@ -1811,6 +1816,9 @@
 			<case tag="male_crotch_will_be_visible"> 
 				<state img="4-horny.png">This is what separates the men from the boys.</state>
 			</case>
+			<case tag="male_crotch_will_be_visible" target="link"> 
+				<state img="4-horny.png">Link, if I wasn't having that effect on you, <i>I'd</i> be the embarrassed one!</state>
+			</case>
 			
 			
 			<case tag="male_removed_accessory"> 
@@ -1839,9 +1847,7 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
-				<state img="4-calm.png">
-					Dude. You have issues. But you're also hot, so all is forgiven.
-				</state>
+				<state img="4-calm.png">Link, dude... You have issues. But you're also seriously hot, so all is forgiven.</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> 
 				<state img="4-sad.png">Wow, that's... actually turning me on. I have GOT to get laid.</state>
@@ -1954,7 +1960,7 @@
 				<state img="4-loss.png">You're off your meds again, huh, Chara?</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
-				<state img="4-happy.png">You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.</state>
+				<state img="4-happy.png">You're wound really tight, aren't you? I bet you're a total freak in bed.</state>
 			</case>
 			<case tag="female_removed_minor" target="nagisa"> 
 				<state img="4-loss.png">I wonder if that innocence is really just an act...</state>
@@ -2180,6 +2186,9 @@
 			<case tag="male_crotch_will_be_visible"> 
 				<state img="5-horny.png">This is what separates the men from the boys.</state>
 			</case>
+			<case tag="male_crotch_will_be_visible" target="link"> 
+				<state img="5-horny.png">Link, if I wasn't having that effect on you, <i>I'd</i> be the embarrassed one!</state>
+			</case>
 			
 			
 			<case tag="male_removed_accessory"> 
@@ -2208,9 +2217,7 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
-				<state img="5-calm.png">
-					Dude. You have issues. But you're also hot, so all is forgiven.
-				</state>
+				<state img="5-calm.png">Link, dude... You have issues. But you're also seriously hot, so all is forgiven.</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> 
 				<state img="5-sad.png">Wow, that's... actually turning me on. I have GOT to get laid.</state>
@@ -2327,7 +2334,7 @@
 				<state img="5-loss.png">You're off your meds again, huh, Chara?</state>
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
-				<state img="5-happy.png">You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.</state>
+				<state img="5-happy.png">You're wound really tight, aren't you? I bet you're a total freak in bed.</state>
 			</case>
 			<case tag="female_removed_minor"> 
 				<state img="5-awkward.png">Next to you, I feel kinda underdressed for the apocalypse.</state>
@@ -2551,7 +2558,7 @@
 				<state img="6-horny.png">Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.</state>
 			</case>
 			<case tag="male_crotch_will_be_visible" target="link"> 
-				<state img="6-loss.png">Now to answer the age-old question: what DO elves have 'down there'?</state>
+				<state img="6-horny.png">Link, if I wasn't having that effect on you, <i>I'd</i> be the embarrassed one!</state>
 			</case>
 			
 			
@@ -2581,9 +2588,7 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
-				<state img="6-calm.png">
-					Dude. You have issues. But you're also hot, so all is forgiven.
-				</state>
+				<state img="6-calm.png">Link, dude... You have issues. But you're also seriously hot, so all is forgiven.</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> 
 				<state img="6-calm.png">
@@ -2594,6 +2599,9 @@
 				<state img="6-horny.png">
 					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
+			</case>
+			<case tag="male_medium_crotch_is_visible" target="link"> 
+				<state img="6-loss.png">Well, this answers the age-old question: what <i>do</i> elves have 'down there'?</state>
 			</case>
 			<case tag="male_large_crotch_is_visible"> 
 				<state img="6-shocked.png">
@@ -2698,7 +2706,7 @@
 			</case>
 			<case tag="female_removed_accessory" target="hermione"> 
 				<state img="6-happy.png">
-					You're wound really tight, aren't you? I bet you're a <i>freak</i> in bed.
+					You're wound really tight, aren't you? I bet you're a total freak in bed.
 				</state>
 			</case>
 			<case tag="female_removed_minor"> 
@@ -2915,7 +2923,7 @@
 				<state img="7-horny.png">Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.</state>
 			</case>
 			<case tag="male_crotch_will_be_visible" target="link"> 
-				<state img="7-loss.png">Now to answer the age-old question: what DO elves have 'down there'?</state>
+				<state img="7-horny.png">Link, if I wasn't having that effect on you, <i>I'd</i> be the embarrassed one!</state>
 			</case>
 			
 			
@@ -2938,9 +2946,7 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
-				<state img="7-calm.png">
-					Dude. You have issues. But you're also hot, so all is forgiven.
-				</state>
+				<state img="7-calm.png">Link, dude... You have issues. But you're also seriously hot, so all is forgiven.</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> 
 				<state img="7-calm.png">
@@ -2951,6 +2957,9 @@
 				<state img="7-horny.png">
 					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
+			</case>
+			<case tag="male_medium_crotch_is_visible" target="link"> 
+				<state img="7-loss.png">Well, this answers the age-old question: what <i>do</i> elves have 'down there'?</state>
 			</case>
 			<case tag="male_large_crotch_is_visible"> 
 				<state img="7-shocked.png">
@@ -3260,7 +3269,7 @@
 				<state img="8-horny.png">Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.</state>
 			</case>
 			<case tag="male_crotch_will_be_visible" target="link"> 
-				<state img="8-loss.png">Now to answer the age-old question: what DO elves have 'down there'?</state>
+				<state img="8-horny.png">Link, if I wasn't having that effect on you, <i>I'd</i> be the embarrassed one!</state>
 			</case>
 			
 			
@@ -3288,9 +3297,7 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
-				<state img="8-calm.png">
-					Dude. You have issues. But you're also hot, so all is forgiven.
-				</state>
+				<state img="8-calm.png">Link, dude... You have issues. But you're also seriously hot, so all is forgiven.</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> 
 				<state img="8-calm.png">
@@ -3301,6 +3308,9 @@
 				<state img="8-horny.png">
 					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
+			</case>
+			<case tag="male_medium_crotch_is_visible" target="link"> 
+				<state img="8-loss.png">Well, this answers the age-old question: what <i>do</i> elves have 'down there'?</state>
 			</case>
 			<case tag="male_large_crotch_is_visible"> 
 				<state img="8-shocked.png">
@@ -3577,7 +3587,7 @@
 				<state img="9-horny.png">Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.</state>
 			</case>
 			<case tag="male_crotch_will_be_visible" target="link"> 
-				<state img="9-loss.png">Now to answer the age-old question: what DO elves have 'down there'?</state>
+				<state img="9-horny.png">Link, if I wasn't having that effect on you, <i>I'd</i> be the embarrassed one!</state>
 			</case>
 			
 			
@@ -3600,9 +3610,7 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
-				<state img="9-calm.png">
-					Dude. You have issues. But you're also hot, so all is forgiven.
-				</state>
+				<state img="9-calm.png">Link, dude... You have issues. But you're also seriously hot, so all is forgiven.</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> 
 				<state img="9-calm.png">
@@ -3613,6 +3621,9 @@
 				<state img="9-horny.png">
 					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
+			</case>
+			<case tag="male_medium_crotch_is_visible" target="link"> 
+				<state img="9-loss.png">Well, this answers the age-old question: what <i>do</i> elves have 'down there'?</state>
 			</case>
 			<case tag="male_large_crotch_is_visible"> 
 				<state img="9-shocked.png">
@@ -3878,7 +3889,7 @@
 				<state img="10-horny.png">Judging by the tent you're pitching, ~name~, I'd say we're in for quite the show.</state>
 			</case>
 			<case tag="male_crotch_will_be_visible" target="link"> 
-				<state img="10-loss.png">Now to answer the age-old question: what DO elves have 'down there'?</state>
+				<state img="10-horny.png">Link, if I wasn't having that effect on you, <i>I'd</i> be the embarrassed one!</state>
 			</case>
 			
 			
@@ -3901,9 +3912,7 @@
 				</state>
 			</case>
 			<case tag="male_chest_is_visible" target="link"> 
-				<state img="10-calm.png">
-					Dude. You have issues. But you're also hot, so all is forgiven.
-				</state>
+				<state img="10-calm.png">Link, dude... You have issues. But you're also seriously hot, so all is forgiven.</state>
 			</case>
 			<case tag="male_small_crotch_is_visible"> 
 				<state img="10-calm.png">
@@ -3914,6 +3923,9 @@
 				<state img="10-horny.png">
 					Well, well. ~name~'s packing some serious heat! Who'd have thought?
 				</state>
+			</case>
+			<case tag="male_medium_crotch_is_visible" target="link"> 
+				<state img="10-loss.png">Well, this answers the age-old question: what <i>do</i> elves have 'down there'?</state>
 			</case>
 			<case tag="male_large_crotch_is_visible"> 
 				<state img="10-shocked.png">
