@@ -108,7 +108,7 @@
 				</state>
 			</case>
 			<case tag="stripping"> 
-				<state img="0-strip.png">We're going to be starting off very revealing by taking off my boots.</state>
+				<state img="0-strip.png">We're going to be starting off <i>very</i> revealing by taking off my boots.</state>
 			</case>
 			
 			
@@ -243,6 +243,9 @@
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="0-shocked.png">Wait, what?</state>
             </case>
+            <case tag="female_removing_minor" target="nagisa" targetStage=1>
+                <state img="0-happy.png">Now you're getting the hang of it!</state>
+            </case>
 			<case tag="female_removing_minor" filter="school_uniform"> 
 				<state img="0-loss.png">Hold up there, ~name~. Aren't you worried you'll get detention for being out of uniform?</state>
 			</case>
@@ -261,8 +264,14 @@
 			<case tag="female_removing_major" target="kim" targetStage="3"> 
 				<state img="0-loss.png">I hope they're paying you for that ad, Kim.</state>
 			</case>
-			<case tag="female_removing_major" filter="kind"> 
-				<state img="0-sad.png">I feel bad about beating you this fast. not bad enough to stop you, just bad.</state>
+           <case tag="female_removing_major" target="nagisa" targetStage="3">
+                <state img="0-happy.png">Trust me when I say this game is going to be <i>full</i> of surprises for you, Nagisa...</state>
+            </case>
+           <case tag="female_removing_major" target="nagisa" targetStage="4">
+                <state img="0-horny.png">I can't make any promises, Nagisa...</state>
+            </case>
+ 			<case tag="female_removing_major" filter="kind"> 
+				<state img="0-sad.png">I feel bad about beating you this fast. Not bad enough to stop you, just bad.</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> 
 				<state img="0-loss.png">
@@ -299,6 +308,9 @@
 			</case>
 			<case tag="female_crotch_will_be_visible" target="jasmine"> 
 				<state img="0-horny.png">Tell me, Princess - does the magic carpet match the drapes?</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="misty"> 
+				<state img="0-horny.png">If you can't say the word 'pussy', you've lived a very sheltered life, Misty.</state>
 			</case>
 			<case tag="female_crotch_will_be_visible" target="dawn"> 
 				<state img="0-interested.png">Now that you mention it... yes!</state>
@@ -440,7 +452,7 @@
 			</case>
 			<case tag="female_must_masturbate" filter="blonde"> 
 				<state img="0-interested.png">
-					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Or is it the ladies that gets your motor revving?
 				</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> 
@@ -678,6 +690,9 @@
 			<case tag="female_removing_minor" target="kim" targetState="1"> 
 				<state img="1-happy.png">Go on, Kim. Idle threats are the best part of the game!</state>
 			</case>
+            <case tag="female_removing_minor" target="nagisa" targetStage=1>
+                <state img="1-happy.png">Now you're getting the hang of it!</state>
+            </case>
 			<case tag="female_removing_minor" filter="school_uniform"> 
 				<state img="1-loss.png">Hold up there, ~name~. Aren't you worried you'll get detention for being out of uniform?</state>
 			</case>
@@ -696,8 +711,14 @@
 			<case tag="female_removing_major" target="kim" targetStage="3"> 
 				<state img="1-loss.png">I hope they're paying you for that ad, Kim.</state>
 			</case>
+           <case tag="female_removing_major" target="nagisa" targetStage="3">
+                <state img="1-happy.png">Trust me when I say this game is going to be <i>full</i> of surprises for you, Nagisa...</state>
+            </case>
+           <case tag="female_removing_major" target="nagisa" targetStage="4">
+                <state img="1-horny.png">I can't make any promises, Nagisa...</state>
+            </case>
 			<case tag="female_removing_major" filter="kind"> 
-				<state img="1-sad.png">I feel bad about beating you this fast. not bad enough to stop you, just bad.</state>
+				<state img="1-sad.png">I feel bad about beating you this fast. Not bad enough to stop you, just bad.</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> 
 				<state img="1-loss.png">I take it 'blondes do it better' isn't referring to poker.</state>
@@ -738,6 +759,9 @@
 			</case>
 			<case tag="female_crotch_will_be_visible" target="may" > 
 				<state img="1-horny.png">This game just got <i>way</i> hotter.</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="misty"> 
+				<state img="1-horny.png">If you can't say the word 'pussy', you've lived a very sheltered life, Misty.</state>
 			</case>
 			
 			
@@ -867,7 +891,7 @@
 			</case>
 			<case tag="female_must_masturbate" filter="blonde"> 
 				<state img="1-interested.png">
-					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Or is it the ladies that gets your motor revving?
 				</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> 
@@ -1108,6 +1132,9 @@
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="2-shocked.png">Wait, what?</state>
             </case>
+            <case tag="female_removing_minor" target="nagisa" targetStage=1>
+                <state img="2-happy.png">Now you're getting the hang of it!</state>
+            </case>
 			<case tag="female_removing_minor" filter="cheerful"> 
 				<state img="2-happy.png">I can't wait to see more!</state>
 			</case>
@@ -1126,8 +1153,14 @@
 			<case tag="female_removing_major" target="blackrose" targetState=4>
 				<state img="2-interested.png">Need a hand there, BlackRose?</state>
 			</case>
+           <case tag="female_removing_major" target="nagisa" targetStage="3">
+                <state img="2-happy.png">Trust me when I say this game is going to be <i>full</i> of surprises for you, Nagisa...</state>
+            </case>
+           <case tag="female_removing_major" target="nagisa" targetStage="4">
+                <state img="2-horny.png">I can't make any promises, Nagisa...</state>
+            </case>
 			<case tag="female_removing_major" filter="kind"> 
-				<state img="2-sad.png">I feel bad about beating you this fast. not bad enough to stop you, just bad.</state>
+				<state img="2-sad.png">I feel bad about beating you this fast. Not bad enough to stop you, just bad.</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> 
 				<state img="2-loss.png">I take it 'blondes do it better' isn't referring to poker.</state>
@@ -1168,6 +1201,9 @@
 			</case>
 			<case tag="female_crotch_will_be_visible" target="may" > 
 				<state img="2-horny.png">This game just got <i>way</i> hotter.</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="misty"> 
+				<state img="2-horny.png">If you can't say the word 'pussy', you've lived a very sheltered life, Misty.</state>
 			</case>
 			
 			
@@ -1297,7 +1333,7 @@
 			</case>
 			<case tag="female_must_masturbate" filter="blonde"> 
 				<state img="2-interested.png">
-					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Or is it the ladies that gets your motor revving?
 				</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> 
@@ -1539,6 +1575,9 @@
 			<case tag="female_removing_minor" target="kim" targetState="1"> 
 				<state img="3-happy.png">Go on, Kim. Idle threats are the best part of the game!</state>
 			</case>
+            <case tag="female_removing_minor" target="nagisa" targetStage=1>
+                <state img="3-happy.png">Now you're getting the hang of it!</state>
+            </case>
 			<case tag="female_removing_minor" filter="cheerful"> 
 				<state img="3-happy.png">I can't wait to see more!</state>
 			</case>
@@ -1560,8 +1599,14 @@
 			<case tag="female_removing_major" target="blackrose" targetState=4>
 				<state img="3-interested.png">Need a hand there, BlackRose?</state>
 			</case>
+           <case tag="female_removing_major" target="nagisa" targetStage="3">
+                <state img="3-happy.png">Trust me when I say this game is going to be <i>full</i> of surprises for you, Nagisa...</state>
+            </case>
+           <case tag="female_removing_major" target="nagisa" targetStage="4">
+                <state img="3-horny.png">I can't make any promises, Nagisa...</state>
+            </case>
 			<case tag="female_removing_major" filter="kind"> 
-				<state img="3-sad.png">I feel bad about beating you this fast. not bad enough to stop you, just bad.</state>
+				<state img="3-sad.png">I feel bad about beating you this fast. Not bad enough to stop you, just bad.</state>
 			</case>
 			<case tag="female_removing_major" filter="blonde"> 
 				<state img="3-loss.png">
@@ -1596,6 +1641,9 @@
 			</case>
 			<case tag="female_crotch_will_be_visible" target="may" > 
 				<state img="3-horny.png">This game just got <i>way</i> hotter.</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="misty"> 
+				<state img="3-horny.png">If you can't say the word 'pussy', you've lived a very sheltered life, Misty.</state>
 			</case>
 			
 			
@@ -1732,7 +1780,7 @@
 			</case>
 			<case tag="female_must_masturbate" filter="blonde"> 
 				<state img="3-interested.png">
-					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Or is it the ladies that gets your motor revving?
 				</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> 
@@ -1973,6 +2021,9 @@
 			<case tag="female_removing_minor" target="kim" targetState="1"> 
 				<state img="4-happy.png">Go on, Kim. Idle threats are the best part of the game!</state>
 			</case>
+            <case tag="female_removing_minor" target="nagisa" targetStage=1>
+                <state img="4-happy.png">Now you're getting the hang of it!</state>
+            </case>
 			<case tag="female_removing_minor" filter="cheerful"> 
 				<state img="4-happy.png">I can't wait to see more!</state>
 			</case>
@@ -1992,6 +2043,12 @@
 			<case tag="female_removing_major" target="kim" targetStage="3"> 
 				<state img="4-loss.png">I hope they're paying you for that ad, Kim.</state>
 			</case>
+           <case tag="female_removing_major" target="nagisa" targetStage="3">
+                <state img="4-happy.png">Trust me when I say this game is going to be <i>full</i> of surprises for you, Nagisa...</state>
+            </case>
+           <case tag="female_removing_major" target="nagisa" targetStage="4">
+                <state img="4-horny.png">I can't make any promises, Nagisa...</state>
+            </case>
 			<case tag="female_removing_major" filter="exhibitionist"> 
 				<state img="4-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
@@ -2011,6 +2068,9 @@
 			</case>
 			<case tag="female_crotch_will_be_visible" target="may" > 
 				<state img="4-horny.png">This game just got <i>way</i> hotter.</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="misty"> 
+				<state img="4-horny.png">If you can't say the word 'pussy', you've lived a very sheltered life, Misty.</state>
 			</case>
 			
 			
@@ -2122,7 +2182,7 @@
 			</case>
 			<case tag="female_must_masturbate" filter="blonde"> 
 				<state img="4-interested.png">
-					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Or is it the ladies that gets your motor revving?
 				</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> 
@@ -2365,6 +2425,9 @@
 			<case tag="female_removing_minor" target="kim" targetState="1"> 
 				<state img="5-happy.png">Go on, Kim. Idle threats are the best part of the game!</state>
 			</case>
+            <case tag="female_removing_minor" target="nagisa" targetStage=1>
+                <state img="5-happy.png">Now you're getting the hang of it!</state>
+            </case>
 			<case tag="female_removing_minor" filter="cheerful"> 
 				<state img="5-happy.png">
 					I can't wait to see more!
@@ -2388,6 +2451,12 @@
 			<case tag="female_removing_major" filter="exhibitionist"> 
 				<state img="5-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
+           <case tag="female_removing_major" target="nagisa" targetStage="3">
+                <state img="5-happy.png">Trust me when I say this game is going to be <i>full</i> of surprises for you, Nagisa...</state>
+            </case>
+           <case tag="female_removing_major" target="nagisa" targetStage="4">
+                <state img="5-horny.png">I can't make any promises, Nagisa...</state>
+            </case>
 			<case tag="female_chest_will_be_visible"> 
 				<state img="5-interested.png">Here it comes, boys. Get ready!</state>
 			</case>
@@ -2404,6 +2473,9 @@
 			</case>
 			<case tag="female_crotch_will_be_visible" target="may" > 
 				<state img="5-horny.png">This game just got <i>way</i> hotter.</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="misty"> 
+				<state img="5-horny.png">If you can't say the word 'pussy', you've lived a very sheltered life, Misty.</state>
 			</case>
 			
 			
@@ -2512,7 +2584,7 @@
 			</case>
 			<case tag="female_must_masturbate" filter="blonde"> 
 				<state img="5-interested.png">
-					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Or is it the ladies that gets your motor revving?
 				</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> 
@@ -2775,6 +2847,12 @@
 			<case tag="female_removing_major" filter="exhibitionist"> 
 				<state img="6-awkward.png">You're really into this stripping thing, huh?</state>
 			</case>
+           <case tag="female_removing_major" target="nagisa" targetStage="3">
+                <state img="6-happy.png">Trust me when I say this game is going to be <i>full</i> of surprises for you, Nagisa...</state>
+            </case>
+           <case tag="female_removing_major" target="nagisa" targetStage="4">
+                <state img="6-horny.png">I can't make any promises, Nagisa...</state>
+            </case>
 			<case tag="female_chest_will_be_visible"> 
 				<state img="6-interested.png">Okay, ~name~. Show us the goods.</state>
 			</case>
@@ -2791,6 +2869,9 @@
 			</case>
 			<case tag="female_crotch_will_be_visible" target="may" > 
 				<state img="6-horny.png">This game just got <i>way</i> hotter.</state>
+			</case>
+			<case tag="female_crotch_will_be_visible" target="misty"> 
+				<state img="6-horny.png">If you can't say the word 'pussy', you've lived a very sheltered life, Misty.</state>
 			</case>
 			
 			
@@ -2892,7 +2973,7 @@
 			</case>
 			<case tag="female_must_masturbate" filter="blonde"> 
 				<state img="6-interested.png">
-					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Or is it the ladies that gets your motor revving?
 				</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> 
@@ -3160,6 +3241,9 @@
 			<case tag="female_crotch_will_be_visible" target="dawn"> 
 				<state img="7-interested.png">Now that you mention it... yes!</state>
 			</case>
+			<case tag="female_crotch_will_be_visible" target="misty"> 
+				<state img="7-horny.png">If you can't say the word 'pussy', you've lived a very sheltered life, Misty.</state>
+			</case>
 			
 			
 			<case tag="female_removed_accessory"> 
@@ -3251,7 +3335,7 @@
 			</case>
 			<case tag="female_must_masturbate" filter="blonde"> 
 				<state img="7-interested.png">
-					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Or is it the ladies that gets your motor revving?
 				</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> 
@@ -3604,7 +3688,7 @@
 			</case>
 			<case tag="female_must_masturbate" filter="blonde"> 
 				<state img="8-interested.png">
-					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Or is it the ladies that gets your motor revving?
 				</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> 
@@ -3924,7 +4008,7 @@
 			</case>
 			<case tag="female_must_masturbate" filter="blonde"> 
 				<state img="9-interested.png">
-					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Or is it the ladies that gets your motor revving?
 				</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> 
@@ -4233,7 +4317,7 @@
 			</case>
 			<case tag="female_must_masturbate" filter="blonde"> 
 				<state img="10-interested.png">
-					Gentlemen prefer blondes... but do blondes prefer gentlemen? Which one gets your motor revving?
+					Gentlemen prefer blondes... but do blondes prefer gentlemen? Or is it the ladies that gets your motor revving?
 				</state>
 			</case>
 			<case tag="female_must_masturbate" filter="princess"> 

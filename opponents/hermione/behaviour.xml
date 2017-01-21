@@ -157,6 +157,9 @@
             <case tag="female_removing_major" target="mercy" targetStage="2">
                 <state img="0-shocked.png">To <i>replace</i> inner organs? That would be advanced even for St. Mungo's. Just what <i>are</i> you, Mercy?</state>
             </case>
+            <case tag="female_removing_major" target="nagisa" targetStage="3">
+                <state img="0-sad.png">Neither have I! ...Oh. Oh, dear. Suddenly I realize coming here may <i>not</i> have been a good idea.</state>
+            </case>
             <case tag="female_removed_major">
                 <state img="0-angry.png">This is sick and wrong!</state>
             </case>
@@ -202,6 +205,9 @@
             <case tag="female_medium_chest_is_visible">
                 <state img="0-shocked.png">Well! We've all had a good, long look. Shall we move on?</state>
             </case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> 
+				<state img="0-calm.png">You might be surprised how <i>many</i> people I know who shout out odd phrases in made-up languages...</state>
+			</case>
             <case tag="female_large_chest_is_visible">
                 <state img="0-stunned.png">...</state>
             </case>
@@ -418,6 +424,9 @@
             <case tag="female_removing_major" target="mercy" targetStage="2">
                 <state img="1-shocked.png">To <i>replace</i> inner organs? That would be advanced even for St. Mungo's. Just what <i>are</i> you, Mercy?</state>
             </case>
+            <case tag="female_removing_major" target="nagisa" targetStage="3">
+                <state img="1-sad.png">Neither have I! ...Oh. Oh, dear. Suddenly I realize coming here may <i>not</i> have been a good idea.</state>
+            </case>
             <case tag="female_removed_major">
                 <state img="1-smug.png">And to think they said poker was hard! Maybe for most witches, but not <i>this</i> one.</state>
             </case>
@@ -463,6 +472,9 @@
             <case tag="female_medium_chest_is_visible">
                 <state img="1-shocked.png">Well! We've all had a good, long look. Shall we move on?</state>
             </case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> 
+				<state img="1-calm.png">You might be surprised how <i>many</i> people I know who shout out odd phrases in made-up languages...</state>
+			</case>
             <case tag="female_large_chest_is_visible">
                 <state img="1-stunned.png">...</state>
             </case>
@@ -651,7 +663,10 @@
             <case tag="female_removing_major" target="mercy" targetStage="2">
                 <state img="2-shocked.png">To <i>replace</i> inner organs? That would be advanced even for St. Mungo's. Just what <i>are</i> you, Mercy?</state>
             </case>
-            <case tag="female_removed_major">
+           <case tag="female_removing_major" target="nagisa" targetStage="3">
+                <state img="2-sad.png">Neither have I! ...Oh. Oh, dear. Suddenly I realize coming here may <i>not</i> have been a good idea.</state>
+            </case>
+             <case tag="female_removed_major">
                 <state img="2-happy.png">Five points from ~name~ for being out of uniform! Hee hee.</state>
             </case>
             <case tag="female_removed_major" target="streaming-chan">
@@ -702,6 +717,9 @@
             <case tag="female_medium_chest_is_visible">
                 <state img="2-excited.png">You really are quite beautiful! I'm jealous.</state>
             </case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> 
+				<state img="2-calm.png">You might be surprised how <i>many</i> people I know who shout out odd phrases in made-up languages...</state>
+			</case>
             <case tag="female_medium_chest_is_visible" filter="mean">
                 <state img="2-angry.png">...I have to admit you ARE quite beautiful.</state>
             </case>
@@ -976,6 +994,9 @@
             <case tag="female_medium_chest_is_visible">
                 <state img="3-excited.png">You really are quite beautiful! I'm jealous.</state>
             </case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> 
+				<state img="3-calm.png">You might be surprised how <i>many</i> people I know who shout out odd phrases in made-up languages...</state>
+			</case>
             <case tag="female_medium_chest_is_visible" filter="mean">
                 <state img="3-angry.png">...I have to admit you ARE quite beautiful.</state>
             </case>
@@ -1003,7 +1024,10 @@
             <case tag="female_removing_major" filter="innocent">
                 <state img="3-sad.png">I'm glad I didn't lose, but somehow I'm feeling embarrassed.</state>
             </case>
-            <case tag="male_removing_minor">
+           <case tag="female_removing_major" target="nagisa" targetStage="3">
+                <state img="3-sad.png">Neither have I! ...Oh. Oh, dear. Suddenly I realize coming here may <i>not</i> have been a good idea.</state>
+            </case>
+             <case tag="male_removing_minor">
                 <state img="3-calm.png">I see!</state>
             </case>
             <case tag="female_finished_masturbating">
@@ -1227,6 +1251,9 @@
             <case tag="female_medium_chest_is_visible">
                 <state img="4-excited.png">Although yours are rather striking!</state>
             </case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> 
+				<state img="4-calm.png">You might be surprised how <i>many</i> people I know who shout out odd phrases in made-up languages...</state>
+			</case>
             <case tag="female_removing_accessory">
                 <state img="4-stunned.png">You still had your ~clothing~ left?</state>
             </case>
@@ -1242,7 +1269,10 @@
             <case tag="female_removing_major" target="mercy" targetStage="2">
                 <state img="4-shocked.png">To <i>replace</i> inner organs? That would be advanced even for St. Mungo's. Just what <i>are</i> you, Mercy?</state>
             </case>
-            <case tag="male_removing_minor">
+           <case tag="female_removing_major" target="nagisa" targetStage="3">
+                <state img="4-sad.png">Neither have I! ...Oh. Oh, dear. Suddenly I realize coming here may <i>not</i> have been a good idea.</state>
+            </case>
+             <case tag="male_removing_minor">
                 <state img="4-interested.png">Don't keep us waiting!</state>
             </case>
             <case tag="female_finished_masturbating">
@@ -1322,6 +1352,9 @@
             </case>
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="5-shocked.png">Oh my goodness!</state>
+            </case>
+            <case tag="female_removing_minor" target="nagisa" targetStage=1>
+                <state img="5-angry.png">...For <i>some</i> of us more than others.</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="5-excited.png">Oh! You're just like Ronald! Um, not that I would know.</state>
@@ -1458,6 +1491,9 @@
             <case tag="female_medium_chest_is_visible">
                 <state img="5-excited.png">Those are beautiful, ~name~.</state>
             </case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> 
+				<state img="5-calm.png">You might be surprised how <i>many</i> people I know who shout out odd phrases in made-up languages...</state>
+			</case>
             <case tag="female_removing_accessory">
                 <state img="5-stunned.png">That's all you're taking off?</state>
             </case>
@@ -1556,6 +1592,9 @@
             </case>
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="6-shocked.png">Oh my goodness!</state>
+            </case>
+            <case tag="female_removing_minor" target="nagisa" targetStage=1>
+                <state img="6-angry.png">...For <i>some</i> of us more than others.</state>
             </case>
             <case tag="female_removing_minor" filter="mean">
                 <state img="6-angry.png">Oh, just strip off your ~clothing~. Stop drawing it out.</state>
@@ -1698,6 +1737,9 @@
             <case tag="female_medium_chest_is_visible">
                 <state img="6-excited.png">You look just like a Veela! I'm jealous.</state>
             </case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> 
+				<state img="6-calm.png">You might be surprised how <i>many</i> people I know who shout out odd phrases in made-up languages...</state>
+			</case>
             <case tag="female_medium_chest_is_visible" filter="mean">
                 <state img="6-angry.png">You look just like a Veela! How fitting.</state>
             </case>
@@ -1808,6 +1850,9 @@
             </case>
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="7-shocked.png">Oh my goodness!</state>
+            </case>
+            <case tag="female_removing_minor" target="nagisa" targetStage=1>
+                <state img="7-angry.png">...For <i>some</i> of us more than others.</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="7-interested.png">You must be very popular with the girls, ~name~.</state>
@@ -1935,6 +1980,9 @@
             <case tag="female_medium_chest_is_visible">
                 <state img="7-horny.png">I can see why! You're stunning!</state>
             </case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> 
+				<state img="7-calm.png">You might be surprised how <i>many</i> people I know who shout out odd phrases in made-up languages...</state>
+			</case>
             <case tag="female_removing_accessory">
                 <state img="7-angry.png">I don't want to seem like a sore loser, but can we play with different rules next time?</state>
             </case>
@@ -2040,6 +2088,9 @@
             </case>
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="8-shocked.png">Oh my goodness!</state>
+            </case>
+            <case tag="female_removing_minor" target="nagisa" targetStage=1>
+                <state img="8-angry.png">...For <i>some</i> of us more than others.</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="8-horny.png">My goodness! Has someone cast <i>petrificus totalus</i> on you?</state>
@@ -2168,6 +2219,9 @@
             <case tag="female_medium_chest_is_visible">
                 <state img="8-smug.png">I think I've got half an inch on you, ~name~. I'd need to be closer to tell for sure...</state>
             </case>
+			<case tag="female_medium_chest_is_visible" target="nagisa"> 
+				<state img="8-calm.png">You might be surprised how <i>many</i> people I know who shout out odd phrases in made-up languages...</state>
+			</case>
             <case tag="female_removing_accessory">
                 <state img="8-angry.png">I can't believe I'm wishing I was standing in your place removing my ~clothing~, but there you have it.</state>
             </case>
@@ -2263,6 +2317,9 @@
             </case>
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="9-shocked.png">Oh my goodness!</state>
+            </case>
+            <case tag="female_removing_minor" target="nagisa" targetStage=1>
+                <state img="9-angry.png">...For <i>some</i> of us more than others.</state>
             </case>
             <case tag="male_medium_crotch_is_visible">
                 <state img="9-mast.png">Why, ~name~, is that for <i>me</i>? I'm flattered.</state>
@@ -2418,6 +2475,9 @@
             </case>
             <case tag="female_removing_minor" target="kyoko" targetStage=5>
                 <state img="10-shocked.png">Oh my goodness!</state>
+            </case>
+            <case tag="female_removing_minor" target="nagisa" targetStage=1>
+                <state img="10-angry.png">...For <i>some</i> of us more than others.</state>
             </case>
             <case tag="female_removed_major">
                 <state img="10-shocked.png">You don't have any excuse to be shy, ~name~. I mean... look at me!</state>
