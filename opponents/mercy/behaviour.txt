@@ -116,7 +116,7 @@ good_hand=happy,These are nice.
 good_hand=happy,Oh, how very nice.
 good_hand=happy,A lovely hand.
 
-#The character thinks they have a bad hand
+#The character thinks they have an okay hand
 okay_hand=calm,These cards are alright.
 okay_hand=calm,I have an average hand.
 okay_hand=calm,This is a decent hand.
@@ -128,7 +128,7 @@ bad_hand=sad,This is a bad hand.
 bad_hand=sad,This is... concerning.
 
 good_hand=happy,Super!
-good_hand=happy,Mit dieser Oma kann ich nur gewinnen.
+good_hand=happy,Mit dieser Hand kann ich nur gewinnen.
 good_hand=happy,These are already perfect.
 good_hand=happy,This is an optimal hand.
 
@@ -248,7 +248,7 @@ female_must_strip=interested,Pech ~name~, rules are rules.
 #finished
 -1-male_human_must_strip=happy,Super ~name~! Show me just how healthy you are.
 -1-male_human_must_strip=interested,Wanna join me ~name~? It's good for your health.
--1-male_must_strip=happy,Super ~nam~! Show me just how healthy you are.
+-1-male_must_strip=happy,Super ~name~! Show me just how healthy you are.
 -1-male_must_strip=interested,Wanna join me ~name~? It's good for your health.
 -1-female_human_must_strip=interested,It's lonely here ~name~, why don't you follow my example.
 -1-female_human_must_strip=horny,Following my lead? It's good for your health ~name~ and it feels great, trust me...
@@ -326,8 +326,8 @@ female_removed_accessory=calm,No to worry ~name~, I would have done the same.
 -2-female_removed_accessory=horny,Come now ~name~,I'm gonna need a bit more stimulation then that...
 
 #finished
--1-male_removing_accessory=interested,All eyes on you ~name~.
--1-male_removing_accessory=interested,Did I distract you ~name~?
+-1-male_removing_accessory=interested,All eyes on you, ~name~.
+-1-male_removing_accessory=interested,Did I distract you, ~name~?
 -1-male_removing_accessory=interested,A healthy body should be shown...
 -1-male_removed_accessory=interested,Ah...Very good...
 -1-female_removing_accessory=interested,You were a great "inspiration" just then, ~name~...
@@ -479,7 +479,7 @@ male_small_crotch_is_visible=horny,Mind if I take a closer look?
 male_medium_crotch_is_visible=horny,Wunderbar...
 male_large_crotch_is_visible=shocked,Fascinating...It seems to be twitching, mind if I take a look?
 female_chest_will_be_visible=interested,All eyes on you ~name~.
-female_small_chest_is_visible=interested,Not to big but they have the perfect shape...
+female_small_chest_is_visible=interested,Not too big but they have the perfect shape...
 female_medium_chest_is_visible=horny,Your nipples seem to have gotten hard, want me to cure them?
 female_large_chest_is_visible=shocked,They jiggle with your every step, perhaps hypnotism is real after all...
 female_crotch_will_be_visible=horny,Show the doctor what you got ~name~...
@@ -588,19 +588,19 @@ female_crotch_is_visible=shocked,It is kind off hard to see from here, perhaps l
 -3-female_chest_will_be_visible=,
 -3-female_small_chest_is_visible=,
 -3-female_medium_chest_is_visible=,
--3-female_large_chest_is_visible=,
--3-female_crotch_will_be_visible=,
--3-female_crotch_is_visible=,
+-3-female_large_chest_is_visible=horny,Hmm... You were built for love!
+-3-female_crotch_will_be_visible=interested,I've shown mine, now it's time for you to show us your loot box!
+-3-female_crotch_is_visible=horny,Epic!
 
 #masturbating
 -2-male_chest_will_be_visible=,
 -2-male_chest_is_visible=,
 -2-male_crotch_will_be_visible=,
--2-male_small_crotch_is_visible=,
--2-male_medium_crotch_is_visible=,
--2-male_large_crotch_is_visible=,
+-2-male_small_crotch_is_visible=horny,Das ist sicherlich so süß!
+-2-male_medium_crotch_is_visible=horny,Verdammt, das ist so geil!
+-2-male_large_crotch_is_visible=shocked,Unglaublich! Just looking at that is boosting me up!
 
--2-female_chest_will_be_visible=,
+-2-female_chest_will_be_visible=horny,I'm giving it all I've got... I hope you will do the same!
 -2-female_small_chest_is_visible=,
 -2-female_small_chest_is_visible=,
 -2-female_medium_chest_is_visible=,
@@ -637,7 +637,7 @@ male_finished_masturbating=shocked,Wow, looks like you have been keeping it in f
 
 
 #female masturbation default
-female_must_masturbate=interested,Don't worry, it's totally natural to satisfy your sexual desires yourself.
+female_must_masturbate=interested,Don't feel bad, masturbation is good for your health!
 female_start_masturbating=horny,With a healthy body like yours, I expect this to be quite a performance.
 female_masturbating=horny,There have been studies that prove the existence of the G-Spot, did you find it yet?
 female_finished_masturbating=shocked,Wow, that was quite... I would love to do some medical studies with you.
@@ -655,12 +655,13 @@ female_finished_masturbating=shocked,Wow, that was quite... I would love to do s
 
 -2-female_must_masturbate=interested,Thank god, I don't have to do it alone.
 -2-female_start_masturbating=horny,Come on, no reason to be shy!
+-2-female_start_masturbating=horny,Let's team up!
 -2-female_masturbating=heavy,Feels like I'm the one getting a boost this time.
 -2-female_masturbating=heavy,Come closer, ~name~...
 -2-female_finished_masturbating=heavy,Niice, I'm really close too...
 
 #finished
--1-male_must_masturbate=interested,Well I did it, ~name~. So it's only fair if you go to. Doctor's orders.
+-1-male_must_masturbate=interested,Well I did it, ~name~, so it's only fair if you do it to. Doctor's orders.
 -1-male_start_masturbating=horny,Judging from the erection you have, you must have really enjoyed my previous performance.
 -1-male_masturbating=horny,This makes me think I could do it a second time.
 -1-male_masturbating=horny,The more you stroke it, the bigger it gets. It sure is nice seeing it all erect...
@@ -671,6 +672,7 @@ female_finished_masturbating=shocked,Wow, that was quite... I would love to do s
 -1-female_start_masturbating=horny,Just follow my example, trust me...I'm a doctor.
 -1-female_start_masturbating=horny,I see you already got wet over my performance.
 -1-female_masturbating=horny,Yes, just like that. Keep up a good rythm.
+-1-female_masturbating=horny,I would help you out, if the rules would allow me. Maybe next time!
 -1-female_finished_masturbating=What a powerful orgasm! You must have been dying for a release. It's not healthy to keep it all in like that.
 
 
