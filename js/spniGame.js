@@ -485,7 +485,7 @@ function completeRevealPhase () {
         }
         
         /* reset the round */
-        mainButton.html("Deal");
+        $mainButton.html("Deal");
         $mainButton.attr('disabled', false);
         if (players[HUMAN_PLAYER].out && AUTO_FORFEIT) {
             setTimeout(advanceGame, FORFEIT_DELAY);

@@ -1453,6 +1453,7 @@ body.modal-open {
 	position: relative;
 	top: 10px;
 	left:10px;
+    z-index: 4
 }
 
 #epilogue-prev-button {
@@ -1461,6 +1462,7 @@ body.modal-open {
 	position: relative;
 	top: 15px;
 	left:10px;
+    z-index: 4
 }
 
 #epilogue-restart-button {
@@ -1469,6 +1471,24 @@ body.modal-open {
 	position: relative;
 	top: 20px;
 	left:10px;
+    z-index: 4
+}
+
+#epilogue-next-on-image {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+}
+
+#epilogue-prev-on-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    height: 100%;
 }
 
 #epilogue-modal-accept-button {

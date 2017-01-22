@@ -49,13 +49,14 @@ swap_Cards=calm,~cards~ new cards, puddin'.
 #The character thinks they have a good hand
 good_hand=happy,HA! Not even the B-Man could win!
 good_hand=happy,Mr J would be so proud!
-hood_hand=excited,So, who's ready to strip?
+good_hand=excited,So, who's ready to strip?
+good_hand=smug,Oh, you guys are sooo screwed...
 
 #The character thinks they have a bad hand
 okay_hand=calm,Meh, I've seen better.
 okay_hand=calm,Mmm, this will do.
 okay_hand=sad,I wouldn't mind hearing the rules again...
-okay_hand=calm,I guess this is allright.
+okay_hand=calm,I guess this is alright.
 
 #The character thinks they have a bad hand
 bad_hand=angry,Jeez, did Bats mess with these cards? 
@@ -69,6 +70,7 @@ must_strip_normal=loss,Yay, I win! Huh, I lost?
 must_strip_losing=loss,Seriously?! Again?!
 stripping=strip,Here I go...
 stripped=sad,There ! Done !
+stripped=sad,Just forewarning you, I'm known for being quite vexing...
 
 #masturbation
 #these situations relate to when the character is masturbating
@@ -96,6 +98,7 @@ male_removing_minor=excited,This is a nice preview...
 male_removed_minor=happy,And one more down!
 
 male_removing_major=interested,Yeah, now ya strip! And don't ya dare cover anything up!
+male_removing_major=excited,Own that shit. Own it!
 male_removed_major=smug,HA! Look at you!
 
 male_chest_will_be_visible=excited,Shirt off, cowboy!
@@ -104,8 +107,11 @@ male_chest_is_visible=interested,This is quite the sight...
 #male crotches have different sizes, allowing your character to have different responses
 male_crotch_will_be_visible=horny,H-Hurry up! I'm so *ahem* curious!
 male_small_crotch_is_visible=excited,Nothing to be ashamed of, puddin'. It's still nice.
+male_small_crotch_is_visible=smug,Look at this guy...
 male_medium_crotch_is_visible=horny,Harley wants!
+male_medium_crotch_is_visible=excited,I love this guy!
 male_large_crotch_is_visible=shocked,It's so much bigger than Miste... *ahem* It's big is what I'm saying.
+male_large_crotch_is_visible=shocked,If you try'na scare me, it won't work!
 
 #male masturbation default
 male_must_masturbate=interested,No more clothes to strip of, cowboy? ya know what that means...
@@ -230,7 +236,7 @@ female_finished_masturbating=shocked,That looked.. fun.
 #card cases
 #fully clothed
 0-good_hand=happy,Yes, that's what I'm talking about!
-0-okay_hand=calm,Is there any jokers in this deck?
+0-okay_hand=calm,Are there any jokers in this deck?
 0-bad_hand=sad,This sounds like trouble.
 
 #lost one item
@@ -557,6 +563,7 @@ female_finished_masturbating=shocked,That looked.. fun.
 0-female_small_chest_is_visible=horny,Nothing to be ashamed of, ~name~, they're really nice!
 0-female_medium_chest_is_visible=horny,Nice set, I'm kinda jealous.
 0-female_large_chest_is_visible=horny,Whoaaa, the're so big! I love it!
+0-female_large_chest_is_visible=horny,I like what you're selling, lady!
 0-female_crotch_will_be_visible=excited,Y-You're already gonna remove your ~clothing~?
 0-female_crotch_is_visible=horny,W-Wow...
 
@@ -647,6 +654,7 @@ female_finished_masturbating=shocked,That looked.. fun.
 6-female_small_chest_is_visible=horny,Cute!
 6-female_medium_chest_is_visible=horny,So round and bouncy...
 6-female_large_chest_is_visible=horny,Those are some big guns!
+6-female_large_chest_is_visible=horny,I like what you're selling, lady!
 6-female_crotch_will_be_visible=interested,And now for the main event!
 6-female_crotch_is_visible=horny,I love your pussy, ~name~...
 
@@ -659,11 +667,11 @@ female_finished_masturbating=shocked,That looked.. fun.
 7-male_large_crotch_is_visible=,
 
 7-female_chest_will_be_visible=,
-7-female_small_chest_is_visible=,
-7-female_medium_chest_is_visible=,
-7-female_large_chest_is_visible=,
-7-female_crotch_will_be_visible=,
-7-female_crotch_is_visible=,
+7-female_small_chest_is_visible=interested,Those are as cute as Batgirl's titties! They must be as tasty, too...
+7-female_medium_chest_is_visible=interested,This reminds me of Ivy... Why isn't she playing?
+7-female_large_chest_is_visible=horny,W-wow! Those are bigger than Ivy's!
+7-female_crotch_will_be_visible=excited,Show us the good stuff!
+7-female_crotch_is_visible=horny,Could I invite ya to a threesome with me and mistah J?
 
 #nude
 -3-male_chest_will_be_visible=interested,Yahtzee!
@@ -673,9 +681,9 @@ female_finished_masturbating=shocked,That looked.. fun.
 -3-male_medium_crotch_is_visible=horny,Very, very nice. We have to keep in touch.
 -3-male_large_crotch_is_visible=horny,I wonder if it fits in my mouth...
 
--3-female_chest_will_be_visible=interested,Show them to me ~name~!
+-3-female_chest_will_be_visible=interested,Show them to me, ~name~!
 -3-female_small_chest_is_visible=horny,Just how I like them!
--3-female_medium_chest_is_visible=horny,Now we have to compare size ~name~!
+-3-female_medium_chest_is_visible=horny,Now we have to compare size, ~name~!
 -3-female_large_chest_is_visible=horny,S-So big!
 -3-female_crotch_will_be_visible=interested,Show me your goods!
 -3-female_crotch_is_visible=horny,ya look wet ~name~. Got anything to confess?
@@ -720,6 +728,7 @@ male_masturbating=horny,W-Wow look at it throb...
 male_masturbating=horny,Go ahead ~name~, stroke it for me...
 male_masturbating=horny,This is a nice show ~name~, I'm enjoying it...
 male_masturbating=horny,That's why I wanted to play this game!
+male_masturbating=horny,Oh, puddin', let me eat your cum after this, pretty, pretty, pretty, pretty please?
 male_finished_masturbating=horny,All done cowboy? Shame...
 male_finished_masturbating=horny,All good things have to end, I guess...
 

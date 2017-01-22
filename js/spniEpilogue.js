@@ -4,6 +4,8 @@ $epilogueScreen = $('#epilogue-screen');
 $epiloguePrevButton = $('#epilogue-prev-button');
 $epilogueNextButton = $('#epilogue-next-button');
 $epilogueResetButton = $('#epilogue-restart-button');
+$epiloguePrevOnImage = $('#epilogue-prev-on-image');
+$epilogueNextOnImage = $('#epilogue-next-on-image');
 
 /* Epilogue selection modal elements */
 $epilogueSelectionModal = $('#epilogue-modal'); //the modal box
@@ -356,6 +358,8 @@ function progressEpilogue(direction){
 	$epiloguePrevButton.prop("disabled", atFirst);
 	$epilogueNextButton.prop("disabled",  atLast);
 	$epilogueResetButton.prop("disabled", !atLast);
+    $epiloguePrevOnImage.prop("disabled", atFirst);
+    $epilogueNextOnImage.prop("disabled", atLast);
 	$epiloguePrevButton.css("opacity", atFirst ? disabledOpacity : fullOpacity);
 	$epilogueNextButton.css("opacity", atLast  ? disabledOpacity : fullOpacity);
 	$epilogueResetButton.css("visibility", atLast ? "visible" : "hidden");
