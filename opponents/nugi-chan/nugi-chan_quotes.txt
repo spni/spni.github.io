@@ -217,9 +217,10 @@ female_must_strip=interested,Teeheehee! Strip, ~name~-sama! <3
 #OPPONENT REMOVING ACCESSORY
 #stage-generic
 male_removing_accessory=sad,You have to run out of tiny things to take off eventually.
-male_removed_accessory=calm,That's better, ~name~-sama. Keep losing and show me the rest. <3
+male_removed_accessory=calm,I approve, ~name~-sama. Keep up the good work! <3
 female_removing_accessory=sad,You have to run out of tiny things to take off eventually.
-female_removed_accessory=calm,That's better, ~name~-sama. Keep losing and show me the rest. <3
+female_removed_accessory=calm,I approve, ~name~-sama. Keep up the good work! <3
+female_removed_accessory=calm,Don't worry, ~name~-sama. I barely noticed that you were wearing that. <3
 
 #fully clothed
 0-male_removing_accessory=,
@@ -290,6 +291,69 @@ male_removed_minor=happy,That's better, ~name~-sama. Keep losing and show me the
 female_removing_minor=sad,You have to run out of tiny things to take off eventually.
 female_removed_minor=happy,That's better, ~name~-sama. Keep losing and show me the rest. <3
 
+#fully clothed
+0-male_removing_minor=,
+0-male_removed_minor=,
+0-female_removing_minor=,
+0-female_removing_minor=,
+0-female_removed_minor=,
+0-female_removed_minor=,
+
+#lost shoes
+1-male_removing_minor=,
+1-male_removed_minor=,
+1-female_removing_minor=,
+1-female_removed_minor=,
+
+#lost gloves
+2-male_removing_minor=,
+2-male_removed_minor=,
+2-female_removing_minor=,
+2-female_removed_minor=,
+
+#lost stockings
+3-male_removing_minor=,
+3-male_removed_minor=,
+3-female_removing_minor=,
+3-female_removed_minor=,
+
+#lost top
+4-male_removing_minor=,
+4-male_removed_minor=,
+4-female_removing_minor=,
+4-female_removed_minor=,
+
+#lost skirt (underwear only)
+5-male_removing_minor=,
+5-male_removed_minor=,
+5-female_removing_minor=,
+5-female_removed_minor=,
+
+#lost bra (topless)
+6-male_removing_minor=,
+6-male_removed_minor=,
+6-female_removing_minor=,
+6-female_removed_minor=,Oh, I'm sorry, are we playing <i>strip</i> poker or <i>try-to-stay-clothed</i> poker?
+
+#nude
+-3-male_removing_minor=,
+-3-male_removed_minor=,
+-3-female_removing_minor=,
+-3-female_removed_minor=,Oh, I'm sorry, are we playing <i>strip</i> poker or <i>try-to-stay-clothed</i> poker?
+
+#masturbating
+-2-male_removing_minor=,
+-2-male_removed_minor=,
+-2-female_removing_minor=,
+-2-female_removed_minor=,
+
+#finished
+-1-male_removing_minor=,
+-1-male_removed_minor=,
+-1-female_removing_minor=,
+-1-female_removed_minor=,Oh, I'm sorry, are we playing <i>strip</i> poker or <i>try-to-stay-clothed</i> poker?
+
+
 
 
 #OPPONENT REMOVING MAJOR
@@ -319,16 +383,16 @@ female_crotch_is_visible=horny,You're all naked, ~name~-sama~. I said no coverin
 0-male_chest_will_be_visible=,
 0-male_chest_is_visible=,
 0-male_crotch_will_be_visible=,
-0-male_small_crotch_is_visible=,
-0-male_medium_crotch_is_visible=,
-0-male_large_crotch_is_visible=,
+0-male_small_crotch_is_visible=,See a penis without losing any clothing: achievement unlocked! <3
+0-male_medium_crotch_is_visible=,See a penis without losing any clothing: achievement unlocked! <3
+0-male_large_crotch_is_visible=,See a huge penis without losing any clothing: achievement unlocked! <3
 
 0-female_chest_will_be_visible=,
 0-female_small_chest_is_visible=,
 0-female_medium_chest_is_visible=,
 0-female_large_chest_is_visible=horny,Oh, <i>now</i> I remember you! I saw some Rule 34 of you one time.
 0-female_crotch_will_be_visible=,
-0-female_crotch_is_visible=,
+0-female_crotch_is_visible=,My rating: Nudity 5, Difficulty 1.
 
 #lost shoes
 1-male_chest_will_be_visible=,
@@ -343,7 +407,7 @@ female_crotch_is_visible=horny,You're all naked, ~name~-sama~. I said no coverin
 1-female_medium_chest_is_visible=,
 1-female_large_chest_is_visible=horny,Oh, <i>now</i> I remember you! I saw some Rule 34 of you one time.
 1-female_crotch_will_be_visible=,
-1-female_crotch_is_visible=,
+1-female_crotch_is_visible=,My rating: Nudity 5, Difficulty 1.
 
 #lost gloves
 2-male_chest_will_be_visible=,
@@ -358,7 +422,7 @@ female_crotch_is_visible=horny,You're all naked, ~name~-sama~. I said no coverin
 2-female_medium_chest_is_visible=,
 2-female_large_chest_is_visible=horny,Oh, <i>now</i> I remember you! I saw some Rule 34 of you one time.
 2-female_crotch_will_be_visible=,
-2-female_crotch_is_visible=,
+2-female_crotch_is_visible=,My rating: Nudity 5, Difficulty 1.
 
 #lost stockings
 3-male_chest_will_be_visible=,
@@ -373,7 +437,7 @@ female_crotch_is_visible=horny,You're all naked, ~name~-sama~. I said no coverin
 3-female_medium_chest_is_visible=,
 3-female_large_chest_is_visible=horny,Oh, <i>now</i> I remember you! I saw some Rule 34 of you one time.
 3-female_crotch_will_be_visible=,
-3-female_crotch_is_visible=,
+3-female_crotch_is_visible=,My rating: Nudity 5, Difficulty 1.
 
 #lost top
 4-male_chest_will_be_visible=,
@@ -480,6 +544,118 @@ female_start_masturbating=awkward, ... Fine, you can stare at me while you do...
 female_masturbating=horny,No holding back, loser-sama! I can hear you panting.
 female_finished_masturbating=happy,Good girl, loser-sama. You get to sit there naked and sticky with your legs spread, while I enjoy my winnings. <3
 
+#fully clothed
+0-male_must_masturbate=,
+0-male_start_masturbating=,
+0-male_masturbating=,
+0-male_finished_masturbating=,Just because I'm dressed like a maid doesn't mean I'm going to be scrubbing up your fluids!
+
+0-female_must_masturbate=,
+0-female_start_masturbating=,
+0-female_masturbating=,
+0-female_finished_masturbating=,
+
+#lost shoes
+1-male_must_masturbate=,
+1-male_start_masturbating=,
+1-male_masturbating=,
+1-male_finished_masturbating=,Just because I'm dressed like a maid doesn't mean I'm going to be scrubbing up your fluids!
+
+1-female_must_masturbate=,
+1-female_start_masturbating=,
+1-female_masturbating=,
+1-female_finished_masturbating=,
+
+#lost gloves
+2-male_must_masturbate=,
+2-male_start_masturbating=,
+2-male_masturbating=,
+2-male_finished_masturbating=,Just because I'm dressed like a maid doesn't mean I'm going to be scrubbing up your fluids!
+
+2-female_must_masturbate=,
+2-female_start_masturbating=,
+2-female_masturbating=,
+2-female_finished_masturbating=,
+
+#lost stockings
+3-male_must_masturbate=,
+3-male_start_masturbating=,
+3-male_masturbating=,
+3-male_finished_masturbating=,Just because I'm dressed like a maid doesn't mean I'm going to be scrubbing up your fluids!
+
+3-female_must_masturbate=,
+3-female_start_masturbating=,
+3-female_masturbating=,
+3-female_finished_masturbating=,
+
+#lost top
+4-male_must_masturbate=,
+4-male_start_masturbating=,
+4-male_masturbating=,
+4-male_finished_masturbating=,
+
+4-female_must_masturbate=,
+4-female_start_masturbating=,
+4-female_masturbating=,
+4-female_finished_masturbating=,
+
+#lost skirt (underwear only)
+5-male_must_masturbate=,
+5-male_start_masturbating=,
+5-male_masturbating=,
+5-male_finished_masturbating=,
+
+5-female_must_masturbate=,
+5-female_start_masturbating=,
+5-female_masturbating=,
+5-female_masturbating=,
+5-female_finished_masturbating=,
+
+#lost bra (topless)
+6-male_must_masturbate=,
+6-male_start_masturbating=,
+6-male_masturbating=,
+6-male_finished_masturbating=,
+
+6-female_must_masturbate=,
+6-female_start_masturbating=,
+6-female_masturbating=,
+6-female_masturbating=,
+6-female_finished_masturbating=,
+
+#lost panties (naked)
+-3-male_must_masturbate=,
+-3-male_start_masturbating=,
+-3-male_masturbating=,
+-3-male_finished_masturbating=,
+
+-3-female_must_masturbate=,
+-3-female_start_masturbating=,
+-3-female_masturbating=,
+-3-female_finished_masturbating=,
+
+#masturbating
+-2-male_must_masturbate=,
+-2-male_start_masturbating=,
+-2-male_masturbating=,
+-2-male_finished_masturbating=sad,Aw, ~name~, you didn't wait for me. We could have finished together!
+
+-2-female_must_masturbate=,
+-2-female_start_masturbating=,
+-2-female_masturbating=,
+-2-female_finished_masturbating=,
+
+#finished
+-1-male_must_masturbate=,
+-1-male_start_masturbating=,
+-1-male_masturbating=,
+-1-male_finished_masturbating=,
+
+-1-female_must_masturbate=,
+-1-female_start_masturbating=,
+-1-female_masturbating=,
+-1-female_finished_masturbating=,
+
 
 
 #SELF MUST MASTURBATE
@@ -500,51 +676,202 @@ game_over_defeat=loss,How could I lose? THIS IS UNFAIR!
 
 #CHARACTER-SPECIFIC LINES TO PASTE INTO behavior.xml
 #Paste into end of stage 0 (fully dressed)
+#<case tag="good_hand" alsoPlaying="jasmine" targetStage="0"><state img="0-interested.png">Those are some sexy ankles you have there, Jasmine.</state></case>
+#<case tag="female_must_strip" target="chell" targetStage="1"><state img="0-calm.png">I wish you'd say something, Chell. I want Half-Life 3 details!</state></case>
+#<case tag="female_must_strip" target="dawn" oppHand="High Card"><state img="0-calm.png">Dawn used Terrible Cards. It's not very effective.</state></case>
+#<case tag="female_must_strip" target="lux" targetStage="0"><state img="0-calm.png">Hey, Lux. Good to see you. Let's see more of you. And invite Sona next time!</state></case>
+#<case tag="female_must_strip" target="mia" targetStage="3"><state img="0-interested.png">That dress is a goner! Here's hoping that you don't have any Phoenix Down for it.</state></case>
+#<case tag="female_must_strip" target="nagisa" targetStage="2"><state img="0-calm.png">Don't think I won't do this as many times as it takes to After Story you, Nagisa.</state></case>
+#<case tag="female_must_strip" target="tracer" targetStage="1"><state img="0-interested.png">Tracer, when are we going to meet some of your other friends from Overwatch?</state></case>
+#<case tag="female_removing_major" target="april"><state img="0-interested.png">Radical!</state></case>
+#<case tag="female_removed_major" filter="virtual" targetStage="5"><state img="0-interested.png">If getting excited about a video game character is wrong, then I don't <i>wanna</i> be right!</state></case>
+#<case tag="female_removed_major" target="blackrose" targetStage="6"><state img="0-shocked.png">Wait, so you were showing your panties this whole time? Why did no one tell me?!</state></case>
+#<case tag="female_medium_chest_is_visible" target="d.va"><state img="0-interested.png">You should show those on your stream sometime, D.Va. You might get a few more subscribers.</state></case>
 #<case tag="female_crotch_will_be_visible" target="penny"><state img="0-horny.png">Time to see your Stardew Valley!</state></case>
-#<case tag="female_must_strip" target="tracer" targetStage=1><state img="0-interested.png">Tracer, when are we going to meet some of your other friends from Overwatch?</state></case>
+#<case tag="female_crotch_is_visible" target="asuna"><state img="0-horny.png">Oh yeah! Do a twirl. We want to see that assuna!</state></case>
+#<case tag="female_crotch_is_visible" target="chara"><state img="0-awakard.png">Wait, what? No tail? I should've looked up your game before we started!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="2"><state img="0-interested.png">Looks like a couple of boys just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="3"><state img="0-interested.png">Looks like a few just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" targetStage="8"><state img="0-happy.png">Oh how the mighty have fallen! Did you think you could beat a strip game expert with those layers?</state></case>
+#<case tag="female_must_masturbate" target="asuna"><state img="0-happy.png">Time for some Chapter 16.5!</state></case>
 #<case tag="female_finished_masturbating" target="nagisa"><state img="0-loss.png">What the heck was that all about?</state></case>
+#<case tag="male_finished_masturbating" target="fred"><state img="0-horny.png">Strip poker has too few dudes. Thanks for coming, Fred!</state></case>
 
 #Paste into end of stage 1 (shoes removed)
+#<case tag="good_hand" alsoPlaying="jasmine" targetStage="0"><state img="1-interested.png">Those are some sexy ankles you have there, Jasmine.</state></case>
+#<case tag="female_must_strip" target="chell" targetStage="1"><state img="1-calm.png">I wish you'd say something, Chell. I want Half-Life 3 details!</state></case>
+#<case tag="female_must_strip" target="dawn" oppHand="High Card"><state img="1-calm.png">Dawn used Terrible Cards. It's not very effective.</state></case>
+#<case tag="female_must_strip" target="lux" targetStage="0"><state img="1-calm.png">Hey, Lux. Good to see you. Let's see more of you. And invite Sona next time!</state></case>
+#<case tag="female_must_strip" target="mia" targetStage="3"><state img="1-interested.png">That dress is a goner! Here's hoping that you don't have any Phoenix Down for it.</state></case>
+#<case tag="female_must_strip" target="nagisa" targetStage="2"><state img="1-calm.png">Don't think I won't do this as many times as it takes to After Story you, Nagisa.</state></case>
+#<case tag="female_must_strip" target="tracer" targetStage="1"><state img="1-interested.png">Tracer, when are we going to meet some of your other friends from Overwatch?</state></case>
+#<case tag="female_removing_major" target="april"><state img="1-interested.png">Radical!</state></case>
+#<case tag="female_removed_major" filter="virtual" targetStage="5"><state img="1-interested.png">If getting excited about a video game character is wrong, then I don't <i>wanna</i> be right!</state></case>
+#<case tag="female_removed_major" target="blackrose" targetStage="6"><state img="1-shocked.png">Wait, so you were showing your panties this whole time? Why did no one tell me?!</state></case>
+#<case tag="female_medium_chest_is_visible" target="d.va"><state img="1-interested.png">You should show those on your stream sometime, D.Va. You might get a few more subscribers.</state></case>
 #<case tag="female_crotch_will_be_visible" target="penny"><state img="1-horny.png">Time to see your Stardew Valley!</state></case>
-#<case tag="female_must_strip" target="tracer" targetStage=1><state img="1-interested.png">Tracer, when are we going to meet some of your other friends from Overwatch?</state></case>
+#<case tag="female_crotch_is_visible" target="asuna"><state img="1-horny.png">Oh yeah! Do a twirl. We want to see that assuna!</state></case>
+#<case tag="female_crotch_is_visible" target="chara"><state img="1-awakard.png">Wait, what? No tail? I should've looked up your game before we started!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="2"><state img="1-interested.png">Looks like a couple of boys just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="3"><state img="1-interested.png">Looks like a few just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" targetStage="8"><state img="1-happy.png">Oh how the mighty have fallen! Did you think you could beat a strip game expert with those layers?</state></case>
+#<case tag="female_must_masturbate" target="asuna"><state img="1-happy.png">Time for some Chapter 16.5!</state></case>
 #<case tag="female_finished_masturbating" target="nagisa"><state img="1-loss.png">What the heck was that all about?</state></case>
+#<case tag="male_finished_masturbating" target="fred"><state img="1-horny.png">Strip poker has too few dudes. Thanks for coming, Fred!</state></case>
 
 #Paste into end of stage 2 (gloves removed)
-#<case tag="stripped" alsoPlaying="kyoko" targetStage=0><state img="2-stripped.png">See, Kyoko. Taking off gloves isn't so hard.</state></case>
-#<case tag="stripped" alsoPlaying="kyoko" targetStage=1><state img="2-stripped.png">See, Kyoko. Taking off gloves isn't so hard.</state></case>
-#<case tag="stripped" alsoPlaying="kyoko" targetStage=2><state img="2-stripped.png">See, Kyoko. Taking off gloves isn't so hard.</state></case>
-#<case tag="stripped" alsoPlaying="kyoko" targetStage=3><state img="2-stripped.png">See, Kyoko. Taking off gloves isn't so hard.</state></case>
-#<case tag="stripped" alsoPlaying="kyoko" targetStage=4><state img="2-stripped.png">See, Kyoko. Taking off gloves isn't so hard.</state></case>
-#<case tag="stripped" alsoPlaying="kyoko" targetStage=5><state img="2-stripped.png">See, Kyoko. Taking off gloves isn't so hard.</state></case>
+#<case tag="stripped" alsoPlaying="kyoko" targetStage="0"><state img="2-stripped.png">See, Kyoko. Taking off gloves isn't so hard.</state></case>
+#<case tag="stripped" alsoPlaying="kyoko" targetStage="1"><state img="2-stripped.png">See, Kyoko. Taking off gloves isn't so hard.</state></case>
+#<case tag="stripped" alsoPlaying="kyoko" targetStage="2"><state img="2-stripped.png">See, Kyoko. Taking off gloves isn't so hard.</state></case>
+#<case tag="stripped" alsoPlaying="kyoko" targetStage="3"><state img="2-stripped.png">See, Kyoko. Taking off gloves isn't so hard.</state></case>
+#<case tag="stripped" alsoPlaying="kyoko" targetStage="4"><state img="2-stripped.png">See, Kyoko. Taking off gloves isn't so hard.</state></case>
+#<case tag="stripped" alsoPlaying="kyoko" targetStage="5"><state img="2-stripped.png">See, Kyoko. Taking off gloves isn't so hard.</state></case>
+#<case tag="female_must_strip" target="chell" targetStage="1"><state img="2-calm.png">I wish you'd say something, Chell. I want Half-Life 3 details!</state></case>
+#<case tag="female_must_strip" target="dawn" oppHand="High Card"><state img="2-calm.png">Dawn used Terrible Cards. It's not very effective.</state></case>
+#<case tag="female_must_strip" target="mia" targetStage="3"><state img="2-interested.png">That dress is a goner! Here's hoping that you don't have any Phoenix Down for it.</state></case>
+#<case tag="female_must_strip" target="nagisa" targetStage="2"><state img="2-calm.png">Don't think I won't do this as many times as it takes to After Story you, Nagisa.</state></case>
+#<case tag="female_must_strip" target="tracer" targetStage="1"><state img="2-interested.png">Tracer, when are we going to meet some of your other friends from Overwatch?</state></case>
+#<case tag="female_removing_major" target="april"><state img="2-interested.png">Radical!</state></case>
+#<case tag="female_removed_major" filter="virtual" targetStage="5"><state img="2-interested.png">If getting excited about a video game character is wrong, then I don't <i>wanna</i> be right!</state></case>
+#<case tag="female_removed_major" target="blackrose" targetStage="6"><state img="2-shocked.png">Wait, so you were showing your panties this whole time? Why did no one tell me?!</state></case>
+#<case tag="female_medium_chest_is_visible" target="d.va"><state img="2-interested.png">You should show those on your stream sometime, D.Va. You might get a few more subscribers.</state></case>
 #<case tag="female_crotch_will_be_visible" target="penny"><state img="2-horny.png">Time to see your Stardew Valley!</state></case>
-#<case tag="female_must_strip" target="tracer" targetStage=1><state img="2-interested.png">Tracer, when are we going to meet some of your other friends from Overwatch?</state></case>
+#<case tag="female_crotch_is_visible" target="asuna"><state img="2-horny.png">Oh yeah! Do a twirl. We want to see that assuna!</state></case>
+#<case tag="female_crotch_is_visible" target="chara"><state img="2-awakard.png">Wait, what? No tail? I should've looked up your game before we started!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="2"><state img="2-interested.png">Looks like a couple of boys just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="3"><state img="2-interested.png">Looks like a few just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" targetStage="8"><state img="2-happy.png">Oh how the mighty have fallen! Did you think you could beat a strip game expert with those layers?</state></case>
+#<case tag="female_must_masturbate" target="asuna"><state img="2-happy.png">Time for some Chapter 16.5!</state></case>
 #<case tag="female_finished_masturbating" target="nagisa"><state img="2-loss.png">What the heck was that all about?</state></case>
+#<case tag="male_finished_masturbating" target="fred"><state img="2-horny.png">Strip poker has too few dudes. Thanks for coming, Fred!</state></case>
 
 #Paste into end of stage 3 (stockings removed)
+#<case tag="female_must_strip" target="chell" targetStage="3"><state img="3-calm.png">I wish you'd say something, Chell. I want Half-Life 3 details!</state></case>
+#<case tag="female_must_strip" target="dawn" oppHand="High Card"><state img="3-calm.png">Dawn used Terrible Cards. It's not very effective.</state></case>
+#<case tag="female_must_strip" target="mia" targetStage="3"><state img="3-interested.png">That dress is a goner! Here's hoping that you don't have any Phoenix Down for it.</state></case>
+#<case tag="female_must_strip" target="nagisa" targetStage="2"><state img="3-calm.png">Don't think I won't do this as many times as it takes to After Story you, Nagisa.</state></case>
+#<case tag="female_must_strip" target="tracer" targetStage="1"><state img="3-interested.png">Tracer, when are we going to meet some of your other friends from Overwatch?</state></case>
+#<case tag="female_removing_major" target="april"><state img="3-interested.png">Radical!</state></case>
+#<case tag="female_removed_major" filter="virtual" targetStage="5"><state img="3-interested.png">If getting excited about a video game character is wrong, then I don't <i>wanna</i> be right!</state></case>
+#<case tag="female_removed_major" target="blackrose" targetStage="6"><state img="3-shocked.png">Wait, so you were showing your panties this whole time? Why did no one tell me?!</state></case>
+#<case tag="female_medium_chest_is_visible" target="d.va"><state img="3-interested.png">You should show those on your stream sometime, D.Va. You might get a few more subscribers.</state></case>
 #<case tag="female_crotch_will_be_visible" target="penny"><state img="3-horny.png">Time to see your Stardew Valley!</state></case>
-#<case tag="female_must_strip" target="tracer" targetStage=1><state img="3-interested.png">Tracer, when are we going to meet some of your other friends from Overwatch?</state></case>
+#<case tag="female_crotch_is_visible" target="asuna"><state img="3-horny.png">Oh yeah! Do a twirl. We want to see that assuna!</state></case>
+#<case tag="female_crotch_is_visible" target="chara"><state img="3-awakard.png">Wait, what? No tail? I should've looked up your game before we started!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="2"><state img="3-interested.png">Looks like a couple of boys just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="3"><state img="3-interested.png">Looks like a few just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" targetStage="8"><state img="3-happy.png">Oh how the mighty have fallen! Did you think you could beat a strip game expert with those layers?</state></case>
+#<case tag="female_must_masturbate" target="asuna"><state img="3-happy.png">Time for some Chapter 16.5!</state></case>
 #<case tag="female_finished_masturbating" target="nagisa"><state img="3-loss.png">What the heck was that all about?</state></case>
+#<case tag="male_finished_masturbating" target="fred"><state img="3-horny.png">Strip poker has too few dudes. Thanks for coming, Fred!</state></case>
 
 #Paste into end of stage 4 (top removed)
+#<case tag="female_must_strip" target="chell" targetStage="1"><state img="4-calm.png">I wish you'd say something, Chell. I want Half-Life 3 details!</state></case>
+#<case tag="female_must_strip" target="dawn" oppHand="High Card"><state img="4-calm.png">Dawn used Terrible Cards. It's not very effective.</state></case>
+#<case tag="female_must_strip" target="mia" targetStage="3"><state img="4-interested.png">That dress is a goner! Here's hoping that you don't have any Phoenix Down for it.</state></case>
+#<case tag="female_removing_major" target="april"><state img="4-interested.png">Radical!</state></case>
+#<case tag="female_removed_major" filter="virtual" targetStage="5"><state img="4-interested.png">If getting excited about a video game character is wrong, then I don't <i>wanna</i> be right!</state></case>
+#<case tag="female_removed_major" target="blackrose" targetStage="6"><state img="4-shocked.png">Wait, so you were showing your panties this whole time? Why did no one tell me?!</state></case>
+#<case tag="female_medium_chest_is_visible" target="d.va"><state img="4-interested.png">You should show those on your stream sometime, D.Va. You might get a few more subscribers.</state></case>
 #<case tag="female_crotch_will_be_visible" target="penny"><state img="4-horny.png">Time to see your Stardew Valley!</state></case>
+#<case tag="female_crotch_is_visible" target="asuna"><state img="4-horny.png">Oh yeah! Do a twirl. We want to see that assuna!</state></case>
+#<case tag="female_crotch_is_visible" target="chara"><state img="4-awakard.png">Wait, what? No tail? I should've looked up your game before we started!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="2"><state img="4-interested.png">Looks like a couple of boys just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="3"><state img="4-interested.png">Looks like a few just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" targetStage="8"><state img="4-happy.png">Oh how the mighty have fallen! Did you think you could beat a strip game expert with those layers?</state></case>
+#<case tag="female_must_masturbate" target="asuna"><state img="4-happy.png">Time for some Chapter 16.5!</state></case>
 #<case tag="female_finished_masturbating" target="nagisa"><state img="4-loss.png">What the heck was that all about?</state></case>
+#<case tag="male_finished_masturbating" target="fred"><state img="4-horny.png">Strip poker has too few dudes. Thanks for coming, Fred!</state></case>
 
 #Paste into end of stage 5 (skirt removed, underwear only)
+#<case tag="female_must_strip" target="chell" targetStage="1"><state img="5-calm.png">I wish you'd say something, Chell. I want Half-Life 3 details!</state></case>
+#<case tag="female_must_strip" target="dawn" oppHand="High Card"><state img="5-calm.png">Dawn used Terrible Cards. It's not very effective.</state></case>
+#<case tag="female_must_strip" target="mia" targetStage="3"><state img="5-interested.png">That dress is a goner! Here's hoping that you don't have any Phoenix Down for it.</state></case>
+#<case tag="female_removing_major" target="april"><state img="5-interested.png">Radical!</state></case>
+#<case tag="female_removed_major" filter="virtual" targetStage="5"><state img="5-interested.png">If getting excited about a video game character is wrong, then I don't <i>wanna</i> be right!</state></case>
+#<case tag="female_removed_major" target="blackrose" targetStage="6"><state img="5-shocked.png">Wait, so you were showing your panties this whole time? Why did no one tell me?!</state></case>
+#<case tag="female_medium_chest_is_visible" target="d.va"><state img="5-interested.png">You should show those on your stream sometime, D.Va. You might get a few more subscribers.</state></case>
 #<case tag="female_crotch_will_be_visible" target="penny"><state img="5-horny.png">Time to see your Stardew Valley!</state></case>
+#<case tag="female_crotch_is_visible" target="asuna"><state img="5-horny.png">Oh yeah! Do a twirl. We want to see that assuna!</state></case>
+#<case tag="female_crotch_is_visible" target="chara"><state img="5-awakard.png">Wait, what? No tail? I should've looked up your game before we started!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="2"><state img="5-interested.png">Looks like a couple of boys just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="3"><state img="5-interested.png">Looks like a few just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" targetStage="8"><state img="5-happy.png">Oh how the mighty have fallen! Did you think you could beat a strip game expert with those layers?</state></case>
+#<case tag="female_must_masturbate" target="asuna"><state img="5-happy.png">Time for some Chapter 16.5!</state></case>
+#<case tag="female_must_masturbate" target="chell"><state img="5-happy.png">Time to take the Party Escort Submission Position, Chell!</state></case>
 #<case tag="female_finished_masturbating" target="nagisa"><state img="5-loss.png">What the heck was that all about?</state></case>
+#<case tag="male_finished_masturbating" target="fred"><state img="5-horny.png">Strip poker has too few dudes. Thanks for coming, Fred!</state></case>
 
 #Paste into end of stage 6 (bra removed, topless)
+#<case tag="female_must_strip" target="chara"><state img="6-sad.png">Don't think I'm not going to beat you, Chara! I need to see your epilogue!</state></case>
+#<case tag="female_must_strip" target="chell" targetStage="1"><state img="6-calm.png">I wish you'd say something, Chell. I want Half-Life 3 details!</state></case>
+#<case tag="female_must_strip" target="dawn" oppHand="High Card"><state img="6-calm.png">Dawn used Terrible Cards. It's not very effective.</state></case>
+#<case tag="female_removing_major" target="april"><state img="6-interested.png">Radical!</state></case>
+#<case tag="female_removed_major" filter="virtual" targetStage="5"><state img="6-interested.png">If getting excited about a video game character is wrong, then I don't <i>wanna</i> be right!</state></case>
+#<case tag="female_removed_major" target="blackrose" targetStage="6"><state img="6-shocked.png">Wait, so you were showing your panties this whole time? Why did no one tell me?!</state></case>
+#<case tag="female_medium_chest_is_visible" target="d.va"><state img="6-interested.png">You should show those on your stream sometime, D.Va. You might get a few more subscribers.</state></case>
 #<case tag="female_crotch_will_be_visible" target="penny"><state img="6-horny.png">Time to see your Stardew Valley!</state></case>
+#<case tag="female_crotch_is_visible" target="asuna"><state img="6-horny.png">Oh yeah! Do a twirl. We want to see that assuna!</state></case>
+#<case tag="female_crotch_is_visible" target="chara"><state img="6-awakard.png">Wait, what? No tail? I should've looked up your game before we started!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="2"><state img="6-interested.png">Looks like a couple of boys just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="3"><state img="6-interested.png">Looks like a few just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" targetStage="8"><state img="6-happy.png">Oh how the mighty have fallen! Did you think you could beat a strip game expert with those layers?</state></case>
+#<case tag="female_must_masturbate" target="asuna"><state img="6-happy.png">Time for some Chapter 16.5!</state></case>
+#<case tag="female_must_masturbate" target="chell"><state img="6-happy.png">Time to take the Party Escort Submission Position, Chell!</state></case>
 #<case tag="female_finished_masturbating" target="nagisa"><state img="6-loss.png">What the heck was that all about?</state></case>
+#<case tag="male_finished_masturbating" target="fred"><state img="6-horny.png">Strip poker has too few dudes. Thanks for coming, Fred!</state></case>
 
 #Paste into end of stage 7 (panties removed, naked)
+#<case tag="female_must_strip" target="chara"><state img="7-sad.png">Don't think I'm not going to beat you, Chara! I need to see your epilogue!</state></case>
+#<case tag="female_must_strip" target="chell" targetStage="1"><state img="7-calm.png">I wish you'd say something, Chell. You could give us Half-Life 3 details!</state></case>
+#<case tag="female_must_strip" target="dawn" oppHand="High Card"><state img="7-calm.png">Dawn used Terrible Cards. It's not very effective.</state></case>
+#<case tag="female_removed_accessory" target="april"><state img="7-sad.png">Where did you learn to play so slowly? Were you raised by turtles or something?</state></case>
+#<case tag="female_removing_major" target="april"><state img="7-interested.png">Radical!</state></case>
+#<case tag="female_removed_major" filter="virtual" targetStage="5"><state img="7-interested.png">If getting excited about a video game character is wrong, then I don't <i>wanna</i> be right!</state></case>
+#<case tag="female_removed_major" target="blackrose" targetStage="6"><state img="7-shocked.png">Wait, so you were showing your panties this whole time? Why did no one tell me?!</state></case>
+#<case tag="female_medium_chest_is_visible" target="d.va"><state img="7-interested.png">You should show those on your stream sometime, D.Va. You might get a few more subscribers.</state></case>
 #<case tag="female_crotch_will_be_visible" target="penny"><state img="7-horny.png">Time to see your Stardew Valley!</state></case>
+#<case tag="female_crotch_is_visible" target="asuna"><state img="7-horny.png">I have to warn you, Asuna: When you touch yourself in the game, I touch myself in real life.</state></case>
+#<case tag="female_crotch_is_visible" target="chara"><state img="7-awakard.png">Wait, what? No tail? I should've looked up your game before we started!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="2"><state img="7-interested.png">Looks like a couple of boys just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="3"><state img="7-interested.png">Looks like a few just got up at the crack of Dawn!</state></case>
+#<case tag="female_must_masturbate" target="asuna"><state img="7-happy.png">Time for some Chapter 16.5!</state></case>
+#<case tag="female_must_masturbate" target="chell"><state img="7-happy.png">Time to take the Party Escort Submission Position, Chell!</state></case>
+#<case tag="female_start_masturbating" target="harley"><state img="7-horny.png">I should join a motorcycle gang. I've always wanted a Harley between my legs.</state></case>
 #<case tag="female_finished_masturbating" target="nagisa"><state img="7-loss.png">What the heck was that all about?</state></case>
+#<case tag="male_finished_masturbating" target="fred"><state img="7-horny.png">Strip poker has too few dudes. Thanks for coming, Fred!</state></case>
 
 #Paste into end of stage 8 (masturbating)
+#<case tag="female_must_strip" target="chell" targetStage="1"><state img="8-interest.png">I wish you'd say something, Chell. Some feedback on my technique wouldn't hurt.</state></case>
+#<case tag="female_removing_major" target="april"><state img="8-interested.png">Radical!</state></case>
+#<case tag="female_removed_major" filter="virtual" targetStage="5"><state img="8-interested.png">If getting touching myself while seeing a video game character strip is wrong, then I don't <i>wanna</i> be right!</state></case>
+#<case tag="female_removed_major" target="blackrose" targetStage="6"><state img="8-happy.png">Wait, so you were showing your panties this whole time? That is so hot, Mistress BlackRose!</state></case>
+#<case tag="female_medium_chest_is_visible" target="d.va"><state img="8-interested.png">This is like the ultimate D.Va livestream! <3</state></case>
 #<case tag="female_crotch_will_be_visible" target="penny"><state img="8-horny.png">I bet your valley doesn't have as much stardew as mine does!</state></case>
+#<case tag="female_crotch_is_visible" target="lux"><state img="8-calm.png">I would do anything for some Lux licks right now...</state></case>
+#<case tag="female_must_masturbate" target="asuna"><state img="8-happy.png">My own personal Chapter 16.5!</state></case>
+#<case tag="female_must_masturbate" target="chell"><state img="8-happy.png">Time to take the Party Escort Submission Position, Chell!</state></case>
+#<case tag="female_start_masturbating" target="harley"><state img="8-horny.png">I should join a motorcycle gang. I've always wanted a Harley between my legs.</state></case>
+#<case tag="female_start_masturbating" target="jasmine"><state img="8-happy.png">Don't you dare close your thighs!</state></case>
 #<case tag="female_finished_masturbating" target="nagisa"><state img="8-awkward.png">Wait, am I meant to tell a weird story too?</state></case>
+#<case tag="male_finished_masturbating" target="fred"><state img="8-horny.png">Strip poker has too few dudes. Thanks for coming, Fred!</state></case>
 
 #Paste into end of stage 9 (finished)
+#<case tag="female_must_strip" target="chell" targetStage="1"><state img="9-calm.png">I wish you'd say something, Chell. You could give us Half-Life 3 details!</state></case>
+#<case tag="female_must_strip" target="dawn" oppHand="High Card"><state img="9-calm.png">Dawn used Terrible Cards. It's not very effective.</state></case>
+#<case tag="female_removed_accessory" target="april"><state img="9-sad.png">Where did you learn to play so slowly? Were you raised by turtles or something?</state></case>
+#<case tag="female_removing_major" target="april"><state img="9-interested.png">Radical!</state></case>
+#<case tag="female_removed_major" filter="virtual" targetStage="5"><state img="9-interested.png">If getting excited about a video game character is wrong, then I don't <i>wanna</i> be right!</state></case>
+#<case tag="female_removed_major" target="blackrose" targetStage="6"><state img="9-interested.png">Wait, so you were showing your panties this whole time? Devious!</state></case>
+#<case tag="female_medium_chest_is_visible" target="d.va"><state img="9-interested.png">You should show those on your stream sometime, D.Va. You might get a few more subscribers.</state></case>
+#<case tag="female_crotch_is_visible" target="asuna"><state img="9-horny.png">Oh yeah! Do a twirl. We want to see that assuna!</state></case>
 #<case tag="female_crotch_will_be_visible" target="penny"><state img="9-horny.png">I bet your valley doesn't have as much stardew as mine does!</state></case>
+#<case tag="female_crotch_is_visible" target="asuna"><state img="9-horny.png">I have to warn you, Asuna: When you touch yourself in the game, I touch myself in real life.</state></case>
+#<case tag="female_crotch_is_visible" target="chara"><state img="9-awakard.png">Wait, what? No tail? I should've looked up your game before we started!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="2"><state img="9-interested.png">Looks like a couple of boys just got up at the crack of Dawn!</state></case>
+#<case tag="female_crotch_is_visible" target="dawn" totalMales="3"><state img="9-interested.png">Looks like a few just got up at the crack of Dawn!</state></case>
+#<case tag="female_must_masturbate" target="asuna"><state img="9-happy.png">Time for some Chapter 16.5!</state></case>
+#<case tag="female_must_masturbate" target="chell"><state img="9-happy.png">Time to take the Party Escort Submission Position, Chell!</state></case>
+#<case tag="female_start_masturbating" target="harley"><state img="9-horny.png">I should join a motorcycle gang. I've always wanted a Harley between my legs.</state></case>
 #<case tag="female_finished_masturbating" target="nagisa"><state img="9-awkward.png">Wait, was I meant to tell a weird story too?</state></case>
+#<case tag="male_finished_masturbating" target="fred"><state img="9-horny.png">Strip poker has too few dudes. Thanks for coming, Fred!</state></case>
