@@ -440,7 +440,7 @@ def read_player_file(filename):
 		skip_line = False
 		try:
 			# In utf-8, characters using umlauts are actually encoded as two separate characters
-            # so we need to try to decode the entire line instead of individual characters
+			# so we need to try to decode the entire line instead of individual characters
 			line.decode('utf-8')
 		except UnicodeDecodeError:
 			# Find out which character
@@ -452,7 +452,7 @@ def read_player_file(filename):
 					problem_character = c
 					break
 
-			if (len(problem_character) == 0):
+			if (len(problem_character) > 0):
 				print "Unable to decode character %s in line %d: \"%s\"" % (problem_character, line_number, line)
 			else:
 				print "Unable to decode line \"%s\" in line %d: " % (line, line_number)
