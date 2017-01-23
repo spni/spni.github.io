@@ -453,7 +453,7 @@ def read_player_file(filename):
 					break
 
 			if (len(problem_character) == 0):
-				print "Unable to decode character %s in line %d: \"%s\"" % (c, line_number, line)
+				print "Unable to decode character %s in line %d: \"%s\"" % (problem_character, line_number, line)
 			else:
 				print "Unable to decode line \"%s\" in line %d: " % (line, line_number)
 
