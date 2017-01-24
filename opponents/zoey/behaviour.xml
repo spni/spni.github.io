@@ -4031,7 +4031,7 @@
 				<state img="9-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> 
-				<state img="9-interested.png">You smell good, ~name~. I bet you taste good too.</state>
+				<state img="9-interested.png">You look good, ~name~. I bet you feel good too.</state>
 			</case>
 			<case tag="female_crotch_is_visible" filter="shaved"> 
 				<state img="9-horny.png">Wow... it looks really pretty shaved bare.</state>
@@ -4344,7 +4344,7 @@
 				<state img="10-awkward.png">Okay, this would be a lot more fun if you'd SAY SOMETHING.</state>
 			</case>
 			<case tag="female_crotch_is_visible"> 
-				<state img="10-interested.png">You smell good, ~name~. I bet you taste good too.</state>
+				<state img="10-interested.png">You look good, ~name~. I bet you feel good too.</state>
 			</case>
 			<case tag="female_crotch_is_visible" filter="shaved"> 
 				<state img="10-horny.png">Wow... it looks really pretty shaved bare.</state>
@@ -4412,6 +4412,30 @@
 			</case>
             <case tag="game_over_defeat">
                 <state img="10-calm.png">This was still more fun than zombies. But then, what isn't?</state>
+            </case>
+            <case tag="game_over_defeat" targetStage="0">
+                <state img="10-awkward.png">You know the point of strip poker is that we <i>all</i> strip, right, ~name~?</state>
+            </case>
+            <case tag="game_over_defeat" targetStage="0" target="kim">
+                <state img="10-awkward.png">Yeah, yeah, rub it in, why don't you?</state>
+            </case>
+            <case tag="game_over_defeat" targetStage="1">
+                <state img="10-awkward.png">You know the point of strip poker is that we <i>all</i> strip, right, ~name~?</state>
+            </case>
+            <case tag="game_over_defeat" targetStage="1" target="kim">
+                <state img="10-awkward.png">Yeah, yeah, rub it in, why don't you?</state>
+            </case>
+            <case tag="game_over_defeat" targetStage="2">
+                <state img="10-happy.png">Well, so much for a 'friendly little game'. Competitive much, ~name~?</state>
+            </case>
+            <case tag="game_over_defeat" targetStage="3">
+                <state img="10-happy.png">Wow, you really beat the pants off us. And everything else.</state>
+            </case>
+            <case tag="game_over_defeat" targetStage="4" target="kim">
+                <state img="10-awkward.png">For <i>you</i> maybe, Kim.</state>
+            </case>
+            <case tag="game_over_defeat" targetStage="6" target="kim">
+                <state img="10-happy.png">Aww, is someone feeling a little left out? Don't worry, I'm sure someone will volunteer to give you a hand.</state>
             </case>
 			
 		</stage>

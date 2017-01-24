@@ -2083,6 +2083,15 @@
             <case tag="game_over_defeat">
                 <state img="9-excited.png">Just wait until next time!  ...There will be a next time, won't there? Please?</state>
             </case>
+            <case tag="game_over_defeat" targetStage="0">
+                <state img="9-angry.png">I've never been beaten this badly in my life! I DEMAND A REMATCH!</state>
+            </case>
+            <case tag="game_over_defeat" targetStage="1">
+                <state img="9-angry.png">I've never been beaten this badly in my life! I DEMAND A REMATCH!</state>
+            </case>
+            <case tag="game_over_defeat" targetStage="2">
+                <state img="9-angry.png">And I thought <i>I</i> was the impossible one...</state>
+            </case>
         </stage>
 
     </behaviour>
